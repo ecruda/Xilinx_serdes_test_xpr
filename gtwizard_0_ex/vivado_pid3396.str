@@ -1,0 +1,179 @@
+/*
+
+Xilinx Vivado v2020.2 (64-bit) [Major: 2020, Minor: 2]
+SW Build: 3064766 on Wed Nov 18 09:12:45 MST 2020
+IP Build: 3064653 on Wed Nov 18 14:17:31 MST 2020
+
+Process ID (PID): 3396
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Thu Jun 17 14:44:11 CDT 2021
+Time zone: 	Central Standard Time (America/Chicago)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1600x900
+Screen resolution (DPI): 100
+Available screens: 2
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+
+Java version: 	11.0.2 64-bit
+Java home: 	C:/Xilinx/Vivado/2020.2/tps/win64/jre11.0.2
+Java executable location: 	C:/Xilinx/Vivado/2020.2/tps/win64/jre11.0.2/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	L
+User home directory: C:/Users/L
+User working directory: c:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/Xilinx_serdes_test_xrp/gtwizard_0_ex
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2020.2
+RDI_DATADIR: C:/Xilinx/Vivado/2020.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2020.2/bin
+
+Vivado preferences file location: C:/Users/L/AppData/Roaming/Xilinx/Vivado/2020.2/vivado.xml
+Vivado preferences directory: C:/Users/L/AppData/Roaming/Xilinx/Vivado/2020.2/
+Vivado layouts directory: C:/Users/L/AppData/Roaming/Xilinx/Vivado/2020.2/data/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2020.2/lib/classes/planAhead.jar
+Vivado log file location: 	c:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/Xilinx_serdes_test_xrp/gtwizard_0_ex/vivado.log
+Vivado journal file location: 	c:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/Xilinx_serdes_test_xrp/gtwizard_0_ex/vivado.jou
+Engine tmp dir: 	c:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/Xilinx_serdes_test_xrp/gtwizard_0_ex/.Xil/Vivado-3396-DESKTOP-8KUEMAV
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_HLS: C:/Xilinx/Vitis_HLS/2020.2
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2020.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2020.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2020.2
+
+
+GUI allocated memory:	128 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,052 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: START_PROGRESS_DIALOG
+// bz (cr):  Sourcing Tcl script 'c:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/Xilinx_serdes_test_xrp/gtwizard_0_ex/gtwizard_0_ex.tcl' : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: source c:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/Xilinx_serdes_test_xrp/gtwizard_0_ex/gtwizard_0_ex.tcl -notrace 
+// Tcl Message: INFO: [open_example_project] Creating new example project... 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'c:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/Xilinx_serdes_test_xrp/gtwizard_0_ex' 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,052 MB. GUI used memory: 50 MB. Current time: 6/17/21, 2:44:12 PM CDT
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 102 MB (+104453kb) [00:00:35]
+// [Engine Memory]: 1,052 MB (+951208kb) [00:00:35]
+// WARNING: HEventQueue.dispatchEvent() is taking  5925 ms.
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: RUN_MODIFY
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: PART_MODIFIED
+// Tcl Message: create_project: Time (s): cpu = 00:00:40 ; elapsed = 00:00:20 . Memory (MB): peak = 1088.613 ; gain = 0.000 
+// TclEventType: PROJECT_CHANGE
+// TclEventType: BOARD_MODIFIED
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [open_example_project] Importing original IP ... 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [open_example_project] Generating the example project IP ... 
+// Tcl Message: INFO: [IP_Flow 19-1706] Not generating 'Instantiation Template' target for IP 'gtwizard_0'. Target already exists and is up to date. INFO: [IP_Flow 19-1706] Not generating 'Synthesis' target for IP 'gtwizard_0'. Target already exists and is up to date. INFO: [IP_Flow 19-1706] Not generating 'Simulation' target for IP 'gtwizard_0'. Target already exists and is up to date. INFO: [IP_Flow 19-1706] Not generating 'Implementation' target for IP 'gtwizard_0'. Target already exists and is up to date. 
+// Tcl Message: INFO: [open_example_project] Adding example synthesis HDL files ... 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [open_example_project] Adding example synthesis miscellaneous files ... INFO: [open_example_project] Adding example XDC files ... INFO: [open_example_project] Adding simulation HDL files ... 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [open_example_project] Adding simulation miscellaneous files ... 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1' INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sim_1' INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1' 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 118 MB (+11012kb) [00:01:00]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [open_example_project] Sourcing example extension scripts ... 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1088.613 ; gain = 0.000 
+// Tcl Message: INFO: [open_example_project] Rebuilding all the top level IPs ... 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: STOP_PROGRESS_DIALOG
+// Tcl Message: export_ip_user_files: Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 1088.613 ; gain = 0.000 
+// Tcl Message: INFO: [open_example_project] Open Example Project completed 
+dismissDialog("Sourcing Tcl script 'c:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/Xilinx_serdes_test_xrp/gtwizard_0_ex/gtwizard_0_ex.tcl'"); // bz
+// TclEventType: STOP_PROGRESS_DIALOG
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 401ms to process. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 2743 ms. Increasing delay to 8229 ms.
+// WARNING: updateGUI() is taking  3236 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3539 ms.
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, gtwizard_0_exdes (gtwizard_0_exdes.v)]", 1); // D
+// PAPropertyPanels.initPanels (gtwizard_0_support.v) elapsed time: 0.3s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, gtwizard_0_exdes (gtwizard_0_exdes.v), gtwizard_0_support_i : gtwizard_0_support (gtwizard_0_support.v)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, gtwizard_0_exdes (gtwizard_0_exdes.v), gtwizard_0_support_i : gtwizard_0_support (gtwizard_0_support.v), gt_usrclk_source : gtwizard_0_GT_USRCLK_SOURCE (gtwizard_0_gt_usrclk_source.v)]", 3, true, false, false, false, false, true); // D - Double Click - Node
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// WARNING: HEventQueue.dispatchEvent() is taking  4668 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 5379 ms. Increasing delay to 16137 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 50 ms. Decreasing delay to 2050 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1328 ms. Increasing delay to 3984 ms.
+// [GUI Memory]: 135 MB (+12357kb) [00:09:17]
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 3985 ms. Increasing delay to 11955 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 148 ms. Decreasing delay to 2148 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1316 ms. Increasing delay to 3948 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,052 MB. GUI used memory: 77 MB. Current time: 6/17/21, 3:14:15 PM CDT
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 9661 ms. Increasing delay to 28983 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 53 ms. Decreasing delay to 2053 ms.

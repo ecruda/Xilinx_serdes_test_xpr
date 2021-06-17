@@ -1,0 +1,22 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/From Datao/serdes_repo/DataExtract.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataExtract
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/From Datao/serdes_repo/PRBS7.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PRBS7
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/From Datao/serdes_repo/PRBS7Check.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PRBS7Check
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/From Datao/serdes_repo/PRBS7_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PRBS7_tb
+INFO: [VRFC 10-2458] undeclared symbol Q2_CLK1_GTREFCLK_PAD_N_IN, assumed default net type wire [C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/From Datao/serdes_repo/PRBS7_tb.v:31]
+INFO: [VRFC 10-2458] undeclared symbol Q2_CLK1_GTREFCLK_PAD_P_IN, assumed default net type wire [C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/From Datao/serdes_repo/PRBS7_tb.v:32]
+INFO: [VRFC 10-2458] undeclared symbol DRP_CLK_IN_P, assumed default net type wire [C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/From Datao/serdes_repo/PRBS7_tb.v:33]
+INFO: [VRFC 10-2458] undeclared symbol DRP_CLK_IN_N, assumed default net type wire [C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/From Datao/serdes_repo/PRBS7_tb.v:34]
+INFO: [VRFC 10-2458] undeclared symbol RXN_IN, assumed default net type wire [C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/From Datao/serdes_repo/PRBS7_tb.v:36]
+INFO: [VRFC 10-2458] undeclared symbol RXP_IN, assumed default net type wire [C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/From Datao/serdes_repo/PRBS7_tb.v:37]
+INFO: [VRFC 10-2458] undeclared symbol TXN_OUT, assumed default net type wire [C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/From Datao/serdes_repo/PRBS7_tb.v:38]
+INFO: [VRFC 10-2458] undeclared symbol TXP_OUT, assumed default net type wire [C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/From Datao/serdes_repo/PRBS7_tb.v:39]
+INFO: [VRFC 10-2458] undeclared symbol gt0_rxdata_i, assumed default net type wire [C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/From Datao/serdes_repo/PRBS7_tb.v:40]
+INFO: [VRFC 10-2458] undeclared symbol gt0_txdata_i, assumed default net type wire [C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/From Datao/serdes_repo/PRBS7_tb.v:41]
+INFO: [VRFC 10-2458] undeclared symbol gt0_txusrclk2_i, assumed default net type wire [C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/From Datao/serdes_repo/PRBS7_tb.v:42]
+INFO: [VRFC 10-2458] undeclared symbol gt0_rxusrclk2_i, assumed default net type wire [C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/From Datao/serdes_repo/PRBS7_tb.v:43]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/Xilinx_serdes_test_xrp/serdes_test/serdes_test.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
