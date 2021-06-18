@@ -123,30 +123,15 @@ set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
   set_param chipscope.maxJobs 1
+  set_param xicom.use_bs_reader 1
   set_param ced.repoPaths C:/Users/L/AppData/Roaming/Xilinx/Vivado/2020.2/xhub/ced_store/Vivado_example_project
-OPTRACE "create in-memory project" START { }
-  create_project -in_memory -part xc7k325tffg900-2
-  set_property board_part xilinx.com:kc705:part0:1.6 [current_project]
-  set_property design_mode GateLvl [current_fileset]
-  set_param project.singleFileAddWarning.threshold 0
-OPTRACE "create in-memory project" END { }
-OPTRACE "set parameters" START { }
+  reset_param project.defaultXPMLibraries 
+  open_checkpoint C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/Xilinx_serdes_test_xrp/serdes_test/serdes_test.runs/impl_1/PRBS7_tb.dcp
   set_property webtalk.parent_dir C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/Xilinx_serdes_test_xrp/serdes_test/serdes_test.cache/wt [current_project]
   set_property parent.project_path C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/Xilinx_serdes_test_xrp/serdes_test/serdes_test.xpr [current_project]
   set_property ip_output_repo C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/Xilinx_serdes_test_xrp/serdes_test/serdes_test.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-OPTRACE "set parameters" END { }
-OPTRACE "add files" START { }
-  add_files -quiet C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/Xilinx_serdes_test_xrp/serdes_test/serdes_test.runs/synth_1/PRBS7_tb.dcp
-  read_ip -quiet c:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/Xilinx_serdes_test_xrp/serdes_test/serdes_test.srcs/sources_1/ip/gtwizard_0/gtwizard_0.xci
-OPTRACE "read constraints: implementation" START { }
-OPTRACE "read constraints: implementation" END { }
-OPTRACE "add files" END { }
-OPTRACE "link_design" START { }
-  link_design -top PRBS7_tb -part xc7k325tffg900-2
-OPTRACE "link_design" END { }
-OPTRACE "gray box cells" START { }
-OPTRACE "gray box cells" END { }
+  set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 OPTRACE "init_design_reports" START { REPORT }
 OPTRACE "init_design_reports" END { }
 OPTRACE "init_design_write_hwdef" START { }
@@ -168,6 +153,7 @@ set ACTIVE_STEP opt_design
 set rc [catch {
   create_msg_db opt_design.pb
 OPTRACE "read constraints: opt_design" START { }
+  read_xdc -unmanaged c:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/Xilinx_serdes_test_xrp/serdes_test/serdes_test.srcs/sources_1/ip/gtwizard_0/tcl/v7ht.tcl
 OPTRACE "read constraints: opt_design" END { }
 OPTRACE "opt_design" START { }
   opt_design 
@@ -296,34 +282,4 @@ if {$rc} {
 
 OPTRACE "route_design misc" END { }
 OPTRACE "Phase: Route Design" END { }
-OPTRACE "Phase: Write Bitstream" START { ROLLUP_AUTO }
-OPTRACE "write_bitstream setup" START { }
-start_step write_bitstream
-set ACTIVE_STEP write_bitstream
-set rc [catch {
-  create_msg_db write_bitstream.pb
-OPTRACE "read constraints: write_bitstream" START { }
-OPTRACE "read constraints: write_bitstream" END { }
-  catch { write_mem_info -force -no_partial_mmi PRBS7_tb.mmi }
-OPTRACE "write_bitstream setup" END { }
-OPTRACE "write_bitstream" START { }
-  write_bitstream -force PRBS7_tb.bit 
-OPTRACE "write_bitstream" END { }
-OPTRACE "write_bitstream misc" START { }
-OPTRACE "read constraints: write_bitstream_post" START { }
-OPTRACE "read constraints: write_bitstream_post" END { }
-  catch {write_debug_probes -quiet -force PRBS7_tb}
-  catch {file copy -force PRBS7_tb.ltx debug_nets.ltx}
-  close_msg_db -file write_bitstream.pb
-} RESULT]
-if {$rc} {
-  step_failed write_bitstream
-  return -code error $RESULT
-} else {
-  end_step write_bitstream
-  unset ACTIVE_STEP 
-}
-
-OPTRACE "write_bitstream misc" END { }
-OPTRACE "Phase: Write Bitstream" END { }
 OPTRACE "impl_1" END { }

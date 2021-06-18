@@ -71,6 +71,7 @@ proc create_report { reportName command } {
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 1
+set_param xicom.use_bs_reader 1
 set_param ced.repoPaths C:/Users/L/AppData/Roaming/Xilinx/Vivado/2020.2/xhub/ced_store/Vivado_example_project
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7k325tffg900-2
@@ -81,6 +82,7 @@ set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
 set_property webtalk.parent_dir C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/Xilinx_serdes_test_xrp/serdes_test/serdes_test.cache/wt [current_project]
 set_property parent.project_path C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/Xilinx_serdes_test_xrp/serdes_test/serdes_test.xpr [current_project]
+set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part xilinx.com:kc705:part0:1.6 [current_project]
@@ -108,6 +110,12 @@ read_ip -quiet c:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/Xilin
 set_property used_in_implementation false [get_files -all c:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/Xilinx_serdes_test_xrp/serdes_test/serdes_test.srcs/sources_1/ip/gtwizard_0/gtwizard_0.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/Xilinx_serdes_test_xrp/serdes_test/serdes_test.srcs/sources_1/ip/gtwizard_0/gtwizard_0_ooc.xdc]
 
+read_ip -quiet c:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/Xilinx_serdes_test_xrp/serdes_test/serdes_test.srcs/sources_1/ip/ila_0/ila_0.xci
+set_property used_in_synthesis false [get_files -all c:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/Xilinx_serdes_test_xrp/serdes_test/serdes_test.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila_impl.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/Xilinx_serdes_test_xrp/serdes_test/serdes_test.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila_impl.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/Xilinx_serdes_test_xrp/serdes_test/serdes_test.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/Xilinx_serdes_test_xrp/serdes_test/serdes_test.srcs/sources_1/ip/ila_0/ila_0_ooc.xdc]
+
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -117,6 +125,9 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
+read_xdc C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/Xilinx_serdes_test_xrp/serdes_test/serdes_test.srcs/constrs_1/new/ila_test.xdc
+set_property used_in_implementation false [get_files C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/Xilinx_serdes_test_xrp/serdes_test/serdes_test.srcs/constrs_1/new/ila_test.xdc]
+
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1

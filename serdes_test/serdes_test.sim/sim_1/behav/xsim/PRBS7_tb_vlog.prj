@@ -1,8 +1,26 @@
 # compile verilog/system verilog design source files
-verilog xil_defaultlib  \
+verilog xil_defaultlib  --include "../../../../serdes_test.srcs/sources_1/ip/clk_wiz_0" \
+"../../../../serdes_test.ip_user_files/ip/ila_0/sim/ila_0.v" \
+"../../../../serdes_test.ip_user_files/ip/gtwizard_0/gtwizard_0/example_design/gtwizard_0_tx_startup_fsm.v" \
+"../../../../serdes_test.ip_user_files/ip/gtwizard_0/gtwizard_0/example_design/gtwizard_0_rx_startup_fsm.v" \
+"../../../../serdes_test.ip_user_files/ip/gtwizard_0/gtwizard_0_init.v" \
+"../../../../serdes_test.ip_user_files/ip/gtwizard_0/gtwizard_0_gt.v" \
+"../../../../serdes_test.ip_user_files/ip/gtwizard_0/gtwizard_0_multi_gt.v" \
+"../../../../serdes_test.ip_user_files/ip/gtwizard_0/gtwizard_0/example_design/gtwizard_0_sync_block.v" \
+"../../../../serdes_test.ip_user_files/ip/gtwizard_0/gtwizard_0.v" \
 "../../../../../../From Datao/serdes_repo/DataExtract.v" \
 "../../../../../../From Datao/serdes_repo/PRBS7.v" \
 "../../../../../../From Datao/serdes_repo/PRBS7Check.v" \
+"../../../../../../From Datao/serdes_repo/diff_in.v" \
+"../../../../../../From Datao/serdes_repo/diff_out.v" \
+"../../../../../gtwizard_0_ex/gtwizard_0_ex.srcs/sources_1/imports/example_design/support/gtwizard_0_clock_module.v" \
+"../../../../../gtwizard_0_ex/gtwizard_0_ex.srcs/sources_1/imports/example_design/support/gtwizard_0_common.v" \
+"../../../../../gtwizard_0_ex/gtwizard_0_ex.srcs/sources_1/imports/example_design/support/gtwizard_0_common_reset.v" \
+"../../../../../gtwizard_0_ex/gtwizard_0_ex.srcs/sources_1/imports/example_design/gtwizard_0_exdes.v" \
+"../../../../../gtwizard_0_ex/gtwizard_0_ex.srcs/sources_1/imports/example_design/gtwizard_0_gt_frame_check.v" \
+"../../../../../gtwizard_0_ex/gtwizard_0_ex.srcs/sources_1/imports/example_design/gtwizard_0_gt_frame_gen.v" \
+"../../../../../gtwizard_0_ex/gtwizard_0_ex.srcs/sources_1/imports/example_design/support/gtwizard_0_gt_usrclk_source.v" \
+"../../../../../gtwizard_0_ex/gtwizard_0_ex.srcs/sources_1/imports/example_design/support/gtwizard_0_support.v" \
 "../../../../../../From Datao/serdes_repo/PRBS7_tb.v" \
 
 # compile glbl module

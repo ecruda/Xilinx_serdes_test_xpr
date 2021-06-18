@@ -63,3 +63,5 @@ INFO: [SIM-utils-43] Exported 'C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao
 export_ip_user_files: Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 1088.613 ; gain = 0.000
 INFO: [open_example_project] Open Example Project completed
 update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jun 18 11:51:46 2021...

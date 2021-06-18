@@ -4,5 +4,14 @@ Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto f30dae8276
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
-ERROR: [VRFC 10-2063] Module <gtwizard_0_exdes> not found while processing module instance <gtwizard_0_exdes_i> [C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/From Datao/serdes_repo/PRBS7_tb.v:28]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'TRACK_DATA_OUT' [C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/From Datao/serdes_repo/PRBS7_tb.v:46]
+ERROR: [VRFC 10-3423] illegal output port connection to 'TRACK_DATA_OUT' [C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/From Datao/serdes_repo/PRBS7_tb.v:46]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'RXN_IN' [C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/From Datao/serdes_repo/PRBS7_tb.v:47]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'RXP_IN' [C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/From Datao/serdes_repo/PRBS7_tb.v:48]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'TXN_OUT' [C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/From Datao/serdes_repo/PRBS7_tb.v:49]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'TXP_OUT' [C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/From Datao/serdes_repo/PRBS7_tb.v:50]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 32 for port 'sig_in' [C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/From Datao/serdes_repo/PRBS7_tb.v:76]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 32 for port 'prbs' [C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/From Datao/serdes_repo/PRBS7_tb.v:88]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'probe0' [C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/From Datao/serdes_repo/PRBS7_tb.v:132]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 6 for port 'probe2' [C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/From Datao/serdes_repo/PRBS7_tb.v:134]
 ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
