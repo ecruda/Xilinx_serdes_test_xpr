@@ -1,0 +1,11 @@
+xpm_cdc.sv,systemverilog,xpm,../../../../../../../../../../../../Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv,
+xpm_memory.sv,systemverilog,xpm,../../../../../../../../../../../../Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv,
+xpm_VCOMP.vhd,vhdl,xpm,../../../../../../../../../../../../Xilinx/Vivado/2020.2/data/ip/xpm/xpm_VCOMP.vhd,
+gtwizard_0_tx_startup_fsm.v,verilog,xil_defaultlib,../../../ip/gtwizard_0/gtwizard_0/example_design/gtwizard_0_tx_startup_fsm.v,
+gtwizard_0_rx_startup_fsm.v,verilog,xil_defaultlib,../../../ip/gtwizard_0/gtwizard_0/example_design/gtwizard_0_rx_startup_fsm.v,
+gtwizard_0_init.v,verilog,xil_defaultlib,../../../ip/gtwizard_0/gtwizard_0_init.v,
+gtwizard_0_gt.v,verilog,xil_defaultlib,../../../ip/gtwizard_0/gtwizard_0_gt.v,
+gtwizard_0_multi_gt.v,verilog,xil_defaultlib,../../../ip/gtwizard_0/gtwizard_0_multi_gt.v,
+gtwizard_0_sync_block.v,verilog,xil_defaultlib,../../../ip/gtwizard_0/gtwizard_0/example_design/gtwizard_0_sync_block.v,
+gtwizard_0.v,verilog,xil_defaultlib,../../../ip/gtwizard_0/gtwizard_0.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

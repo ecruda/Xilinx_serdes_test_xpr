@@ -79,8 +79,6 @@ input           soft_reset_rx_in,
 input           dont_reset_on_data_error_in,
     input  q0_clk1_gtrefclk_pad_n_in,
     input  q0_clk1_gtrefclk_pad_p_in,
-output          gt0_tx_mmcm_lock_out,
-output          gt0_rx_mmcm_lock_out,
 output          gt0_tx_fsm_reset_done_out,
 output          gt0_rx_fsm_reset_done_out,
 input           gt0_data_valid_in,
@@ -236,10 +234,6 @@ input           gt0_data_valid_in,
      wire            gt0_txusrclk2_i; 
      wire            gt0_rxusrclk_i; 
      wire            gt0_rxusrclk2_i; 
-    wire            gt0_txmmcm_lock_i;
-    wire            gt0_txmmcm_reset_i;
-    wire            gt0_rxmmcm_lock_i; 
-    wire            gt0_rxmmcm_reset_i;
  
     //--------------------------- Reference Clocks ----------------------------
     
@@ -262,8 +256,6 @@ input           gt0_data_valid_in,
     assign tied_to_vcc_i                = 1'b1;
     assign tied_to_vcc_vec_i            = 8'hff;
 
-    assign  gt0_tx_mmcm_lock_out = gt0_txmmcm_lock_i;
-    assign  gt0_rx_mmcm_lock_out = gt0_rxmmcm_lock_i;
  
 
      assign gt0_qplllock_out  = gt0_qplllock_i;
@@ -287,13 +279,9 @@ input           gt0_data_valid_in,
     .GT0_TXUSRCLK_OUT    (gt0_txusrclk_i),
     .GT0_TXUSRCLK2_OUT   (gt0_txusrclk2_i),
     .GT0_TXOUTCLK_IN     (gt0_txoutclk_i),
-    .GT0_TXCLK_LOCK_OUT    (gt0_txmmcm_lock_i),
-    .GT0_TX_MMCM_RESET_IN  (gt0_txmmcm_reset_i),
     .GT0_RXUSRCLK_OUT    (gt0_rxusrclk_i),
     .GT0_RXUSRCLK2_OUT   (gt0_rxusrclk2_i),
  
-    .GT0_RXCLK_LOCK_OUT  (gt0_rxmmcm_lock_i),
-    .GT0_RX_MMCM_RESET_IN  (gt0_rxmmcm_reset_i),
     .Q0_CLK1_GTREFCLK_PAD_N_IN  (q0_clk1_gtrefclk_pad_n_in),
     .Q0_CLK1_GTREFCLK_PAD_P_IN  (q0_clk1_gtrefclk_pad_p_in),
     .Q0_CLK1_GTREFCLK_OUT       (q0_clk1_refclk_i)
@@ -342,10 +330,6 @@ assign  sysclk_in_i = sysclk_in;
         .soft_reset_tx_in               (soft_reset_tx_in),
         .soft_reset_rx_in               (soft_reset_rx_in),
         .dont_reset_on_data_error_in    (dont_reset_on_data_error_in),
-        .gt0_tx_mmcm_lock_in            (gt0_txmmcm_lock_i),
-        .gt0_tx_mmcm_reset_out          (gt0_txmmcm_reset_i),
-        .gt0_rx_mmcm_lock_in            (gt0_rxmmcm_lock_i),
-        .gt0_rx_mmcm_reset_out          (gt0_rxmmcm_reset_i),
         .gt0_tx_fsm_reset_done_out      (gt0_tx_fsm_reset_done_out),
         .gt0_rx_fsm_reset_done_out      (gt0_rx_fsm_reset_done_out),
         .gt0_data_valid_in              (gt0_data_valid_in),

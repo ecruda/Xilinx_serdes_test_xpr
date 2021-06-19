@@ -71,12 +71,8 @@ module gtwizard_0_GT_USRCLK_SOURCE
     output          GT0_TXUSRCLK_OUT,
     output          GT0_TXUSRCLK2_OUT,
     input           GT0_TXOUTCLK_IN,
-    output          GT0_TXCLK_LOCK_OUT,
-    input           GT0_TX_MMCM_RESET_IN,
     output          GT0_RXUSRCLK_OUT,
     output          GT0_RXUSRCLK2_OUT,
-    output          GT0_RXCLK_LOCK_OUT,
-    input           GT0_RX_MMCM_RESET_IN,
     input  wire  Q0_CLK1_GTREFCLK_PAD_N_IN,
     input  wire  Q0_CLK1_GTREFCLK_PAD_P_IN,
     output wire  Q0_CLK1_GTREFCLK_OUT
@@ -96,10 +92,6 @@ module gtwizard_0_GT_USRCLK_SOURCE
     wire  q0_clk1_gtrefclk /*synthesis syn_noclockbuf=1*/;
 
     wire            gt0_txusrclk_i;
-    wire            gt0_rxusrclk_i;
-    wire            txoutclk_mmcm0_locked_i;
-    wire            txoutclk_mmcm0_reset_i;
-    wire            gt0_txoutclk_to_mmcm_i;
 
 
 //*********************************** Beginning of Code *******************************
@@ -126,26 +118,10 @@ module gtwizard_0_GT_USRCLK_SOURCE
     // Instantiate a MMCM module to divide the reference clock. Uses internal feedback
     // for improved jitter performance, and to avoid consuming an additional BUFG
 
-    assign  txoutclk_mmcm0_reset_i               =  GT0_TX_MMCM_RESET_IN;
-    gtwizard_0_CLOCK_MODULE #
+    BUFG txoutclk_bufg0_i
     (
-        .MULT                           (2.0),
-        .DIVIDE                         (1),
-        .CLK_PERIOD                     (3.125),
-        .OUT0_DIVIDE                    (16.0),
-        .OUT1_DIVIDE                    (2),
-        .OUT2_DIVIDE                    (1),
-        .OUT3_DIVIDE                    (1)
-    )
-    txoutclk_mmcm0_i
-    (
-        .CLK0_OUT                       (gt0_rxusrclk_i),
-        .CLK1_OUT                       (gt0_txusrclk_i),
-        .CLK2_OUT                       (),
-        .CLK3_OUT                       (),
-        .CLK_IN                         (gt0_txoutclk_i),
-        .MMCM_LOCKED_OUT                (txoutclk_mmcm0_locked_i),
-        .MMCM_RESET_IN                  (txoutclk_mmcm0_reset_i)
+        .I                              (gt0_txoutclk_i),
+        .O                              (gt0_txusrclk_i)
     );
 
 
@@ -153,9 +129,7 @@ module gtwizard_0_GT_USRCLK_SOURCE
  
 assign GT0_TXUSRCLK_OUT = gt0_txusrclk_i;
 assign GT0_TXUSRCLK2_OUT = gt0_txusrclk_i;
-assign GT0_TXCLK_LOCK_OUT = txoutclk_mmcm0_locked_i;
-assign GT0_RXUSRCLK_OUT = gt0_rxusrclk_i;
-assign GT0_RXUSRCLK2_OUT = gt0_rxusrclk_i;
-assign GT0_RXCLK_LOCK_OUT = txoutclk_mmcm0_locked_i;
+assign GT0_RXUSRCLK_OUT = gt0_txusrclk_i;
+assign GT0_RXUSRCLK2_OUT = gt0_txusrclk_i;
 
 endmodule

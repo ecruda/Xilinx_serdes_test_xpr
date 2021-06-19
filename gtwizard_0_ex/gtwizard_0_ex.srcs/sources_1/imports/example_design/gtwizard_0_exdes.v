@@ -86,7 +86,11 @@ module gtwizard_0_exdes #
     input  wire         RXN_IN,
     input  wire         RXP_IN,
     output wire         TXN_OUT,
-    output wire         TXP_OUT
+    output wire         TXP_OUT,
+    output wire    [31:0]  gt0_rxdata_i,
+    input  wire    [31:0]  gt0_txdata_i,
+    output wire            gt0_txusrclk2_i, 
+    output wire            gt0_rxusrclk2_i
 );
 
     wire soft_reset_i;
@@ -140,7 +144,7 @@ module gtwizard_0_exdes #
     wire            gt0_eyescandataerror_i;
     wire            gt0_eyescantrigger_i;
     //---------------- Receive Ports - FPGA RX interface Ports -----------------
-    wire    [31:0]  gt0_rxdata_i;
+//    wire    [31:0]  gt0_rxdata_i;
     //------------------------- Receive Ports - RX AFE -------------------------
     wire            gt0_gtxrxp_i;
     //---------------------- Receive Ports - RX AFE Ports ----------------------
@@ -161,7 +165,7 @@ module gtwizard_0_exdes #
     wire            gt0_gttxreset_i;
     wire            gt0_txuserrdy_i;
     //---------------- Transmit Ports - TX Data Path interface -----------------
-    wire    [31:0]  gt0_txdata_i;
+//    wire    [31:0]  gt0_txdata_i;
     //-------------- Transmit Ports - TX Driver and OOB signaling --------------
     wire            gt0_gtxtxn_i;
     wire            gt0_gtxtxp_i;
@@ -201,13 +205,9 @@ module gtwizard_0_exdes #
 
      //--------------------------- User Clocks ---------------------------------
      wire            gt0_txusrclk_i; 
-     wire            gt0_txusrclk2_i; 
+//     wire            gt0_txusrclk2_i; 
      wire            gt0_rxusrclk_i; 
-     wire            gt0_rxusrclk2_i; 
-    wire            gt0_txmmcm_lock_i;
-    wire            gt0_txmmcm_reset_i;
-    wire            gt0_rxmmcm_lock_i; 
-    wire            gt0_rxmmcm_reset_i;
+//     wire            gt0_rxusrclk2_i; 
  
     //--------------------------- Reference Clocks ----------------------------
     
@@ -351,8 +351,6 @@ assign  q0_clk1_refclk_i                     =  1'b0;
         .dont_reset_on_data_error_in    (tied_to_ground_i),
     .q0_clk1_gtrefclk_pad_n_in(Q0_CLK1_GTREFCLK_PAD_N_IN),
     .q0_clk1_gtrefclk_pad_p_in(Q0_CLK1_GTREFCLK_PAD_P_IN),
-        .gt0_tx_mmcm_lock_out           (gt0_txmmcm_lock_i),
-        .gt0_rx_mmcm_lock_out           (gt0_rxmmcm_lock_i),
         .gt0_tx_fsm_reset_done_out      (gt0_txfsmresetdone_i),
         .gt0_rx_fsm_reset_done_out      (gt0_rxfsmresetdone_i),
         .gt0_data_valid_in              (gt0_track_data_i),

@@ -85,10 +85,8 @@ reg             rx_usrclk_r;
 reg             gsr_r;
 reg             gts_r;
 reg             reset_i;
-reg             track_data_high_1_r;
-reg             track_data_low_1_r;
-reg             track_data_high_2_r;
-reg             track_data_low_2_r;
+reg             track_data_high_r;
+reg             track_data_low_r;
 //********************************Wire Declarations**********************************
 
     //--------------------------------- Global Signals ------------------------------
@@ -96,16 +94,11 @@ wire            tx_refclk_p_r;
 wire            rx_refclk_p_r; 
     
     //-------------------------- Example Module Connections -------------------------
-wire            track_data_1_i;
-wire            track_data_2_i;
-wire            rxn_in_1_i;
-wire            rxp_in_1_i;
-wire            txn_out_1_i;
-wire            txp_out_1_i;
-wire            rxn_in_2_i;
-wire            rxp_in_2_i;
-wire            txn_out_2_i;
-wire            txp_out_2_i;
+wire            track_data_i;
+wire            rxn_in_i;
+wire            rxp_in_i;
+wire            txn_out_i;
+wire            txp_out_i;
 
 //*********************************Main Body of Code**********************************
 
@@ -116,10 +109,8 @@ wire            txp_out_2_i;
     assign  tied_to_ground_i     =    1'b0;
     
     // ------------------------- GT Serial Connections ------------------------
-    assign   rxn_in_2_i           =  txn_out_1_i;
-    assign   rxp_in_2_i           =  txp_out_1_i; 
-    assign   rxn_in_1_i           =  txn_out_2_i;
-    assign   rxp_in_1_i           =  txp_out_2_i; 
+    assign   rxn_in_i           =  txn_out_i;
+    assign   rxp_in_i           =  txp_out_i;  
     //------------------------------ Global Signals ----------------------------
     
     //Simulate the global reset that occurs after configuration at the beginning
@@ -202,26 +193,11 @@ wire            txp_out_2_i;
          .Q0_CLK1_GTREFCLK_PAD_P_IN           (tx_refclk_p_r),
         .DRP_CLK_IN_P                        (drp_clk_r),
         .DRP_CLK_IN_N                        (~ drp_clk_r),
-        .TRACK_DATA_OUT                      (track_data_1_i),
-        .RXN_IN                              (rxn_in_1_i),
-        .RXP_IN                              (rxp_in_1_i),
-        .TXN_OUT                             (txn_out_1_i),
-        .TXP_OUT                             (txp_out_1_i)
-    );
-
-
-    partner_gtwizard_0_exdes 
-    partner_gtwizard_0_exdes_i
-    (
-         .Q0_CLK1_GTREFCLK_PAD_N_IN           (tx_refclk_n_r), 
-         .Q0_CLK1_GTREFCLK_PAD_P_IN           (tx_refclk_p_r),
-        .DRP_CLK_IN_P                        (drp_clk_r),
-        .DRP_CLK_IN_N                        (~ drp_clk_r),
-        .TRACK_DATA_OUT                      (track_data_2_i),
-        .RXN_IN                              (rxn_in_2_i),
-        .RXP_IN                              (rxp_in_2_i),
-        .TXN_OUT                             (txn_out_2_i),
-        .TXP_OUT                             (txp_out_2_i)
+        .TRACK_DATA_OUT                      (track_data_i),
+        .RXN_IN                              (rxn_in_i),
+        .RXP_IN                              (rxp_in_i),
+        .TXN_OUT                             (txn_out_i),
+        .TXP_OUT                             (txp_out_i)
     );
 
 endmodule

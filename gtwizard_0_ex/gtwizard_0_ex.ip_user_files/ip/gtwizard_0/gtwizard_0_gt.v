@@ -345,7 +345,7 @@ wire            rxstartofseq_float_i;
            //For SATA Gen2 GTP- set RXCDR_CFG=83'h0_0000_47FE_2060_2448_1010
 
            //For SATA Gen1 GTP- set RXCDR_CFG=83'h0_0000_47FE_1060_2448_1010
-            .RXCDR_CFG                              (72'h03000023ff40080020),
+            .RXCDR_CFG                              (72'h0b000023ff10400020),
             .RXCDR_FR_RESET_ON_EIDLE                (1'b0),
             .RXCDR_HOLD_DURING_EIDLE                (1'b0),
             .RXCDR_PH_RESET_ON_EIDLE                (1'b0),
@@ -440,7 +440,7 @@ wire            rxstartofseq_float_i;
             .CPLL_INIT_CFG                          (24'h00001E),
             .CPLL_LOCK_CFG                          (16'h01E8),
             .CPLL_REFCLK_DIV                        (1),
-            .RXOUT_DIV                              (8),
+            .RXOUT_DIV                              (1),
             .TXOUT_DIV                              (1),
             .SATA_CPLL_CFG                          ("VCO_3000MHZ"),
 

@@ -79,10 +79,6 @@ input           dont_reset_on_data_error_in,
 output          gt0_tx_fsm_reset_done_out,
 output          gt0_rx_fsm_reset_done_out,
 input           gt0_data_valid_in,
-input           gt0_tx_mmcm_lock_in,
-output          gt0_tx_mmcm_reset_out,
-input           gt0_rx_mmcm_lock_in,
-output          gt0_rx_mmcm_reset_out,
 
     //_________________________________________________________________________
     //GT0  (X1Y0)
@@ -173,10 +169,6 @@ output          gt0_rx_mmcm_reset_out,
      .gt0_tx_fsm_reset_done_out(gt0_tx_fsm_reset_done_out),
      .gt0_rx_fsm_reset_done_out(gt0_rx_fsm_reset_done_out),
      .gt0_data_valid_in(gt0_data_valid_in),
-     .gt0_tx_mmcm_lock_in(gt0_tx_mmcm_lock_in),
-     .gt0_tx_mmcm_reset_out(gt0_tx_mmcm_reset_out),
-     .gt0_rx_mmcm_lock_in(gt0_rx_mmcm_lock_in),
-     .gt0_rx_mmcm_reset_out(gt0_rx_mmcm_reset_out),
 
     //_________________________________________________________________________
     //GT0  (X1Y0)

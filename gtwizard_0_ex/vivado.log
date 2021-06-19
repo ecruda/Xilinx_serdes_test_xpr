@@ -2,8 +2,8 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Thu Jun 17 14:43:31 2021
-# Process ID: 3396
+# Start of session at: Fri Jun 18 15:06:31 2021
+# Process ID: 23296
 # Current directory: c:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/Xilinx_serdes_test_xrp/gtwizard_0_ex
 # Command line: vivado.exe -notrace -source c:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/Xilinx_serdes_test_xrp/gtwizard_0_ex/gtwizard_0_ex.tcl
 # Log file: c:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/Xilinx_serdes_test_xrp/gtwizard_0_ex/vivado.log
@@ -17,7 +17,7 @@ Current project path is 'c:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
-create_project: Time (s): cpu = 00:00:40 ; elapsed = 00:00:20 . Memory (MB): peak = 1088.613 ; gain = 0.000
+create_project: Time (s): cpu = 00:00:29 ; elapsed = 00:00:15 . Memory (MB): peak = 1088.621 ; gain = 0.000
 INFO: [open_example_project] Importing original IP ...
 INFO: [open_example_project] Generating the example project IP ...
 INFO: [IP_Flow 19-1706] Not generating 'Instantiation Template' target for IP 'gtwizard_0'. Target already exists and is up to date.
@@ -33,7 +33,6 @@ INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'
 INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sim_1'
 INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
 INFO: [open_example_project] Sourcing example extension scripts ...
-update_compile_order: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1088.613 ; gain = 0.000
 INFO: [open_example_project] Rebuilding all the top level IPs ...
 WARNING: [SIM-utils-52] IP component XML file does not exist: 'c:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/Xilinx_serdes_test_xrp/gtwizard_0_ex/gtwizard_0_ex.srcs/sources_1/ip/gtwizard_0/gtwizard_0.xml'
 INFO: [exportsim-Tcl-35] Exporting simulation files for "XSIM" (Xilinx Vivado Simulator)...
@@ -60,8 +59,6 @@ INFO: [SIM-utils-43] Exported 'C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao
 INFO: [exportsim-Tcl-35] Exporting simulation files for "XCELIUM" (Cadence Xcelium Parallel Simulator)...
 INFO: [exportsim-Tcl-29] Script generated: 'C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/Xilinx_serdes_test_xrp/gtwizard_0_ex/gtwizard_0_ex.ip_user_files/sim_scripts/gtwizard_0/xcelium/gtwizard_0.sh'
 INFO: [SIM-utils-43] Exported 'C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/Xilinx_serdes_test_xrp/gtwizard_0_ex/gtwizard_0_ex.ip_user_files/sim_scripts/gtwizard_0/xcelium/v7ht.tcl'
-export_ip_user_files: Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 1088.613 ; gain = 0.000
+export_ip_user_files: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 1088.621 ; gain = 0.000
 INFO: [open_example_project] Open Example Project completed
 update_compile_order -fileset sources_1
-exit
-INFO: [Common 17-206] Exiting Vivado at Fri Jun 18 11:51:46 2021...

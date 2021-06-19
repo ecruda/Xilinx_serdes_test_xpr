@@ -84,10 +84,6 @@ input           dont_reset_on_data_error_in,
 output          gt0_tx_fsm_reset_done_out,
 output          gt0_rx_fsm_reset_done_out,
 input           gt0_data_valid_in,
-input           gt0_tx_mmcm_lock_in,
-output          gt0_tx_mmcm_reset_out,
-input           gt0_rx_mmcm_lock_in,
-output          gt0_rx_mmcm_reset_out,
 
     //_________________________________________________________________________
     //GT0  (X1Y0)
@@ -167,7 +163,7 @@ output          gt0_rx_mmcm_reset_out,
 
 
     //Typical CDRLOCK Time is 50,000UI, as per DS183
-    localparam RX_CDRLOCK_TIME      = (EXAMPLE_SIMULATION == 1) ? 1000 : 100000/1.28;
+    localparam RX_CDRLOCK_TIME      = (EXAMPLE_SIMULATION == 1) ? 1000 : 100000/10.24;
        
     localparam integer   WAIT_TIME_CDRLOCK    = RX_CDRLOCK_TIME / STABLE_CLOCK_PERIOD;      
 
@@ -371,9 +367,9 @@ gt0_txresetfsm_i
         .QPLLLOCK                       (gt0_qplllock_in),
         .CPLLLOCK                       (tied_to_vcc_i),
         .TXRESETDONE                    (gt0_txresetdone_i),
-        .MMCM_LOCK                      (gt0_tx_mmcm_lock_in),
+        .MMCM_LOCK                      (tied_to_vcc_i),
         .GTTXRESET                      (gt0_gttxreset_t),
-        .MMCM_RESET                     (gt0_tx_mmcm_reset_out),
+        .MMCM_RESET                     (),
         .QPLL_RESET                     (gt0_qpllreset_t),
         .CPLL_RESET                     (),
         .TX_FSM_RESET_DONE              (gt0_tx_fsm_reset_done_out),
@@ -411,13 +407,13 @@ gt0_rxresetfsm_i
         .QPLLLOCK                       (gt0_qplllock_in),
         .CPLLLOCK                       (tied_to_vcc_i),
         .RXRESETDONE                    (gt0_rxresetdone_i),
-        .MMCM_LOCK                      (gt0_rx_mmcm_lock_in),
+        .MMCM_LOCK                      (tied_to_vcc_i),
         .RECCLK_STABLE                  (gt0_recclk_stable_i),
         .RECCLK_MONITOR_RESTART         (tied_to_ground_i),
         .DATA_VALID                     (gt0_data_valid_in),
         .TXUSERRDY                      (gt0_txuserrdy_i),
         .GTRXRESET                      (gt0_gtrxreset_t),
-        .MMCM_RESET                     (gt0_rx_mmcm_reset_out),
+        .MMCM_RESET                     (),
         .QPLL_RESET                     (),
         .CPLL_RESET                     (),
         .RX_FSM_RESET_DONE              (gt0_rx_fsm_reset_done_out),
