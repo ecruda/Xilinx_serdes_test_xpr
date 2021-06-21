@@ -508,7 +508,7 @@ always @(posedge  gt0_txusrclk2_i or negedge gt0_txfsmresetdone_i)
     gt0_frame_gen
     (
         // User Interface
-        .TX_DATA_OUT                    ({gt0_txdata_float_i,gt0_txdata_i,gt0_txdata_float16_i}),
+//        .TX_DATA_OUT                    ({gt0_txdata_float_i,gt0_txdata_i,gt0_txdata_float16_i}),
         .TXCTRL_OUT                     (),
 
         // System Interface

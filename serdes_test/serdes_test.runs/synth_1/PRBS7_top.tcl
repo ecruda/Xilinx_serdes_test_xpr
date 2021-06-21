@@ -70,7 +70,6 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 1
 set_param ced.repoPaths C:/Users/L/AppData/Roaming/Xilinx/Vivado/2020.2/xhub/ced_store/Vivado_example_project
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7k325tffg900-2
