@@ -2,13 +2,16 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Fri Jun 18 15:06:31 2021
-# Process ID: 23296
-# Current directory: c:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/Xilinx_serdes_test_xrp/gtwizard_0_ex
-# Command line: vivado.exe -notrace -source c:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/Xilinx_serdes_test_xrp/gtwizard_0_ex/gtwizard_0_ex.tcl
-# Log file: c:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/Xilinx_serdes_test_xrp/gtwizard_0_ex/vivado.log
-# Journal file: c:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/Xilinx_serdes_test_xrp/gtwizard_0_ex\vivado.jou
+# Start of session at: Mon Jun 21 10:51:57 2021
+# Process ID: 21188
+# Current directory: c:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/gtwizard_0_ex
+# Command line: vivado.exe -notrace -source c:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/gtwizard_0_ex/gtwizard_0_ex.tcl
+# Log file: c:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/gtwizard_0_ex/vivado.log
+# Journal file: c:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/gtwizard_0_ex\vivado.jou
 #-----------------------------------------------------------
 start_gui
-source c:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/Xilinx_serdes_test_xrp/gtwizard_0_ex/gtwizard_0_ex.tcl -notrace
+source c:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/gtwizard_0_ex/gtwizard_0_ex.tcl -notrace
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
 update_compile_order -fileset sources_1

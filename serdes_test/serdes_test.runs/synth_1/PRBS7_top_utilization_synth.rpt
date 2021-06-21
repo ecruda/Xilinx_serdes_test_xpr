@@ -1,8 +1,8 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Sun Jun 20 22:50:13 2021
-| Host         : DESKTOP-8KUEMAV running 64-bit major release  (build 9200)
+| Date         : Mon Jun 21 11:25:25 2021
+| Host         : 21-10244 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file PRBS7_top_utilization_synth.rpt -pb PRBS7_top_utilization_synth.pb
 | Design       : PRBS7_top
 | Device       : 7k325tffg900-2
@@ -30,13 +30,13 @@ Table of Contents
 +----------------------------+------+-------+-----------+-------+
 |          Site Type         | Used | Fixed | Available | Util% |
 +----------------------------+------+-------+-----------+-------+
-| Slice LUTs*                |  437 |     0 |    203800 |  0.21 |
-|   LUT as Logic             |  405 |     0 |    203800 |  0.20 |
+| Slice LUTs*                |  439 |     0 |    203800 |  0.22 |
+|   LUT as Logic             |  407 |     0 |    203800 |  0.20 |
 |   LUT as Memory            |   32 |     0 |     64000 |  0.05 |
 |     LUT as Distributed RAM |    0 |     0 |           |       |
 |     LUT as Shift Register  |   32 |     0 |           |       |
-| Slice Registers            |  550 |     0 |    407600 |  0.13 |
-|   Register as Flip Flop    |  550 |     0 |    407600 |  0.13 |
+| Slice Registers            |  551 |     0 |    407600 |  0.14 |
+|   Register as Flip Flop    |  551 |     0 |    407600 |  0.14 |
 |   Register as Latch        |    0 |     0 |    407600 |  0.00 |
 | F7 Muxes                   |    0 |     0 |    101900 |  0.00 |
 | F8 Muxes                   |    0 |     0 |     50950 |  0.00 |
@@ -59,7 +59,7 @@ Table of Contents
 | 0     |          Yes |           - |          Set |
 | 5     |          Yes |           - |        Reset |
 | 13    |          Yes |         Set |            - |
-| 532   |          Yes |       Reset |            - |
+| 533   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -119,9 +119,9 @@ Table of Contents
 +------------+------+-------+-----------+-------+
 |  Site Type | Used | Fixed | Available | Util% |
 +------------+------+-------+-----------+-------+
-| BUFGCTRL   |    2 |     0 |        32 |  6.25 |
+| BUFGCTRL   |    5 |     0 |        32 | 15.63 |
 | BUFIO      |    0 |     0 |        40 |  0.00 |
-| MMCME2_ADV |    0 |     0 |        10 |  0.00 |
+| MMCME2_ADV |    1 |     0 |        10 | 10.00 |
 | PLLE2_ADV  |    0 |     0 |        10 |  0.00 |
 | BUFMRCE    |    0 |     0 |        20 |  0.00 |
 | BUFHCE     |    0 |     0 |       168 |  0.00 |
@@ -153,20 +153,21 @@ Table of Contents
 +---------------+------+---------------------+
 |    Ref Name   | Used | Functional Category |
 +---------------+------+---------------------+
-| FDRE          |  532 |        Flop & Latch |
-| LUT6          |  138 |                 LUT |
-| LUT5          |   92 |                 LUT |
+| FDRE          |  533 |        Flop & Latch |
+| LUT6          |  135 |                 LUT |
+| LUT5          |   95 |                 LUT |
 | LUT2          |   69 |                 LUT |
 | LUT1          |   64 |                 LUT |
-| LUT4          |   57 |                 LUT |
+| LUT4          |   59 |                 LUT |
 | CARRY4        |   48 |          CarryLogic |
 | SRL16E        |   32 |  Distributed Memory |
 | LUT3          |   29 |                 LUT |
 | FDSE          |   13 |        Flop & Latch |
 | IBUF          |    5 |                  IO |
 | FDCE          |    5 |        Flop & Latch |
+| BUFG          |    5 |               Clock |
 | OBUF          |    2 |                  IO |
-| BUFG          |    2 |               Clock |
+| MMCME2_ADV    |    1 |               Clock |
 | IBUFDS_GTE2   |    1 |                  IO |
 | IBUFDS        |    1 |                  IO |
 | GTXE2_COMMON  |    1 |                  IO |

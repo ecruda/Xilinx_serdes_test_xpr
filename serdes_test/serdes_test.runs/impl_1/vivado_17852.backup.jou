@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Jun 21 11:26:51 2021
+# Process ID: 17852
+# Current directory: C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/impl_1
+# Command line: vivado.exe -log PRBS7_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source PRBS7_top.tcl -notrace
+# Log file: C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/impl_1/PRBS7_top.vdi
+# Journal file: C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source PRBS7_top.tcl -notrace

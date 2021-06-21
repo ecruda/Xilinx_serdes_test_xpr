@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/Xilinx_serdes_test_xrp/serdes_test/serdes_test.srcs/constrs_1/new/ila_test.xdc rfile:../../../serdes_test.srcs/constrs_1/new/ila_test.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/constrs_1/new/ila_test.xdc rfile:../../../serdes_test.srcs/constrs_1/new/ila_test.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:1 export:INPUT save:INPUT read:READ} [current_design]
 connect_debug_port u_ila_0/clk [get_nets [list gtwizard_0_exdes_i/gtwizard_0_support_i/gt_usrclk_source/txoutclk_mmcm0_i/CLK0_OUT]]
 set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]

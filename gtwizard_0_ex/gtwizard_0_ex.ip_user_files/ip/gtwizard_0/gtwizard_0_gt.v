@@ -650,7 +650,7 @@ wire            rxstartofseq_float_i;
         .RXOUTCLK                       (rxoutclk_out),
         .RXOUTCLKFABRIC                 (rxoutclkfabric_out),
         .RXOUTCLKPCS                    (),
-        .RXOUTCLKSEL                    (3'b010),
+        .RXOUTCLKSEL                    (3'b011),
         //-------------------- Receive Ports - RX Gearbox Ports --------------------
         .RXDATAVALID                    (),
         .RXHEADER                       (),
