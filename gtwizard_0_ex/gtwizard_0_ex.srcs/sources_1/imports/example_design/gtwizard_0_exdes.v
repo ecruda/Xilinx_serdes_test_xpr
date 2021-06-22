@@ -82,15 +82,11 @@ module gtwizard_0_exdes #
     input wire  Q0_CLK1_GTREFCLK_PAD_P_IN,
     input wire  DRP_CLK_IN_P,
     input wire  DRP_CLK_IN_N,
-//    output wire TRACK_DATA_OUT,
+    output wire TRACK_DATA_OUT,
     input  wire         RXN_IN,
     input  wire         RXP_IN,
     output wire         TXN_OUT,
     output wire         TXP_OUT
-    /*output wire    [31:0]  gt0_rxdata_i,
-    input  wire    [31:0]  gt0_txdata_i,
-    output wire            gt0_txusrclk2_i, 
-    output wire            gt0_rxusrclk2_i*/
 );
 
     wire soft_reset_i;

@@ -2,176 +2,40 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Mon Jun 21 13:30:03 2021
-# Process ID: 8720
-# Current directory: c:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/gtwizard_0_ex
-# Command line: vivado.exe -notrace -source c:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/gtwizard_0_ex/gtwizard_0_ex.tcl
-# Log file: c:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/gtwizard_0_ex/vivado.log
-# Journal file: c:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/gtwizard_0_ex\vivado.jou
+# Start of session at: Tue Jun 22 13:29:48 2021
+# Process ID: 5836
+# Current directory: C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/gtwizard_0_ex
+# Command line: vivado.exe C:\Lily_Zhang\GBS20V1\Elijah\git_repo\Xilinx_serdes_test_xpr\gtwizard_0_ex\gtwizard_0_ex.xpr
+# Log file: C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/gtwizard_0_ex/vivado.log
+# Journal file: C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/gtwizard_0_ex\vivado.jou
 #-----------------------------------------------------------
 start_gui
-source c:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/gtwizard_0_ex/gtwizard_0_ex.tcl -notrace
+open_project C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/gtwizard_0_ex/gtwizard_0_ex.xpr
 update_compile_order -fileset sources_1
+reset_run synth_1
 launch_runs synth_1 -jobs 8
 wait_on_run synth_1
-reset_run synth_1
 launch_runs impl_1 -jobs 8
 wait_on_run impl_1
 launch_runs impl_1 -to_step write_bitstream -jobs 8
 wait_on_run impl_1
 open_run impl_1
-reset_run synth_1
-launch_runs synth_1 -jobs 8
-wait_on_run synth_1
-launch_runs impl_1 -jobs 8
-wait_on_run impl_1
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-wait_on_run impl_1
-reset_run synth_1
-launch_runs impl_1 -jobs 8
-wait_on_run impl_1
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-wait_on_run impl_1
-refresh_design
-set_property iostandard LVDS [get_ports [list DRP_CLK_IN_N]]
-set_property target_constrs_file c:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/gtwizard_0_ex/gtwizard_0_ex.srcs/constrs_1/imports/example_design/gtwizard_0_exdes.xdc [current_fileset -constrset]
+set_property iostandard LVDS [get_ports [list DRP_CLK_IN_P]]
+set_property iostandard LVCMOS15 [get_ports [list TRACK_DATA_OUT]]
+set_property IS_LOC_FIXED 1 [get_ports TRACK_DATA_OUT]
+set_property target_constrs_file C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/gtwizard_0_ex/gtwizard_0_ex.srcs/constrs_1/imports/example_design/gtwizard_0_exdes.xdc [current_fileset -constrset]
 save_constraints -force
 reset_run impl_1
 launch_runs impl_1 -to_step write_bitstream -jobs 8
 wait_on_run impl_1
-close_design
-open_hw_manager
-connect_hw_server -allow_non_jtag
-open_hw_target {localhost:3121/xilinx_tcf/Digilent/210203A0FD8AA}
-set_property PROGRAM.FILE {c:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/gtwizard_0_ex/gtwizard_0_ex.runs/impl_1/gtwizard_0_exdes.bit} [get_hw_devices xc7k325t_0]
-current_hw_device [get_hw_devices xc7k325t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k325t_0] 0]
-reset_run synth_1
-launch_runs synth_1 -jobs 8
-wait_on_run synth_1
-open_run synth_1 -name synth_1
-show_objects -name NET_ONLY [get_nets -hierarchical -top_net_of_hierarchical_group "*" ]
-show_objects -name NET_ONLY [get_nets -hierarchical -top_net_of_hierarchical_group "*" ]
-show_objects -name NET_ONLY [get_nets -hierarchical -top_net_of_hierarchical_group "*gt0_tx*" ]
-show_objects -name NET_ONLY [get_nets -hierarchical -top_net_of_hierarchical_group "*" ]
-create_debug_core u_ila_0 ila
-set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
-set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
-set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
-set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
-set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
-set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
-set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
-set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
-connect_debug_port u_ila_0/clk [get_nets [list gtwizard_0_support_i/gt_usrclk_source/rxoutclk_mmcm1_i/GT0_RXUSRCLK2_OUT ]]
-set_property port_width 32 [get_debug_ports u_ila_0/probe0]
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
-connect_debug_port u_ila_0/probe0 [get_nets [list {gt0_rxdata_i[0]} {gt0_rxdata_i[1]} {gt0_rxdata_i[2]} {gt0_rxdata_i[3]} {gt0_rxdata_i[4]} {gt0_rxdata_i[5]} {gt0_rxdata_i[6]} {gt0_rxdata_i[7]} {gt0_rxdata_i[8]} {gt0_rxdata_i[9]} {gt0_rxdata_i[10]} {gt0_rxdata_i[11]} {gt0_rxdata_i[12]} {gt0_rxdata_i[13]} {gt0_rxdata_i[14]} {gt0_rxdata_i[15]} {gt0_rxdata_i[16]} {gt0_rxdata_i[17]} {gt0_rxdata_i[18]} {gt0_rxdata_i[19]} {gt0_rxdata_i[20]} {gt0_rxdata_i[21]} {gt0_rxdata_i[22]} {gt0_rxdata_i[23]} {gt0_rxdata_i[24]} {gt0_rxdata_i[25]} {gt0_rxdata_i[26]} {gt0_rxdata_i[27]} {gt0_rxdata_i[28]} {gt0_rxdata_i[29]} {gt0_rxdata_i[30]} {gt0_rxdata_i[31]} ]]
-create_debug_port u_ila_0 probe
-set_property port_width 1 [get_debug_ports u_ila_0/probe1]
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
-connect_debug_port u_ila_0/probe1 [get_nets [list rxresetdone_vio_i ]]
-create_debug_port u_ila_0 probe
-set_property port_width 1 [get_debug_ports u_ila_0/probe2]
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
-connect_debug_port u_ila_0/probe2 [get_nets [list soft_reset_vio_i ]]
-save_constraints
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-wait_on_run impl_1
-set_property PROBES.FILE {c:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/gtwizard_0_ex/gtwizard_0_ex.runs/impl_1/gtwizard_0_exdes.ltx} [get_hw_devices xc7k325t_0]
-set_property FULL_PROBES.FILE {c:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/gtwizard_0_ex/gtwizard_0_ex.runs/impl_1/gtwizard_0_exdes.ltx} [get_hw_devices xc7k325t_0]
-set_property PROGRAM.FILE {c:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/gtwizard_0_ex/gtwizard_0_ex.runs/impl_1/gtwizard_0_exdes.bit} [get_hw_devices xc7k325t_0]
-program_hw_devices [get_hw_devices xc7k325t_0]
-refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
-set_property PROBES.FILE {c:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/gtwizard_0_ex/gtwizard_0_ex.runs/impl_1/gtwizard_0_exdes.ltx} [get_hw_devices xc7k325t_0]
-set_property FULL_PROBES.FILE {c:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/gtwizard_0_ex/gtwizard_0_ex.runs/impl_1/gtwizard_0_exdes.ltx} [get_hw_devices xc7k325t_0]
-set_property PROGRAM.FILE {c:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/gtwizard_0_ex/gtwizard_0_ex.runs/impl_1/gtwizard_0_exdes.bit} [get_hw_devices xc7k325t_0]
-program_hw_devices [get_hw_devices xc7k325t_0]
-refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
-set_property PROBES.FILE {c:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/gtwizard_0_ex/gtwizard_0_ex.runs/impl_1/gtwizard_0_exdes.ltx} [get_hw_devices xc7k325t_0]
-set_property FULL_PROBES.FILE {c:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/gtwizard_0_ex/gtwizard_0_ex.runs/impl_1/gtwizard_0_exdes.ltx} [get_hw_devices xc7k325t_0]
-set_property PROGRAM.FILE {c:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/gtwizard_0_ex/gtwizard_0_ex.runs/impl_1/gtwizard_0_exdes.bit} [get_hw_devices xc7k325t_0]
-program_hw_devices [get_hw_devices xc7k325t_0]
-refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
-close_hw_manager
 open_hw_manager
 connect_hw_server -allow_non_jtag
 open_hw_target
-set_property PROGRAM.FILE {c:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/gtwizard_0_ex/gtwizard_0_ex.runs/impl_1/gtwizard_0_exdes.bit} [get_hw_devices xc7k325t_0]
-set_property PROBES.FILE {c:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/gtwizard_0_ex/gtwizard_0_ex.runs/impl_1/gtwizard_0_exdes.ltx} [get_hw_devices xc7k325t_0]
-set_property FULL_PROBES.FILE {c:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/gtwizard_0_ex/gtwizard_0_ex.runs/impl_1/gtwizard_0_exdes.ltx} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/gtwizard_0_ex/gtwizard_0_ex.runs/impl_1/gtwizard_0_exdes.bit} [get_hw_devices xc7k325t_0]
 current_hw_device [get_hw_devices xc7k325t_0]
-refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
-set_property PROBES.FILE {c:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/gtwizard_0_ex/gtwizard_0_ex.runs/impl_1/gtwizard_0_exdes.ltx} [get_hw_devices xc7k325t_0]
-set_property FULL_PROBES.FILE {c:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/gtwizard_0_ex/gtwizard_0_ex.runs/impl_1/gtwizard_0_exdes.ltx} [get_hw_devices xc7k325t_0]
-set_property PROGRAM.FILE {c:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/gtwizard_0_ex/gtwizard_0_ex.runs/impl_1/gtwizard_0_exdes.bit} [get_hw_devices xc7k325t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k325t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/gtwizard_0_ex/gtwizard_0_ex.runs/impl_1/gtwizard_0_exdes.bit} [get_hw_devices xc7k325t_0]
 program_hw_devices [get_hw_devices xc7k325t_0]
 refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
-refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
-open_run impl_1
-current_design synth_1
-delete_debug_core [get_debug_cores {u_ila_0 }]
-create_debug_core u_ila_0 ila
-set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
-set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
-set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
-set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
-set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
-set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
-set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
-set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
-connect_debug_port u_ila_0/clk [get_nets [list gtwizard_0_support_i/gt_usrclk_source/rxoutclk_mmcm1_i/GT0_RXUSRCLK2_OUT ]]
-set_property port_width 32 [get_debug_ports u_ila_0/probe0]
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
-connect_debug_port u_ila_0/probe0 [get_nets [list {gt0_rxdata_i[0]} {gt0_rxdata_i[1]} {gt0_rxdata_i[2]} {gt0_rxdata_i[3]} {gt0_rxdata_i[4]} {gt0_rxdata_i[5]} {gt0_rxdata_i[6]} {gt0_rxdata_i[7]} {gt0_rxdata_i[8]} {gt0_rxdata_i[9]} {gt0_rxdata_i[10]} {gt0_rxdata_i[11]} {gt0_rxdata_i[12]} {gt0_rxdata_i[13]} {gt0_rxdata_i[14]} {gt0_rxdata_i[15]} {gt0_rxdata_i[16]} {gt0_rxdata_i[17]} {gt0_rxdata_i[18]} {gt0_rxdata_i[19]} {gt0_rxdata_i[20]} {gt0_rxdata_i[21]} {gt0_rxdata_i[22]} {gt0_rxdata_i[23]} {gt0_rxdata_i[24]} {gt0_rxdata_i[25]} {gt0_rxdata_i[26]} {gt0_rxdata_i[27]} {gt0_rxdata_i[28]} {gt0_rxdata_i[29]} {gt0_rxdata_i[30]} {gt0_rxdata_i[31]} ]]
-create_debug_port u_ila_0 probe
-set_property port_width 1 [get_debug_ports u_ila_0/probe1]
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
-connect_debug_port u_ila_0/probe1 [get_nets [list gtwizard_0_support_i/gt_usrclk_source/rxoutclk_mmcm1_i/GT0_RXUSRCLK2_OUT ]]
-create_debug_port u_ila_0 probe
-set_property port_width 1 [get_debug_ports u_ila_0/probe2]
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
-connect_debug_port u_ila_0/probe2 [get_nets [list rxresetdone_vio_i ]]
-create_debug_port u_ila_0 probe
-set_property port_width 1 [get_debug_ports u_ila_0/probe3]
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
-connect_debug_port u_ila_0/probe3 [get_nets [list soft_reset_vio_i ]]
-set_property mark_debug true [get_nets -hier [list {gt0_rxdata_i[*]}]]
-save_constraints
-reset_run impl_1
-launch_runs impl_1 -jobs 8
-wait_on_run impl_1
-current_design impl_1
-close_design
-delete_debug_core [get_debug_cores {u_ila_0 }]
-create_debug_core u_ila_0 ila
-set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
-set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
-set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
-set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
-set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
-set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
-set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
-set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
-connect_debug_port u_ila_0/clk [get_nets [list gtwizard_0_support_i/gt_usrclk_source/rxoutclk_mmcm1_i/GT0_RXUSRCLK2_OUT ]]
-set_property port_width 32 [get_debug_ports u_ila_0/probe0]
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
-connect_debug_port u_ila_0/probe0 [get_nets [list {gt0_rxdata_i[0]} {gt0_rxdata_i[1]} {gt0_rxdata_i[2]} {gt0_rxdata_i[3]} {gt0_rxdata_i[4]} {gt0_rxdata_i[5]} {gt0_rxdata_i[6]} {gt0_rxdata_i[7]} {gt0_rxdata_i[8]} {gt0_rxdata_i[9]} {gt0_rxdata_i[10]} {gt0_rxdata_i[11]} {gt0_rxdata_i[12]} {gt0_rxdata_i[13]} {gt0_rxdata_i[14]} {gt0_rxdata_i[15]} {gt0_rxdata_i[16]} {gt0_rxdata_i[17]} {gt0_rxdata_i[18]} {gt0_rxdata_i[19]} {gt0_rxdata_i[20]} {gt0_rxdata_i[21]} {gt0_rxdata_i[22]} {gt0_rxdata_i[23]} {gt0_rxdata_i[24]} {gt0_rxdata_i[25]} {gt0_rxdata_i[26]} {gt0_rxdata_i[27]} {gt0_rxdata_i[28]} {gt0_rxdata_i[29]} {gt0_rxdata_i[30]} {gt0_rxdata_i[31]} ]]
-create_debug_port u_ila_0 probe
-set_property port_width 1 [get_debug_ports u_ila_0/probe1]
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
-connect_debug_port u_ila_0/probe1 [get_nets [list gtwizard_0_support_i/gt_usrclk_source/rxoutclk_mmcm1_i/GT0_RXUSRCLK2_OUT ]]
-create_debug_port u_ila_0 probe
-set_property port_width 1 [get_debug_ports u_ila_0/probe2]
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
-connect_debug_port u_ila_0/probe2 [get_nets [list rxresetdone_vio_i ]]
-create_debug_port u_ila_0 probe
-set_property port_width 1 [get_debug_ports u_ila_0/probe3]
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
-connect_debug_port u_ila_0/probe3 [get_nets [list soft_reset_vio_i ]]
-save_constraints
-save_constraints
-save_constraints
-save_constraints
-save_constraints
-refresh_design

@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Tue Jun 22 11:35:25 2021
+| Date         : Tue Jun 22 13:31:03 2021
 | Host         : 21-10244 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file gtwizard_0_exdes_utilization_synth.rpt -pb gtwizard_0_exdes_utilization_synth.pb
 | Design       : gtwizard_0_exdes
@@ -30,13 +30,13 @@ Table of Contents
 +----------------------------+------+-------+-----------+-------+
 |          Site Type         | Used | Fixed | Available | Util% |
 +----------------------------+------+-------+-----------+-------+
-| Slice LUTs*                |  427 |     0 |    203800 |  0.21 |
-|   LUT as Logic             |  395 |     0 |    203800 |  0.19 |
+| Slice LUTs*                |  433 |     0 |    203800 |  0.21 |
+|   LUT as Logic             |  401 |     0 |    203800 |  0.20 |
 |   LUT as Memory            |   32 |     0 |     64000 |  0.05 |
 |     LUT as Distributed RAM |    0 |     0 |           |       |
 |     LUT as Shift Register  |   32 |     0 |           |       |
-| Slice Registers            |  544 |     0 |    407600 |  0.13 |
-|   Register as Flip Flop    |  544 |     0 |    407600 |  0.13 |
+| Slice Registers            |  573 |     0 |    407600 |  0.14 |
+|   Register as Flip Flop    |  573 |     0 |    407600 |  0.14 |
 |   Register as Latch        |    0 |     0 |    407600 |  0.00 |
 | F7 Muxes                   |    0 |     0 |    101900 |  0.00 |
 | F8 Muxes                   |    0 |     0 |     50950 |  0.00 |
@@ -59,7 +59,7 @@ Table of Contents
 | 0     |          Yes |           - |          Set |
 | 5     |          Yes |           - |        Reset |
 | 9     |          Yes |         Set |            - |
-| 530   |          Yes |       Reset |            - |
+| 559   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -92,7 +92,7 @@ Table of Contents
 +-----------------------------+------+-------+-----------+-------+
 |          Site Type          | Used | Fixed | Available | Util% |
 +-----------------------------+------+-------+-----------+-------+
-| Bonded IOB                  |    2 |     0 |       500 |  0.40 |
+| Bonded IOB                  |    3 |     0 |       500 |  0.60 |
 | Bonded IPADs                |    4 |     0 |        50 |  8.00 |
 | Bonded OPADs                |    2 |     0 |        32 |  6.25 |
 | PHY_CONTROL                 |    0 |     0 |        10 |  0.00 |
@@ -153,20 +153,20 @@ Table of Contents
 +---------------+------+---------------------+
 |    Ref Name   | Used | Functional Category |
 +---------------+------+---------------------+
-| FDRE          |  530 |        Flop & Latch |
+| FDRE          |  559 |        Flop & Latch |
 | LUT6          |  134 |                 LUT |
 | LUT5          |   94 |                 LUT |
-| LUT2          |   68 |                 LUT |
-| LUT1          |   60 |                 LUT |
-| LUT4          |   56 |                 LUT |
+| LUT2          |   69 |                 LUT |
+| LUT4          |   64 |                 LUT |
+| LUT1          |   61 |                 LUT |
 | CARRY4        |   48 |          CarryLogic |
 | SRL16E        |   32 |  Distributed Memory |
-| LUT3          |   27 |                 LUT |
+| LUT3          |   29 |                 LUT |
 | FDSE          |    9 |        Flop & Latch |
 | FDCE          |    5 |        Flop & Latch |
 | BUFG          |    5 |               Clock |
 | IBUF          |    4 |                  IO |
-| OBUF          |    2 |                  IO |
+| OBUF          |    3 |                  IO |
 | MMCME2_ADV    |    1 |               Clock |
 | IBUFDS_GTE2   |    1 |                  IO |
 | IBUFDS        |    1 |                  IO |

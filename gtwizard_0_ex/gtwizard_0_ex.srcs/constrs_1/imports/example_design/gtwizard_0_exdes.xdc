@@ -1,5 +1,3 @@
-set_false_path -to [get_pins {gt0_txfsmresetdone_r2_reg/CLR gt0_txfsmresetdone_r_reg/CLR}]
-set_false_path -to [get_pins {gt0_txfsmresetdone_r2_reg/D gt0_txfsmresetdone_r_reg/D}]
 ################################################################################
 ##   ____  ____
 ##  /   /\/   /
@@ -80,6 +78,8 @@ create_clock -period 6.250 -name drpclk_in_i [get_ports DRP_CLK_IN_P]
 # User Clock Constraints
 
 
+set_false_path -to [get_pins -filter REF_PIN_NAME=~*CLR -of_objects [get_cells -hierarchical -filter {NAME =~ *_txfsmresetdone_r*}]]
+set_false_path -to [get_pins -filter REF_PIN_NAME=~*D -of_objects [get_cells -hierarchical -filter {NAME =~ *_txfsmresetdone_r*}]]
 ################################# RefClk Location constraints #####################
 
 set_property PACKAGE_PIN U8 [get_ports Q0_CLK1_GTREFCLK_PAD_P_IN]
@@ -106,46 +106,6 @@ set_property LOC GTXE2_CHANNEL_X0Y0 [get_cells gtwizard_0_support_i/gtwizard_0_i
 ##---------- Set False Path from one clock to other ----------
 
 
-set_property IOSTANDARD LVDS [get_ports DRP_CLK_IN_N]
-
-set_property mark_debug true [get_nets -hier {gt0_rxdata_i[*]}]
-connect_debug_port u_ila_0/clk [get_nets [list gtwizard_0_support_i/gt_usrclk_source/rxoutclk_mmcm1_i/GT0_RXUSRCLK2_OUT]]
-connect_debug_port u_ila_0/probe1 [get_nets [list gtwizard_0_support_i/gt_usrclk_source/rxoutclk_mmcm1_i/GT0_RXUSRCLK2_OUT]]
-
-
-create_debug_core u_ila_0 ila
-set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
-set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
-set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
-set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
-set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
-set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
-set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
-set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
-set_property port_width 1 [get_debug_ports u_ila_0/clk]
-connect_debug_port u_ila_0/clk [get_nets [list gtwizard_0_support_i/gt_usrclk_source/rxoutclk_mmcm1_i/gt0_rxusrclk2_out]]
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
-set_property port_width 32 [get_debug_ports u_ila_0/probe0]
-connect_debug_port u_ila_0/probe0 [get_nets [list {gt0_rxdata_i[0]} {gt0_rxdata_i[1]} {gt0_rxdata_i[2]} {gt0_rxdata_i[3]} {gt0_rxdata_i[4]} {gt0_rxdata_i[5]} {gt0_rxdata_i[6]} {gt0_rxdata_i[7]} {gt0_rxdata_i[8]} {gt0_rxdata_i[9]} {gt0_rxdata_i[10]} {gt0_rxdata_i[11]} {gt0_rxdata_i[12]} {gt0_rxdata_i[13]} {gt0_rxdata_i[14]} {gt0_rxdata_i[15]} {gt0_rxdata_i[16]} {gt0_rxdata_i[17]} {gt0_rxdata_i[18]} {gt0_rxdata_i[19]} {gt0_rxdata_i[20]} {gt0_rxdata_i[21]} {gt0_rxdata_i[22]} {gt0_rxdata_i[23]} {gt0_rxdata_i[24]} {gt0_rxdata_i[25]} {gt0_rxdata_i[26]} {gt0_rxdata_i[27]} {gt0_rxdata_i[28]} {gt0_rxdata_i[29]} {gt0_rxdata_i[30]} {gt0_rxdata_i[31]}]]
-create_debug_core u_ila_1 ila
-set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_1]
-set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_1]
-set_property C_ADV_TRIGGER false [get_debug_cores u_ila_1]
-set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_1]
-set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_1]
-set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_1]
-set_property C_TRIGIN_EN false [get_debug_cores u_ila_1]
-set_property C_TRIGOUT_EN false [get_debug_cores u_ila_1]
-set_property port_width 1 [get_debug_ports u_ila_1/clk]
-connect_debug_port u_ila_1/clk [get_nets [list gtwizard_0_support_i/gt_usrclk_source/Q0_CLK1_GTREFCLK_OUT]]
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe0]
-set_property port_width 1 [get_debug_ports u_ila_1/probe0]
-connect_debug_port u_ila_1/probe0 [get_nets [list rxresetdone_vio_i]]
-create_debug_port u_ila_1 probe
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe1]
-set_property port_width 1 [get_debug_ports u_ila_1/probe1]
-connect_debug_port u_ila_1/probe1 [get_nets [list soft_reset_vio_i]]
-set_property C_CLK_INPUT_FREQ_HZ 300000000 [get_debug_cores dbg_hub]
-set_property C_ENABLE_CLK_DIVIDER false [get_debug_cores dbg_hub]
-set_property C_USER_SCAN_CHAIN 1 [get_debug_cores dbg_hub]
-connect_debug_port dbg_hub/clk [get_nets u_ila_1_Q0_CLK1_GTREFCLK_OUT]
+set_property IOSTANDARD LVDS [get_ports DRP_CLK_IN_P]
+set_property IOSTANDARD LVCMOS15 [get_ports TRACK_DATA_OUT]
+set_property PACKAGE_PIN AB7 [get_ports TRACK_DATA_OUT]

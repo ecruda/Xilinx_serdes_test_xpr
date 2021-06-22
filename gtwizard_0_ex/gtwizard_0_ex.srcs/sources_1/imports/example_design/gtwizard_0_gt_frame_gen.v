@@ -122,10 +122,10 @@ reg     [79:0]  tx_data_ram_r;
         else read_counter_i   <=  `DLY    read_counter_i + 9'd1;
 
     // Assign TX_DATA_OUT to BRAM output
-    /*always @(posedge USER_CLK)
+    always @(posedge USER_CLK)
         if(system_reset_r2) TX_DATA_OUT <= `DLY 80'h0000000000; 
         else             TX_DATA_OUT <= `DLY {tx_data_bram_i,tx_data_ram_r[15:0]};   
-*/
+
     // Assign TXCTRL_OUT to BRAM output
     always @(posedge USER_CLK)
         if(system_reset_r2) TXCTRL_OUT <= `DLY 8'h0; 

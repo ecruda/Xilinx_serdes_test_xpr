@@ -107,7 +107,6 @@ input           gt0_data_valid_in,
     output          gt0_eyescandataerror_out,
     input           gt0_eyescantrigger_in,
     //---------------- Receive Ports - FPGA RX interface Ports -----------------
-    (* mark_debug = "true" *)
     output  [31:0]  gt0_rxdata_out,
     //------------------------- Receive Ports - RX AFE -------------------------
     input           gt0_gtxrxp_in,
