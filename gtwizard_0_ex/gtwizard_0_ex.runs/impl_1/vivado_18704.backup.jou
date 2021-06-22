@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Jun 22 11:22:31 2021
+# Process ID: 18704
+# Current directory: C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/gtwizard_0_ex/gtwizard_0_ex.runs/impl_1
+# Command line: vivado.exe -log gtwizard_0_exdes.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source gtwizard_0_exdes.tcl -notrace
+# Log file: C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/gtwizard_0_ex/gtwizard_0_ex.runs/impl_1/gtwizard_0_exdes.vdi
+# Journal file: C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/gtwizard_0_ex/gtwizard_0_ex.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source gtwizard_0_exdes.tcl -notrace

@@ -73,7 +73,7 @@ module gtwizard_0_GT_FRAME_GEN #
 )
 (
    // User Interface
-//output reg  [79:0]  TX_DATA_OUT,
+output reg  [79:0]  TX_DATA_OUT,
 output reg  [7:0]   TXCTRL_OUT,
 
       // System Interface

@@ -82,15 +82,15 @@ module gtwizard_0_exdes #
     input wire  Q0_CLK1_GTREFCLK_PAD_P_IN,
     input wire  DRP_CLK_IN_P,
     input wire  DRP_CLK_IN_N,
-    output wire TRACK_DATA_OUT,
+//    output wire TRACK_DATA_OUT,
     input  wire         RXN_IN,
     input  wire         RXP_IN,
     output wire         TXN_OUT,
-    output wire         TXP_OUT,
-    output wire    [31:0]  gt0_rxdata_i,
+    output wire         TXP_OUT
+    /*output wire    [31:0]  gt0_rxdata_i,
     input  wire    [31:0]  gt0_txdata_i,
     output wire            gt0_txusrclk2_i, 
-    output wire            gt0_rxusrclk2_i
+    output wire            gt0_rxusrclk2_i*/
 );
 
     wire soft_reset_i;
@@ -123,11 +123,6 @@ module gtwizard_0_exdes #
     //________________________________________________________________________
     //________________________________________________________________________
     //GT0  (X1Y0)
-    //------------------------ Channel - Clocking Ports ------------------------
-    wire            gt0_gtnorthrefclk0_i;
-    wire            gt0_gtnorthrefclk1_i;
-    wire            gt0_gtsouthrefclk0_i;
-    wire            gt0_gtsouthrefclk1_i;
     //-------------------------- Channel - DRP Ports  --------------------------
     wire    [8:0]   gt0_drpaddr_i;
     wire    [15:0]  gt0_drpdi_i;
@@ -144,7 +139,7 @@ module gtwizard_0_exdes #
     wire            gt0_eyescandataerror_i;
     wire            gt0_eyescantrigger_i;
     //---------------- Receive Ports - FPGA RX interface Ports -----------------
-//    wire    [31:0]  gt0_rxdata_i;
+    wire    [31:0]  gt0_rxdata_i;
     //------------------------- Receive Ports - RX AFE -------------------------
     wire            gt0_gtxrxp_i;
     //---------------------- Receive Ports - RX AFE Ports ----------------------
@@ -165,7 +160,7 @@ module gtwizard_0_exdes #
     wire            gt0_gttxreset_i;
     wire            gt0_txuserrdy_i;
     //---------------- Transmit Ports - TX Data Path interface -----------------
-//    wire    [31:0]  gt0_txdata_i;
+    wire    [31:0]  gt0_txdata_i;
     //-------------- Transmit Ports - TX Driver and OOB signaling --------------
     wire            gt0_gtxtxn_i;
     wire            gt0_gtxtxp_i;
@@ -178,11 +173,7 @@ module gtwizard_0_exdes #
 
     //____________________________COMMON PORTS________________________________
     //-------------------- Common Block  - Ref Clock Ports ---------------------
-    wire            gt0_gtnorthrefclk0_common_i;
-    wire            gt0_gtnorthrefclk1_common_i;
     wire            gt0_gtrefclk1_common_i;
-    wire            gt0_gtsouthrefclk0_common_i;
-    wire            gt0_gtsouthrefclk1_common_i;
     //----------------------- Common Block - QPLL Ports ------------------------
     wire            gt0_qplllock_i;
     wire            gt0_qpllrefclklost_i;
@@ -205,9 +196,9 @@ module gtwizard_0_exdes #
 
      //--------------------------- User Clocks ---------------------------------
      wire            gt0_txusrclk_i; 
-//     wire            gt0_txusrclk2_i; 
+     wire            gt0_txusrclk2_i; 
      wire            gt0_rxusrclk_i; 
-//     wire            gt0_rxusrclk2_i; 
+     wire            gt0_rxusrclk2_i; 
     wire            gt0_rxmmcm_lock_i; 
     wire            gt0_rxmmcm_reset_i;
  
@@ -297,7 +288,6 @@ module gtwizard_0_exdes #
     wire            qpllreset_i;
     
 
-    wire  [1:0]     q0_clk1_refclk_i_i;
 
   wire [(80 -32) -1:0] zero_vector_rx_80 ;
   wire [(8 -4) -1:0] zero_vector_rx_8 ;
@@ -322,10 +312,6 @@ module gtwizard_0_exdes #
 
     
 assign  q0_clk1_refclk_i                     =  1'b0;
-    assign  gt0_gtnorthrefclk0_i                 =  tied_to_ground_i;
-    assign  gt0_gtnorthrefclk1_i                 =  tied_to_ground_i;
-    assign  gt0_gtsouthrefclk0_i                 =  tied_to_ground_i;
-    assign  gt0_gtsouthrefclk1_i                 =  tied_to_ground_i;
 
     //***********************************************************************//
     //                                                                       //
@@ -368,11 +354,6 @@ assign  q0_clk1_refclk_i                     =  1'b0;
         //_____________________________________________________________________
         //GT0  (X1Y0)
 
-        //------------------------ Channel - Clocking Ports ------------------------
-        .gt0_gtnorthrefclk0_in          (gt0_gtnorthrefclk0_i),
-        .gt0_gtnorthrefclk1_in          (gt0_gtnorthrefclk1_i),
-        .gt0_gtsouthrefclk0_in          (gt0_gtsouthrefclk0_i),
-        .gt0_gtsouthrefclk1_in          (gt0_gtsouthrefclk1_i),
         //-------------------------- Channel - DRP Ports  --------------------------
         .gt0_drpaddr_in                 (gt0_drpaddr_i),
         .gt0_drpdi_in                   (gt0_drpdi_i),
@@ -511,7 +492,7 @@ always @(posedge  gt0_txusrclk2_i or negedge gt0_txfsmresetdone_i)
     gt0_frame_gen
     (
         // User Interface
-//        .TX_DATA_OUT                    ({gt0_txdata_float_i,gt0_txdata_i,gt0_txdata_float16_i}),
+        .TX_DATA_OUT                    ({gt0_txdata_float_i,gt0_txdata_i,gt0_txdata_float16_i}),
         .TXCTRL_OUT                     (),
 
         // System Interface

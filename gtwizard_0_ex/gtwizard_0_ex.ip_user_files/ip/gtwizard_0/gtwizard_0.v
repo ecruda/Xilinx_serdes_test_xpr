@@ -85,11 +85,6 @@ output          gt0_rx_mmcm_reset_out,
     //_________________________________________________________________________
     //GT0  (X1Y0)
     //____________________________CHANNEL PORTS________________________________
-    //------------------------ Channel - Clocking Ports ------------------------
-    input           gt0_gtnorthrefclk0_in,
-    input           gt0_gtnorthrefclk1_in,
-    input           gt0_gtsouthrefclk0_in,
-    input           gt0_gtsouthrefclk1_in,
     //-------------------------- Channel - DRP Ports  --------------------------
     input   [8:0]   gt0_drpaddr_in,
     input           gt0_drpclk_in,
@@ -178,11 +173,6 @@ output          gt0_rx_mmcm_reset_out,
     //_________________________________________________________________________
     //GT0  (X1Y0)
     //____________________________CHANNEL PORTS________________________________
-    //------------------------ Channel - Clocking Ports ------------------------
-        .gt0_gtnorthrefclk0_in          (gt0_gtnorthrefclk0_in), // input wire gt0_gtnorthrefclk0_in
-        .gt0_gtnorthrefclk1_in          (gt0_gtnorthrefclk1_in), // input wire gt0_gtnorthrefclk1_in
-        .gt0_gtsouthrefclk0_in          (gt0_gtsouthrefclk0_in), // input wire gt0_gtsouthrefclk0_in
-        .gt0_gtsouthrefclk1_in          (gt0_gtsouthrefclk1_in), // input wire gt0_gtsouthrefclk1_in
     //-------------------------- Channel - DRP Ports  --------------------------
         .gt0_drpaddr_in                 (gt0_drpaddr_in), // input wire [8:0] gt0_drpaddr_in
         .gt0_drpclk_in                  (gt0_drpclk_in), // input wire gt0_drpclk_in

@@ -3,10 +3,10 @@
 <!--                                                         -->
 <!-- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="54" Path="c:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/gtwizard_0_ex/gtwizard_0_ex.xpr">
+<Project Version="7" Minor="54" Path="C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/gtwizard_0_ex/gtwizard_0_ex.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="fbb7599ad8bd48f79143cb04f240bee4"/>
+    <Option Name="Id" Val="fabf1976118e46a2a0b55e99dcf9e816"/>
     <Option Name="Part" Val="xc7k325tffg900-2"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
@@ -77,7 +77,7 @@
       <File Path="$PSRCDIR/sources_1/ip/gtwizard_0.xcix">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../serdes_test/serdes_test.srcs/sources_1/ip/gtwizard_0.xcix"/>
-          <Attr Name="ImportTime" Val="1624290715"/>
+          <Attr Name="ImportTime" Val="1624300202"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -86,7 +86,7 @@
       <File Path="$PSRCDIR/sources_1/ip/gtwizard_0/gtwizard_0.xci">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../serdes_test/serdes_test.srcs/sources_1/ip/gtwizard_0/gtwizard_0.xci"/>
-          <Attr Name="ImportTime" Val="1624290682"/>
+          <Attr Name="ImportTime" Val="1624300100"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -95,7 +95,7 @@
       <File Path="$PSRCDIR/sources_1/imports/example_design/support/gtwizard_0_clock_module.v">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../serdes_test/serdes_test.srcs/sources_1/ip/gtwizard_0/gtwizard_0/example_design/support/gtwizard_0_clock_module.v"/>
-          <Attr Name="ImportTime" Val="1624290733"/>
+          <Attr Name="ImportTime" Val="1624300220"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -104,7 +104,7 @@
       <File Path="$PSRCDIR/sources_1/imports/example_design/support/gtwizard_0_common.v">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../serdes_test/serdes_test.srcs/sources_1/ip/gtwizard_0/gtwizard_0/example_design/support/gtwizard_0_common.v"/>
-          <Attr Name="ImportTime" Val="1624290733"/>
+          <Attr Name="ImportTime" Val="1624300220"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -113,7 +113,7 @@
       <File Path="$PSRCDIR/sources_1/imports/example_design/support/gtwizard_0_common_reset.v">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../serdes_test/serdes_test.srcs/sources_1/ip/gtwizard_0/gtwizard_0/example_design/support/gtwizard_0_common_reset.v"/>
-          <Attr Name="ImportTime" Val="1624290733"/>
+          <Attr Name="ImportTime" Val="1624300220"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -122,7 +122,7 @@
       <File Path="$PSRCDIR/sources_1/imports/example_design/gtwizard_0_gt_frame_check.v">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../serdes_test/serdes_test.srcs/sources_1/ip/gtwizard_0/gtwizard_0/example_design/gtwizard_0_gt_frame_check.v"/>
-          <Attr Name="ImportTime" Val="1624290733"/>
+          <Attr Name="ImportTime" Val="1624300220"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -131,7 +131,7 @@
       <File Path="$PSRCDIR/sources_1/imports/example_design/gtwizard_0_gt_frame_gen.v">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../serdes_test/serdes_test.srcs/sources_1/ip/gtwizard_0/gtwizard_0/example_design/gtwizard_0_gt_frame_gen.v"/>
-          <Attr Name="ImportTime" Val="1624290733"/>
+          <Attr Name="ImportTime" Val="1624300220"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -140,7 +140,7 @@
       <File Path="$PSRCDIR/sources_1/imports/example_design/support/gtwizard_0_gt_usrclk_source.v">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../serdes_test/serdes_test.srcs/sources_1/ip/gtwizard_0/gtwizard_0/example_design/support/gtwizard_0_gt_usrclk_source.v"/>
-          <Attr Name="ImportTime" Val="1624290733"/>
+          <Attr Name="ImportTime" Val="1624300220"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -149,7 +149,7 @@
       <File Path="$PSRCDIR/sources_1/imports/example_design/support/gtwizard_0_support.v">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../serdes_test/serdes_test.srcs/sources_1/ip/gtwizard_0/gtwizard_0/example_design/support/gtwizard_0_support.v"/>
-          <Attr Name="ImportTime" Val="1624290733"/>
+          <Attr Name="ImportTime" Val="1624300220"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -157,9 +157,8 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/example_design/gtwizard_0_exdes.v">
         <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../serdes_test/serdes_test.srcs/sources_1/ip/gtwizard_0/gtwizard_0/example_design/gtwizard_0_exdes.v"/>
-          <Attr Name="ImportTime" Val="1624290733"/>
+          <Attr Name="ImportTime" Val="1624300220"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -168,42 +167,49 @@
       <File Path="$PSRCDIR/sources_1/imports/example_design/gt_rom_init_rx.dat">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../serdes_test/serdes_test.srcs/sources_1/ip/gtwizard_0/gtwizard_0/example_design/gt_rom_init_rx.dat"/>
-          <Attr Name="ImportTime" Val="1624290733"/>
+          <Attr Name="ImportTime" Val="1624300220"/>
           <Attr Name="UsedIn" Val="synthesis"/>
         </FileInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/imports/example_design/gt_rom_init_tx.dat">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../serdes_test/serdes_test.srcs/sources_1/ip/gtwizard_0/gtwizard_0/example_design/gt_rom_init_tx.dat"/>
-          <Attr Name="ImportTime" Val="1624290733"/>
+          <Attr Name="ImportTime" Val="1624300220"/>
           <Attr Name="UsedIn" Val="synthesis"/>
         </FileInfo>
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="gtwizard_0_support"/>
-        <Option Name="TopAutoSet" Val="TRUE"/>
+        <Option Name="TopModule" Val="gtwizard_0_exdes"/>
       </Config>
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
       <Filter Type="Constrs"/>
       <File Path="$PSRCDIR/constrs_1/imports/example_design/gtwizard_0_exdes.xdc">
         <FileInfo>
+          <Attr Name="UserDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../serdes_test/serdes_test.srcs/sources_1/ip/gtwizard_0/gtwizard_0/example_design/gtwizard_0_exdes.xdc"/>
-          <Attr Name="ImportTime" Val="1624290733"/>
+          <Attr Name="ImportTime" Val="1624300219"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/constrs_1/new/debug.xdc">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="implementation"/>
+        </FileInfo>
+      </File>
       <Config>
+        <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/debug.xdc"/>
         <Option Name="ConstrsType" Val="XDC"/>
       </Config>
     </FileSet>
     <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1" RelGenDir="$PGENDIR/sim_1">
+      <Filter Type="Srcs"/>
       <File Path="$PSRCDIR/sim_1/imports/simulation/gtwizard_0_tb.v">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../serdes_test/serdes_test.srcs/sources_1/ip/gtwizard_0/gtwizard_0/simulation/gtwizard_0_tb.v"/>
-          <Attr Name="ImportTime" Val="1624290733"/>
+          <Attr Name="ImportTime" Val="1624300219"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -211,14 +217,14 @@
       <File Path="$PSRCDIR/sim_1/imports/simulation/functional/gt_rom_init_rx.dat">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../serdes_test/serdes_test.srcs/sources_1/ip/gtwizard_0/gtwizard_0/simulation/functional/gt_rom_init_rx.dat"/>
-          <Attr Name="ImportTime" Val="1624290733"/>
+          <Attr Name="ImportTime" Val="1624300219"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
       <File Path="$PSRCDIR/sim_1/imports/simulation/functional/gt_rom_init_tx.dat">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../serdes_test/serdes_test.srcs/sources_1/ip/gtwizard_0/gtwizard_0/simulation/functional/gt_rom_init_tx.dat"/>
-          <Attr Name="ImportTime" Val="1624290733"/>
+          <Attr Name="ImportTime" Val="1624300219"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
@@ -263,9 +269,7 @@
   <Runs Version="1" Minor="15">
     <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7k325tffg900-2" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -273,11 +277,9 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7k325tffg900-2" ConstrsSet="constrs_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" SynthRun="synth_1" IncludeInArchive="true" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/impl_1">
+    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7k325tffg900-2" ConstrsSet="constrs_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/impl_1" SynthRun="synth_1" IncludeInArchive="true" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/impl_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -288,6 +290,7 @@
         <Step Id="post_route_phys_opt_design"/>
         <Step Id="write_bitstream"/>
       </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>

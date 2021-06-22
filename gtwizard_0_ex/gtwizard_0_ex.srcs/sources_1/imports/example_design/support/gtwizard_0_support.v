@@ -91,11 +91,6 @@ input           gt0_data_valid_in,
     //_________________________________________________________________________
     //GT0  (X1Y0)
     //____________________________CHANNEL PORTS________________________________
-    //------------------------ Channel - Clocking Ports ------------------------
-    input           gt0_gtnorthrefclk0_in,
-    input           gt0_gtnorthrefclk1_in,
-    input           gt0_gtsouthrefclk0_in,
-    input           gt0_gtsouthrefclk1_in,
     //-------------------------- Channel - DRP Ports  --------------------------
     input   [8:0]   gt0_drpaddr_in,
     input   [15:0]  gt0_drpdi_in,
@@ -112,6 +107,7 @@ input           gt0_data_valid_in,
     output          gt0_eyescandataerror_out,
     input           gt0_eyescantrigger_in,
     //---------------- Receive Ports - FPGA RX interface Ports -----------------
+    (* mark_debug = "true" *)
     output  [31:0]  gt0_rxdata_out,
     //------------------------- Receive Ports - RX AFE -------------------------
     input           gt0_gtxrxp_in,
@@ -157,11 +153,6 @@ input           gt0_data_valid_in,
     //________________________________________________________________________
     //________________________________________________________________________
     //GT0  (X1Y0)
-    //------------------------ Channel - Clocking Ports ------------------------
-    wire            gt0_gtnorthrefclk0_i;
-    wire            gt0_gtnorthrefclk1_i;
-    wire            gt0_gtsouthrefclk0_i;
-    wire            gt0_gtsouthrefclk1_i;
     //-------------------------- Channel - DRP Ports  --------------------------
     wire    [8:0]   gt0_drpaddr_i;
     wire    [15:0]  gt0_drpdi_i;
@@ -242,12 +233,6 @@ input           gt0_data_valid_in,
     
     wire            q0_clk1_refclk_i;
 
-    wire         gt0_gtgrefclk_common_i;
-    wire         gt0_gtnorthrefclk0_common_i;
-    wire         gt0_gtnorthrefclk1_common_i;
-    wire         gt0_gtrefclk1_common_i;
-    wire         gt0_gtsouthrefclk0_common_i;
-    wire         gt0_gtsouthrefclk1_common_i;
     wire commonreset_i;
     wire commonreset_t;
 
@@ -301,11 +286,6 @@ assign  sysclk_in_i = sysclk_in;
   )
  common0_i
    (
-    .GTGREFCLK_IN(gt0_gtgrefclk_common_i),
-    .GTNORTHREFCLK0_IN(gt0_gtnorthrefclk0_common_i),
-    .GTNORTHREFCLK1_IN(gt0_gtnorthrefclk1_common_i),
-    .GTSOUTHREFCLK0_IN(gt0_gtsouthrefclk0_common_i),
-    .GTSOUTHREFCLK1_IN(gt0_gtsouthrefclk1_common_i),
     .QPLLREFCLKSEL_IN(3'b010),
     .GTREFCLK0_IN(tied_to_ground_i),
     .GTREFCLK1_IN(q0_clk1_refclk_i),
@@ -347,11 +327,6 @@ assign  sysclk_in_i = sysclk_in;
         //_____________________________________________________________________
         //GT0  (X1Y0)
 
-        //------------------------ Channel - Clocking Ports ------------------------
-        .gt0_gtnorthrefclk0_in          (gt0_gtnorthrefclk0_in), // input wire gt0_gtnorthrefclk0_in
-        .gt0_gtnorthrefclk1_in          (gt0_gtnorthrefclk1_in), // input wire gt0_gtnorthrefclk1_in
-        .gt0_gtsouthrefclk0_in          (gt0_gtsouthrefclk0_in), // input wire gt0_gtsouthrefclk0_in
-        .gt0_gtsouthrefclk1_in          (gt0_gtsouthrefclk1_in), // input wire gt0_gtsouthrefclk1_in
         //-------------------------- Channel - DRP Ports  --------------------------
         .gt0_drpaddr_in                 (gt0_drpaddr_in), // input wire [8:0] gt0_drpaddr_in
         .gt0_drpclk_in                  (sysclk_in_i), // input wire sysclk_in_i
