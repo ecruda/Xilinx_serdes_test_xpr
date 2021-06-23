@@ -1,0 +1,288 @@
+/*
+
+Xilinx Vivado v2020.2 (64-bit) [Major: 2020, Minor: 2]
+SW Build: 3064766 on Wed Nov 18 09:12:45 MST 2020
+IP Build: 3064653 on Wed Nov 18 14:17:31 MST 2020
+
+Process ID (PID): 19020
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Tue Jun 22 15:12:49 CDT 2021
+Time zone: 	Central Standard Time (America/Chicago)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1600x900
+Screen resolution (DPI): 100
+Available screens: 2
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+
+Java version: 	11.0.2 64-bit
+Java home: 	C:/Xilinx/Vivado/2020.2/tps/win64/jre11.0.2
+Java executable location: 	C:/Xilinx/Vivado/2020.2/tps/win64/jre11.0.2/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	L
+User home directory: C:/Users/L
+User working directory: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/From Wei/GTX_40M1280_20200627
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2020.2
+RDI_DATADIR: C:/Xilinx/Vivado/2020.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2020.2/bin
+
+Vivado preferences file location: C:/Users/L/AppData/Roaming/Xilinx/Vivado/2020.2/vivado.xml
+Vivado preferences directory: C:/Users/L/AppData/Roaming/Xilinx/Vivado/2020.2/
+Vivado layouts directory: C:/Users/L/AppData/Roaming/Xilinx/Vivado/2020.2/data/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2020.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/From Wei/GTX_40M1280_20200627/vivado.log
+Vivado journal file location: 	C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/From Wei/GTX_40M1280_20200627/vivado.jou
+Engine tmp dir: 	C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/From Wei/GTX_40M1280_20200627/.Xil/Vivado-19020-DESKTOP-8KUEMAV
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_HLS: C:/Xilinx/Vitis_HLS/2020.2
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2020.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2020.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2020.2
+
+
+GUI allocated memory:	128 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,038 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 80 MB (+81629kb) [00:00:14]
+// [Engine Memory]: 1,038 MB (+936696kb) [00:00:14]
+// bz (cr):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\L\Desktop\Reasearch_Lab\Dr_Ye_pt_2\datao_lily_PAM4\From Wei\GTX_40M1280_20200627\GTX40M1280.xpr. Version: Vivado v2020.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project {C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/From Wei/GTX_40M1280_20200627/GTX40M1280.xpr} 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/From Wei/GTX_40M1280_20200627' 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,038 MB. GUI used memory: 52 MB. Current time: 6/22/21, 3:12:50 PM CDT
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 94 MB (+9928kb) [00:00:34]
+// [GUI Memory]: 100 MB (+1931kb) [00:00:37]
+// WARNING: HEventQueue.dispatchEvent() is taking  2879 ms.
+// Tcl Message: open_project {C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/From Wei/GTX_40M1280_20200627/GTX40M1280.xpr} 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/From Wei/GTX_40M1280_20200627' 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'. 
+// WARNING: HEventQueue.dispatchEvent() is taking  1177 ms.
+// Tcl Message: open_project: Time (s): cpu = 00:00:33 ; elapsed = 00:00:24 . Memory (MB): peak = 1073.926 ; gain = 0.000 
+// Project name: GTX40M1280; location: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/From Wei/GTX_40M1280_20200627; part: xc7k325tffg900-2
+dismissDialog("Open Project"); // bz
+// [GUI Memory]: 106 MB (+562kb) [00:00:42]
+// TclEventType: FILE_SET_CHANGE
+// a (cr): Critical Messages: addNotify
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 5177 ms. Increasing delay to 3000 ms.
+// TclEventType: DG_GRAPH_STALE
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// TclEventType: DG_GRAPH_STALE
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 679ms to process. Increasing delay to 3000 ms.
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+dismissDialog("Critical Messages"); // a
+// [GUI Memory]: 122 MB (+10946kb) [00:00:49]
+// [GUI Memory]: 135 MB (+7875kb) [00:00:52]
+// Tcl Message: update_compile_order -fileset sources_1 
+// WARNING: HEventQueue.dispatchEvent() is taking  1722 ms.
+// PAPropertyPanels.initPanels (top.v) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 2, true, false, false, false, false, true); // D - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 2, true, false, false, false, false, true); // D - Double Click - Node
+selectCodeEditor("top.v", 148, 244); // bP
+selectCodeEditor("top.v", 113, 159); // bP
+selectCodeEditor("top.v", 270, 264); // bP
+// Elapsed time: 20 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), gtwizard_0_exdes_i : gtwizard_0_exdes (gtwizard_0_exdes.v)]", 3); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), gtwizard_0_exdes_i : gtwizard_0_exdes (gtwizard_0_exdes.v), gtwizard_0_support_i : gtwizard_0_support (gtwizard_0_support.v)]", 4); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), gtwizard_0_exdes_i : gtwizard_0_exdes (gtwizard_0_exdes.v), gtwizard_0_support_i : gtwizard_0_support (gtwizard_0_support.v)]", 4); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), gtwizard_0_exdes_i : gtwizard_0_exdes (gtwizard_0_exdes.v)]", 3, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), gtwizard_0_exdes_i : gtwizard_0_exdes (gtwizard_0_exdes.v)]", 3, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), gtwizard_0_exdes_i : gtwizard_0_exdes (gtwizard_0_exdes.v)]", 3, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), gtwizard_0_exdes_i : gtwizard_0_exdes (gtwizard_0_exdes.v)]", 3, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), gtwizard_0_exdes_i : gtwizard_0_exdes (gtwizard_0_exdes.v)]", 3, true); // D - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), gtwizard_0_exdes_i : gtwizard_0_exdes (gtwizard_0_exdes.v)]", 3); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), gtwizard_0_exdes_i : gtwizard_0_exdes (gtwizard_0_exdes.v)]", 3, true); // D - Node
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 5915 ms. Increasing delay to 4000 ms.
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), gtwizard_0_exdes_i : gtwizard_0_exdes (gtwizard_0_exdes.v)]", 3, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), gtwizard_0_exdes_i : gtwizard_0_exdes (gtwizard_0_exdes.v)]", 3, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), gtwizard_0_exdes_i : gtwizard_0_exdes (gtwizard_0_exdes.v)]", 3, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), gtwizard_0_exdes_i : gtwizard_0_exdes (gtwizard_0_exdes.v)]", 3, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), gtwizard_0_exdes_i : gtwizard_0_exdes (gtwizard_0_exdes.v)]", 3, true, false, false, false, true, false); // D - Popup Trigger - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), gtwizard_0_exdes_i : gtwizard_0_exdes (gtwizard_0_exdes.v)]", 3, true, false, false, false, true, false); // D - Popup Trigger - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), gtwizard_0_exdes_i : gtwizard_0_exdes (gtwizard_0_exdes.v)]", 3, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), gtwizard_0_exdes_i : gtwizard_0_exdes (gtwizard_0_exdes.v)]", 3, true, false, false, false, false, true); // D - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), gtwizard_0_exdes_i : gtwizard_0_exdes (gtwizard_0_exdes.v)]", 3, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), gtwizard_0_exdes_i : gtwizard_0_exdes (gtwizard_0_exdes.v)]", 3, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), gtwizard_0_exdes_i : gtwizard_0_exdes (gtwizard_0_exdes.v)]", 3, true, false, false, false, false, true); // D - Double Click - Node
+// Elapsed time: 20 seconds
+selectCodeEditor("gtwizard_0_exdes.v", 242, 331); // bP
+// Elapsed time: 43 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.v", 1); // m
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "gtwizard_0_exdes.v", 2); // m
+// Elapsed time: 36 seconds
+selectCodeEditor("gtwizard_0_exdes.v", 443, 144); // bP
+selectCodeEditor("gtwizard_0_exdes.v", 443, 144, false, false, false, false, true); // bP - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 1,049 MB. GUI used memory: 78 MB. Current time: 6/22/21, 3:42:52 PM CDT
+// Elapsed time: 2583 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.v", 1); // m
+selectCodeEditor("top.v", 285, 264); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "gtwizard_0_exdes.v", 2); // m
+// HMemoryUtils.trashcanNow. Engine heap size: 1,049 MB. GUI used memory: 69 MB. Current time: 6/22/21, 4:12:52 PM CDT
+// Elapsed time: 2056 seconds
+selectCodeEditor("gtwizard_0_exdes.v", 297, 269); // bP
+typeControlKey((HResource) null, "gtwizard_0_exdes.v", 'c'); // bP
+// Elapsed time: 44 seconds
+selectCodeEditor("gtwizard_0_exdes.v", 350, 257); // bP
+selectCodeEditor("gtwizard_0_exdes.v", 312, 266); // bP
+typeControlKey((HResource) null, "gtwizard_0_exdes.v", 'c'); // bP
+// Elapsed time: 81 seconds
+selectCodeEditor("gtwizard_0_exdes.v", 233, 292); // bP
+// Elapsed time: 64 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 11, true); // D - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 11); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, top.xdc]", 13, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, top.xdc]", 13, false, false, false, false, false, true); // D - Double Click
+// Elapsed time: 22 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.v", 1); // m
+// Elapsed time: 17 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), PRBS31Gen32b_inst : xil_defaultlib.PRBS31Gen32b]", 4, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), PRBS31Gen32b_inst : xil_defaultlib.PRBS31Gen32b]", 4, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), PRBS31Gen32b_inst : xil_defaultlib.PRBS31Gen32b]", 4, false, false, false, false, false, true); // D - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 1,049 MB. GUI used memory: 69 MB. Current time: 6/22/21, 4:42:53 PM CDT
+// Elapsed time: 1416 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.xdc", 3); // m
+// HMemoryUtils.trashcanNow. Engine heap size: 1,049 MB. GUI used memory: 69 MB. Current time: 6/22/21, 5:12:53 PM CDT
+// Elapsed time: 1282 seconds
+selectCodeEditor("top.xdc", 210, 214); // bP
+// HMemoryUtils.trashcanNow. Engine heap size: 1,049 MB. GUI used memory: 68 MB. Current time: 6/22/21, 5:42:53 PM CDT
+// WARNING: HEventQueue.dispatchEvent() is taking  1408 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1414 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2531 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 3736 ms. Increasing delay to 11208 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  60871087 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 60905574 ms. Increasing delay to 182716722 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  38029 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 7600 ms. Increasing delay to 5000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,049 MB. GUI used memory: 75 MB. Current time: 6/23/21, 11:00:11 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,049 MB. GUI used memory: 73 MB. Current time: 6/23/21, 11:30:12 AM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,049 MB. GUI used memory: 72 MB. Current time: 6/23/21, 12:00:12 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,049 MB. GUI used memory: 72 MB. Current time: 6/23/21, 12:30:12 PM CDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,049 MB. GUI used memory: 72 MB. Current time: 6/23/21, 1:00:13 PM CDT
+// Elapsed time: 71392 seconds
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aK
+// Elapsed time: 31 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), gtwizard_0_exdes_i : gtwizard_0_exdes (gtwizard_0_exdes.v)]", 3, true); // D - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), gtwizard_0_exdes_i : gtwizard_0_exdes (gtwizard_0_exdes.v)]", 3); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), gtwizard_0_exdes_i : gtwizard_0_exdes (gtwizard_0_exdes.v), gtwizard_0_support_i : gtwizard_0_support (gtwizard_0_support.v)]", 4, true); // D - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), gtwizard_0_exdes_i : gtwizard_0_exdes (gtwizard_0_exdes.v), gtwizard_0_support_i : gtwizard_0_support (gtwizard_0_support.v)]", 4); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), gtwizard_0_exdes_i : gtwizard_0_exdes (gtwizard_0_exdes.v), gtwizard_0_support_i : gtwizard_0_support (gtwizard_0_support.v), gtwizard_0_init_i : gtwizard_0 (gtwizard_0.xci)]", 8, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), gtwizard_0_exdes_i : gtwizard_0_exdes (gtwizard_0_exdes.v), gtwizard_0_support_i : gtwizard_0_support (gtwizard_0_support.v), gtwizard_0_init_i : gtwizard_0 (gtwizard_0.xci)]", 8, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), gtwizard_0_exdes_i : gtwizard_0_exdes (gtwizard_0_exdes.v), gtwizard_0_support_i : gtwizard_0_support (gtwizard_0_support.v), gtwizard_0_init_i : gtwizard_0 (gtwizard_0.xci)]", 8, false, false, false, false, false, true); // D - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// TclEventType: LOAD_FEATURE
+// N (cr):  Re-customize IP : addNotify
+// r (cr): Re-customize IP: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  3037 ms.
+dismissDialog("Re-customize IP"); // N
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Line Rate, RefClk Selection", 1); // cV
+// Elapsed time: 62 seconds
+selectCheckBox((HResource) null, "Use GTX X0Y0", true); // g: TRUE
+// WARNING: HEventQueue.dispatchEvent() is taking  1440 ms.
+selectCheckBox((HResource) null, "Use GTX X0Y0", false); // g: FALSE
+// WARNING: HEventQueue.dispatchEvent() is taking  1247 ms.
+selectCheckBox((HResource) null, "Use GTX X0Y0", true); // g: TRUE
+// WARNING: HEventQueue.dispatchEvent() is taking  1271 ms.
+selectCheckBox((HResource) null, "Use GTX X0Y0", false); // g: FALSE
+// WARNING: HEventQueue.dispatchEvent() is taking  1158 ms.
+// [GUI Memory]: 143 MB (+1202kb) [22:04:18]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,049 MB. GUI used memory: 85 MB. Current time: 6/23/21, 1:30:13 PM CDT
+// Elapsed time: 1019 seconds
+dismissDialog("Re-customize IP"); // r
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), gtwizard_0_exdes_i : gtwizard_0_exdes (gtwizard_0_exdes.v)]", 3, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), gtwizard_0_exdes_i : gtwizard_0_exdes (gtwizard_0_exdes.v)]", 3, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), gtwizard_0_exdes_i : gtwizard_0_exdes (gtwizard_0_exdes.v)]", 3, true, false, false, false, false, true); // D - Double Click - Node
+// Elapsed time: 14 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 2, true, false, false, false, false, true); // D - Double Click - Node
+// Elapsed time: 47 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 2); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), gtwizard_0_exdes_i : gtwizard_0_exdes (gtwizard_0_exdes.v)]", 3, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 2, true, false, false, false, false, true); // D - Double Click - Node
+// Elapsed time: 60 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 2); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), ila : ila_0 (ila_0.xci)]", 6, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), gtwizard_0_exdes_i : gtwizard_0_exdes (gtwizard_0_exdes.v)]", 3, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), ila : ila_0 (ila_0.xci)]", 6, false); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), gtwizard_0_exdes_i : gtwizard_0_exdes (gtwizard_0_exdes.v)]", 3); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), gtwizard_0_exdes_i : gtwizard_0_exdes (gtwizard_0_exdes.v), gtwizard_0_support_i : gtwizard_0_support (gtwizard_0_support.v), gtwizard_0_init_i : gtwizard_0 (gtwizard_0.xci)]", 8, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), gtwizard_0_exdes_i : gtwizard_0_exdes (gtwizard_0_exdes.v), gtwizard_0_support_i : gtwizard_0_support (gtwizard_0_support.v), gtwizard_0_init_i : gtwizard_0 (gtwizard_0.xci)]", 8, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), gtwizard_0_exdes_i : gtwizard_0_exdes (gtwizard_0_exdes.v), gtwizard_0_support_i : gtwizard_0_support (gtwizard_0_support.v), gtwizard_0_init_i : gtwizard_0 (gtwizard_0.xci)]", 8, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), gtwizard_0_exdes_i : gtwizard_0_exdes (gtwizard_0_exdes.v), gtwizard_0_support_i : gtwizard_0_support (gtwizard_0_support.v), gtwizard_0_init_i : gtwizard_0 (gtwizard_0.xci)]", 8, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), gtwizard_0_exdes_i : gtwizard_0_exdes (gtwizard_0_exdes.v), gtwizard_0_support_i : gtwizard_0_support (gtwizard_0_support.v), gtwizard_0_init_i : gtwizard_0 (gtwizard_0.xci)]", 8, false, false, false, false, false, true); // D - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// N (cr):  Re-customize IP : addNotify
+// r (cr): Re-customize IP: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1810 ms.
+dismissDialog("Re-customize IP"); // N
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Line Rate, RefClk Selection", 1); // cV
+// Elapsed time: 28 seconds
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "GT Selection", 0); // cV
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Encoding and Clocking", 2); // cV
+// Elapsed time: 436 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Re-customize IP"); // r
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), PRBS31Gen32b_inst : xil_defaultlib.PRBS31Gen32b]", 9, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), PRBS31_Data_Checker_inst0 : xil_defaultlib.PRBS31_Data_Checker]", 10, false); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), gtwizard_0_exdes_i : gtwizard_0_exdes (gtwizard_0_exdes.v), gtwizard_0_support_i : gtwizard_0_support (gtwizard_0_support.v)]", 4); // D

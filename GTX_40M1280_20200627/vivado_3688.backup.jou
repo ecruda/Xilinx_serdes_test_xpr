@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Jun 16 13:24:16 2021
+# Process ID: 3688
+# Current directory: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/From Wei/GTX_40M1280_20200627
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21788 C:\Users\L\Desktop\Reasearch_Lab\Dr_Ye_pt_2\datao_lily_PAM4\From Wei\GTX_40M1280_20200627\GTX40M1280.xpr
+# Log file: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/From Wei/GTX_40M1280_20200627/vivado.log
+# Journal file: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/From Wei/GTX_40M1280_20200627\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/From Wei/GTX_40M1280_20200627/GTX40M1280.xpr}
+update_compile_order -fileset sources_1
+open_run impl_1
