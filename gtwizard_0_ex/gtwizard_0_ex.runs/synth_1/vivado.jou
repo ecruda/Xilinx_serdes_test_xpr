@@ -2,11 +2,11 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Tue Jun 22 13:30:30 2021
-# Process ID: 3824
-# Current directory: C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/gtwizard_0_ex/gtwizard_0_ex.runs/synth_1
+# Start of session at: Wed Jun 23 13:49:18 2021
+# Process ID: 14084
+# Current directory: c:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/gtwizard_0_ex/gtwizard_0_ex.runs/synth_1
 # Command line: vivado.exe -log gtwizard_0_exdes.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source gtwizard_0_exdes.tcl
-# Log file: C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/gtwizard_0_ex/gtwizard_0_ex.runs/synth_1/gtwizard_0_exdes.vds
-# Journal file: C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/gtwizard_0_ex/gtwizard_0_ex.runs/synth_1\vivado.jou
+# Log file: c:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/gtwizard_0_ex/gtwizard_0_ex.runs/synth_1/gtwizard_0_exdes.vds
+# Journal file: c:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/gtwizard_0_ex/gtwizard_0_ex.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source gtwizard_0_exdes.tcl -notrace

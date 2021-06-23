@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date             : Tue Jun 22 13:41:21 2021
+| Date             : Wed Jun 23 13:51:22 2021
 | Host             : 21-10244 running 64-bit major release  (build 9200)
 | Command          : report_power -file gtwizard_0_exdes_power_routed.rpt -pb gtwizard_0_exdes_power_summary_routed.pb -rpx gtwizard_0_exdes_power_routed.rpx
 | Design           : gtwizard_0_exdes
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.670        |
+| Total On-Chip Power (W)  | 0.489        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.499        |
-| Device Static (W)        | 0.171        |
+| Dynamic (W)              | 0.321        |
+| Device Static (W)        | 0.168        |
 | Effective TJA (C/W)      | 1.8          |
-| Max Ambient (C)          | 83.8         |
-| Junction Temperature (C) | 26.2         |
+| Max Ambient (C)          | 84.1         |
+| Junction Temperature (C) | 25.9         |
 | Confidence Level         | Medium       |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,19 +52,20 @@ Table of Contents
 +-------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
-| Clocks                  |     0.015 |       10 |       --- |             --- |
-| Slice Logic             |     0.004 |     1146 |       --- |             --- |
-|   LUT as Logic          |     0.003 |      392 |    203800 |            0.19 |
-|   Register              |    <0.001 |      573 |    407600 |            0.14 |
-|   LUT as Shift Register |    <0.001 |       16 |     64000 |            0.03 |
-|   CARRY4                |    <0.001 |       48 |     50950 |            0.09 |
-|   Others                |     0.000 |       49 |       --- |             --- |
-| Signals                 |     0.003 |      850 |       --- |             --- |
-| MMCM                    |     0.088 |        1 |        10 |           10.00 |
+| Clocks                  |     0.007 |       10 |       --- |             --- |
+| Slice Logic             |     0.001 |      628 |       --- |             --- |
+|   LUT as Logic          |     0.001 |      219 |    203800 |            0.11 |
+|   CARRY4                |    <0.001 |       38 |     50950 |            0.07 |
+|   Register              |    <0.001 |      288 |    407600 |            0.07 |
+|   F7/F8 Muxes           |    <0.001 |        1 |    203800 |           <0.01 |
+|   Others                |     0.000 |       42 |       --- |             --- |
+|   LUT as Shift Register |     0.000 |        7 |     64000 |            0.01 |
+| Signals                 |    <0.001 |      467 |       --- |             --- |
+| MMCM                    |     0.087 |        1 |        10 |           10.00 |
 | I/O                     |     0.004 |        3 |       500 |            0.60 |
-| GTX                     |     0.384 |        1 |        16 |            6.25 |
-| Static Power            |     0.171 |          |           |                 |
-| Total                   |     0.670 |          |           |                 |
+| GTX                     |     0.220 |        1 |        16 |            6.25 |
+| Static Power            |     0.168 |          |           |                 |
+| Total                   |     0.489 |          |           |                 |
 +-------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -74,19 +75,19 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.141 |       0.071 |      0.071 |       NA    | Unspecified | NA         |
-| Vccaux    |       1.800 |     0.079 |       0.050 |      0.028 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.087 |       0.017 |      0.070 |       NA    | Unspecified | NA         |
+| Vccaux    |       1.800 |     0.078 |       0.050 |      0.028 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
-| Vcco15    |       1.500 |     0.001 |       0.000 |      0.001 |       NA    | Unspecified | NA         |
+| Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vccbram   |       1.000 |     0.001 |       0.000 |      0.001 |       NA    | Unspecified | NA         |
-| MGTAVcc   |       1.000 |     0.231 |       0.227 |      0.004 |       NA    | Unspecified | NA         |
-| MGTAVtt   |       1.200 |     0.082 |       0.077 |      0.005 |       NA    | Unspecified | NA         |
-| MGTVccaux |       1.800 |     0.010 |       0.010 |      0.000 |       NA    | Unspecified | NA         |
+| MGTAVcc   |       1.000 |     0.108 |       0.104 |      0.004 |       NA    | Unspecified | NA         |
+| MGTAVtt   |       1.200 |     0.097 |       0.091 |      0.005 |       NA    | Unspecified | NA         |
+| MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |       NA    | Unspecified | NA         |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 
@@ -133,10 +134,10 @@ Table of Contents
 +--------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+-----------------+
 | Q0_CLK1_GTREFCLK_PAD_P_IN                                                                  | Q0_CLK1_GTREFCLK_PAD_P_IN                                                                  |             6.3 |
 | clkfbout                                                                                   | gtwizard_0_support_i/gt_usrclk_source/rxoutclk_mmcm1_i/clkfbout                            |             6.3 |
-| clkout0                                                                                    | gtwizard_0_support_i/gt_usrclk_source/rxoutclk_mmcm1_i/clkout0                             |             3.1 |
+| clkout0                                                                                    | gtwizard_0_support_i/gt_usrclk_source/rxoutclk_mmcm1_i/clkout0                             |            25.0 |
 | drpclk_in_i                                                                                | DRP_CLK_IN_P                                                                               |             6.3 |
 | gtwizard_0_support_i/gtwizard_0_init_i/inst/gtwizard_0_i/gt0_gtwizard_0_i/gtxe2_i/RXOUTCLK | gtwizard_0_support_i/gtwizard_0_init_i/inst/gtwizard_0_i/gt0_gtwizard_0_i/gt0_rxoutclk_out |             6.3 |
-| gtwizard_0_support_i/gtwizard_0_init_i/inst/gtwizard_0_i/gt0_gtwizard_0_i/gtxe2_i/TXOUTCLK | gtwizard_0_support_i/gtwizard_0_init_i/inst/gtwizard_0_i/gt0_gtwizard_0_i/gt0_txoutclk_out |             3.1 |
+| gtwizard_0_support_i/gtwizard_0_init_i/inst/gtwizard_0_i/gt0_gtwizard_0_i/gtxe2_i/TXOUTCLK | gtwizard_0_support_i/gtwizard_0_init_i/inst/gtwizard_0_i/gt0_gtwizard_0_i/gt0_txoutclk_out |            25.0 |
 +--------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+-----------------+
 
 
@@ -149,14 +150,12 @@ Table of Contents
 +------------------------+-----------+
 | Name                   | Power (W) |
 +------------------------+-----------+
-| gtwizard_0_exdes       |     0.499 |
-|   gt0_frame_check      |     0.009 |
-|   gt0_frame_gen        |     0.002 |
-|   gtwizard_0_support_i |     0.483 |
-|     gt_usrclk_source   |     0.090 |
-|       rxoutclk_mmcm1_i |     0.089 |
-|     gtwizard_0_init_i  |     0.393 |
-|       inst             |     0.393 |
+| gtwizard_0_exdes       |     0.321 |
+|   gtwizard_0_support_i |     0.316 |
+|     gt_usrclk_source   |     0.088 |
+|       rxoutclk_mmcm1_i |     0.088 |
+|     gtwizard_0_init_i  |     0.228 |
+|       inst             |     0.228 |
 +------------------------+-----------+
 
 

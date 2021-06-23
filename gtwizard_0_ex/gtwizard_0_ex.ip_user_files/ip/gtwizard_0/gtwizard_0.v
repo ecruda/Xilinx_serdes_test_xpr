@@ -83,8 +83,16 @@ input           gt0_rx_mmcm_lock_in,
 output          gt0_rx_mmcm_reset_out,
 
     //_________________________________________________________________________
-    //GT0  (X1Y0)
+    //GT0  (X1Y8)
     //____________________________CHANNEL PORTS________________________________
+    //------------------------------- CPLL Ports -------------------------------
+    output          gt0_cpllfbclklost_out,
+    output          gt0_cplllock_out,
+    input           gt0_cplllockdetclk_in,
+    input           gt0_cpllreset_in,
+    //------------------------ Channel - Clocking Ports ------------------------
+    input           gt0_gtrefclk0_in,
+    input           gt0_gtrefclk1_in,
     //-------------------------- Channel - DRP Ports  --------------------------
     input   [8:0]   gt0_drpaddr_in,
     input           gt0_drpclk_in,
@@ -142,9 +150,6 @@ output          gt0_rx_mmcm_reset_out,
 
 
     //____________________________COMMON PORTS________________________________
-    input      gt0_qplllock_in,
-    input      gt0_qpllrefclklost_in,
-    output     gt0_qpllreset_out,
     input      gt0_qplloutclk_in,
     input      gt0_qplloutrefclk_in
 
@@ -155,7 +160,8 @@ output          gt0_rx_mmcm_reset_out,
     (
         .EXAMPLE_SIM_GTRESET_SPEEDUP    ("TRUE"),
         .EXAMPLE_SIMULATION             (0),
-        .STABLE_CLOCK_PERIOD            (6),
+        .USE_BUFG                       (0),
+        .STABLE_CLOCK_PERIOD            (16),
         .EXAMPLE_USE_CHIPSCOPE          (0)
     )
     inst
@@ -171,8 +177,16 @@ output          gt0_rx_mmcm_reset_out,
      .gt0_rx_mmcm_reset_out(gt0_rx_mmcm_reset_out),
 
     //_________________________________________________________________________
-    //GT0  (X1Y0)
+    //GT0  (X1Y8)
     //____________________________CHANNEL PORTS________________________________
+    //------------------------------- CPLL Ports -------------------------------
+        .gt0_cpllfbclklost_out          (gt0_cpllfbclklost_out), // output wire gt0_cpllfbclklost_out
+        .gt0_cplllock_out               (gt0_cplllock_out), // output wire gt0_cplllock_out
+        .gt0_cplllockdetclk_in          (gt0_cplllockdetclk_in), // input wire gt0_cplllockdetclk_in
+        .gt0_cpllreset_in               (gt0_cpllreset_in), // input wire gt0_cpllreset_in
+    //------------------------ Channel - Clocking Ports ------------------------
+        .gt0_gtrefclk0_in               (gt0_gtrefclk0_in), // input wire gt0_gtrefclk0_in
+        .gt0_gtrefclk1_in               (gt0_gtrefclk1_in), // input wire gt0_gtrefclk1_in
     //-------------------------- Channel - DRP Ports  --------------------------
         .gt0_drpaddr_in                 (gt0_drpaddr_in), // input wire [8:0] gt0_drpaddr_in
         .gt0_drpclk_in                  (gt0_drpclk_in), // input wire gt0_drpclk_in
@@ -230,9 +244,6 @@ output          gt0_rx_mmcm_reset_out,
 
 
     //____________________________COMMON PORTS________________________________
-     .gt0_qplllock_in(gt0_qplllock_in),
-     .gt0_qpllrefclklost_in(gt0_qpllrefclklost_in),
-    .gt0_qpllreset_out(gt0_qpllreset_out),
      .gt0_qplloutclk_in(gt0_qplloutclk_in),
      .gt0_qplloutrefclk_in(gt0_qplloutrefclk_in)
     );

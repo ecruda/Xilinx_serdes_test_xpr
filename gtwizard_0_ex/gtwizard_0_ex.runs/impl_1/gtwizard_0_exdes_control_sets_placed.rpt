@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Tue Jun 22 13:40:57 2021
+| Date         : Wed Jun 23 13:50:59 2021
 | Host         : 21-10244 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file gtwizard_0_exdes_control_sets_placed.rpt
 | Design       : gtwizard_0_exdes
@@ -23,11 +23,11 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Total control sets                                       |    25 |
-|    Minimum number of control sets                        |    25 |
+| Total control sets                                       |    20 |
+|    Minimum number of control sets                        |    20 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |    75 |
+| Unused register locations in slices containing registers |    64 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -39,15 +39,15 @@ Table of Contents
 +--------------------+-------+
 |       Fanout       | Count |
 +--------------------+-------+
-| Total control sets |    25 |
+| Total control sets |    20 |
 | >= 0 to < 4        |     2 |
-| >= 4 to < 6        |     3 |
-| >= 6 to < 8        |     1 |
+| >= 4 to < 6        |     4 |
+| >= 6 to < 8        |     0 |
 | >= 8 to < 10       |     5 |
-| >= 10 to < 12      |     1 |
+| >= 10 to < 12      |     0 |
 | >= 12 to < 14      |     1 |
-| >= 14 to < 16      |     0 |
-| >= 16              |    12 |
+| >= 14 to < 16      |     1 |
+| >= 16              |     7 |
 +--------------------+-------+
 * Control sets can be remapped at either synth_design or opt_design
 
@@ -58,46 +58,41 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |             245 |           57 |
-| No           | No                    | Yes                    |               5 |            2 |
-| No           | Yes                   | No                     |             136 |           42 |
-| Yes          | No                    | No                     |              32 |           11 |
+| No           | No                    | No                     |              94 |           35 |
+| No           | No                    | Yes                    |               2 |            1 |
+| No           | Yes                   | No                     |              41 |           15 |
+| Yes          | No                    | No                     |              24 |            9 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |             155 |           42 |
+| Yes          | Yes                   | No                     |             127 |           34 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+---------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------+------------------+----------------+--------------+
-|                                Clock Signal                               |                                               Enable Signal                                               |                                       Set/Reset Signal                                       | Slice Load Count | Bel Load Count | Bels / Slice |
-+---------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------+------------------+----------------+--------------+
-|  gtwizard_0_support_i/gt_usrclk_source/GT0_TXUSRCLK2_OUT                  |                                                                                                           | gtwizard_0_support_i/tx_fsm_reset_done_int_reg                                               |                1 |              2 |         2.00 |
-|  gtwizard_0_support_i/gt_usrclk_source/rxoutclk_mmcm1_i/GT0_RXUSRCLK2_OUT |                                                                                                           | gtwizard_0_support_i/gtrxreset_i_reg                                                         |                1 |              3 |         3.00 |
-|  drpclk_in_i                                                              |                                                                                                           | gtwizard_0_support_i/gtwizard_0_init_i/inst/gt0_rxresetfsm_i/reset_time_out_reg_n_0          |                2 |              4 |         2.00 |
-|  drpclk_in_i                                                              | gtwizard_0_support_i/gtwizard_0_init_i/inst/gt0_rxresetfsm_i/sync_data_valid/time_tlock_max_reg           |                                                                                              |                3 |              4 |         1.33 |
-|  drpclk_in_i                                                              | gtwizard_0_support_i/gtwizard_0_init_i/inst/gt0_txresetfsm_i/sync_qplllock/FSM_sequential_tx_state_reg[3] |                                                                                              |                2 |              4 |         2.00 |
-|  gtwizard_0_support_i/gt_usrclk_source/rxoutclk_mmcm1_i/GT0_RXUSRCLK2_OUT | gt0_frame_check/link_ctr                                                                                  | gt0_frame_check/link_ctr[6]_i_1_n_0                                                          |                2 |              7 |         3.50 |
-|  drpclk_in_i                                                              | gtwizard_0_support_i/common_reset_i/init_wait_count[7]_i_1_n_0                                            |                                                                                              |                2 |              8 |         4.00 |
-|  drpclk_in_i                                                              | gtwizard_0_support_i/gtwizard_0_init_i/inst/gt0_rxresetfsm_i/mmcm_lock_count[7]_i_2__0_n_0                | gtwizard_0_support_i/gtwizard_0_init_i/inst/gt0_rxresetfsm_i/sync_mmcm_lock_reclocked/SR[0]  |                3 |              8 |         2.67 |
-|  drpclk_in_i                                                              | gtwizard_0_support_i/gtwizard_0_init_i/inst/gt0_rxresetfsm_i/init_wait_count[7]_i_1__0_n_0                |                                                                                              |                2 |              8 |         4.00 |
-|  drpclk_in_i                                                              | gtwizard_0_support_i/gtwizard_0_init_i/inst/gt0_txresetfsm_i/init_wait_count[7]_i_1_n_0                   |                                                                                              |                2 |              8 |         4.00 |
-|  drpclk_in_i                                                              | gtwizard_0_support_i/gtwizard_0_init_i/inst/gt0_txresetfsm_i/mmcm_lock_count[7]_i_2_n_0                   | gtwizard_0_support_i/gtwizard_0_init_i/inst/gt0_txresetfsm_i/sync_mmcm_lock_reclocked/SR[0]  |                2 |              8 |         4.00 |
-|  gtwizard_0_support_i/gt_usrclk_source/rxoutclk_mmcm1_i/GT0_RXUSRCLK2_OUT |                                                                                                           | gt0_frame_check/read_counter_i[9]_i_1_n_0                                                    |                3 |             10 |         3.33 |
-|  gtwizard_0_support_i/gt_usrclk_source/rxoutclk_mmcm1_i/GT0_RXUSRCLK2_OUT | gtwizard_0_support_i/gtwizard_0_init_i/inst/gt0_rxresetfsm_i/wait_bypass_count[0]_i_2__0_n_0              | gtwizard_0_support_i/gtwizard_0_init_i/inst/gt0_rxresetfsm_i/wait_bypass_count[0]_i_1__0_n_0 |                4 |             13 |         3.25 |
-|  drpclk_in_i                                                              | gtwizard_0_support_i/gtwizard_0_init_i/inst/gt0_rxresetfsm_i/wait_time_cnt[0]_i_2__0_n_0                  | gtwizard_0_support_i/gtwizard_0_init_i/inst/gt0_rxresetfsm_i/wait_time_cnt[0]_i_1_n_0        |                4 |             16 |         4.00 |
-|  drpclk_in_i                                                              | gtwizard_0_support_i/gtwizard_0_init_i/inst/gt0_txresetfsm_i/sel                                          | gtwizard_0_support_i/gtwizard_0_init_i/inst/gt0_txresetfsm_i/wait_time_cnt[0]_i_1__0_n_0     |                4 |             16 |         4.00 |
-|  gtwizard_0_support_i/gt_usrclk_source/GT0_TXUSRCLK2_OUT                  |                                                                                                           | gt0_frame_gen/system_reset_r2                                                                |                3 |             17 |         5.67 |
-|  gtwizard_0_support_i/gt_usrclk_source/GT0_TXUSRCLK2_OUT                  | gtwizard_0_support_i/gtwizard_0_init_i/inst/gt0_txresetfsm_i/wait_bypass_count[0]_i_2_n_0                 | gtwizard_0_support_i/gtwizard_0_init_i/inst/gt0_txresetfsm_i/clear                           |                5 |             17 |         3.40 |
-|  drpclk_in_i                                                              | gtwizard_0_support_i/gtwizard_0_init_i/inst/gt0_rxresetfsm_i/time_out_counter                             | gtwizard_0_support_i/gtwizard_0_init_i/inst/gt0_rxresetfsm_i/reset_time_out_reg_n_0          |                5 |             19 |         3.80 |
-|  drpclk_in_i                                                              | gtwizard_0_support_i/gtwizard_0_init_i/inst/gt0_txresetfsm_i/time_out_counter                             | gtwizard_0_support_i/gtwizard_0_init_i/inst/gt0_txresetfsm_i/reset_time_out                  |                5 |             19 |         3.80 |
-|  gtwizard_0_support_i/gt_usrclk_source/GT0_TXUSRCLK2_OUT                  |                                                                                                           |                                                                                              |                6 |             29 |         4.83 |
-|  drpclk_in_i                                                              | gtwizard_0_support_i/gtwizard_0_init_i/inst/gt0_rxresetfsm_i/adapt_count                                  | gtwizard_0_support_i/gtwizard_0_init_i/inst/gt0_rxresetfsm_i/adapt_count_reset               |                8 |             32 |         4.00 |
-|  drpclk_in_i                                                              |                                                                                                           | gtwizard_0_support_i/gtwizard_0_init_i/inst/gt0_rxresetfsm_i/SR[0]                           |               12 |             33 |         2.75 |
-|  gtwizard_0_support_i/gt_usrclk_source/rxoutclk_mmcm1_i/GT0_RXUSRCLK2_OUT |                                                                                                           | gt0_frame_check/system_reset_r2                                                              |               22 |             72 |         3.27 |
-|  drpclk_in_i                                                              |                                                                                                           |                                                                                              |               26 |             86 |         3.31 |
-|  gtwizard_0_support_i/gt_usrclk_source/rxoutclk_mmcm1_i/GT0_RXUSRCLK2_OUT |                                                                                                           |                                                                                              |               25 |            162 |         6.48 |
-+---------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------+------------------+----------------+--------------+
++------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+------------------+----------------+--------------+
+|                                       Clock Signal                                       |                                                Enable Signal                                                |                                       Set/Reset Signal                                      | Slice Load Count | Bel Load Count | Bels / Slice |
++------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+------------------+----------------+--------------+
+|  gtwizard_0_support_i/gt_usrclk_source/GT0_TXUSRCLK2_OUT                                 |                                                                                                             | gtwizard_0_support_i/tx_fsm_reset_done_int_reg                                              |                1 |              2 |         2.00 |
+|  gtwizard_0_support_i/gt_usrclk_source/GT0_TXUSRCLK2_OUT                                 |                                                                                                             |                                                                                             |                1 |              3 |         3.00 |
+|  gtwizard_0_support_i/gt_usrclk_source/GT0_TXUSRCLK2_OUT                                 |                                                                                                             | gt0_txfsmresetdone_r2                                                                       |                1 |              4 |         4.00 |
+|  drpclk_in_i                                                                             |                                                                                                             | gtwizard_0_support_i/gtwizard_0_init_i/inst/gt0_rxresetfsm_i/reset_time_out_reg_n_0         |                3 |              4 |         1.33 |
+|  drpclk_in_i                                                                             | gtwizard_0_support_i/gtwizard_0_init_i/inst/gt0_txresetfsm_i/sync_cplllock/FSM_sequential_tx_state_reg[0]   |                                                                                             |                2 |              4 |         2.00 |
+|  drpclk_in_i                                                                             | gtwizard_0_support_i/gtwizard_0_init_i/inst/gt0_rxresetfsm_i/sync_data_valid/FSM_sequential_rx_state_reg[0] |                                                                                             |                3 |              4 |         1.33 |
+|  drpclk_in_i                                                                             | gtwizard_0_support_i/gtwizard_0_init_i/inst/gt0_rxresetfsm_i/init_wait_count                                |                                                                                             |                2 |              8 |         4.00 |
+|  drpclk_in_i                                                                             | gtwizard_0_support_i/gtwizard_0_init_i/inst/gt0_rxresetfsm_i/mmcm_lock_count[7]_i_2__0_n_0                  | gtwizard_0_support_i/gtwizard_0_init_i/inst/gt0_rxresetfsm_i/sync_mmcm_lock_reclocked/SR[0] |                2 |              8 |         4.00 |
+|  drpclk_in_i                                                                             | gtwizard_0_support_i/gtwizard_0_init_i/inst/gt0_txresetfsm_i/init_wait_count                                |                                                                                             |                2 |              8 |         4.00 |
+|  drpclk_in_i                                                                             | gtwizard_0_support_i/gtwizard_0_init_i/inst/gt0_txresetfsm_i/mmcm_lock_count[7]_i_2_n_0                     | gtwizard_0_support_i/gtwizard_0_init_i/inst/gt0_txresetfsm_i/sync_mmcm_lock_reclocked/SR[0] |                2 |              8 |         4.00 |
+|  gtwizard_0_support_i/gtwizard_0_init_i/inst/gtwizard_0_i/cpll_railing0_i/refclk_buf_n_0 |                                                                                                             |                                                                                             |                2 |              9 |         4.50 |
+|  gtwizard_0_support_i/gt_usrclk_source/rxoutclk_mmcm1_i/GT0_RXUSRCLK2_OUT                | gtwizard_0_support_i/gtwizard_0_init_i/inst/gt0_rxresetfsm_i/wait_bypass_count[0]_i_2_n_0                   | gtwizard_0_support_i/gtwizard_0_init_i/inst/gt0_rxresetfsm_i/clear                          |                4 |             13 |         3.25 |
+|  gtwizard_0_support_i/gt_usrclk_source/rxoutclk_mmcm1_i/GT0_RXUSRCLK2_OUT                |                                                                                                             |                                                                                             |                4 |             15 |         3.75 |
+|  drpclk_in_i                                                                             | gtwizard_0_support_i/gtwizard_0_init_i/inst/gt0_rxresetfsm_i/wait_time_cnt[0]_i_2__0_n_0                    | gtwizard_0_support_i/gtwizard_0_init_i/inst/gt0_rxresetfsm_i/wait_time_cnt[0]_i_1__0_n_0    |                4 |             16 |         4.00 |
+|  drpclk_in_i                                                                             | gtwizard_0_support_i/gtwizard_0_init_i/inst/gt0_txresetfsm_i/sel                                            | gtwizard_0_support_i/gtwizard_0_init_i/inst/gt0_txresetfsm_i/wait_time_cnt[0]_i_1_n_0       |                4 |             16 |         4.00 |
+|  drpclk_in_i                                                                             | gtwizard_0_support_i/gtwizard_0_init_i/inst/gt0_rxresetfsm_i/time_out_counter                               | gtwizard_0_support_i/gtwizard_0_init_i/inst/gt0_rxresetfsm_i/reset_time_out_reg_n_0         |                5 |             17 |         3.40 |
+|  drpclk_in_i                                                                             | gtwizard_0_support_i/gtwizard_0_init_i/inst/gt0_txresetfsm_i/time_out_counter                               | gtwizard_0_support_i/gtwizard_0_init_i/inst/gt0_txresetfsm_i/reset_time_out                 |                5 |             17 |         3.40 |
+|  drpclk_in_i                                                                             | gtwizard_0_support_i/gtwizard_0_init_i/inst/gt0_rxresetfsm_i/adapt_count                                    | gtwizard_0_support_i/gtwizard_0_init_i/inst/gt0_rxresetfsm_i/adapt_count_reset              |                8 |             32 |         4.00 |
+|  drpclk_in_i                                                                             |                                                                                                             | gtwizard_0_support_i/gtwizard_0_init_i/inst/gt0_rxresetfsm_i/SR[0]                          |               11 |             33 |         3.00 |
+|  drpclk_in_i                                                                             |                                                                                                             |                                                                                             |               28 |             74 |         2.64 |
++------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+------------------+----------------+--------------+
 
 

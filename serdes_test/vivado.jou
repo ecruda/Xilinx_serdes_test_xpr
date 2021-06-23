@@ -2,32 +2,19 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Sun Jun 20 22:26:49 2021
-# Process ID: 17788
-# Current directory: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/Xilinx_serdes_test_xrp/serdes_test
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22512 C:\Users\L\Desktop\Reasearch_Lab\Dr_Ye_pt_2\datao_lily_PAM4\Xilinx_serdes_test_xrp\serdes_test\serdes_test.xpr
-# Log file: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/Xilinx_serdes_test_xrp/serdes_test/vivado.log
-# Journal file: C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/Xilinx_serdes_test_xrp/serdes_test\vivado.jou
+# Start of session at: Tue Jun 22 15:54:23 2021
+# Process ID: 14224
+# Current directory: C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test
+# Command line: vivado.exe C:\Lily_Zhang\GBS20V1\Elijah\git_repo\Xilinx_serdes_test_xpr\serdes_test\serdes_test.xpr
+# Log file: C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/vivado.log
+# Journal file: C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/L/Desktop/Reasearch_Lab/Dr_Ye_pt_2/datao_lily_PAM4/Xilinx_serdes_test_xrp/serdes_test/serdes_test.xpr
+open_project C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.xpr
 update_compile_order -fileset sources_1
-set_property source_mgmt_mode None [current_project]
-undo
+set_property -dict [list CONFIG.identical_val_tx_line_rate {1.28} CONFIG.gt_val_tx_pll {CPLL} CONFIG.gt_val_rx_pll {CPLL} CONFIG.identical_val_rx_line_rate {1.28} CONFIG.gt0_val_tx_refclk {REFCLK1_Q0} CONFIG.gt0_val_rx_refclk {REFCLK1_Q0} CONFIG.gt1_val_tx_refclk {REFCLK1_Q0} CONFIG.gt1_val_rx_refclk {REFCLK1_Q0} CONFIG.gt2_val_tx_refclk {REFCLK1_Q0} CONFIG.gt2_val_rx_refclk {REFCLK1_Q0} CONFIG.gt3_val_tx_refclk {REFCLK1_Q0} CONFIG.gt3_val_rx_refclk {REFCLK1_Q0} CONFIG.gt4_val_tx_refclk {REFCLK1_Q1} CONFIG.gt4_val_rx_refclk {REFCLK1_Q1} CONFIG.gt5_val_tx_refclk {REFCLK1_Q1} CONFIG.gt5_val_rx_refclk {REFCLK1_Q1} CONFIG.gt6_val_tx_refclk {REFCLK1_Q1} CONFIG.gt6_val_rx_refclk {REFCLK1_Q1} CONFIG.gt7_val_tx_refclk {REFCLK1_Q1} CONFIG.gt7_val_rx_refclk {REFCLK1_Q1} CONFIG.gt8_val_tx_refclk {REFCLK1_Q2} CONFIG.gt8_val_rx_refclk {REFCLK1_Q2} CONFIG.gt9_val_tx_refclk {REFCLK1_Q2} CONFIG.gt9_val_rx_refclk {REFCLK1_Q2} CONFIG.gt10_val_tx_refclk {REFCLK1_Q2} CONFIG.gt10_val_rx_refclk {REFCLK1_Q2} CONFIG.gt11_val_tx_refclk {REFCLK1_Q2} CONFIG.gt11_val_rx_refclk {REFCLK1_Q2} CONFIG.gt12_val_tx_refclk {REFCLK1_Q3} CONFIG.gt12_val_rx_refclk {REFCLK1_Q3} CONFIG.gt13_val_tx_refclk {REFCLK1_Q3} CONFIG.gt13_val_rx_refclk {REFCLK1_Q3} CONFIG.gt14_val_tx_refclk {REFCLK1_Q3} CONFIG.gt14_val_rx_refclk {REFCLK1_Q3} CONFIG.gt15_val_tx_refclk {REFCLK1_Q3} CONFIG.gt15_val_rx_refclk {REFCLK1_Q3} CONFIG.identical_val_tx_reference_clock {160.000} CONFIG.identical_val_rx_reference_clock {160.000} CONFIG.gt0_val_tx_line_rate {1.28} CONFIG.gt0_val_tx_data_width {32} CONFIG.gt0_val_tx_int_datawidth {32} CONFIG.gt0_val_tx_reference_clock {160.000} CONFIG.gt0_val_rx_line_rate {1.28} CONFIG.gt0_val_rx_data_width {32} CONFIG.gt0_val_rx_int_datawidth {32} CONFIG.gt0_val_rx_reference_clock {160.000} CONFIG.gt0_val_cpll_rxout_div {4} CONFIG.gt0_val_cpll_txout_div {4}] [get_ips gtwizard_0]
+generate_target all [get_files  C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/sources_1/ip/gtwizard_0/gtwizard_0.xci]
+export_ip_user_files -of_objects [get_files C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/sources_1/ip/gtwizard_0/gtwizard_0.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/sources_1/ip/gtwizard_0/gtwizard_0.xci] -directory C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.ip_user_files/sim_scripts -ip_user_files_dir C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.ip_user_files -ipstatic_source_dir C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.cache/compile_simlib/modelsim} {questa=C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.cache/compile_simlib/questa} {riviera=C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.cache/compile_simlib/riviera} {activehdl=C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+open_example_project -force -dir C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr [get_ips  gtwizard_0]
 update_compile_order -fileset sources_1
-reset_run synth_1
-launch_runs synth_1 -jobs 3
-wait_on_run synth_1
-reset_run synth_1
-launch_runs synth_1 -jobs 3
-wait_on_run synth_1
-reset_run synth_1
-launch_runs synth_1 -jobs 3
-wait_on_run synth_1
-reset_run synth_1
-launch_runs synth_1 -jobs 4
-wait_on_run synth_1
-launch_runs impl_1 -jobs 4
-wait_on_run impl_1
-open_run synth_1 -name synth_1
-close_design

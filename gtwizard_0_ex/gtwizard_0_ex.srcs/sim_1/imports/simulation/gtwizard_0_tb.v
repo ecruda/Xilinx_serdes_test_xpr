@@ -177,7 +177,7 @@ wire            txp_out_i;
     //----------------------------- Track Data ---------------------------------
     initial
     begin
-        #549000;
+        #249000;
         $display("------- TEST COMPLETED -------");
             $display("------- Test Completed Successfully-------");
         $stop;

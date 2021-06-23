@@ -179,7 +179,7 @@ wire    [63:0]  tied_to_vcc_vec_i;
         .QPLLLOCKDETCLK                 (QPLLLOCKDETCLK_IN),
         .QPLLLOCKEN                     (tied_to_vcc_i),
         .QPLLOUTRESET                   (tied_to_ground_i),
-        .QPLLPD                         (tied_to_ground_i),
+        .QPLLPD                         (tied_to_vcc_i),
         .QPLLREFCLKLOST                 (QPLLREFCLKLOST_OUT),
         .QPLLREFCLKSEL                  (QPLLREFCLKSEL_IN),
         .QPLLRESET                      (QPLLRESET_IN),

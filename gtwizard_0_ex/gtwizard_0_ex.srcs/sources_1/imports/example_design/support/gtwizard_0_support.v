@@ -91,6 +91,10 @@ input           gt0_data_valid_in,
     //_________________________________________________________________________
     //GT0  (X1Y0)
     //____________________________CHANNEL PORTS________________________________
+    //------------------------------- CPLL Ports -------------------------------
+    output          gt0_cpllfbclklost_out,
+    output          gt0_cplllock_out,
+    input           gt0_cpllreset_in,
     //-------------------------- Channel - DRP Ports  --------------------------
     input   [8:0]   gt0_drpaddr_in,
     input   [15:0]  gt0_drpdi_in,
@@ -138,8 +142,6 @@ input           gt0_data_valid_in,
     output          gt0_txresetdone_out,
 
     //____________________________COMMON PORTS________________________________
-    output      gt0_qplllock_out,
-    output      gt0_qpllrefclklost_out,
     output      gt0_qplloutclk_out,
     output      gt0_qplloutrefclk_out,
     input          sysclk_in
@@ -152,6 +154,11 @@ input           gt0_data_valid_in,
     //________________________________________________________________________
     //________________________________________________________________________
     //GT0  (X1Y0)
+    //------------------------------- CPLL Ports -------------------------------
+    wire            gt0_cpllfbclklost_i;
+    wire            gt0_cplllock_i;
+    wire            gt0_cpllrefclklost_i;
+    wire            gt0_cpllreset_i;
     //-------------------------- Channel - DRP Ports  --------------------------
     wire    [8:0]   gt0_drpaddr_i;
     wire    [15:0]  gt0_drpdi_i;
@@ -218,6 +225,7 @@ input           gt0_data_valid_in,
     wire    [7:0]   tied_to_vcc_vec_i;
     wire            GTTXRESET_IN;
     wire            GTRXRESET_IN;
+    wire            CPLLRESET_IN;
     wire            QPLLRESET_IN;
 
      //--------------------------- User Clocks ---------------------------------
@@ -246,10 +254,7 @@ input           gt0_data_valid_in,
     assign  gt0_rx_mmcm_lock_out = gt0_rxmmcm_lock_i;
  
 
-     assign gt0_qplllock_out  = gt0_qplllock_i;
-     assign gt0_qpllrefclklost_out = gt0_qpllrefclklost_i;
-     assign gt0_qpllreset_t = commonreset_i | gt0_qpllreset_i;
-     
+     assign gt0_qpllreset_t = tied_to_vcc_i;
     assign gt0_qplloutclk_out = gt0_qplloutclk_i;
     assign gt0_qplloutrefclk_out = gt0_qplloutrefclk_i;
 
@@ -281,13 +286,13 @@ assign  sysclk_in_i = sysclk_in;
     gtwizard_0_common #
   (
    .WRAPPER_SIM_GTRESET_SPEEDUP(EXAMPLE_SIM_GTRESET_SPEEDUP),
-   .SIM_QPLLREFCLK_SEL(3'b010)
+   .SIM_QPLLREFCLK_SEL(3'b001)
   )
  common0_i
    (
-    .QPLLREFCLKSEL_IN(3'b010),
+    .QPLLREFCLKSEL_IN(3'b001),
     .GTREFCLK0_IN(tied_to_ground_i),
-    .GTREFCLK1_IN(q0_clk1_refclk_i),
+    .GTREFCLK1_IN(tied_to_ground_i),
     .QPLLLOCK_OUT(gt0_qplllock_i),
     .QPLLLOCKDETCLK_IN(sysclk_in_i),
     .QPLLOUTCLK_OUT(gt0_qplloutclk_i),
@@ -326,6 +331,14 @@ assign  sysclk_in_i = sysclk_in;
         //_____________________________________________________________________
         //GT0  (X1Y0)
 
+        //------------------------------- CPLL Ports -------------------------------
+        .gt0_cpllfbclklost_out          (gt0_cpllfbclklost_out), // output wire gt0_cpllfbclklost_out
+        .gt0_cplllock_out               (gt0_cplllock_out), // output wire gt0_cplllock_out
+        .gt0_cplllockdetclk_in          (sysclk_in_i), // input wire sysclk_in_i
+        .gt0_cpllreset_in               (gt0_cpllreset_in), // input wire gt0_cpllreset_in
+        //------------------------ Channel - Clocking Ports ------------------------
+        .gt0_gtrefclk0_in               (tied_to_ground_i), // input wire tied_to_ground_i
+        .gt0_gtrefclk1_in               (q0_clk1_refclk_i), // input wire q0_clk1_refclk_i
         //-------------------------- Channel - DRP Ports  --------------------------
         .gt0_drpaddr_in                 (gt0_drpaddr_in), // input wire [8:0] gt0_drpaddr_in
         .gt0_drpclk_in                  (sysclk_in_i), // input wire sysclk_in_i
@@ -383,9 +396,6 @@ assign  sysclk_in_i = sysclk_in;
 
 
 
-    .gt0_qplllock_in(gt0_qplllock_i),
-    .gt0_qpllrefclklost_in(gt0_qpllrefclklost_i),
-    .gt0_qpllreset_out(gt0_qpllreset_i),
     .gt0_qplloutclk_in(gt0_qplloutclk_i),
     .gt0_qplloutrefclk_in(gt0_qplloutrefclk_i)
     );

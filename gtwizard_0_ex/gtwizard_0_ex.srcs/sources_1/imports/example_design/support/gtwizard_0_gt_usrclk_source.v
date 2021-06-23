@@ -140,7 +140,7 @@ module gtwizard_0_GT_USRCLK_SOURCE
         .MULT                           (4.0),
         .DIVIDE                         (1),
         .CLK_PERIOD                     (6.25),
-        .OUT0_DIVIDE                    (2.0),
+        .OUT0_DIVIDE                    (16.0),
         .OUT1_DIVIDE                    (1),
         .OUT2_DIVIDE                    (1),
         .OUT3_DIVIDE                    (1)

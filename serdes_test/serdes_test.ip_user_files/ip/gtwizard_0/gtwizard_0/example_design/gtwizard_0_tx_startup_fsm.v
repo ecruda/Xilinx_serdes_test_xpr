@@ -190,7 +190,7 @@ module gtwizard_0_TX_STARTUP_FSM  #
   reg       run_phase_alignment_int = 1'b0;
   wire      run_phase_alignment_int_s2;
   reg       run_phase_alignment_int_s3 = 1'b0;
-  localparam integer MAX_WAIT_BYPASS      = 37632;
+  localparam integer MAX_WAIT_BYPASS      = 135936;
  
   reg [16:0] wait_bypass_count = 0;
   reg       time_out_wait_bypass    = 1'b0;

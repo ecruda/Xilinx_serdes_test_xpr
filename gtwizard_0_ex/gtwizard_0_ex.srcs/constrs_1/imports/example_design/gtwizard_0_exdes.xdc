@@ -82,8 +82,8 @@ set_false_path -to [get_pins -filter REF_PIN_NAME=~*CLR -of_objects [get_cells -
 set_false_path -to [get_pins -filter REF_PIN_NAME=~*D -of_objects [get_cells -hierarchical -filter {NAME =~ *_txfsmresetdone_r*}]]
 ################################# RefClk Location constraints #####################
 
-set_property PACKAGE_PIN U8 [get_ports Q0_CLK1_GTREFCLK_PAD_P_IN]
-set_property PACKAGE_PIN U7 [get_ports Q0_CLK1_GTREFCLK_PAD_N_IN]
+set_property PACKAGE_PIN J8 [get_ports Q0_CLK1_GTREFCLK_PAD_P_IN]
+set_property PACKAGE_PIN J7 [get_ports Q0_CLK1_GTREFCLK_PAD_N_IN]
 
 ## LOC constrain for DRP_CLK_P/N
 
@@ -106,6 +106,18 @@ set_property LOC GTXE2_CHANNEL_X0Y0 [get_cells gtwizard_0_support_i/gtwizard_0_i
 ##---------- Set False Path from one clock to other ----------
 
 
-set_property IOSTANDARD LVDS [get_ports DRP_CLK_IN_P]
-set_property IOSTANDARD LVCMOS15 [get_ports TRACK_DATA_OUT]
+set_property IOSTANDARD LVDS [get_ports DRP_CLK_IN_N]
+set_property IOSTANDARD LVCMOS18 [get_ports TRACK_DATA_OUT]
 set_property PACKAGE_PIN AB7 [get_ports TRACK_DATA_OUT]
+
+##below edited by E.C.
+set_property PACKAGE_PIN K2 [get_ports TXP_OUT]
+set_property PACKAGE_PIN K1 [get_ports TXN_OUT]
+
+set_property PACKAGE_PIN K6 [get_ports RXP_IN]
+set_property PACKAGE_PIN K5 [get_ports RXN_IN]
+
+#set_property PACKAGE_PIN Y23 [get_ports gt0_txusrclk2_i_p]
+#set_property PACKAGE_PIN Y24 [get_ports gt0_txusrclk2_i_n]
+#set_property IOSTANDARD LVDS [get_ports gt0_txusrclk2_i_p]
+#set_property IOSTANDARD LVDS [get_ports gt0_txusrclk2_i_n]
