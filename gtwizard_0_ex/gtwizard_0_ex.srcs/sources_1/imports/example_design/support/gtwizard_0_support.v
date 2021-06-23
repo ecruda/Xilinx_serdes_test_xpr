@@ -337,8 +337,8 @@ assign  sysclk_in_i = sysclk_in;
         .soft_reset_tx_in               (soft_reset_tx_in),
         .soft_reset_rx_in               (soft_reset_rx_in),
         .dont_reset_on_data_error_in    (dont_reset_on_data_error_in),
-        .gt0_rx_mmcm_lock_in            (gt0_rxmmcm_lock_i),
-        .gt0_rx_mmcm_reset_out          (gt0_rxmmcm_reset_i),
+//        .gt0_rx_mmcm_lock_in            (gt0_rxmmcm_lock_i),
+//        .gt0_rx_mmcm_reset_out          (gt0_rxmmcm_reset_i),
         .gt0_tx_fsm_reset_done_out      (gt0_tx_fsm_reset_done_out),
         .gt0_rx_fsm_reset_done_out      (gt0_rx_fsm_reset_done_out),
         .gt0_data_valid_in              (gt0_data_valid_in),
@@ -348,10 +348,10 @@ assign  sysclk_in_i = sysclk_in;
         //GT0  (X1Y0)
 
         //------------------------ Channel - Clocking Ports ------------------------
-        .gt0_gtnorthrefclk0_in          (gt0_gtnorthrefclk0_in), // input wire gt0_gtnorthrefclk0_in
-        .gt0_gtnorthrefclk1_in          (gt0_gtnorthrefclk1_in), // input wire gt0_gtnorthrefclk1_in
-        .gt0_gtsouthrefclk0_in          (gt0_gtsouthrefclk0_in), // input wire gt0_gtsouthrefclk0_in
-        .gt0_gtsouthrefclk1_in          (gt0_gtsouthrefclk1_in), // input wire gt0_gtsouthrefclk1_in
+//        .gt0_gtnorthrefclk0_in          (gt0_gtnorthrefclk0_in), // input wire gt0_gtnorthrefclk0_in
+//        .gt0_gtnorthrefclk1_in          (gt0_gtnorthrefclk1_in), // input wire gt0_gtnorthrefclk1_in
+//        .gt0_gtsouthrefclk0_in          (gt0_gtsouthrefclk0_in), // input wire gt0_gtsouthrefclk0_in
+//        .gt0_gtsouthrefclk1_in          (gt0_gtsouthrefclk1_in), // input wire gt0_gtsouthrefclk1_in
         //-------------------------- Channel - DRP Ports  --------------------------
         .gt0_drpaddr_in                 (gt0_drpaddr_in), // input wire [8:0] gt0_drpaddr_in
         .gt0_drpclk_in                  (sysclk_in_i), // input wire sysclk_in_i
@@ -382,7 +382,7 @@ assign  sysclk_in_i = sysclk_in;
         .gt0_rxmonitorout_out           (gt0_rxmonitorout_out), // output wire [6:0] gt0_rxmonitorout_out
         .gt0_rxmonitorsel_in            (gt0_rxmonitorsel_in), // input wire [1:0] gt0_rxmonitorsel_in
         //------------- Receive Ports - RX Fabric Output Control Ports -------------
-        .gt0_rxoutclk_out               (gt0_rxoutclk_i), // output wire gt0_rxoutclk_i
+//        .gt0_rxoutclk_out               (gt0_rxoutclk_i), // output wire gt0_rxoutclk_i
         .gt0_rxoutclkfabric_out         (gt0_rxoutclkfabric_out), // output wire gt0_rxoutclkfabric_out
         //----------- Receive Ports - RX Initialization and Reset Ports ------------
         .gt0_gtrxreset_in               (gt0_gtrxreset_in), // input wire gt0_gtrxreset_in

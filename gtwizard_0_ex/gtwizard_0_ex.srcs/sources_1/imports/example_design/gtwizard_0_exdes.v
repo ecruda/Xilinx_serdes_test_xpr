@@ -78,8 +78,8 @@ module gtwizard_0_exdes #
 
 )
 (
-    input wire  Q0_CLK1_GTREFCLK_PAD_N_IN,
-    input wire  Q0_CLK1_GTREFCLK_PAD_P_IN,
+    input wire  Q2_CLK1_GTREFCLK_PAD_N_IN,
+    input wire  Q2_CLK1_GTREFCLK_PAD_P_IN,
     input wire  DRP_CLK_IN_P,
     input wire  DRP_CLK_IN_N,
     output wire TRACK_DATA_OUT,
@@ -351,12 +351,12 @@ assign  q0_clk1_refclk_i                     =  1'b0;
         .soft_reset_tx_in               (soft_reset_i),
         .soft_reset_rx_in               (soft_reset_i),
         .dont_reset_on_data_error_in    (tied_to_ground_i),
-    .q0_clk1_gtrefclk_pad_n_in(Q0_CLK1_GTREFCLK_PAD_N_IN),
-    .q0_clk1_gtrefclk_pad_p_in(Q0_CLK1_GTREFCLK_PAD_P_IN),
+    .q0_clk1_gtrefclk_pad_n_in(Q2_CLK1_GTREFCLK_PAD_N_IN),
+    .q0_clk1_gtrefclk_pad_p_in(Q2_CLK1_GTREFCLK_PAD_P_IN),
         .gt0_rx_mmcm_lock_out           (gt0_rxmmcm_lock_i),
         .gt0_tx_fsm_reset_done_out      (gt0_txfsmresetdone_i),
         .gt0_rx_fsm_reset_done_out      (gt0_rxfsmresetdone_i),
-        .gt0_data_valid_in              (gt0_track_data_i),
+        .gt0_data_valid_in              (1'b1),
  
     .gt0_txusrclk_out(gt0_txusrclk_i),
     .gt0_txusrclk2_out(gt0_txusrclk2_i),
@@ -504,7 +504,7 @@ always @(posedge  gt0_txusrclk2_i or negedge gt0_txfsmresetdone_i)
     // of your control and alignment characters.
 
 
-    gtwizard_0_GT_FRAME_GEN #
+/*    gtwizard_0_GT_FRAME_GEN #
     (
         .WORDS_IN_BRAM(EXAMPLE_WORDS_IN_BRAM)
     )
@@ -517,7 +517,7 @@ always @(posedge  gt0_txusrclk2_i or negedge gt0_txfsmresetdone_i)
         // System Interface
         .USER_CLK                        (gt0_txusrclk2_i),
         .SYSTEM_RESET                   (gt0_tx_system_reset_c)
-    );
+    );*/
 
     //***********************************************************************//
     //                                                                       //
@@ -544,7 +544,7 @@ always @(posedge  gt0_txusrclk2_i or negedge gt0_txfsmresetdone_i)
     // and this lane starts off the data checking on all the other lanes. The INC_IN port is tied off
     assign gt0_inc_in_i = 1'b0;
 
-    gtwizard_0_GT_FRAME_CHECK #
+    /*gtwizard_0_GT_FRAME_CHECK #
     (
 .RX_DATA_WIDTH ( 32 ),
 .RXCTRL_WIDTH ( 4 ),
@@ -562,7 +562,7 @@ always @(posedge  gt0_txusrclk2_i or negedge gt0_txfsmresetdone_i)
         .SYSTEM_RESET                   (gt0_rx_system_reset_c),
         .ERROR_COUNT_OUT                (gt0_error_count_i),
         .TRACK_DATA_OUT                 (gt0_track_data_i)
-    );
+    );*/
 
 
 

@@ -72,7 +72,7 @@ module gtwizard_0_init #
 (
     parameter EXAMPLE_SIM_GTRESET_SPEEDUP            = "TRUE",     // Simulation setting for GT SecureIP model
     parameter EXAMPLE_SIMULATION                     =  0,         // Set to 1 for simulation
-    parameter STABLE_CLOCK_PERIOD                    = 6,         //Period of the stable clock driving this state-machine, unit is [ns]
+    parameter STABLE_CLOCK_PERIOD                    = 16,         //Period of the stable clock driving this state-machine, unit is [ns]
     parameter EXAMPLE_USE_CHIPSCOPE                  =  0          // Set to 1 to use Chipscope to drive resets
 
 )
@@ -84,17 +84,10 @@ input           dont_reset_on_data_error_in,
 output          gt0_tx_fsm_reset_done_out,
 output          gt0_rx_fsm_reset_done_out,
 input           gt0_data_valid_in,
-input           gt0_rx_mmcm_lock_in,
-output          gt0_rx_mmcm_reset_out,
 
     //_________________________________________________________________________
-    //GT0  (X1Y0)
+    //GT0  (X1Y8)
     //____________________________CHANNEL PORTS________________________________
-    //------------------------ Channel - Clocking Ports ------------------------
-    input           gt0_gtnorthrefclk0_in,
-    input           gt0_gtnorthrefclk1_in,
-    input           gt0_gtsouthrefclk0_in,
-    input           gt0_gtsouthrefclk1_in,
     //-------------------------- Channel - DRP Ports  --------------------------
     input   [8:0]   gt0_drpaddr_in,
     input           gt0_drpclk_in,
@@ -125,7 +118,6 @@ output          gt0_rx_mmcm_reset_out,
     output  [6:0]   gt0_rxmonitorout_out,
     input   [1:0]   gt0_rxmonitorsel_in,
     //------------- Receive Ports - RX Fabric Output Control Ports -------------
-    output          gt0_rxoutclk_out,
     output          gt0_rxoutclkfabric_out,
     //----------- Receive Ports - RX Initialization and Reset Ports ------------
     input           gt0_gtrxreset_in,
@@ -246,13 +238,8 @@ assign  tied_to_vcc_i                        =  1'b1;
  
         //_____________________________________________________________________
         //_____________________________________________________________________
-        //GT0  (X1Y0)
+        //GT0  (X1Y8)
 
-        //------------------------ Channel - Clocking Ports ------------------------
-        .gt0_gtnorthrefclk0_in          (gt0_gtnorthrefclk0_in), // input wire gt0_gtnorthrefclk0_in
-        .gt0_gtnorthrefclk1_in          (gt0_gtnorthrefclk1_in), // input wire gt0_gtnorthrefclk1_in
-        .gt0_gtsouthrefclk0_in          (gt0_gtsouthrefclk0_in), // input wire gt0_gtsouthrefclk0_in
-        .gt0_gtsouthrefclk1_in          (gt0_gtsouthrefclk1_in), // input wire gt0_gtsouthrefclk1_in
         //-------------------------- Channel - DRP Ports  --------------------------
         .gt0_drpaddr_in                 (gt0_drpaddr_in), // input wire [8:0] gt0_drpaddr_in
         .gt0_drpclk_in                  (gt0_drpclk_in), // input wire gt0_drpclk_in
@@ -325,7 +312,6 @@ assign  tied_to_vcc_i                        =  1'b1;
 
 assign  gt0_txresetdone_out                  =  gt0_txresetdone_i;
 assign  gt0_rxresetdone_out                  =  gt0_rxresetdone_i;
-assign  gt0_rxoutclk_out                     =  gt0_rxoutclk_i;
 assign  gt0_txoutclk_out                     =  gt0_txoutclk_i;
 assign  gt0_qpllreset_out                    =  gt0_qpllreset_t;
 
@@ -411,13 +397,13 @@ gt0_rxresetfsm_i
         .QPLLLOCK                       (gt0_qplllock_in),
         .CPLLLOCK                       (tied_to_vcc_i),
         .RXRESETDONE                    (gt0_rxresetdone_i),
-        .MMCM_LOCK                      (gt0_rx_mmcm_lock_in),
+        .MMCM_LOCK                      (tied_to_vcc_i),
         .RECCLK_STABLE                  (gt0_recclk_stable_i),
         .RECCLK_MONITOR_RESTART         (tied_to_ground_i),
         .DATA_VALID                     (gt0_data_valid_in),
-        .TXUSERRDY                      (tied_to_vcc_i),
+        .TXUSERRDY                      (gt0_txuserrdy_i),
         .GTRXRESET                      (gt0_gtrxreset_t),
-        .MMCM_RESET                     (gt0_rx_mmcm_reset_out),
+        .MMCM_RESET                     (),
         .QPLL_RESET                     (),
         .CPLL_RESET                     (),
         .RX_FSM_RESET_DONE              (gt0_rx_fsm_reset_done_out),

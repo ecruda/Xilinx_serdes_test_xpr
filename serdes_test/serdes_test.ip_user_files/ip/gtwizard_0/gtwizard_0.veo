@@ -73,17 +73,10 @@
      .gt0_tx_fsm_reset_done_out(gt0_tx_fsm_reset_done_out), // output wire gt0_tx_fsm_reset_done_out
      .gt0_rx_fsm_reset_done_out(gt0_rx_fsm_reset_done_out), // output wire gt0_rx_fsm_reset_done_out
      .gt0_data_valid_in(gt0_data_valid_in), // input wire gt0_data_valid_in
-     .gt0_rx_mmcm_lock_in(gt0_rx_mmcm_lock_in), // input wire gt0_rx_mmcm_lock_in
-     .gt0_rx_mmcm_reset_out(gt0_rx_mmcm_reset_out), // output wire gt0_rx_mmcm_reset_out
 
     //_________________________________________________________________________
-    //GT0  (X0Y0)
+    //GT0  (X0Y8)
     //____________________________CHANNEL PORTS________________________________
-    //------------------------ Channel - Clocking Ports ------------------------
-        .gt0_gtnorthrefclk0_in          (gt0_gtnorthrefclk0_in), // input wire gt0_gtnorthrefclk0_in
-        .gt0_gtnorthrefclk1_in          (gt0_gtnorthrefclk1_in), // input wire gt0_gtnorthrefclk1_in
-        .gt0_gtsouthrefclk0_in          (gt0_gtsouthrefclk0_in), // input wire gt0_gtsouthrefclk0_in
-        .gt0_gtsouthrefclk1_in          (gt0_gtsouthrefclk1_in), // input wire gt0_gtsouthrefclk1_in
     //-------------------------- Channel - DRP Ports  --------------------------
         .gt0_drpaddr_in                 (gt0_drpaddr_in), // input wire [8:0] gt0_drpaddr_in
         .gt0_drpclk_in                  (gt0_drpclk_in), // input wire gt0_drpclk_in
@@ -114,7 +107,6 @@
         .gt0_rxmonitorout_out           (gt0_rxmonitorout_out), // output wire [6:0] gt0_rxmonitorout_out
         .gt0_rxmonitorsel_in            (gt0_rxmonitorsel_in), // input wire [1:0] gt0_rxmonitorsel_in
     //------------- Receive Ports - RX Fabric Output Control Ports -------------
-        .gt0_rxoutclk_out               (gt0_rxoutclk_out), // output wire gt0_rxoutclk_out
         .gt0_rxoutclkfabric_out         (gt0_rxoutclkfabric_out), // output wire gt0_rxoutclkfabric_out
     //----------- Receive Ports - RX Initialization and Reset Ports ------------
         .gt0_gtrxreset_in               (gt0_gtrxreset_in), // input wire gt0_gtrxreset_in

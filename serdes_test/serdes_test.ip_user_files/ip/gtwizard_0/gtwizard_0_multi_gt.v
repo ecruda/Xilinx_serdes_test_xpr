@@ -77,13 +77,8 @@
 (
     //_________________________________________________________________________
     //_________________________________________________________________________
-    //GT0  (X0Y0)
+    //GT0  (X0Y8)
     //____________________________CHANNEL PORTS________________________________
-    //------------------------ Channel - Clocking Ports ------------------------
-    input           gt0_gtnorthrefclk0_in,
-    input           gt0_gtnorthrefclk1_in,
-    input           gt0_gtsouthrefclk0_in,
-    input           gt0_gtsouthrefclk1_in,
     //-------------------------- Channel - DRP Ports  --------------------------
     input   [8:0]   gt0_drpaddr_in,
     input           gt0_drpclk_in,
@@ -196,7 +191,7 @@ wire            gt0_cpllpd_i;
 //------------------------- GT Instances  -------------------------------
     //_________________________________________________________________________
     //_________________________________________________________________________
-    //GT0  (X0Y0)
+    //GT0  (X0Y8)
     //_________________________________________________________________________
 
     gtwizard_0_GT #
@@ -211,11 +206,6 @@ wire            gt0_cpllpd_i;
 gt0_gtwizard_0_i
     (
         .cpllrefclksel_in(3'b001),
-        //------------------------ Channel - Clocking Ports ------------------------
-        .gtnorthrefclk0_in              (gt0_gtnorthrefclk0_in),
-        .gtnorthrefclk1_in              (gt0_gtnorthrefclk1_in),
-        .gtsouthrefclk0_in              (gt0_gtsouthrefclk0_in),
-        .gtsouthrefclk1_in              (gt0_gtsouthrefclk1_in),
         //-------------------------- Channel - DRP Ports  --------------------------
         .drpaddr_in                     (gt0_drpaddr_in),
         .drpclk_in                      (gt0_drpclk_in),

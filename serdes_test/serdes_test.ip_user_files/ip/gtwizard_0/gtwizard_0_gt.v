@@ -79,11 +79,6 @@ module gtwizard_0_GT #
 )
 (
      input [2:0]  cpllrefclksel_in,
-    //------------------------ Channel - Clocking Ports ------------------------
-    input           gtnorthrefclk0_in,
-    input           gtnorthrefclk1_in,
-    input           gtsouthrefclk0_in,
-    input           gtsouthrefclk1_in,
     //-------------------------- Channel - DRP Ports  --------------------------
     input   [8:0]   drpaddr_in,
     input           drpclk_in,
@@ -506,12 +501,12 @@ wire            rxstartofseq_float_i;
         .CLKRSVD                        (tied_to_ground_vec_i[3:0]),
         //------------------------ Channel - Clocking Ports ------------------------
         .GTGREFCLK                      (tied_to_ground_i),
-        .GTNORTHREFCLK0                 (gtnorthrefclk0_in),
-        .GTNORTHREFCLK1                 (gtnorthrefclk1_in),
+        .GTNORTHREFCLK0                 (tied_to_ground_i),
+        .GTNORTHREFCLK1                 (tied_to_ground_i),
         .GTREFCLK0                      (tied_to_ground_i),
         .GTREFCLK1                      (tied_to_ground_i),
-        .GTSOUTHREFCLK0                 (gtsouthrefclk0_in),
-        .GTSOUTHREFCLK1                 (gtsouthrefclk1_in),
+        .GTSOUTHREFCLK0                 (tied_to_ground_i),
+        .GTSOUTHREFCLK1                 (tied_to_ground_i),
         //-------------------------- Channel - DRP Ports  --------------------------
         .DRPADDR                        (drpaddr_in),
         .DRPCLK                         (drpclk_in),
@@ -650,7 +645,7 @@ wire            rxstartofseq_float_i;
         .RXOUTCLK                       (rxoutclk_out),
         .RXOUTCLKFABRIC                 (rxoutclkfabric_out),
         .RXOUTCLKPCS                    (),
-        .RXOUTCLKSEL                    (3'b011),
+        .RXOUTCLKSEL                    (3'b010),
         //-------------------- Receive Ports - RX Gearbox Ports --------------------
         .RXDATAVALID                    (),
         .RXHEADER                       (),
