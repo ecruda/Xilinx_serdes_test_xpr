@@ -1,8 +1,8 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date                      : Wed Jun 23 16:10:12 2021
-| Host                      : 21-10244 running 64-bit major release  (build 9200)
+| Date                      : Fri Jun 25 15:31:29 2021
+| Host                      : DESKTOP-8KUEMAV running 64-bit major release  (build 9200)
 | Command                   : report_io -file PRBS7_top_io_placed.rpt
 | Design                    : PRBS7_top
 | Device                    : xc7k325t

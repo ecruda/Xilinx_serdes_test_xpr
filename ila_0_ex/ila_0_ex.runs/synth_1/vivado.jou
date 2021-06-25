@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Jun 25 13:17:08 2021
+# Process ID: 18364
+# Current directory: c:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/ila_0_ex/ila_0_ex.runs/synth_1
+# Command line: vivado.exe -log example_ila_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source example_ila_0.tcl
+# Log file: c:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/ila_0_ex/ila_0_ex.runs/synth_1/example_ila_0.vds
+# Journal file: c:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/ila_0_ex/ila_0_ex.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source example_ila_0.tcl -notrace

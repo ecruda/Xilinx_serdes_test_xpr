@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/impl_1/PRBS7_top.tcl"
+  variable script "C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.runs/impl_1/PRBS7_top.tcl"
   variable category "vivado_impl"
 }
 
@@ -123,10 +123,12 @@ start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
-  set_param chipscope.maxJobs 4
+  set_param tcl.collectionResultDisplayLimit 0
+  set_param chipscope.maxJobs 1
   set_param xicom.use_bs_reader 1
+  set_param ced.repoPaths C:/Users/L/AppData/Roaming/Xilinx/Vivado/2020.2/xhub/ced_store/Vivado_example_project
   open_checkpoint PRBS7_top_routed.dcp
-  set_property webtalk.parent_dir C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.cache/wt [current_project]
+  set_property webtalk.parent_dir C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.cache/wt [current_project]
 set_property TOP PRBS7_top [current_fileset]
 OPTRACE "read constraints: write_bitstream" START { }
 OPTRACE "read constraints: write_bitstream" END { }

@@ -2,35 +2,868 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Wed Jun 23 15:18:57 2021
-# Process ID: 9052
-# Current directory: C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test
-# Command line: vivado.exe C:\Lily_Zhang\GBS20V1\Elijah\git_repo\Xilinx_serdes_test_xpr\serdes_test\serdes_test.xpr
-# Log file: C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/vivado.log
-# Journal file: C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test\vivado.jou
+# Start of session at: Fri Jun 25 11:43:50 2021
+# Process ID: 19988
+# Current directory: C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2892 C:\Lily_Zhang\SERDES_Xilinx\Xilinx_serdes_test_xpr_repo\serdes_test\serdes_test.xpr
+# Log file: C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/vivado.log
+# Journal file: C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.xpr
-WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.gen/sources_1'.
-CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/From Datao/serdes_repo/PRBS7_tb.v'.
+open_project C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.xpr
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.gen/sources_1'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Lily_Zhang/SERDES_Xilinx/SERDES_KC705/PRBS7_tb.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Lily_Zhang/SERDES_Xilinx/From Datao/serdes_repo/PRBS7_tb.v'.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
-open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:06 . Memory (MB): peak = 1007.102 ; gain = 0.000
-update_compile_order -fileset sources_1
-set_property -dict [list CONFIG.gt0_val {false} CONFIG.gt8_val {true} CONFIG.advanced_clocking {false} CONFIG.gt0_val_drp_clock {60} CONFIG.gt0_val_rxusrclk {TXOUTCLK} CONFIG.gt0_val_rxoutclk_source {false} CONFIG.gt8_val_tx_refclk {REFCLK1_Q2} CONFIG.gt8_val_rx_refclk {REFCLK1_Q2} CONFIG.gt0_val_tx_line_rate {10.24} CONFIG.gt0_val_tx_data_width {32} CONFIG.gt0_val_tx_int_datawidth {32} CONFIG.gt0_val_tx_reference_clock {160.000} CONFIG.gt0_val_rx_line_rate {10.24} CONFIG.gt0_val_rx_data_width {32} CONFIG.gt0_val_rx_int_datawidth {32} CONFIG.gt0_val_rx_reference_clock {160.000} CONFIG.gt0_val_tx_buffer_bypass_mode {Auto} CONFIG.gt0_val_rx_buffer_bypass_mode {Auto}] [get_ips gtwizard_0]
-generate_target all [get_files  C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/sources_1/ip/gtwizard_0/gtwizard_0.xci]
-INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'gtwizard_0'...
-INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'gtwizard_0'...
-INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'gtwizard_0'...
-INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'gtwizard_0'...
-INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'gtwizard_0'...
-generate_target: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1007.102 ; gain = 0.000
-export_ip_user_files -of_objects [get_files C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/sources_1/ip/gtwizard_0/gtwizard_0.xci] -no_script -sync -force -quiet
-export_simulation -of_objects [get_files C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/sources_1/ip/gtwizard_0/gtwizard_0.xci] -directory C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.ip_user_files/sim_scripts -ip_user_files_dir C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.ip_user_files -ipstatic_source_dir C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.cache/compile_simlib/modelsim} {questa=C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.cache/compile_simlib/questa} {riviera=C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.cache/compile_simlib/riviera} {activehdl=C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+open_project: Time (s): cpu = 00:00:29 ; elapsed = 00:00:16 . Memory (MB): peak = 1088.543 ; gain = 0.000
+set_property USED_IN_SYNTHESIS 0 [get_files C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/constrs_1/new/debug.xdc]
 reset_run synth_1
-launch_runs synth_1 -jobs 8
-[Wed Jun 23 15:23:52 2021] Launched synth_1...
-Run output will be captured here: C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/runme.log
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Fri Jun 25 11:53:02 2021] Launched synth_1...
+Run output will be captured here: C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Fri Jun 25 11:54:49 2021] Launched impl_1...
+Run output will be captured here: C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7k325tffg900-2
+INFO: [Device 21-403] Loading part xc7k325tffg900-2
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1390.734 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 46 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/sources_1/ip/gtwizard_0/gtwizard_0.xdc] for cell 'gtwizard_0_exdes_i/gtwizard_0_support_i/gtwizard_0_init_i/inst'
+Finished Parsing XDC File [c:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/sources_1/ip/gtwizard_0/gtwizard_0.xdc] for cell 'gtwizard_0_exdes_i/gtwizard_0_support_i/gtwizard_0_init_i/inst'
+CRITICAL WARNING: [Designutils 20-1280] Could not find module 'ila_0'. The XDC file c:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/sources_1/ip/ila_0_1/ila_v6_2/constraints/ila_impl.xdc will not be read for any cell of this module.
+CRITICAL WARNING: [Designutils 20-1280] Could not find module 'ila_0'. The XDC file c:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/sources_1/ip/ila_0_1/ila_v6_2/constraints/ila.xdc will not be read for any cell of this module.
+Parsing XDC File [C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/constrs_1/new/top.xdc]
+Finished Parsing XDC File [C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/constrs_1/new/top.xdc]
+Parsing XDC File [C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/constrs_1/new/debug.xdc]
+Finished Parsing XDC File [C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/constrs_1/new/debug.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1507.906 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:28 ; elapsed = 00:00:19 . Memory (MB): peak = 1660.621 ; gain = 572.078
+show_objects -name NET_ONLY [get_nets -hierarchical -top_net_of_hierarchical_group "*" ]
+show_objects -name NET_ONLY [get_nets -hierarchical -top_net_of_hierarchical_group "*" ]
+show_objects -name NET_ONLY [get_nets -hierarchical -top_net_of_hierarchical_group "*" ]
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+connect_debug_port u_ila_0/clk [get_nets [list gtwizard_0_exdes_i/gtwizard_0_support_i/gt_usrclk_source/GT0_TXUSRCLK_OUT ]]
+set_property port_width 32 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {PRBS_debug_inst0/Q[0]} {PRBS_debug_inst0/Q[1]} {PRBS_debug_inst0/Q[2]} {PRBS_debug_inst0/Q[3]} {PRBS_debug_inst0/Q[4]} {PRBS_debug_inst0/Q[5]} {PRBS_debug_inst0/Q[6]} {PRBS_debug_inst0/Q[7]} {PRBS_debug_inst0/Q[8]} {PRBS_debug_inst0/Q[9]} {PRBS_debug_inst0/Q[10]} {PRBS_debug_inst0/Q[11]} {PRBS_debug_inst0/Q[12]} {PRBS_debug_inst0/Q[13]} {PRBS_debug_inst0/Q[14]} {PRBS_debug_inst0/Q[15]} {PRBS_debug_inst0/Q[16]} {PRBS_debug_inst0/Q[17]} {PRBS_debug_inst0/Q[18]} {PRBS_debug_inst0/Q[19]} {PRBS_debug_inst0/Q[20]} {PRBS_debug_inst0/Q[21]} {PRBS_debug_inst0/Q[22]} {PRBS_debug_inst0/Q[23]} {PRBS_debug_inst0/Q[24]} {PRBS_debug_inst0/Q[25]} {PRBS_debug_inst0/Q[26]} {PRBS_debug_inst0/Q[27]} {PRBS_debug_inst0/Q[28]} {PRBS_debug_inst0/Q[29]} {PRBS_debug_inst0/Q[30]} {PRBS_debug_inst0/Q[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 32 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {gt0_txdata_i[0]} {gt0_txdata_i[1]} {gt0_txdata_i[2]} {gt0_txdata_i[3]} {gt0_txdata_i[4]} {gt0_txdata_i[5]} {gt0_txdata_i[6]} {gt0_txdata_i[7]} {gt0_txdata_i[8]} {gt0_txdata_i[9]} {gt0_txdata_i[10]} {gt0_txdata_i[11]} {gt0_txdata_i[12]} {gt0_txdata_i[13]} {gt0_txdata_i[14]} {gt0_txdata_i[15]} {gt0_txdata_i[16]} {gt0_txdata_i[17]} {gt0_txdata_i[18]} {gt0_txdata_i[19]} {gt0_txdata_i[20]} {gt0_txdata_i[21]} {gt0_txdata_i[22]} {gt0_txdata_i[23]} {gt0_txdata_i[24]} {gt0_txdata_i[25]} {gt0_txdata_i[26]} {gt0_txdata_i[27]} {gt0_txdata_i[28]} {gt0_txdata_i[29]} {gt0_txdata_i[30]} {gt0_txdata_i[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list gtwizard_0_exdes_i/rxresetdone_vio_i ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe3]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
+connect_debug_port u_ila_0/probe3 [get_nets [list gtwizard_0_exdes_i/soft_reset_vio_i ]]
+save_constraints
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Fri Jun 25 13:02:42 2021] Launched synth_1...
+Run output will be captured here: C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Fri Jun 25 13:04:33 2021] Launched impl_1...
+Run output will be captured here: C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.runs/impl_1/runme.log
+set_property is_enabled false [get_files  C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/constrs_1/new/debug.xdc]
+delete_debug_core [get_debug_cores {u_ila_0 }]
+refresh_design
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 2235.734 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 46 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/sources_1/ip/gtwizard_0/gtwizard_0.xdc] for cell 'gtwizard_0_exdes_i/gtwizard_0_support_i/gtwizard_0_init_i/inst'
+Finished Parsing XDC File [c:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/sources_1/ip/gtwizard_0/gtwizard_0.xdc] for cell 'gtwizard_0_exdes_i/gtwizard_0_support_i/gtwizard_0_init_i/inst'
+CRITICAL WARNING: [Designutils 20-1280] Could not find module 'ila_0'. The XDC file c:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/sources_1/ip/ila_0_1/ila_v6_2/constraints/ila_impl.xdc will not be read for any cell of this module.
+CRITICAL WARNING: [Designutils 20-1280] Could not find module 'ila_0'. The XDC file c:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/sources_1/ip/ila_0_1/ila_v6_2/constraints/ila.xdc will not be read for any cell of this module.
+Parsing XDC File [C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/constrs_1/new/top.xdc]
+Finished Parsing XDC File [C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/constrs_1/new/top.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:14 . Memory (MB): peak = 2248.391 ; gain = 24.363
+export_ip_user_files -of_objects  [get_files C:/Lily_Zhang/SERDES_Xilinx/SERDES_KC705_repo/SERDES_KC705/Serializer.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Lily_Zhang/SERDES_Xilinx/SERDES_KC705_repo/SERDES_KC705/Deserializer.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Lily_Zhang/SERDES_Xilinx/SERDES_KC705_repo/SERDES_KC705/diff_in.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Lily_Zhang/SERDES_Xilinx/SERDES_KC705_repo/SERDES_KC705/diff_out.v] -no_script -reset -force -quiet
+remove_files  {C:/Lily_Zhang/SERDES_Xilinx/SERDES_KC705_repo/SERDES_KC705/Serializer.v C:/Lily_Zhang/SERDES_Xilinx/SERDES_KC705_repo/SERDES_KC705/Deserializer.v C:/Lily_Zhang/SERDES_Xilinx/SERDES_KC705_repo/SERDES_KC705/diff_in.v C:/Lily_Zhang/SERDES_Xilinx/SERDES_KC705_repo/SERDES_KC705/diff_out.v}
+open_example_project -force -dir C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo [get_ips  ila_0]
+INFO: [IP_Flow 19-1686] Generating 'Examples' target for IP 'ila_0'...
+open_example_project: Time (s): cpu = 00:00:07 ; elapsed = 00:01:06 . Memory (MB): peak = 2267.566 ; gain = 10.023
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Fri Jun 25 13:43:05 2021] Launched synth_1...
+Run output will be captured here: C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.runs/synth_1/runme.log
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7k325tffg900-2
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.131 . Memory (MB): peak = 2267.566 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 198 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/sources_1/ip/gtwizard_0/gtwizard_0.xdc] for cell 'gtwizard_0_exdes_i/gtwizard_0_support_i/gtwizard_0_init_i/inst'
+Finished Parsing XDC File [c:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/sources_1/ip/gtwizard_0/gtwizard_0.xdc] for cell 'gtwizard_0_exdes_i/gtwizard_0_support_i/gtwizard_0_init_i/inst'
+Parsing XDC File [c:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/sources_1/ip/ila_0_1/ila_v6_2/constraints/ila_impl.xdc] for cell 'ila/inst'
+Finished Parsing XDC File [c:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/sources_1/ip/ila_0_1/ila_v6_2/constraints/ila_impl.xdc] for cell 'ila/inst'
+Parsing XDC File [c:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/sources_1/ip/ila_0_1/ila_v6_2/constraints/ila.xdc] for cell 'ila/inst'
+Finished Parsing XDC File [c:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/sources_1/ip/ila_0_1/ila_v6_2/constraints/ila.xdc] for cell 'ila/inst'
+Parsing XDC File [C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/constrs_1/new/top.xdc]
+Finished Parsing XDC File [C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/constrs_1/new/top.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2267.566 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 112 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 112 instances
+
+open_run: Time (s): cpu = 00:00:15 ; elapsed = 00:00:11 . Memory (MB): peak = 2294.402 ; gain = 26.836
+show_objects -name NET_ONLY [get_nets -hierarchical -top_net_of_hierarchical_group "*" ]
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Fri Jun 25 13:49:47 2021] Launched synth_1...
+Run output will be captured here: C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:30 . Memory (MB): peak = 2307.848 ; gain = 1.277
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7k325tffg900-2
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.130 . Memory (MB): peak = 2311.074 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 198 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/sources_1/ip/gtwizard_0/gtwizard_0.xdc] for cell 'gtwizard_0_exdes_i/gtwizard_0_support_i/gtwizard_0_init_i/inst'
+Finished Parsing XDC File [c:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/sources_1/ip/gtwizard_0/gtwizard_0.xdc] for cell 'gtwizard_0_exdes_i/gtwizard_0_support_i/gtwizard_0_init_i/inst'
+Parsing XDC File [c:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/sources_1/ip/ila_0_1/ila_v6_2/constraints/ila_impl.xdc] for cell 'ila/inst'
+Finished Parsing XDC File [c:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/sources_1/ip/ila_0_1/ila_v6_2/constraints/ila_impl.xdc] for cell 'ila/inst'
+Parsing XDC File [c:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/sources_1/ip/ila_0_1/ila_v6_2/constraints/ila.xdc] for cell 'ila/inst'
+Finished Parsing XDC File [c:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/sources_1/ip/ila_0_1/ila_v6_2/constraints/ila.xdc] for cell 'ila/inst'
+Parsing XDC File [C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/constrs_1/new/top.xdc]
+Finished Parsing XDC File [C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/constrs_1/new/top.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2311.074 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 112 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 112 instances
+
+open_run: Time (s): cpu = 00:00:14 ; elapsed = 00:00:10 . Memory (MB): peak = 2311.074 ; gain = 0.000
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+create_debug_core u_ila_1 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_1]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_1]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_1]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_1]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_1]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_1]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_1]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_1]
+connect_debug_port u_ila_0/clk [get_nets [list gtwizard_0_exdes_i/gtwizard_0_support_i/gt_usrclk_source/rxoutclk_mmcm1_i/gt0_rxusrclk2_i ]]
+connect_debug_port u_ila_1/clk [get_nets [list gtwizard_0_exdes_i/gtwizard_0_support_i/gt_usrclk_source/gt0_txusrclk2_i ]]
+set_property port_width 32 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {decodedData[0]} {decodedData[1]} {decodedData[2]} {decodedData[3]} {decodedData[4]} {decodedData[5]} {decodedData[6]} {decodedData[7]} {decodedData[8]} {decodedData[9]} {decodedData[10]} {decodedData[11]} {decodedData[12]} {decodedData[13]} {decodedData[14]} {decodedData[15]} {decodedData[16]} {decodedData[17]} {decodedData[18]} {decodedData[19]} {decodedData[20]} {decodedData[21]} {decodedData[22]} {decodedData[23]} {decodedData[24]} {decodedData[25]} {decodedData[26]} {decodedData[27]} {decodedData[28]} {decodedData[29]} {decodedData[30]} {decodedData[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 6 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {errorCount[0]} {errorCount[1]} {errorCount[2]} {errorCount[3]} {errorCount[4]} {errorCount[5]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 32 [get_debug_ports u_ila_0/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list {gt0_rxdata_i[0]} {gt0_rxdata_i[1]} {gt0_rxdata_i[2]} {gt0_rxdata_i[3]} {gt0_rxdata_i[4]} {gt0_rxdata_i[5]} {gt0_rxdata_i[6]} {gt0_rxdata_i[7]} {gt0_rxdata_i[8]} {gt0_rxdata_i[9]} {gt0_rxdata_i[10]} {gt0_rxdata_i[11]} {gt0_rxdata_i[12]} {gt0_rxdata_i[13]} {gt0_rxdata_i[14]} {gt0_rxdata_i[15]} {gt0_rxdata_i[16]} {gt0_rxdata_i[17]} {gt0_rxdata_i[18]} {gt0_rxdata_i[19]} {gt0_rxdata_i[20]} {gt0_rxdata_i[21]} {gt0_rxdata_i[22]} {gt0_rxdata_i[23]} {gt0_rxdata_i[24]} {gt0_rxdata_i[25]} {gt0_rxdata_i[26]} {gt0_rxdata_i[27]} {gt0_rxdata_i[28]} {gt0_rxdata_i[29]} {gt0_rxdata_i[30]} {gt0_rxdata_i[31]} ]]
+set_property port_width 32 [get_debug_ports u_ila_1/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe0]
+connect_debug_port u_ila_1/probe0 [get_nets [list {gt0_txdata_i[0]} {gt0_txdata_i[1]} {gt0_txdata_i[2]} {gt0_txdata_i[3]} {gt0_txdata_i[4]} {gt0_txdata_i[5]} {gt0_txdata_i[6]} {gt0_txdata_i[7]} {gt0_txdata_i[8]} {gt0_txdata_i[9]} {gt0_txdata_i[10]} {gt0_txdata_i[11]} {gt0_txdata_i[12]} {gt0_txdata_i[13]} {gt0_txdata_i[14]} {gt0_txdata_i[15]} {gt0_txdata_i[16]} {gt0_txdata_i[17]} {gt0_txdata_i[18]} {gt0_txdata_i[19]} {gt0_txdata_i[20]} {gt0_txdata_i[21]} {gt0_txdata_i[22]} {gt0_txdata_i[23]} {gt0_txdata_i[24]} {gt0_txdata_i[25]} {gt0_txdata_i[26]} {gt0_txdata_i[27]} {gt0_txdata_i[28]} {gt0_txdata_i[29]} {gt0_txdata_i[30]} {gt0_txdata_i[31]} ]]
+create_debug_port u_ila_1 probe
+set_property port_width 1 [get_debug_ports u_ila_1/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe1]
+connect_debug_port u_ila_1/probe1 [get_nets [list gtwizard_0_exdes_i/rxresetdone_vio_i ]]
+create_debug_port u_ila_1 probe
+set_property port_width 1 [get_debug_ports u_ila_1/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe2]
+connect_debug_port u_ila_1/probe2 [get_nets [list gtwizard_0_exdes_i/soft_reset_vio_i ]]
+set_property is_enabled true [get_files  C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/constrs_1/new/debug.xdc]
+set_property target_constrs_file C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/constrs_1/new/debug.xdc [current_fileset -constrset]
+refresh_design
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.131 . Memory (MB): peak = 2335.238 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 198 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/sources_1/ip/gtwizard_0/gtwizard_0.xdc] for cell 'gtwizard_0_exdes_i/gtwizard_0_support_i/gtwizard_0_init_i/inst'
+Finished Parsing XDC File [c:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/sources_1/ip/gtwizard_0/gtwizard_0.xdc] for cell 'gtwizard_0_exdes_i/gtwizard_0_support_i/gtwizard_0_init_i/inst'
+Parsing XDC File [c:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/sources_1/ip/ila_0_1/ila_v6_2/constraints/ila_impl.xdc] for cell 'ila/inst'
+Finished Parsing XDC File [c:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/sources_1/ip/ila_0_1/ila_v6_2/constraints/ila_impl.xdc] for cell 'ila/inst'
+Parsing XDC File [c:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/sources_1/ip/ila_0_1/ila_v6_2/constraints/ila.xdc] for cell 'ila/inst'
+Finished Parsing XDC File [c:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/sources_1/ip/ila_0_1/ila_v6_2/constraints/ila.xdc] for cell 'ila/inst'
+Parsing XDC File [C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/constrs_1/new/top.xdc]
+Finished Parsing XDC File [C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/constrs_1/new/top.xdc]
+Parsing XDC File [C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/constrs_1/new/debug.xdc]
+Finished Parsing XDC File [C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/constrs_1/new/debug.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:12 . Memory (MB): peak = 2335.238 ; gain = 16.453
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+create_debug_core u_ila_1 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_1]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_1]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_1]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_1]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_1]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_1]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_1]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_1]
+connect_debug_port u_ila_0/clk [get_nets [list gtwizard_0_exdes_i/gtwizard_0_support_i/gt_usrclk_source/rxoutclk_mmcm1_i/gt0_rxusrclk2_i ]]
+connect_debug_port u_ila_1/clk [get_nets [list gtwizard_0_exdes_i/gtwizard_0_support_i/gt_usrclk_source/gt0_txusrclk2_i ]]
+set_property port_width 6 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {errorCount[0]} {errorCount[1]} {errorCount[2]} {errorCount[3]} {errorCount[4]} {errorCount[5]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 32 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {gt0_rxdata_i[0]} {gt0_rxdata_i[1]} {gt0_rxdata_i[2]} {gt0_rxdata_i[3]} {gt0_rxdata_i[4]} {gt0_rxdata_i[5]} {gt0_rxdata_i[6]} {gt0_rxdata_i[7]} {gt0_rxdata_i[8]} {gt0_rxdata_i[9]} {gt0_rxdata_i[10]} {gt0_rxdata_i[11]} {gt0_rxdata_i[12]} {gt0_rxdata_i[13]} {gt0_rxdata_i[14]} {gt0_rxdata_i[15]} {gt0_rxdata_i[16]} {gt0_rxdata_i[17]} {gt0_rxdata_i[18]} {gt0_rxdata_i[19]} {gt0_rxdata_i[20]} {gt0_rxdata_i[21]} {gt0_rxdata_i[22]} {gt0_rxdata_i[23]} {gt0_rxdata_i[24]} {gt0_rxdata_i[25]} {gt0_rxdata_i[26]} {gt0_rxdata_i[27]} {gt0_rxdata_i[28]} {gt0_rxdata_i[29]} {gt0_rxdata_i[30]} {gt0_rxdata_i[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 32 [get_debug_ports u_ila_0/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list {decodedData[0]} {decodedData[1]} {decodedData[2]} {decodedData[3]} {decodedData[4]} {decodedData[5]} {decodedData[6]} {decodedData[7]} {decodedData[8]} {decodedData[9]} {decodedData[10]} {decodedData[11]} {decodedData[12]} {decodedData[13]} {decodedData[14]} {decodedData[15]} {decodedData[16]} {decodedData[17]} {decodedData[18]} {decodedData[19]} {decodedData[20]} {decodedData[21]} {decodedData[22]} {decodedData[23]} {decodedData[24]} {decodedData[25]} {decodedData[26]} {decodedData[27]} {decodedData[28]} {decodedData[29]} {decodedData[30]} {decodedData[31]} ]]
+set_property port_width 32 [get_debug_ports u_ila_1/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe0]
+connect_debug_port u_ila_1/probe0 [get_nets [list {gt0_txdata_i[0]} {gt0_txdata_i[1]} {gt0_txdata_i[2]} {gt0_txdata_i[3]} {gt0_txdata_i[4]} {gt0_txdata_i[5]} {gt0_txdata_i[6]} {gt0_txdata_i[7]} {gt0_txdata_i[8]} {gt0_txdata_i[9]} {gt0_txdata_i[10]} {gt0_txdata_i[11]} {gt0_txdata_i[12]} {gt0_txdata_i[13]} {gt0_txdata_i[14]} {gt0_txdata_i[15]} {gt0_txdata_i[16]} {gt0_txdata_i[17]} {gt0_txdata_i[18]} {gt0_txdata_i[19]} {gt0_txdata_i[20]} {gt0_txdata_i[21]} {gt0_txdata_i[22]} {gt0_txdata_i[23]} {gt0_txdata_i[24]} {gt0_txdata_i[25]} {gt0_txdata_i[26]} {gt0_txdata_i[27]} {gt0_txdata_i[28]} {gt0_txdata_i[29]} {gt0_txdata_i[30]} {gt0_txdata_i[31]} ]]
+create_debug_port u_ila_1 probe
+set_property port_width 1 [get_debug_ports u_ila_1/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe1]
+connect_debug_port u_ila_1/probe1 [get_nets [list gtwizard_0_exdes_i/rxresetdone_vio_i ]]
+create_debug_port u_ila_1 probe
+set_property port_width 1 [get_debug_ports u_ila_1/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe2]
+connect_debug_port u_ila_1/probe2 [get_nets [list gtwizard_0_exdes_i/soft_reset_vio_i ]]
+save_constraints
+launch_runs impl_1 -jobs 4
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.152 . Memory (MB): peak = 2348.254 ; gain = 9.082
+[Fri Jun 25 13:56:30 2021] Launched impl_1...
+Run output will be captured here: C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Jun 25 14:08:46 2021] Launched impl_1...
+Run output will be captured here: C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 03 2020-15:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:02 ; elapsed = 00:00:19 . Memory (MB): peak = 2350.230 ; gain = 0.387
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210203A0FD8AA
+open_hw_target: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 3869.973 ; gain = 1519.742
+set_property PROGRAM.FILE {C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.runs/impl_1/PRBS7_top.bit} [get_hw_devices xc7k325t_0]
+set_property PROBES.FILE {C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.runs/impl_1/PRBS7_top.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.runs/impl_1/PRBS7_top.ltx} [get_hw_devices xc7k325t_0]
+current_hw_device [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-2302] Device xc7k325t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'u_ila_0' at location 'uuid_23E7D65A79BC59F7BC47406C1714DFAE' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'u_ila_1' at location 'uuid_3B505A030738513C98471D25F5B1F848' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'ila' at location 'uuid_901A5F558B2950A88131F43987F6BE78' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7k325t_0 and the probes file(s) C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.runs/impl_1/PRBS7_top.ltx.
+The device design has 1 ILA core(s) and 0 VIO core(s). 0 ILA core(s) and 0 VIO core(s) are matched in the probes file(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+set_property PROBES.FILE {C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.runs/impl_1/PRBS7_top.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.runs/impl_1/PRBS7_top.ltx} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.runs/impl_1/PRBS7_top.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 3923.590 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+WARNING: [Xicom 50-38] xicom: No CseXsdb register file specified for CseXsdb slave type: 0, cse driver version: 0. Slave initialization skipped.
+WARNING: [Xicom 50-38] xicom: No CseXsdb register file specified for CseXsdb slave type: 0, cse driver version: 0. Slave initialization skipped.
+WARNING: [Xicom 50-38] xicom: No CseXsdb register file specified for CseXsdb slave type: 0, cse driver version: 0. Slave initialization skipped.
+INFO: [Labtools 27-1434] Device xc7k325t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'u_ila_0' at location 'uuid_23E7D65A79BC59F7BC47406C1714DFAE' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'u_ila_1' at location 'uuid_3B505A030738513C98471D25F5B1F848' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'ila' at location 'uuid_901A5F558B2950A88131F43987F6BE78' from probes file, since it cannot be found on the programmed device.
+set_property PROBES.FILE {C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.runs/impl_1/debug_nets.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.runs/impl_1/debug_nets.ltx} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.runs/impl_1/PRBS7_top.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 3992.598 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+WARNING: [Xicom 50-38] xicom: No CseXsdb register file specified for CseXsdb slave type: 0, cse driver version: 0. Slave initialization skipped.
+WARNING: [Xicom 50-38] xicom: No CseXsdb register file specified for CseXsdb slave type: 0, cse driver version: 0. Slave initialization skipped.
+WARNING: [Xicom 50-38] xicom: No CseXsdb register file specified for CseXsdb slave type: 0, cse driver version: 0. Slave initialization skipped.
+INFO: [Labtools 27-1434] Device xc7k325t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'u_ila_0' at location 'uuid_23E7D65A79BC59F7BC47406C1714DFAE' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'u_ila_1' at location 'uuid_3B505A030738513C98471D25F5B1F848' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'ila' at location 'uuid_901A5F558B2950A88131F43987F6BE78' from probes file, since it cannot be found on the programmed device.
+reset_run impl_1
+launch_runs impl_1 -jobs 4
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Fri Jun 25 14:14:23 2021] Launched impl_1...
+Run output will be captured here: C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.runs/impl_1/runme.log
+close_hw_manager
+refresh_design
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.233 . Memory (MB): peak = 4006.656 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 198 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/sources_1/ip/gtwizard_0/gtwizard_0.xdc] for cell 'gtwizard_0_exdes_i/gtwizard_0_support_i/gtwizard_0_init_i/inst'
+Finished Parsing XDC File [c:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/sources_1/ip/gtwizard_0/gtwizard_0.xdc] for cell 'gtwizard_0_exdes_i/gtwizard_0_support_i/gtwizard_0_init_i/inst'
+Parsing XDC File [c:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/sources_1/ip/ila_0_1/ila_v6_2/constraints/ila_impl.xdc] for cell 'ila/inst'
+Finished Parsing XDC File [c:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/sources_1/ip/ila_0_1/ila_v6_2/constraints/ila_impl.xdc] for cell 'ila/inst'
+Parsing XDC File [c:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/sources_1/ip/ila_0_1/ila_v6_2/constraints/ila.xdc] for cell 'ila/inst'
+Finished Parsing XDC File [c:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/sources_1/ip/ila_0_1/ila_v6_2/constraints/ila.xdc] for cell 'ila/inst'
+Parsing XDC File [C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/constrs_1/new/top.xdc]
+Finished Parsing XDC File [C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/constrs_1/new/top.xdc]
+Parsing XDC File [C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/constrs_1/new/debug.xdc]
+Finished Parsing XDC File [C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/constrs_1/new/debug.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:17 . Memory (MB): peak = 4006.656 ; gain = 3.707
+close_design
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Fri Jun 25 14:20:11 2021] Launched synth_1...
+Run output will be captured here: C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:00 ; elapsed = 00:00:20 . Memory (MB): peak = 4006.656 ; gain = 0.000
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7k325tffg900-2
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 4006.656 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 46 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/sources_1/ip/gtwizard_0/gtwizard_0.xdc] for cell 'gtwizard_0_exdes_i/gtwizard_0_support_i/gtwizard_0_init_i/inst'
+Finished Parsing XDC File [c:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/sources_1/ip/gtwizard_0/gtwizard_0.xdc] for cell 'gtwizard_0_exdes_i/gtwizard_0_support_i/gtwizard_0_init_i/inst'
+CRITICAL WARNING: [Designutils 20-1280] Could not find module 'ila_0'. The XDC file c:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/sources_1/ip/ila_0_1/ila_v6_2/constraints/ila_impl.xdc will not be read for any cell of this module.
+CRITICAL WARNING: [Designutils 20-1280] Could not find module 'ila_0'. The XDC file c:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/sources_1/ip/ila_0_1/ila_v6_2/constraints/ila.xdc will not be read for any cell of this module.
+Parsing XDC File [C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/constrs_1/new/top.xdc]
+Finished Parsing XDC File [C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/constrs_1/new/top.xdc]
+Parsing XDC File [C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/constrs_1/new/debug.xdc]
+Finished Parsing XDC File [C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/constrs_1/new/debug.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4006.656 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 4006.656 ; gain = 0.000
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+create_debug_core u_ila_1 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_1]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_1]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_1]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_1]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_1]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_1]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_1]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_1]
+connect_debug_port u_ila_0/clk [get_nets [list gtwizard_0_exdes_i/gtwizard_0_support_i/gt_usrclk_source/rxoutclk_mmcm1_i/gt0_rxusrclk2_i ]]
+connect_debug_port u_ila_1/clk [get_nets [list gtwizard_0_exdes_i/gtwizard_0_support_i/gt_usrclk_source/gt0_txusrclk2_i ]]
+set_property port_width 32 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {decodedData[0]} {decodedData[1]} {decodedData[2]} {decodedData[3]} {decodedData[4]} {decodedData[5]} {decodedData[6]} {decodedData[7]} {decodedData[8]} {decodedData[9]} {decodedData[10]} {decodedData[11]} {decodedData[12]} {decodedData[13]} {decodedData[14]} {decodedData[15]} {decodedData[16]} {decodedData[17]} {decodedData[18]} {decodedData[19]} {decodedData[20]} {decodedData[21]} {decodedData[22]} {decodedData[23]} {decodedData[24]} {decodedData[25]} {decodedData[26]} {decodedData[27]} {decodedData[28]} {decodedData[29]} {decodedData[30]} {decodedData[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 6 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {errorCount[0]} {errorCount[1]} {errorCount[2]} {errorCount[3]} {errorCount[4]} {errorCount[5]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 32 [get_debug_ports u_ila_0/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list {gt0_rxdata_i[0]} {gt0_rxdata_i[1]} {gt0_rxdata_i[2]} {gt0_rxdata_i[3]} {gt0_rxdata_i[4]} {gt0_rxdata_i[5]} {gt0_rxdata_i[6]} {gt0_rxdata_i[7]} {gt0_rxdata_i[8]} {gt0_rxdata_i[9]} {gt0_rxdata_i[10]} {gt0_rxdata_i[11]} {gt0_rxdata_i[12]} {gt0_rxdata_i[13]} {gt0_rxdata_i[14]} {gt0_rxdata_i[15]} {gt0_rxdata_i[16]} {gt0_rxdata_i[17]} {gt0_rxdata_i[18]} {gt0_rxdata_i[19]} {gt0_rxdata_i[20]} {gt0_rxdata_i[21]} {gt0_rxdata_i[22]} {gt0_rxdata_i[23]} {gt0_rxdata_i[24]} {gt0_rxdata_i[25]} {gt0_rxdata_i[26]} {gt0_rxdata_i[27]} {gt0_rxdata_i[28]} {gt0_rxdata_i[29]} {gt0_rxdata_i[30]} {gt0_rxdata_i[31]} ]]
+set_property port_width 32 [get_debug_ports u_ila_1/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe0]
+connect_debug_port u_ila_1/probe0 [get_nets [list {gt0_txdata_i[0]} {gt0_txdata_i[1]} {gt0_txdata_i[2]} {gt0_txdata_i[3]} {gt0_txdata_i[4]} {gt0_txdata_i[5]} {gt0_txdata_i[6]} {gt0_txdata_i[7]} {gt0_txdata_i[8]} {gt0_txdata_i[9]} {gt0_txdata_i[10]} {gt0_txdata_i[11]} {gt0_txdata_i[12]} {gt0_txdata_i[13]} {gt0_txdata_i[14]} {gt0_txdata_i[15]} {gt0_txdata_i[16]} {gt0_txdata_i[17]} {gt0_txdata_i[18]} {gt0_txdata_i[19]} {gt0_txdata_i[20]} {gt0_txdata_i[21]} {gt0_txdata_i[22]} {gt0_txdata_i[23]} {gt0_txdata_i[24]} {gt0_txdata_i[25]} {gt0_txdata_i[26]} {gt0_txdata_i[27]} {gt0_txdata_i[28]} {gt0_txdata_i[29]} {gt0_txdata_i[30]} {gt0_txdata_i[31]} ]]
+create_debug_port u_ila_1 probe
+set_property port_width 1 [get_debug_ports u_ila_1/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe1]
+connect_debug_port u_ila_1/probe1 [get_nets [list gtwizard_0_exdes_i/rxresetdone_vio_i ]]
+create_debug_port u_ila_1 probe
+set_property port_width 1 [get_debug_ports u_ila_1/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe2]
+connect_debug_port u_ila_1/probe2 [get_nets [list gtwizard_0_exdes_i/soft_reset_vio_i ]]
+save_constraints
+launch_runs impl_1 -jobs 4
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.063 . Memory (MB): peak = 4013.680 ; gain = 0.000
+[Fri Jun 25 14:23:47 2021] Launched impl_1...
+Run output will be captured here: C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Jun 25 14:32:03 2021] Launched impl_1...
+Run output will be captured here: C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 03 2020-15:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:17 . Memory (MB): peak = 4025.188 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210203A0FD8AA
+set_property PROGRAM.FILE {C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.runs/impl_1/PRBS7_top.bit} [get_hw_devices xc7k325t_0]
+set_property PROBES.FILE {C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.runs/impl_1/debug_nets.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.runs/impl_1/debug_nets.ltx} [get_hw_devices xc7k325t_0]
+current_hw_device [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+WARNING: [Xicom 50-38] xicom: No CseXsdb register file specified for CseXsdb slave type: 0, cse driver version: 0. Slave initialization skipped.
+WARNING: [Xicom 50-38] xicom: No CseXsdb register file specified for CseXsdb slave type: 0, cse driver version: 0. Slave initialization skipped.
+WARNING: [Xicom 50-38] xicom: No CseXsdb register file specified for CseXsdb slave type: 0, cse driver version: 0. Slave initialization skipped.
+INFO: [Labtools 27-1434] Device xc7k325t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'u_ila_0' at location 'uuid_23E7D65A79BC59F7BC47406C1714DFAE' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'u_ila_1' at location 'uuid_3B505A030738513C98471D25F5B1F848' from probes file, since it cannot be found on the programmed device.
+set_property PROBES.FILE {C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.runs/impl_1/PRBS7_top.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.runs/impl_1/PRBS7_top.ltx} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.runs/impl_1/PRBS7_top.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 4025.188 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-2302] Device xc7k325t (JTAG device index = 0) is programmed with a design that has 2 ILA core(s).
+refresh_hw_device: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 4025.188 ; gain = 0.000
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+WARNING: Simulation object TRIG0 was not found in the design.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_1"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+ERROR: [Labtools 27-3428] Ila core [hw_ila_1] clock has stopped. Unable to arm ILA core.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+ERROR: [Labtools 27-3428] Ila core [hw_ila_1] clock has stopped. Unable to arm ILA core.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+ERROR: [Labtools 27-3428] Ila core [hw_ila_1] clock has stopped. Unable to arm ILA core.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+ERROR: [Labtools 27-3428] Ila core [hw_ila_1] clock has stopped. Unable to arm ILA core.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_1"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_2' trigger was armed at 2021-Jun-25 14:36:32
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_1"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_2' triggered at 2021-Jun-25 14:36:32
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.hw/backup/hw_ila_data_2.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+ERROR: [Labtools 27-3428] Ila core [hw_ila_1] clock has stopped. Unable to arm ILA core.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+ERROR: [Labtools 27-3428] Ila core [hw_ila_1] clock has stopped. Unable to arm ILA core.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_1"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_2' trigger was armed at 2021-Jun-25 14:42:37
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_1"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_2' triggered at 2021-Jun-25 14:42:37
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.hw/backup/hw_ila_data_2.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+write_hw_ila_data {C:\Lily_Zhang\SERDES_Xilinx\Xilinx_serdes_test_xpr_repo\serdes_test\serdes_test.runs\impl_1\iladata.csv.ila} hw_ila_data_2
+C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.runs/impl_1/iladata.csv.ila
+write_hw_ila_data -csv_file {C:\Lily_Zhang\SERDES_Xilinx\Xilinx_serdes_test_xpr_repo\serdes_test\serdes_test.runs\impl_1\iladata.csv} hw_ila_data_2
+C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.runs/impl_1/iladata.csv
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_1"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_2' trigger was armed at 2021-Jun-25 14:47:11
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_1"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_2' triggered at 2021-Jun-25 14:47:11
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.hw/backup/hw_ila_data_2.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+ERROR: [Labtools 27-3428] Ila core [hw_ila_1] clock has stopped. Unable to arm ILA core.
+reset_run impl_1
+launch_runs impl_1 -jobs 4
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Fri Jun 25 14:51:32 2021] Launched impl_1...
+Run output will be captured here: C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Jun 25 14:57:49 2021] Launched impl_1...
+Run output will be captured here: C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.runs/impl_1/runme.log
+refresh_design
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 4132.371 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 46 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/sources_1/ip/gtwizard_0/gtwizard_0.xdc] for cell 'gtwizard_0_exdes_i/gtwizard_0_support_i/gtwizard_0_init_i/inst'
+Finished Parsing XDC File [c:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/sources_1/ip/gtwizard_0/gtwizard_0.xdc] for cell 'gtwizard_0_exdes_i/gtwizard_0_support_i/gtwizard_0_init_i/inst'
+CRITICAL WARNING: [Designutils 20-1280] Could not find module 'ila_0'. The XDC file c:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/sources_1/ip/ila_0_1/ila_v6_2/constraints/ila_impl.xdc will not be read for any cell of this module.
+CRITICAL WARNING: [Designutils 20-1280] Could not find module 'ila_0'. The XDC file c:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/sources_1/ip/ila_0_1/ila_v6_2/constraints/ila.xdc will not be read for any cell of this module.
+Parsing XDC File [C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/constrs_1/new/top.xdc]
+Finished Parsing XDC File [C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/constrs_1/new/top.xdc]
+Parsing XDC File [C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/constrs_1/new/debug.xdc]
+WARNING: [Vivado 12-1421] No ChipScope debug cores matched 'dbg_hub_0'. [C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/constrs_1/new/debug.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/constrs_1/new/debug.xdc:49]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-1421] No ChipScope debug cores matched 'dbg_hub_0'. [C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/constrs_1/new/debug.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/constrs_1/new/debug.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-1421] No ChipScope debug cores matched 'dbg_hub_0'. [C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/constrs_1/new/debug.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/constrs_1/new/debug.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'dbg_hub_0' was not found. [C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/constrs_1/new/debug.xdc:52]
+WARNING: [Vivado 12-1421] No ChipScope debug cores matched 'dbg_hub_1'. [C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/constrs_1/new/debug.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/constrs_1/new/debug.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-1421] No ChipScope debug cores matched 'dbg_hub_1'. [C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/constrs_1/new/debug.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/constrs_1/new/debug.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-1421] No ChipScope debug cores matched 'dbg_hub_1'. [C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/constrs_1/new/debug.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/constrs_1/new/debug.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'dbg_hub_1' was not found. [C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/constrs_1/new/debug.xdc:57]
+Finished Parsing XDC File [C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/constrs_1/new/debug.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:11 . Memory (MB): peak = 4132.371 ; gain = 15.355
+set_property PROBES.FILE {C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.runs/impl_1/PRBS7_top.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.runs/impl_1/PRBS7_top.ltx} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.runs/impl_1/PRBS7_top.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 4132.371 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+WARNING: [Xicom 50-38] xicom: No CseXsdb register file specified for CseXsdb slave type: 0, cse driver version: 0. Slave initialization skipped.
+WARNING: [Xicom 50-38] xicom: No CseXsdb register file specified for CseXsdb slave type: 0, cse driver version: 0. Slave initialization skipped.
+INFO: [Labtools 27-1434] Device xc7k325t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'u_ila_0' at location 'uuid_23E7D65A79BC59F7BC47406C1714DFAE' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'u_ila_1' at location 'uuid_3B505A030738513C98471D25F5B1F848' from probes file, since it cannot be found on the programmed device.
+reset_run impl_1
+launch_runs impl_1 -jobs 4
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Fri Jun 25 15:00:54 2021] Launched impl_1...
+Run output will be captured here: C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.runs/impl_1/runme.log
+save_wave_config {C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+save_wave_config {C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.hw/hw_1/wave/hw_ila_data_2/hw_ila_data_2.wcfg}
+close_hw_manager
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Jun 25 15:05:21 2021] Launched impl_1...
+Run output will be captured here: C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 03 2020-15:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:15 . Memory (MB): peak = 4132.371 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210203A0FD8AA
+set_property PROGRAM.FILE {C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.runs/impl_1/PRBS7_top.bit} [get_hw_devices xc7k325t_0]
+set_property PROBES.FILE {C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.runs/impl_1/PRBS7_top.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.runs/impl_1/PRBS7_top.ltx} [get_hw_devices xc7k325t_0]
+current_hw_device [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+WARNING: [Xicom 50-38] xicom: No CseXsdb register file specified for CseXsdb slave type: 0, cse driver version: 0. Slave initialization skipped.
+WARNING: [Xicom 50-38] xicom: No CseXsdb register file specified for CseXsdb slave type: 0, cse driver version: 0. Slave initialization skipped.
+INFO: [Labtools 27-1434] Device xc7k325t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'u_ila_0' at location 'uuid_23E7D65A79BC59F7BC47406C1714DFAE' from probes file, since it cannot be found on the programmed device.
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'u_ila_1' at location 'uuid_3B505A030738513C98471D25F5B1F848' from probes file, since it cannot be found on the programmed device.
+set_property PROBES.FILE {C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.runs/impl_1/PRBS7_top.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.runs/impl_1/PRBS7_top.ltx} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.runs/impl_1/PRBS7_top.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 4132.480 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-2302] Device xc7k325t (JTAG device index = 0) is programmed with a design that has 2 ILA core(s).
+refresh_hw_device: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 4132.480 ; gain = 0.000
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_1"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+ERROR: [Labtools 27-3428] Ila core [hw_ila_1] clock has stopped. Unable to arm ILA core.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+ERROR: [Labtools 27-3428] Ila core [hw_ila_1] clock has stopped. Unable to arm ILA core.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+ERROR: [Labtools 27-3428] Ila core [hw_ila_1] clock has stopped. Unable to arm ILA core.
+set_property PROBES.FILE {C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.runs/impl_1/PRBS7_top.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.runs/impl_1/PRBS7_top.ltx} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.runs/impl_1/PRBS7_top.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 4132.480 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-2302] Device xc7k325t (JTAG device index = 0) is programmed with a design that has 2 ILA core(s).
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_1"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_2' trigger was armed at 2021-Jun-25 15:09:21
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_1"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_2' triggered at 2021-Jun-25 15:09:21
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.hw/backup/hw_ila_data_2.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+ERROR: [Labtools 27-3428] Ila core [hw_ila_1] clock has stopped. Unable to arm ILA core.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+ERROR: [Labtools 27-3428] Ila core [hw_ila_1] clock has stopped. Unable to arm ILA core.
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.167 . Memory (MB): peak = 4132.480 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 254 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.932 . Memory (MB): peak = 4306.133 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.933 . Memory (MB): peak = 4306.133 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 4306.133 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 122 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 116 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 6 instances
+
+open_run: Time (s): cpu = 00:00:16 ; elapsed = 00:00:12 . Memory (MB): peak = 4406.340 ; gain = 273.859
+open_report: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 4437.262 ; gain = 30.922
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210203A0FD8AA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210203A0FD8AA
+INFO: [Labtools 27-2302] Device xc7k325t (JTAG device index = 0) is programmed with a design that has 2 ILA core(s).
+refresh_hw_device: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 4453.082 ; gain = 0.000
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210203A0FD8AA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210203A0FD8AA
+INFO: [Labtools 27-2302] Device xc7k325t (JTAG device index = 0) is programmed with a design that has 2 ILA core(s).
+refresh_hw_device: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 4453.164 ; gain = 0.000
+set_property PROBES.FILE {C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.runs/impl_1/PRBS7_top.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.runs/impl_1/PRBS7_top.ltx} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.runs/impl_1/PRBS7_top.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 4453.164 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-2302] Device xc7k325t (JTAG device index = 0) is programmed with a design that has 2 ILA core(s).
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+ERROR: [Labtools 27-3428] Ila core [hw_ila_1] clock has stopped. Unable to arm ILA core.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_1"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_2' trigger was armed at 2021-Jun-25 15:19:35
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_1"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_2' triggered at 2021-Jun-25 15:19:35
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.hw/backup/hw_ila_data_2.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_1"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_2' trigger was armed at 2021-Jun-25 15:20:57
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_1"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_2' triggered at 2021-Jun-25 15:20:57
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.hw/backup/hw_ila_data_2.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+ERROR: [Labtools 27-3428] Ila core [hw_ila_1] clock has stopped. Unable to arm ILA core.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_1"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_2' trigger was armed at 2021-Jun-25 15:21:10
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_1"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_2' triggered at 2021-Jun-25 15:21:10
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.hw/backup/hw_ila_data_2.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_1"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_2' trigger was armed at 2021-Jun-25 15:21:18
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_1"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_2' triggered at 2021-Jun-25 15:21:18
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.hw/backup/hw_ila_data_2.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property PROBES.FILE {C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.runs/impl_1/PRBS7_top.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.runs/impl_1/PRBS7_top.ltx} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.runs/impl_1/PRBS7_top.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 4453.164 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-2302] Device xc7k325t (JTAG device index = 0) is programmed with a design that has 2 ILA core(s).
+close_hw_manager
+reset_run impl_1
+launch_runs impl_1 -jobs 4
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Fri Jun 25 15:28:26 2021] Launched impl_1...
+Run output will be captured here: C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.runs/impl_1/runme.log
+close_design
+close_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 4453.164 ; gain = 0.000
+close_design
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Jun 25 15:32:41 2021] Launched impl_1...
+Run output will be captured here: C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 03 2020-15:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:16 . Memory (MB): peak = 4453.164 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210203A0FD8AA
+set_property PROGRAM.FILE {C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.runs/impl_1/PRBS7_top.bit} [get_hw_devices xc7k325t_0]
+set_property PROBES.FILE {C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.runs/impl_1/PRBS7_top.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.runs/impl_1/PRBS7_top.ltx} [get_hw_devices xc7k325t_0]
+current_hw_device [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-2302] Device xc7k325t (JTAG device index = 0) is programmed with a design that has 2 ILA core(s).
+refresh_hw_device: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 4453.164 ; gain = 0.000
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_1"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_1"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_2' trigger was armed at 2021-Jun-25 15:35:03
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_1"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_2' triggered at 2021-Jun-25 15:35:03
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.hw/backup/hw_ila_data_2.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+ERROR: [Labtools 27-3428] Ila core [hw_ila_1] clock has stopped. Unable to arm ILA core.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+ERROR: [Labtools 27-3428] Ila core [hw_ila_1] clock has stopped. Unable to arm ILA core.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+ERROR: [Labtools 27-3428] Ila core [hw_ila_1] clock has stopped. Unable to arm ILA core.
+save_wave_config {C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+save_wave_config {C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.hw/hw_1/wave/hw_ila_data_2/hw_ila_data_2.wcfg}
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jun 25 15:40:23 2021...

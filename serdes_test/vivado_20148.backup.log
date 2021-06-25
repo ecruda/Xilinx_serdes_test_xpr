@@ -1,0 +1,55 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Jun 24 13:29:56 2021
+# Process ID: 20148
+# Current directory: C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/Xilinx_serdes_test_xpr/serdes_test
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1980 C:\Lily_Zhang\SERDES_Xilinx\Xilinx_serdes_test_xpr_repo\Xilinx_serdes_test_xpr\serdes_test\serdes_test.xpr
+# Log file: C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/Xilinx_serdes_test_xpr/serdes_test/vivado.log
+# Journal file: C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/Xilinx_serdes_test_xpr/serdes_test\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/Xilinx_serdes_test_xpr/serdes_test'
+INFO: [Project 1-313] Project file moved from 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test' since last save.
+WARNING: [filemgmt 56-2] Default IP Output Path : Could not find the directory 'C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.gen/sources_1', nor could it be found using path 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.gen/sources_1'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/SERDES_KC705/DataExtract.v', nor could it be found using path 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/SERDES_KC705/PRBS7.v', nor could it be found using path 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/SERDES_KC705/PRBS7Check.v', nor could it be found using path 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/SERDES_KC705/PRBS7_top.v', nor could it be found using path 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/SERDES_KC705/diff_in.v', nor could it be found using path 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/diff_in.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/SERDES_KC705/diff_out.v', nor could it be found using path 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/diff_out.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/SERDES_KC705/PRBS7_tb.v', nor could it be found using path 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_tb.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/From Datao/serdes_repo/PRBS7_tb.v', nor could it be found using path 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/From Datao/serdes_repo/PRBS7_tb.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/SERDES_KC705/Deserializer.v', nor could it be found using path 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/Deserializer.v'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:47 ; elapsed = 00:00:27 . Memory (MB): peak = 1089.137 ; gain = 0.000
+update_compile_order -fileset sources_1
+set_property source_mgmt_mode DisplayOnly [current_project]
+export_ip_user_files -of_objects  [get_files C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/SERDES_KC705/DataExtract.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/SERDES_KC705/Deserializer.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/SERDES_KC705/PRBS7.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/SERDES_KC705/PRBS7Check.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/SERDES_KC705/PRBS7_top.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/SERDES_KC705/diff_in.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/SERDES_KC705/diff_out.v] -no_script -reset -force -quiet
+remove_files  {C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/SERDES_KC705/DataExtract.v C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/SERDES_KC705/Deserializer.v C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/SERDES_KC705/PRBS7.v C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/SERDES_KC705/PRBS7Check.v C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/SERDES_KC705/PRBS7_top.v C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/SERDES_KC705/diff_in.v C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/SERDES_KC705/diff_out.v}
+add_files {C:/Lily_Zhang/SERDES_Xilinx/SERDES_KC705_repo/SERDES_KC705/PRBS7Check.v C:/Lily_Zhang/SERDES_Xilinx/SERDES_KC705_repo/SERDES_KC705/DataExtract.v C:/Lily_Zhang/SERDES_Xilinx/SERDES_KC705_repo/SERDES_KC705/PRBS7_top.v C:/Lily_Zhang/SERDES_Xilinx/SERDES_KC705_repo/SERDES_KC705/diff_out.v C:/Lily_Zhang/SERDES_Xilinx/SERDES_KC705_repo/SERDES_KC705/PRBS_debug.v C:/Lily_Zhang/SERDES_Xilinx/SERDES_KC705_repo/SERDES_KC705/PRBS7_tb.v C:/Lily_Zhang/SERDES_Xilinx/SERDES_KC705_repo/SERDES_KC705/Serializer.v C:/Lily_Zhang/SERDES_Xilinx/SERDES_KC705_repo/SERDES_KC705/PRBS7.v C:/Lily_Zhang/SERDES_Xilinx/SERDES_KC705_repo/SERDES_KC705/Deserializer.v C:/Lily_Zhang/SERDES_Xilinx/SERDES_KC705_repo/SERDES_KC705/diff_in.v}
+set_property is_enabled false [get_files  C:/Lily_Zhang/SERDES_Xilinx/SERDES_KC705_repo/SERDES_KC705/PRBS7_tb.v]
+set_property is_enabled false [get_files  C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/Xilinx_serdes_test_xpr/gtwizard_0_ex/gtwizard_0_ex.srcs/sources_1/imports/example_design/gtwizard_0_gt_frame_check.v]
+set_property is_enabled false [get_files  C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/Xilinx_serdes_test_xpr/gtwizard_0_ex/gtwizard_0_ex.srcs/sources_1/imports/example_design/gtwizard_0_gt_frame_gen.v]
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Thu Jun 24 13:35:03 2021] Launched synth_1...
+Run output will be captured here: C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Thu Jun 24 13:36:39 2021] Launched impl_1...
+Run output will be captured here: C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Jun 24 13:40:50 2021...

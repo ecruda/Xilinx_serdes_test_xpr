@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Product Version: Vivado v2020.2 (64-bit)                     -->
+<!--                                                              -->
+<!-- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.        -->
+
+<hwsession version="1" minor="2">
+  <device name="xc7k325t_0" gui_info="dashboard1=hw_ila_1[xc7k325t_0/hw_ila_1/Settings=ILA_SETTINGS_1;xc7k325t_0/hw_ila_1/Trigger Setup=ILA_TRIGGER_1;xc7k325t_0/hw_ila_1/Waveform=ILA_WAVE_1;xc7k325t_0/hw_ila_1/Status=ILA_STATUS_1;xc7k325t_0/hw_ila_1/Capture Setup=ILA_CAPTURE_1;]"/>
+  <ObjectList object_type="hw_device" gui_info="">
+    <Object name="xc7k325t_0" gui_info="">
+      <Properties Property="FULL_PROBES.FILE" value="$_project_name_.runs/impl_1/example_ila_0.ltx"/>
+      <Properties Property="PROBES.FILE" value="$_project_name_.runs/impl_1/example_ila_0.ltx"/>
+      <Properties Property="PROGRAM.HW_BITSTREAM" value="$_project_name_.runs/impl_1/example_ila_0.bit"/>
+      <Properties Property="SLR.COUNT" value="1"/>
+    </Object>
+  </ObjectList>
+  <ObjectList object_type="hw_ila" gui_info="">
+    <Object name="ILA_inst" gui_info="">
+      <Properties Property="CONTROL.TRIGGER_CONDITION" value="AND"/>
+      <Properties Property="CORE_REFRESH_RATE_MS" value="500"/>
+    </Object>
+  </ObjectList>
+  <probeset name="hw project" active="false">
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq161&apos;hX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq161&apos;hX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe0[160:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq161&apos;hX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="trig_0[160]"/>
+        <net name="trig_0[159]"/>
+        <net name="trig_0[158]"/>
+        <net name="trig_0[157]"/>
+        <net name="trig_0[156]"/>
+        <net name="trig_0[155]"/>
+        <net name="trig_0[154]"/>
+        <net name="trig_0[153]"/>
+        <net name="trig_0[152]"/>
+        <net name="trig_0[151]"/>
+        <net name="trig_0[150]"/>
+        <net name="trig_0[149]"/>
+        <net name="trig_0[148]"/>
+        <net name="trig_0[147]"/>
+        <net name="trig_0[146]"/>
+        <net name="trig_0[145]"/>
+        <net name="trig_0[144]"/>
+        <net name="trig_0[143]"/>
+        <net name="trig_0[142]"/>
+        <net name="trig_0[141]"/>
+        <net name="trig_0[140]"/>
+        <net name="trig_0[139]"/>
+        <net name="trig_0[138]"/>
+        <net name="trig_0[137]"/>
+        <net name="trig_0[136]"/>
+        <net name="trig_0[135]"/>
+        <net name="trig_0[134]"/>
+        <net name="trig_0[133]"/>
+        <net name="trig_0[132]"/>
+        <net name="trig_0[131]"/>
+        <net name="trig_0[130]"/>
+        <net name="trig_0[129]"/>
+        <net name="trig_0[128]"/>
+        <net name="trig_0[127]"/>
+        <net name="trig_0[126]"/>
+        <net name="trig_0[125]"/>
+        <net name="trig_0[124]"/>
+        <net name="trig_0[123]"/>
+        <net name="trig_0[122]"/>
+        <net name="trig_0[121]"/>
+        <net name="trig_0[120]"/>
+        <net name="trig_0[119]"/>
+        <net name="trig_0[118]"/>
+        <net name="trig_0[117]"/>
+        <net name="trig_0[116]"/>
+        <net name="trig_0[115]"/>
+        <net name="trig_0[114]"/>
+        <net name="trig_0[113]"/>
+        <net name="trig_0[112]"/>
+        <net name="trig_0[111]"/>
+        <net name="trig_0[110]"/>
+        <net name="trig_0[109]"/>
+        <net name="trig_0[108]"/>
+        <net name="trig_0[107]"/>
+        <net name="trig_0[106]"/>
+        <net name="trig_0[105]"/>
+        <net name="trig_0[104]"/>
+        <net name="trig_0[103]"/>
+        <net name="trig_0[102]"/>
+        <net name="trig_0[101]"/>
+        <net name="trig_0[100]"/>
+        <net name="trig_0[99]"/>
+        <net name="trig_0[98]"/>
+        <net name="trig_0[97]"/>
+        <net name="trig_0[96]"/>
+        <net name="trig_0[95]"/>
+        <net name="trig_0[94]"/>
+        <net name="trig_0[93]"/>
+        <net name="trig_0[92]"/>
+        <net name="trig_0[91]"/>
+        <net name="trig_0[90]"/>
+        <net name="trig_0[89]"/>
+        <net name="trig_0[88]"/>
+        <net name="trig_0[87]"/>
+        <net name="trig_0[86]"/>
+        <net name="trig_0[85]"/>
+        <net name="trig_0[84]"/>
+        <net name="trig_0[83]"/>
+        <net name="trig_0[82]"/>
+        <net name="trig_0[81]"/>
+        <net name="trig_0[80]"/>
+        <net name="trig_0[79]"/>
+        <net name="trig_0[78]"/>
+        <net name="trig_0[77]"/>
+        <net name="trig_0[76]"/>
+        <net name="trig_0[75]"/>
+        <net name="trig_0[74]"/>
+        <net name="trig_0[73]"/>
+        <net name="trig_0[72]"/>
+        <net name="trig_0[71]"/>
+        <net name="trig_0[70]"/>
+        <net name="trig_0[69]"/>
+        <net name="trig_0[68]"/>
+        <net name="trig_0[67]"/>
+        <net name="trig_0[66]"/>
+        <net name="trig_0[65]"/>
+        <net name="trig_0[64]"/>
+        <net name="trig_0[63]"/>
+        <net name="trig_0[62]"/>
+        <net name="trig_0[61]"/>
+        <net name="trig_0[60]"/>
+        <net name="trig_0[59]"/>
+        <net name="trig_0[58]"/>
+        <net name="trig_0[57]"/>
+        <net name="trig_0[56]"/>
+        <net name="trig_0[55]"/>
+        <net name="trig_0[54]"/>
+        <net name="trig_0[53]"/>
+        <net name="trig_0[52]"/>
+        <net name="trig_0[51]"/>
+        <net name="trig_0[50]"/>
+        <net name="trig_0[49]"/>
+        <net name="trig_0[48]"/>
+        <net name="trig_0[47]"/>
+        <net name="trig_0[46]"/>
+        <net name="trig_0[45]"/>
+        <net name="trig_0[44]"/>
+        <net name="trig_0[43]"/>
+        <net name="trig_0[42]"/>
+        <net name="trig_0[41]"/>
+        <net name="trig_0[40]"/>
+        <net name="trig_0[39]"/>
+        <net name="trig_0[38]"/>
+        <net name="trig_0[37]"/>
+        <net name="trig_0[36]"/>
+        <net name="trig_0[35]"/>
+        <net name="trig_0[34]"/>
+        <net name="trig_0[33]"/>
+        <net name="trig_0[32]"/>
+        <net name="trig_0[31]"/>
+        <net name="trig_0[30]"/>
+        <net name="trig_0[29]"/>
+        <net name="trig_0[28]"/>
+        <net name="trig_0[27]"/>
+        <net name="trig_0[26]"/>
+        <net name="trig_0[25]"/>
+        <net name="trig_0[24]"/>
+        <net name="trig_0[23]"/>
+        <net name="trig_0[22]"/>
+        <net name="trig_0[21]"/>
+        <net name="trig_0[20]"/>
+        <net name="trig_0[19]"/>
+        <net name="trig_0[18]"/>
+        <net name="trig_0[17]"/>
+        <net name="trig_0[16]"/>
+        <net name="trig_0[15]"/>
+        <net name="trig_0[14]"/>
+        <net name="trig_0[13]"/>
+        <net name="trig_0[12]"/>
+        <net name="trig_0[11]"/>
+        <net name="trig_0[10]"/>
+        <net name="trig_0[9]"/>
+        <net name="trig_0[8]"/>
+        <net name="trig_0[7]"/>
+        <net name="trig_0[6]"/>
+        <net name="trig_0[5]"/>
+        <net name="trig_0[4]"/>
+        <net name="trig_0[3]"/>
+        <net name="trig_0[2]"/>
+        <net name="trig_0[1]"/>
+        <net name="trig_0[0]"/>
+      </nets>
+    </probe>
+  </probeset>
+</hwsession>

@@ -1,0 +1,39 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Jun 25 13:15:19 2021
+# Process ID: 15228
+# Current directory: c:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/ila_0_ex
+# Command line: vivado.exe -notrace -source c:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/ila_0_ex/ila_0_ex.tcl
+# Log file: c:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/ila_0_ex/vivado.log
+# Journal file: c:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/ila_0_ex\vivado.jou
+#-----------------------------------------------------------
+start_gui
+source c:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/ila_0_ex/ila_0_ex.tcl -notrace
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {c:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/ila_0_ex/ila_0_ex.runs/impl_1/example_ila_0.bit} [get_hw_devices xc7k325t_0]
+set_property PROBES.FILE {c:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/ila_0_ex/ila_0_ex.runs/impl_1/example_ila_0.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {c:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/ila_0_ex/ila_0_ex.runs/impl_1/example_ila_0.ltx} [get_hw_devices xc7k325t_0]
+current_hw_device [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+set_property PROBES.FILE {c:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/ila_0_ex/ila_0_ex.runs/impl_1/example_ila_0.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {c:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/ila_0_ex/ila_0_ex.runs/impl_1/example_ila_0.ltx} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {c:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/ila_0_ex/ila_0_ex.runs/impl_1/example_ila_0.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"ILA_inst"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"ILA_inst"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"ILA_inst"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"ILA_inst"}]]
+save_wave_config {c:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/ila_0_ex/ila_0_ex.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
