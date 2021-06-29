@@ -118,6 +118,7 @@ input           gt0_data_valid_in,
     output  [6:0]   gt0_rxmonitorout_out,
     input   [1:0]   gt0_rxmonitorsel_in,
     //------------- Receive Ports - RX Fabric Output Control Ports -------------
+    output          gt0_rxoutclk_out,
     output          gt0_rxoutclkfabric_out,
     //----------- Receive Ports - RX Initialization and Reset Ports ------------
     input           gt0_gtrxreset_in,
@@ -312,6 +313,7 @@ assign  tied_to_vcc_i                        =  1'b1;
 
 assign  gt0_txresetdone_out                  =  gt0_txresetdone_i;
 assign  gt0_rxresetdone_out                  =  gt0_rxresetdone_i;
+assign  gt0_rxoutclk_out                     =  gt0_rxoutclk_i;
 assign  gt0_txoutclk_out                     =  gt0_txoutclk_i;
 assign  gt0_qpllreset_out                    =  gt0_qpllreset_t;
 
@@ -401,7 +403,7 @@ gt0_rxresetfsm_i
         .RECCLK_STABLE                  (gt0_recclk_stable_i),
         .RECCLK_MONITOR_RESTART         (tied_to_ground_i),
         .DATA_VALID                     (gt0_data_valid_in),
-        .TXUSERRDY                      (gt0_txuserrdy_i),
+        .TXUSERRDY                      (tied_to_vcc_i),
         .GTRXRESET                      (gt0_gtrxreset_t),
         .MMCM_RESET                     (),
         .QPLL_RESET                     (),

@@ -22,7 +22,7 @@
                             "slave_index": 0,
                             "bscan_switch_index": 0
                         },
-                        "uuid": "23E7D65A79BC59F7BC47406C1714DFAE",
+                        "uuid": "23e7d65a79bc59f7bc47406c1714dfae",
                         "pins": [
                             {
                                 "name": "probe0",
@@ -31,8 +31,44 @@
                                 "direction": "IN",
                                 "isVector": true,
                                 "leftIndex": 0,
-                                "rightIndex": 31,
+                                "rightIndex": 5,
                                 "portIndex": 0,
+                                "nets": [
+                                    {
+                                        "name": "errorCount",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "errorCount[5]"
+                                            },
+                                            {
+                                                "name": "errorCount[4]"
+                                            },
+                                            {
+                                                "name": "errorCount[3]"
+                                            },
+                                            {
+                                                "name": "errorCount[2]"
+                                            },
+                                            {
+                                                "name": "errorCount[1]"
+                                            },
+                                            {
+                                                "name": "errorCount[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe1",
+                                "id": 1,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 31,
+                                "portIndex": 1,
                                 "nets": [
                                     {
                                         "name": "decodedData",
@@ -133,42 +169,6 @@
                                             },
                                             {
                                                 "name": "decodedData[0]"
-                                            }
-                                        ]
-                                    }
-                                ]
-                            },
-                            {
-                                "name": "probe1",
-                                "id": 1,
-                                "type": "DATA_TRIGGER",
-                                "direction": "IN",
-                                "isVector": true,
-                                "leftIndex": 0,
-                                "rightIndex": 5,
-                                "portIndex": 1,
-                                "nets": [
-                                    {
-                                        "name": "errorCount",
-                                        "isBus": true,
-                                        "subnets": [
-                                            {
-                                                "name": "errorCount[5]"
-                                            },
-                                            {
-                                                "name": "errorCount[4]"
-                                            },
-                                            {
-                                                "name": "errorCount[3]"
-                                            },
-                                            {
-                                                "name": "errorCount[2]"
-                                            },
-                                            {
-                                                "name": "errorCount[1]"
-                                            },
-                                            {
-                                                "name": "errorCount[0]"
                                             }
                                         ]
                                     }
@@ -287,6 +287,22 @@
                                         ]
                                     }
                                 ]
+                            },
+                            {
+                                "name": "probe3",
+                                "id": 3,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 3,
+                                "nets": [
+                                    {
+                                        "name": "aligned",
+                                        "isBus": false
+                                    }
+                                ]
                             }
                         ]
                     },
@@ -299,11 +315,11 @@
                             "slave_index": 1,
                             "bscan_switch_index": 0
                         },
-                        "uuid": "3B505A030738513C98471D25F5B1F848",
+                        "uuid": "3b505a030738513c98471d25f5b1f848",
                         "pins": [
                             {
                                 "name": "probe0",
-                                "id": 3,
+                                "id": 4,
                                 "type": "DATA_TRIGGER",
                                 "direction": "IN",
                                 "isVector": true,
@@ -417,7 +433,7 @@
                             },
                             {
                                 "name": "probe1",
-                                "id": 4,
+                                "id": 5,
                                 "type": "DATA_TRIGGER",
                                 "direction": "IN",
                                 "isVector": false,
@@ -433,7 +449,7 @@
                             },
                             {
                                 "name": "probe2",
-                                "id": 5,
+                                "id": 6,
                                 "type": "DATA_TRIGGER",
                                 "direction": "IN",
                                 "isVector": false,
