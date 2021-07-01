@@ -103,6 +103,8 @@ read_verilog -library xil_defaultlib {
   C:/Lily_Zhang/SERDES_Xilinx/SERDES_KC705_repo/SERDES_KC705/PRBS7_top.v
   C:/Lily_Zhang/SERDES_Xilinx/SERDES_KC705_repo/SERDES_KC705/PRBS_debug.v
   C:/Lily_Zhang/SERDES_Xilinx/SERDES_KC705_repo/SERDES_KC705/PRBS7.v
+  C:/Lily_Zhang/SERDES_Xilinx/SERDES_KC705_repo/SERDES_KC705/map.v
+  C:/Lily_Zhang/SERDES_Xilinx/SERDES_KC705_repo/SERDES_KC705/rev_map.v
 }
 read_ip -quiet C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/sources_1/ip/gtwizard_0/gtwizard_0.xci
 set_property used_in_implementation false [get_files -all c:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.srcs/sources_1/ip/gtwizard_0/gtwizard_0.xdc]
