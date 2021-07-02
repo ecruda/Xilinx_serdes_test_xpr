@@ -2,11 +2,11 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Thu Jul  1 15:42:33 2021
-# Process ID: 11124
-# Current directory: C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.runs/synth_1
+# Start of session at: Fri Jul  2 15:30:00 2021
+# Process ID: 23012
+# Current directory: C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1
 # Command line: vivado.exe -log PRBS7_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source PRBS7_top.tcl
-# Log file: C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.runs/synth_1/PRBS7_top.vds
-# Journal file: C:/Lily_Zhang/SERDES_Xilinx/Xilinx_serdes_test_xpr_repo/serdes_test/serdes_test.runs/synth_1\vivado.jou
+# Log file: C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/PRBS7_top.vds
+# Journal file: C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source PRBS7_top.tcl -notrace

@@ -120,3 +120,4 @@ set_property PACKAGE_PIN K2 [get_ports TXP_OUT]
 set_property PACKAGE_PIN AB7 [get_ports reset]
 set_property IOSTANDARD LVCMOS15 [get_ports reset]
 
+
