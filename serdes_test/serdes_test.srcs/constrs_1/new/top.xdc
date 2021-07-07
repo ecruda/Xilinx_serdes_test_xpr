@@ -66,7 +66,7 @@
 ####################### GT reference clock constraints #########################
 
 
-create_clock -period 6.250 [get_ports SMA_MGT_REFCLK_P]
+#create_clock -period 6.250 [get_ports SMA_MGT_REFCLK_P]
 
 
 
@@ -119,5 +119,6 @@ set_property PACKAGE_PIN K2 [get_ports TXP_OUT]
 ##---------- Set False Path from one clock to other ----------
 set_property PACKAGE_PIN AB7 [get_ports reset]
 set_property IOSTANDARD LVCMOS15 [get_ports reset]
+
 
 
