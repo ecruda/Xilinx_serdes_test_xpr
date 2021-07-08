@@ -108,6 +108,7 @@ read_verilog -library xil_defaultlib {
   C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/rev_map.v
   C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v
   C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/diff_out.v
+  C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/shifter.v
 }
 read_ip -quiet C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/sources_1/ip/gtwizard_0/gtwizard_0.xci
 set_property used_in_implementation false [get_files -all c:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/sources_1/ip/gtwizard_0/gtwizard_0.xdc]

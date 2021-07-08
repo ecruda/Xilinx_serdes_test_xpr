@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Tue Jul  6 17:34:52 2021
+| Date         : Thu Jul  8 11:17:24 2021
 | Host         : 21-10244 running 64-bit major release  (build 9200)
 | Command      : report_clock_utilization -file PRBS7_top_clock_utilization_routed.rpt
 | Design       : PRBS7_top
@@ -51,9 +51,9 @@ Table of Contents
 +-----------+-----------+-----------------+------------+----------------+--------------+-------------------+-------------+-----------------+--------------+---------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------+
 | Global Id | Source Id | Driver Type/Pin | Constraint | Site           | Clock Region | Load Clock Region | Clock Loads | Non-Clock Loads | Clock Period | Clock                                                                                                         | Driver Pin                                                                              | Net                                                                                       |
 +-----------+-----------+-----------------+------------+----------------+--------------+-------------------+-------------+-----------------+--------------+---------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------+
-| g0        | src0      | BUFG/O          | None       | BUFGCTRL_X0Y16 | n/a          |                 3 |        4290 |               0 |        3.125 | gtwizard_0_exdes_i/gtwizard_0_support_i/gtwizard_0_init_i/inst/gtwizard_0_i/gt0_gtwizard_0_i/gtxe2_i/TXOUTCLK | gtwizard_0_exdes_i/gtwizard_0_support_i/gt_usrclk_source/txoutclk_bufg0_i/O             | gtwizard_0_exdes_i/gtwizard_0_support_i/gt_usrclk_source/gt0_txusrclk2_i                  |
-| g1        | src1      | BUFG/O          | None       | BUFGCTRL_X0Y0  | n/a          |                 3 |        1338 |               0 |        1.563 | clkout0                                                                                                       | gtwizard_0_exdes_i/gtwizard_0_support_i/gt_usrclk_source/rxoutclk_mmcm1_i/clkout0_buf/O | gtwizard_0_exdes_i/gtwizard_0_support_i/gt_usrclk_source/rxoutclk_mmcm1_i/gt0_rxusrclk2_i |
-| g2        | src2      | BUFG/O          | None       | BUFGCTRL_X0Y2  | n/a          |                 1 |         465 |               0 |       33.000 | dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK                    | dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.u_bufg_icon_tck/O                    | dbg_hub/inst/BSCANID.u_xsdbm_id/itck_i                                                    |
+| g0        | src0      | BUFG/O          | None       | BUFGCTRL_X0Y16 | n/a          |                 3 |        4546 |               0 |        3.125 | gtwizard_0_exdes_i/gtwizard_0_support_i/gtwizard_0_init_i/inst/gtwizard_0_i/gt0_gtwizard_0_i/gtxe2_i/TXOUTCLK | gtwizard_0_exdes_i/gtwizard_0_support_i/gt_usrclk_source/txoutclk_bufg0_i/O             | gtwizard_0_exdes_i/gtwizard_0_support_i/gt_usrclk_source/gt0_txusrclk2_i                  |
+| g1        | src1      | BUFG/O          | None       | BUFGCTRL_X0Y0  | n/a          |                 3 |        1317 |               0 |        1.563 | clkout0                                                                                                       | gtwizard_0_exdes_i/gtwizard_0_support_i/gt_usrclk_source/rxoutclk_mmcm1_i/clkout0_buf/O | gtwizard_0_exdes_i/gtwizard_0_support_i/gt_usrclk_source/rxoutclk_mmcm1_i/gt0_rxusrclk2_i |
+| g2        | src2      | BUFG/O          | None       | BUFGCTRL_X0Y2  | n/a          |                 2 |         465 |               0 |       33.000 | dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK                    | dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.u_bufg_icon_tck/O                    | dbg_hub/inst/BSCANID.u_xsdbm_id/itck_i                                                    |
 | g3        | src3      | BUFG/O          | None       | BUFGCTRL_X0Y1  | n/a          |                 2 |         270 |               0 |              |                                                                                                               | gtwizard_0_exdes_i/DRP_CLK_BUFG/O                                                       | gtwizard_0_exdes_i/drpclk_in_i                                                            |
 | g4        | src4      | BUFG/O          | None       | BUFGCTRL_X0Y17 | n/a          |                 1 |           1 |               0 |        3.125 | gtwizard_0_exdes_i/gtwizard_0_support_i/gtwizard_0_init_i/inst/gtwizard_0_i/gt0_gtwizard_0_i/gtxe2_i/RXOUTCLK | gtwizard_0_exdes_i/gtwizard_0_support_i/gt_usrclk_source/rxoutclk_mmcm1_i/clkin1_buf/O  | gtwizard_0_exdes_i/gtwizard_0_support_i/gt_usrclk_source/rxoutclk_mmcm1_i/clkin1          |
 +-----------+-----------+-----------------+------------+----------------+--------------+-------------------+-------------+-----------------+--------------+---------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------+
@@ -94,9 +94,9 @@ Table of Contents
 | X0Y3              |    1 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 |  3400 |    0 |  1150 |    0 |    60 |    0 |    30 |    0 |    60 |
 | X1Y3              |    2 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     4 |    0 |     1 |    0 |     0 |    0 |     0 |   12 |  3150 |    6 |  1050 |    0 |    50 |    0 |    25 |    0 |    60 |
 | X0Y4              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 |  4000 |    0 |  1150 |    0 |    60 |    0 |    30 |    0 |    60 |
-| X1Y4              |    4 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     4 |    0 |     0 |    0 |     0 |    0 |     0 | 3290 |  3300 | 1635 |  1100 |    0 |    60 |   16 |    30 |    0 |    60 |
+| X1Y4              |    4 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     4 |    0 |     0 |    0 |     0 |    0 |     0 | 3513 |  3300 | 1599 |  1100 |    0 |    60 |    6 |    30 |    0 |    60 |
 | X0Y5              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 |  4000 |    0 |  1150 |    0 |    60 |    0 |    30 |    0 |    60 |
-| X1Y5              |    3 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    1 |     4 |    0 |     0 |    0 |     0 |    0 |     0 | 2363 |  3300 | 1045 |  1100 |    0 |    60 |   16 |    30 |    0 |    60 |
+| X1Y5              |    4 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    1 |     4 |    0 |     0 |    0 |     0 |    0 |     0 | 2372 |  3300 |  946 |  1100 |    0 |    60 |    3 |    30 |    0 |    60 |
 | X0Y6              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 |  4000 |    0 |  1150 |    0 |    60 |    0 |    30 |    0 |    60 |
 | X1Y6              |    0 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     4 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |  3300 |    0 |  1100 |    0 |    60 |    0 |    30 |    0 |    60 |
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
@@ -111,7 +111,7 @@ All Modules
 |    | X0 | X1 |
 +----+----+----+
 | Y6 |  0 |  0 |
-| Y5 |  0 |  3 |
+| Y5 |  0 |  4 |
 | Y4 |  0 |  4 |
 | Y3 |  1 |  2 |
 | Y2 |  0 |  0 |
@@ -126,7 +126,7 @@ All Modules
 +-----------+-----------------+-------------------+---------------------------------------------------------------------------------------------------------------+-------------+---------------+-------------+----------+----------------+----------+--------------------------------------------------------------------------+
 | Global Id | Driver Type/Pin | Driver Region (D) | Clock                                                                                                         | Period (ns) | Waveform (ns) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                                                                      |
 +-----------+-----------------+-------------------+---------------------------------------------------------------------------------------------------------------+-------------+---------------+-------------+----------+----------------+----------+--------------------------------------------------------------------------+
-| g0        | BUFG/O          | n/a               | gtwizard_0_exdes_i/gtwizard_0_support_i/gtwizard_0_init_i/inst/gtwizard_0_i/gt0_gtwizard_0_i/gtxe2_i/TXOUTCLK |       3.125 | {0.000 1.563} |        4041 |        0 |              0 |        1 | gtwizard_0_exdes_i/gtwizard_0_support_i/gt_usrclk_source/gt0_txusrclk2_i |
+| g0        | BUFG/O          | n/a               | gtwizard_0_exdes_i/gtwizard_0_support_i/gtwizard_0_init_i/inst/gtwizard_0_i/gt0_gtwizard_0_i/gtxe2_i/TXOUTCLK |       3.125 | {0.000 1.563} |        4289 |        0 |              0 |        1 | gtwizard_0_exdes_i/gtwizard_0_support_i/gt_usrclk_source/gt0_txusrclk2_i |
 +-----------+-----------------+-------------------+---------------------------------------------------------------------------------------------------------------+-------------+---------------+-------------+----------+----------------+----------+--------------------------------------------------------------------------+
 * Slice Loads column represents load cell count of all cell types other than IO, GT and clock resources
 ** IO Loads column represents load cell count of IO types
@@ -138,8 +138,8 @@ All Modules
 |    | X0 | X1    | HORIZONTAL PROG DELAY |
 +----+----+-------+-----------------------+
 | Y6 |  0 |     0 |                     0 |
-| Y5 |  0 |  1340 |                     0 |
-| Y4 |  0 |  2696 |                     0 |
+| Y5 |  0 |  1070 |                     0 |
+| Y4 |  0 |  3214 |                     0 |
 | Y3 |  0 |     6 |                     0 |
 | Y2 |  0 |     0 |                     0 |
 | Y1 |  0 |     0 |                     0 |
@@ -153,7 +153,7 @@ All Modules
 +-----------+-----------------+-------------------+---------+-------------+---------------+-------------+----------+----------------+----------+-------------------------------------------------------------------------------------------+
 | Global Id | Driver Type/Pin | Driver Region (D) | Clock   | Period (ns) | Waveform (ns) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                                                                                       |
 +-----------+-----------------+-------------------+---------+-------------+---------------+-------------+----------+----------------+----------+-------------------------------------------------------------------------------------------+
-| g1        | BUFG/O          | n/a               | clkout0 |       1.563 | {0.000 0.781} |        1336 |        0 |              0 |        1 | gtwizard_0_exdes_i/gtwizard_0_support_i/gt_usrclk_source/rxoutclk_mmcm1_i/gt0_rxusrclk2_i |
+| g1        | BUFG/O          | n/a               | clkout0 |       1.563 | {0.000 0.781} |        1315 |        0 |              0 |        1 | gtwizard_0_exdes_i/gtwizard_0_support_i/gt_usrclk_source/rxoutclk_mmcm1_i/gt0_rxusrclk2_i |
 +-----------+-----------------+-------------------+---------+-------------+---------------+-------------+----------+----------------+----------+-------------------------------------------------------------------------------------------+
 * Slice Loads column represents load cell count of all cell types other than IO, GT and clock resources
 ** IO Loads column represents load cell count of IO types
@@ -165,8 +165,8 @@ All Modules
 |    | X0 | X1    | HORIZONTAL PROG DELAY |
 +----+----+-------+-----------------------+
 | Y6 |  0 |     0 |                     0 |
-| Y5 |  0 |  1258 |                     0 |
-| Y4 |  0 |    73 |                     0 |
+| Y5 |  0 |  1116 |                     0 |
+| Y4 |  0 |   194 |                     0 |
 | Y3 |  0 |     6 |                     0 |
 | Y2 |  0 |     0 |                     0 |
 | Y1 |  0 |     0 |                     0 |
@@ -192,8 +192,8 @@ All Modules
 |    | X0 | X1   | HORIZONTAL PROG DELAY |
 +----+----+------+-----------------------+
 | Y6 |  0 |    0 |                     0 |
-| Y5 |  0 |    0 |                     0 |
-| Y4 |  0 |  462 |                     0 |
+| Y5 |  0 |  268 |                     0 |
+| Y4 |  0 |  194 |                     0 |
 | Y3 |  0 |    0 |                     0 |
 | Y2 |  0 |    0 |                     0 |
 | Y1 |  0 |    0 |                     0 |
@@ -219,8 +219,8 @@ All Modules
 |    | X0 | X1   | HORIZONTAL PROG DELAY |
 +----+----+------+-----------------------+
 | Y6 |  0 |    0 |                     0 |
-| Y5 |  0 |    2 |                     0 |
-| Y4 |  0 |  268 |                     0 |
+| Y5 |  0 |  105 |                     0 |
+| Y4 |  0 |  165 |                     0 |
 | Y3 |  0 |    0 |                     0 |
 | Y2 |  0 |    0 |                     0 |
 | Y1 |  0 |    0 |                     0 |
@@ -288,10 +288,10 @@ All Modules
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                                                       |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |        2696 |               0 | 2511 |    169 |   16 |   0 |  0 |    0 |   0 |       0 | gtwizard_0_exdes_i/gtwizard_0_support_i/gt_usrclk_source/gt0_txusrclk2_i                  |
-| g1        | n/a   | BUFG/O          | None       |          73 |               0 |   49 |     20 |    4 |   0 |  0 |    0 |   0 |       0 | gtwizard_0_exdes_i/gtwizard_0_support_i/gt_usrclk_source/rxoutclk_mmcm1_i/gt0_rxusrclk2_i |
-| g2        | n/a   | BUFG/O          | None       |         462 |               0 |  462 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | dbg_hub/inst/BSCANID.u_xsdbm_id/itck_i                                                    |
-| g3        | n/a   | BUFG/O          | None       |         268 |               0 |  268 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | gtwizard_0_exdes_i/drpclk_in_i                                                            |
+| g0        | n/a   | BUFG/O          | None       |        3214 |               0 | 2986 |    222 |    6 |   0 |  0 |    0 |   0 |       0 | gtwizard_0_exdes_i/gtwizard_0_support_i/gt_usrclk_source/gt0_txusrclk2_i                  |
+| g1        | n/a   | BUFG/O          | None       |         194 |               0 |  168 |     24 |    2 |   0 |  0 |    0 |   0 |       0 | gtwizard_0_exdes_i/gtwizard_0_support_i/gt_usrclk_source/rxoutclk_mmcm1_i/gt0_rxusrclk2_i |
+| g2        | n/a   | BUFG/O          | None       |         194 |               0 |  194 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | dbg_hub/inst/BSCANID.u_xsdbm_id/itck_i                                                    |
+| g3        | n/a   | BUFG/O          | None       |         165 |               0 |  165 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | gtwizard_0_exdes_i/drpclk_in_i                                                            |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------------------------+
 * Clock Loads column represents the clock pin loads (pin count)
 ** Non-Clock Loads column represents the non-clock pin loads (pin count)
@@ -304,9 +304,10 @@ All Modules
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                                                       |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |        1340 |               0 | 1283 |     39 |   16 |   0 |  1 |    0 |   0 |       0 | gtwizard_0_exdes_i/gtwizard_0_support_i/gt_usrclk_source/gt0_txusrclk2_i                  |
-| g1        | n/a   | BUFG/O          | None       |        1258 |               0 | 1080 |    160 |   16 |   0 |  1 |    0 |   0 |       0 | gtwizard_0_exdes_i/gtwizard_0_support_i/gt_usrclk_source/rxoutclk_mmcm1_i/gt0_rxusrclk2_i |
-| g3        | n/a   | BUFG/O          | None       |           2 |               0 |    0 |      0 |    0 |   0 |  1 |    0 |   0 |       0 | gtwizard_0_exdes_i/drpclk_in_i                                                            |
+| g0        | n/a   | BUFG/O          | None       |        1070 |               0 | 1046 |     19 |    3 |   0 |  1 |    0 |   0 |       0 | gtwizard_0_exdes_i/gtwizard_0_support_i/gt_usrclk_source/gt0_txusrclk2_i                  |
+| g1        | n/a   | BUFG/O          | None       |        1116 |               0 |  955 |    156 |    3 |   0 |  1 |    0 |   0 |       0 | gtwizard_0_exdes_i/gtwizard_0_support_i/gt_usrclk_source/rxoutclk_mmcm1_i/gt0_rxusrclk2_i |
+| g2        | n/a   | BUFG/O          | None       |         268 |               0 |  268 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | dbg_hub/inst/BSCANID.u_xsdbm_id/itck_i                                                    |
+| g3        | n/a   | BUFG/O          | None       |         105 |               0 |  103 |      0 |    0 |   0 |  1 |    0 |   0 |       0 | gtwizard_0_exdes_i/drpclk_in_i                                                            |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-------------------------------------------------------------------------------------------+
 * Clock Loads column represents the clock pin loads (pin count)
 ** Non-Clock Loads column represents the non-clock pin loads (pin count)
@@ -352,5 +353,5 @@ resize_pblock [get_pblocks {CLKAG_gtwizard_0_exdes_i/drpclk_in_i}] -add {CLOCKRE
 #startgroup
 create_pblock {CLKAG_dbg_hub/inst/BSCANID.u_xsdbm_id/itck_i}
 add_cells_to_pblock [get_pblocks  {CLKAG_dbg_hub/inst/BSCANID.u_xsdbm_id/itck_i}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="dbg_hub/inst/BSCANID.u_xsdbm_id/itck_i"}]]]
-resize_pblock [get_pblocks {CLKAG_dbg_hub/inst/BSCANID.u_xsdbm_id/itck_i}] -add {CLOCKREGION_X1Y4:CLOCKREGION_X1Y4}
+resize_pblock [get_pblocks {CLKAG_dbg_hub/inst/BSCANID.u_xsdbm_id/itck_i}] -add {CLOCKREGION_X1Y4:CLOCKREGION_X1Y4 CLOCKREGION_X1Y5:CLOCKREGION_X1Y5}
 #endgroup
