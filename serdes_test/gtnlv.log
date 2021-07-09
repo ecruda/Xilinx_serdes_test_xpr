@@ -1,6 +1,6 @@
 # Copyright (C) 1994-2020, Concept Engineering GmbH.
 # All Rights Reserved.  Cmd=logfile.
-# Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS-threadsafe
+# Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
 # License cookie [G|T|S|B|*] for HR="Xilinx Inc."
 # -----------------------------------------------------------------------------
 # -----------------------------------------------------------------------------
@@ -183,76 +183,76 @@ load net net.quadpll.2 -pin qpll.2 Out -pin GT.2.0 RX
 attribute {inst qpll.2} -attr @fillcolor #cccc00
 attribute {inst GT.2.0} -attr @fillcolor #cccc00
 show
-# Starting Split Pages                                                  1091.42
-# Split Pages 48 Comps, 3 Nets 0 NetBundles 0 CGraphics                 1091.42
-# KwayPart started for 48 comps, 3 nets                                 1091.42
-# Init done: 1 nodes (1 locked nodes), 0 edges                          1091.42
-# Startpart done: 1 parts                                               1091.42
-# KwayPart done                                                         1091.42
-# End of Split Pages: 1 pages                                           1091.42
-# End of Split Pages                                                    1091.42
-# Generating Regions for Page 1:   48 Comps,    3 Nets                  1091.42
-# Analyze                                                               1091.42
-# Levelize                                                              1091.42
-# End of LevelAssign mode=I, 3 Levels, 9 Comps, limit=30000             1091.42
-# Nets                                                                  1091.42
-# Place                                                                 1091.42
-# PlaceNets                                                             1091.42
-# SpaceY                                                                1091.42
-# Track                                                                 1091.42
-# SpaceX                                                                1091.42
-# Wire                                                                  1091.42
-# End of Wire: 0 nets, 0 ch, wire: 0-->0 (0 with wbits)                 1091.42
-# End of doGenerate                                                     1091.42
-# Analyze                                                               1091.42
-# Levelize                                                              1091.42
-# End of LevelAssign mode=I, 3 Levels, 10 Comps, limit=30000            1091.42
-# Nets                                                                  1091.42
-# Place                                                                 1091.42
-# PlaceNets                                                             1091.42
-# SpaceY                                                                1091.42
-# Track                                                                 1091.42
-# SpaceX                                                                1091.42
-# Wire                                                                  1091.42
-# End of Wire: 2 nets, 2 ch, wire: 10-->10 (0 with wbits)               1091.42
-# End of doGenerate                                                     1091.42
-# Analyze                                                               1091.42
-# Levelize                                                              1091.42
-# End of LevelAssign mode=I, 3 Levels, 9 Comps, limit=30000             1091.42
-# Nets                                                                  1091.42
-# Place                                                                 1091.42
-# PlaceNets                                                             1091.42
-# SpaceY                                                                1091.42
-# Track                                                                 1091.42
-# SpaceX                                                                1091.42
-# Wire                                                                  1091.42
-# End of Wire: 0 nets, 0 ch, wire: 0-->0 (0 with wbits)                 1091.42
-# End of doGenerate                                                     1091.42
-# Analyze                                                               1091.42
-# Levelize                                                              1091.42
-# End of LevelAssign mode=I, 3 Levels, 9 Comps, limit=30000             1091.42
-# Nets                                                                  1091.42
-# Place                                                                 1091.42
-# PlaceNets                                                             1091.42
-# SpaceY                                                                1091.42
-# Track                                                                 1091.42
-# SpaceX                                                                1091.42
-# Wire                                                                  1091.42
-# End of Wire: 0 nets, 0 ch, wire: 0-->0 (0 with wbits)                 1091.42
-# End of doGenerate                                                     1091.42
-# Analyze                                                               1091.42
-# Levelize                                                              1091.42
-# End of LevelAssign mode=I, 2 Levels, 12 Comps, limit=30000            1091.42
-# Nets                                                                  1091.42
-# Place                                                                 1091.42
-# PlaceNets                                                             1091.42
-# SpaceY                                                                1091.42
-# Track                                                                 1091.42
-# SpaceX                                                                1091.42
-# Wire                                                                  1091.42
-# End of Wire: 1 nets, 1 ch, wire: 4-->4 (0 with wbits)                 1091.42
-# End of doGenerate                                                     1091.42
-# End of Generating Regions for Page 1                                  1091.42
+# Starting Split Pages                                                   71.94
+# Split Pages 48 Comps, 3 Nets 0 NetBundles 0 CGraphics                  71.94
+# KwayPart started for 48 comps, 3 nets                                  71.94
+# Init done: 1 nodes (1 locked nodes), 0 edges                           71.94
+# Startpart done: 1 parts                                                71.94
+# KwayPart done                                                          71.94
+# End of Split Pages: 1 pages                                            71.94
+# End of Split Pages                                                     71.94
+# Generating Regions for Page 1:   48 Comps,    3 Nets                   71.94
+# Analyze                                                                71.94
+# Levelize                                                               71.94
+# End of LevelAssign mode=I, 3 Levels, 9 Comps, limit=30000              71.94
+# Nets                                                                   71.94
+# Place                                                                  71.94
+# PlaceNets                                                              71.94
+# SpaceY                                                                 71.94
+# Track                                                                  71.94
+# SpaceX                                                                 71.94
+# Wire                                                                   71.94
+# End of Wire: 0 nets, 0 ch, wire: 0-->0 (0 with wbits)                  71.94
+# End of doGenerate                                                      71.94
+# Analyze                                                                71.94
+# Levelize                                                               71.94
+# End of LevelAssign mode=I, 3 Levels, 10 Comps, limit=30000             71.94
+# Nets                                                                   71.94
+# Place                                                                  71.94
+# PlaceNets                                                              71.94
+# SpaceY                                                                 71.94
+# Track                                                                  71.94
+# SpaceX                                                                 71.94
+# Wire                                                                   71.94
+# End of Wire: 2 nets, 2 ch, wire: 10-->10 (0 with wbits)                71.94
+# End of doGenerate                                                      71.94
+# Analyze                                                                71.94
+# Levelize                                                               71.94
+# End of LevelAssign mode=I, 3 Levels, 9 Comps, limit=30000              71.94
+# Nets                                                                   71.94
+# Place                                                                  71.94
+# PlaceNets                                                              71.94
+# SpaceY                                                                 71.94
+# Track                                                                  71.94
+# SpaceX                                                                 71.94
+# Wire                                                                   71.94
+# End of Wire: 0 nets, 0 ch, wire: 0-->0 (0 with wbits)                  71.94
+# End of doGenerate                                                      71.94
+# Analyze                                                                71.94
+# Levelize                                                               71.94
+# End of LevelAssign mode=I, 3 Levels, 9 Comps, limit=30000              71.94
+# Nets                                                                   71.94
+# Place                                                                  71.94
+# PlaceNets                                                              71.94
+# SpaceY                                                                 71.94
+# Track                                                                  71.94
+# SpaceX                                                                 71.94
+# Wire                                                                   71.94
+# End of Wire: 0 nets, 0 ch, wire: 0-->0 (0 with wbits)                  71.94
+# End of doGenerate                                                      71.94
+# Analyze                                                                71.94
+# Levelize                                                               71.94
+# End of LevelAssign mode=I, 2 Levels, 12 Comps, limit=30000             71.94
+# Nets                                                                   71.94
+# Place                                                                  71.94
+# PlaceNets                                                              71.94
+# SpaceY                                                                 71.94
+# Track                                                                  71.94
+# SpaceX                                                                 71.94
+# Wire                                                                   71.94
+# End of Wire: 1 nets, 1 ch, wire: 4-->4 (0 with wbits)                  71.94
+# End of doGenerate                                                      71.94
+# End of Generating Regions for Page 1                                   71.94
 scrollpos 88 772
 zoom -x 0 -y 0 0.68
 scrollpos 75 656
@@ -265,304 +265,3 @@ scrollpos 122 1058
 scrollpos -10 1058
 selection -itemized {inst GT.0.0}
 scrollpos -10 1058
-scrollpos -10 1058
-scrollpos -10 1058
-scrollpos -10 1058
-scrollpos -11 1058
-scrollpos -17 1058
-scrollpos -30 1058
-scrollpos -45 1058
-scrollpos -59 1058
-scrollpos -67 1058
-scrollpos -71 1058
-scrollpos -72 1058
-scrollpos -72 1058
-scrollpos -72 1058
-scrollpos -72 1053
-scrollpos -72 1043
-scrollpos -72 1029
-scrollpos -72 1005
-scrollpos -72 977
-scrollpos -72 942
-scrollpos -72 933
-scrollpos -72 928
-scrollpos -72 910
-scrollpos -72 906
-scrollpos -72 892
-scrollpos -72 878
-scrollpos -72 860
-scrollpos -72 856
-scrollpos -72 838
-scrollpos -72 833
-scrollpos -72 815
-scrollpos -72 797
-scrollpos -72 788
-scrollpos -72 783
-scrollpos -72 774
-scrollpos -72 761
-scrollpos -72 752
-scrollpos -72 733
-scrollpos -72 729
-scrollpos -72 720
-scrollpos -72 702
-scrollpos -72 688
-scrollpos -72 679
-scrollpos -72 661
-scrollpos -72 643
-scrollpos -72 638
-scrollpos -72 620
-scrollpos -72 611
-scrollpos -72 607
-scrollpos -72 589
-scrollpos -72 584
-scrollpos -72 570
-scrollpos -72 552
-scrollpos -72 534
-scrollpos -72 516
-scrollpos -72 512
-scrollpos -72 493
-scrollpos -72 480
-scrollpos -72 466
-scrollpos -72 462
-scrollpos -72 453
-scrollpos -72 448
-scrollpos -72 439
-scrollpos -72 421
-scrollpos -72 416
-scrollpos -72 407
-scrollpos -72 398
-scrollpos -72 394
-scrollpos -72 385
-scrollpos -72 380
-scrollpos -72 371
-scrollpos -72 362
-scrollpos -72 358
-scrollpos -72 353
-scrollpos -72 348
-scrollpos -72 344
-scrollpos -72 335
-scrollpos -72 330
-scrollpos -72 321
-scrollpos -72 317
-scrollpos -72 308
-scrollpos -72 303
-scrollpos -72 294
-scrollpos -72 290
-scrollpos -72 281
-scrollpos -72 276
-scrollpos -72 267
-scrollpos -72 258
-scrollpos -72 253
-scrollpos -72 244
-scrollpos -72 235
-scrollpos -72 231
-scrollpos -72 222
-scrollpos -72 217
-scrollpos -72 208
-scrollpos -72 199
-scrollpos -72 195
-scrollpos -72 176
-scrollpos -72 172
-scrollpos -72 167
-scrollpos -72 154
-scrollpos -72 149
-scrollpos -72 140
-scrollpos -72 127
-scrollpos -72 118
-scrollpos -72 108
-scrollpos -72 104
-scrollpos -72 95
-scrollpos -72 90
-scrollpos -72 81
-scrollpos -72 77
-scrollpos -72 72
-scrollpos -72 68
-scrollpos -72 63
-scrollpos -72 54
-scrollpos -72 50
-scrollpos -72 41
-scrollpos -72 31
-scrollpos -72 27
-scrollpos -72 18
-scrollpos -72 4
-scrollpos -72 -5
-scrollpos -72 -14
-scrollpos -72 -23
-scrollpos -72 -27
-scrollpos -72 -41
-scrollpos -72 -41
-scrollpos -72 -8
-scrollpos -72 25
-scrollpos -72 58
-scrollpos -72 91
-scrollpos -72 124
-scrollpos -72 157
-scrollpos -72 190
-scrollpos -72 223
-scrollpos -72 256
-scrollpos -72 289
-scrollpos -72 322
-scrollpos -72 355
-scrollpos -72 388
-scrollpos -72 421
-scrollpos -72 454
-scrollpos -72 487
-scrollpos -72 520
-scrollpos -72 553
-scrollpos -72 586
-scrollpos -72 619
-scrollpos -72 652
-scrollpos -72 685
-scrollpos -72 718
-scrollpos -72 751
-scrollpos -72 784
-scrollpos -72 817
-scrollpos -72 850
-scrollpos -72 883
-scrollpos -72 916
-scrollpos -72 949
-scrollpos -72 916
-scrollpos -72 883
-scrollpos -72 850
-scrollpos -72 817
-scrollpos -72 784
-scrollpos -72 751
-scrollpos -72 718
-scrollpos -72 685
-scrollpos -72 652
-scrollpos -72 619
-scrollpos -72 586
-scrollpos -72 553
-scrollpos -72 520
-scrollpos -72 487
-scrollpos -72 454
-scrollpos -72 421
-scrollpos -72 388
-scrollpos -72 355
-scrollpos -72 322
-scrollpos -72 289
-scrollpos -72 256
-scrollpos -72 223
-scrollpos -72 190
-scrollpos -72 157
-scrollpos -72 124
-scrollpos -72 91
-scrollpos -72 58
-scrollpos -72 25
-scrollpos -72 -8
-scrollpos -72 -41
-scrollpos -72 -8
-scrollpos -72 25
-scrollpos -72 58
-scrollpos -72 91
-scrollpos -72 124
-scrollpos -72 157
-scrollpos -72 190
-scrollpos -72 223
-scrollpos -72 256
-scrollpos -72 289
-scrollpos -72 322
-scrollpos -72 355
-scrollpos -72 388
-scrollpos -72 421
-scrollpos -72 454
-scrollpos -72 487
-scrollpos -72 520
-scrollpos -72 553
-scrollpos -72 586
-scrollpos -72 619
-scrollpos -72 652
-scrollpos -72 685
-scrollpos -72 718
-scrollpos -72 751
-scrollpos -72 784
-scrollpos -72 817
-scrollpos -72 850
-scrollpos -72 883
-scrollpos -72 916
-scrollpos -72 949
-scrollpos -72 978
-scrollpos -72 945
-scrollpos -72 912
-scrollpos -72 879
-scrollpos -72 846
-scrollpos -72 813
-scrollpos -72 780
-scrollpos -72 747
-scrollpos -72 714
-scrollpos -72 681
-scrollpos -72 648
-scrollpos -72 615
-scrollpos -72 582
-scrollpos -72 549
-scrollpos -72 516
-scrollpos -72 483
-scrollpos -72 450
-scrollpos -72 417
-scrollpos -72 384
-scrollpos -72 351
-scrollpos -72 318
-scrollpos -72 285
-scrollpos -72 252
-scrollpos -72 219
-scrollpos -72 186
-scrollpos -72 219
-scrollpos -72 252
-scrollpos -72 285
-scrollpos -72 318
-scrollpos -72 351
-scrollpos -72 384
-scrollpos -72 417
-scrollpos -72 384
-scrollpos -72 351
-scrollpos -72 318
-scrollpos -72 285
-scrollpos -72 252
-scrollpos -72 219
-scrollpos -72 186
-scrollpos -72 153
-scrollpos -72 120
-scrollpos -72 87
-scrollpos -72 54
-scrollpos -72 87
-scrollpos -72 120
-scrollpos -72 153
-scrollpos -72 186
-scrollpos -72 219
-scrollpos -72 252
-scrollpos -72 285
-scrollpos -72 318
-scrollpos -72 351
-scrollpos -72 384
-scrollpos -72 417
-scrollpos -72 450
-scrollpos -72 483
-scrollpos -72 516
-scrollpos -72 549
-scrollpos -72 516
-scrollpos -72 516
-scrollpos -72 512
-scrollpos -72 503
-scrollpos -72 498
-scrollpos -72 489
-scrollpos -72 480
-scrollpos -72 466
-scrollpos -72 457
-scrollpos -72 452
-scrollpos -72 443
-scrollpos -72 434
-scrollpos -72 420
-scrollpos -72 402
-scrollpos -72 374
-scrollpos -72 369
-scrollpos -72 351
-scrollpos -72 337
-scrollpos -72 328
-scrollpos -72 319
-scrollpos -72 305
-scrollpos -72 296
-scrollpos -72 286
-scrollpos -72 282
-scrollpos -72 291
-scrollpos -72 296
-scrollpos -72 296

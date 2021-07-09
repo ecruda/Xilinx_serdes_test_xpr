@@ -73,6 +73,10 @@
      .gt0_tx_fsm_reset_done_out(gt0_tx_fsm_reset_done_out), // output wire gt0_tx_fsm_reset_done_out
      .gt0_rx_fsm_reset_done_out(gt0_rx_fsm_reset_done_out), // output wire gt0_rx_fsm_reset_done_out
      .gt0_data_valid_in(gt0_data_valid_in), // input wire gt0_data_valid_in
+     .gt0_tx_mmcm_lock_in(gt0_tx_mmcm_lock_in), // input wire gt0_tx_mmcm_lock_in
+     .gt0_tx_mmcm_reset_out(gt0_tx_mmcm_reset_out), // output wire gt0_tx_mmcm_reset_out
+     .gt0_rx_mmcm_lock_in(gt0_rx_mmcm_lock_in), // input wire gt0_rx_mmcm_lock_in
+     .gt0_rx_mmcm_reset_out(gt0_rx_mmcm_reset_out), // output wire gt0_rx_mmcm_reset_out
 
     //_________________________________________________________________________
     //GT0  (X0Y8)
@@ -97,7 +101,7 @@
         .gt0_rxusrclk_in                (gt0_rxusrclk_in), // input wire gt0_rxusrclk_in
         .gt0_rxusrclk2_in               (gt0_rxusrclk2_in), // input wire gt0_rxusrclk2_in
     //---------------- Receive Ports - FPGA RX interface Ports -----------------
-        .gt0_rxdata_out                 (gt0_rxdata_out), // output wire [31:0] gt0_rxdata_out
+        .gt0_rxdata_out                 (gt0_rxdata_out), // output wire [63:0] gt0_rxdata_out
     //------------------------- Receive Ports - RX AFE -------------------------
         .gt0_gtxrxp_in                  (gt0_gtxrxp_in), // input wire gt0_gtxrxp_in
     //---------------------- Receive Ports - RX AFE Ports ----------------------
@@ -121,7 +125,7 @@
         .gt0_txusrclk_in                (gt0_txusrclk_in), // input wire gt0_txusrclk_in
         .gt0_txusrclk2_in               (gt0_txusrclk2_in), // input wire gt0_txusrclk2_in
     //---------------- Transmit Ports - TX Data Path interface -----------------
-        .gt0_txdata_in                  (gt0_txdata_in), // input wire [31:0] gt0_txdata_in
+        .gt0_txdata_in                  (gt0_txdata_in), // input wire [63:0] gt0_txdata_in
     //-------------- Transmit Ports - TX Driver and OOB signaling --------------
         .gt0_gtxtxn_out                 (gt0_gtxtxn_out), // output wire gt0_gtxtxn_out
         .gt0_gtxtxp_out                 (gt0_gtxtxp_out), // output wire gt0_gtxtxp_out

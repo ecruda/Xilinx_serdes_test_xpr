@@ -84,6 +84,10 @@ input           dont_reset_on_data_error_in,
 output          gt0_tx_fsm_reset_done_out,
 output          gt0_rx_fsm_reset_done_out,
 input           gt0_data_valid_in,
+input           gt0_tx_mmcm_lock_in,
+output          gt0_tx_mmcm_reset_out,
+input           gt0_rx_mmcm_lock_in,
+output          gt0_rx_mmcm_reset_out,
 
     //_________________________________________________________________________
     //GT0  (X1Y8)
@@ -108,7 +112,7 @@ input           gt0_data_valid_in,
     input           gt0_rxusrclk_in,
     input           gt0_rxusrclk2_in,
     //---------------- Receive Ports - FPGA RX interface Ports -----------------
-    output  [31:0]  gt0_rxdata_out,
+    output  [63:0]  gt0_rxdata_out,
     //------------------------- Receive Ports - RX AFE -------------------------
     input           gt0_gtxrxp_in,
     //---------------------- Receive Ports - RX AFE Ports ----------------------
@@ -132,7 +136,7 @@ input           gt0_data_valid_in,
     input           gt0_txusrclk_in,
     input           gt0_txusrclk2_in,
     //---------------- Transmit Ports - TX Data Path interface -----------------
-    input   [31:0]  gt0_txdata_in,
+    input   [63:0]  gt0_txdata_in,
     //-------------- Transmit Ports - TX Driver and OOB signaling --------------
     output          gt0_gtxtxn_out,
     output          gt0_gtxtxp_out,
@@ -261,7 +265,7 @@ assign  tied_to_vcc_i                        =  1'b1;
         .gt0_rxusrclk_in                (gt0_rxusrclk_in), // input wire gt0_rxusrclk_in
         .gt0_rxusrclk2_in               (gt0_rxusrclk2_in), // input wire gt0_rxusrclk2_in
         //---------------- Receive Ports - FPGA RX interface Ports -----------------
-        .gt0_rxdata_out                 (gt0_rxdata_out), // output wire [31:0] gt0_rxdata_out
+        .gt0_rxdata_out                 (gt0_rxdata_out), // output wire [63:0] gt0_rxdata_out
         //------------------------- Receive Ports - RX AFE -------------------------
         .gt0_gtxrxp_in                  (gt0_gtxrxp_in), // input wire gt0_gtxrxp_in
         //---------------------- Receive Ports - RX AFE Ports ----------------------
@@ -287,7 +291,7 @@ assign  tied_to_vcc_i                        =  1'b1;
         .gt0_txusrclk_in                (gt0_txusrclk_in), // input wire gt0_txusrclk_in
         .gt0_txusrclk2_in               (gt0_txusrclk2_in), // input wire gt0_txusrclk2_in
         //---------------- Transmit Ports - TX Data Path interface -----------------
-        .gt0_txdata_in                  (gt0_txdata_in), // input wire [31:0] gt0_txdata_in
+        .gt0_txdata_in                  (gt0_txdata_in), // input wire [63:0] gt0_txdata_in
         //-------------- Transmit Ports - TX Driver and OOB signaling --------------
         .gt0_gtxtxn_out                 (gt0_gtxtxn_out), // output wire gt0_gtxtxn_out
         .gt0_gtxtxp_out                 (gt0_gtxtxp_out), // output wire gt0_gtxtxp_out
@@ -359,9 +363,9 @@ gt0_txresetfsm_i
         .QPLLLOCK                       (gt0_qplllock_in),
         .CPLLLOCK                       (tied_to_vcc_i),
         .TXRESETDONE                    (gt0_txresetdone_i),
-        .MMCM_LOCK                      (tied_to_vcc_i),
+        .MMCM_LOCK                      (gt0_tx_mmcm_lock_in),
         .GTTXRESET                      (gt0_gttxreset_t),
-        .MMCM_RESET                     (),
+        .MMCM_RESET                     (gt0_tx_mmcm_reset_out),
         .QPLL_RESET                     (gt0_qpllreset_t),
         .CPLL_RESET                     (),
         .TX_FSM_RESET_DONE              (gt0_tx_fsm_reset_done_out),
@@ -399,13 +403,13 @@ gt0_rxresetfsm_i
         .QPLLLOCK                       (gt0_qplllock_in),
         .CPLLLOCK                       (tied_to_vcc_i),
         .RXRESETDONE                    (gt0_rxresetdone_i),
-        .MMCM_LOCK                      (tied_to_vcc_i),
+        .MMCM_LOCK                      (gt0_rx_mmcm_lock_in),
         .RECCLK_STABLE                  (gt0_recclk_stable_i),
         .RECCLK_MONITOR_RESTART         (tied_to_ground_i),
         .DATA_VALID                     (gt0_data_valid_in),
         .TXUSERRDY                      (tied_to_vcc_i),
         .GTRXRESET                      (gt0_gtrxreset_t),
-        .MMCM_RESET                     (),
+        .MMCM_RESET                     (gt0_rx_mmcm_reset_out),
         .QPLL_RESET                     (),
         .CPLL_RESET                     (),
         .RX_FSM_RESET_DONE              (gt0_rx_fsm_reset_done_out),

@@ -9,53 +9,53 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="868fs"></ZoomStartTime>
-      <ZoomEndTime time="945fs"></ZoomEndTime>
-      <Cursor1Time time="849fs"></Cursor1Time>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="1863fs"></ZoomEndTime>
+      <Cursor1Time time="2303fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="194"></NameColumnWidth>
-      <ValueColumnWidth column_width="87"></ValueColumnWidth>
+      <ValueColumnWidth column_width="82"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="12" />
    <wave_markers>
    </wave_markers>
    <wvobject fp_name="gt0_rxdata_i" type="array">
       <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">gt0_rxdata_i[31:0]</obj_property>
-      <obj_property name="ObjectShortName">gt0_rxdata_i[31:0]</obj_property>
+      <obj_property name="ElementShortName">gt0_rxdata_i[63:0]</obj_property>
+      <obj_property name="ObjectShortName">gt0_rxdata_i[63:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
    <wvobject fp_name="prbs_from_check" type="array">
       <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">prbs_from_check[31:0]</obj_property>
-      <obj_property name="ObjectShortName">prbs_from_check[31:0]</obj_property>
+      <obj_property name="ElementShortName">prbs_from_check[63:0]</obj_property>
+      <obj_property name="ObjectShortName">prbs_from_check[63:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
    <wvobject fp_name="dout" type="array">
       <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">dout[31:0]</obj_property>
-      <obj_property name="ObjectShortName">dout[31:0]</obj_property>
+      <obj_property name="ElementShortName">dout[63:0]</obj_property>
+      <obj_property name="ObjectShortName">dout[63:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
    <wvobject fp_name="errorBits" type="array">
       <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">errorBits[31:0]</obj_property>
-      <obj_property name="ObjectShortName">errorBits[31:0]</obj_property>
+      <obj_property name="ElementShortName">errorBits[63:0]</obj_property>
+      <obj_property name="ObjectShortName">errorBits[63:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
    <wvobject fp_name="errorCounter" type="array">
       <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">errorCounter[5:0]</obj_property>
-      <obj_property name="ObjectShortName">errorCounter[5:0]</obj_property>
+      <obj_property name="ElementShortName">errorCounter[6:0]</obj_property>
+      <obj_property name="ObjectShortName">errorCounter[6:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
@@ -77,8 +77,8 @@
    </wvobject>
    <wvobject fp_name="alignAddr" type="array">
       <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">alignAddr[4:0]</obj_property>
-      <obj_property name="ObjectShortName">alignAddr[4:0]</obj_property>
+      <obj_property name="ElementShortName">alignAddr[5:0]</obj_property>
+      <obj_property name="ObjectShortName">alignAddr[5:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>

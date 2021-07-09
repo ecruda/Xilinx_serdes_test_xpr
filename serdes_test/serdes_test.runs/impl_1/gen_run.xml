@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7k325tffg900-2" LaunchTime="1625760829">
+<GenRun Id="impl_1" LaunchPart="xc7k325tffg900-2" LaunchTime="1625856915">
+  <File Type="OPT-HWDEF" Name="PRBS7_top.hwdef"/>
+  <File Type="ROUTE-BUS-SKEW" Name="PRBS7_top_bus_skew_routed.rpt"/>
+  <File Type="PA-DCP" Name="PRBS7_top.dcp"/>
   <File Type="BITSTR-BMM" Name="PRBS7_top_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="PRBS7_top_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="PRBS7_top_timing_summary_init.rpt"/>
@@ -10,7 +13,6 @@
   <File Type="ROUTE-PWR-SUM" Name="PRBS7_top_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="PRBS7_top_reports.tcl"/>
   <File Type="OPT-DRC" Name="PRBS7_top_drc_opted.rpt"/>
-  <File Type="OPT-HWDEF" Name="PRBS7_top.hwdef"/>
   <File Type="PWROPT-DCP" Name="PRBS7_top_pwropt.dcp"/>
   <File Type="PWROPT-DRC" Name="PRBS7_top_drc_pwropted.rpt"/>
   <File Type="PWROPT-TIMING" Name="PRBS7_top_timing_summary_pwropted.rpt"/>
@@ -48,7 +50,6 @@
   <File Type="ROUTE-TIMING-RPX" Name="PRBS7_top_timing_summary_routed.rpx"/>
   <File Type="ROUTE-SIMILARITY" Name="PRBS7_top_incremental_reuse_routed.rpt"/>
   <File Type="ROUTE-CLK" Name="PRBS7_top_clock_utilization_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW" Name="PRBS7_top_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="PRBS7_top_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="PRBS7_top_bus_skew_routed.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="PRBS7_top_postroute_physopt.dcp"/>

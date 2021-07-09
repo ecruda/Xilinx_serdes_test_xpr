@@ -1,0 +1,194 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Jul  8 16:39:58 2021
+# Process ID: 11872
+# Current directory: C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test
+# Command line: vivado.exe C:\Lily_Zhang\GBS20V1\Elijah\git_repo\Xilinx_serdes_test_xpr\serdes_test\serdes_test.xpr
+# Log file: C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/vivado.log
+# Journal file: C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.xpr
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/impl_1/PRBS7_top.bit} [get_hw_devices xc7k325t_0]
+set_property PROBES.FILE {C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/impl_1/PRBS7_top.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/impl_1/PRBS7_top.ltx} [get_hw_devices xc7k325t_0]
+current_hw_device [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+set_property PROBES.FILE {C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/impl_1/PRBS7_top.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/impl_1/PRBS7_top.ltx} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/impl_1/PRBS7_top.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+set_property PROBES.FILE {C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/impl_1/PRBS7_top.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/impl_1/PRBS7_top.ltx} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/impl_1/PRBS7_top.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+set_property PROBES.FILE {C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/impl_1/PRBS7_top.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/impl_1/PRBS7_top.ltx} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/impl_1/PRBS7_top.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+open_run synth_1 -name synth_1
+delete_debug_core [get_debug_cores {u_ila_0 u_ila_1 }]
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+refresh_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+close_design
+set_property PROBES.FILE {C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/impl_1/PRBS7_top.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/impl_1/PRBS7_top.ltx} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/impl_1/PRBS7_top.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+set_property PROBES.FILE {C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/impl_1/PRBS7_top.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/impl_1/PRBS7_top.ltx} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/impl_1/PRBS7_top.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+open_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+open_run synth_1 -name synth_1
+delete_debug_core [get_debug_cores {u_ila_0 u_ila_1 }]
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+create_debug_core u_ila_1 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_1]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_1]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_1]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_1]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_1]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_1]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_1]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_1]
+connect_debug_port u_ila_0/clk [get_nets [list gtwizard_0_exdes_i/gtwizard_0_support_i/gt_usrclk_source/rxoutclk_mmcm1_i/gt0_rxusrclk2_i ]]
+connect_debug_port u_ila_1/clk [get_nets [list gtwizard_0_exdes_i/gtwizard_0_support_i/gt_usrclk_source/gt0_txusrclk_i ]]
+set_property port_width 6 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {alignAddr[0]} {alignAddr[1]} {alignAddr[2]} {alignAddr[3]} {alignAddr[4]} {alignAddr[5]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 64 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {gt0_rxdata_i[0]} {gt0_rxdata_i[1]} {gt0_rxdata_i[2]} {gt0_rxdata_i[3]} {gt0_rxdata_i[4]} {gt0_rxdata_i[5]} {gt0_rxdata_i[6]} {gt0_rxdata_i[7]} {gt0_rxdata_i[8]} {gt0_rxdata_i[9]} {gt0_rxdata_i[10]} {gt0_rxdata_i[11]} {gt0_rxdata_i[12]} {gt0_rxdata_i[13]} {gt0_rxdata_i[14]} {gt0_rxdata_i[15]} {gt0_rxdata_i[16]} {gt0_rxdata_i[17]} {gt0_rxdata_i[18]} {gt0_rxdata_i[19]} {gt0_rxdata_i[20]} {gt0_rxdata_i[21]} {gt0_rxdata_i[22]} {gt0_rxdata_i[23]} {gt0_rxdata_i[24]} {gt0_rxdata_i[25]} {gt0_rxdata_i[26]} {gt0_rxdata_i[27]} {gt0_rxdata_i[28]} {gt0_rxdata_i[29]} {gt0_rxdata_i[30]} {gt0_rxdata_i[31]} {gt0_rxdata_i[32]} {gt0_rxdata_i[33]} {gt0_rxdata_i[34]} {gt0_rxdata_i[35]} {gt0_rxdata_i[36]} {gt0_rxdata_i[37]} {gt0_rxdata_i[38]} {gt0_rxdata_i[39]} {gt0_rxdata_i[40]} {gt0_rxdata_i[41]} {gt0_rxdata_i[42]} {gt0_rxdata_i[43]} {gt0_rxdata_i[44]} {gt0_rxdata_i[45]} {gt0_rxdata_i[46]} {gt0_rxdata_i[47]} {gt0_rxdata_i[48]} {gt0_rxdata_i[49]} {gt0_rxdata_i[50]} {gt0_rxdata_i[51]} {gt0_rxdata_i[52]} {gt0_rxdata_i[53]} {gt0_rxdata_i[54]} {gt0_rxdata_i[55]} {gt0_rxdata_i[56]} {gt0_rxdata_i[57]} {gt0_rxdata_i[58]} {gt0_rxdata_i[59]} {gt0_rxdata_i[60]} {gt0_rxdata_i[61]} {gt0_rxdata_i[62]} {gt0_rxdata_i[63]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 25 [get_debug_ports u_ila_0/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list {tot_err_count[0]} {tot_err_count[1]} {tot_err_count[2]} {tot_err_count[3]} {tot_err_count[4]} {tot_err_count[5]} {tot_err_count[6]} {tot_err_count[7]} {tot_err_count[8]} {tot_err_count[9]} {tot_err_count[10]} {tot_err_count[11]} {tot_err_count[12]} {tot_err_count[13]} {tot_err_count[14]} {tot_err_count[15]} {tot_err_count[16]} {tot_err_count[17]} {tot_err_count[18]} {tot_err_count[19]} {tot_err_count[20]} {tot_err_count[21]} {tot_err_count[22]} {tot_err_count[23]} {tot_err_count[24]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 64 [get_debug_ports u_ila_0/probe3]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
+connect_debug_port u_ila_0/probe3 [get_nets [list {errorBits[0]} {errorBits[1]} {errorBits[2]} {errorBits[3]} {errorBits[4]} {errorBits[5]} {errorBits[6]} {errorBits[7]} {errorBits[8]} {errorBits[9]} {errorBits[10]} {errorBits[11]} {errorBits[12]} {errorBits[13]} {errorBits[14]} {errorBits[15]} {errorBits[16]} {errorBits[17]} {errorBits[18]} {errorBits[19]} {errorBits[20]} {errorBits[21]} {errorBits[22]} {errorBits[23]} {errorBits[24]} {errorBits[25]} {errorBits[26]} {errorBits[27]} {errorBits[28]} {errorBits[29]} {errorBits[30]} {errorBits[31]} {errorBits[32]} {errorBits[33]} {errorBits[34]} {errorBits[35]} {errorBits[36]} {errorBits[37]} {errorBits[38]} {errorBits[39]} {errorBits[40]} {errorBits[41]} {errorBits[42]} {errorBits[43]} {errorBits[44]} {errorBits[45]} {errorBits[46]} {errorBits[47]} {errorBits[48]} {errorBits[49]} {errorBits[50]} {errorBits[51]} {errorBits[52]} {errorBits[53]} {errorBits[54]} {errorBits[55]} {errorBits[56]} {errorBits[57]} {errorBits[58]} {errorBits[59]} {errorBits[60]} {errorBits[61]} {errorBits[62]} {errorBits[63]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 64 [get_debug_ports u_ila_0/probe4]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe4]
+connect_debug_port u_ila_0/probe4 [get_nets [list {dout[0]} {dout[1]} {dout[2]} {dout[3]} {dout[4]} {dout[5]} {dout[6]} {dout[7]} {dout[8]} {dout[9]} {dout[10]} {dout[11]} {dout[12]} {dout[13]} {dout[14]} {dout[15]} {dout[16]} {dout[17]} {dout[18]} {dout[19]} {dout[20]} {dout[21]} {dout[22]} {dout[23]} {dout[24]} {dout[25]} {dout[26]} {dout[27]} {dout[28]} {dout[29]} {dout[30]} {dout[31]} {dout[32]} {dout[33]} {dout[34]} {dout[35]} {dout[36]} {dout[37]} {dout[38]} {dout[39]} {dout[40]} {dout[41]} {dout[42]} {dout[43]} {dout[44]} {dout[45]} {dout[46]} {dout[47]} {dout[48]} {dout[49]} {dout[50]} {dout[51]} {dout[52]} {dout[53]} {dout[54]} {dout[55]} {dout[56]} {dout[57]} {dout[58]} {dout[59]} {dout[60]} {dout[61]} {dout[62]} {dout[63]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 9 [get_debug_ports u_ila_0/probe5]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe5]
+connect_debug_port u_ila_0/probe5 [get_nets [list {searchedFrames[0]} {searchedFrames[1]} {searchedFrames[2]} {searchedFrames[3]} {searchedFrames[4]} {searchedFrames[5]} {searchedFrames[6]} {searchedFrames[7]} {searchedFrames[8]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 6 [get_debug_ports u_ila_0/probe6]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe6]
+connect_debug_port u_ila_0/probe6 [get_nets [list {errorCounter[0]} {errorCounter[1]} {errorCounter[2]} {errorCounter[3]} {errorCounter[4]} {errorCounter[5]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 4 [get_debug_ports u_ila_0/probe7]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe7]
+connect_debug_port u_ila_0/probe7 [get_nets [list {foundFrames[0]} {foundFrames[1]} {foundFrames[2]} {foundFrames[3]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 64 [get_debug_ports u_ila_0/probe8]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe8]
+connect_debug_port u_ila_0/probe8 [get_nets [list {prbs_from_check[0]} {prbs_from_check[1]} {prbs_from_check[2]} {prbs_from_check[3]} {prbs_from_check[4]} {prbs_from_check[5]} {prbs_from_check[6]} {prbs_from_check[7]} {prbs_from_check[8]} {prbs_from_check[9]} {prbs_from_check[10]} {prbs_from_check[11]} {prbs_from_check[12]} {prbs_from_check[13]} {prbs_from_check[14]} {prbs_from_check[15]} {prbs_from_check[16]} {prbs_from_check[17]} {prbs_from_check[18]} {prbs_from_check[19]} {prbs_from_check[20]} {prbs_from_check[21]} {prbs_from_check[22]} {prbs_from_check[23]} {prbs_from_check[24]} {prbs_from_check[25]} {prbs_from_check[26]} {prbs_from_check[27]} {prbs_from_check[28]} {prbs_from_check[29]} {prbs_from_check[30]} {prbs_from_check[31]} {prbs_from_check[32]} {prbs_from_check[33]} {prbs_from_check[34]} {prbs_from_check[35]} {prbs_from_check[36]} {prbs_from_check[37]} {prbs_from_check[38]} {prbs_from_check[39]} {prbs_from_check[40]} {prbs_from_check[41]} {prbs_from_check[42]} {prbs_from_check[43]} {prbs_from_check[44]} {prbs_from_check[45]} {prbs_from_check[46]} {prbs_from_check[47]} {prbs_from_check[48]} {prbs_from_check[49]} {prbs_from_check[50]} {prbs_from_check[51]} {prbs_from_check[52]} {prbs_from_check[53]} {prbs_from_check[54]} {prbs_from_check[55]} {prbs_from_check[56]} {prbs_from_check[57]} {prbs_from_check[58]} {prbs_from_check[59]} {prbs_from_check[60]} {prbs_from_check[61]} {prbs_from_check[62]} {prbs_from_check[63]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe9]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe9]
+connect_debug_port u_ila_0/probe9 [get_nets [list aligned ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe10]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe10]
+connect_debug_port u_ila_0/probe10 [get_nets [list bypass ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe11]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe11]
+connect_debug_port u_ila_0/probe11 [get_nets [list errorFlag ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe12]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe12]
+connect_debug_port u_ila_0/probe12 [get_nets [list gt0_rxusrclk2_i ]]
+set_property port_width 64 [get_debug_ports u_ila_1/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe0]
+connect_debug_port u_ila_1/probe0 [get_nets [list {map_dout[0]} {map_dout[1]} {map_dout[2]} {map_dout[3]} {map_dout[4]} {map_dout[5]} {map_dout[6]} {map_dout[7]} {map_dout[8]} {map_dout[9]} {map_dout[10]} {map_dout[11]} {map_dout[12]} {map_dout[13]} {map_dout[14]} {map_dout[15]} {map_dout[16]} {map_dout[17]} {map_dout[18]} {map_dout[19]} {map_dout[20]} {map_dout[21]} {map_dout[22]} {map_dout[23]} {map_dout[24]} {map_dout[25]} {map_dout[26]} {map_dout[27]} {map_dout[28]} {map_dout[29]} {map_dout[30]} {map_dout[31]} {map_dout[32]} {map_dout[33]} {map_dout[34]} {map_dout[35]} {map_dout[36]} {map_dout[37]} {map_dout[38]} {map_dout[39]} {map_dout[40]} {map_dout[41]} {map_dout[42]} {map_dout[43]} {map_dout[44]} {map_dout[45]} {map_dout[46]} {map_dout[47]} {map_dout[48]} {map_dout[49]} {map_dout[50]} {map_dout[51]} {map_dout[52]} {map_dout[53]} {map_dout[54]} {map_dout[55]} {map_dout[56]} {map_dout[57]} {map_dout[58]} {map_dout[59]} {map_dout[60]} {map_dout[61]} {map_dout[62]} {map_dout[63]} ]]
+create_debug_port u_ila_1 probe
+set_property port_width 6 [get_debug_ports u_ila_1/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe1]
+connect_debug_port u_ila_1/probe1 [get_nets [list {errorCount_to_check_source[0]} {errorCount_to_check_source[1]} {errorCount_to_check_source[2]} {errorCount_to_check_source[3]} {errorCount_to_check_source[4]} {errorCount_to_check_source[5]} ]]
+create_debug_port u_ila_1 probe
+set_property port_width 64 [get_debug_ports u_ila_1/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe2]
+connect_debug_port u_ila_1/probe2 [get_nets [list {shifter_dout[0]} {shifter_dout[1]} {shifter_dout[2]} {shifter_dout[3]} {shifter_dout[4]} {shifter_dout[5]} {shifter_dout[6]} {shifter_dout[7]} {shifter_dout[8]} {shifter_dout[9]} {shifter_dout[10]} {shifter_dout[11]} {shifter_dout[12]} {shifter_dout[13]} {shifter_dout[14]} {shifter_dout[15]} {shifter_dout[16]} {shifter_dout[17]} {shifter_dout[18]} {shifter_dout[19]} {shifter_dout[20]} {shifter_dout[21]} {shifter_dout[22]} {shifter_dout[23]} {shifter_dout[24]} {shifter_dout[25]} {shifter_dout[26]} {shifter_dout[27]} {shifter_dout[28]} {shifter_dout[29]} {shifter_dout[30]} {shifter_dout[31]} {shifter_dout[32]} {shifter_dout[33]} {shifter_dout[34]} {shifter_dout[35]} {shifter_dout[36]} {shifter_dout[37]} {shifter_dout[38]} {shifter_dout[39]} {shifter_dout[40]} {shifter_dout[41]} {shifter_dout[42]} {shifter_dout[43]} {shifter_dout[44]} {shifter_dout[45]} {shifter_dout[46]} {shifter_dout[47]} {shifter_dout[48]} {shifter_dout[49]} {shifter_dout[50]} {shifter_dout[51]} {shifter_dout[52]} {shifter_dout[53]} {shifter_dout[54]} {shifter_dout[55]} {shifter_dout[56]} {shifter_dout[57]} {shifter_dout[58]} {shifter_dout[59]} {shifter_dout[60]} {shifter_dout[61]} {shifter_dout[62]} {shifter_dout[63]} ]]
+create_debug_port u_ila_1 probe
+set_property port_width 64 [get_debug_ports u_ila_1/probe3]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe3]
+connect_debug_port u_ila_1/probe3 [get_nets [list {gt0_txdata_i[0]} {gt0_txdata_i[1]} {gt0_txdata_i[2]} {gt0_txdata_i[3]} {gt0_txdata_i[4]} {gt0_txdata_i[5]} {gt0_txdata_i[6]} {gt0_txdata_i[7]} {gt0_txdata_i[8]} {gt0_txdata_i[9]} {gt0_txdata_i[10]} {gt0_txdata_i[11]} {gt0_txdata_i[12]} {gt0_txdata_i[13]} {gt0_txdata_i[14]} {gt0_txdata_i[15]} {gt0_txdata_i[16]} {gt0_txdata_i[17]} {gt0_txdata_i[18]} {gt0_txdata_i[19]} {gt0_txdata_i[20]} {gt0_txdata_i[21]} {gt0_txdata_i[22]} {gt0_txdata_i[23]} {gt0_txdata_i[24]} {gt0_txdata_i[25]} {gt0_txdata_i[26]} {gt0_txdata_i[27]} {gt0_txdata_i[28]} {gt0_txdata_i[29]} {gt0_txdata_i[30]} {gt0_txdata_i[31]} {gt0_txdata_i[32]} {gt0_txdata_i[33]} {gt0_txdata_i[34]} {gt0_txdata_i[35]} {gt0_txdata_i[36]} {gt0_txdata_i[37]} {gt0_txdata_i[38]} {gt0_txdata_i[39]} {gt0_txdata_i[40]} {gt0_txdata_i[41]} {gt0_txdata_i[42]} {gt0_txdata_i[43]} {gt0_txdata_i[44]} {gt0_txdata_i[45]} {gt0_txdata_i[46]} {gt0_txdata_i[47]} {gt0_txdata_i[48]} {gt0_txdata_i[49]} {gt0_txdata_i[50]} {gt0_txdata_i[51]} {gt0_txdata_i[52]} {gt0_txdata_i[53]} {gt0_txdata_i[54]} {gt0_txdata_i[55]} {gt0_txdata_i[56]} {gt0_txdata_i[57]} {gt0_txdata_i[58]} {gt0_txdata_i[59]} {gt0_txdata_i[60]} {gt0_txdata_i[61]} {gt0_txdata_i[62]} {gt0_txdata_i[63]} ]]
+create_debug_port u_ila_1 probe
+set_property port_width 64 [get_debug_ports u_ila_1/probe4]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe4]
+connect_debug_port u_ila_1/probe4 [get_nets [list {prbs_from_check_to_check_source[0]} {prbs_from_check_to_check_source[1]} {prbs_from_check_to_check_source[2]} {prbs_from_check_to_check_source[3]} {prbs_from_check_to_check_source[4]} {prbs_from_check_to_check_source[5]} {prbs_from_check_to_check_source[6]} {prbs_from_check_to_check_source[7]} {prbs_from_check_to_check_source[8]} {prbs_from_check_to_check_source[9]} {prbs_from_check_to_check_source[10]} {prbs_from_check_to_check_source[11]} {prbs_from_check_to_check_source[12]} {prbs_from_check_to_check_source[13]} {prbs_from_check_to_check_source[14]} {prbs_from_check_to_check_source[15]} {prbs_from_check_to_check_source[16]} {prbs_from_check_to_check_source[17]} {prbs_from_check_to_check_source[18]} {prbs_from_check_to_check_source[19]} {prbs_from_check_to_check_source[20]} {prbs_from_check_to_check_source[21]} {prbs_from_check_to_check_source[22]} {prbs_from_check_to_check_source[23]} {prbs_from_check_to_check_source[24]} {prbs_from_check_to_check_source[25]} {prbs_from_check_to_check_source[26]} {prbs_from_check_to_check_source[27]} {prbs_from_check_to_check_source[28]} {prbs_from_check_to_check_source[29]} {prbs_from_check_to_check_source[30]} {prbs_from_check_to_check_source[31]} {prbs_from_check_to_check_source[32]} {prbs_from_check_to_check_source[33]} {prbs_from_check_to_check_source[34]} {prbs_from_check_to_check_source[35]} {prbs_from_check_to_check_source[36]} {prbs_from_check_to_check_source[37]} {prbs_from_check_to_check_source[38]} {prbs_from_check_to_check_source[39]} {prbs_from_check_to_check_source[40]} {prbs_from_check_to_check_source[41]} {prbs_from_check_to_check_source[42]} {prbs_from_check_to_check_source[43]} {prbs_from_check_to_check_source[44]} {prbs_from_check_to_check_source[45]} {prbs_from_check_to_check_source[46]} {prbs_from_check_to_check_source[47]} {prbs_from_check_to_check_source[48]} {prbs_from_check_to_check_source[49]} {prbs_from_check_to_check_source[50]} {prbs_from_check_to_check_source[51]} {prbs_from_check_to_check_source[52]} {prbs_from_check_to_check_source[53]} {prbs_from_check_to_check_source[54]} {prbs_from_check_to_check_source[55]} {prbs_from_check_to_check_source[56]} {prbs_from_check_to_check_source[57]} {prbs_from_check_to_check_source[58]} {prbs_from_check_to_check_source[59]} {prbs_from_check_to_check_source[60]} {prbs_from_check_to_check_source[61]} {prbs_from_check_to_check_source[62]} {prbs_from_check_to_check_source[63]} ]]
+create_debug_port u_ila_1 probe
+set_property port_width 1 [get_debug_ports u_ila_1/probe5]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe5]
+connect_debug_port u_ila_1/probe5 [get_nets [list gtwizard_0_exdes_i/rxresetdone_vio_i ]]
+create_debug_port u_ila_1 probe
+set_property port_width 1 [get_debug_ports u_ila_1/probe6]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe6]
+connect_debug_port u_ila_1/probe6 [get_nets [list gtwizard_0_exdes_i/soft_reset_vio_i ]]
+save_constraints -force
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+set_property PROBES.FILE {C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/impl_1/PRBS7_top.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/impl_1/PRBS7_top.ltx} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/impl_1/PRBS7_top.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+set_property PROBES.FILE {C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/impl_1/PRBS7_top.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/impl_1/PRBS7_top.ltx} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/impl_1/PRBS7_top.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+set_property PROBES.FILE {C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/impl_1/PRBS7_top.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/impl_1/PRBS7_top.ltx} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/impl_1/PRBS7_top.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+current_design impl_1
+refresh_design
+set_property PROBES.FILE {C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/impl_1/PRBS7_top.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/impl_1/PRBS7_top.ltx} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/impl_1/PRBS7_top.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]

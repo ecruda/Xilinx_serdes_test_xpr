@@ -99,7 +99,7 @@
     input           gt0_rxusrclk_in,
     input           gt0_rxusrclk2_in,
     //---------------- Receive Ports - FPGA RX interface Ports -----------------
-    output  [31:0]  gt0_rxdata_out,
+    output  [63:0]  gt0_rxdata_out,
     //------------------------- Receive Ports - RX AFE -------------------------
     input           gt0_gtxrxp_in,
     //---------------------- Receive Ports - RX AFE Ports ----------------------
@@ -125,7 +125,7 @@
     input           gt0_txusrclk_in,
     input           gt0_txusrclk2_in,
     //---------------- Transmit Ports - TX Data Path interface -----------------
-    input   [31:0]  gt0_txdata_in,
+    input   [63:0]  gt0_txdata_in,
     //-------------- Transmit Ports - TX Driver and OOB signaling --------------
     output          gt0_gtxtxn_out,
     output          gt0_gtxtxp_out,
