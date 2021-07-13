@@ -117,8 +117,8 @@ set_property PACKAGE_PIN K2 [get_ports TXP_OUT]
 ##set_property ASYNC_REG TRUE [get_cells -hier -filter {name=~*gt0_frame_check*system_reset_r_reg}]
 
 ##---------- Set False Path from one clock to other ----------
-set_property PACKAGE_PIN AB7 [get_ports reset]
-set_property IOSTANDARD LVCMOS15 [get_ports reset]
+set_property PACKAGE_PIN G12 [get_ports reset]
+set_property IOSTANDARD LVCMOS25 [get_ports reset]
 
 
 
