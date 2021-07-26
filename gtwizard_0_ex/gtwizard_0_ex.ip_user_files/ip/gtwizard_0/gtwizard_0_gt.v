@@ -79,11 +79,6 @@ module gtwizard_0_GT #
 )
 (
      input [2:0]  cpllrefclksel_in,
-    //------------------------ Channel - Clocking Ports ------------------------
-    input           gtnorthrefclk0_in,
-    input           gtnorthrefclk1_in,
-    input           gtsouthrefclk0_in,
-    input           gtsouthrefclk1_in,
     //-------------------------- Channel - DRP Ports  --------------------------
     input   [8:0]   drpaddr_in,
     input           drpclk_in,
@@ -107,7 +102,7 @@ module gtwizard_0_GT #
     input           rxusrclk_in,
     input           rxusrclk2_in,
     //---------------- Receive Ports - FPGA RX interface Ports -----------------
-    output  [31:0]  rxdata_out,
+    output  [63:0]  rxdata_out,
     //------------------------- Receive Ports - RX AFE -------------------------
     input           gtxrxp_in,
     //---------------------- Receive Ports - RX AFE Ports ----------------------
@@ -133,7 +128,7 @@ module gtwizard_0_GT #
     input           txusrclk_in,
     input           txusrclk2_in,
     //---------------- Transmit Ports - TX Data Path interface -----------------
-    input   [31:0]  txdata_in,
+    input   [63:0]  txdata_in,
     //-------------- Transmit Ports - TX Driver and OOB signaling --------------
     output          gtxtxn_out,
     output          gtxtxp_out,
@@ -159,17 +154,10 @@ wire    [63:0]  tied_to_vcc_vec_i;
 
     //RX Datapath signals
 wire    [63:0]  rxdata_i;
-wire    [3:0]   rxchariscomma_float_i;
-wire    [3:0]   rxcharisk_float_i;
-wire    [3:0]   rxdisperr_float_i;
-wire    [3:0]   rxnotintable_float_i;
-wire    [3:0]   rxrundisp_float_i;
 
 
     //TX Datapath signals
 wire    [63:0]  txdata_i;           
-wire    [3:0]   txkerr_float_i;
-wire    [3:0]   txrundisp_float_i;
 wire            rxstartofseq_float_i;       
 
 // 
@@ -185,10 +173,10 @@ wire            rxstartofseq_float_i;
     //-------------------  GT Datapath byte mapping  -----------------
 
     //The GT deserializes the rightmost parallel bit (LSb) first
-    assign  rxdata_out    =   rxdata_i[31:0];
+    assign  rxdata_out    =   rxdata_i[63:0];
 
     //The GT serializes the rightmost parallel bit (LSb) first
-        assign txdata_i =   {tied_to_ground_vec_i[31:0], txdata_in};
+        assign txdata_i =   txdata_in;
 
 
 
@@ -277,7 +265,7 @@ wire            rxstartofseq_float_i;
             .ES_VERT_OFFSET                         (9'b000000000),
 
            //-----------------------FPGA RX Interface Attributes-------------------------
-            .RX_DATA_WIDTH                          (32),
+            .RX_DATA_WIDTH                          (64),
 
            //-------------------------PMA Attributes----------------------------
             .OUTREFCLK_SEL_INV                      (2'b11),
@@ -401,7 +389,7 @@ wire            rxstartofseq_float_i;
             .TX_XCLK_SEL                            ("TXOUT"),
 
            //-----------------------FPGA TX Interface Attributes-------------------------
-            .TX_DATA_WIDTH                          (32),
+            .TX_DATA_WIDTH                          (64),
 
            //-----------------------TX Configurable Driver Attributes-------------------------
             .TX_DEEMPH0                             (5'b00000),
@@ -506,12 +494,12 @@ wire            rxstartofseq_float_i;
         .CLKRSVD                        (tied_to_ground_vec_i[3:0]),
         //------------------------ Channel - Clocking Ports ------------------------
         .GTGREFCLK                      (tied_to_ground_i),
-        .GTNORTHREFCLK0                 (gtnorthrefclk0_in),
-        .GTNORTHREFCLK1                 (gtnorthrefclk1_in),
+        .GTNORTHREFCLK0                 (tied_to_ground_i),
+        .GTNORTHREFCLK1                 (tied_to_ground_i),
         .GTREFCLK0                      (tied_to_ground_i),
         .GTREFCLK1                      (tied_to_ground_i),
-        .GTSOUTHREFCLK0                 (gtsouthrefclk0_in),
-        .GTSOUTHREFCLK1                 (gtsouthrefclk1_in),
+        .GTSOUTHREFCLK0                 (tied_to_ground_i),
+        .GTSOUTHREFCLK1                 (tied_to_ground_i),
         //-------------------------- Channel - DRP Ports  --------------------------
         .DRPADDR                        (drpaddr_in),
         .DRPCLK                         (drpclk_in),
@@ -650,7 +638,7 @@ wire            rxstartofseq_float_i;
         .RXOUTCLK                       (rxoutclk_out),
         .RXOUTCLKFABRIC                 (rxoutclkfabric_out),
         .RXOUTCLKPCS                    (),
-        .RXOUTCLKSEL                    (3'b011),
+        .RXOUTCLKSEL                    (3'b010),
         //-------------------- Receive Ports - RX Gearbox Ports --------------------
         .RXDATAVALID                    (),
         .RXHEADER                       (),

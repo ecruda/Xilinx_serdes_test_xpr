@@ -8,18 +8,33 @@
 # IP: ip/gtwizard_0/gtwizard_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==gtwizard_0 || ORIG_REF_NAME==gtwizard_0} -quiet] -quiet
 
-# IP: ip/ila_0_1/ila_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ila_0 || ORIG_REF_NAME==ila_0} -quiet] -quiet
+# IP: C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/tri_mode_ethernet_mac_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==tri_mode_ethernet_mac_0 || ORIG_REF_NAME==tri_mode_ethernet_mac_0} -quiet] -quiet
+
+# IP: C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/fifo8to32/fifo8to32.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==fifo8to32 || ORIG_REF_NAME==fifo8to32} -quiet] -quiet
+
+# IP: C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/fifo36x512/fifo36x512.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==fifo36x512 || ORIG_REF_NAME==fifo36x512} -quiet] -quiet
+
+# IP: C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/fifo32to8/fifo32to8.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==fifo32to8 || ORIG_REF_NAME==fifo32to8} -quiet] -quiet
+
+# IP: C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/clockwiz/clockwiz.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==clockwiz || ORIG_REF_NAME==clockwiz} -quiet] -quiet
 
 # XDC: ip/gtwizard_0/gtwizard_0.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==gtwizard_0 || ORIG_REF_NAME==gtwizard_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
 
 # XDC: ip/gtwizard_0/gtwizard_0_ooc.xdc
 
-# XDC: ip/ila_0_1/ila_v6_2/constraints/ila_impl.xdc
-set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==ila_0 || ORIG_REF_NAME==ila_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
+# XDC: c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0_board.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==tri_mode_ethernet_mac_0 || ORIG_REF_NAME==tri_mode_ethernet_mac_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
 
-# XDC: ip/ila_0_1/ila_v6_2/constraints/ila.xdc
-#dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==ila_0 || ORIG_REF_NAME==ila_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
+# XDC: c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0.xdc
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==tri_mode_ethernet_mac_0 || ORIG_REF_NAME==tri_mode_ethernet_mac_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
 
-# XDC: ip/ila_0_1/ila_0_ooc.xdc
+# XDC: c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0_ooc.xdc
+
+# XDC: c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0_clocks.xdc
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==tri_mode_ethernet_mac_0 || ORIG_REF_NAME==tri_mode_ethernet_mac_0} -quiet] {/inst } ]/inst ] -quiet] -quiet

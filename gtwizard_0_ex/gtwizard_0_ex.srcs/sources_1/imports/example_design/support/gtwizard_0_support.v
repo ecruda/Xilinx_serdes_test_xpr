@@ -70,15 +70,16 @@
 module gtwizard_0_support #
 (
     parameter EXAMPLE_SIM_GTRESET_SPEEDUP            = "TRUE",     // Simulation setting for GT SecureIP model
-    parameter STABLE_CLOCK_PERIOD                    = 6         //Period of the stable clock driving this state-machine, unit is [ns]
+    parameter STABLE_CLOCK_PERIOD                    = 16         //Period of the stable clock driving this state-machine, unit is [ns]
 
 )
 (
 input           soft_reset_tx_in,
 input           soft_reset_rx_in,
 input           dont_reset_on_data_error_in,
-    input  q0_clk1_gtrefclk_pad_n_in,
-    input  q0_clk1_gtrefclk_pad_p_in,
+    input  q2_clk1_gtrefclk_pad_n_in,
+    input  q2_clk1_gtrefclk_pad_p_in,
+output          gt0_tx_mmcm_lock_out,
 output          gt0_rx_mmcm_lock_out,
 output          gt0_tx_fsm_reset_done_out,
 output          gt0_rx_fsm_reset_done_out,
@@ -89,13 +90,8 @@ input           gt0_data_valid_in,
     output   gt0_rxusrclk_out,
     output   gt0_rxusrclk2_out,
     //_________________________________________________________________________
-    //GT0  (X1Y0)
+    //GT0  (X1Y8)
     //____________________________CHANNEL PORTS________________________________
-    //------------------------ Channel - Clocking Ports ------------------------
-    input           gt0_gtnorthrefclk0_in,
-    input           gt0_gtnorthrefclk1_in,
-    input           gt0_gtsouthrefclk0_in,
-    input           gt0_gtsouthrefclk1_in,
     //-------------------------- Channel - DRP Ports  --------------------------
     input   [8:0]   gt0_drpaddr_in,
     input   [15:0]  gt0_drpdi_in,
@@ -112,7 +108,7 @@ input           gt0_data_valid_in,
     output          gt0_eyescandataerror_out,
     input           gt0_eyescantrigger_in,
     //---------------- Receive Ports - FPGA RX interface Ports -----------------
-    output  [31:0]  gt0_rxdata_out,
+    output  [63:0]  gt0_rxdata_out,
     //------------------------- Receive Ports - RX AFE -------------------------
     input           gt0_gtxrxp_in,
     //---------------------- Receive Ports - RX AFE Ports ----------------------
@@ -132,7 +128,7 @@ input           gt0_data_valid_in,
     input           gt0_gttxreset_in,
     input           gt0_txuserrdy_in,
     //---------------- Transmit Ports - TX Data Path interface -----------------
-    input   [31:0]  gt0_txdata_in,
+    input   [63:0]  gt0_txdata_in,
     //-------------- Transmit Ports - TX Driver and OOB signaling --------------
     output          gt0_gtxtxn_out,
     output          gt0_gtxtxp_out,
@@ -156,12 +152,7 @@ input           gt0_data_valid_in,
     //------------------------ GT Wrapper Wires ------------------------------
     //________________________________________________________________________
     //________________________________________________________________________
-    //GT0  (X1Y0)
-    //------------------------ Channel - Clocking Ports ------------------------
-    wire            gt0_gtnorthrefclk0_i;
-    wire            gt0_gtnorthrefclk1_i;
-    wire            gt0_gtsouthrefclk0_i;
-    wire            gt0_gtsouthrefclk1_i;
+    //GT0  (X1Y8)
     //-------------------------- Channel - DRP Ports  --------------------------
     wire    [8:0]   gt0_drpaddr_i;
     wire    [15:0]  gt0_drpdi_i;
@@ -178,7 +169,7 @@ input           gt0_data_valid_in,
     wire            gt0_eyescandataerror_i;
     wire            gt0_eyescantrigger_i;
     //---------------- Receive Ports - FPGA RX interface Ports -----------------
-    wire    [31:0]  gt0_rxdata_i;
+    wire    [63:0]  gt0_rxdata_i;
     //------------------------- Receive Ports - RX AFE -------------------------
     wire            gt0_gtxrxp_i;
     //---------------------- Receive Ports - RX AFE Ports ----------------------
@@ -199,7 +190,7 @@ input           gt0_data_valid_in,
     wire            gt0_gttxreset_i;
     wire            gt0_txuserrdy_i;
     //---------------- Transmit Ports - TX Data Path interface -----------------
-    wire    [31:0]  gt0_txdata_i;
+    wire    [63:0]  gt0_txdata_i;
     //-------------- Transmit Ports - TX Driver and OOB signaling --------------
     wire            gt0_gtxtxn_i;
     wire            gt0_gtxtxp_i;
@@ -235,19 +226,15 @@ input           gt0_data_valid_in,
      wire            gt0_txusrclk2_i; 
      wire            gt0_rxusrclk_i; 
      wire            gt0_rxusrclk2_i; 
+    wire            gt0_txmmcm_lock_i;
+    wire            gt0_txmmcm_reset_i;
     wire            gt0_rxmmcm_lock_i; 
     wire            gt0_rxmmcm_reset_i;
  
     //--------------------------- Reference Clocks ----------------------------
     
-    wire            q0_clk1_refclk_i;
+    wire            q2_clk1_refclk_i;
 
-    wire         gt0_gtgrefclk_common_i;
-    wire         gt0_gtnorthrefclk0_common_i;
-    wire         gt0_gtnorthrefclk1_common_i;
-    wire         gt0_gtrefclk1_common_i;
-    wire         gt0_gtsouthrefclk0_common_i;
-    wire         gt0_gtsouthrefclk1_common_i;
     wire commonreset_i;
     wire commonreset_t;
 
@@ -259,6 +246,7 @@ input           gt0_data_valid_in,
     assign tied_to_vcc_i                = 1'b1;
     assign tied_to_vcc_vec_i            = 8'hff;
 
+    assign  gt0_tx_mmcm_lock_out = gt0_txmmcm_lock_i;
     assign  gt0_rx_mmcm_lock_out = gt0_rxmmcm_lock_i;
  
 
@@ -283,15 +271,17 @@ input           gt0_data_valid_in,
     .GT0_TXUSRCLK_OUT    (gt0_txusrclk_i),
     .GT0_TXUSRCLK2_OUT   (gt0_txusrclk2_i),
     .GT0_TXOUTCLK_IN     (gt0_txoutclk_i),
+    .GT0_TXCLK_LOCK_OUT    (gt0_txmmcm_lock_i),
+    .GT0_TX_MMCM_RESET_IN  (gt0_txmmcm_reset_i),
     .GT0_RXUSRCLK_OUT    (gt0_rxusrclk_i),
     .GT0_RXUSRCLK2_OUT   (gt0_rxusrclk2_i),
     .GT0_RXOUTCLK_IN     (gt0_rxoutclk_i),
  
     .GT0_RXCLK_LOCK_OUT  (gt0_rxmmcm_lock_i),
     .GT0_RX_MMCM_RESET_IN  (gt0_rxmmcm_reset_i),
-    .Q0_CLK1_GTREFCLK_PAD_N_IN  (q0_clk1_gtrefclk_pad_n_in),
-    .Q0_CLK1_GTREFCLK_PAD_P_IN  (q0_clk1_gtrefclk_pad_p_in),
-    .Q0_CLK1_GTREFCLK_OUT       (q0_clk1_refclk_i)
+    .Q2_CLK1_GTREFCLK_PAD_N_IN  (q2_clk1_gtrefclk_pad_n_in),
+    .Q2_CLK1_GTREFCLK_PAD_P_IN  (q2_clk1_gtrefclk_pad_p_in),
+    .Q2_CLK1_GTREFCLK_OUT       (q2_clk1_refclk_i)
 );
 assign  sysclk_in_i = sysclk_in;
     gtwizard_0_common #
@@ -301,14 +291,9 @@ assign  sysclk_in_i = sysclk_in;
   )
  common0_i
    (
-    .GTGREFCLK_IN(gt0_gtgrefclk_common_i),
-    .GTNORTHREFCLK0_IN(gt0_gtnorthrefclk0_common_i),
-    .GTNORTHREFCLK1_IN(gt0_gtnorthrefclk1_common_i),
-    .GTSOUTHREFCLK0_IN(gt0_gtsouthrefclk0_common_i),
-    .GTSOUTHREFCLK1_IN(gt0_gtsouthrefclk1_common_i),
     .QPLLREFCLKSEL_IN(3'b010),
     .GTREFCLK0_IN(tied_to_ground_i),
-    .GTREFCLK1_IN(q0_clk1_refclk_i),
+    .GTREFCLK1_IN(q2_clk1_refclk_i),
     .QPLLLOCK_OUT(gt0_qplllock_i),
     .QPLLLOCKDETCLK_IN(sysclk_in_i),
     .QPLLOUTCLK_OUT(gt0_qplloutclk_i),
@@ -337,21 +322,18 @@ assign  sysclk_in_i = sysclk_in;
         .soft_reset_tx_in               (soft_reset_tx_in),
         .soft_reset_rx_in               (soft_reset_rx_in),
         .dont_reset_on_data_error_in    (dont_reset_on_data_error_in),
-//        .gt0_rx_mmcm_lock_in            (gt0_rxmmcm_lock_i),
-//        .gt0_rx_mmcm_reset_out          (gt0_rxmmcm_reset_i),
+        .gt0_tx_mmcm_lock_in            (gt0_txmmcm_lock_i),
+        .gt0_tx_mmcm_reset_out          (gt0_txmmcm_reset_i),
+        .gt0_rx_mmcm_lock_in            (gt0_rxmmcm_lock_i),
+        .gt0_rx_mmcm_reset_out          (gt0_rxmmcm_reset_i),
         .gt0_tx_fsm_reset_done_out      (gt0_tx_fsm_reset_done_out),
         .gt0_rx_fsm_reset_done_out      (gt0_rx_fsm_reset_done_out),
         .gt0_data_valid_in              (gt0_data_valid_in),
 
         //_____________________________________________________________________
         //_____________________________________________________________________
-        //GT0  (X1Y0)
+        //GT0  (X1Y8)
 
-        //------------------------ Channel - Clocking Ports ------------------------
-//        .gt0_gtnorthrefclk0_in          (gt0_gtnorthrefclk0_in), // input wire gt0_gtnorthrefclk0_in
-//        .gt0_gtnorthrefclk1_in          (gt0_gtnorthrefclk1_in), // input wire gt0_gtnorthrefclk1_in
-//        .gt0_gtsouthrefclk0_in          (gt0_gtsouthrefclk0_in), // input wire gt0_gtsouthrefclk0_in
-//        .gt0_gtsouthrefclk1_in          (gt0_gtsouthrefclk1_in), // input wire gt0_gtsouthrefclk1_in
         //-------------------------- Channel - DRP Ports  --------------------------
         .gt0_drpaddr_in                 (gt0_drpaddr_in), // input wire [8:0] gt0_drpaddr_in
         .gt0_drpclk_in                  (sysclk_in_i), // input wire sysclk_in_i
@@ -372,7 +354,7 @@ assign  sysclk_in_i = sysclk_in;
         .gt0_rxusrclk_in                (gt0_rxusrclk_i), // input wire gt0_rxusrclk_i
         .gt0_rxusrclk2_in               (gt0_rxusrclk2_i), // input wire gt0_rxusrclk2_i
         //---------------- Receive Ports - FPGA RX interface Ports -----------------
-        .gt0_rxdata_out                 (gt0_rxdata_out), // output wire [31:0] gt0_rxdata_out
+        .gt0_rxdata_out                 (gt0_rxdata_out), // output wire [63:0] gt0_rxdata_out
         //------------------------- Receive Ports - RX AFE -------------------------
         .gt0_gtxrxp_in                  (gt0_gtxrxp_in), // input wire gt0_gtxrxp_in
         //---------------------- Receive Ports - RX AFE Ports ----------------------
@@ -396,7 +378,7 @@ assign  sysclk_in_i = sysclk_in;
         .gt0_txusrclk_in                (gt0_txusrclk_i), // input wire gt0_txusrclk_i
         .gt0_txusrclk2_in               (gt0_txusrclk2_i), // input wire gt0_txusrclk2_i
         //---------------- Transmit Ports - TX Data Path interface -----------------
-        .gt0_txdata_in                  (gt0_txdata_in), // input wire [31:0] gt0_txdata_in
+        .gt0_txdata_in                  (gt0_txdata_in), // input wire [63:0] gt0_txdata_in
         //-------------- Transmit Ports - TX Driver and OOB signaling --------------
         .gt0_gtxtxn_out                 (gt0_gtxtxn_out), // output wire gt0_gtxtxn_out
         .gt0_gtxtxp_out                 (gt0_gtxtxp_out), // output wire gt0_gtxtxp_out

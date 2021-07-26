@@ -70,9 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param tcl.collectionResultDisplayLimit 0
 set_param chipscope.maxJobs 4
-set_param xicom.use_bs_reader 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7k325tffg900-2
 
@@ -97,28 +95,79 @@ read_verilog -library xil_defaultlib {
   C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/gtwizard_0_ex/gtwizard_0_ex.srcs/sources_1/imports/example_design/gtwizard_0_exdes.v
   C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/gtwizard_0_ex/gtwizard_0_ex.srcs/sources_1/imports/example_design/support/gtwizard_0_gt_usrclk_source.v
   C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/gtwizard_0_ex/gtwizard_0_ex.srcs/sources_1/imports/example_design/support/gtwizard_0_support.v
-  C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/Deserializer.v
   C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v
-  C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7.v
-  C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/diff_in.v
   C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS_debug.v
   C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/map.v
-  C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/Serializer.v
   C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v
   C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/rev_map.v
   C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v
-  C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/diff_out.v
   C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/shifter.v
+  C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/gtwizard_0_ex/gtwizard_0_ex.ip_user_files/sim_scripts/gtwizard_0/riviera/glbl.v
+}
+read_vhdl -library xil_defaultlib {
+  C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/fifo/tri_mode_ethernet_mac_0_ten_100_1g_eth_fifo.vhd
+  C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/fifo/tri_mode_ethernet_mac_0_bram_tdp.vhd
+  C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/fifo/tri_mode_ethernet_mac_0_rx_client_fifo.vhd
+  C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/common/tri_mode_ethernet_mac_0_sync_block.vhd
+  C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/fifo/tri_mode_ethernet_mac_0_tx_client_fifo.vhd
+  C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/gig_eth.vhd
+  C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/common/tri_mode_ethernet_mac_0_reset_sync.vhd
+  C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/gig_eth_mac_resets.vhd
+  C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/control_interface.vhd
+  C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/bram_dp.vhd
+  C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/udp_rx.vhd
+  C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/arp_cache2.vhd
+  C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/tcp_server.vhd
+  C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/tcp_tx.vhd
+  C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/tcp_rxbufndemux2.vhd
+  C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/whois2.vhd
+  C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/timer_4us.vhd
+  C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/arp.vhd
+  C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/udp2serial.vhd
+  C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/udp_tx.vhd
+  C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/tcp_txbuf.vhd
+  C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/packet_parsing.vhd
+  C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/com5402.vhd
+  C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/ping.vhd
+  C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/global_clock_reset.vhd
+  C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/global_resetter.vhd
+  C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/com5402pkg.vhd
+  C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/support/tri_mode_ethernet_mac_0_support.vhd
+  C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/support/tri_mode_ethernet_mac_0_support_clocking.vhd
+  C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/axi_lite_sm/tri_mode_ethernet_mac_0_axi_lite_sm.vhd
+  C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/support/tri_mode_ethernet_mac_0_support_resets.vhd
+  C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/gig_eth_mac_fifo_block.vhd
 }
 read_ip -quiet C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/sources_1/ip/gtwizard_0/gtwizard_0.xci
 set_property used_in_implementation false [get_files -all c:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/sources_1/ip/gtwizard_0/gtwizard_0.xdc]
 set_property used_in_implementation false [get_files -all c:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/sources_1/ip/gtwizard_0/gtwizard_0_ooc.xdc]
 
-read_ip -quiet C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/sources_1/ip/ila_0_1/ila_0.xci
-set_property used_in_synthesis false [get_files -all c:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/sources_1/ip/ila_0_1/ila_v6_2/constraints/ila_impl.xdc]
-set_property used_in_implementation false [get_files -all c:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/sources_1/ip/ila_0_1/ila_v6_2/constraints/ila_impl.xdc]
-set_property used_in_implementation false [get_files -all c:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/sources_1/ip/ila_0_1/ila_v6_2/constraints/ila.xdc]
-set_property used_in_implementation false [get_files -all c:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/sources_1/ip/ila_0_1/ila_0_ooc.xdc]
+read_ip -quiet C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/tri_mode_ethernet_mac_0.xci
+set_property used_in_implementation false [get_files -all c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0_clocks.xdc]
+
+read_ip -quiet C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/fifo8to32/fifo8to32.xci
+set_property used_in_implementation false [get_files -all c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/fifo8to32/fifo8to32.xdc]
+set_property used_in_implementation false [get_files -all c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/fifo8to32/fifo8to32_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/fifo8to32/fifo8to32_ooc.xdc]
+
+read_ip -quiet C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/fifo36x512/fifo36x512.xci
+set_property used_in_implementation false [get_files -all c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/fifo36x512/fifo36x512.xdc]
+set_property used_in_implementation false [get_files -all c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/fifo36x512/fifo36x512_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/fifo36x512/fifo36x512_ooc.xdc]
+
+read_ip -quiet C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/fifo32to8/fifo32to8.xci
+set_property used_in_implementation false [get_files -all c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/fifo32to8/fifo32to8.xdc]
+set_property used_in_implementation false [get_files -all c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/fifo32to8/fifo32to8_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/fifo32to8/fifo32to8_ooc.xdc]
+
+read_ip -quiet C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/clockwiz/clockwiz.xci
+set_property used_in_implementation false [get_files -all c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/clockwiz/clockwiz_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/clockwiz/clockwiz.xdc]
+set_property used_in_implementation false [get_files -all c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/clockwiz/clockwiz_late.xdc]
+set_property used_in_implementation false [get_files -all c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/clockwiz/clockwiz_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being

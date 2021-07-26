@@ -120,7 +120,7 @@ reg     [79:0]  rx_data_ram_r;
     reg     [(RX_DATA_WIDTH-1):0] rx_data_r4;
     reg     [(RX_DATA_WIDTH-1):0] rx_data_r5;
     reg     [(RX_DATA_WIDTH-1):0] rx_data_r6;
-    reg     [1:0]   sel;
+    reg     [2:0]   sel;
  
  
 //*********************************Wire Declarations***************************
@@ -221,24 +221,40 @@ wire            tied_to_vcc_i;
 
     always @(posedge USER_CLK)
     begin
-        if(system_reset_r2)   begin
-          sel <= 2'b00;
+        if(system_reset_r2)    begin
+          sel <= 3'b000;
         end else begin
-            if({rx_data_r[23:0],rx_data_r2[31:24]} == START_OF_PACKET_CHAR)
+            if({rx_data_r[55:0],rx_data_r2[63:56]} == START_OF_PACKET_CHAR)
             begin
-                sel <= 2'b11;
+                sel <= 3'b111;
             end
-            else if({rx_data_r[15:0],rx_data_r2[31:16]} == START_OF_PACKET_CHAR)
+            else if({rx_data_r[47:0],rx_data_r2[63:48]} == START_OF_PACKET_CHAR)
             begin
-                sel <= 2'b10;
+                sel <= 3'b110;
             end
-            else if({rx_data_r[7:0],rx_data_r2[31:8]} == START_OF_PACKET_CHAR)
+            else if({rx_data_r[39:0],rx_data_r2[63:40]} == START_OF_PACKET_CHAR)
             begin
-                sel <= 2'b01;
+                sel <= 3'b101;
             end
-            else if(rx_data_r[31:0]== START_OF_PACKET_CHAR)
+            else if({rx_data_r[31:0],rx_data_r2[63:32]} == START_OF_PACKET_CHAR)
             begin
-                sel <= 2'b00;
+                sel <= 3'b100;
+            end
+            else if({rx_data_r[23:0],rx_data_r2[63:24]} == START_OF_PACKET_CHAR)
+            begin
+                sel <= 3'b011;
+            end
+            else if({rx_data_r[15:0],rx_data_r2[63:16]} == START_OF_PACKET_CHAR)
+            begin
+                sel <= 3'b010;
+            end
+            else if({rx_data_r[7:0],rx_data_r2[63:8]} == START_OF_PACKET_CHAR)
+            begin
+                sel <= 3'b001;
+            end
+            else if(rx_data_r[63:0] == START_OF_PACKET_CHAR)
+            begin
+                sel <= 3'b000;
             end
         end
     end
@@ -247,24 +263,42 @@ wire            tied_to_vcc_i;
             if(system_reset_r2)    rx_data_r3 <= 'h0;
             else
             begin
-                if(sel == 2'b11)
+                if(sel == 3'b111)
                 begin
-                    rx_data_r3   <=  `DLY    {rx_data_r[23:0],rx_data_r2[31:24]}; 
+                    rx_data_r3   <=  `DLY    {rx_data_r[55:0],rx_data_r2[63:56]}; 
+                end
+                else if(sel == 3'b110)
+                begin
+                    rx_data_r3   <=  `DLY    {rx_data_r[47:0],rx_data_r2[63:48]}; 
  
                 end
-                else if(sel == 2'b10)
+                else if(sel == 3'b101)
                 begin
-                    rx_data_r3   <=  `DLY    {rx_data_r[15:0],rx_data_r2[31:16]}; 
+                    rx_data_r3   <=  `DLY    {rx_data_r[39:0],rx_data_r2[63:40]}; 
  
                 end
-                else if(sel == 2'b01)
+                else if(sel == 3'b100)
                 begin
-                    rx_data_r3   <=  `DLY    {rx_data_r[7:0],rx_data_r2[31:8]};
+                    rx_data_r3   <=  `DLY    {rx_data_r[31:0],rx_data_r2[63:32]}; 
+ 
                 end
-                else 
+                else if(sel == 3'b011)
                 begin
-                    rx_data_r3   <=  `DLY    rx_data_r2; 
+                    rx_data_r3   <=  `DLY    {rx_data_r[23:0],rx_data_r2[63:24]}; 
+ 
                 end
+                else if(sel == 3'b010)
+                begin
+                    rx_data_r3   <=  `DLY    {rx_data_r[15:0],rx_data_r2[63:16]}; 
+ 
+                end
+                else if(sel == 3'b001)
+                begin
+                    rx_data_r3   <=  `DLY    {rx_data_r[7:0],rx_data_r2[63:8]}; 
+ 
+                end
+                else
+                    rx_data_r3  <=  `DLY     rx_data_r2;
             end
         end
 

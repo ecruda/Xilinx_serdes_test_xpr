@@ -73,11 +73,6 @@ module gtwizard_0_common #
     parameter   SIM_QPLLREFCLK_SEL             =   3'b001     
 )
 (
-    input          GTGREFCLK_IN,
-    input          GTNORTHREFCLK0_IN,
-    input          GTNORTHREFCLK1_IN,
-    input          GTSOUTHREFCLK0_IN,
-    input          GTSOUTHREFCLK1_IN,
     input   [2:0]   QPLLREFCLKSEL_IN,
     input           GTREFCLK0_IN,
     input           GTREFCLK1_IN,
@@ -165,13 +160,13 @@ wire    [63:0]  tied_to_vcc_vec_i;
         .DRPRDY                         (),
         .DRPWE                          (tied_to_ground_i),
         //-------------------- Common Block  - Ref Clock Ports ---------------------
-        .GTGREFCLK                      (GTGREFCLK_IN),
-        .GTNORTHREFCLK0                 (GTNORTHREFCLK0_IN),
-        .GTNORTHREFCLK1                 (GTNORTHREFCLK1_IN),
+        .GTGREFCLK                      (tied_to_ground_i),
+        .GTNORTHREFCLK0                 (tied_to_ground_i),
+        .GTNORTHREFCLK1                 (tied_to_ground_i),
         .GTREFCLK0                      (GTREFCLK0_IN),
         .GTREFCLK1                      (GTREFCLK1_IN),
-        .GTSOUTHREFCLK0                 (GTSOUTHREFCLK0_IN),
-        .GTSOUTHREFCLK1                 (GTSOUTHREFCLK1_IN),
+        .GTSOUTHREFCLK0                 (tied_to_ground_i),
+        .GTSOUTHREFCLK1                 (tied_to_ground_i),
         //----------------------- Common Block -  QPLL Ports -----------------------
         .QPLLDMONITOR                   (),
         //--------------------- Common Block - Clocking Ports ----------------------

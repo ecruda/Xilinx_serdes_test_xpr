@@ -74,23 +74,27 @@ module gtwizard_0_exdes #
     parameter EXAMPLE_WORDS_IN_BRAM                =   512,       // specifies amount of data in BRAM
     parameter EXAMPLE_SIM_GTRESET_SPEEDUP          =   "TRUE",    // simulation setting for GT SecureIP model
     parameter EXAMPLE_USE_CHIPSCOPE                =   0,         // Set to 1 to use Chipscope to drive resets
-    parameter STABLE_CLOCK_PERIOD                  = 6
+    parameter STABLE_CLOCK_PERIOD                  = 16
 
 )
 (
     input wire  Q2_CLK1_GTREFCLK_PAD_N_IN,
     input wire  Q2_CLK1_GTREFCLK_PAD_P_IN,
-    input wire  DRP_CLK_IN_P,
-    input wire  DRP_CLK_IN_N,
+    /*input wire  DRP_CLK_IN_P,
+    input wire  DRP_CLK_IN_N,*/
+    input wire  DRPCLK_IN,
+    
     output wire TRACK_DATA_OUT,
     input  wire         RXN_IN,
     input  wire         RXP_IN,
     output wire         TXN_OUT,
     output wire         TXP_OUT,
-    output wire    [31:0]  gt0_rxdata_i,
-    input  wire    [31:0]  gt0_txdata_i,
-    output wire            gt0_txusrclk2_i, 
-    output wire            gt0_rxusrclk2_i
+    output    wire    [63:0]  gt0_rxdata_i,
+    input     wire    [63:0]  gt0_txdata_i,
+    output     wire            gt0_txusrclk2_i, 
+    output     wire            gt0_rxusrclk2_i 
+
+
 );
 
     wire soft_reset_i;
@@ -122,12 +126,7 @@ module gtwizard_0_exdes #
     //------------------------ GT Wrapper Wires ------------------------------
     //________________________________________________________________________
     //________________________________________________________________________
-    //GT0  (X1Y0)
-    //------------------------ Channel - Clocking Ports ------------------------
-    wire            gt0_gtnorthrefclk0_i;
-    wire            gt0_gtnorthrefclk1_i;
-    wire            gt0_gtsouthrefclk0_i;
-    wire            gt0_gtsouthrefclk1_i;
+    //GT0  (X1Y8)
     //-------------------------- Channel - DRP Ports  --------------------------
     wire    [8:0]   gt0_drpaddr_i;
     wire    [15:0]  gt0_drpdi_i;
@@ -144,7 +143,7 @@ module gtwizard_0_exdes #
     wire            gt0_eyescandataerror_i;
     wire            gt0_eyescantrigger_i;
     //---------------- Receive Ports - FPGA RX interface Ports -----------------
-//    wire    [31:0]  gt0_rxdata_i;
+//    wire    [63:0]  gt0_rxdata_i;
     //------------------------- Receive Ports - RX AFE -------------------------
     wire            gt0_gtxrxp_i;
     //---------------------- Receive Ports - RX AFE Ports ----------------------
@@ -165,7 +164,7 @@ module gtwizard_0_exdes #
     wire            gt0_gttxreset_i;
     wire            gt0_txuserrdy_i;
     //---------------- Transmit Ports - TX Data Path interface -----------------
-//    wire    [31:0]  gt0_txdata_i;
+//    wire    [63:0]  gt0_txdata_i;
     //-------------- Transmit Ports - TX Driver and OOB signaling --------------
     wire            gt0_gtxtxn_i;
     wire            gt0_gtxtxp_i;
@@ -178,11 +177,7 @@ module gtwizard_0_exdes #
 
     //____________________________COMMON PORTS________________________________
     //-------------------- Common Block  - Ref Clock Ports ---------------------
-    wire            gt0_gtnorthrefclk0_common_i;
-    wire            gt0_gtnorthrefclk1_common_i;
     wire            gt0_gtrefclk1_common_i;
-    wire            gt0_gtsouthrefclk0_common_i;
-    wire            gt0_gtsouthrefclk1_common_i;
     //----------------------- Common Block - QPLL Ports ------------------------
     wire            gt0_qplllock_i;
     wire            gt0_qpllrefclklost_i;
@@ -208,21 +203,20 @@ module gtwizard_0_exdes #
 //     wire            gt0_txusrclk2_i; 
      wire            gt0_rxusrclk_i; 
 //     wire            gt0_rxusrclk2_i; 
+    wire            gt0_txmmcm_lock_i;
+    wire            gt0_txmmcm_reset_i;
     wire            gt0_rxmmcm_lock_i; 
     wire            gt0_rxmmcm_reset_i;
  
     //--------------------------- Reference Clocks ----------------------------
     
-    wire            q0_clk1_refclk_i;
+    wire            q2_clk1_refclk_i;
 
 
     //--------------------- Frame check/gen Module Signals --------------------
     wire            gt0_matchn_i;
-    
-    wire    [3:0]   gt0_txcharisk_float_i;
    
     wire    [15:0]  gt0_txdata_float16_i;
-    wire    [31:0]  gt0_txdata_float_i;
     
     
     wire            gt0_block_sync_i;
@@ -231,7 +225,7 @@ module gtwizard_0_exdes #
     wire            gt0_frame_check_reset_i;
     wire            gt0_inc_in_i;
     wire            gt0_inc_out_i;
-    wire    [31:0]  gt0_unscrambled_data_i;
+    wire    [63:0]  gt0_unscrambled_data_i;
 
     wire            reset_on_data_error_i;
     wire            track_data_out_i;
@@ -297,10 +291,8 @@ module gtwizard_0_exdes #
     wire            qpllreset_i;
     
 
-    wire  [1:0]     q0_clk1_refclk_i_i;
 
-  wire [(80 -32) -1:0] zero_vector_rx_80 ;
-  wire [(8 -4) -1:0] zero_vector_rx_8 ;
+  wire [(80 -64) -1:0] zero_vector_rx_80 ;
   wire [79:0] gt0_rxdata_ila ;
   wire [1:0]  gt0_rxdatavalid_ila; 
   wire [7:0]  gt0_rxcharisk_ila ;
@@ -318,14 +310,9 @@ module gtwizard_0_exdes #
     assign tied_to_vcc_vec_i            = 8'hff;
 
     assign zero_vector_rx_80 = 0;
-    assign zero_vector_rx_8 = 0;
 
     
-assign  q0_clk1_refclk_i                     =  1'b0;
-    assign  gt0_gtnorthrefclk0_i                 =  tied_to_ground_i;
-    assign  gt0_gtnorthrefclk1_i                 =  tied_to_ground_i;
-    assign  gt0_gtsouthrefclk0_i                 =  tied_to_ground_i;
-    assign  gt0_gtsouthrefclk1_i                 =  tied_to_ground_i;
+assign  q2_clk1_refclk_i                     =  1'b0;
 
     //***********************************************************************//
     //                                                                       //
@@ -351,8 +338,9 @@ assign  q0_clk1_refclk_i                     =  1'b0;
         .soft_reset_tx_in               (soft_reset_i),
         .soft_reset_rx_in               (soft_reset_i),
         .dont_reset_on_data_error_in    (tied_to_ground_i),
-    .q0_clk1_gtrefclk_pad_n_in(Q2_CLK1_GTREFCLK_PAD_N_IN),
-    .q0_clk1_gtrefclk_pad_p_in(Q2_CLK1_GTREFCLK_PAD_P_IN),
+    .q2_clk1_gtrefclk_pad_n_in(Q2_CLK1_GTREFCLK_PAD_N_IN),
+    .q2_clk1_gtrefclk_pad_p_in(Q2_CLK1_GTREFCLK_PAD_P_IN),
+        .gt0_tx_mmcm_lock_out           (gt0_txmmcm_lock_i),
         .gt0_rx_mmcm_lock_out           (gt0_rxmmcm_lock_i),
         .gt0_tx_fsm_reset_done_out      (gt0_txfsmresetdone_i),
         .gt0_rx_fsm_reset_done_out      (gt0_rxfsmresetdone_i),
@@ -366,13 +354,8 @@ assign  q0_clk1_refclk_i                     =  1'b0;
 
         //_____________________________________________________________________
         //_____________________________________________________________________
-        //GT0  (X1Y0)
+        //GT0  (X1Y8)
 
-        //------------------------ Channel - Clocking Ports ------------------------
-        .gt0_gtnorthrefclk0_in          (gt0_gtnorthrefclk0_i),
-        .gt0_gtnorthrefclk1_in          (gt0_gtnorthrefclk1_i),
-        .gt0_gtsouthrefclk0_in          (gt0_gtsouthrefclk0_i),
-        .gt0_gtsouthrefclk1_in          (gt0_gtsouthrefclk1_i),
         //-------------------------- Channel - DRP Ports  --------------------------
         .gt0_drpaddr_in                 (gt0_drpaddr_i),
         .gt0_drpdi_in                   (gt0_drpdi_i),
@@ -428,12 +411,12 @@ assign  q0_clk1_refclk_i                     =  1'b0;
     .sysclk_in(drpclk_in_i)
     );
 
-    IBUFDS IBUFDS_DRP_CLK
+    /*IBUFDS IBUFDS_DRP_CLK
      (
         .I  (DRP_CLK_IN_P),
         .IB (DRP_CLK_IN_N),
         .O  (DRPCLK_IN)
-     );
+     );*/
 
     BUFG DRP_CLK_BUFG
     (
@@ -504,14 +487,14 @@ always @(posedge  gt0_txusrclk2_i or negedge gt0_txfsmresetdone_i)
     // of your control and alignment characters.
 
 
-/*    gtwizard_0_GT_FRAME_GEN #
+    /*gtwizard_0_GT_FRAME_GEN #
     (
         .WORDS_IN_BRAM(EXAMPLE_WORDS_IN_BRAM)
     )
     gt0_frame_gen
     (
         // User Interface
-//        .TX_DATA_OUT                    ({gt0_txdata_float_i,gt0_txdata_i,gt0_txdata_float16_i}),
+        .TX_DATA_OUT                    ({gt0_txdata_i,gt0_txdata_float16_i}),
         .TXCTRL_OUT                     (),
 
         // System Interface
@@ -538,18 +521,18 @@ always @(posedge  gt0_txusrclk2_i or negedge gt0_txfsmresetdone_i)
     // error whenever the next value received does not match the expected value.
 
 
-    assign gt0_frame_check_reset_i = (EXAMPLE_CONFIG_INDEPENDENT_LANES==0)?reset_on_data_error_i:gt0_matchn_i;
+//    assign gt0_frame_check_reset_i = (EXAMPLE_CONFIG_INDEPENDENT_LANES==0)?reset_on_data_error_i:gt0_matchn_i;
 
     // gt0_frame_check0 is always connected to the lane with the start of char 
     // and this lane starts off the data checking on all the other lanes. The INC_IN port is tied off
-    assign gt0_inc_in_i = 1'b0;
+//    assign gt0_inc_in_i = 1'b0;
 
     /*gtwizard_0_GT_FRAME_CHECK #
     (
-.RX_DATA_WIDTH ( 32 ),
-.RXCTRL_WIDTH ( 4 ),
+.RX_DATA_WIDTH ( 64 ),
+.RXCTRL_WIDTH ( 8 ),
         .WORDS_IN_BRAM(EXAMPLE_WORDS_IN_BRAM),
-.START_OF_PACKET_CHAR ( 32'h0605047c )
+.START_OF_PACKET_CHAR ( 64'h0e0d0c0b0a09087c )
     )
     gt0_frame_check
     (

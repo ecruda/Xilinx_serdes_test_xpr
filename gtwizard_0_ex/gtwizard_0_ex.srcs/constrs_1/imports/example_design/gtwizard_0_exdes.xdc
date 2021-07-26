@@ -69,13 +69,13 @@
 ####################### GT reference clock constraints #########################
  
 
-    create_clock -period 6.25 [get_ports Q0_CLK1_GTREFCLK_PAD_P_IN]
+    create_clock -period 6.25 [get_ports Q2_CLK1_GTREFCLK_PAD_P_IN]
 
 
 
 
 
-create_clock -name drpclk_in_i -period 6.25 [get_ports DRP_CLK_IN_P]
+create_clock -name drpclk_in_i -period 16.667 [get_ports DRP_CLK_IN_P]
 
 
 # User Clock Constraints
@@ -85,8 +85,8 @@ set_false_path -to [get_pins -filter {REF_PIN_NAME=~*CLR} -of_objects [get_cells
 set_false_path -to [get_pins -filter {REF_PIN_NAME=~*D} -of_objects [get_cells -hierarchical -filter {NAME =~ *_txfsmresetdone_r*}]]
 ################################# RefClk Location constraints #####################
 
-set_property LOC U7 [get_ports  Q0_CLK1_GTREFCLK_PAD_N_IN ] 
-set_property LOC U8 [get_ports  Q0_CLK1_GTREFCLK_PAD_P_IN ]
+set_property LOC J7 [get_ports  Q2_CLK1_GTREFCLK_PAD_N_IN ] 
+set_property LOC J8 [get_ports  Q2_CLK1_GTREFCLK_PAD_P_IN ]
 
 ## LOC constrain for DRP_CLK_P/N 
  
@@ -100,7 +100,7 @@ set_property LOC AD11 [get_ports  DRP_CLK_IN_N]
 ################################# mgt wrapper constraints #####################
 
 ##---------- Set placement for gt0_gtx_wrapper_i/GTXE2_CHANNEL ------
-set_property LOC GTXE2_CHANNEL_X0Y0 [get_cells gtwizard_0_support_i/gtwizard_0_init_i/inst/gtwizard_0_i/gt0_gtwizard_0_i/gtxe2_i]
+set_property LOC GTXE2_CHANNEL_X0Y8 [get_cells gtwizard_0_support_i/gtwizard_0_init_i/inst/gtwizard_0_i/gt0_gtwizard_0_i/gtxe2_i]
 
 ##---------- Set ASYNC_REG for flop which have async input ----------
 ##set_property ASYNC_REG TRUE [get_cells -hier -filter {name=~*gt0_frame_gen*system_reset_r_reg}]

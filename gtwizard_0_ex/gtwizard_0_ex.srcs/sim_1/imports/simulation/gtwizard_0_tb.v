@@ -69,8 +69,8 @@ module gtwizard_0_TB;
 
     parameter   TX_REFCLK_PERIOD   =   6.25;
     parameter   RX_REFCLK_PERIOD   =   6.25;
-    parameter   SYSCLK_PERIOD      =   6.25;
-    parameter   DCLK_PERIOD        =   6.25;
+    parameter   SYSCLK_PERIOD      =   16.667;
+    parameter   DCLK_PERIOD        =   16.667;
   
 //************************Internal Register Declarations***********************
 
@@ -189,8 +189,8 @@ wire            txp_out_i;
     gtwizard_0_exdes 
     gtwizard_0_exdes_i
     (
-         .Q0_CLK1_GTREFCLK_PAD_N_IN           (tx_refclk_n_r), 
-         .Q0_CLK1_GTREFCLK_PAD_P_IN           (tx_refclk_p_r),
+         .Q2_CLK1_GTREFCLK_PAD_N_IN           (tx_refclk_n_r), 
+         .Q2_CLK1_GTREFCLK_PAD_P_IN           (tx_refclk_p_r),
         .DRP_CLK_IN_P                        (drp_clk_r),
         .DRP_CLK_IN_N                        (~ drp_clk_r),
         .TRACK_DATA_OUT                      (track_data_i),

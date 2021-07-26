@@ -18,23 +18,35 @@ INFO: [Common 17-1540] The version limit for your license is '2021.03' and has e
 INFO: [Device 21-403] Loading part xc7k325tffg900-2
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 21292
+INFO: [Synth 8-7075] Helper process launched with PID 25736
+WARNING: [Synth 8-2611] redeclaration of ansi port DRPCLK_IN is not allowed [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/gtwizard_0_ex/gtwizard_0_ex.srcs/sources_1/imports/example_design/gtwizard_0_exdes.v:190]
+CRITICAL WARNING: [Synth 8-976] DRPCLK_IN has already been declared [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/gtwizard_0_ex/gtwizard_0_ex.srcs/sources_1/imports/example_design/gtwizard_0_exdes.v:190]
+CRITICAL WARNING: [Synth 8-2654] second declaration of DRPCLK_IN ignored [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/gtwizard_0_ex/gtwizard_0_ex.srcs/sources_1/imports/example_design/gtwizard_0_exdes.v:190]
+INFO: [Synth 8-994] DRPCLK_IN is declared here [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/gtwizard_0_ex/gtwizard_0_ex.srcs/sources_1/imports/example_design/gtwizard_0_exdes.v:85]
 WARNING: [Synth 8-2611] redeclaration of ansi port errorBits is not allowed [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:59]
-WARNING: [Synth 8-992] errorCount_to_check_source is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:74]
-WARNING: [Synth 8-992] prbs_from_check_to_check_source is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:79]
-WARNING: [Synth 8-992] bypass is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:90]
-WARNING: [Synth 8-992] map_dout is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:93]
-WARNING: [Synth 8-992] shifter_dout is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:145]
-WARNING: [Synth 8-992] foundFrames is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:216]
-WARNING: [Synth 8-992] searchedFrames is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:220]
-WARNING: [Synth 8-992] alignAddr is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:223]
-WARNING: [Synth 8-992] aligned is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:227]
-WARNING: [Synth 8-992] errorCounter is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:231]
-WARNING: [Synth 8-992] tot_err_count is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:235]
-WARNING: [Synth 8-992] errorFlag is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:238]
-WARNING: [Synth 8-992] prbs_from_check is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:241]
-WARNING: [Synth 8-992] errorBits is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:245]
-WARNING: [Synth 8-992] dout is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:249]
+WARNING: [Synth 8-992] errorCount_to_check_source is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:91]
+WARNING: [Synth 8-992] prbs_from_check_to_check_source is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:96]
+WARNING: [Synth 8-992] bypass is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:107]
+WARNING: [Synth 8-992] map_dout is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:110]
+WARNING: [Synth 8-992] shifter_dout is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:163]
+WARNING: [Synth 8-992] foundFrames is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:234]
+WARNING: [Synth 8-992] searchedFrames is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:238]
+WARNING: [Synth 8-992] alignAddr is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:241]
+WARNING: [Synth 8-992] aligned is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:245]
+WARNING: [Synth 8-992] errorCounter is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:249]
+WARNING: [Synth 8-992] tot_err_count is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:253]
+WARNING: [Synth 8-992] errorFlag is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:256]
+WARNING: [Synth 8-992] prbs_from_check is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:259]
+WARNING: [Synth 8-992] errorBits is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:263]
+WARNING: [Synth 8-992] dout is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:267]
+WARNING: [Synth 8-992] clk_60MHz is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:289]
+WARNING: [Synth 8-992] gig_eth_tx_fifo_wrclk is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:404]
+WARNING: [Synth 8-992] gig_eth_tx_fifo_q is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:405]
+WARNING: [Synth 8-992] gig_eth_tx_fifo_wren is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:406]
+WARNING: [Synth 8-992] gig_eth_rx_fifo_rden is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:410]
+WARNING: [Synth 8-6901] identifier 'gig_eth_rx_fifo_q' is used before its declaration [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:382]
+WARNING: [Synth 8-6901] identifier 'gig_eth_rx_fifo_empty' is used before its declaration [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:383]
+WARNING: [Synth 8-6901] identifier 'gig_eth_tx_fifo_full' is used before its declaration [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:390]
 WARNING: [Synth 8-2611] redeclaration of ansi port foundFrames is not allowed [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:72]
 WARNING: [Synth 8-2611] redeclaration of ansi port searchedFrames is not allowed [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:75]
 WARNING: [Synth 8-2611] redeclaration of ansi port alignAddr is not allowed [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:84]
@@ -43,15 +55,15 @@ WARNING: [Synth 8-2611] redeclaration of ansi port errorBits is not allowed [C:/
 WARNING: [Synth 8-2611] redeclaration of ansi port errorFlag is not allowed [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:129]
 WARNING: [Synth 8-2611] redeclaration of ansi port tot_err_count is not allowed [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:206]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1008.020 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1008.277 ; gain = 0.000
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'PRBS7_top' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:17]
 INFO: [Synth 8-6157] synthesizing module 'PRBS_debug' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS_debug.v:17]
 INFO: [Synth 8-6155] done synthesizing module 'PRBS_debug' (1#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS_debug.v:17]
 INFO: [Synth 8-6157] synthesizing module 'PRBS7Check' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:17]
 INFO: [Synth 8-6155] done synthesizing module 'PRBS7Check' (2#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:17]
-WARNING: [Synth 8-7071] port 'errorBits' of module 'PRBS7Check' is unconnected for instance 'prbs_source_check_inst_0' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:67]
-WARNING: [Synth 8-7023] instance 'prbs_source_check_inst_0' of module 'PRBS7Check' has 5 connections declared, but only 4 given [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:67]
+WARNING: [Synth 8-7071] port 'errorBits' of module 'PRBS7Check' is unconnected for instance 'prbs_source_check_inst_0' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:84]
+WARNING: [Synth 8-7023] instance 'prbs_source_check_inst_0' of module 'PRBS7Check' has 5 connections declared, but only 4 given [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:84]
 INFO: [Synth 8-6157] synthesizing module 'rev_map' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/rev_map.v:17]
 INFO: [Synth 8-6155] done synthesizing module 'rev_map' (3#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/rev_map.v:17]
 INFO: [Synth 8-6157] synthesizing module 'gtwizard_0_exdes' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/gtwizard_0_ex/gtwizard_0_ex.srcs/sources_1/imports/example_design/gtwizard_0_exdes.v:70]
@@ -478,90 +490,828 @@ INFO: [Synth 8-6155] done synthesizing module 'gtwizard_0_RX_STARTUP_FSM' (18#1)
 INFO: [Synth 8-6155] done synthesizing module 'gtwizard_0_init' (19#1) [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/sources_1/ip/gtwizard_0/gtwizard_0_init.v:71]
 INFO: [Synth 8-6155] done synthesizing module 'gtwizard_0' (20#1) [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/sources_1/ip/gtwizard_0/gtwizard_0.v:73]
 INFO: [Synth 8-6155] done synthesizing module 'gtwizard_0_support' (21#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/gtwizard_0_ex/gtwizard_0_ex.srcs/sources_1/imports/example_design/support/gtwizard_0_support.v:70]
-INFO: [Synth 8-6157] synthesizing module 'IBUFDS' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:32998]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_0_exdes' (22#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/gtwizard_0_ex/gtwizard_0_ex.srcs/sources_1/imports/example_design/gtwizard_0_exdes.v:70]
+WARNING: [Synth 8-689] width (32) of port connection 'TRACK_DATA_OUT' does not match port width (1) of module 'gtwizard_0_exdes' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:139]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:139]
+INFO: [Synth 8-6157] synthesizing module 'shifter' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/shifter.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'shifter' (23#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/shifter.v:17]
+INFO: [Synth 8-6157] synthesizing module 'dataExtract' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:17]
+INFO: [Synth 8-6157] synthesizing module 'map' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/map.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'map' (24#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/map.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'dataExtract' (25#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:17]
+INFO: [Synth 8-638] synthesizing module 'global_clock_reset' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/global_clock_reset.vhd:53]
 	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
-	Parameter DIFF_TERM bound to: FALSE - type: string 
+	Parameter DIFF_TERM bound to: 0 - type: bool 
 	Parameter DQS_BIAS bound to: FALSE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: 0 - type: bool 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-113] binding component instance 'IBUFDS_inst' to cell 'IBUFDS' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/global_clock_reset.vhd:88]
+INFO: [Synth 8-113] binding component instance 'BUFG_inst' to cell 'BUFG' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/global_clock_reset.vhd:99]
+INFO: [Synth 8-3491] module 'clockwiz' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-27476-21-10244/realtime/clockwiz_stub.v:5' bound to instance 'clockwiz_inst' of component 'clockwiz' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/global_clock_reset.vhd:106]
+INFO: [Synth 8-6157] synthesizing module 'clockwiz' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-27476-21-10244/realtime/clockwiz_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clockwiz' (26#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-27476-21-10244/realtime/clockwiz_stub.v:5]
+INFO: [Synth 8-3491] module 'GlobalResetter' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/global_resetter.vhd:21' bound to instance 'globalresetter_inst' of component 'GlobalResetter' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/global_clock_reset.vhd:123]
+INFO: [Synth 8-638] synthesizing module 'GlobalResetter' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/global_resetter.vhd:37]
+	Parameter CLK_RESET_DELAY_CNT bound to: 10000 - type: integer 
+	Parameter GBL_RESET_DELAY_CNT bound to: 100 - type: integer 
+	Parameter CNT_RANGE_HIGH bound to: 16383 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'GlobalResetter' (27#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/global_resetter.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'global_clock_reset' (28#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/global_clock_reset.vhd:53]
+INFO: [Synth 8-6157] synthesizing module 'IBUFDS_GTE2__parameterized0' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:33137]
+	Parameter CLKCM_CFG bound to: TRUE - type: string 
+	Parameter CLKRCV_TRST bound to: TRUE - type: string 
+	Parameter CLKSWING_CFG bound to: 2'b11 
+INFO: [Synth 8-6155] done synthesizing module 'IBUFDS_GTE2__parameterized0' (28#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:33137]
+WARNING: [Synth 8-689] width (32) of port connection 'ODIV2' does not match port width (1) of module 'IBUFDS_GTE2__parameterized0' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:318]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:318]
+INFO: [Synth 8-638] synthesizing module 'control_interface' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/control_interface.vhd:86]
+INFO: [Synth 8-3491] module 'fifo36x512' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-27476-21-10244/realtime/fifo36x512_stub.v:6' bound to instance 'data_fifo' of component 'fifo36x512' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/control_interface.vhd:169]
+INFO: [Synth 8-6157] synthesizing module 'fifo36x512' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-27476-21-10244/realtime/fifo36x512_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo36x512' (29#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-27476-21-10244/realtime/fifo36x512_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'control_interface' (30#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/control_interface.vhd:86]
+INFO: [Synth 8-638] synthesizing module 'gig_eth' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/gig_eth.vhd:190]
+INFO: [Synth 8-3491] module 'tri_mode_ethernet_mac_0_example_design_resets' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/gig_eth_mac_resets.vhd:57' bound to instance 'example_resets' of component 'tri_mode_ethernet_mac_0_example_design_resets' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/gig_eth.vhd:691]
+INFO: [Synth 8-638] synthesizing module 'tri_mode_ethernet_mac_0_example_design_resets' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/gig_eth_mac_resets.vhd:84]
+INFO: [Synth 8-3491] module 'tri_mode_ethernet_mac_0_sync_block' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/common/tri_mode_ethernet_mac_0_sync_block.vhd:67' bound to instance 'dcm_sync' of component 'tri_mode_ethernet_mac_0_sync_block' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/gig_eth_mac_resets.vhd:131]
+INFO: [Synth 8-638] synthesizing module 'tri_mode_ethernet_mac_0_sync_block' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/common/tri_mode_ethernet_mac_0_sync_block.vhd:84]
+	Parameter INITIALISE bound to: 1'b0 
+	Parameter DEPTH bound to: 5 - type: integer 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'data_sync_reg0' to cell 'FDRE' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/common/tri_mode_ethernet_mac_0_sync_block.vhd:113]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'data_sync_reg1' to cell 'FDRE' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/common/tri_mode_ethernet_mac_0_sync_block.vhd:126]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'data_sync_reg2' to cell 'FDRE' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/common/tri_mode_ethernet_mac_0_sync_block.vhd:138]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'data_sync_reg3' to cell 'FDRE' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/common/tri_mode_ethernet_mac_0_sync_block.vhd:150]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'data_sync_reg4' to cell 'FDRE' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/common/tri_mode_ethernet_mac_0_sync_block.vhd:162]
+INFO: [Synth 8-256] done synthesizing module 'tri_mode_ethernet_mac_0_sync_block' (31#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/common/tri_mode_ethernet_mac_0_sync_block.vhd:84]
+INFO: [Synth 8-3491] module 'tri_mode_ethernet_mac_0_reset_sync' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/common/tri_mode_ethernet_mac_0_reset_sync.vhd:67' bound to instance 'glbl_reset_gen' of component 'tri_mode_ethernet_mac_0_reset_sync' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/gig_eth_mac_resets.vhd:145]
+INFO: [Synth 8-638] synthesizing module 'tri_mode_ethernet_mac_0_reset_sync' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/common/tri_mode_ethernet_mac_0_reset_sync.vhd:87]
+	Parameter INITIALISE bound to: 1'b1 
+	Parameter DEPTH bound to: 5 - type: integer 
+	Parameter INIT bound to: 1'b1 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_PRE_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'reset_sync0' to cell 'FDPE' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/common/tri_mode_ethernet_mac_0_reset_sync.vhd:109]
+	Parameter INIT bound to: 1'b1 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_PRE_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'reset_sync1' to cell 'FDPE' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/common/tri_mode_ethernet_mac_0_reset_sync.vhd:121]
+	Parameter INIT bound to: 1'b1 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_PRE_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'reset_sync2' to cell 'FDPE' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/common/tri_mode_ethernet_mac_0_reset_sync.vhd:133]
+	Parameter INIT bound to: 1'b1 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_PRE_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'reset_sync3' to cell 'FDPE' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/common/tri_mode_ethernet_mac_0_reset_sync.vhd:145]
+	Parameter INIT bound to: 1'b1 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_PRE_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'reset_sync4' to cell 'FDPE' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/common/tri_mode_ethernet_mac_0_reset_sync.vhd:157]
+INFO: [Synth 8-256] done synthesizing module 'tri_mode_ethernet_mac_0_reset_sync' (32#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/common/tri_mode_ethernet_mac_0_reset_sync.vhd:87]
+INFO: [Synth 8-3491] module 'tri_mode_ethernet_mac_0_reset_sync' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/common/tri_mode_ethernet_mac_0_reset_sync.vhd:67' bound to instance 'axi_lite_reset_gen' of component 'tri_mode_ethernet_mac_0_reset_sync' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/gig_eth_mac_resets.vhd:159]
+INFO: [Synth 8-3491] module 'tri_mode_ethernet_mac_0_reset_sync' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/common/tri_mode_ethernet_mac_0_reset_sync.vhd:67' bound to instance 'gtx_reset_gen' of component 'tri_mode_ethernet_mac_0_reset_sync' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/gig_eth_mac_resets.vhd:187]
+INFO: [Synth 8-3491] module 'tri_mode_ethernet_mac_0_reset_sync' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/common/tri_mode_ethernet_mac_0_reset_sync.vhd:67' bound to instance 'chk_reset_gen' of component 'tri_mode_ethernet_mac_0_reset_sync' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/gig_eth_mac_resets.vhd:221]
+INFO: [Synth 8-256] done synthesizing module 'tri_mode_ethernet_mac_0_example_design_resets' (33#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/gig_eth_mac_resets.vhd:84]
+INFO: [Synth 8-3491] module 'tri_mode_ethernet_mac_0_axi_lite_sm' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/axi_lite_sm/tri_mode_ethernet_mac_0_axi_lite_sm.vhd:69' bound to instance 'axi_lite_controller' of component 'tri_mode_ethernet_mac_0_axi_lite_sm' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/gig_eth.vhd:724]
+INFO: [Synth 8-638] synthesizing module 'tri_mode_ethernet_mac_0_axi_lite_sm' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/axi_lite_sm/tri_mode_ethernet_mac_0_axi_lite_sm.vhd:105]
+INFO: [Synth 8-3491] module 'tri_mode_ethernet_mac_0_sync_block' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/common/tri_mode_ethernet_mac_0_sync_block.vhd:67' bound to instance 'update_speed_sync_inst' of component 'tri_mode_ethernet_mac_0_sync_block' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/axi_lite_sm/tri_mode_ethernet_mac_0_axi_lite_sm.vhd:278]
+INFO: [Synth 8-256] done synthesizing module 'tri_mode_ethernet_mac_0_axi_lite_sm' (34#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/axi_lite_sm/tri_mode_ethernet_mac_0_axi_lite_sm.vhd:105]
+INFO: [Synth 8-3491] module 'tri_mode_ethernet_mac_0_fifo_block' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/gig_eth_mac_fifo_block.vhd:93' bound to instance 'trimac_fifo_block' of component 'tri_mode_ethernet_mac_0_fifo_block' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/gig_eth.vhd:760]
+INFO: [Synth 8-638] synthesizing module 'tri_mode_ethernet_mac_0_fifo_block' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/gig_eth_mac_fifo_block.vhd:199]
+INFO: [Synth 8-3491] module 'tri_mode_ethernet_mac_0_support' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/support/tri_mode_ethernet_mac_0_support.vhd:68' bound to instance 'trimac_sup_block' of component 'tri_mode_ethernet_mac_0_support' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/gig_eth_mac_fifo_block.vhd:408]
+INFO: [Synth 8-638] synthesizing module 'tri_mode_ethernet_mac_0_support' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/support/tri_mode_ethernet_mac_0_support.vhd:168]
+INFO: [Synth 8-3491] module 'tri_mode_ethernet_mac_0_support_clocking' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/support/tri_mode_ethernet_mac_0_support_clocking.vhd:69' bound to instance 'tri_mode_ethernet_mac_support_clocking_i' of component 'tri_mode_ethernet_mac_0_support_clocking' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/support/tri_mode_ethernet_mac_0_support.vhd:311]
+INFO: [Synth 8-638] synthesizing module 'tri_mode_ethernet_mac_0_support_clocking' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/support/tri_mode_ethernet_mac_0_support_clocking.vhd:82]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 5.000000 - type: double 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKIN1_PERIOD bound to: 8.000000 - type: double 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: double 
+	Parameter CLKOUT0_DIVIDE_F bound to: 5.000000 - type: double 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT0_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT1_DIVIDE bound to: 5 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT1_PHASE bound to: 90.000000 - type: double 
+	Parameter CLKOUT1_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT2_DIVIDE bound to: 5 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT2_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT3_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT4_CASCADE bound to: 0 - type: bool 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT4_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT5_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT6_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PSEN_INVERTED bound to: 1'b0 
+	Parameter IS_PSINCDEC_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: double 
+	Parameter REF_JITTER2 bound to: 0.000000 - type: double 
+	Parameter SS_EN bound to: FALSE - type: string 
+	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
+	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
+	Parameter STARTUP_WAIT bound to: 0 - type: bool 
+INFO: [Synth 8-113] binding component instance 'mmcm_adv_inst' to cell 'MMCME2_ADV' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/support/tri_mode_ethernet_mac_0_support_clocking.vhd:119]
+	Parameter CE_TYPE bound to: SYNC - type: string 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_I_INVERTED bound to: 1'b0 
+	Parameter SIM_DEVICE bound to: ULTRASCALE - type: string 
+	Parameter STARTUP_SYNC bound to: FALSE - type: string 
+INFO: [Synth 8-113] binding component instance 'clkout1_buf' to cell 'BUFGCE' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/support/tri_mode_ethernet_mac_0_support_clocking.vhd:184]
+	Parameter CE_TYPE bound to: SYNC - type: string 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_I_INVERTED bound to: 1'b0 
+	Parameter SIM_DEVICE bound to: ULTRASCALE - type: string 
+	Parameter STARTUP_SYNC bound to: FALSE - type: string 
+INFO: [Synth 8-113] binding component instance 'clkout2_buf' to cell 'BUFGCE' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/support/tri_mode_ethernet_mac_0_support_clocking.vhd:190]
+INFO: [Synth 8-256] done synthesizing module 'tri_mode_ethernet_mac_0_support_clocking' (35#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/support/tri_mode_ethernet_mac_0_support_clocking.vhd:82]
+INFO: [Synth 8-3491] module 'tri_mode_ethernet_mac_0_support_resets' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/support/tri_mode_ethernet_mac_0_support_resets.vhd:63' bound to instance 'tri_mode_ethernet_mac_support_resets_i' of component 'tri_mode_ethernet_mac_0_support_resets' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/support/tri_mode_ethernet_mac_0_support.vhd:321]
+INFO: [Synth 8-638] synthesizing module 'tri_mode_ethernet_mac_0_support_resets' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/support/tri_mode_ethernet_mac_0_support_resets.vhd:77]
+INFO: [Synth 8-3491] module 'tri_mode_ethernet_mac_0_reset_sync' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/common/tri_mode_ethernet_mac_0_reset_sync.vhd:67' bound to instance 'idelayctrl_reset_gen' of component 'tri_mode_ethernet_mac_0_reset_sync' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/support/tri_mode_ethernet_mac_0_support_resets.vhd:128]
+INFO: [Synth 8-3491] module 'tri_mode_ethernet_mac_0_sync_block' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/common/tri_mode_ethernet_mac_0_sync_block.vhd:67' bound to instance 'lock_sync' of component 'tri_mode_ethernet_mac_0_sync_block' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/support/tri_mode_ethernet_mac_0_support_resets.vhd:179]
+INFO: [Synth 8-3491] module 'tri_mode_ethernet_mac_0_reset_sync' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/common/tri_mode_ethernet_mac_0_reset_sync.vhd:67' bound to instance 'gtx_mmcm_reset_gen' of component 'tri_mode_ethernet_mac_0_reset_sync' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/support/tri_mode_ethernet_mac_0_support_resets.vhd:198]
+INFO: [Synth 8-256] done synthesizing module 'tri_mode_ethernet_mac_0_support_resets' (36#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/support/tri_mode_ethernet_mac_0_support_resets.vhd:77]
+	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
+INFO: [Synth 8-113] binding component instance 'tri_mode_ethernet_mac_idelayctrl_common_i' to cell 'IDELAYCTRL' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/support/tri_mode_ethernet_mac_0_support.vhd:336]
+INFO: [Synth 8-3491] module 'tri_mode_ethernet_mac_0' declared at 'c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0.v:67' bound to instance 'tri_mode_ethernet_mac_i' of component 'tri_mode_ethernet_mac_0' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/support/tri_mode_ethernet_mac_0_support.vhd:350]
+INFO: [Synth 8-6157] synthesizing module 'tri_mode_ethernet_mac_0' [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0.v:67]
+INFO: [Synth 8-6157] synthesizing module 'tri_mode_ethernet_mac_0_block' [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0_block.v:108]
+INFO: [Synth 8-6157] synthesizing module 'tri_mode_ethernet_mac_0_block_sync_block' [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/synth/common/tri_mode_ethernet_mac_0_block_sync_block.v:63]
+	Parameter INITIALISE bound to: 1'b0 
+	Parameter DEPTH bound to: 5 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'FDRE' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:13724]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'FDRE' (37#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:13724]
+INFO: [Synth 8-6155] done synthesizing module 'tri_mode_ethernet_mac_0_block_sync_block' (38#1) [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/synth/common/tri_mode_ethernet_mac_0_block_sync_block.v:63]
+INFO: [Synth 8-6157] synthesizing module 'tri_mode_ethernet_mac_0_clk_en_gen' [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0_clk_en_gen.v:65]
+INFO: [Synth 8-6155] done synthesizing module 'tri_mode_ethernet_mac_0_clk_en_gen' (39#1) [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0_clk_en_gen.v:65]
+INFO: [Synth 8-6157] synthesizing module 'tri_mode_ethernet_mac_0_rgmii_v2_0_if' [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/synth/physical/tri_mode_ethernet_mac_0_rgmii_v2_0_if.v:70]
+INFO: [Synth 8-6157] synthesizing module 'OBUF' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:46318]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'OBUF' (40#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:46318]
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:32983]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
 	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
 	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
 	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
 	Parameter IOSTANDARD bound to: DEFAULT - type: string 
-INFO: [Synth 8-6155] done synthesizing module 'IBUFDS' (22#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:32998]
-INFO: [Synth 8-6155] done synthesizing module 'gtwizard_0_exdes' (23#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/gtwizard_0_ex/gtwizard_0_ex.srcs/sources_1/imports/example_design/gtwizard_0_exdes.v:70]
-WARNING: [Synth 8-689] width (32) of port connection 'TRACK_DATA_OUT' does not match port width (1) of module 'gtwizard_0_exdes' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:121]
-WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:121]
-INFO: [Synth 8-6157] synthesizing module 'shifter' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/shifter.v:17]
-INFO: [Synth 8-6155] done synthesizing module 'shifter' (24#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/shifter.v:17]
-INFO: [Synth 8-6157] synthesizing module 'dataExtract' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:17]
-INFO: [Synth 8-6157] synthesizing module 'map' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/map.v:17]
-INFO: [Synth 8-6155] done synthesizing module 'map' (25#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/map.v:17]
-INFO: [Synth 8-6155] done synthesizing module 'dataExtract' (26#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:17]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'gtwizard_0_exdes_i'. This will prevent further optimization [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:115]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'dataAligner'. This will prevent further optimization [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:193]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'PRBS_debug_inst0'. This will prevent further optimization [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:61]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'rev_map_inst'. This will prevent further optimization [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:81]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'prbs_source_check_inst_0'. This will prevent further optimization [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:67]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'shifter_inst'. This will prevent further optimization [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:137]
-INFO: [Synth 8-6155] done synthesizing module 'PRBS7_top' (27#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (41#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:32983]
+INFO: [Synth 8-6157] synthesizing module 'ODDR' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:49791]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'ODDR' (42#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:49791]
+INFO: [Synth 8-6157] synthesizing module 'IDELAYE2' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:35073]
+	Parameter CINVCTRL_SEL bound to: FALSE - type: string 
+	Parameter DELAY_SRC bound to: IDATAIN - type: string 
+	Parameter HIGH_PERFORMANCE_MODE bound to: FALSE - type: string 
+	Parameter IDELAY_TYPE bound to: FIXED - type: string 
+	Parameter IDELAY_VALUE bound to: 0 - type: integer 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_DATAIN_INVERTED bound to: 1'b0 
+	Parameter IS_IDATAIN_INVERTED bound to: 1'b0 
+	Parameter PIPE_SEL bound to: FALSE - type: string 
+	Parameter REFCLK_FREQUENCY bound to: 200.000000 - type: double 
+	Parameter SIGNAL_PATTERN bound to: DATA - type: string 
+	Parameter SIM_DELAY_D bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'IDELAYE2' (43#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:35073]
+INFO: [Synth 8-6157] synthesizing module 'IDDR' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:34938]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE_PIPELINED - type: string 
+	Parameter INIT_Q1 bound to: 1'b0 
+	Parameter INIT_Q2 bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IDDR' (44#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:34938]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (45#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242]
+INFO: [Synth 8-6157] synthesizing module 'BUFIO' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:1344]
+INFO: [Synth 8-6155] done synthesizing module 'BUFIO' (46#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:1344]
+INFO: [Synth 8-6157] synthesizing module 'BUFR' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:1410]
+	Parameter BUFR_DIVIDE bound to: BYPASS - type: string 
+	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'BUFR' (47#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:1410]
+INFO: [Synth 8-6155] done synthesizing module 'tri_mode_ethernet_mac_0_rgmii_v2_0_if' (48#1) [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/synth/physical/tri_mode_ethernet_mac_0_rgmii_v2_0_if.v:70]
+INFO: [Synth 8-6157] synthesizing module 'tri_mode_ethernet_mac_0_axi4_lite_ipif_wrapper' [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0_axi4_lite_ipif_wrapper.v:75]
+INFO: [Synth 8-638] synthesizing module 'tri_mode_ethernet_mac_0_axi4_lite_ipif_top' [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0_axi4_lite_ipif_top.vhd:107]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_ADDR_RANGE_SIZE bound to: 32'b00000000000000000000011111111111 
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_MIN_SIZE bound to: 2047 - type: integer 
+	Parameter C_USE_WSTRB bound to: 0 - type: integer 
+	Parameter C_DPHASE_TIMEOUT bound to: 64 - type: integer 
+	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 128'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111111111 
+	Parameter C_ARD_NUM_CE_ARRAY bound to: 32'b00000000000000000000000000000001 
+	Parameter C_FAMILY bound to: virtex7 - type: string 
+INFO: [Synth 8-638] synthesizing module 'slave_attachment' [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 128'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111111111 
+	Parameter C_ARD_NUM_CE_ARRAY bound to: 32'b00000000000000000000000000000001 
+	Parameter C_IPIF_ABUS_WIDTH bound to: 32 - type: integer 
+	Parameter C_IPIF_DBUS_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_MIN_SIZE bound to: 2047 - type: integer 
+	Parameter C_USE_WSTRB bound to: 0 - type: integer 
+	Parameter C_DPHASE_TIMEOUT bound to: 64 - type: integer 
+	Parameter C_FAMILY bound to: virtex7 - type: string 
+INFO: [Synth 8-638] synthesizing module 'address_decoder' [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+	Parameter C_BUS_AWIDTH bound to: 11 - type: integer 
+	Parameter C_S_AXI_MIN_SIZE bound to: 2047 - type: integer 
+	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 128'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111111111 
+	Parameter C_ARD_NUM_CE_ARRAY bound to: 32'b00000000000000000000000000000001 
+	Parameter C_FAMILY bound to: nofamily - type: string 
+INFO: [Synth 8-256] done synthesizing module 'address_decoder' (49#1) [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-226] default block is never used [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2550]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (50#1) [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (51#1) [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-256] done synthesizing module 'tri_mode_ethernet_mac_0_axi4_lite_ipif_top' (52#1) [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0_axi4_lite_ipif_top.vhd:107]
+INFO: [Synth 8-6155] done synthesizing module 'tri_mode_ethernet_mac_0_axi4_lite_ipif_wrapper' (53#1) [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0_axi4_lite_ipif_wrapper.v:75]
+INFO: [Synth 8-6157] synthesizing module 'LUT4' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39251]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4' (66#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39251]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized0' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39251]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized0' (66#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39251]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized1' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39251]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized1' (66#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39251]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized2' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39251]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized2' (66#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39251]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized3' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39251]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized3' (66#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39251]
+INFO: [Synth 8-6157] synthesizing module 'RAM64X1D' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:70577]
+INFO: [Synth 8-6155] done synthesizing module 'RAM64X1D' (82#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:70577]
+INFO: [Synth 8-6157] synthesizing module 'LUT3' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39209]
+INFO: [Synth 8-6155] done synthesizing module 'LUT3' (83#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39209]
+INFO: [Synth 8-6157] synthesizing module 'LUT3__parameterized0' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39209]
+INFO: [Synth 8-6155] done synthesizing module 'LUT3__parameterized0' (83#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39209]
+INFO: [Synth 8-6157] synthesizing module 'LUT3__parameterized1' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39209]
+INFO: [Synth 8-6155] done synthesizing module 'LUT3__parameterized1' (83#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39209]
+INFO: [Synth 8-6157] synthesizing module 'LUT3__parameterized2' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39209]
+INFO: [Synth 8-6155] done synthesizing module 'LUT3__parameterized2' (83#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39209]
+INFO: [Synth 8-6157] synthesizing module 'SRL16E' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:78034]
+INFO: [Synth 8-6155] done synthesizing module 'SRL16E' (84#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:78034]
+INFO: [Synth 8-6155] done synthesizing module 'tri_mode_ethernet_mac_0_block' (88#1) [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0_block.v:108]
+INFO: [Synth 8-6155] done synthesizing module 'tri_mode_ethernet_mac_0' (89#1) [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0.v:67]
+INFO: [Synth 8-256] done synthesizing module 'tri_mode_ethernet_mac_0_support' (90#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/support/tri_mode_ethernet_mac_0_support.vhd:168]
+INFO: [Synth 8-3491] module 'tri_mode_ethernet_mac_0_reset_sync' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/common/tri_mode_ethernet_mac_0_reset_sync.vhd:67' bound to instance 'rx_mac_reset_gen' of component 'tri_mode_ethernet_mac_0_reset_sync' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/gig_eth_mac_fifo_block.vhd:505]
+INFO: [Synth 8-3491] module 'tri_mode_ethernet_mac_0_reset_sync' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/common/tri_mode_ethernet_mac_0_reset_sync.vhd:67' bound to instance 'tx_mac_reset_gen' of component 'tri_mode_ethernet_mac_0_reset_sync' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/gig_eth_mac_fifo_block.vhd:513]
+	Parameter FULL_DUPLEX_ONLY bound to: 1 - type: bool 
+INFO: [Synth 8-3491] module 'tri_mode_ethernet_mac_0_ten_100_1g_eth_fifo' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/fifo/tri_mode_ethernet_mac_0_ten_100_1g_eth_fifo.vhd:75' bound to instance 'user_side_FIFO' of component 'tri_mode_ethernet_mac_0_ten_100_1g_eth_fifo' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/gig_eth_mac_fifo_block.vhd:527]
+INFO: [Synth 8-638] synthesizing module 'tri_mode_ethernet_mac_0_ten_100_1g_eth_fifo' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/fifo/tri_mode_ethernet_mac_0_ten_100_1g_eth_fifo.vhd:117]
+	Parameter FULL_DUPLEX_ONLY bound to: 1 - type: bool 
+	Parameter FULL_DUPLEX_ONLY bound to: 1 - type: bool 
+INFO: [Synth 8-3491] module 'tri_mode_ethernet_mac_0_tx_client_fifo' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/fifo/tri_mode_ethernet_mac_0_tx_client_fifo.vhd:102' bound to instance 'tx_fifo_i' of component 'tri_mode_ethernet_mac_0_tx_client_fifo' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/fifo/tri_mode_ethernet_mac_0_ten_100_1g_eth_fifo.vhd:181]
+INFO: [Synth 8-638] synthesizing module 'tri_mode_ethernet_mac_0_tx_client_fifo' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/fifo/tri_mode_ethernet_mac_0_tx_client_fifo.vhd:135]
+	Parameter FULL_DUPLEX_ONLY bound to: 1 - type: bool 
+INFO: [Synth 8-226] default block is never used [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/fifo/tri_mode_ethernet_mac_0_tx_client_fifo.vhd:365]
+INFO: [Synth 8-3491] module 'tri_mode_ethernet_mac_0_sync_block' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/common/tri_mode_ethernet_mac_0_sync_block.vhd:67' bound to instance 'resync_rd_tran_frame_tog' of component 'tri_mode_ethernet_mac_0_sync_block' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/fifo/tri_mode_ethernet_mac_0_tx_client_fifo.vhd:982]
+INFO: [Synth 8-3491] module 'tri_mode_ethernet_mac_0_sync_block' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/common/tri_mode_ethernet_mac_0_sync_block.vhd:67' bound to instance 'resync_wr_frame_in_fifo' of component 'tri_mode_ethernet_mac_0_sync_block' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/fifo/tri_mode_ethernet_mac_0_tx_client_fifo.vhd:1163]
+INFO: [Synth 8-3491] module 'tri_mode_ethernet_mac_0_sync_block' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/common/tri_mode_ethernet_mac_0_sync_block.vhd:67' bound to instance 'resync_wr_frames_in_fifo' of component 'tri_mode_ethernet_mac_0_sync_block' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/fifo/tri_mode_ethernet_mac_0_tx_client_fifo.vhd:1171]
+INFO: [Synth 8-3491] module 'tri_mode_ethernet_mac_0_sync_block' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/common/tri_mode_ethernet_mac_0_sync_block.vhd:67' bound to instance 'resync_fif_valid_tog' of component 'tri_mode_ethernet_mac_0_sync_block' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/fifo/tri_mode_ethernet_mac_0_tx_client_fifo.vhd:1180]
+INFO: [Synth 8-3491] module 'tri_mode_ethernet_mac_0_sync_block' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/common/tri_mode_ethernet_mac_0_sync_block.vhd:67' bound to instance 'resync_rd_txfer_tog' of component 'tri_mode_ethernet_mac_0_sync_block' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/fifo/tri_mode_ethernet_mac_0_tx_client_fifo.vhd:1554]
+	Parameter DATA_WIDTH bound to: 9 - type: integer 
+	Parameter ADDR_WIDTH bound to: 12 - type: integer 
+INFO: [Synth 8-3491] module 'tri_mode_ethernet_mac_0_bram_tdp' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/fifo/tri_mode_ethernet_mac_0_bram_tdp.vhd:68' bound to instance 'tx_ramgen_i' of component 'tri_mode_ethernet_mac_0_bram_tdp' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/fifo/tri_mode_ethernet_mac_0_tx_client_fifo.vhd:1707]
+INFO: [Synth 8-638] synthesizing module 'tri_mode_ethernet_mac_0_bram_tdp' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/fifo/tri_mode_ethernet_mac_0_bram_tdp.vhd:90]
+	Parameter DATA_WIDTH bound to: 9 - type: integer 
+	Parameter ADDR_WIDTH bound to: 12 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'tri_mode_ethernet_mac_0_bram_tdp' (91#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/fifo/tri_mode_ethernet_mac_0_bram_tdp.vhd:90]
+INFO: [Synth 8-256] done synthesizing module 'tri_mode_ethernet_mac_0_tx_client_fifo' (92#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/fifo/tri_mode_ethernet_mac_0_tx_client_fifo.vhd:135]
+INFO: [Synth 8-3491] module 'tri_mode_ethernet_mac_0_rx_client_fifo' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/fifo/tri_mode_ethernet_mac_0_rx_client_fifo.vhd:116' bound to instance 'rx_fifo_i' of component 'tri_mode_ethernet_mac_0_rx_client_fifo' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/fifo/tri_mode_ethernet_mac_0_ten_100_1g_eth_fifo.vhd:212]
+INFO: [Synth 8-638] synthesizing module 'tri_mode_ethernet_mac_0_rx_client_fifo' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/fifo/tri_mode_ethernet_mac_0_rx_client_fifo.vhd:142]
+INFO: [Synth 8-226] default block is never used [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/fifo/tri_mode_ethernet_mac_0_rx_client_fifo.vhd:307]
+INFO: [Synth 8-3491] module 'tri_mode_ethernet_mac_0_sync_block' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/common/tri_mode_ethernet_mac_0_sync_block.vhd:67' bound to instance 'resync_wr_store_frame_tog' of component 'tri_mode_ethernet_mac_0_sync_block' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/fifo/tri_mode_ethernet_mac_0_rx_client_fifo.vhd:486]
+INFO: [Synth 8-3491] module 'tri_mode_ethernet_mac_0_sync_block' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/common/tri_mode_ethernet_mac_0_sync_block.vhd:67' bound to instance 'sync_rd_addr_tog' of component 'tri_mode_ethernet_mac_0_sync_block' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/fifo/tri_mode_ethernet_mac_0_rx_client_fifo.vhd:801]
+	Parameter DATA_WIDTH bound to: 9 - type: integer 
+	Parameter ADDR_WIDTH bound to: 12 - type: integer 
+INFO: [Synth 8-3491] module 'tri_mode_ethernet_mac_0_bram_tdp' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/fifo/tri_mode_ethernet_mac_0_bram_tdp.vhd:68' bound to instance 'rx_ramgen_i' of component 'tri_mode_ethernet_mac_0_bram_tdp' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/fifo/tri_mode_ethernet_mac_0_rx_client_fifo.vhd:901]
+INFO: [Synth 8-256] done synthesizing module 'tri_mode_ethernet_mac_0_rx_client_fifo' (93#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/fifo/tri_mode_ethernet_mac_0_rx_client_fifo.vhd:142]
+INFO: [Synth 8-256] done synthesizing module 'tri_mode_ethernet_mac_0_ten_100_1g_eth_fifo' (94#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/fifo/tri_mode_ethernet_mac_0_ten_100_1g_eth_fifo.vhd:117]
+INFO: [Synth 8-256] done synthesizing module 'tri_mode_ethernet_mac_0_fifo_block' (95#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/gig_eth_mac_fifo_block.vhd:199]
+	Parameter CLK_FREQUENCY bound to: 125 - type: integer 
+	Parameter TX_IDLE_TIMEOUT bound to: 50 - type: integer 
+	Parameter SIMULATION bound to: 1'b0 
+INFO: [Synth 8-3491] module 'COM5402' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/com5402.vhd:38' bound to instance 'tcp_server_inst' of component 'COM5402' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/gig_eth.vhd:899]
+INFO: [Synth 8-638] synthesizing module 'COM5402' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/com5402.vhd:160]
+	Parameter CLK_FREQUENCY bound to: 125 - type: integer 
+	Parameter TX_IDLE_TIMEOUT bound to: 50 - type: integer 
+	Parameter SIMULATION bound to: 1'b0 
+	Parameter CLK_FREQUENCY bound to: 125 - type: integer 
+INFO: [Synth 8-3491] module 'TIMER_4US' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/timer_4us.vhd:24' bound to instance 'Inst_TIMER_4US' of component 'TIMER_4US' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/com5402.vhd:784]
+INFO: [Synth 8-638] synthesizing module 'TIMER_4US' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/timer_4us.vhd:42]
+	Parameter CLK_FREQUENCY bound to: 125 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'TIMER_4US' (96#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/timer_4us.vhd:42]
+WARNING: [Synth 8-5640] Port 'rx_tcp_byte_count' is missing in component declaration [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/com5402.vhd:176]
+	Parameter IPv6_ENABLED bound to: 1'b0 
+	Parameter SIMULATION bound to: 1'b0 
+INFO: [Synth 8-3491] module 'PACKET_PARSING' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/packet_parsing.vhd:46' bound to instance 'Inst_PACKET_PARSING' of component 'PACKET_PARSING' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/com5402.vhd:800]
+INFO: [Synth 8-638] synthesizing module 'PACKET_PARSING' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/packet_parsing.vhd:185]
+	Parameter IPv6_ENABLED bound to: 1'b0 
+	Parameter SIMULATION bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'PACKET_PARSING' (97#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/packet_parsing.vhd:185]
+INFO: [Synth 8-3491] module 'ARP' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/arp.vhd:23' bound to instance 'Inst_ARP' of component 'ARP' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/com5402.vhd:854]
+INFO: [Synth 8-638] synthesizing module 'ARP' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/arp.vhd:92]
+INFO: [Synth 8-256] done synthesizing module 'ARP' (98#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/arp.vhd:92]
+	Parameter IPv6_ENABLED bound to: 1'b0 
+	Parameter MAX_PING_SIZE bound to: 16'b0000001000000000 
+INFO: [Synth 8-3491] module 'PING' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/ping.vhd:33' bound to instance 'Inst_PING' of component 'PING' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/com5402.vhd:878]
+INFO: [Synth 8-638] synthesizing module 'PING' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/ping.vhd:115]
+	Parameter IPv6_ENABLED bound to: 1'b0 
+	Parameter MAX_PING_SIZE bound to: 16'b0000001000000000 
+	Parameter INITP_00 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INITP_01 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INITP_02 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INITP_03 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INITP_04 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INITP_05 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INITP_06 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INITP_07 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_00 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_01 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_02 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_03 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_04 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_05 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_06 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_07 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_08 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_09 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_0A bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_0B bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_0C bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_0D bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_0E bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_0F bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_10 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_11 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_12 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_13 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_14 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_15 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_16 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_17 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_18 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_19 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_1A bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_1B bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_1C bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_1D bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_1E bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_1F bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_20 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_21 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_22 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_23 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_24 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_25 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_26 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_27 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_28 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_29 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_2A bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_2B bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_2C bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_2D bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_2E bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_2F bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_30 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_31 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_32 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_33 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_34 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_35 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_36 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_37 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_38 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_39 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_3A bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_3B bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_3C bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_3D bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_3E bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_3F bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_A bound to: 12'b000000000000 
+	Parameter INIT_B bound to: 12'b000000000000 
+	Parameter SIM_COLLISION_CHECK bound to: ALL - type: string 
+	Parameter SRVAL_A bound to: 12'b000000000000 
+	Parameter SRVAL_B bound to: 12'b000000000000 
+	Parameter WRITE_MODE_A bound to: WRITE_FIRST - type: string 
+	Parameter WRITE_MODE_B bound to: WRITE_FIRST - type: string 
+INFO: [Synth 8-113] binding component instance 'RAMB16_S9_S9_inst' to cell 'RAMB16_S9_S9' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/ping.vhd:302]
+INFO: [Synth 8-256] done synthesizing module 'PING' (99#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/ping.vhd:115]
+	Parameter PORT_NO bound to: 16'b0000010000000101 
+	Parameter CLK_FREQUENCY bound to: 125 - type: integer 
+INFO: [Synth 8-3491] module 'UDP2SERIAL' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/udp2serial.vhd:26' bound to instance 'Inst_UDP2SERIAL' of component 'UDP2SERIAL' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/com5402.vhd:961]
+INFO: [Synth 8-638] synthesizing module 'UDP2SERIAL' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/udp2serial.vhd:74]
+	Parameter PORT_NO bound to: 16'b0000010000000101 
+	Parameter CLK_FREQUENCY bound to: 125 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'UDP2SERIAL' (100#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/udp2serial.vhd:74]
+	Parameter MSS bound to: 16'b0000010110110100 
+	Parameter IPv6_ENABLED bound to: 1'b0 
+	Parameter SIMULATION bound to: 1'b0 
+INFO: [Synth 8-3491] module 'TCP_SERVER' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/tcp_server.vhd:51' bound to instance 'TCP_SERVER_001' of component 'TCP_SERVER' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/com5402.vhd:1064]
+INFO: [Synth 8-638] synthesizing module 'TCP_SERVER' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/tcp_server.vhd:223]
+	Parameter MSS bound to: 16'b0000010110110100 
+	Parameter IPv6_ENABLED bound to: 1'b0 
+	Parameter SIMULATION bound to: 1'b0 
+Reason is one or more of the following :
+	1: Only 1 word in RAM 
+RAM "TCP_CONGESTION_WINDOW_reg" dissolved into registers
+INFO: [Synth 8-256] done synthesizing module 'TCP_SERVER' (101#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/tcp_server.vhd:223]
+	Parameter MSS bound to: 16'b0000010110110100 
+	Parameter IPv6_ENABLED bound to: 1'b0 
+INFO: [Synth 8-3491] module 'TCP_TX' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/tcp_tx.vhd:17' bound to instance 'Inst_TCP_TX' of component 'TCP_TX' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/com5402.vhd:1131]
+INFO: [Synth 8-638] synthesizing module 'TCP_TX' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/tcp_tx.vhd:108]
+	Parameter MSS bound to: 16'b0000010110110100 
+	Parameter IPv6_ENABLED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'TCP_TX' (102#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/tcp_tx.vhd:108]
+	Parameter NBUFS bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'TCP_RXBUFNDEMUX2' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/tcp_rxbufndemux2.vhd:33' bound to instance 'Inst_TCP_RXBUFNDEMUX2' of component 'TCP_RXBUFNDEMUX2' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/com5402.vhd:1168]
+INFO: [Synth 8-638] synthesizing module 'TCP_RXBUFNDEMUX2' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/tcp_rxbufndemux2.vhd:87]
+	Parameter NBUFS bound to: 8 - type: integer 
+	Parameter DATA_WIDTHA bound to: 9 - type: integer 
+	Parameter ADDR_WIDTHA bound to: 11 - type: integer 
+	Parameter DATA_WIDTHB bound to: 9 - type: integer 
+	Parameter ADDR_WIDTHB bound to: 11 - type: integer 
+INFO: [Synth 8-3491] module 'BRAM_DP' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/bram_dp.vhd:34' bound to instance 'RAMB16_S9_S9_001' of component 'BRAM_DP' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/tcp_rxbufndemux2.vhd:229]
+INFO: [Synth 8-638] synthesizing module 'BRAM_DP' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/bram_dp.vhd:58]
+	Parameter DATA_WIDTHA bound to: 9 - type: integer 
+	Parameter ADDR_WIDTHA bound to: 11 - type: integer 
+	Parameter DATA_WIDTHB bound to: 9 - type: integer 
+	Parameter ADDR_WIDTHB bound to: 11 - type: integer 
+	Parameter INITP_00 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INITP_01 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INITP_02 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INITP_03 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INITP_04 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INITP_05 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INITP_06 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INITP_07 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_00 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_01 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_02 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_03 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_04 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_05 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_06 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_07 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_08 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_09 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_0A bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_0B bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_0C bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_0D bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_0E bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_0F bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_10 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_11 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_12 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_13 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_14 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_15 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_16 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_17 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_18 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_19 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_1A bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_1B bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_1C bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_1D bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_1E bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_1F bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_20 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_21 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_22 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_23 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_24 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_25 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_26 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_27 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_28 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_29 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_2A bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_2B bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_2C bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_2D bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_2E bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_2F bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_30 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_31 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_32 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_33 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_34 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_35 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_36 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_37 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_38 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_39 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_3A bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_3B bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_3C bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_3D bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_3E bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_3F bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_A bound to: 12'b000000000000 
+	Parameter INIT_B bound to: 12'b000000000000 
+	Parameter SIM_COLLISION_CHECK bound to: ALL - type: string 
+	Parameter SRVAL_A bound to: 12'b000000000000 
+	Parameter SRVAL_B bound to: 12'b000000000000 
+	Parameter WRITE_MODE_A bound to: WRITE_FIRST - type: string 
+	Parameter WRITE_MODE_B bound to: WRITE_FIRST - type: string 
+INFO: [Synth 8-113] binding component instance 'RAMB16_S9_S9_inst' to cell 'RAMB16_S9_S9' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/bram_dp.vhd:540]
+INFO: [Synth 8-256] done synthesizing module 'BRAM_DP' (103#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/bram_dp.vhd:58]
+	Parameter DATA_WIDTHA bound to: 9 - type: integer 
+	Parameter ADDR_WIDTHA bound to: 11 - type: integer 
+	Parameter DATA_WIDTHB bound to: 9 - type: integer 
+	Parameter ADDR_WIDTHB bound to: 11 - type: integer 
+INFO: [Synth 8-3491] module 'BRAM_DP' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/bram_dp.vhd:34' bound to instance 'RAMB16_S9_S9_001' of component 'BRAM_DP' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/tcp_rxbufndemux2.vhd:229]
+	Parameter DATA_WIDTHA bound to: 9 - type: integer 
+	Parameter ADDR_WIDTHA bound to: 11 - type: integer 
+	Parameter DATA_WIDTHB bound to: 9 - type: integer 
+	Parameter ADDR_WIDTHB bound to: 11 - type: integer 
+INFO: [Synth 8-3491] module 'BRAM_DP' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/bram_dp.vhd:34' bound to instance 'RAMB16_S9_S9_001' of component 'BRAM_DP' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/tcp_rxbufndemux2.vhd:229]
+	Parameter DATA_WIDTHA bound to: 9 - type: integer 
+	Parameter ADDR_WIDTHA bound to: 11 - type: integer 
+	Parameter DATA_WIDTHB bound to: 9 - type: integer 
+	Parameter ADDR_WIDTHB bound to: 11 - type: integer 
+INFO: [Synth 8-3491] module 'BRAM_DP' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/bram_dp.vhd:34' bound to instance 'RAMB16_S9_S9_001' of component 'BRAM_DP' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/tcp_rxbufndemux2.vhd:229]
+	Parameter DATA_WIDTHA bound to: 9 - type: integer 
+	Parameter ADDR_WIDTHA bound to: 11 - type: integer 
+	Parameter DATA_WIDTHB bound to: 9 - type: integer 
+	Parameter ADDR_WIDTHB bound to: 11 - type: integer 
+INFO: [Synth 8-3491] module 'BRAM_DP' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/bram_dp.vhd:34' bound to instance 'RAMB16_S9_S9_001' of component 'BRAM_DP' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/tcp_rxbufndemux2.vhd:229]
+	Parameter DATA_WIDTHA bound to: 9 - type: integer 
+	Parameter ADDR_WIDTHA bound to: 11 - type: integer 
+	Parameter DATA_WIDTHB bound to: 9 - type: integer 
+	Parameter ADDR_WIDTHB bound to: 11 - type: integer 
+INFO: [Synth 8-3491] module 'BRAM_DP' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/bram_dp.vhd:34' bound to instance 'RAMB16_S9_S9_001' of component 'BRAM_DP' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/tcp_rxbufndemux2.vhd:229]
+	Parameter DATA_WIDTHA bound to: 9 - type: integer 
+	Parameter ADDR_WIDTHA bound to: 11 - type: integer 
+	Parameter DATA_WIDTHB bound to: 9 - type: integer 
+	Parameter ADDR_WIDTHB bound to: 11 - type: integer 
+INFO: [Synth 8-3491] module 'BRAM_DP' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/bram_dp.vhd:34' bound to instance 'RAMB16_S9_S9_001' of component 'BRAM_DP' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/tcp_rxbufndemux2.vhd:229]
+	Parameter DATA_WIDTHA bound to: 9 - type: integer 
+	Parameter ADDR_WIDTHA bound to: 11 - type: integer 
+	Parameter DATA_WIDTHB bound to: 9 - type: integer 
+	Parameter ADDR_WIDTHB bound to: 11 - type: integer 
+INFO: [Synth 8-3491] module 'BRAM_DP' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/bram_dp.vhd:34' bound to instance 'RAMB16_S9_S9_001' of component 'BRAM_DP' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/tcp_rxbufndemux2.vhd:229]
+INFO: [Synth 8-256] done synthesizing module 'TCP_RXBUFNDEMUX2' (104#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/tcp_rxbufndemux2.vhd:87]
+	Parameter NBUFS bound to: 8 - type: integer 
+	Parameter TX_IDLE_TIMEOUT bound to: 50 - type: integer 
+	Parameter MSS bound to: 16'b0000010110110100 
+INFO: [Synth 8-3491] module 'TCP_TXBUF' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/tcp_txbuf.vhd:51' bound to instance 'Inst_TCP_TXBUF' of component 'TCP_TXBUF' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/com5402.vhd:1190]
+INFO: [Synth 8-638] synthesizing module 'TCP_TXBUF' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/tcp_txbuf.vhd:131]
+	Parameter NBUFS bound to: 8 - type: integer 
+	Parameter TX_IDLE_TIMEOUT bound to: 50 - type: integer 
+	Parameter MSS bound to: 16'b0000010110110100 
+	Parameter DATA_WIDTHA bound to: 9 - type: integer 
+	Parameter ADDR_WIDTHA bound to: 11 - type: integer 
+	Parameter DATA_WIDTHB bound to: 9 - type: integer 
+	Parameter ADDR_WIDTHB bound to: 11 - type: integer 
+INFO: [Synth 8-3491] module 'BRAM_DP' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/bram_dp.vhd:34' bound to instance 'RAMB16_S9_S9_001' of component 'BRAM_DP' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/tcp_txbuf.vhd:297]
+	Parameter DATA_WIDTHA bound to: 9 - type: integer 
+	Parameter ADDR_WIDTHA bound to: 11 - type: integer 
+	Parameter DATA_WIDTHB bound to: 9 - type: integer 
+	Parameter ADDR_WIDTHB bound to: 11 - type: integer 
+INFO: [Synth 8-3491] module 'BRAM_DP' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/bram_dp.vhd:34' bound to instance 'RAMB16_S9_S9_001' of component 'BRAM_DP' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/tcp_txbuf.vhd:297]
+	Parameter DATA_WIDTHA bound to: 9 - type: integer 
+	Parameter ADDR_WIDTHA bound to: 11 - type: integer 
+	Parameter DATA_WIDTHB bound to: 9 - type: integer 
+	Parameter ADDR_WIDTHB bound to: 11 - type: integer 
+INFO: [Synth 8-3491] module 'BRAM_DP' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/bram_dp.vhd:34' bound to instance 'RAMB16_S9_S9_001' of component 'BRAM_DP' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/tcp_txbuf.vhd:297]
+	Parameter DATA_WIDTHA bound to: 9 - type: integer 
+	Parameter ADDR_WIDTHA bound to: 11 - type: integer 
+	Parameter DATA_WIDTHB bound to: 9 - type: integer 
+	Parameter ADDR_WIDTHB bound to: 11 - type: integer 
+INFO: [Synth 8-3491] module 'BRAM_DP' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/bram_dp.vhd:34' bound to instance 'RAMB16_S9_S9_001' of component 'BRAM_DP' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/tcp_txbuf.vhd:297]
+	Parameter DATA_WIDTHA bound to: 9 - type: integer 
+	Parameter ADDR_WIDTHA bound to: 11 - type: integer 
+	Parameter DATA_WIDTHB bound to: 9 - type: integer 
+	Parameter ADDR_WIDTHB bound to: 11 - type: integer 
+INFO: [Synth 8-3491] module 'BRAM_DP' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/bram_dp.vhd:34' bound to instance 'RAMB16_S9_S9_001' of component 'BRAM_DP' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/tcp_txbuf.vhd:297]
+	Parameter DATA_WIDTHA bound to: 9 - type: integer 
+	Parameter ADDR_WIDTHA bound to: 11 - type: integer 
+	Parameter DATA_WIDTHB bound to: 9 - type: integer 
+	Parameter ADDR_WIDTHB bound to: 11 - type: integer 
+INFO: [Synth 8-3491] module 'BRAM_DP' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/bram_dp.vhd:34' bound to instance 'RAMB16_S9_S9_001' of component 'BRAM_DP' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/tcp_txbuf.vhd:297]
+	Parameter DATA_WIDTHA bound to: 9 - type: integer 
+	Parameter ADDR_WIDTHA bound to: 11 - type: integer 
+	Parameter DATA_WIDTHB bound to: 9 - type: integer 
+	Parameter ADDR_WIDTHB bound to: 11 - type: integer 
+INFO: [Synth 8-3491] module 'BRAM_DP' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/bram_dp.vhd:34' bound to instance 'RAMB16_S9_S9_001' of component 'BRAM_DP' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/tcp_txbuf.vhd:297]
+	Parameter DATA_WIDTHA bound to: 9 - type: integer 
+	Parameter ADDR_WIDTHA bound to: 11 - type: integer 
+	Parameter DATA_WIDTHB bound to: 9 - type: integer 
+	Parameter ADDR_WIDTHB bound to: 11 - type: integer 
+INFO: [Synth 8-3491] module 'BRAM_DP' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/bram_dp.vhd:34' bound to instance 'RAMB16_S9_S9_001' of component 'BRAM_DP' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/tcp_txbuf.vhd:297]
+INFO: [Synth 8-256] done synthesizing module 'TCP_TXBUF' (105#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/tcp_txbuf.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'COM5402' (106#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/com5402.vhd:160]
+INFO: [Synth 8-3491] module 'fifo8to32' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-27476-21-10244/realtime/fifo8to32_stub.v:6' bound to instance 'rx_fifo_inst' of component 'fifo8to32' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/gig_eth.vhd:1028]
+INFO: [Synth 8-6157] synthesizing module 'fifo8to32' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-27476-21-10244/realtime/fifo8to32_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo8to32' (107#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-27476-21-10244/realtime/fifo8to32_stub.v:6]
+INFO: [Synth 8-3491] module 'fifo32to8' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-27476-21-10244/realtime/fifo32to8_stub.v:6' bound to instance 'tx_fifo_inst' of component 'fifo32to8' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/gig_eth.vhd:1046]
+INFO: [Synth 8-6157] synthesizing module 'fifo32to8' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-27476-21-10244/realtime/fifo32to8_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo32to8' (108#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-27476-21-10244/realtime/fifo32to8_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'gig_eth' (109#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/gig_eth.vhd:190]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'gtwizard_0_exdes_i'. This will prevent further optimization [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:132]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'dataAligner'. This will prevent further optimization [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:211]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'PRBS_debug_inst0'. This will prevent further optimization [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:78]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'rev_map_inst'. This will prevent further optimization [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:98]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'prbs_source_check_inst_0'. This will prevent further optimization [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:84]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'shifter_inst'. This will prevent further optimization [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:155]
+INFO: [Synth 8-6155] done synthesizing module 'PRBS7_top' (110#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:17]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1211.559 ; gain = 203.539
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1128.227 ; gain = 119.949
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1211.559 ; gain = 203.539
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1139.281 ; gain = 131.004
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1211.559 ; gain = 203.539
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1139.281 ; gain = 131.004
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.064 . Memory (MB): peak = 1211.559 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 93 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.338 . Memory (MB): peak = 1148.438 ; gain = 0.000
+WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_support_clocking_i/clkout1_buf' of type 'BUFGCE' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
+WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_support_clocking_i/clkout2_buf' of type 'BUFGCE' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
+INFO: [Netlist 29-17] Analyzing 279 Unisim elements for replacement
+WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_support_clocking_i/clkout1_buf' of type 'BUFGCTRL' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
+WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_support_clocking_i/clkout2_buf' of type 'BUFGCTRL' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
+Parsing XDC File [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-27476-21-10244/fifo8to32/fifo8to32/fifo8to32_in_context.xdc] for cell 'gig_eth_inst/rx_fifo_inst'
+Finished Parsing XDC File [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-27476-21-10244/fifo8to32/fifo8to32/fifo8to32_in_context.xdc] for cell 'gig_eth_inst/rx_fifo_inst'
+Parsing XDC File [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-27476-21-10244/fifo36x512/fifo36x512/fifo36x512_in_context.xdc] for cell 'control_interface_inst/data_fifo'
+Finished Parsing XDC File [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-27476-21-10244/fifo36x512/fifo36x512/fifo36x512_in_context.xdc] for cell 'control_interface_inst/data_fifo'
+Parsing XDC File [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-27476-21-10244/fifo32to8/fifo32to8/fifo32to8_in_context.xdc] for cell 'gig_eth_inst/tx_fifo_inst'
+Finished Parsing XDC File [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-27476-21-10244/fifo32to8/fifo32to8/fifo32to8_in_context.xdc] for cell 'gig_eth_inst/tx_fifo_inst'
+Parsing XDC File [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-27476-21-10244/clockwiz/clockwiz/clockwiz_in_context.xdc] for cell 'global_clock_reset_inst/clockwiz_inst'
+Finished Parsing XDC File [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-27476-21-10244/clockwiz/clockwiz/clockwiz_in_context.xdc] for cell 'global_clock_reset_inst/clockwiz_inst'
 Parsing XDC File [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/sources_1/ip/gtwizard_0/gtwizard_0.xdc] for cell 'gtwizard_0_exdes_i/gtwizard_0_support_i/gtwizard_0_init_i/inst'
 Finished Parsing XDC File [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/sources_1/ip/gtwizard_0/gtwizard_0.xdc] for cell 'gtwizard_0_exdes_i/gtwizard_0_support_i/gtwizard_0_init_i/inst'
-CRITICAL WARNING: [Designutils 20-1280] Could not find module 'ila_0'. The XDC file c:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/sources_1/ip/ila_0_1/ila_v6_2/constraints/ila.xdc will not be read for any cell of this module.
+Parsing XDC File [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0_board.xdc] for cell 'gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/inst'
+Finished Parsing XDC File [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0_board.xdc] for cell 'gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/inst'
+Parsing XDC File [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0.xdc] for cell 'gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/inst'
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0.xdc:92]
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0.xdc:94]
+Finished Parsing XDC File [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0.xdc] for cell 'gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/PRBS7_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/PRBS7_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
 Parsing XDC File [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/constrs_1/new/top.xdc]
+WARNING: [Vivado 12-4702] SLEW is not a supported property on input port(s). Setting is ignored. [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/constrs_1/new/top.xdc:142]
+WARNING: [Vivado 12-4702] SLEW is not a supported property on input port(s). Setting is ignored. [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/constrs_1/new/top.xdc:149]
+WARNING: [Vivado 12-4702] SLEW is not a supported property on input port(s). Setting is ignored. [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/constrs_1/new/top.xdc:154]
+WARNING: [Vivado 12-4702] SLEW is not a supported property on input port(s). Setting is ignored. [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/constrs_1/new/top.xdc:159]
+WARNING: [Vivado 12-4702] SLEW is not a supported property on input port(s). Setting is ignored. [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/constrs_1/new/top.xdc:164]
+WARNING: [Vivado 12-627] No clocks matched 'sgmii_clock'. [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/constrs_1/new/top.xdc:207]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/constrs_1/new/top.xdc:207]
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks -include_generated_clocks sgmii_clock]'. [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/constrs_1/new/top.xdc:207]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group '. [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/constrs_1/new/top.xdc:207]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
 Finished Parsing XDC File [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/constrs_1/new/top.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/constrs_1/new/top.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/PRBS7_top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/constrs_1/new/top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/PRBS7_top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/PRBS7_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Parsing XDC File [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/dont_touch.xdc]
 Finished Parsing XDC File [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/dont_touch.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/PRBS7_top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/PRBS7_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0_clocks.xdc] for cell 'gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/inst'
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_ports -scoped_to_current_instance gtx_clk]'. [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0_clocks.xdc:11]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0_clocks.xdc:11]
+INFO: [Vivado 12-3272] Current instance is the top level cell 'gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/inst' of design 'preSynthElab_1' [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0_clocks.xdc:29]
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/inst_rgmii_rx_clk' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0_clocks.xdc:29]
+INFO: [Vivado 12-3272] Current instance is the top level cell 'gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/inst' of design 'preSynthElab_1' [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0_clocks.xdc:30]
+WARNING: [Designutils 20-1567] Use of 'set_false_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0_clocks.xdc:43]
+WARNING: [Designutils 20-1567] Use of 'set_false_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0_clocks.xdc:44]
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0_clocks.xdc:47]
+INFO: [Vivado 12-3272] Current instance is the top level cell 'gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/inst' of design 'preSynthElab_1' [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0_clocks.xdc:53]
+INFO: [Vivado 12-3272] Current instance is the top level cell 'gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/inst' of design 'preSynthElab_1' [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0_clocks.xdc:54]
+WARNING: [Designutils 20-1567] Use of 'set_false_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0_clocks.xdc:58]
+WARNING: [Designutils 20-1567] Use of 'set_false_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0_clocks.xdc:59]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_ports -scoped_to_current_instance s_axi_aclk]'. [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0_clocks.xdc:69]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0_clocks.xdc:69]
+INFO: [Vivado 12-3272] Current instance is the top level cell 'gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/inst' of design 'preSynthElab_1' [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0_clocks.xdc:71]
+INFO: [Vivado 12-3272] Current instance is the top level cell 'gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/inst' of design 'preSynthElab_1' [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0_clocks.xdc:72]
+Finished Parsing XDC File [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0_clocks.xdc] for cell 'gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/inst'
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0_clocks.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/PRBS7_top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0_clocks.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/PRBS7_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/PRBS7_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1211.559 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1282.547 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 90 instances were transformed.
+  A total of 118 instances were transformed.
+  BUFGCE => BUFGCTRL: 2 instances
   FD => FDRE: 90 instances
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instance 
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 8 instances
+  RAMB16_S9_S9 => RAMB18E1: 17 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1211.559 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.080 . Memory (MB): peak = 1282.547 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1211.559 ; gain = 203.539
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1282.547 ; gain = 274.270
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7k325tffg900-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1211.559 ; gain = 203.539
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1282.547 ; gain = 274.270
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property KEEP_HIERARCHY = SOFT for gtwizard_0_exdes_i/gtwizard_0_support_i/gtwizard_0_init_i/inst. (constraint file  C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/dont_touch.xdc, line 15).
+Applied set_property KEEP_HIERARCHY = SOFT for gtwizard_0_exdes_i/gtwizard_0_support_i/gtwizard_0_init_i/inst. (constraint file  C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/dont_touch.xdc, line 27).
+Applied set_property KEEP_HIERARCHY = SOFT for gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/inst. (constraint file  C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/dont_touch.xdc, line 32).
 Applied set_property KEEP_HIERARCHY = SOFT for gtwizard_0_exdes_i/gtwizard_0_support_i/gtwizard_0_init_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for gig_eth_inst/rx_fifo_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for control_interface_inst/data_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for gig_eth_inst/tx_fifo_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for global_clock_reset_inst/clockwiz_inst. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1211.559 ; gain = 203.539
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1282.547 ; gain = 274.270
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'tx_state_reg' in module 'gtwizard_0_TX_STARTUP_FSM'
 INFO: [Synth 8-802] inferred FSM for state register 'rx_state_reg' in module 'gtwizard_0_RX_STARTUP_FSM'
+INFO: [Synth 8-802] inferred FSM for state register 'rstState_reg' in module 'GlobalResetter'
+INFO: [Synth 8-802] inferred FSM for state register 'axi_state_reg' in module 'tri_mode_ethernet_mac_0_axi_lite_sm'
+INFO: [Synth 8-802] inferred FSM for state register 'mdio_access_sm_reg' in module 'tri_mode_ethernet_mac_0_axi_lite_sm'
+INFO: [Synth 8-802] inferred FSM for state register 'idelay_reset_cnt_reg' in module 'tri_mode_ethernet_mac_0_support_resets'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave_attachment'
+INFO: [Synth 8-802] inferred FSM for state register 'tx_state_reg' in module 'tri_mode_ethernet_mac_v9_0_17_tx_axi_intf'
+INFO: [Synth 8-802] inferred FSM for state register 'rx_state_reg' in module 'tri_mode_ethernet_mac_v9_0_17_rx_axi_intf'
+INFO: [Synth 8-802] inferred FSM for state register 'state_count_reg' in module 'tri_mode_ethernet_mac_v9_0_17_tx_cntl'
+INFO: [Synth 8-802] inferred FSM for state register 'pause_state_reg' in module 'tri_mode_ethernet_mac_v9_0_17_pfc_tx_cntl'
+INFO: [Synth 8-802] inferred FSM for state register 'legacy_state_reg' in module 'tri_mode_ethernet_mac_v9_0_17_pfc_tx_cntl'
+INFO: [Synth 8-802] inferred FSM for state register 'wr_state_reg' in module 'tri_mode_ethernet_mac_0_tx_client_fifo'
+INFO: [Synth 8-802] inferred FSM for state register 'rd_state_reg' in module 'tri_mode_ethernet_mac_0_tx_client_fifo'
+INFO: [Synth 8-802] inferred FSM for state register 'rd_state_reg' in module 'tri_mode_ethernet_mac_0_rx_client_fifo'
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -593,51 +1343,180 @@ INFO: [Synth 8-3354] encoded FSM with state register 'tx_state_reg' using encodi
                 FSM_DONE |                             1010 |                             1010
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'rx_state_reg' using encoding 'sequential' in module 'gtwizard_0_RX_STARTUP_FSM'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      r0 |                              000 |                              000
+                      r1 |                              001 |                              001
+                      r2 |                              010 |                              010
+                      r3 |                              011 |                              011
+                      r4 |                              100 |                              100
+                  iSTATE |                              101 |                              111
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstState_reg' using encoding 'sequential' in module 'GlobalResetter'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                             0010 |                               00
+                set_data |                             1000 |                               01
+                    init |                             0100 |                               10
+                    poll |                             0001 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'mdio_access_sm_reg' using encoding 'one-hot' in module 'tri_mode_ethernet_mac_0_axi_lite_sm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 startup |                            00000 |                            00000
+            change_speed |                            00001 |                            00001
+                 mdio_rd |                            00010 |                            00010
+         mdio_poll_check |                            00011 |                            00011
+                 mdio_1g |                            00100 |                            00100
+             mdio_10_100 |                            00101 |                            00101
+           mdio_rgmii_rd |                            00110 |                            00110
+      mdio_rgmii_rd_poll |                            00111 |                            00111
+              mdio_rgmii |                            01000 |                            01000
+           mdio_delay_rd |                            01001 |                            01001
+      mdio_delay_rd_poll |                            01010 |                            01010
+              mdio_delay |                            01011 |                            01011
+            mdio_restart |                            01100 |                            01100
+           mdio_loopback |                            01101 |                            01101
+              mdio_stats |                            01110 |                            01110
+   mdio_stats_poll_check |                            01111 |                            01111
+            reset_mac_rx |                            10000 |                            10000
+            reset_mac_tx |                            10001 |                            10001
+               cnfg_mdio |                            10010 |                            10010
+               cnfg_flow |                            10011 |                            10011
+            cnfg_lo_addr |                            10100 |                            10101
+            cnfg_hi_addr |                            10101 |                            10110
+             cnfg_filter |                            10110 |                            10100
+             check_speed |                            10111 |                            10111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'axi_state_reg' using encoding 'sequential' in module 'tri_mode_ethernet_mac_0_axi_lite_sm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE7 |                  000000000000001 |                             0000
+                 iSTATE6 |                  000000000000010 |                             0001
+                 iSTATE2 |                  000000000000100 |                             0010
+                  iSTATE |                  000000000001000 |                             0011
+                 iSTATE0 |                  000000000010000 |                             0100
+                iSTATE13 |                  000000000100000 |                             0101
+                iSTATE11 |                  000000001000000 |                             0110
+                 iSTATE9 |                  000000010000000 |                             0111
+                iSTATE10 |                  000000100000000 |                             1000
+                 iSTATE8 |                  000001000000000 |                             1001
+                 iSTATE5 |                  000010000000000 |                             1010
+                 iSTATE3 |                  000100000000000 |                             1011
+                 iSTATE4 |                  001000000000000 |                             1100
+                 iSTATE1 |                  010000000000000 |                             1101
+                iSTATE12 |                  100000000000000 |                             1110
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'idelay_reset_cnt_reg' using encoding 'one-hot' in module 'tri_mode_ethernet_mac_0_support_resets'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE2 |                             0001 |                               00
+                  iSTATE |                             0010 |                               01
+                 iSTATE0 |                             0100 |                               10
+                 iSTATE1 |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'slave_attachment'
+INFO: [Synth 8-6159] Found Keep on FSM register 'tx_state_reg' in module 'tri_mode_ethernet_mac_v9_0_17_tx_axi_intf', re-encoding will not be performed
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0000 |                             0000
+                   LOAD1 |                             0001 |                             0001
+                   LOAD2 |                             0010 |                             0010
+                    WAIT |                             0011 |                             0011
+                END_LOAD |                             0100 |                             0100
+              CLEAR_PIPE |                             0101 |                             0101
+                 RELOAD1 |                             0110 |                             0110
+                 RELOAD2 |                             0111 |                             0111
+                    SEND |                             1000 |                             1000
+                   BURST |                             1001 |                             1001
+---------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               01 |                               00
+                     PKT |                               11 |                               01
+                    WAIT |                               10 |                               10
+                    DONE |                               00 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rx_state_reg' using encoding 'sequential' in module 'tri_mode_ethernet_mac_v9_0_17_rx_axi_intf'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                              001 |                              001
+        TRANSMIT_REQUEST |                              010 |                              010
+            TRANSMITTING |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_count_reg' in module 'tri_mode_ethernet_mac_v9_0_17_tx_cntl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                             0001 |                              000
+                     REQ |                             1000 |                              001
+                    WAIT |                             0100 |                              010
+                   COUNT |                             0010 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'legacy_state_reg' using encoding 'one-hot' in module 'tri_mode_ethernet_mac_v9_0_17_pfc_tx_cntl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  P_IDLE |                               00 |                               00
+                   P_REQ |                               01 |                               01
+                  P_WAIT |                               10 |                               10
+                  P_HOLD |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'pause_state_reg' using encoding 'sequential' in module 'tri_mode_ethernet_mac_v9_0_17_pfc_tx_cntl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  idle_s |                             0000 |                             0000
+                queue1_s |                             0001 |                             0001
+                queue2_s |                             0010 |                             0010
+                queue3_s |                             0011 |                             0011
+           start_data1_s |                             0100 |                             0100
+         data_preload1_s |                             0101 |                             0101
+                 frame_s |                             0110 |                             1000
+             handshake_s |                             0111 |                             1001
+                finish_s |                             1000 |                             1010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rd_state_reg' using encoding 'sequential' in module 'tri_mode_ethernet_mac_0_tx_client_fifo'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  wait_s |                               01 |                               00
+                  data_s |                               11 |                               01
+                ovflow_s |                               00 |                               11
+                   eof_s |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wr_state_reg' using encoding 'sequential' in module 'tri_mode_ethernet_mac_0_tx_client_fifo'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  wait_s |                         00000001 |                              000
+                queue1_s |                         00000010 |                              001
+                queue2_s |                         00000100 |                              010
+                queue3_s |                         00001000 |                              011
+             queue_sof_s |                         00010000 |                              100
+                  data_s |                         00100000 |                              110
+                   eof_s |                         01000000 |                              111
+                   sof_s |                         10000000 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rd_state_reg' using encoding 'one-hot' in module 'tri_mode_ethernet_mac_0_rx_client_fifo'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1211.559 ; gain = 203.539
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1282.547 ; gain = 274.270
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input   32 Bit       Adders := 1     
-	   2 Input    9 Bit       Adders := 1     
-	   2 Input    8 Bit       Adders := 7     
-	   2 Input    7 Bit       Adders := 6     
-	   2 Input    6 Bit       Adders := 9     
-	   2 Input    5 Bit       Adders := 16    
-	   2 Input    4 Bit       Adders := 2     
-	   4 Input    3 Bit       Adders := 32    
-	   2 Input    2 Bit       Adders := 1     
-+---XORs : 
-	   2 Input     64 Bit         XORs := 2     
-	   2 Input      1 Bit         XORs := 128   
-+---Registers : 
-	              128 Bit    Registers := 1     
-	              127 Bit    Registers := 1     
-	               64 Bit    Registers := 12    
-	               32 Bit    Registers := 1     
-	                9 Bit    Registers := 1     
-	                8 Bit    Registers := 7     
-	                7 Bit    Registers := 8     
-	                6 Bit    Registers := 9     
-	                5 Bit    Registers := 16    
-	                4 Bit    Registers := 2     
-	                3 Bit    Registers := 32    
-	                2 Bit    Registers := 1     
-	                1 Bit    Registers := 56    
-+---Muxes : 
-	   2 Input   64 Bit        Muxes := 3     
-	   2 Input   32 Bit        Muxes := 1     
-	   2 Input    8 Bit        Muxes := 2     
-	  10 Input    4 Bit        Muxes := 1     
-	   2 Input    4 Bit        Muxes := 10    
-	  11 Input    4 Bit        Muxes := 1     
-	   2 Input    2 Bit        Muxes := 1     
-	   2 Input    1 Bit        Muxes := 33    
-	  10 Input    1 Bit        Muxes := 17    
-	  11 Input    1 Bit        Muxes := 19    
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -654,25 +1533,28 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1211.559 ; gain = 203.539
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:05 ; elapsed = 00:01:07 . Memory (MB): peak = 1282.547 ; gain = 274.270
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
+WARNING: [Synth 8-3321] set_false_path : Empty to list for constraint at line 71 of c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0.xdc. [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0.xdc:71]
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/inst/s_axi_aclk' to 'gig_eth_insti_5/gtx_clk'
+INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 1211.559 ; gain = 203.539
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:11 ; elapsed = 00:01:12 . Memory (MB): peak = 1282.547 ; gain = 274.270
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 1211.559 ; gain = 203.539
+Finished Timing Optimization : Time (s): cpu = 00:01:12 ; elapsed = 00:01:13 . Memory (MB): peak = 1282.547 ; gain = 274.270
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 1211.559 ; gain = 203.539
+Finished Technology Mapping : Time (s): cpu = 00:01:17 ; elapsed = 00:01:18 . Memory (MB): peak = 1282.547 ; gain = 274.270
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -799,99 +1681,134 @@ WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:150]
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:150]
 INFO: [Common 17-14] Message 'Synth 8-5396' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-5410] Found another clock driver \global_clock_reset_inst/BUFG_inst :O [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/global_clock_reset.vhd:99]
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1211.559 ; gain = 203.539
+Finished IO Insertion : Time (s): cpu = 00:01:20 ; elapsed = 00:01:22 . Memory (MB): peak = 1282.547 ; gain = 274.270
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1211.559 ; gain = 203.539
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:20 ; elapsed = 00:01:22 . Memory (MB): peak = 1282.547 ; gain = 274.270
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1211.559 ; gain = 203.539
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:21 ; elapsed = 00:01:23 . Memory (MB): peak = 1282.547 ; gain = 274.270
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1211.559 ; gain = 203.539
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:21 ; elapsed = 00:01:23 . Memory (MB): peak = 1282.547 ; gain = 274.270
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1211.559 ; gain = 203.539
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:21 ; elapsed = 00:01:23 . Memory (MB): peak = 1282.547 ; gain = 274.270
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1211.559 ; gain = 203.539
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:21 ; elapsed = 00:01:23 . Memory (MB): peak = 1282.547 ; gain = 274.270
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
 ---------------------------------------------------------------------------------
 
 Report BlackBoxes: 
-+-+--------------+----------+
-| |BlackBox name |Instances |
-+-+--------------+----------+
-+-+--------------+----------+
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |fifo36x512    |         1|
+|2     |fifo8to32     |         1|
+|3     |fifo32to8     |         1|
+|4     |clockwiz      |         1|
++------+--------------+----------+
 
 Report Cell Usage: 
 +------+--------------+------+
 |      |Cell          |Count |
 +------+--------------+------+
-|1     |BUFG          |     7|
-|2     |CARRY4        |    54|
-|3     |GTXE2_CHANNEL |     1|
-|4     |GTXE2_COMMON  |     1|
-|5     |IBUFDS_GTE2   |     1|
-|6     |LUT1          |    65|
-|7     |LUT2          |   236|
-|8     |LUT3          |   281|
-|9     |LUT4          |   218|
-|10    |LUT5          |   105|
-|11    |LUT6          |   414|
-|12    |MMCME2_ADV    |     2|
-|13    |MUXF7         |     1|
-|14    |FD            |    78|
-|15    |FDCE          |     5|
-|16    |FDRE          |  1686|
-|17    |FDSE          |    10|
-|18    |IBUF          |     3|
-|19    |IBUFDS        |     1|
+|1     |clockwiz      |     1|
+|2     |fifo32to8     |     1|
+|3     |fifo36x512    |     1|
+|4     |fifo8to32     |     1|
+|5     |BUFG          |    10|
+|6     |BUFGCE        |     2|
+|7     |BUFIO         |     1|
+|8     |BUFR          |     1|
+|9     |CARRY4        |   382|
+|10    |GTXE2_CHANNEL |     1|
+|11    |GTXE2_COMMON  |     1|
+|12    |IBUFDS_GTE2   |     2|
+|13    |IDDR          |     5|
+|14    |IDELAYCTRL    |     1|
+|15    |IDELAYE2      |     5|
+|16    |LUT1          |   830|
+|17    |LUT2          |  1156|
+|18    |LUT3          |   976|
+|19    |LUT4          |   766|
+|20    |LUT5          |   719|
+|21    |LUT6          |  2204|
+|22    |MMCME2_ADV    |     3|
+|23    |MUXCY         |    70|
+|24    |MUXF7         |    17|
+|25    |ODDR          |     6|
+|26    |RAM64X1D      |     8|
+|27    |RAMB16_S9_S9  |    17|
+|28    |RAMB36E1      |     2|
+|29    |SRL16E        |    20|
+|30    |SRLC32E       |     1|
+|31    |XORCY         |    70|
+|32    |FD            |    78|
+|33    |FDCE          |  1363|
+|34    |FDPE          |    79|
+|35    |FDRE          |  4527|
+|36    |FDSE          |   173|
+|37    |IBUF          |    15|
+|38    |IBUFDS        |     1|
+|39    |IOBUF         |     1|
+|40    |OBUF          |     8|
 +------+--------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1211.559 ; gain = 203.539
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:21 ; elapsed = 00:01:23 . Memory (MB): peak = 1282.547 ; gain = 274.270
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 632 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:46 . Memory (MB): peak = 1211.559 ; gain = 203.539
-Synthesis Optimization Complete : Time (s): cpu = 00:00:46 ; elapsed = 00:00:49 . Memory (MB): peak = 1211.559 ; gain = 203.539
+Synthesis finished with 0 errors, 0 critical warnings and 634 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:03 ; elapsed = 00:01:17 . Memory (MB): peak = 1282.547 ; gain = 131.004
+Synthesis Optimization Complete : Time (s): cpu = 00:01:21 ; elapsed = 00:01:23 . Memory (MB): peak = 1282.547 ; gain = 274.270
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.057 . Memory (MB): peak = 1211.559 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 136 Unisim elements for replacement
+WARNING: [Synth 37-28] Duplicate attribute 'INIT' found for instance 'update_pause_ad_int_reg' of module 'FDRE'.
+Resolution: Check your design sources near the definition of the module or any related 'include files, looking for duplicate definitions with different values.
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.202 . Memory (MB): peak = 1282.547 ; gain = 0.000
+WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_support_clocking_i/clkout1_buf' of type 'BUFGCE' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
+WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_support_clocking_i/clkout2_buf' of type 'BUFGCE' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
+INFO: [Netlist 29-17] Analyzing 668 Unisim elements for replacement
+WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_support_clocking_i/clkout1_buf' of type 'BUFGCTRL' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
+WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_support_clocking_i/clkout2_buf' of type 'BUFGCTRL' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-140] Inserted 2 IBUFs to IO ports without IO buffers.
 INFO: [Opt 31-141] Inserted 2 OBUFs to IO ports without IO buffers.
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1211.559 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1282.547 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 78 instances were transformed.
+  A total of 126 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 20 instances
+  BUFGCE => BUFGCTRL: 2 instances
   FD => FDRE: 78 instances
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instance 
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 8 instances
+  RAMB16_S9_S9 => RAMB18E1: 17 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-88 Infos, 136 Warnings, 1 Critical Warnings and 0 Errors encountered.
+333 Infos, 176 Warnings, 4 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:51 ; elapsed = 00:00:55 . Memory (MB): peak = 1211.559 ; gain = 203.539
-INFO: [Common 17-600] The following parameters have non-default value.
-tcl.collectionResultDisplayLimit
+synth_design: Time (s): cpu = 00:01:28 ; elapsed = 00:01:31 . Memory (MB): peak = 1282.547 ; gain = 274.270
 INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
 INFO: [Common 17-1381] The checkpoint 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/PRBS7_top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file PRBS7_top_utilization_synth.rpt -pb PRBS7_top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Jul 13 11:46:00 2021...
+INFO: [Common 17-206] Exiting Vivado at Mon Jul 26 14:36:09 2021...
