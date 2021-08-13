@@ -117,93 +117,85 @@ set_property PACKAGE_PIN K2 [get_ports TXP_OUT]
 ##set_property ASYNC_REG TRUE [get_cells -hier -filter {name=~*gt0_frame_check*system_reset_r_reg}]
 
 ##---------- Set False Path from one clock to other ----------
-set_property PACKAGE_PIN G12 [get_ports SYS_RST]
-set_property IOSTANDARD LVCMOS25 [get_ports SYS_RST]
 
 #-------------------------------------------------------------< System Clock Interface
 # PadFunction: IO_L12P_T1_MRCC_33
 set_property IOSTANDARD DIFF_SSTL15 [get_ports SYS_CLK_P]
-set_property PACKAGE_PIN AD12 [get_ports SYS_CLK_P]
 # PadFunction: IO_L12N_T1_MRCC_33
 set_property IOSTANDARD DIFF_SSTL15 [get_ports SYS_CLK_N]
+set_property PACKAGE_PIN AD12 [get_ports SYS_CLK_P]
 set_property PACKAGE_PIN AD11 [get_ports SYS_CLK_N]
 #-------------------------------------------------------------> System Clock Interface
 
 #-------------------------------------------------------------< SGMII clcok for GTP/GTH/GTX
 set_property IOSTANDARD LVCMOS25 [get_ports SGMIICLK_Q0_P]
-set_property PACKAGE_PIN G8 [get_ports SGMIICLK_Q0_P]
 set_property IOSTANDARD LVCMOS25 [get_ports SGMIICLK_Q0_N]
+set_property PACKAGE_PIN G8 [get_ports SGMIICLK_Q0_P]
 set_property PACKAGE_PIN G7 [get_ports SGMIICLK_Q0_N]
 #-------------------------------------------------------------> SGMII clcok
 
 #-------------------------------------------------------------< System reset Interface
 # Bank: 33 - GPIO_SW_7 (CPU_RESET)
 set_property VCCAUX_IO DONTCARE [get_ports SYS_RST]
-set_property SLEW SLOW [get_ports SYS_RST]
 set_property IOSTANDARD LVCMOS15 [get_ports SYS_RST]
-set_property LOC AB7 [get_ports SYS_RST]
+set_property PACKAGE_PIN AB7 [get_ports SYS_RST]
 #-------------------------------------------------------------> System reset Interface
 
 #-------------------------------------------------------------< DIPSw4Bit
 # GPIO_DIP_SW0
-set_property SLEW SLOW [get_ports {DIPSw4Bit[0]}]
 set_property IOSTANDARD LVCMOS25 [get_ports {DIPSw4Bit[0]}]
-set_property LOC Y29 [get_ports {DIPSw4Bit[0]}]
+set_property PACKAGE_PIN Y29 [get_ports {DIPSw4Bit[0]}]
 
 # GPIO_DIP_SW1
-set_property SLEW SLOW [get_ports {DIPSw4Bit[1]}]
 set_property IOSTANDARD LVCMOS25 [get_ports {DIPSw4Bit[1]}]
-set_property LOC W29 [get_ports {DIPSw4Bit[1]}]
+set_property PACKAGE_PIN W29 [get_ports {DIPSw4Bit[1]}]
 
 # GPIO_DIP_SW2
-set_property SLEW SLOW [get_ports {DIPSw4Bit[2]}]
 set_property IOSTANDARD LVCMOS25 [get_ports {DIPSw4Bit[2]}]
-set_property LOC AA28 [get_ports {DIPSw4Bit[2]}]
+set_property PACKAGE_PIN AA28 [get_ports {DIPSw4Bit[2]}]
 
 # GPIO_DIP_SW3
-set_property SLEW SLOW [get_ports {DIPSw4Bit[3]}]
 set_property IOSTANDARD LVCMOS25 [get_ports {DIPSw4Bit[3]}]
-set_property LOC Y28 [get_ports {DIPSw4Bit[3]}]
+set_property PACKAGE_PIN Y28 [get_ports {DIPSw4Bit[3]}]
 #-------------------------------------------------------------> DIPS24Bit
 
 #-------------------------------------------------------------< Ethernet interface
-set_property PACKAGE_PIN L20      [get_ports PHY_RESET_N]
-set_property IOSTANDARD  LVCMOS25 [get_ports PHY_RESET_N]
-set_property PACKAGE_PIN J21      [get_ports MDIO]
-set_property IOSTANDARD  LVCMOS25 [get_ports MDIO]
-set_property PACKAGE_PIN R23      [get_ports MDC]
-set_property IOSTANDARD  LVCMOS25 [get_ports MDC]
+set_property PACKAGE_PIN L20 [get_ports PHY_RESET_N]
+set_property IOSTANDARD LVCMOS25 [get_ports PHY_RESET_N]
+set_property PACKAGE_PIN J21 [get_ports MDIO]
+set_property IOSTANDARD LVCMOS25 [get_ports MDIO]
+set_property PACKAGE_PIN R23 [get_ports MDC]
+set_property IOSTANDARD LVCMOS25 [get_ports MDC]
 
-set_property PACKAGE_PIN U28      [get_ports RGMII_RXD[3]]
-set_property PACKAGE_PIN T25      [get_ports RGMII_RXD[2]]
-set_property PACKAGE_PIN U25      [get_ports RGMII_RXD[1]]
-set_property PACKAGE_PIN U30      [get_ports RGMII_RXD[0]]
-set_property IOSTANDARD  LVCMOS25 [get_ports RGMII_RXD[3]]
-set_property IOSTANDARD  LVCMOS25 [get_ports RGMII_RXD[2]]
-set_property IOSTANDARD  LVCMOS25 [get_ports RGMII_RXD[1]]
-set_property IOSTANDARD  LVCMOS25 [get_ports RGMII_RXD[0]]
+set_property PACKAGE_PIN U28 [get_ports {RGMII_RXD[3]}]
+set_property PACKAGE_PIN T25 [get_ports {RGMII_RXD[2]}]
+set_property PACKAGE_PIN U25 [get_ports {RGMII_RXD[1]}]
+set_property PACKAGE_PIN U30 [get_ports {RGMII_RXD[0]}]
+set_property IOSTANDARD LVCMOS25 [get_ports {RGMII_RXD[3]}]
+set_property IOSTANDARD LVCMOS25 [get_ports {RGMII_RXD[2]}]
+set_property IOSTANDARD LVCMOS25 [get_ports {RGMII_RXD[1]}]
+set_property IOSTANDARD LVCMOS25 [get_ports {RGMII_RXD[0]}]
 
-set_property PACKAGE_PIN L28      [get_ports RGMII_TXD[3]]
-set_property PACKAGE_PIN M29      [get_ports RGMII_TXD[2]]
-set_property PACKAGE_PIN N25      [get_ports RGMII_TXD[1]]
-set_property PACKAGE_PIN N27      [get_ports RGMII_TXD[0]]
-set_property IOSTANDARD  LVCMOS25 [get_ports RGMII_TXD[3]]
-set_property IOSTANDARD  LVCMOS25 [get_ports RGMII_TXD[2]]
-set_property IOSTANDARD  LVCMOS25 [get_ports RGMII_TXD[1]]
-set_property IOSTANDARD  LVCMOS25 [get_ports RGMII_TXD[0]]
+set_property PACKAGE_PIN L28 [get_ports {RGMII_TXD[3]}]
+set_property PACKAGE_PIN M29 [get_ports {RGMII_TXD[2]}]
+set_property PACKAGE_PIN N25 [get_ports {RGMII_TXD[1]}]
+set_property PACKAGE_PIN N27 [get_ports {RGMII_TXD[0]}]
+set_property IOSTANDARD LVCMOS25 [get_ports {RGMII_TXD[3]}]
+set_property IOSTANDARD LVCMOS25 [get_ports {RGMII_TXD[2]}]
+set_property IOSTANDARD LVCMOS25 [get_ports {RGMII_TXD[1]}]
+set_property IOSTANDARD LVCMOS25 [get_ports {RGMII_TXD[0]}]
 
-set_property PACKAGE_PIN M27      [get_ports RGMII_TX_CTL]
-set_property PACKAGE_PIN K30      [get_ports RGMII_TXC]
-set_property IOSTANDARD  LVCMOS25 [get_ports RGMII_TX_CTL]
-set_property IOSTANDARD  LVCMOS25 [get_ports RGMII_TXC]
-set_property PACKAGE_PIN R28      [get_ports RGMII_RX_CTL]
-set_property IOSTANDARD  LVCMOS25 [get_ports RGMII_RX_CTL]
-set_property PACKAGE_PIN U27      [get_ports RGMII_RXC]
-set_property IOSTANDARD  LVCMOS25 [get_ports RGMII_RXC]
+set_property PACKAGE_PIN M27 [get_ports RGMII_TX_CTL]
+set_property PACKAGE_PIN K30 [get_ports RGMII_TXC]
+set_property IOSTANDARD LVCMOS25 [get_ports RGMII_TX_CTL]
+set_property IOSTANDARD LVCMOS25 [get_ports RGMII_TXC]
+set_property PACKAGE_PIN R28 [get_ports RGMII_RX_CTL]
+set_property IOSTANDARD LVCMOS25 [get_ports RGMII_RX_CTL]
+set_property PACKAGE_PIN U27 [get_ports RGMII_RXC]
+set_property IOSTANDARD LVCMOS25 [get_ports RGMII_RXC]
 
 # already set in ip / tri_mode_ethernet_mac_0.xdc
 # create_clock -period 8 [get_ports RGMII_RXC]
-set rx_clk_var [get_clocks -of [get_ports RGMII_RXC]]
 set_clock_groups -asynchronous -group [get_clocks -include_generated_clocks -of_objects [get_ports RGMII_RXC]] -group [get_clocks -include_generated_clocks sgmii_clock]
 
 set_property IODELAY_GROUP tri_mode_ethernet_mac_iodelay_grp [get_cells -hier -filter {name =~ *trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_idelayctrl_common_i}]
@@ -224,20 +216,27 @@ set_property IDELAY_VALUE 10 [get_cells -hier -filter {name =~ *trimac_fifo_bloc
 
 # FIFO Clock Crossing Constraints
 # control signal is synched separately so this is a false path
-set_max_delay -from [get_cells -hier -filter {name =~ *tx_fifo_i/rd_addr_txfer_reg[*]}] -to [get_cells -hier -filter {name =~ *fifo*wr_rd_addr_reg[*]}] 6 -datapath_only
-set_max_delay -from [get_cells -hier -filter {name =~ *rx_fifo_i/rd_addr_reg[*]}] -to [get_cells -hier -filter {name =~ *fifo*wr_rd_addr_reg[*]}] 6 -datapath_only
-set_max_delay -from [get_cells -hier -filter {name =~ *rx_fifo_i/wr_store_frame_tog_reg}] -to [get_cells -hier -filter {name =~ *fifo_i/resync_wr_store_frame_tog/data_sync_reg0}] 6 -datapath_only
-set_max_delay -from [get_cells -hier -filter {name =~ *rx_fifo_i/update_addr_tog_reg}] -to [get_cells -hier -filter {name =~ *rx_fifo_i/sync_rd_addr_tog/data_sync_reg0}] 6 -datapath_only
-set_max_delay -from [get_cells -hier -filter {name =~ *tx_fifo_i/wr_frame_in_fifo_reg}] -to [get_cells -hier -filter {name =~ *tx_fifo_i/resync_wr_frame_in_fifo/data_sync_reg0}] 6 -datapath_only
-set_max_delay -from [get_cells -hier -filter {name =~ *tx_fifo_i/wr_frames_in_fifo_reg}] -to [get_cells -hier -filter {name =~ *tx_fifo_i/resync_wr_frames_in_fifo/data_sync_reg0}] 6 -datapath_only
-set_max_delay -from [get_cells -hier -filter {name =~ *tx_fifo_i/frame_in_fifo_valid_tog_reg}] -to [get_cells -hier -filter {name =~ *tx_fifo_i/resync_fif_valid_tog/data_sync_reg0}] 6 -datapath_only
-set_max_delay -from [get_cells -hier -filter {name =~ *tx_fifo_i/rd_txfer_tog_reg}] -to [get_cells -hier -filter {name =~ *tx_fifo_i/resync_rd_txfer_tog/data_sync_reg0}] 6 -datapath_only
-set_max_delay -from [get_cells -hier -filter {name =~ *tx_fifo_i/rd_tran_frame_tog_reg}] -to [get_cells -hier -filter {name =~ *tx_fifo_i/resync_rd_tran_frame_tog/data_sync_reg0}] 6 -datapath_only
+set_max_delay -datapath_only -from [get_cells -hier -filter {name =~ *tx_fifo_i/rd_addr_txfer_reg[*]}] -to [get_cells -hier -filter {name =~ *fifo*wr_rd_addr_reg[*]}] 6.000
+set_max_delay -datapath_only -from [get_cells -hier -filter {name =~ *rx_fifo_i/rd_addr_reg[*]}] -to [get_cells -hier -filter {name =~ *fifo*wr_rd_addr_reg[*]}] 6.000
+set_max_delay -datapath_only -from [get_cells -hier -filter {name =~ *rx_fifo_i/wr_store_frame_tog_reg}] -to [get_cells -hier -filter {name =~ *fifo_i/resync_wr_store_frame_tog/data_sync_reg0}] 6.000
+set_max_delay -datapath_only -from [get_cells -hier -filter {name =~ *rx_fifo_i/update_addr_tog_reg}] -to [get_cells -hier -filter {name =~ *rx_fifo_i/sync_rd_addr_tog/data_sync_reg0}] 6.000
+set_max_delay -datapath_only -from [get_cells -hier -filter {name =~ *tx_fifo_i/wr_frame_in_fifo_reg}] -to [get_cells -hier -filter {name =~ *tx_fifo_i/resync_wr_frame_in_fifo/data_sync_reg0}] 6.000
+set_max_delay -datapath_only -from [get_cells -hier -filter {name =~ *tx_fifo_i/wr_frames_in_fifo_reg}] -to [get_cells -hier -filter {name =~ *tx_fifo_i/resync_wr_frames_in_fifo/data_sync_reg0}] 6.000
+set_max_delay -datapath_only -from [get_cells -hier -filter {name =~ *tx_fifo_i/frame_in_fifo_valid_tog_reg}] -to [get_cells -hier -filter {name =~ *tx_fifo_i/resync_fif_valid_tog/data_sync_reg0}] 6.000
+set_max_delay -datapath_only -from [get_cells -hier -filter {name =~ *tx_fifo_i/rd_txfer_tog_reg}] -to [get_cells -hier -filter {name =~ *tx_fifo_i/resync_rd_txfer_tog/data_sync_reg0}] 6.000
+set_max_delay -datapath_only -from [get_cells -hier -filter {name =~ *tx_fifo_i/rd_tran_frame_tog_reg}] -to [get_cells -hier -filter {name =~ *tx_fifo_i/resync_rd_tran_frame_tog/data_sync_reg0}] 6.000
 
 # False paths for async reset removal synchronizers
 set_false_path -to [get_pins -of_objects [get_cells -hierarchical -filter {NAME =~ *tri_mode_ethernet*reset_sync*}] -filter {NAME =~ *PRE}]
 
 #-------------------------------------------------------------> Ethernet interface
+
+#-------------------------------------------------------------< IIC Interface
+set_property PACKAGE_PIN AB25 [get_ports SDA]
+set_property IOSTANDARD LVCMOS25 [get_ports SDA]
+
+set_property PACKAGE_PIN AB28 [get_ports SCL]
+set_property IOSTANDARD LVCMOS25 [get_ports SCL]
 
 
 

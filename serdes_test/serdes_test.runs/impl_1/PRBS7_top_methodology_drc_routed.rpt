@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Mon Jul 26 14:41:21 2021
+| Date         : Fri Aug 13 14:10:20 2021
 | Host         : 21-10244 running 64-bit major release  (build 9200)
 | Command      : report_methodology -file PRBS7_top_methodology_drc_routed.rpt -pb PRBS7_top_methodology_drc_routed.pb -rpx PRBS7_top_methodology_drc_routed.rpx
 | Design       : PRBS7_top
@@ -31,10 +31,9 @@ Table of Contents
 | TIMING-54 | Critical Warning | Scoped false path or clock group constraint between clocks        | 4          |
 | AVAL-324  | Warning          | Hard_blocks_needs_LOCs                                            | 1          |
 | LUTAR-1   | Warning          | LUT drives async reset alert                                      | 7          |
-| PDRC-190  | Warning          | Suboptimally placed synchronized register chain                   | 20         |
+| PDRC-190  | Warning          | Suboptimally placed synchronized register chain                   | 21         |
 | TIMING-9  | Warning          | Unknown CDC Logic                                                 | 1          |
 | TIMING-47 | Warning          | False path or asynchronous clock group between synchronous clocks | 4          |
-| XDCC-5    | Warning          | User Non-Timing constraint/property overwritten                   | 1          |
 +-----------+------------------+-------------------------------------------------------------------+------------+
 
 2. REPORT DETAILS
@@ -3971,1072 +3970,1072 @@ Related violations: <none>
 
 TIMING-17#787 Critical Warning
 Non-clocked sequential cell  
-The clock pin control_interface_inst/sRegOut_reg[0]/C is not reached by a timing clock
+The clock pin control_interface_inst/sPulseReg_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#788 Critical Warning
 Non-clocked sequential cell  
-The clock pin control_interface_inst/sRegOut_reg[10]/C is not reached by a timing clock
+The clock pin control_interface_inst/sRegOut_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#789 Critical Warning
 Non-clocked sequential cell  
-The clock pin control_interface_inst/sRegOut_reg[11]/C is not reached by a timing clock
+The clock pin control_interface_inst/sRegOut_reg[10]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#790 Critical Warning
 Non-clocked sequential cell  
-The clock pin control_interface_inst/sRegOut_reg[12]/C is not reached by a timing clock
+The clock pin control_interface_inst/sRegOut_reg[11]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#791 Critical Warning
 Non-clocked sequential cell  
-The clock pin control_interface_inst/sRegOut_reg[13]/C is not reached by a timing clock
+The clock pin control_interface_inst/sRegOut_reg[12]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#792 Critical Warning
 Non-clocked sequential cell  
-The clock pin control_interface_inst/sRegOut_reg[14]/C is not reached by a timing clock
+The clock pin control_interface_inst/sRegOut_reg[13]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#793 Critical Warning
 Non-clocked sequential cell  
-The clock pin control_interface_inst/sRegOut_reg[15]/C is not reached by a timing clock
+The clock pin control_interface_inst/sRegOut_reg[14]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#794 Critical Warning
 Non-clocked sequential cell  
-The clock pin control_interface_inst/sRegOut_reg[1]/C is not reached by a timing clock
+The clock pin control_interface_inst/sRegOut_reg[15]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#795 Critical Warning
 Non-clocked sequential cell  
-The clock pin control_interface_inst/sRegOut_reg[2]/C is not reached by a timing clock
+The clock pin control_interface_inst/sRegOut_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#796 Critical Warning
 Non-clocked sequential cell  
-The clock pin control_interface_inst/sRegOut_reg[3]/C is not reached by a timing clock
+The clock pin control_interface_inst/sRegOut_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#797 Critical Warning
 Non-clocked sequential cell  
-The clock pin control_interface_inst/sRegOut_reg[4]/C is not reached by a timing clock
+The clock pin control_interface_inst/sRegOut_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#798 Critical Warning
 Non-clocked sequential cell  
-The clock pin control_interface_inst/sRegOut_reg[5]/C is not reached by a timing clock
+The clock pin control_interface_inst/sRegOut_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#799 Critical Warning
 Non-clocked sequential cell  
-The clock pin control_interface_inst/sRegOut_reg[6]/C is not reached by a timing clock
+The clock pin control_interface_inst/sRegOut_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#800 Critical Warning
 Non-clocked sequential cell  
-The clock pin control_interface_inst/sRegOut_reg[7]/C is not reached by a timing clock
+The clock pin control_interface_inst/sRegOut_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#801 Critical Warning
 Non-clocked sequential cell  
-The clock pin control_interface_inst/sRegOut_reg[8]/C is not reached by a timing clock
+The clock pin control_interface_inst/sRegOut_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#802 Critical Warning
 Non-clocked sequential cell  
-The clock pin control_interface_inst/sRegOut_reg[9]/C is not reached by a timing clock
+The clock pin control_interface_inst/sRegOut_reg[8]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#803 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/FSM_onehot_mdio_access_sm_reg[0]/C is not reached by a timing clock
+The clock pin control_interface_inst/sRegOut_reg[9]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#804 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/FSM_onehot_mdio_access_sm_reg[1]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/FSM_onehot_mdio_access_sm_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#805 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/FSM_onehot_mdio_access_sm_reg[2]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/FSM_onehot_mdio_access_sm_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#806 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/FSM_onehot_mdio_access_sm_reg[3]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/FSM_onehot_mdio_access_sm_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#807 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/FSM_sequential_axi_state_reg[0]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/FSM_onehot_mdio_access_sm_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#808 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/FSM_sequential_axi_state_reg[1]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/FSM_sequential_axi_state_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#809 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/FSM_sequential_axi_state_reg[2]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/FSM_sequential_axi_state_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#810 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/FSM_sequential_axi_state_reg[3]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/FSM_sequential_axi_state_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#811 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/FSM_sequential_axi_state_reg[4]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/FSM_sequential_axi_state_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#812 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/addr_reg[10]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/FSM_sequential_axi_state_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#813 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/addr_reg[2]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/addr_reg[10]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#814 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/addr_reg[3]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/addr_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#815 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/addr_reg[4]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/addr_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#816 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/addr_reg[8]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/addr_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#817 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/addr_reg[9]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/addr_reg[8]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#818 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/axi_access_sm_reg[0]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/addr_reg[9]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#819 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/axi_access_sm_reg[1]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/axi_access_sm_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#820 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/axi_rd_data_reg[0]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/axi_access_sm_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#821 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/axi_rd_data_reg[10]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/axi_rd_data_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#822 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/axi_rd_data_reg[11]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/axi_rd_data_reg[10]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#823 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/axi_rd_data_reg[12]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/axi_rd_data_reg[11]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#824 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/axi_rd_data_reg[13]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/axi_rd_data_reg[12]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#825 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/axi_rd_data_reg[14]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/axi_rd_data_reg[13]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#826 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/axi_rd_data_reg[15]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/axi_rd_data_reg[14]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#827 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/axi_rd_data_reg[1]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/axi_rd_data_reg[15]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#828 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/axi_rd_data_reg[2]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/axi_rd_data_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#829 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/axi_rd_data_reg[3]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/axi_rd_data_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#830 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/axi_rd_data_reg[4]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/axi_rd_data_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#831 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/axi_rd_data_reg[5]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/axi_rd_data_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#832 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/axi_rd_data_reg[6]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/axi_rd_data_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#833 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/axi_rd_data_reg[7]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/axi_rd_data_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#834 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/axi_rd_data_reg[8]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/axi_rd_data_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#835 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/axi_rd_data_reg[9]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/axi_rd_data_reg[8]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#836 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/axi_status_reg[0]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/axi_rd_data_reg[9]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#837 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/axi_status_reg[1]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/axi_status_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#838 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/axi_status_reg[2]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/axi_status_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#839 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/axi_status_reg[3]_inv/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/axi_status_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#840 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/axi_status_reg[4]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/axi_status_reg[3]_inv/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#841 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/axi_wr_data_reg[0]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/axi_status_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#842 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/axi_wr_data_reg[10]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/axi_wr_data_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#843 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/axi_wr_data_reg[11]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/axi_wr_data_reg[10]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#844 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/axi_wr_data_reg[12]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/axi_wr_data_reg[11]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#845 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/axi_wr_data_reg[13]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/axi_wr_data_reg[12]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#846 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/axi_wr_data_reg[14]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/axi_wr_data_reg[13]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#847 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/axi_wr_data_reg[15]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/axi_wr_data_reg[14]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#848 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/axi_wr_data_reg[1]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/axi_wr_data_reg[15]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#849 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/axi_wr_data_reg[26]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/axi_wr_data_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#850 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/axi_wr_data_reg[28]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/axi_wr_data_reg[26]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#851 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/axi_wr_data_reg[2]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/axi_wr_data_reg[28]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#852 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/axi_wr_data_reg[30]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/axi_wr_data_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#853 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/axi_wr_data_reg[31]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/axi_wr_data_reg[30]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#854 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/axi_wr_data_reg[3]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/axi_wr_data_reg[31]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#855 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/axi_wr_data_reg[4]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/axi_wr_data_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#856 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/axi_wr_data_reg[5]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/axi_wr_data_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#857 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/axi_wr_data_reg[6]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/axi_wr_data_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#858 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/axi_wr_data_reg[7]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/axi_wr_data_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#859 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/axi_wr_data_reg[8]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/axi_wr_data_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#860 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/axi_wr_data_reg[9]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/axi_wr_data_reg[8]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#861 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/count_shift_reg[19]_srl20/CLK is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/axi_wr_data_reg[9]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#862 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/count_shift_reg[20]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/count_shift_reg[19]_srl20/CLK is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#863 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/drive_mdio_reg/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/count_shift_reg[20]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#864 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/mdio_op_reg[0]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/drive_mdio_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#865 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/mdio_op_reg[1]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/mdio_op_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#866 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/mdio_ready_reg/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/mdio_op_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#867 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/mdio_reg_addr_reg[0]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/mdio_ready_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#868 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/mdio_reg_addr_reg[1]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/mdio_reg_addr_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#869 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/mdio_reg_addr_reg[2]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/mdio_reg_addr_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#870 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/mdio_reg_addr_reg[3]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/mdio_reg_addr_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#871 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/mdio_reg_addr_reg[4]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/mdio_reg_addr_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#872 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/mdio_wr_data_reg[0]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/mdio_reg_addr_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#873 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/mdio_wr_data_reg[10]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/mdio_wr_data_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#874 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/mdio_wr_data_reg[11]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/mdio_wr_data_reg[10]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#875 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/mdio_wr_data_reg[12]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/mdio_wr_data_reg[11]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#876 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/mdio_wr_data_reg[13]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/mdio_wr_data_reg[12]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#877 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/mdio_wr_data_reg[14]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/mdio_wr_data_reg[13]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#878 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/mdio_wr_data_reg[15]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/mdio_wr_data_reg[14]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#879 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/mdio_wr_data_reg[16]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/mdio_wr_data_reg[15]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#880 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/mdio_wr_data_reg[17]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/mdio_wr_data_reg[16]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#881 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/mdio_wr_data_reg[18]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/mdio_wr_data_reg[17]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#882 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/mdio_wr_data_reg[19]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/mdio_wr_data_reg[18]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#883 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/mdio_wr_data_reg[1]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/mdio_wr_data_reg[19]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#884 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/mdio_wr_data_reg[20]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/mdio_wr_data_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#885 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/mdio_wr_data_reg[25]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/mdio_wr_data_reg[20]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#886 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/mdio_wr_data_reg[26]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/mdio_wr_data_reg[25]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#887 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/mdio_wr_data_reg[28]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/mdio_wr_data_reg[26]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#888 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/mdio_wr_data_reg[2]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/mdio_wr_data_reg[28]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#889 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/mdio_wr_data_reg[30]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/mdio_wr_data_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#890 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/mdio_wr_data_reg[31]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/mdio_wr_data_reg[30]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#891 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/mdio_wr_data_reg[3]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/mdio_wr_data_reg[31]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#892 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/mdio_wr_data_reg[4]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/mdio_wr_data_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#893 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/mdio_wr_data_reg[5]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/mdio_wr_data_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#894 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/mdio_wr_data_reg[6]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/mdio_wr_data_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#895 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/mdio_wr_data_reg[7]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/mdio_wr_data_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#896 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/mdio_wr_data_reg[8]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/mdio_wr_data_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#897 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/mdio_wr_data_reg[9]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/mdio_wr_data_reg[8]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#898 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/s_axi_araddr_reg[10]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/mdio_wr_data_reg[9]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#899 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/s_axi_araddr_reg[2]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/s_axi_araddr_reg[10]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#900 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/s_axi_araddr_reg[3]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/s_axi_araddr_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#901 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/s_axi_araddr_reg[4]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/s_axi_araddr_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#902 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/s_axi_araddr_reg[8]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/s_axi_araddr_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#903 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/s_axi_araddr_reg[9]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/s_axi_araddr_reg[8]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#904 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/s_axi_arvalid_int_reg/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/s_axi_araddr_reg[9]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#905 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/s_axi_awaddr_reg[10]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/s_axi_arvalid_int_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#906 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/s_axi_awaddr_reg[2]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/s_axi_awaddr_reg[10]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#907 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/s_axi_awaddr_reg[3]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/s_axi_awaddr_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#908 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/s_axi_awaddr_reg[4]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/s_axi_awaddr_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#909 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/s_axi_awaddr_reg[8]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/s_axi_awaddr_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#910 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/s_axi_awaddr_reg[9]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/s_axi_awaddr_reg[8]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#911 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/s_axi_awvalid_int_reg/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/s_axi_awaddr_reg[9]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#912 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/s_axi_bready_int_reg/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/s_axi_awvalid_int_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#913 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/s_axi_rready_int_reg/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/s_axi_bready_int_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#914 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/s_axi_wdata_reg[0]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/s_axi_rready_int_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#915 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/s_axi_wdata_reg[10]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/s_axi_wdata_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#916 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/s_axi_wdata_reg[11]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/s_axi_wdata_reg[10]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#917 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/s_axi_wdata_reg[12]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/s_axi_wdata_reg[11]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#918 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/s_axi_wdata_reg[13]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/s_axi_wdata_reg[12]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#919 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/s_axi_wdata_reg[14]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/s_axi_wdata_reg[13]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#920 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/s_axi_wdata_reg[15]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/s_axi_wdata_reg[14]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#921 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/s_axi_wdata_reg[16]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/s_axi_wdata_reg[15]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#922 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/s_axi_wdata_reg[17]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/s_axi_wdata_reg[16]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#923 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/s_axi_wdata_reg[18]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/s_axi_wdata_reg[17]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#924 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/s_axi_wdata_reg[19]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/s_axi_wdata_reg[18]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#925 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/s_axi_wdata_reg[1]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/s_axi_wdata_reg[19]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#926 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/s_axi_wdata_reg[20]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/s_axi_wdata_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#927 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/s_axi_wdata_reg[25]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/s_axi_wdata_reg[20]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#928 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/s_axi_wdata_reg[26]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/s_axi_wdata_reg[25]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#929 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/s_axi_wdata_reg[28]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/s_axi_wdata_reg[26]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#930 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/s_axi_wdata_reg[2]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/s_axi_wdata_reg[28]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#931 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/s_axi_wdata_reg[30]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/s_axi_wdata_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#932 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/s_axi_wdata_reg[31]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/s_axi_wdata_reg[30]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#933 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/s_axi_wdata_reg[3]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/s_axi_wdata_reg[31]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#934 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/s_axi_wdata_reg[4]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/s_axi_wdata_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#935 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/s_axi_wdata_reg[5]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/s_axi_wdata_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#936 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/s_axi_wdata_reg[6]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/s_axi_wdata_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#937 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/s_axi_wdata_reg[7]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/s_axi_wdata_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#938 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/s_axi_wdata_reg[8]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/s_axi_wdata_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#939 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/s_axi_wdata_reg[9]/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/s_axi_wdata_reg[8]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#940 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/s_axi_wvalid_int_reg/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/s_axi_wdata_reg[9]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#941 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/start_access_reg/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/s_axi_wvalid_int_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#942 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/start_mdio_reg/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/start_access_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#943 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/update_speed_reg_reg/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/start_mdio_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#944 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/update_speed_sync_inst/data_sync_reg0/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/update_speed_reg_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#945 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/update_speed_sync_inst/data_sync_reg1/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/update_speed_sync_inst/data_sync_reg0/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#946 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/update_speed_sync_inst/data_sync_reg2/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/update_speed_sync_inst/data_sync_reg1/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#947 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/update_speed_sync_inst/data_sync_reg3/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/update_speed_sync_inst/data_sync_reg2/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#948 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/update_speed_sync_inst/data_sync_reg4/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/update_speed_sync_inst/data_sync_reg3/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#949 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/axi_lite_controller/writenread_reg/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/update_speed_sync_inst/data_sync_reg4/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#950 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/example_resets/axi_lite_reset_gen/reset_sync0/C is not reached by a timing clock
+The clock pin gig_eth_inst/axi_lite_controller/writenread_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#951 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/example_resets/axi_lite_reset_gen/reset_sync1/C is not reached by a timing clock
+The clock pin gig_eth_inst/example_resets/axi_lite_reset_gen/reset_sync0/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#952 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/example_resets/axi_lite_reset_gen/reset_sync2/C is not reached by a timing clock
+The clock pin gig_eth_inst/example_resets/axi_lite_reset_gen/reset_sync1/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#953 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/example_resets/axi_lite_reset_gen/reset_sync3/C is not reached by a timing clock
+The clock pin gig_eth_inst/example_resets/axi_lite_reset_gen/reset_sync2/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#954 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/example_resets/axi_lite_reset_gen/reset_sync4/C is not reached by a timing clock
+The clock pin gig_eth_inst/example_resets/axi_lite_reset_gen/reset_sync3/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#955 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/example_resets/chk_reset_gen/reset_sync0/C is not reached by a timing clock
+The clock pin gig_eth_inst/example_resets/axi_lite_reset_gen/reset_sync4/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#956 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/example_resets/chk_reset_gen/reset_sync1/C is not reached by a timing clock
+The clock pin gig_eth_inst/example_resets/chk_reset_gen/reset_sync0/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#957 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/example_resets/chk_reset_gen/reset_sync2/C is not reached by a timing clock
+The clock pin gig_eth_inst/example_resets/chk_reset_gen/reset_sync1/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#958 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/example_resets/chk_reset_gen/reset_sync3/C is not reached by a timing clock
+The clock pin gig_eth_inst/example_resets/chk_reset_gen/reset_sync2/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#959 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/example_resets/chk_reset_gen/reset_sync4/C is not reached by a timing clock
+The clock pin gig_eth_inst/example_resets/chk_reset_gen/reset_sync3/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#960 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/example_resets/dcm_sync/data_sync_reg0/C is not reached by a timing clock
+The clock pin gig_eth_inst/example_resets/chk_reset_gen/reset_sync4/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#961 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/example_resets/dcm_sync/data_sync_reg1/C is not reached by a timing clock
+The clock pin gig_eth_inst/example_resets/dcm_sync/data_sync_reg0/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#962 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/example_resets/dcm_sync/data_sync_reg2/C is not reached by a timing clock
+The clock pin gig_eth_inst/example_resets/dcm_sync/data_sync_reg1/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#963 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/example_resets/dcm_sync/data_sync_reg3/C is not reached by a timing clock
+The clock pin gig_eth_inst/example_resets/dcm_sync/data_sync_reg2/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#964 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/example_resets/dcm_sync/data_sync_reg4/C is not reached by a timing clock
+The clock pin gig_eth_inst/example_resets/dcm_sync/data_sync_reg3/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#965 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/example_resets/glbl_reset_gen/reset_sync0/C is not reached by a timing clock
+The clock pin gig_eth_inst/example_resets/dcm_sync/data_sync_reg4/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#966 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/example_resets/glbl_reset_gen/reset_sync1/C is not reached by a timing clock
+The clock pin gig_eth_inst/example_resets/glbl_reset_gen/reset_sync0/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#967 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/example_resets/glbl_reset_gen/reset_sync2/C is not reached by a timing clock
+The clock pin gig_eth_inst/example_resets/glbl_reset_gen/reset_sync1/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#968 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/example_resets/glbl_reset_gen/reset_sync3/C is not reached by a timing clock
+The clock pin gig_eth_inst/example_resets/glbl_reset_gen/reset_sync2/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#969 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/example_resets/glbl_reset_gen/reset_sync4/C is not reached by a timing clock
+The clock pin gig_eth_inst/example_resets/glbl_reset_gen/reset_sync3/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#970 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/example_resets/gtx_pre_resetn_reg/C is not reached by a timing clock
+The clock pin gig_eth_inst/example_resets/glbl_reset_gen/reset_sync4/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#971 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/example_resets/gtx_reset_gen/reset_sync0/C is not reached by a timing clock
+The clock pin gig_eth_inst/example_resets/gtx_pre_resetn_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#972 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/example_resets/gtx_reset_gen/reset_sync1/C is not reached by a timing clock
+The clock pin gig_eth_inst/example_resets/gtx_reset_gen/reset_sync0/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#973 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/example_resets/gtx_reset_gen/reset_sync2/C is not reached by a timing clock
+The clock pin gig_eth_inst/example_resets/gtx_reset_gen/reset_sync1/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#974 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/example_resets/gtx_reset_gen/reset_sync3/C is not reached by a timing clock
+The clock pin gig_eth_inst/example_resets/gtx_reset_gen/reset_sync2/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#975 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/example_resets/gtx_reset_gen/reset_sync4/C is not reached by a timing clock
+The clock pin gig_eth_inst/example_resets/gtx_reset_gen/reset_sync3/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#976 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/example_resets/gtx_resetn_reg/C is not reached by a timing clock
+The clock pin gig_eth_inst/example_resets/gtx_reset_gen/reset_sync4/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#977 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/example_resets/phy_reset_count_reg[0]/C is not reached by a timing clock
+The clock pin gig_eth_inst/example_resets/gtx_resetn_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#978 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/example_resets/phy_reset_count_reg[1]/C is not reached by a timing clock
+The clock pin gig_eth_inst/example_resets/phy_reset_count_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#979 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/example_resets/phy_reset_count_reg[2]/C is not reached by a timing clock
+The clock pin gig_eth_inst/example_resets/phy_reset_count_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#980 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/example_resets/phy_reset_count_reg[3]/C is not reached by a timing clock
+The clock pin gig_eth_inst/example_resets/phy_reset_count_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#981 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/example_resets/phy_reset_count_reg[4]/C is not reached by a timing clock
+The clock pin gig_eth_inst/example_resets/phy_reset_count_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#982 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/example_resets/phy_reset_count_reg[5]/C is not reached by a timing clock
+The clock pin gig_eth_inst/example_resets/phy_reset_count_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#983 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/example_resets/phy_resetn_int_reg/C is not reached by a timing clock
+The clock pin gig_eth_inst/example_resets/phy_reset_count_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#984 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/example_resets/s_axi_pre_resetn_reg/C is not reached by a timing clock
+The clock pin gig_eth_inst/example_resets/phy_resetn_int_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#985 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/example_resets/s_axi_resetn_reg/C is not reached by a timing clock
+The clock pin gig_eth_inst/example_resets/s_axi_pre_resetn_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#986 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/mac_rx_sof_gen.state_reg/C is not reached by a timing clock
+The clock pin gig_eth_inst/example_resets/s_axi_resetn_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#987 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/mac_rx_sof_gen.tvalid_prev_reg/C is not reached by a timing clock
+The clock pin gig_eth_inst/mac_rx_sof_gen.state_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#988 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/mac_rx_sof_reg/C is not reached by a timing clock
+The clock pin gig_eth_inst/mac_rx_sof_gen.tvalid_prev_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#989 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/rx_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/C is not reached by a timing clock
+The clock pin gig_eth_inst/mac_rx_sof_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#990 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/rx_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/C is not reached by a timing clock
+The clock pin gig_eth_inst/rx_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#991 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/rx_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/C is not reached by a timing clock
+The clock pin gig_eth_inst/rx_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#992 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/rx_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/C is not reached by a timing clock
+The clock pin gig_eth_inst/rx_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#993 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/rx_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][4]/C is not reached by a timing clock
+The clock pin gig_eth_inst/rx_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#994 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/rx_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][5]/C is not reached by a timing clock
+The clock pin gig_eth_inst/rx_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#995 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/rx_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[1][0]/C is not reached by a timing clock
+The clock pin gig_eth_inst/rx_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#996 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/rx_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[1][1]/C is not reached by a timing clock
+The clock pin gig_eth_inst/rx_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[1][0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#997 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/rx_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[1][2]/C is not reached by a timing clock
+The clock pin gig_eth_inst/rx_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[1][1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#998 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/rx_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[1][3]/C is not reached by a timing clock
+The clock pin gig_eth_inst/rx_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[1][2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#999 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/rx_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[1][4]/C is not reached by a timing clock
+The clock pin gig_eth_inst/rx_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[1][3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#1000 Critical Warning
 Non-clocked sequential cell  
-The clock pin gig_eth_inst/rx_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[1][5]/C is not reached by a timing clock
+The clock pin gig_eth_inst/rx_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[1][4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-54#1 Critical Warning
@@ -5121,102 +5120,107 @@ Related violations: <none>
 
 PDRC-190#1 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[0] in site SLICE_X77Y238 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[0] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[0] in site SLICE_X98Y232 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[0] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#2 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[1] in site SLICE_X79Y237 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[1] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[1] in site SLICE_X96Y230 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[1] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#3 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[2] in site SLICE_X80Y237 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[2] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[2] in site SLICE_X97Y231 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[2] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#4 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[3] in site SLICE_X78Y239 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[3] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[3] in site SLICE_X98Y230 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[3] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#5 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[0] in site SLICE_X76Y237 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[0] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[0] in site SLICE_X93Y229 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[0] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#6 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[1] in site SLICE_X75Y237 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[1] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[1] in site SLICE_X95Y231 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[1] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#7 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[2] in site SLICE_X78Y236 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[2] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[2] in site SLICE_X90Y232 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[2] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#8 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[3] in site SLICE_X77Y236 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[3] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[3] in site SLICE_X92Y231 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[3] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#9 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_reg[0] in site SLICE_X71Y239 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_1_reg[0] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[4] in site SLICE_X93Y232 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[4] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#10 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_reg[1] in site SLICE_X73Y239 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_1_reg[1] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_reg[0] in site SLICE_X102Y231 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_1_reg[0] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#11 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_reg[2] in site SLICE_X74Y239 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_1_reg[2] is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_reg[1] in site SLICE_X101Y231 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_1_reg[1] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#12 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell gig_eth_inst/rx_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d2_reg in site SLICE_X46Y85 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell gig_eth_inst/rx_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg is not placed in the same (SLICE) site.
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_reg[2] in site SLICE_X100Y231 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_1_reg[2] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#13 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/inst/tri_mode_ethernet_mac_0_core/man_reset.sync_bus2ip_reset_bus2ip_clk/sync_rst0_reg in site SLICE_X17Y137 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/inst/tri_mode_ethernet_mac_0_core/man_reset.sync_bus2ip_reset_bus2ip_clk/sync_rst1_reg is not placed in the same (SLICE) site.
+The FDRE cell gig_eth_inst/rx_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d2_reg in site SLICE_X104Y132 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell gig_eth_inst/rx_fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#14 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/inst/tri_mode_ethernet_mac_0_core/man_reset.sync_glbl_rstn_bus2ip_clk/sync_rst0_reg in site SLICE_X20Y136 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/inst/tri_mode_ethernet_mac_0_core/man_reset.sync_glbl_rstn_bus2ip_clk/sync_rst1_reg is not placed in the same (SLICE) site.
+The FDRE cell gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/inst/tri_mode_ethernet_mac_0_core/man_reset.sync_bus2ip_reset_bus2ip_clk/sync_rst0_reg in site SLICE_X91Y135 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/inst/tri_mode_ethernet_mac_0_core/man_reset.sync_bus2ip_reset_bus2ip_clk/sync_rst1_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#15 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/inst/tri_mode_ethernet_mac_0_core/sync_axi_rx_rstn_rx_clk/sync_rst0_reg in site SLICE_X13Y123 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/inst/tri_mode_ethernet_mac_0_core/sync_axi_rx_rstn_rx_clk/sync_rst1_reg is not placed in the same (SLICE) site.
+The FDRE cell gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/inst/tri_mode_ethernet_mac_0_core/man_reset.sync_glbl_rstn_bus2ip_clk/sync_rst0_reg in site SLICE_X93Y135 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/inst/tri_mode_ethernet_mac_0_core/man_reset.sync_glbl_rstn_bus2ip_clk/sync_rst1_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#16 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/inst/tri_mode_ethernet_mac_0_core/sync_glbl_rstn_rx_clk/sync_rst0_reg in site SLICE_X11Y122 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/inst/tri_mode_ethernet_mac_0_core/sync_glbl_rstn_rx_clk/sync_rst1_reg is not placed in the same (SLICE) site.
+The FDRE cell gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/inst/tri_mode_ethernet_mac_0_core/sync_axi_rx_rstn_rx_clk/sync_rst0_reg in site SLICE_X78Y132 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/inst/tri_mode_ethernet_mac_0_core/sync_axi_rx_rstn_rx_clk/sync_rst1_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#17 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/inst/tri_mode_ethernet_mac_0_core/sync_glbl_rstn_tx_clk/sync_rst0_reg in site SLICE_X22Y134 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/inst/tri_mode_ethernet_mac_0_core/sync_glbl_rstn_tx_clk/sync_rst1_reg is not placed in the same (SLICE) site.
+The FDRE cell gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/inst/tri_mode_ethernet_mac_0_core/sync_glbl_rstn_rx_clk/sync_rst0_reg in site SLICE_X76Y133 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/inst/tri_mode_ethernet_mac_0_core/sync_glbl_rstn_rx_clk/sync_rst1_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#18 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/inst/tri_mode_ethernet_mac_0_core/sync_int_rx_rst_mgmt_rx_clk/sync_rst0_reg in site SLICE_X16Y127 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/inst/tri_mode_ethernet_mac_0_core/sync_int_rx_rst_mgmt_rx_clk/sync_rst1_reg is not placed in the same (SLICE) site.
+The FDRE cell gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/inst/tri_mode_ethernet_mac_0_core/sync_glbl_rstn_tx_clk/sync_rst0_reg in site SLICE_X78Y135 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/inst/tri_mode_ethernet_mac_0_core/sync_glbl_rstn_tx_clk/sync_rst1_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#19 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/inst/tri_mode_ethernet_mac_0_core/sync_int_tx_rst_mgmt_tx_clk/sync_rst0_reg in site SLICE_X18Y130 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/inst/tri_mode_ethernet_mac_0_core/sync_int_tx_rst_mgmt_tx_clk/sync_rst1_reg is not placed in the same (SLICE) site.
+The FDRE cell gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/inst/tri_mode_ethernet_mac_0_core/sync_int_rx_rst_mgmt_rx_clk/sync_rst0_reg in site SLICE_X79Y130 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/inst/tri_mode_ethernet_mac_0_core/sync_int_rx_rst_mgmt_rx_clk/sync_rst1_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#20 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/inst/tri_mode_ethernet_mac_0_core/sync_tx_axi_rstn_tx_clk/sync_rst0_reg in site SLICE_X23Y134 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/inst/tri_mode_ethernet_mac_0_core/sync_tx_axi_rstn_tx_clk/sync_rst1_reg is not placed in the same (SLICE) site.
+The FDRE cell gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/inst/tri_mode_ethernet_mac_0_core/sync_int_tx_rst_mgmt_tx_clk/sync_rst0_reg in site SLICE_X83Y129 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/inst/tri_mode_ethernet_mac_0_core/sync_int_tx_rst_mgmt_tx_clk/sync_rst1_reg is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#21 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/inst/tri_mode_ethernet_mac_0_core/sync_tx_axi_rstn_tx_clk/sync_rst0_reg in site SLICE_X79Y133 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/inst/tri_mode_ethernet_mac_0_core/sync_tx_axi_rstn_tx_clk/sync_rst1_reg is not placed in the same (SLICE) site.
 Related violations: <none>
 
 TIMING-9#1 Warning
@@ -5242,13 +5246,6 @@ Related violations: <none>
 TIMING-47#4 Warning
 False path or asynchronous clock group between synchronous clocks  
 A False Path timing constraint is set between synchronous clocks gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/inst_rgmii_rx_clk and RGMII_RXC (see constraint position 44 in the Timing Constraint window in Vivado IDE). Masking entire synchronous clock domains via set_false_path or set_clock_groups may result in failure in hardware.
-Related violations: <none>
-
-XDCC-5#1 Warning
-User Non-Timing constraint/property overwritten  
-A new XDC property IOSTANDARD on SYS_RST overrides a previous user property.
-New Source: C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/constrs_1/new/top.xdc (Line: 143)
-Previous Source: C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/constrs_1/new/top.xdc (Line: 121)
 Related violations: <none>
 
 

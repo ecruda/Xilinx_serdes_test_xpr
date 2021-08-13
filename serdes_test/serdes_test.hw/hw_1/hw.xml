@@ -4,7 +4,7 @@
 <!-- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.        -->
 
 <hwsession version="1" minor="2">
-  <device name="xc7k325t_0" gui_info="dashboard1=hw_ila_1[xc7k325t_0/hw_ila_1/Settings=ILA_SETTINGS_1;xc7k325t_0/hw_ila_1/Trigger Setup=ILA_TRIGGER_1;xc7k325t_0/hw_ila_1/Waveform=ILA_WAVE_1;xc7k325t_0/hw_ila_1/Status=ILA_STATUS_1;xc7k325t_0/hw_ila_1/Capture Setup=ILA_CAPTURE_1;]"/>
+  <device name="xc7k325t_0" gui_info="dashboard1=hw_ila_1[xc7k325t_0/hw_ila_1/Settings=ILA_SETTINGS_1;xc7k325t_0/hw_ila_1/Trigger Setup=ILA_TRIGGER_1;xc7k325t_0/hw_ila_1/Waveform=ILA_WAVE_1;xc7k325t_0/hw_ila_1/Status=ILA_STATUS_1;xc7k325t_0/hw_ila_1/Capture Setup=ILA_CAPTURE_1;],dashboard2=hw_ila_2[xc7k325t_0/hw_ila_2/Trigger Setup=ILA_TRIGGER_1;xc7k325t_0/hw_ila_2/Status=ILA_STATUS_1;xc7k325t_0/hw_ila_2/Capture Setup=ILA_CAPTURE_1;xc7k325t_0/hw_ila_2/Waveform=ILA_WAVE_1;xc7k325t_0/hw_ila_2/Settings=ILA_SETTINGS_1;],dashboard3=hw_ila_3[xc7k325t_0/hw_ila_3/Status=ILA_STATUS_1;xc7k325t_0/hw_ila_3/Capture Setup=ILA_CAPTURE_1;xc7k325t_0/hw_ila_3/Settings=ILA_SETTINGS_1;xc7k325t_0/hw_ila_3/Trigger Setup=ILA_TRIGGER_1;xc7k325t_0/hw_ila_3/Waveform=ILA_WAVE_1;]"/>
   <ObjectList object_type="hw_device" gui_info="">
     <Object name="xc7k325t_0" gui_info="">
       <Properties Property="FULL_PROBES.FILE" value="$_project_name_.runs/impl_1/PRBS7_top.ltx"/>
@@ -27,6 +27,10 @@
       <Properties Property="CORE_REFRESH_RATE_MS" value="500"/>
     </Object>
     <Object name="u_ila_1" gui_info="">
+      <Properties Property="CONTROL.TRIGGER_CONDITION" value="AND"/>
+      <Properties Property="CORE_REFRESH_RATE_MS" value="500"/>
+    </Object>
+    <Object name="u_ila_2" gui_info="">
       <Properties Property="CONTROL.TRIGGER_CONDITION" value="AND"/>
       <Properties Property="CORE_REFRESH_RATE_MS" value="500"/>
     </Object>
@@ -253,7 +257,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_1"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe2[5:0]"/>
+        <Option Id="MAP" value="probe4[5:0]"/>
         <Option Id="NAME.CUSTOM" value=""/>
         <Option Id="NAME.SELECT" value="Long"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -309,6 +313,538 @@
       </probeOptions>
       <nets>
         <net name="bypass"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq512&apos;hXXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq512&apos;hXXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_2"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe1[511:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq512&apos;hXXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="config_reg[511]"/>
+        <net name="config_reg[510]"/>
+        <net name="config_reg[509]"/>
+        <net name="config_reg[508]"/>
+        <net name="config_reg[507]"/>
+        <net name="config_reg[506]"/>
+        <net name="config_reg[505]"/>
+        <net name="config_reg[504]"/>
+        <net name="config_reg[503]"/>
+        <net name="config_reg[502]"/>
+        <net name="config_reg[501]"/>
+        <net name="config_reg[500]"/>
+        <net name="config_reg[499]"/>
+        <net name="config_reg[498]"/>
+        <net name="config_reg[497]"/>
+        <net name="config_reg[496]"/>
+        <net name="config_reg[495]"/>
+        <net name="config_reg[494]"/>
+        <net name="config_reg[493]"/>
+        <net name="config_reg[492]"/>
+        <net name="config_reg[491]"/>
+        <net name="config_reg[490]"/>
+        <net name="config_reg[489]"/>
+        <net name="config_reg[488]"/>
+        <net name="config_reg[487]"/>
+        <net name="config_reg[486]"/>
+        <net name="config_reg[485]"/>
+        <net name="config_reg[484]"/>
+        <net name="config_reg[483]"/>
+        <net name="config_reg[482]"/>
+        <net name="config_reg[481]"/>
+        <net name="config_reg[480]"/>
+        <net name="config_reg[479]"/>
+        <net name="config_reg[478]"/>
+        <net name="config_reg[477]"/>
+        <net name="config_reg[476]"/>
+        <net name="config_reg[475]"/>
+        <net name="config_reg[474]"/>
+        <net name="config_reg[473]"/>
+        <net name="config_reg[472]"/>
+        <net name="config_reg[471]"/>
+        <net name="config_reg[470]"/>
+        <net name="config_reg[469]"/>
+        <net name="config_reg[468]"/>
+        <net name="config_reg[467]"/>
+        <net name="config_reg[466]"/>
+        <net name="config_reg[465]"/>
+        <net name="config_reg[464]"/>
+        <net name="config_reg[463]"/>
+        <net name="config_reg[462]"/>
+        <net name="config_reg[461]"/>
+        <net name="config_reg[460]"/>
+        <net name="config_reg[459]"/>
+        <net name="config_reg[458]"/>
+        <net name="config_reg[457]"/>
+        <net name="config_reg[456]"/>
+        <net name="config_reg[455]"/>
+        <net name="config_reg[454]"/>
+        <net name="config_reg[453]"/>
+        <net name="config_reg[452]"/>
+        <net name="config_reg[451]"/>
+        <net name="config_reg[450]"/>
+        <net name="config_reg[449]"/>
+        <net name="config_reg[448]"/>
+        <net name="config_reg[447]"/>
+        <net name="config_reg[446]"/>
+        <net name="config_reg[445]"/>
+        <net name="config_reg[444]"/>
+        <net name="config_reg[443]"/>
+        <net name="config_reg[442]"/>
+        <net name="config_reg[441]"/>
+        <net name="config_reg[440]"/>
+        <net name="config_reg[439]"/>
+        <net name="config_reg[438]"/>
+        <net name="config_reg[437]"/>
+        <net name="config_reg[436]"/>
+        <net name="config_reg[435]"/>
+        <net name="config_reg[434]"/>
+        <net name="config_reg[433]"/>
+        <net name="config_reg[432]"/>
+        <net name="config_reg[431]"/>
+        <net name="config_reg[430]"/>
+        <net name="config_reg[429]"/>
+        <net name="config_reg[428]"/>
+        <net name="config_reg[427]"/>
+        <net name="config_reg[426]"/>
+        <net name="config_reg[425]"/>
+        <net name="config_reg[424]"/>
+        <net name="config_reg[423]"/>
+        <net name="config_reg[422]"/>
+        <net name="config_reg[421]"/>
+        <net name="config_reg[420]"/>
+        <net name="config_reg[419]"/>
+        <net name="config_reg[418]"/>
+        <net name="config_reg[417]"/>
+        <net name="config_reg[416]"/>
+        <net name="config_reg[415]"/>
+        <net name="config_reg[414]"/>
+        <net name="config_reg[413]"/>
+        <net name="config_reg[412]"/>
+        <net name="config_reg[411]"/>
+        <net name="config_reg[410]"/>
+        <net name="config_reg[409]"/>
+        <net name="config_reg[408]"/>
+        <net name="config_reg[407]"/>
+        <net name="config_reg[406]"/>
+        <net name="config_reg[405]"/>
+        <net name="config_reg[404]"/>
+        <net name="config_reg[403]"/>
+        <net name="config_reg[402]"/>
+        <net name="config_reg[401]"/>
+        <net name="config_reg[400]"/>
+        <net name="config_reg[399]"/>
+        <net name="config_reg[398]"/>
+        <net name="config_reg[397]"/>
+        <net name="config_reg[396]"/>
+        <net name="config_reg[395]"/>
+        <net name="config_reg[394]"/>
+        <net name="config_reg[393]"/>
+        <net name="config_reg[392]"/>
+        <net name="config_reg[391]"/>
+        <net name="config_reg[390]"/>
+        <net name="config_reg[389]"/>
+        <net name="config_reg[388]"/>
+        <net name="config_reg[387]"/>
+        <net name="config_reg[386]"/>
+        <net name="config_reg[385]"/>
+        <net name="config_reg[384]"/>
+        <net name="config_reg[383]"/>
+        <net name="config_reg[382]"/>
+        <net name="config_reg[381]"/>
+        <net name="config_reg[380]"/>
+        <net name="config_reg[379]"/>
+        <net name="config_reg[378]"/>
+        <net name="config_reg[377]"/>
+        <net name="config_reg[376]"/>
+        <net name="config_reg[375]"/>
+        <net name="config_reg[374]"/>
+        <net name="config_reg[373]"/>
+        <net name="config_reg[372]"/>
+        <net name="config_reg[371]"/>
+        <net name="config_reg[370]"/>
+        <net name="config_reg[369]"/>
+        <net name="config_reg[368]"/>
+        <net name="config_reg[367]"/>
+        <net name="config_reg[366]"/>
+        <net name="config_reg[365]"/>
+        <net name="config_reg[364]"/>
+        <net name="config_reg[363]"/>
+        <net name="config_reg[362]"/>
+        <net name="config_reg[361]"/>
+        <net name="config_reg[360]"/>
+        <net name="config_reg[359]"/>
+        <net name="config_reg[358]"/>
+        <net name="config_reg[357]"/>
+        <net name="config_reg[356]"/>
+        <net name="config_reg[355]"/>
+        <net name="config_reg[354]"/>
+        <net name="config_reg[353]"/>
+        <net name="config_reg[352]"/>
+        <net name="config_reg[351]"/>
+        <net name="config_reg[350]"/>
+        <net name="config_reg[349]"/>
+        <net name="config_reg[348]"/>
+        <net name="config_reg[347]"/>
+        <net name="config_reg[346]"/>
+        <net name="config_reg[345]"/>
+        <net name="config_reg[344]"/>
+        <net name="config_reg[343]"/>
+        <net name="config_reg[342]"/>
+        <net name="config_reg[341]"/>
+        <net name="config_reg[340]"/>
+        <net name="config_reg[339]"/>
+        <net name="config_reg[338]"/>
+        <net name="config_reg[337]"/>
+        <net name="config_reg[336]"/>
+        <net name="config_reg[335]"/>
+        <net name="config_reg[334]"/>
+        <net name="config_reg[333]"/>
+        <net name="config_reg[332]"/>
+        <net name="config_reg[331]"/>
+        <net name="config_reg[330]"/>
+        <net name="config_reg[329]"/>
+        <net name="config_reg[328]"/>
+        <net name="config_reg[327]"/>
+        <net name="config_reg[326]"/>
+        <net name="config_reg[325]"/>
+        <net name="config_reg[324]"/>
+        <net name="config_reg[323]"/>
+        <net name="config_reg[322]"/>
+        <net name="config_reg[321]"/>
+        <net name="config_reg[320]"/>
+        <net name="config_reg[319]"/>
+        <net name="config_reg[318]"/>
+        <net name="config_reg[317]"/>
+        <net name="config_reg[316]"/>
+        <net name="config_reg[315]"/>
+        <net name="config_reg[314]"/>
+        <net name="config_reg[313]"/>
+        <net name="config_reg[312]"/>
+        <net name="config_reg[311]"/>
+        <net name="config_reg[310]"/>
+        <net name="config_reg[309]"/>
+        <net name="config_reg[308]"/>
+        <net name="config_reg[307]"/>
+        <net name="config_reg[306]"/>
+        <net name="config_reg[305]"/>
+        <net name="config_reg[304]"/>
+        <net name="config_reg[303]"/>
+        <net name="config_reg[302]"/>
+        <net name="config_reg[301]"/>
+        <net name="config_reg[300]"/>
+        <net name="config_reg[299]"/>
+        <net name="config_reg[298]"/>
+        <net name="config_reg[297]"/>
+        <net name="config_reg[296]"/>
+        <net name="config_reg[295]"/>
+        <net name="config_reg[294]"/>
+        <net name="config_reg[293]"/>
+        <net name="config_reg[292]"/>
+        <net name="config_reg[291]"/>
+        <net name="config_reg[290]"/>
+        <net name="config_reg[289]"/>
+        <net name="config_reg[288]"/>
+        <net name="config_reg[287]"/>
+        <net name="config_reg[286]"/>
+        <net name="config_reg[285]"/>
+        <net name="config_reg[284]"/>
+        <net name="config_reg[283]"/>
+        <net name="config_reg[282]"/>
+        <net name="config_reg[281]"/>
+        <net name="config_reg[280]"/>
+        <net name="config_reg[279]"/>
+        <net name="config_reg[278]"/>
+        <net name="config_reg[277]"/>
+        <net name="config_reg[276]"/>
+        <net name="config_reg[275]"/>
+        <net name="config_reg[274]"/>
+        <net name="config_reg[273]"/>
+        <net name="config_reg[272]"/>
+        <net name="config_reg[271]"/>
+        <net name="config_reg[270]"/>
+        <net name="config_reg[269]"/>
+        <net name="config_reg[268]"/>
+        <net name="config_reg[267]"/>
+        <net name="config_reg[266]"/>
+        <net name="config_reg[265]"/>
+        <net name="config_reg[264]"/>
+        <net name="config_reg[263]"/>
+        <net name="config_reg[262]"/>
+        <net name="config_reg[261]"/>
+        <net name="config_reg[260]"/>
+        <net name="config_reg[259]"/>
+        <net name="config_reg[258]"/>
+        <net name="config_reg[257]"/>
+        <net name="config_reg[256]"/>
+        <net name="config_reg[255]"/>
+        <net name="config_reg[254]"/>
+        <net name="config_reg[253]"/>
+        <net name="config_reg[252]"/>
+        <net name="config_reg[251]"/>
+        <net name="config_reg[250]"/>
+        <net name="config_reg[249]"/>
+        <net name="config_reg[248]"/>
+        <net name="config_reg[247]"/>
+        <net name="config_reg[246]"/>
+        <net name="config_reg[245]"/>
+        <net name="config_reg[244]"/>
+        <net name="config_reg[243]"/>
+        <net name="config_reg[242]"/>
+        <net name="config_reg[241]"/>
+        <net name="config_reg[240]"/>
+        <net name="config_reg[239]"/>
+        <net name="config_reg[238]"/>
+        <net name="config_reg[237]"/>
+        <net name="config_reg[236]"/>
+        <net name="config_reg[235]"/>
+        <net name="config_reg[234]"/>
+        <net name="config_reg[233]"/>
+        <net name="config_reg[232]"/>
+        <net name="config_reg[231]"/>
+        <net name="config_reg[230]"/>
+        <net name="config_reg[229]"/>
+        <net name="config_reg[228]"/>
+        <net name="config_reg[227]"/>
+        <net name="config_reg[226]"/>
+        <net name="config_reg[225]"/>
+        <net name="config_reg[224]"/>
+        <net name="config_reg[223]"/>
+        <net name="config_reg[222]"/>
+        <net name="config_reg[221]"/>
+        <net name="config_reg[220]"/>
+        <net name="config_reg[219]"/>
+        <net name="config_reg[218]"/>
+        <net name="config_reg[217]"/>
+        <net name="config_reg[216]"/>
+        <net name="config_reg[215]"/>
+        <net name="config_reg[214]"/>
+        <net name="config_reg[213]"/>
+        <net name="config_reg[212]"/>
+        <net name="config_reg[211]"/>
+        <net name="config_reg[210]"/>
+        <net name="config_reg[209]"/>
+        <net name="config_reg[208]"/>
+        <net name="config_reg[207]"/>
+        <net name="config_reg[206]"/>
+        <net name="config_reg[205]"/>
+        <net name="config_reg[204]"/>
+        <net name="config_reg[203]"/>
+        <net name="config_reg[202]"/>
+        <net name="config_reg[201]"/>
+        <net name="config_reg[200]"/>
+        <net name="config_reg[199]"/>
+        <net name="config_reg[198]"/>
+        <net name="config_reg[197]"/>
+        <net name="config_reg[196]"/>
+        <net name="config_reg[195]"/>
+        <net name="config_reg[194]"/>
+        <net name="config_reg[193]"/>
+        <net name="config_reg[192]"/>
+        <net name="config_reg[191]"/>
+        <net name="config_reg[190]"/>
+        <net name="config_reg[189]"/>
+        <net name="config_reg[188]"/>
+        <net name="config_reg[187]"/>
+        <net name="config_reg[186]"/>
+        <net name="config_reg[185]"/>
+        <net name="config_reg[184]"/>
+        <net name="config_reg[183]"/>
+        <net name="config_reg[182]"/>
+        <net name="config_reg[181]"/>
+        <net name="config_reg[180]"/>
+        <net name="config_reg[179]"/>
+        <net name="config_reg[178]"/>
+        <net name="config_reg[177]"/>
+        <net name="config_reg[176]"/>
+        <net name="config_reg[175]"/>
+        <net name="config_reg[174]"/>
+        <net name="config_reg[173]"/>
+        <net name="config_reg[172]"/>
+        <net name="config_reg[171]"/>
+        <net name="config_reg[170]"/>
+        <net name="config_reg[169]"/>
+        <net name="config_reg[168]"/>
+        <net name="config_reg[167]"/>
+        <net name="config_reg[166]"/>
+        <net name="config_reg[165]"/>
+        <net name="config_reg[164]"/>
+        <net name="config_reg[163]"/>
+        <net name="config_reg[162]"/>
+        <net name="config_reg[161]"/>
+        <net name="config_reg[160]"/>
+        <net name="config_reg[159]"/>
+        <net name="config_reg[158]"/>
+        <net name="config_reg[157]"/>
+        <net name="config_reg[156]"/>
+        <net name="config_reg[155]"/>
+        <net name="config_reg[154]"/>
+        <net name="config_reg[153]"/>
+        <net name="config_reg[152]"/>
+        <net name="config_reg[151]"/>
+        <net name="config_reg[150]"/>
+        <net name="config_reg[149]"/>
+        <net name="config_reg[148]"/>
+        <net name="config_reg[147]"/>
+        <net name="config_reg[146]"/>
+        <net name="config_reg[145]"/>
+        <net name="config_reg[144]"/>
+        <net name="config_reg[143]"/>
+        <net name="config_reg[142]"/>
+        <net name="config_reg[141]"/>
+        <net name="config_reg[140]"/>
+        <net name="config_reg[139]"/>
+        <net name="config_reg[138]"/>
+        <net name="config_reg[137]"/>
+        <net name="config_reg[136]"/>
+        <net name="config_reg[135]"/>
+        <net name="config_reg[134]"/>
+        <net name="config_reg[133]"/>
+        <net name="config_reg[132]"/>
+        <net name="config_reg[131]"/>
+        <net name="config_reg[130]"/>
+        <net name="config_reg[129]"/>
+        <net name="config_reg[128]"/>
+        <net name="config_reg[127]"/>
+        <net name="config_reg[126]"/>
+        <net name="config_reg[125]"/>
+        <net name="config_reg[124]"/>
+        <net name="config_reg[123]"/>
+        <net name="config_reg[122]"/>
+        <net name="config_reg[121]"/>
+        <net name="config_reg[120]"/>
+        <net name="config_reg[119]"/>
+        <net name="config_reg[118]"/>
+        <net name="config_reg[117]"/>
+        <net name="config_reg[116]"/>
+        <net name="config_reg[115]"/>
+        <net name="config_reg[114]"/>
+        <net name="config_reg[113]"/>
+        <net name="config_reg[112]"/>
+        <net name="config_reg[111]"/>
+        <net name="config_reg[110]"/>
+        <net name="config_reg[109]"/>
+        <net name="config_reg[108]"/>
+        <net name="config_reg[107]"/>
+        <net name="config_reg[106]"/>
+        <net name="config_reg[105]"/>
+        <net name="config_reg[104]"/>
+        <net name="config_reg[103]"/>
+        <net name="config_reg[102]"/>
+        <net name="config_reg[101]"/>
+        <net name="config_reg[100]"/>
+        <net name="config_reg[99]"/>
+        <net name="config_reg[98]"/>
+        <net name="config_reg[97]"/>
+        <net name="config_reg[96]"/>
+        <net name="config_reg[95]"/>
+        <net name="config_reg[94]"/>
+        <net name="config_reg[93]"/>
+        <net name="config_reg[92]"/>
+        <net name="config_reg[91]"/>
+        <net name="config_reg[90]"/>
+        <net name="config_reg[89]"/>
+        <net name="config_reg[88]"/>
+        <net name="config_reg[87]"/>
+        <net name="config_reg[86]"/>
+        <net name="config_reg[85]"/>
+        <net name="config_reg[84]"/>
+        <net name="config_reg[83]"/>
+        <net name="config_reg[82]"/>
+        <net name="config_reg[81]"/>
+        <net name="config_reg[80]"/>
+        <net name="config_reg[79]"/>
+        <net name="config_reg[78]"/>
+        <net name="config_reg[77]"/>
+        <net name="config_reg[76]"/>
+        <net name="config_reg[75]"/>
+        <net name="config_reg[74]"/>
+        <net name="config_reg[73]"/>
+        <net name="config_reg[72]"/>
+        <net name="config_reg[71]"/>
+        <net name="config_reg[70]"/>
+        <net name="config_reg[69]"/>
+        <net name="config_reg[68]"/>
+        <net name="config_reg[67]"/>
+        <net name="config_reg[66]"/>
+        <net name="config_reg[65]"/>
+        <net name="config_reg[64]"/>
+        <net name="config_reg[63]"/>
+        <net name="config_reg[62]"/>
+        <net name="config_reg[61]"/>
+        <net name="config_reg[60]"/>
+        <net name="config_reg[59]"/>
+        <net name="config_reg[58]"/>
+        <net name="config_reg[57]"/>
+        <net name="config_reg[56]"/>
+        <net name="config_reg[55]"/>
+        <net name="config_reg[54]"/>
+        <net name="config_reg[53]"/>
+        <net name="config_reg[52]"/>
+        <net name="config_reg[51]"/>
+        <net name="config_reg[50]"/>
+        <net name="config_reg[49]"/>
+        <net name="config_reg[48]"/>
+        <net name="config_reg[47]"/>
+        <net name="config_reg[46]"/>
+        <net name="config_reg[45]"/>
+        <net name="config_reg[44]"/>
+        <net name="config_reg[43]"/>
+        <net name="config_reg[42]"/>
+        <net name="config_reg[41]"/>
+        <net name="config_reg[40]"/>
+        <net name="config_reg[39]"/>
+        <net name="config_reg[38]"/>
+        <net name="config_reg[37]"/>
+        <net name="config_reg[36]"/>
+        <net name="config_reg[35]"/>
+        <net name="config_reg[34]"/>
+        <net name="config_reg[33]"/>
+        <net name="config_reg[32]"/>
+        <net name="config_reg[31]"/>
+        <net name="config_reg[30]"/>
+        <net name="config_reg[29]"/>
+        <net name="config_reg[28]"/>
+        <net name="config_reg[27]"/>
+        <net name="config_reg[26]"/>
+        <net name="config_reg[25]"/>
+        <net name="config_reg[24]"/>
+        <net name="config_reg[23]"/>
+        <net name="config_reg[22]"/>
+        <net name="config_reg[21]"/>
+        <net name="config_reg[20]"/>
+        <net name="config_reg[19]"/>
+        <net name="config_reg[18]"/>
+        <net name="config_reg[17]"/>
+        <net name="config_reg[16]"/>
+        <net name="config_reg[15]"/>
+        <net name="config_reg[14]"/>
+        <net name="config_reg[13]"/>
+        <net name="config_reg[12]"/>
+        <net name="config_reg[11]"/>
+        <net name="config_reg[10]"/>
+        <net name="config_reg[9]"/>
+        <net name="config_reg[8]"/>
+        <net name="config_reg[7]"/>
+        <net name="config_reg[6]"/>
+        <net name="config_reg[5]"/>
+        <net name="config_reg[4]"/>
+        <net name="config_reg[3]"/>
+        <net name="config_reg[2]"/>
+        <net name="config_reg[1]"/>
+        <net name="config_reg[0]"/>
       </nets>
     </probe>
     <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
@@ -425,7 +961,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_1"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe5[63:0]"/>
+        <Option Id="MAP" value="probe0[63:0]"/>
         <Option Id="NAME.CUSTOM" value=""/>
         <Option Id="NAME.SELECT" value="Long"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -695,7 +1231,7 @@
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_RADIX" value="HEX"/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
-        <Option Id="HW_ILA" value="hw_ila_2"/>
+        <Option Id="HW_ILA" value="hw_ila_3"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
         <Option Id="MAP" value="probe1[6:0]"/>
         <Option Id="NAME.CUSTOM" value=""/>
@@ -750,7 +1286,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_1"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe8[6:0]"/>
+        <Option Id="MAP" value="probe2[6:0]"/>
         <Option Id="NAME.CUSTOM" value=""/>
         <Option Id="NAME.SELECT" value="Long"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -798,7 +1334,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_1"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe1[3:0]"/>
+        <Option Id="MAP" value="probe5[3:0]"/>
         <Option Id="NAME.CUSTOM" value=""/>
         <Option Id="NAME.SELECT" value="Long"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -874,7 +1410,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_1"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe4[63:0]"/>
+        <Option Id="MAP" value="probe6[63:0]"/>
         <Option Id="NAME.CUSTOM" value=""/>
         <Option Id="NAME.SELECT" value="Long"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -1029,9 +1565,9 @@
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_RADIX" value="HEX"/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
-        <Option Id="HW_ILA" value="hw_ila_2"/>
+        <Option Id="HW_ILA" value="hw_ila_3"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe0[63:0]"/>
+        <Option Id="MAP" value="probe4[63:0]"/>
         <Option Id="NAME.CUSTOM" value=""/>
         <Option Id="NAME.SELECT" value="Long"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -1113,7 +1649,7 @@
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_RADIX" value="HEX"/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
-        <Option Id="HW_ILA" value="hw_ila_2"/>
+        <Option Id="HW_ILA" value="hw_ila_3"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
         <Option Id="MAP" value="probe5[0]"/>
         <Option Id="NAME.CUSTOM" value=""/>
@@ -1134,7 +1670,7 @@
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_RADIX" value="HEX"/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
-        <Option Id="HW_ILA" value="hw_ila_2"/>
+        <Option Id="HW_ILA" value="hw_ila_3"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
         <Option Id="MAP" value="probe6[0]"/>
         <Option Id="NAME.CUSTOM" value=""/>
@@ -1207,7 +1743,7 @@
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_RADIX" value="HEX"/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
-        <Option Id="HW_ILA" value="hw_ila_2"/>
+        <Option Id="HW_ILA" value="hw_ila_3"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
         <Option Id="MAP" value="probe2[63:0]"/>
         <Option Id="NAME.CUSTOM" value=""/>
@@ -1345,7 +1881,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_1"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe0[63:0]"/>
+        <Option Id="MAP" value="probe8[63:0]"/>
         <Option Id="NAME.CUSTOM" value=""/>
         <Option Id="NAME.SELECT" value="Long"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -1479,9 +2015,9 @@
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_RADIX" value="HEX"/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
-        <Option Id="HW_ILA" value="hw_ila_2"/>
+        <Option Id="HW_ILA" value="hw_ila_3"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe3[63:0]"/>
+        <Option Id="MAP" value="probe0[63:0]"/>
         <Option Id="NAME.CUSTOM" value=""/>
         <Option Id="NAME.SELECT" value="Long"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -1617,7 +2153,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_1"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe6[8:0]"/>
+        <Option Id="MAP" value="probe3[8:0]"/>
         <Option Id="NAME.CUSTOM" value=""/>
         <Option Id="NAME.SELECT" value="Long"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -1696,9 +2232,9 @@
         <Option Id="DISPLAY_HINT" value=""/>
         <Option Id="DISPLAY_RADIX" value="HEX"/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
-        <Option Id="HW_ILA" value="hw_ila_2"/>
+        <Option Id="HW_ILA" value="hw_ila_3"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe4[63:0]"/>
+        <Option Id="MAP" value="probe3[63:0]"/>
         <Option Id="NAME.CUSTOM" value=""/>
         <Option Id="NAME.SELECT" value="Long"/>
         <Option Id="SOURCE" value="netlist"/>
@@ -1774,6 +2310,246 @@
     </probe>
     <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq176&apos;hXXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq176&apos;hXXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_2"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe0[175:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq176&apos;hXXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX_XXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="status_reg[175]"/>
+        <net name="status_reg[174]"/>
+        <net name="status_reg[173]"/>
+        <net name="status_reg[172]"/>
+        <net name="status_reg[171]"/>
+        <net name="status_reg[170]"/>
+        <net name="status_reg[169]"/>
+        <net name="status_reg[168]"/>
+        <net name="status_reg[167]"/>
+        <net name="status_reg[166]"/>
+        <net name="status_reg[165]"/>
+        <net name="status_reg[164]"/>
+        <net name="status_reg[163]"/>
+        <net name="status_reg[162]"/>
+        <net name="status_reg[161]"/>
+        <net name="status_reg[160]"/>
+        <net name="status_reg[159]"/>
+        <net name="status_reg[158]"/>
+        <net name="status_reg[157]"/>
+        <net name="status_reg[156]"/>
+        <net name="status_reg[155]"/>
+        <net name="status_reg[154]"/>
+        <net name="status_reg[153]"/>
+        <net name="status_reg[152]"/>
+        <net name="status_reg[151]"/>
+        <net name="status_reg[150]"/>
+        <net name="status_reg[149]"/>
+        <net name="status_reg[148]"/>
+        <net name="status_reg[147]"/>
+        <net name="status_reg[146]"/>
+        <net name="status_reg[145]"/>
+        <net name="status_reg[144]"/>
+        <net name="status_reg[143]"/>
+        <net name="status_reg[142]"/>
+        <net name="status_reg[141]"/>
+        <net name="status_reg[140]"/>
+        <net name="status_reg[139]"/>
+        <net name="status_reg[138]"/>
+        <net name="status_reg[137]"/>
+        <net name="status_reg[136]"/>
+        <net name="status_reg[135]"/>
+        <net name="status_reg[134]"/>
+        <net name="status_reg[133]"/>
+        <net name="status_reg[132]"/>
+        <net name="status_reg[131]"/>
+        <net name="status_reg[130]"/>
+        <net name="status_reg[129]"/>
+        <net name="status_reg[128]"/>
+        <net name="status_reg[127]"/>
+        <net name="status_reg[126]"/>
+        <net name="status_reg[125]"/>
+        <net name="status_reg[124]"/>
+        <net name="status_reg[123]"/>
+        <net name="status_reg[122]"/>
+        <net name="status_reg[121]"/>
+        <net name="status_reg[120]"/>
+        <net name="status_reg[119]"/>
+        <net name="status_reg[118]"/>
+        <net name="status_reg[117]"/>
+        <net name="status_reg[116]"/>
+        <net name="status_reg[115]"/>
+        <net name="status_reg[114]"/>
+        <net name="status_reg[113]"/>
+        <net name="status_reg[112]"/>
+        <net name="status_reg[111]"/>
+        <net name="status_reg[110]"/>
+        <net name="status_reg[109]"/>
+        <net name="status_reg[108]"/>
+        <net name="status_reg[107]"/>
+        <net name="status_reg[106]"/>
+        <net name="status_reg[105]"/>
+        <net name="status_reg[104]"/>
+        <net name="status_reg[103]"/>
+        <net name="status_reg[102]"/>
+        <net name="status_reg[101]"/>
+        <net name="status_reg[100]"/>
+        <net name="status_reg[99]"/>
+        <net name="status_reg[98]"/>
+        <net name="status_reg[97]"/>
+        <net name="status_reg[96]"/>
+        <net name="status_reg[95]"/>
+        <net name="status_reg[94]"/>
+        <net name="status_reg[93]"/>
+        <net name="status_reg[92]"/>
+        <net name="status_reg[91]"/>
+        <net name="status_reg[90]"/>
+        <net name="status_reg[89]"/>
+        <net name="status_reg[88]"/>
+        <net name="status_reg[87]"/>
+        <net name="status_reg[86]"/>
+        <net name="status_reg[85]"/>
+        <net name="status_reg[84]"/>
+        <net name="status_reg[83]"/>
+        <net name="status_reg[82]"/>
+        <net name="status_reg[81]"/>
+        <net name="status_reg[80]"/>
+        <net name="status_reg[79]"/>
+        <net name="status_reg[78]"/>
+        <net name="status_reg[77]"/>
+        <net name="status_reg[76]"/>
+        <net name="status_reg[75]"/>
+        <net name="status_reg[74]"/>
+        <net name="status_reg[73]"/>
+        <net name="status_reg[72]"/>
+        <net name="status_reg[71]"/>
+        <net name="status_reg[70]"/>
+        <net name="status_reg[69]"/>
+        <net name="status_reg[68]"/>
+        <net name="status_reg[67]"/>
+        <net name="status_reg[66]"/>
+        <net name="status_reg[65]"/>
+        <net name="status_reg[64]"/>
+        <net name="status_reg[63]"/>
+        <net name="status_reg[62]"/>
+        <net name="status_reg[61]"/>
+        <net name="status_reg[60]"/>
+        <net name="status_reg[59]"/>
+        <net name="status_reg[58]"/>
+        <net name="status_reg[57]"/>
+        <net name="status_reg[56]"/>
+        <net name="status_reg[55]"/>
+        <net name="status_reg[54]"/>
+        <net name="status_reg[53]"/>
+        <net name="status_reg[52]"/>
+        <net name="status_reg[51]"/>
+        <net name="status_reg[50]"/>
+        <net name="status_reg[49]"/>
+        <net name="status_reg[48]"/>
+        <net name="status_reg[47]"/>
+        <net name="status_reg[46]"/>
+        <net name="status_reg[45]"/>
+        <net name="status_reg[44]"/>
+        <net name="status_reg[43]"/>
+        <net name="status_reg[42]"/>
+        <net name="status_reg[41]"/>
+        <net name="status_reg[40]"/>
+        <net name="status_reg[39]"/>
+        <net name="status_reg[38]"/>
+        <net name="status_reg[37]"/>
+        <net name="status_reg[36]"/>
+        <net name="status_reg[35]"/>
+        <net name="status_reg[34]"/>
+        <net name="status_reg[33]"/>
+        <net name="status_reg[32]"/>
+        <net name="status_reg[31]"/>
+        <net name="status_reg[30]"/>
+        <net name="status_reg[29]"/>
+        <net name="status_reg[28]"/>
+        <net name="status_reg[27]"/>
+        <net name="status_reg[26]"/>
+        <net name="status_reg[25]"/>
+        <net name="status_reg[24]"/>
+        <net name="status_reg[23]"/>
+        <net name="status_reg[22]"/>
+        <net name="status_reg[21]"/>
+        <net name="status_reg[20]"/>
+        <net name="status_reg[19]"/>
+        <net name="status_reg[18]"/>
+        <net name="status_reg[17]"/>
+        <net name="status_reg[16]"/>
+        <net name="status_reg[15]"/>
+        <net name="status_reg[14]"/>
+        <net name="status_reg[13]"/>
+        <net name="status_reg[12]"/>
+        <net name="status_reg[11]"/>
+        <net name="status_reg[10]"/>
+        <net name="status_reg[9]"/>
+        <net name="status_reg[8]"/>
+        <net name="status_reg[7]"/>
+        <net name="status_reg[6]"/>
+        <net name="status_reg[5]"/>
+        <net name="status_reg[4]"/>
+        <net name="status_reg[3]"/>
+        <net name="status_reg[2]"/>
+        <net name="status_reg[1]"/>
+        <net name="status_reg[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq24&apos;hXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq24&apos;hXX_XXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe1[23:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq24&apos;hXX_XXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="tot_err_count[23]"/>
+        <net name="tot_err_count[22]"/>
+        <net name="tot_err_count[21]"/>
+        <net name="tot_err_count[20]"/>
+        <net name="tot_err_count[19]"/>
+        <net name="tot_err_count[18]"/>
+        <net name="tot_err_count[17]"/>
+        <net name="tot_err_count[16]"/>
+        <net name="tot_err_count[15]"/>
+        <net name="tot_err_count[14]"/>
+        <net name="tot_err_count[13]"/>
+        <net name="tot_err_count[12]"/>
+        <net name="tot_err_count[11]"/>
+        <net name="tot_err_count[10]"/>
+        <net name="tot_err_count[9]"/>
+        <net name="tot_err_count[8]"/>
+        <net name="tot_err_count[7]"/>
+        <net name="tot_err_count[6]"/>
+        <net name="tot_err_count[5]"/>
+        <net name="tot_err_count[4]"/>
+        <net name="tot_err_count[3]"/>
+        <net name="tot_err_count[2]"/>
+        <net name="tot_err_count[1]"/>
+        <net name="tot_err_count[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
         <Option Id="CAPTURE_COMPARE_VALUE" value="eq25&apos;hXXX_XXXX"/>
         <Option Id="COMPARE_VALUE.0" value="eq25&apos;hXXX_XXXX"/>
         <Option Id="DISPLAY_AS_ENUM" value="1"/>
@@ -1782,7 +2558,7 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_1"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe3[24:0]"/>
+        <Option Id="MAP" value="probe4[24:0]"/>
         <Option Id="NAME.CUSTOM" value=""/>
         <Option Id="NAME.SELECT" value="Long"/>
         <Option Id="SOURCE" value="netlist"/>

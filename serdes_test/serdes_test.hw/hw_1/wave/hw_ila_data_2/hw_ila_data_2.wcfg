@@ -10,67 +10,29 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="9fs"></ZoomEndTime>
-      <Cursor1Time time="0fs"></Cursor1Time>
+      <ZoomEndTime time="1025fs"></ZoomEndTime>
+      <Cursor1Time time="32fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="181"></NameColumnWidth>
-      <ValueColumnWidth column_width="72"></ValueColumnWidth>
+      <NameColumnWidth column_width="191"></NameColumnWidth>
+      <ValueColumnWidth column_width="211"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="7" />
+   <WVObjectSize size="2" />
    <wave_markers>
       <marker time="0" label="" />
    </wave_markers>
-   <wvobject fp_name="errorCount_to_check_source" type="array">
+   <wvobject fp_name="config_reg" type="array">
       <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">errorCount_to_check_source[6:0]</obj_property>
-      <obj_property name="ObjectShortName">errorCount_to_check_source[6:0]</obj_property>
+      <obj_property name="ElementShortName">config_reg[511:0]</obj_property>
+      <obj_property name="ObjectShortName">config_reg[511:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
-   <wvobject fp_name="gt0_txdata_i" type="array">
+   <wvobject fp_name="status_reg" type="array">
       <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">gt0_txdata_i[63:0]</obj_property>
-      <obj_property name="ObjectShortName">gt0_txdata_i[63:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
-      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-   </wvobject>
-   <wvobject fp_name="prbs_from_check_to_check_source" type="array">
-      <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">prbs_from_check_to_check_source[63:0]</obj_property>
-      <obj_property name="ObjectShortName">prbs_from_check_to_check_source[63:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
-      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-   </wvobject>
-   <wvobject fp_name="map_dout" type="array">
-      <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">map_dout[63:0]</obj_property>
-      <obj_property name="ObjectShortName">map_dout[63:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
-      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-   </wvobject>
-   <wvobject fp_name="gtwizard_0_exdes_i/rxresetdone_vio_i" type="logic">
-      <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">gtwizard_0_exdes_i/rxresetdone_vio_i</obj_property>
-      <obj_property name="ObjectShortName">rxresetdone_vio_i</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
-      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-   </wvobject>
-   <wvobject fp_name="gtwizard_0_exdes_i/soft_reset_vio_i" type="logic">
-      <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">gtwizard_0_exdes_i/soft_reset_vio_i</obj_property>
-      <obj_property name="ObjectShortName">soft_reset_vio_i</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
-      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-   </wvobject>
-   <wvobject fp_name="shifter_dout" type="array">
-      <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">shifter_dout[63:0]</obj_property>
-      <obj_property name="ObjectShortName">shifter_dout[63:0]</obj_property>
+      <obj_property name="ElementShortName">status_reg[175:0]</obj_property>
+      <obj_property name="ObjectShortName">status_reg[175:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>

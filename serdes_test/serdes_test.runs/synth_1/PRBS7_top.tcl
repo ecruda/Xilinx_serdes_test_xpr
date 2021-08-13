@@ -70,7 +70,9 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param tcl.collectionResultDisplayLimit 0
 set_param chipscope.maxJobs 4
+set_param xicom.use_bs_reader 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7k325tffg900-2
 
@@ -102,7 +104,6 @@ read_verilog -library xil_defaultlib {
   C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/rev_map.v
   C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v
   C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/shifter.v
-  C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/gtwizard_0_ex/gtwizard_0_ex.ip_user_files/sim_scripts/gtwizard_0/riviera/glbl.v
 }
 read_vhdl -library xil_defaultlib {
   C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/fifo/tri_mode_ethernet_mac_0_ten_100_1g_eth_fifo.vhd
@@ -137,6 +138,9 @@ read_vhdl -library xil_defaultlib {
   C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/axi_lite_sm/tri_mode_ethernet_mac_0_axi_lite_sm.vhd
   C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/support/tri_mode_ethernet_mac_0_support_resets.vhd
   C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/gig_eth_mac_fifo_block.vhd
+  C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/i2c/i2c_wr_bytes.vhd
+  C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/i2c/i2c_master.vhd
+  C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/i2c/i2c_tic.vhd
 }
 read_ip -quiet C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/sources_1/ip/gtwizard_0/gtwizard_0.xci
 set_property used_in_implementation false [get_files -all c:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/sources_1/ip/gtwizard_0/gtwizard_0.xdc]

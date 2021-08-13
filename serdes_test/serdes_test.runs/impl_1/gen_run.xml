@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7k325tffg900-2" LaunchTime="1627328278">
+<GenRun Id="impl_1" LaunchPart="xc7k325tffg900-2" LaunchTime="1628881357">
   <File Type="BITSTR-BMM" Name="PRBS7_top_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="PRBS7_top_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="PRBS7_top_timing_summary_init.rpt"/>
@@ -346,13 +346,6 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../SERDES_KC705/ipcore_dir/gtwizard_0_ex/gtwizard_0_ex.ip_user_files/sim_scripts/gtwizard_0/riviera/glbl.v">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PPRDIR/../../SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0.xcix">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -439,6 +432,13 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PPRDIR/../../SERDES_KC705/ipcore_dir/clockwiz.xcix">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PPRDIR/../../SERDES_KC705/ipcore_dir/clockwiz/clockwiz.xci">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -446,10 +446,21 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../SERDES_KC705/ipcore_dir/clockwiz.xcix">
+    <File Path="$PPRDIR/../../SERDES_KC705/src/i2c/i2c_wr_bytes.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../SERDES_KC705/src/i2c/i2c_master.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../SERDES_KC705/src/i2c/i2c_tic.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>

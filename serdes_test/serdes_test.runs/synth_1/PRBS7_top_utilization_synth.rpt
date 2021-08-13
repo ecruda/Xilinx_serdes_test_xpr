@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Mon Jul 26 14:36:09 2021
+| Date         : Fri Aug 13 14:04:29 2021
 | Host         : 21-10244 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file PRBS7_top_utilization_synth.rpt -pb PRBS7_top_utilization_synth.pb
 | Design       : PRBS7_top
@@ -30,13 +30,13 @@ Table of Contents
 +----------------------------+------+-------+-----------+-------+
 |          Site Type         | Used | Fixed | Available | Util% |
 +----------------------------+------+-------+-----------+-------+
-| Slice LUTs*                | 5637 |     0 |    203800 |  2.77 |
-|   LUT as Logic             | 5600 |     0 |    203800 |  2.75 |
+| Slice LUTs*                | 6006 |     0 |    203800 |  2.95 |
+|   LUT as Logic             | 5969 |     0 |    203800 |  2.93 |
 |   LUT as Memory            |   37 |     0 |     64000 |  0.06 |
 |     LUT as Distributed RAM |   16 |     0 |           |       |
 |     LUT as Shift Register  |   21 |     0 |           |       |
-| Slice Registers            | 6220 |     0 |    407600 |  1.53 |
-|   Register as Flip Flop    | 6220 |     0 |    407600 |  1.53 |
+| Slice Registers            | 6302 |     0 |    407600 |  1.55 |
+|   Register as Flip Flop    | 6302 |     0 |    407600 |  1.55 |
 |   Register as Latch        |    0 |     0 |    407600 |  0.00 |
 | F7 Muxes                   |   17 |     0 |    101900 |  0.02 |
 | F8 Muxes                   |    0 |     0 |     50950 |  0.00 |
@@ -56,10 +56,10 @@ Table of Contents
 | 0     |            _ |         Set |            - |
 | 0     |            _ |       Reset |            - |
 | 0     |          Yes |           - |            - |
-| 79    |          Yes |           - |          Set |
-| 1363  |          Yes |           - |        Reset |
+| 85    |          Yes |           - |          Set |
+| 1418  |          Yes |           - |        Reset |
 | 173   |          Yes |         Set |            - |
-| 4605  |          Yes |       Reset |            - |
+| 4626  |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -94,7 +94,7 @@ Table of Contents
 +-----------------------------+------+-------+-----------+-------+
 |          Site Type          | Used | Fixed | Available | Util% |
 +-----------------------------+------+-------+-----------+-------+
-| Bonded IOB                  |   22 |     0 |       500 |  4.40 |
+| Bonded IOB                  |   24 |     0 |       500 |  4.80 |
 | Bonded IPADs                |    6 |     0 |        50 | 12.00 |
 | Bonded OPADs                |    2 |     0 |        32 |  6.25 |
 | PHY_CONTROL                 |    0 |     0 |        10 |  0.00 |
@@ -124,7 +124,7 @@ Table of Contents
 +--------------+------+-------+-----------+-------+
 |   Site Type  | Used | Fixed | Available | Util% |
 +--------------+------+-------+-----------+-------+
-| BUFGCTRL     |   12 |     0 |        32 | 37.50 |
+| BUFGCTRL     |   13 |     0 |        32 | 40.63 |
 | BUFIO        |    1 |     0 |        40 |  2.50 |
 |   BUFIO only |    1 |     0 |           |       |
 | MMCME2_ADV   |    3 |     0 |        10 | 30.00 |
@@ -159,33 +159,33 @@ Table of Contents
 +---------------+------+---------------------+
 |    Ref Name   | Used | Functional Category |
 +---------------+------+---------------------+
-| FDRE          | 4605 |        Flop & Latch |
-| LUT6          | 2204 |                 LUT |
-| FDCE          | 1363 |        Flop & Latch |
-| LUT2          | 1156 |                 LUT |
-| LUT3          |  976 |                 LUT |
-| LUT1          |  830 |                 LUT |
-| LUT4          |  766 |                 LUT |
-| LUT5          |  719 |                 LUT |
-| CARRY4        |  402 |          CarryLogic |
+| FDRE          | 4626 |        Flop & Latch |
+| LUT6          | 2362 |                 LUT |
+| FDCE          | 1418 |        Flop & Latch |
+| LUT2          | 1179 |                 LUT |
+| LUT1          |  989 |                 LUT |
+| LUT3          |  948 |                 LUT |
+| LUT4          |  787 |                 LUT |
+| LUT5          |  754 |                 LUT |
+| CARRY4        |  401 |          CarryLogic |
 | FDSE          |  173 |        Flop & Latch |
-| FDPE          |   79 |        Flop & Latch |
+| FDPE          |   85 |        Flop & Latch |
 | SRL16E        |   20 |  Distributed Memory |
-| IBUF          |   18 |                  IO |
+| IBUF          |   19 |                  IO |
 | RAMB18E1      |   17 |        Block Memory |
 | MUXF7         |   17 |               MuxFx |
 | RAMD64E       |   16 |  Distributed Memory |
-| OBUF          |   10 |                  IO |
-| BUFG          |   10 |               Clock |
+| OBUF          |   11 |                  IO |
+| BUFG          |   11 |               Clock |
 | ODDR          |    6 |                  IO |
 | IDELAYE2      |    5 |                  IO |
 | IDDR          |    5 |                  IO |
 | MMCME2_ADV    |    3 |               Clock |
 | RAMB36E1      |    2 |        Block Memory |
+| OBUFT         |    2 |                  IO |
 | IBUFDS_GTE2   |    2 |                  IO |
 | BUFGCTRL      |    2 |               Clock |
 | SRLC32E       |    1 |  Distributed Memory |
-| OBUFT         |    1 |                  IO |
 | IDELAYCTRL    |    1 |                  IO |
 | IBUFDS        |    1 |                  IO |
 | GTXE2_COMMON  |    1 |                  IO |

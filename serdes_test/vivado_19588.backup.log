@@ -1,0 +1,171 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Aug  6 14:26:32 2021
+# Process ID: 19588
+# Current directory: C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test
+# Command line: vivado.exe C:\Lily_Zhang\GBS20V1\Elijah\git_repo\Xilinx_serdes_test_xpr\serdes_test\serdes_test.xpr
+# Log file: C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/vivado.log
+# Journal file: C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.xpr
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.gen/sources_1'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/impl_1/rqs_report.rqs'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 1005.648 ; gain = 0.000
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 03 2020-15:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1005.648 ; gain = 0.000
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+refresh_hw_server {localhost:3121}
+WARNING: [Labtoolstcl 44-27] No hardware targets exist on the server [localhost:3121]
+Check to make sure the cable targets connected to this machine are properly connected
+and powered up, then use the refresh_hw_server command to re-register the hardware targets.
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+xhub::refresh_catalog [xhub::get_xstores xilinx_board_store]
+xhub::refresh_catalog: Time (s): cpu = 00:00:02 ; elapsed = 00:00:39 . Memory (MB): peak = 1005.648 ; gain = 0.000
+xhub::refresh_catalog [xhub::get_xstores Vivado_example_project]
+xhub::refresh_catalog: Time (s): cpu = 00:00:00 ; elapsed = 00:00:31 . Memory (MB): peak = 1005.648 ; gain = 0.000
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7k325tffg900-2
+INFO: [Device 21-403] Loading part xc7k325tffg900-2
+INFO: [Project 1-454] Reading design checkpoint 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/.Xil/Vivado-19588-21-10244/fifo36x512/fifo36x512.dcp' for cell 'control_interface_inst/data_fifo'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/.Xil/Vivado-19588-21-10244/fifo8to32/fifo8to32.dcp' for cell 'gig_eth_inst/rx_fifo_inst'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/.Xil/Vivado-19588-21-10244/fifo32to8/fifo32to8.dcp' for cell 'gig_eth_inst/tx_fifo_inst'
+INFO: [Project 1-454] Reading design checkpoint 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/.Xil/Vivado-19588-21-10244/clockwiz/clockwiz.dcp' for cell 'global_clock_reset_inst/clockwiz_inst'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.161 . Memory (MB): peak = 1362.078 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 493 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/sources_1/ip/gtwizard_0/gtwizard_0.xdc] for cell 'gtwizard_0_exdes_i/gtwizard_0_support_i/gtwizard_0_init_i/inst'
+Finished Parsing XDC File [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/sources_1/ip/gtwizard_0/gtwizard_0.xdc] for cell 'gtwizard_0_exdes_i/gtwizard_0_support_i/gtwizard_0_init_i/inst'
+Parsing XDC File [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0_board.xdc] for cell 'gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/inst'
+Finished Parsing XDC File [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0_board.xdc] for cell 'gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/inst'
+Parsing XDC File [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0.xdc] for cell 'gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/inst'
+Finished Parsing XDC File [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0.xdc] for cell 'gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/inst'
+Parsing XDC File [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/fifo8to32/fifo8to32.xdc] for cell 'gig_eth_inst/rx_fifo_inst/U0'
+Finished Parsing XDC File [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/fifo8to32/fifo8to32.xdc] for cell 'gig_eth_inst/rx_fifo_inst/U0'
+Parsing XDC File [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/fifo36x512/fifo36x512.xdc] for cell 'control_interface_inst/data_fifo/U0'
+Finished Parsing XDC File [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/fifo36x512/fifo36x512.xdc] for cell 'control_interface_inst/data_fifo/U0'
+Parsing XDC File [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/fifo32to8/fifo32to8.xdc] for cell 'gig_eth_inst/tx_fifo_inst/U0'
+Finished Parsing XDC File [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/fifo32to8/fifo32to8.xdc] for cell 'gig_eth_inst/tx_fifo_inst/U0'
+Parsing XDC File [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/clockwiz/clockwiz_board.xdc] for cell 'global_clock_reset_inst/clockwiz_inst/inst'
+Finished Parsing XDC File [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/clockwiz/clockwiz_board.xdc] for cell 'global_clock_reset_inst/clockwiz_inst/inst'
+Parsing XDC File [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/clockwiz/clockwiz.xdc] for cell 'global_clock_reset_inst/clockwiz_inst/inst'
+Finished Parsing XDC File [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/clockwiz/clockwiz.xdc] for cell 'global_clock_reset_inst/clockwiz_inst/inst'
+Parsing XDC File [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/constrs_1/new/top.xdc]
+CRITICAL WARNING: [Vivado 12-1815] Setting property 'IOSTANDARD' is not allowed for GT terminals. [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/constrs_1/new/top.xdc:135]
+WARNING: [Vivado 12-4702] SLEW is not a supported property on input port(s). Setting is ignored. [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/constrs_1/new/top.xdc:142]
+WARNING: [Vivado 12-4702] SLEW is not a supported property on input port(s). Setting is ignored. [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/constrs_1/new/top.xdc:149]
+WARNING: [Vivado 12-4702] SLEW is not a supported property on input port(s). Setting is ignored. [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/constrs_1/new/top.xdc:154]
+WARNING: [Vivado 12-4702] SLEW is not a supported property on input port(s). Setting is ignored. [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/constrs_1/new/top.xdc:159]
+WARNING: [Vivado 12-4702] SLEW is not a supported property on input port(s). Setting is ignored. [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/constrs_1/new/top.xdc:164]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/constrs_1/new/top.xdc:206]
+INFO: [Timing 38-2] Deriving generated clocks [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/constrs_1/new/top.xdc:206]
+WARNING: [Vivado 12-627] No clocks matched 'sgmii_clock'. [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/constrs_1/new/top.xdc:207]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/constrs_1/new/top.xdc:207]
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks -include_generated_clocks sgmii_clock]'. [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/constrs_1/new/top.xdc:207]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group '. [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/constrs_1/new/top.xdc:207]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-5201] set_clock_groups: cannot set the clock group when only one non-empty group remains. [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/constrs_1/new/top.xdc:207]
+Finished Parsing XDC File [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/constrs_1/new/top.xdc]
+Parsing XDC File [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/constrs_1/new/debug.xdc]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_1' was not found. [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/constrs_1/new/debug.xdc:3]
+WARNING: [Vivado 12-507] No nets matched 'gtwizard_0_exdes_i/gtwizard_0_support_i/gt_usrclk_source/gt0_txusrclk_i'. [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/constrs_1/new/debug.xdc:5]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_1' was not found. [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/constrs_1/new/debug.xdc:5]
+WARNING: [Vivado 12-507] No nets matched 'gt0_txusrclk_i'. [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/constrs_1/new/debug.xdc:6]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'dbg_hub' was not found. [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/constrs_1/new/debug.xdc:6]
+Finished Parsing XDC File [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/constrs_1/new/debug.xdc]
+Parsing XDC File [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0_clocks.xdc] for cell 'gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/inst'
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_ports -scoped_to_current_instance gtx_clk]'. [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0_clocks.xdc:11]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0_clocks.xdc:11]
+INFO: [Vivado 12-3272] Current instance is the top level cell 'gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/inst' of design 'synth_1' [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0_clocks.xdc:29]
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/inst_rgmii_rx_clk' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0_clocks.xdc:29]
+INFO: [Vivado 12-3272] Current instance is the top level cell 'gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/inst' of design 'synth_1' [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0_clocks.xdc:30]
+INFO: [Vivado 12-3272] Current instance is the top level cell 'gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/inst' of design 'synth_1' [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0_clocks.xdc:53]
+INFO: [Vivado 12-3272] Current instance is the top level cell 'gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/inst' of design 'synth_1' [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0_clocks.xdc:54]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_ports -scoped_to_current_instance s_axi_aclk]'. [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0_clocks.xdc:69]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0_clocks.xdc:69]
+INFO: [Vivado 12-3272] Current instance is the top level cell 'gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/inst' of design 'synth_1' [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0_clocks.xdc:71]
+INFO: [Vivado 12-3272] Current instance is the top level cell 'gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/inst' of design 'synth_1' [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0_clocks.xdc:72]
+Finished Parsing XDC File [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0_clocks.xdc] for cell 'gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/inst'
+Parsing XDC File [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/fifo8to32/fifo8to32_clocks.xdc] for cell 'gig_eth_inst/rx_fifo_inst/U0'
+Finished Parsing XDC File [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/fifo8to32/fifo8to32_clocks.xdc] for cell 'gig_eth_inst/rx_fifo_inst/U0'
+Parsing XDC File [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/fifo36x512/fifo36x512_clocks.xdc] for cell 'control_interface_inst/data_fifo/U0'
+Finished Parsing XDC File [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/fifo36x512/fifo36x512_clocks.xdc] for cell 'control_interface_inst/data_fifo/U0'
+Parsing XDC File [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/fifo32to8/fifo32to8_clocks.xdc] for cell 'gig_eth_inst/tx_fifo_inst/U0'
+Finished Parsing XDC File [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/fifo32to8/fifo32to8_clocks.xdc] for cell 'gig_eth_inst/tx_fifo_inst/U0'
+Parsing XDC File [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/clockwiz/clockwiz_late.xdc] for cell 'global_clock_reset_inst/clockwiz_inst/inst'
+Finished Parsing XDC File [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/clockwiz/clockwiz_late.xdc] for cell 'global_clock_reset_inst/clockwiz_inst/inst'
+INFO: [Project 1-1715] 4 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-1687] 34 scoped IP constraints or related sub-commands were skipped due to synthesis logic optimizations usually triggered by constant connectivity or unconnected output pins. To review the skipped constraints and messages, run the command 'set_param netlist.IPMsgFiltering false' before opening the design.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2107.672 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 10 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 8 instances
+
+open_run: Time (s): cpu = 00:00:30 ; elapsed = 00:00:20 . Memory (MB): peak = 2212.605 ; gain = 1206.957
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Aug  6 17:18:49 2021...

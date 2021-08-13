@@ -1,0 +1,258 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Jul 26 14:58:16 2021
+# Process ID: 26772
+# Current directory: C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test
+# Command line: vivado.exe C:\Lily_Zhang\GBS20V1\Elijah\git_repo\Xilinx_serdes_test_xpr\serdes_test\serdes_test.xpr
+# Log file: C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/vivado.log
+# Journal file: C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.xpr
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/impl_1/PRBS7_top.bit} [get_hw_devices xc7k325t_0]
+set_property PROBES.FILE {C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/impl_1/PRBS7_top.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/impl_1/PRBS7_top.ltx} [get_hw_devices xc7k325t_0]
+current_hw_device [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_1"}]]
+open_run synth_1 -name synth_1
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+add_files {C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/i2c/i2c_wr_bytes.vhd C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/i2c/i2c_master.vhd C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/i2c/i2c_tic.vhd}
+close_design
+save_wave_config {C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+save_wave_config {C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.hw/hw_1/wave/hw_ila_data_2/hw_ila_data_2.wcfg}
+close_hw_manager
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+launch_runs impl_1 -jobs 16
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/impl_1/PRBS7_top.bit} [get_hw_devices xc7k325t_0]
+set_property PROBES.FILE {C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/impl_1/PRBS7_top.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/impl_1/PRBS7_top.ltx} [get_hw_devices xc7k325t_0]
+current_hw_device [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_1"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property PROBES.FILE {C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/impl_1/PRBS7_top.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/impl_1/PRBS7_top.ltx} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/impl_1/PRBS7_top.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+set_property PROBES.FILE {C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/impl_1/PRBS7_top.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/impl_1/PRBS7_top.ltx} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/impl_1/PRBS7_top.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property PROBES.FILE {C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/impl_1/PRBS7_top.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/impl_1/PRBS7_top.ltx} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/impl_1/PRBS7_top.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+delete_debug_core [get_debug_cores {u_ila_0 u_ila_1 }]
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+create_debug_core u_ila_1 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_1]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_1]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_1]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_1]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_1]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_1]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_1]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_1]
+create_debug_core u_ila_2 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_2]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_2]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_2]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_2]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_2]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_2]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_2]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_2]
+connect_debug_port u_ila_0/clk [get_nets [list gtwizard_0_exdes_i/gtwizard_0_support_i/gt_usrclk_source/rxoutclk_mmcm1_i/gt0_rxusrclk2_i ]]
+connect_debug_port u_ila_1/clk [get_nets [list gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_support_clocking_i/clk_out1 ]]
+connect_debug_port u_ila_2/clk [get_nets [list gtwizard_0_exdes_i/gtwizard_0_support_i/gt_usrclk_source/txoutclk_mmcm0_i/gt0_txusrclk2_i ]]
+set_property port_width 6 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {alignAddr[0]} {alignAddr[1]} {alignAddr[2]} {alignAddr[3]} {alignAddr[4]} {alignAddr[5]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 9 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {searchedFrames[0]} {searchedFrames[1]} {searchedFrames[2]} {searchedFrames[3]} {searchedFrames[4]} {searchedFrames[5]} {searchedFrames[6]} {searchedFrames[7]} {searchedFrames[8]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 4 [get_debug_ports u_ila_0/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list {foundFrames[0]} {foundFrames[1]} {foundFrames[2]} {foundFrames[3]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 64 [get_debug_ports u_ila_0/probe3]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
+connect_debug_port u_ila_0/probe3 [get_nets [list {errorBits[0]} {errorBits[1]} {errorBits[2]} {errorBits[3]} {errorBits[4]} {errorBits[5]} {errorBits[6]} {errorBits[7]} {errorBits[8]} {errorBits[9]} {errorBits[10]} {errorBits[11]} {errorBits[12]} {errorBits[13]} {errorBits[14]} {errorBits[15]} {errorBits[16]} {errorBits[17]} {errorBits[18]} {errorBits[19]} {errorBits[20]} {errorBits[21]} {errorBits[22]} {errorBits[23]} {errorBits[24]} {errorBits[25]} {errorBits[26]} {errorBits[27]} {errorBits[28]} {errorBits[29]} {errorBits[30]} {errorBits[31]} {errorBits[32]} {errorBits[33]} {errorBits[34]} {errorBits[35]} {errorBits[36]} {errorBits[37]} {errorBits[38]} {errorBits[39]} {errorBits[40]} {errorBits[41]} {errorBits[42]} {errorBits[43]} {errorBits[44]} {errorBits[45]} {errorBits[46]} {errorBits[47]} {errorBits[48]} {errorBits[49]} {errorBits[50]} {errorBits[51]} {errorBits[52]} {errorBits[53]} {errorBits[54]} {errorBits[55]} {errorBits[56]} {errorBits[57]} {errorBits[58]} {errorBits[59]} {errorBits[60]} {errorBits[61]} {errorBits[62]} {errorBits[63]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 25 [get_debug_ports u_ila_0/probe4]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe4]
+connect_debug_port u_ila_0/probe4 [get_nets [list {tot_err_count[0]} {tot_err_count[1]} {tot_err_count[2]} {tot_err_count[3]} {tot_err_count[4]} {tot_err_count[5]} {tot_err_count[6]} {tot_err_count[7]} {tot_err_count[8]} {tot_err_count[9]} {tot_err_count[10]} {tot_err_count[11]} {tot_err_count[12]} {tot_err_count[13]} {tot_err_count[14]} {tot_err_count[15]} {tot_err_count[16]} {tot_err_count[17]} {tot_err_count[18]} {tot_err_count[19]} {tot_err_count[20]} {tot_err_count[21]} {tot_err_count[22]} {tot_err_count[23]} {tot_err_count[24]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 64 [get_debug_ports u_ila_0/probe5]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe5]
+connect_debug_port u_ila_0/probe5 [get_nets [list {dout[0]} {dout[1]} {dout[2]} {dout[3]} {dout[4]} {dout[5]} {dout[6]} {dout[7]} {dout[8]} {dout[9]} {dout[10]} {dout[11]} {dout[12]} {dout[13]} {dout[14]} {dout[15]} {dout[16]} {dout[17]} {dout[18]} {dout[19]} {dout[20]} {dout[21]} {dout[22]} {dout[23]} {dout[24]} {dout[25]} {dout[26]} {dout[27]} {dout[28]} {dout[29]} {dout[30]} {dout[31]} {dout[32]} {dout[33]} {dout[34]} {dout[35]} {dout[36]} {dout[37]} {dout[38]} {dout[39]} {dout[40]} {dout[41]} {dout[42]} {dout[43]} {dout[44]} {dout[45]} {dout[46]} {dout[47]} {dout[48]} {dout[49]} {dout[50]} {dout[51]} {dout[52]} {dout[53]} {dout[54]} {dout[55]} {dout[56]} {dout[57]} {dout[58]} {dout[59]} {dout[60]} {dout[61]} {dout[62]} {dout[63]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 7 [get_debug_ports u_ila_0/probe6]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe6]
+connect_debug_port u_ila_0/probe6 [get_nets [list {errorCounter[0]} {errorCounter[1]} {errorCounter[2]} {errorCounter[3]} {errorCounter[4]} {errorCounter[5]} {errorCounter[6]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 64 [get_debug_ports u_ila_0/probe7]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe7]
+connect_debug_port u_ila_0/probe7 [get_nets [list {prbs_from_check[0]} {prbs_from_check[1]} {prbs_from_check[2]} {prbs_from_check[3]} {prbs_from_check[4]} {prbs_from_check[5]} {prbs_from_check[6]} {prbs_from_check[7]} {prbs_from_check[8]} {prbs_from_check[9]} {prbs_from_check[10]} {prbs_from_check[11]} {prbs_from_check[12]} {prbs_from_check[13]} {prbs_from_check[14]} {prbs_from_check[15]} {prbs_from_check[16]} {prbs_from_check[17]} {prbs_from_check[18]} {prbs_from_check[19]} {prbs_from_check[20]} {prbs_from_check[21]} {prbs_from_check[22]} {prbs_from_check[23]} {prbs_from_check[24]} {prbs_from_check[25]} {prbs_from_check[26]} {prbs_from_check[27]} {prbs_from_check[28]} {prbs_from_check[29]} {prbs_from_check[30]} {prbs_from_check[31]} {prbs_from_check[32]} {prbs_from_check[33]} {prbs_from_check[34]} {prbs_from_check[35]} {prbs_from_check[36]} {prbs_from_check[37]} {prbs_from_check[38]} {prbs_from_check[39]} {prbs_from_check[40]} {prbs_from_check[41]} {prbs_from_check[42]} {prbs_from_check[43]} {prbs_from_check[44]} {prbs_from_check[45]} {prbs_from_check[46]} {prbs_from_check[47]} {prbs_from_check[48]} {prbs_from_check[49]} {prbs_from_check[50]} {prbs_from_check[51]} {prbs_from_check[52]} {prbs_from_check[53]} {prbs_from_check[54]} {prbs_from_check[55]} {prbs_from_check[56]} {prbs_from_check[57]} {prbs_from_check[58]} {prbs_from_check[59]} {prbs_from_check[60]} {prbs_from_check[61]} {prbs_from_check[62]} {prbs_from_check[63]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 64 [get_debug_ports u_ila_0/probe8]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe8]
+connect_debug_port u_ila_0/probe8 [get_nets [list {gt0_rxdata_i[0]} {gt0_rxdata_i[1]} {gt0_rxdata_i[2]} {gt0_rxdata_i[3]} {gt0_rxdata_i[4]} {gt0_rxdata_i[5]} {gt0_rxdata_i[6]} {gt0_rxdata_i[7]} {gt0_rxdata_i[8]} {gt0_rxdata_i[9]} {gt0_rxdata_i[10]} {gt0_rxdata_i[11]} {gt0_rxdata_i[12]} {gt0_rxdata_i[13]} {gt0_rxdata_i[14]} {gt0_rxdata_i[15]} {gt0_rxdata_i[16]} {gt0_rxdata_i[17]} {gt0_rxdata_i[18]} {gt0_rxdata_i[19]} {gt0_rxdata_i[20]} {gt0_rxdata_i[21]} {gt0_rxdata_i[22]} {gt0_rxdata_i[23]} {gt0_rxdata_i[24]} {gt0_rxdata_i[25]} {gt0_rxdata_i[26]} {gt0_rxdata_i[27]} {gt0_rxdata_i[28]} {gt0_rxdata_i[29]} {gt0_rxdata_i[30]} {gt0_rxdata_i[31]} {gt0_rxdata_i[32]} {gt0_rxdata_i[33]} {gt0_rxdata_i[34]} {gt0_rxdata_i[35]} {gt0_rxdata_i[36]} {gt0_rxdata_i[37]} {gt0_rxdata_i[38]} {gt0_rxdata_i[39]} {gt0_rxdata_i[40]} {gt0_rxdata_i[41]} {gt0_rxdata_i[42]} {gt0_rxdata_i[43]} {gt0_rxdata_i[44]} {gt0_rxdata_i[45]} {gt0_rxdata_i[46]} {gt0_rxdata_i[47]} {gt0_rxdata_i[48]} {gt0_rxdata_i[49]} {gt0_rxdata_i[50]} {gt0_rxdata_i[51]} {gt0_rxdata_i[52]} {gt0_rxdata_i[53]} {gt0_rxdata_i[54]} {gt0_rxdata_i[55]} {gt0_rxdata_i[56]} {gt0_rxdata_i[57]} {gt0_rxdata_i[58]} {gt0_rxdata_i[59]} {gt0_rxdata_i[60]} {gt0_rxdata_i[61]} {gt0_rxdata_i[62]} {gt0_rxdata_i[63]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe9]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe9]
+connect_debug_port u_ila_0/probe9 [get_nets [list aligned ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe10]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe10]
+connect_debug_port u_ila_0/probe10 [get_nets [list bypass ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe11]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe11]
+connect_debug_port u_ila_0/probe11 [get_nets [list errorFlag ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe12]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe12]
+connect_debug_port u_ila_0/probe12 [get_nets [list gt0_rxusrclk2_i ]]
+set_property port_width 512 [get_debug_ports u_ila_1/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe0]
+connect_debug_port u_ila_1/probe0 [get_nets [list {config_reg[0]} {config_reg[1]} {config_reg[2]} {config_reg[3]} {config_reg[4]} {config_reg[5]} {config_reg[6]} {config_reg[7]} {config_reg[8]} {config_reg[9]} {config_reg[10]} {config_reg[11]} {config_reg[12]} {config_reg[13]} {config_reg[14]} {config_reg[15]} {config_reg[16]} {config_reg[17]} {config_reg[18]} {config_reg[19]} {config_reg[20]} {config_reg[21]} {config_reg[22]} {config_reg[23]} {config_reg[24]} {config_reg[25]} {config_reg[26]} {config_reg[27]} {config_reg[28]} {config_reg[29]} {config_reg[30]} {config_reg[31]} {config_reg[32]} {config_reg[33]} {config_reg[34]} {config_reg[35]} {config_reg[36]} {config_reg[37]} {config_reg[38]} {config_reg[39]} {config_reg[40]} {config_reg[41]} {config_reg[42]} {config_reg[43]} {config_reg[44]} {config_reg[45]} {config_reg[46]} {config_reg[47]} {config_reg[48]} {config_reg[49]} {config_reg[50]} {config_reg[51]} {config_reg[52]} {config_reg[53]} {config_reg[54]} {config_reg[55]} {config_reg[56]} {config_reg[57]} {config_reg[58]} {config_reg[59]} {config_reg[60]} {config_reg[61]} {config_reg[62]} {config_reg[63]} {config_reg[64]} {config_reg[65]} {config_reg[66]} {config_reg[67]} {config_reg[68]} {config_reg[69]} {config_reg[70]} {config_reg[71]} {config_reg[72]} {config_reg[73]} {config_reg[74]} {config_reg[75]} {config_reg[76]} {config_reg[77]} {config_reg[78]} {config_reg[79]} {config_reg[80]} {config_reg[81]} {config_reg[82]} {config_reg[83]} {config_reg[84]} {config_reg[85]} {config_reg[86]} {config_reg[87]} {config_reg[88]} {config_reg[89]} {config_reg[90]} {config_reg[91]} {config_reg[92]} {config_reg[93]} {config_reg[94]} {config_reg[95]} {config_reg[96]} {config_reg[97]} {config_reg[98]} {config_reg[99]} {config_reg[100]} {config_reg[101]} {config_reg[102]} {config_reg[103]} {config_reg[104]} {config_reg[105]} {config_reg[106]} {config_reg[107]} {config_reg[108]} {config_reg[109]} {config_reg[110]} {config_reg[111]} {config_reg[112]} {config_reg[113]} {config_reg[114]} {config_reg[115]} {config_reg[116]} {config_reg[117]} {config_reg[118]} {config_reg[119]} {config_reg[120]} {config_reg[121]} {config_reg[122]} {config_reg[123]} {config_reg[124]} {config_reg[125]} {config_reg[126]} {config_reg[127]} {config_reg[128]} {config_reg[129]} {config_reg[130]} {config_reg[131]} {config_reg[132]} {config_reg[133]} {config_reg[134]} {config_reg[135]} {config_reg[136]} {config_reg[137]} {config_reg[138]} {config_reg[139]} {config_reg[140]} {config_reg[141]} {config_reg[142]} {config_reg[143]} {config_reg[144]} {config_reg[145]} {config_reg[146]} {config_reg[147]} {config_reg[148]} {config_reg[149]} {config_reg[150]} {config_reg[151]} {config_reg[152]} {config_reg[153]} {config_reg[154]} {config_reg[155]} {config_reg[156]} {config_reg[157]} {config_reg[158]} {config_reg[159]} {config_reg[160]} {config_reg[161]} {config_reg[162]} {config_reg[163]} {config_reg[164]} {config_reg[165]} {config_reg[166]} {config_reg[167]} {config_reg[168]} {config_reg[169]} {config_reg[170]} {config_reg[171]} {config_reg[172]} {config_reg[173]} {config_reg[174]} {config_reg[175]} {config_reg[176]} {config_reg[177]} {config_reg[178]} {config_reg[179]} {config_reg[180]} {config_reg[181]} {config_reg[182]} {config_reg[183]} {config_reg[184]} {config_reg[185]} {config_reg[186]} {config_reg[187]} {config_reg[188]} {config_reg[189]} {config_reg[190]} {config_reg[191]} {config_reg[192]} {config_reg[193]} {config_reg[194]} {config_reg[195]} {config_reg[196]} {config_reg[197]} {config_reg[198]} {config_reg[199]} {config_reg[200]} {config_reg[201]} {config_reg[202]} {config_reg[203]} {config_reg[204]} {config_reg[205]} {config_reg[206]} {config_reg[207]} {config_reg[208]} {config_reg[209]} {config_reg[210]} {config_reg[211]} {config_reg[212]} {config_reg[213]} {config_reg[214]} {config_reg[215]} {config_reg[216]} {config_reg[217]} {config_reg[218]} {config_reg[219]} {config_reg[220]} {config_reg[221]} {config_reg[222]} {config_reg[223]} {config_reg[224]} {config_reg[225]} {config_reg[226]} {config_reg[227]} {config_reg[228]} {config_reg[229]} {config_reg[230]} {config_reg[231]} {config_reg[232]} {config_reg[233]} {config_reg[234]} {config_reg[235]} {config_reg[236]} {config_reg[237]} {config_reg[238]} {config_reg[239]} {config_reg[240]} {config_reg[241]} {config_reg[242]} {config_reg[243]} {config_reg[244]} {config_reg[245]} {config_reg[246]} {config_reg[247]} {config_reg[248]} {config_reg[249]} {config_reg[250]} {config_reg[251]} {config_reg[252]} {config_reg[253]} {config_reg[254]} {config_reg[255]} {config_reg[256]} {config_reg[257]} {config_reg[258]} {config_reg[259]} {config_reg[260]} {config_reg[261]} {config_reg[262]} {config_reg[263]} {config_reg[264]} {config_reg[265]} {config_reg[266]} {config_reg[267]} {config_reg[268]} {config_reg[269]} {config_reg[270]} {config_reg[271]} {config_reg[272]} {config_reg[273]} {config_reg[274]} {config_reg[275]} {config_reg[276]} {config_reg[277]} {config_reg[278]} {config_reg[279]} {config_reg[280]} {config_reg[281]} {config_reg[282]} {config_reg[283]} {config_reg[284]} {config_reg[285]} {config_reg[286]} {config_reg[287]} {config_reg[288]} {config_reg[289]} {config_reg[290]} {config_reg[291]} {config_reg[292]} {config_reg[293]} {config_reg[294]} {config_reg[295]} {config_reg[296]} {config_reg[297]} {config_reg[298]} {config_reg[299]} {config_reg[300]} {config_reg[301]} {config_reg[302]} {config_reg[303]} {config_reg[304]} {config_reg[305]} {config_reg[306]} {config_reg[307]} {config_reg[308]} {config_reg[309]} {config_reg[310]} {config_reg[311]} {config_reg[312]} {config_reg[313]} {config_reg[314]} {config_reg[315]} {config_reg[316]} {config_reg[317]} {config_reg[318]} {config_reg[319]} {config_reg[320]} {config_reg[321]} {config_reg[322]} {config_reg[323]} {config_reg[324]} {config_reg[325]} {config_reg[326]} {config_reg[327]} {config_reg[328]} {config_reg[329]} {config_reg[330]} {config_reg[331]} {config_reg[332]} {config_reg[333]} {config_reg[334]} {config_reg[335]} {config_reg[336]} {config_reg[337]} {config_reg[338]} {config_reg[339]} {config_reg[340]} {config_reg[341]} {config_reg[342]} {config_reg[343]} {config_reg[344]} {config_reg[345]} {config_reg[346]} {config_reg[347]} {config_reg[348]} {config_reg[349]} {config_reg[350]} {config_reg[351]} {config_reg[352]} {config_reg[353]} {config_reg[354]} {config_reg[355]} {config_reg[356]} {config_reg[357]} {config_reg[358]} {config_reg[359]} {config_reg[360]} {config_reg[361]} {config_reg[362]} {config_reg[363]} {config_reg[364]} {config_reg[365]} {config_reg[366]} {config_reg[367]} {config_reg[368]} {config_reg[369]} {config_reg[370]} {config_reg[371]} {config_reg[372]} {config_reg[373]} {config_reg[374]} {config_reg[375]} {config_reg[376]} {config_reg[377]} {config_reg[378]} {config_reg[379]} {config_reg[380]} {config_reg[381]} {config_reg[382]} {config_reg[383]} {config_reg[384]} {config_reg[385]} {config_reg[386]} {config_reg[387]} {config_reg[388]} {config_reg[389]} {config_reg[390]} {config_reg[391]} {config_reg[392]} {config_reg[393]} {config_reg[394]} {config_reg[395]} {config_reg[396]} {config_reg[397]} {config_reg[398]} {config_reg[399]} {config_reg[400]} {config_reg[401]} {config_reg[402]} {config_reg[403]} {config_reg[404]} {config_reg[405]} {config_reg[406]} {config_reg[407]} {config_reg[408]} {config_reg[409]} {config_reg[410]} {config_reg[411]} {config_reg[412]} {config_reg[413]} {config_reg[414]} {config_reg[415]} {config_reg[416]} {config_reg[417]} {config_reg[418]} {config_reg[419]} {config_reg[420]} {config_reg[421]} {config_reg[422]} {config_reg[423]} {config_reg[424]} {config_reg[425]} {config_reg[426]} {config_reg[427]} {config_reg[428]} {config_reg[429]} {config_reg[430]} {config_reg[431]} {config_reg[432]} {config_reg[433]} {config_reg[434]} {config_reg[435]} {config_reg[436]} {config_reg[437]} {config_reg[438]} {config_reg[439]} {config_reg[440]} {config_reg[441]} {config_reg[442]} {config_reg[443]} {config_reg[444]} {config_reg[445]} {config_reg[446]} {config_reg[447]} {config_reg[448]} {config_reg[449]} {config_reg[450]} {config_reg[451]} {config_reg[452]} {config_reg[453]} {config_reg[454]} {config_reg[455]} {config_reg[456]} {config_reg[457]} {config_reg[458]} {config_reg[459]} {config_reg[460]} {config_reg[461]} {config_reg[462]} {config_reg[463]} {config_reg[464]} {config_reg[465]} {config_reg[466]} {config_reg[467]} {config_reg[468]} {config_reg[469]} {config_reg[470]} {config_reg[471]} {config_reg[472]} {config_reg[473]} {config_reg[474]} {config_reg[475]} {config_reg[476]} {config_reg[477]} {config_reg[478]} {config_reg[479]} {config_reg[480]} {config_reg[481]} {config_reg[482]} {config_reg[483]} {config_reg[484]} {config_reg[485]} {config_reg[486]} {config_reg[487]} {config_reg[488]} {config_reg[489]} {config_reg[490]} {config_reg[491]} {config_reg[492]} {config_reg[493]} {config_reg[494]} {config_reg[495]} {config_reg[496]} {config_reg[497]} {config_reg[498]} {config_reg[499]} {config_reg[500]} {config_reg[501]} {config_reg[502]} {config_reg[503]} {config_reg[504]} {config_reg[505]} {config_reg[506]} {config_reg[507]} {config_reg[508]} {config_reg[509]} {config_reg[510]} {config_reg[511]} ]]
+create_debug_port u_ila_1 probe
+set_property port_width 176 [get_debug_ports u_ila_1/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe1]
+connect_debug_port u_ila_1/probe1 [get_nets [list {status_reg[0]} {status_reg[1]} {status_reg[2]} {status_reg[3]} {status_reg[4]} {status_reg[5]} {status_reg[6]} {status_reg[7]} {status_reg[8]} {status_reg[9]} {status_reg[10]} {status_reg[11]} {status_reg[12]} {status_reg[13]} {status_reg[14]} {status_reg[15]} {status_reg[16]} {status_reg[17]} {status_reg[18]} {status_reg[19]} {status_reg[20]} {status_reg[21]} {status_reg[22]} {status_reg[23]} {status_reg[24]} {status_reg[25]} {status_reg[26]} {status_reg[27]} {status_reg[28]} {status_reg[29]} {status_reg[30]} {status_reg[31]} {status_reg[32]} {status_reg[33]} {status_reg[34]} {status_reg[35]} {status_reg[36]} {status_reg[37]} {status_reg[38]} {status_reg[39]} {status_reg[40]} {status_reg[41]} {status_reg[42]} {status_reg[43]} {status_reg[44]} {status_reg[45]} {status_reg[46]} {status_reg[47]} {status_reg[48]} {status_reg[49]} {status_reg[50]} {status_reg[51]} {status_reg[52]} {status_reg[53]} {status_reg[54]} {status_reg[55]} {status_reg[56]} {status_reg[57]} {status_reg[58]} {status_reg[59]} {status_reg[60]} {status_reg[61]} {status_reg[62]} {status_reg[63]} {status_reg[64]} {status_reg[65]} {status_reg[66]} {status_reg[67]} {status_reg[68]} {status_reg[69]} {status_reg[70]} {status_reg[71]} {status_reg[72]} {status_reg[73]} {status_reg[74]} {status_reg[75]} {status_reg[76]} {status_reg[77]} {status_reg[78]} {status_reg[79]} {status_reg[80]} {status_reg[81]} {status_reg[82]} {status_reg[83]} {status_reg[84]} {status_reg[85]} {status_reg[86]} {status_reg[87]} {status_reg[88]} {status_reg[89]} {status_reg[90]} {status_reg[91]} {status_reg[92]} {status_reg[93]} {status_reg[94]} {status_reg[95]} {status_reg[96]} {status_reg[97]} {status_reg[98]} {status_reg[99]} {status_reg[100]} {status_reg[101]} {status_reg[102]} {status_reg[103]} {status_reg[104]} {status_reg[105]} {status_reg[106]} {status_reg[107]} {status_reg[108]} {status_reg[109]} {status_reg[110]} {status_reg[111]} {status_reg[112]} {status_reg[113]} {status_reg[114]} {status_reg[115]} {status_reg[116]} {status_reg[117]} {status_reg[118]} {status_reg[119]} {status_reg[120]} {status_reg[121]} {status_reg[122]} {status_reg[123]} {status_reg[124]} {status_reg[125]} {status_reg[126]} {status_reg[127]} {status_reg[128]} {status_reg[129]} {status_reg[130]} {status_reg[131]} {status_reg[132]} {status_reg[133]} {status_reg[134]} {status_reg[135]} {status_reg[136]} {status_reg[137]} {status_reg[138]} {status_reg[139]} {status_reg[140]} {status_reg[141]} {status_reg[142]} {status_reg[143]} {status_reg[144]} {status_reg[145]} {status_reg[146]} {status_reg[147]} {status_reg[148]} {status_reg[149]} {status_reg[150]} {status_reg[151]} {status_reg[152]} {status_reg[153]} {status_reg[154]} {status_reg[155]} {status_reg[156]} {status_reg[157]} {status_reg[158]} {status_reg[159]} {status_reg[160]} {status_reg[161]} {status_reg[162]} {status_reg[163]} {status_reg[164]} {status_reg[165]} {status_reg[166]} {status_reg[167]} {status_reg[168]} {status_reg[169]} {status_reg[170]} {status_reg[171]} {status_reg[172]} {status_reg[173]} {status_reg[174]} {status_reg[175]} ]]
+set_property port_width 64 [get_debug_ports u_ila_2/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_2/probe0]
+connect_debug_port u_ila_2/probe0 [get_nets [list {gt0_txdata_i[0]} {gt0_txdata_i[1]} {gt0_txdata_i[2]} {gt0_txdata_i[3]} {gt0_txdata_i[4]} {gt0_txdata_i[5]} {gt0_txdata_i[6]} {gt0_txdata_i[7]} {gt0_txdata_i[8]} {gt0_txdata_i[9]} {gt0_txdata_i[10]} {gt0_txdata_i[11]} {gt0_txdata_i[12]} {gt0_txdata_i[13]} {gt0_txdata_i[14]} {gt0_txdata_i[15]} {gt0_txdata_i[16]} {gt0_txdata_i[17]} {gt0_txdata_i[18]} {gt0_txdata_i[19]} {gt0_txdata_i[20]} {gt0_txdata_i[21]} {gt0_txdata_i[22]} {gt0_txdata_i[23]} {gt0_txdata_i[24]} {gt0_txdata_i[25]} {gt0_txdata_i[26]} {gt0_txdata_i[27]} {gt0_txdata_i[28]} {gt0_txdata_i[29]} {gt0_txdata_i[30]} {gt0_txdata_i[31]} {gt0_txdata_i[32]} {gt0_txdata_i[33]} {gt0_txdata_i[34]} {gt0_txdata_i[35]} {gt0_txdata_i[36]} {gt0_txdata_i[37]} {gt0_txdata_i[38]} {gt0_txdata_i[39]} {gt0_txdata_i[40]} {gt0_txdata_i[41]} {gt0_txdata_i[42]} {gt0_txdata_i[43]} {gt0_txdata_i[44]} {gt0_txdata_i[45]} {gt0_txdata_i[46]} {gt0_txdata_i[47]} {gt0_txdata_i[48]} {gt0_txdata_i[49]} {gt0_txdata_i[50]} {gt0_txdata_i[51]} {gt0_txdata_i[52]} {gt0_txdata_i[53]} {gt0_txdata_i[54]} {gt0_txdata_i[55]} {gt0_txdata_i[56]} {gt0_txdata_i[57]} {gt0_txdata_i[58]} {gt0_txdata_i[59]} {gt0_txdata_i[60]} {gt0_txdata_i[61]} {gt0_txdata_i[62]} {gt0_txdata_i[63]} ]]
+create_debug_port u_ila_2 probe
+set_property port_width 64 [get_debug_ports u_ila_2/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_2/probe1]
+connect_debug_port u_ila_2/probe1 [get_nets [list {shifter_dout[0]} {shifter_dout[1]} {shifter_dout[2]} {shifter_dout[3]} {shifter_dout[4]} {shifter_dout[5]} {shifter_dout[6]} {shifter_dout[7]} {shifter_dout[8]} {shifter_dout[9]} {shifter_dout[10]} {shifter_dout[11]} {shifter_dout[12]} {shifter_dout[13]} {shifter_dout[14]} {shifter_dout[15]} {shifter_dout[16]} {shifter_dout[17]} {shifter_dout[18]} {shifter_dout[19]} {shifter_dout[20]} {shifter_dout[21]} {shifter_dout[22]} {shifter_dout[23]} {shifter_dout[24]} {shifter_dout[25]} {shifter_dout[26]} {shifter_dout[27]} {shifter_dout[28]} {shifter_dout[29]} {shifter_dout[30]} {shifter_dout[31]} {shifter_dout[32]} {shifter_dout[33]} {shifter_dout[34]} {shifter_dout[35]} {shifter_dout[36]} {shifter_dout[37]} {shifter_dout[38]} {shifter_dout[39]} {shifter_dout[40]} {shifter_dout[41]} {shifter_dout[42]} {shifter_dout[43]} {shifter_dout[44]} {shifter_dout[45]} {shifter_dout[46]} {shifter_dout[47]} {shifter_dout[48]} {shifter_dout[49]} {shifter_dout[50]} {shifter_dout[51]} {shifter_dout[52]} {shifter_dout[53]} {shifter_dout[54]} {shifter_dout[55]} {shifter_dout[56]} {shifter_dout[57]} {shifter_dout[58]} {shifter_dout[59]} {shifter_dout[60]} {shifter_dout[61]} {shifter_dout[62]} {shifter_dout[63]} ]]
+create_debug_port u_ila_2 probe
+set_property port_width 64 [get_debug_ports u_ila_2/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_2/probe2]
+connect_debug_port u_ila_2/probe2 [get_nets [list {prbs_from_check_to_check_source[0]} {prbs_from_check_to_check_source[1]} {prbs_from_check_to_check_source[2]} {prbs_from_check_to_check_source[3]} {prbs_from_check_to_check_source[4]} {prbs_from_check_to_check_source[5]} {prbs_from_check_to_check_source[6]} {prbs_from_check_to_check_source[7]} {prbs_from_check_to_check_source[8]} {prbs_from_check_to_check_source[9]} {prbs_from_check_to_check_source[10]} {prbs_from_check_to_check_source[11]} {prbs_from_check_to_check_source[12]} {prbs_from_check_to_check_source[13]} {prbs_from_check_to_check_source[14]} {prbs_from_check_to_check_source[15]} {prbs_from_check_to_check_source[16]} {prbs_from_check_to_check_source[17]} {prbs_from_check_to_check_source[18]} {prbs_from_check_to_check_source[19]} {prbs_from_check_to_check_source[20]} {prbs_from_check_to_check_source[21]} {prbs_from_check_to_check_source[22]} {prbs_from_check_to_check_source[23]} {prbs_from_check_to_check_source[24]} {prbs_from_check_to_check_source[25]} {prbs_from_check_to_check_source[26]} {prbs_from_check_to_check_source[27]} {prbs_from_check_to_check_source[28]} {prbs_from_check_to_check_source[29]} {prbs_from_check_to_check_source[30]} {prbs_from_check_to_check_source[31]} {prbs_from_check_to_check_source[32]} {prbs_from_check_to_check_source[33]} {prbs_from_check_to_check_source[34]} {prbs_from_check_to_check_source[35]} {prbs_from_check_to_check_source[36]} {prbs_from_check_to_check_source[37]} {prbs_from_check_to_check_source[38]} {prbs_from_check_to_check_source[39]} {prbs_from_check_to_check_source[40]} {prbs_from_check_to_check_source[41]} {prbs_from_check_to_check_source[42]} {prbs_from_check_to_check_source[43]} {prbs_from_check_to_check_source[44]} {prbs_from_check_to_check_source[45]} {prbs_from_check_to_check_source[46]} {prbs_from_check_to_check_source[47]} {prbs_from_check_to_check_source[48]} {prbs_from_check_to_check_source[49]} {prbs_from_check_to_check_source[50]} {prbs_from_check_to_check_source[51]} {prbs_from_check_to_check_source[52]} {prbs_from_check_to_check_source[53]} {prbs_from_check_to_check_source[54]} {prbs_from_check_to_check_source[55]} {prbs_from_check_to_check_source[56]} {prbs_from_check_to_check_source[57]} {prbs_from_check_to_check_source[58]} {prbs_from_check_to_check_source[59]} {prbs_from_check_to_check_source[60]} {prbs_from_check_to_check_source[61]} {prbs_from_check_to_check_source[62]} {prbs_from_check_to_check_source[63]} ]]
+create_debug_port u_ila_2 probe
+set_property port_width 64 [get_debug_ports u_ila_2/probe3]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_2/probe3]
+connect_debug_port u_ila_2/probe3 [get_nets [list {map_dout[0]} {map_dout[1]} {map_dout[2]} {map_dout[3]} {map_dout[4]} {map_dout[5]} {map_dout[6]} {map_dout[7]} {map_dout[8]} {map_dout[9]} {map_dout[10]} {map_dout[11]} {map_dout[12]} {map_dout[13]} {map_dout[14]} {map_dout[15]} {map_dout[16]} {map_dout[17]} {map_dout[18]} {map_dout[19]} {map_dout[20]} {map_dout[21]} {map_dout[22]} {map_dout[23]} {map_dout[24]} {map_dout[25]} {map_dout[26]} {map_dout[27]} {map_dout[28]} {map_dout[29]} {map_dout[30]} {map_dout[31]} {map_dout[32]} {map_dout[33]} {map_dout[34]} {map_dout[35]} {map_dout[36]} {map_dout[37]} {map_dout[38]} {map_dout[39]} {map_dout[40]} {map_dout[41]} {map_dout[42]} {map_dout[43]} {map_dout[44]} {map_dout[45]} {map_dout[46]} {map_dout[47]} {map_dout[48]} {map_dout[49]} {map_dout[50]} {map_dout[51]} {map_dout[52]} {map_dout[53]} {map_dout[54]} {map_dout[55]} {map_dout[56]} {map_dout[57]} {map_dout[58]} {map_dout[59]} {map_dout[60]} {map_dout[61]} {map_dout[62]} {map_dout[63]} ]]
+create_debug_port u_ila_2 probe
+set_property port_width 7 [get_debug_ports u_ila_2/probe4]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_2/probe4]
+connect_debug_port u_ila_2/probe4 [get_nets [list {errorCount_to_check_source[0]} {errorCount_to_check_source[1]} {errorCount_to_check_source[2]} {errorCount_to_check_source[3]} {errorCount_to_check_source[4]} {errorCount_to_check_source[5]} {errorCount_to_check_source[6]} ]]
+create_debug_port u_ila_2 probe
+set_property port_width 1 [get_debug_ports u_ila_2/probe5]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_2/probe5]
+connect_debug_port u_ila_2/probe5 [get_nets [list gtwizard_0_exdes_i/rxresetdone_vio_i ]]
+create_debug_port u_ila_2 probe
+set_property port_width 1 [get_debug_ports u_ila_2/probe6]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_2/probe6]
+connect_debug_port u_ila_2/probe6 [get_nets [list gtwizard_0_exdes_i/soft_reset_vio_i ]]
+save_constraints
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+set_property PROBES.FILE {C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/impl_1/PRBS7_top.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/impl_1/PRBS7_top.ltx} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/impl_1/PRBS7_top.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_1"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_3 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_2"}]]
+add_wave -into {hw_ila_data_2.wcfg} -radix hex { {config_reg} {status_reg} }
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_1"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_1"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_1"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_1"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_2"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_2"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_2"}]]
+set_property PROBES.FILE {C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/impl_1/PRBS7_top.ltx} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/impl_1/PRBS7_top.ltx} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/impl_1/PRBS7_top.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_1"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_1"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_2"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_2"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_2"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k325t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+save_wave_config {C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+save_wave_config {C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.hw/hw_1/wave/hw_ila_data_2/hw_ila_data_2.wcfg}
+save_wave_config {C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.hw/hw_1/wave/hw_ila_data_3/hw_ila_data_3.wcfg}

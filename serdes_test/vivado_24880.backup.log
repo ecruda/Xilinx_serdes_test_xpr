@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Jul 26 14:47:49 2021
+# Process ID: 24880
+# Current directory: C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test
+# Command line: vivado.exe C:\Lily_Zhang\GBS20V1\Elijah\git_repo\Xilinx_serdes_test_xpr\serdes_test\serdes_test.xpr
+# Log file: C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/vivado.log
+# Journal file: C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.xpr
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.gen/sources_1'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/impl_1/rqs_report.rqs'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 1009.055 ; gain = 0.000
+export_ip_user_files -of_objects  [get_files C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/gtwizard_0_ex/gtwizard_0_ex.ip_user_files/sim_scripts/gtwizard_0/riviera/glbl.v] -no_script -reset -force -quiet
+remove_files  C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/gtwizard_0_ex/gtwizard_0_ex.ip_user_files/sim_scripts/gtwizard_0/riviera/glbl.v
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Jul 26 14:48:31 2021...
