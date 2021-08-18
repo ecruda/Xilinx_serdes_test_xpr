@@ -146,6 +146,7 @@ OPTRACE "add files" START { }
   read_ip -quiet C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/fifo36x512/fifo36x512.xci
   read_ip -quiet C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/fifo32to8/fifo32to8.xci
   read_ip -quiet C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/clockwiz/clockwiz.xci
+  read_ip -quiet c:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/sources_1/ip/vio_0/vio_0.xci
 OPTRACE "read constraints: implementation" START { }
   read_xdc C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/constrs_1/new/top.xdc
   read_xdc C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/constrs_1/new/debug.xdc

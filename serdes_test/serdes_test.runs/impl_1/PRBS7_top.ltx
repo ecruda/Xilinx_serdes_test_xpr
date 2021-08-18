@@ -14,19 +14,99 @@
                         "clk_input_freq_hz": "159999998"
                     },
                     {
+                        "type": "VIO_V2",
+                        "name": "vio_0_inst",
+                        "spec": "labtools_vio_v3",
+                        "ipName": "vio",
+                        "core_location": {
+                            "user_chain": 1,
+                            "slave_index": 0,
+                            "bscan_switch_index": 0
+                        },
+                        "uuid": "E7FF0C2124325E10A2C1DED3BCFA7191",
+                        "pins": [
+                            {
+                                "name": "probe_out0",
+                                "id": 0,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 15,
+                                "portIndex": 0,
+                                "nets": [
+                                    {
+                                        "name": "mask",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "mask[15]"
+                                            },
+                                            {
+                                                "name": "mask[14]"
+                                            },
+                                            {
+                                                "name": "mask[13]"
+                                            },
+                                            {
+                                                "name": "mask[12]"
+                                            },
+                                            {
+                                                "name": "mask[11]"
+                                            },
+                                            {
+                                                "name": "mask[10]"
+                                            },
+                                            {
+                                                "name": "mask[9]"
+                                            },
+                                            {
+                                                "name": "mask[8]"
+                                            },
+                                            {
+                                                "name": "mask[7]"
+                                            },
+                                            {
+                                                "name": "mask[6]"
+                                            },
+                                            {
+                                                "name": "mask[5]"
+                                            },
+                                            {
+                                                "name": "mask[4]"
+                                            },
+                                            {
+                                                "name": "mask[3]"
+                                            },
+                                            {
+                                                "name": "mask[2]"
+                                            },
+                                            {
+                                                "name": "mask[1]"
+                                            },
+                                            {
+                                                "name": "mask[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
                         "type": "ILA_V3",
                         "name": "u_ila_0",
                         "spec": "labtools_ila_v6",
                         "core_location": {
                             "user_chain": 1,
-                            "slave_index": 0,
+                            "slave_index": 1,
                             "bscan_switch_index": 0
                         },
                         "uuid": "23e7d65a79bc59f7bc47406c1714dfae",
                         "pins": [
                             {
                                 "name": "probe0",
-                                "id": 0,
+                                "id": 1,
                                 "type": "DATA_TRIGGER",
                                 "direction": "IN",
                                 "isVector": true,
@@ -236,253 +316,13 @@
                             },
                             {
                                 "name": "probe1",
-                                "id": 1,
-                                "type": "DATA_TRIGGER",
-                                "direction": "IN",
-                                "isVector": true,
-                                "leftIndex": 0,
-                                "rightIndex": 23,
-                                "portIndex": 1,
-                                "nets": [
-                                    {
-                                        "name": "tot_err_count",
-                                        "isBus": true,
-                                        "subnets": [
-                                            {
-                                                "name": "tot_err_count[23]"
-                                            },
-                                            {
-                                                "name": "tot_err_count[22]"
-                                            },
-                                            {
-                                                "name": "tot_err_count[21]"
-                                            },
-                                            {
-                                                "name": "tot_err_count[20]"
-                                            },
-                                            {
-                                                "name": "tot_err_count[19]"
-                                            },
-                                            {
-                                                "name": "tot_err_count[18]"
-                                            },
-                                            {
-                                                "name": "tot_err_count[17]"
-                                            },
-                                            {
-                                                "name": "tot_err_count[16]"
-                                            },
-                                            {
-                                                "name": "tot_err_count[15]"
-                                            },
-                                            {
-                                                "name": "tot_err_count[14]"
-                                            },
-                                            {
-                                                "name": "tot_err_count[13]"
-                                            },
-                                            {
-                                                "name": "tot_err_count[12]"
-                                            },
-                                            {
-                                                "name": "tot_err_count[11]"
-                                            },
-                                            {
-                                                "name": "tot_err_count[10]"
-                                            },
-                                            {
-                                                "name": "tot_err_count[9]"
-                                            },
-                                            {
-                                                "name": "tot_err_count[8]"
-                                            },
-                                            {
-                                                "name": "tot_err_count[7]"
-                                            },
-                                            {
-                                                "name": "tot_err_count[6]"
-                                            },
-                                            {
-                                                "name": "tot_err_count[5]"
-                                            },
-                                            {
-                                                "name": "tot_err_count[4]"
-                                            },
-                                            {
-                                                "name": "tot_err_count[3]"
-                                            },
-                                            {
-                                                "name": "tot_err_count[2]"
-                                            },
-                                            {
-                                                "name": "tot_err_count[1]"
-                                            },
-                                            {
-                                                "name": "tot_err_count[0]"
-                                            }
-                                        ]
-                                    }
-                                ]
-                            },
-                            {
-                                "name": "probe2",
                                 "id": 2,
                                 "type": "DATA_TRIGGER",
                                 "direction": "IN",
                                 "isVector": true,
                                 "leftIndex": 0,
-                                "rightIndex": 6,
-                                "portIndex": 2,
-                                "nets": [
-                                    {
-                                        "name": "errorCounter",
-                                        "isBus": true,
-                                        "subnets": [
-                                            {
-                                                "name": "errorCounter[6]"
-                                            },
-                                            {
-                                                "name": "errorCounter[5]"
-                                            },
-                                            {
-                                                "name": "errorCounter[4]"
-                                            },
-                                            {
-                                                "name": "errorCounter[3]"
-                                            },
-                                            {
-                                                "name": "errorCounter[2]"
-                                            },
-                                            {
-                                                "name": "errorCounter[1]"
-                                            },
-                                            {
-                                                "name": "errorCounter[0]"
-                                            }
-                                        ]
-                                    }
-                                ]
-                            },
-                            {
-                                "name": "probe3",
-                                "id": 3,
-                                "type": "DATA_TRIGGER",
-                                "direction": "IN",
-                                "isVector": true,
-                                "leftIndex": 0,
-                                "rightIndex": 8,
-                                "portIndex": 3,
-                                "nets": [
-                                    {
-                                        "name": "searchedFrames",
-                                        "isBus": true,
-                                        "subnets": [
-                                            {
-                                                "name": "searchedFrames[8]"
-                                            },
-                                            {
-                                                "name": "searchedFrames[7]"
-                                            },
-                                            {
-                                                "name": "searchedFrames[6]"
-                                            },
-                                            {
-                                                "name": "searchedFrames[5]"
-                                            },
-                                            {
-                                                "name": "searchedFrames[4]"
-                                            },
-                                            {
-                                                "name": "searchedFrames[3]"
-                                            },
-                                            {
-                                                "name": "searchedFrames[2]"
-                                            },
-                                            {
-                                                "name": "searchedFrames[1]"
-                                            },
-                                            {
-                                                "name": "searchedFrames[0]"
-                                            }
-                                        ]
-                                    }
-                                ]
-                            },
-                            {
-                                "name": "probe4",
-                                "id": 4,
-                                "type": "DATA_TRIGGER",
-                                "direction": "IN",
-                                "isVector": true,
-                                "leftIndex": 0,
-                                "rightIndex": 5,
-                                "portIndex": 4,
-                                "nets": [
-                                    {
-                                        "name": "alignAddr",
-                                        "isBus": true,
-                                        "subnets": [
-                                            {
-                                                "name": "alignAddr[5]"
-                                            },
-                                            {
-                                                "name": "alignAddr[4]"
-                                            },
-                                            {
-                                                "name": "alignAddr[3]"
-                                            },
-                                            {
-                                                "name": "alignAddr[2]"
-                                            },
-                                            {
-                                                "name": "alignAddr[1]"
-                                            },
-                                            {
-                                                "name": "alignAddr[0]"
-                                            }
-                                        ]
-                                    }
-                                ]
-                            },
-                            {
-                                "name": "probe5",
-                                "id": 5,
-                                "type": "DATA_TRIGGER",
-                                "direction": "IN",
-                                "isVector": true,
-                                "leftIndex": 0,
-                                "rightIndex": 3,
-                                "portIndex": 5,
-                                "nets": [
-                                    {
-                                        "name": "foundFrames",
-                                        "isBus": true,
-                                        "subnets": [
-                                            {
-                                                "name": "foundFrames[3]"
-                                            },
-                                            {
-                                                "name": "foundFrames[2]"
-                                            },
-                                            {
-                                                "name": "foundFrames[1]"
-                                            },
-                                            {
-                                                "name": "foundFrames[0]"
-                                            }
-                                        ]
-                                    }
-                                ]
-                            },
-                            {
-                                "name": "probe6",
-                                "id": 6,
-                                "type": "DATA_TRIGGER",
-                                "direction": "IN",
-                                "isVector": true,
-                                "leftIndex": 0,
                                 "rightIndex": 63,
-                                "portIndex": 6,
+                                "portIndex": 1,
                                 "nets": [
                                     {
                                         "name": "gt0_rxdata_i",
@@ -685,224 +525,14 @@
                                 ]
                             },
                             {
-                                "name": "probe7",
-                                "id": 7,
+                                "name": "probe2",
+                                "id": 3,
                                 "type": "DATA_TRIGGER",
                                 "direction": "IN",
                                 "isVector": true,
                                 "leftIndex": 0,
                                 "rightIndex": 63,
-                                "portIndex": 7,
-                                "nets": [
-                                    {
-                                        "name": "errorBits",
-                                        "isBus": true,
-                                        "subnets": [
-                                            {
-                                                "name": "errorBits[63]"
-                                            },
-                                            {
-                                                "name": "errorBits[62]"
-                                            },
-                                            {
-                                                "name": "errorBits[61]"
-                                            },
-                                            {
-                                                "name": "errorBits[60]"
-                                            },
-                                            {
-                                                "name": "errorBits[59]"
-                                            },
-                                            {
-                                                "name": "errorBits[58]"
-                                            },
-                                            {
-                                                "name": "errorBits[57]"
-                                            },
-                                            {
-                                                "name": "errorBits[56]"
-                                            },
-                                            {
-                                                "name": "errorBits[55]"
-                                            },
-                                            {
-                                                "name": "errorBits[54]"
-                                            },
-                                            {
-                                                "name": "errorBits[53]"
-                                            },
-                                            {
-                                                "name": "errorBits[52]"
-                                            },
-                                            {
-                                                "name": "errorBits[51]"
-                                            },
-                                            {
-                                                "name": "errorBits[50]"
-                                            },
-                                            {
-                                                "name": "errorBits[49]"
-                                            },
-                                            {
-                                                "name": "errorBits[48]"
-                                            },
-                                            {
-                                                "name": "errorBits[47]"
-                                            },
-                                            {
-                                                "name": "errorBits[46]"
-                                            },
-                                            {
-                                                "name": "errorBits[45]"
-                                            },
-                                            {
-                                                "name": "errorBits[44]"
-                                            },
-                                            {
-                                                "name": "errorBits[43]"
-                                            },
-                                            {
-                                                "name": "errorBits[42]"
-                                            },
-                                            {
-                                                "name": "errorBits[41]"
-                                            },
-                                            {
-                                                "name": "errorBits[40]"
-                                            },
-                                            {
-                                                "name": "errorBits[39]"
-                                            },
-                                            {
-                                                "name": "errorBits[38]"
-                                            },
-                                            {
-                                                "name": "errorBits[37]"
-                                            },
-                                            {
-                                                "name": "errorBits[36]"
-                                            },
-                                            {
-                                                "name": "errorBits[35]"
-                                            },
-                                            {
-                                                "name": "errorBits[34]"
-                                            },
-                                            {
-                                                "name": "errorBits[33]"
-                                            },
-                                            {
-                                                "name": "errorBits[32]"
-                                            },
-                                            {
-                                                "name": "errorBits[31]"
-                                            },
-                                            {
-                                                "name": "errorBits[30]"
-                                            },
-                                            {
-                                                "name": "errorBits[29]"
-                                            },
-                                            {
-                                                "name": "errorBits[28]"
-                                            },
-                                            {
-                                                "name": "errorBits[27]"
-                                            },
-                                            {
-                                                "name": "errorBits[26]"
-                                            },
-                                            {
-                                                "name": "errorBits[25]"
-                                            },
-                                            {
-                                                "name": "errorBits[24]"
-                                            },
-                                            {
-                                                "name": "errorBits[23]"
-                                            },
-                                            {
-                                                "name": "errorBits[22]"
-                                            },
-                                            {
-                                                "name": "errorBits[21]"
-                                            },
-                                            {
-                                                "name": "errorBits[20]"
-                                            },
-                                            {
-                                                "name": "errorBits[19]"
-                                            },
-                                            {
-                                                "name": "errorBits[18]"
-                                            },
-                                            {
-                                                "name": "errorBits[17]"
-                                            },
-                                            {
-                                                "name": "errorBits[16]"
-                                            },
-                                            {
-                                                "name": "errorBits[15]"
-                                            },
-                                            {
-                                                "name": "errorBits[14]"
-                                            },
-                                            {
-                                                "name": "errorBits[13]"
-                                            },
-                                            {
-                                                "name": "errorBits[12]"
-                                            },
-                                            {
-                                                "name": "errorBits[11]"
-                                            },
-                                            {
-                                                "name": "errorBits[10]"
-                                            },
-                                            {
-                                                "name": "errorBits[9]"
-                                            },
-                                            {
-                                                "name": "errorBits[8]"
-                                            },
-                                            {
-                                                "name": "errorBits[7]"
-                                            },
-                                            {
-                                                "name": "errorBits[6]"
-                                            },
-                                            {
-                                                "name": "errorBits[5]"
-                                            },
-                                            {
-                                                "name": "errorBits[4]"
-                                            },
-                                            {
-                                                "name": "errorBits[3]"
-                                            },
-                                            {
-                                                "name": "errorBits[2]"
-                                            },
-                                            {
-                                                "name": "errorBits[1]"
-                                            },
-                                            {
-                                                "name": "errorBits[0]"
-                                            }
-                                        ]
-                                    }
-                                ]
-                            },
-                            {
-                                "name": "probe8",
-                                "id": 8,
-                                "type": "DATA_TRIGGER",
-                                "direction": "IN",
-                                "isVector": true,
-                                "leftIndex": 0,
-                                "rightIndex": 63,
-                                "portIndex": 8,
+                                "portIndex": 2,
                                 "nets": [
                                     {
                                         "name": "prbs_from_check",
@@ -1105,8 +735,470 @@
                                 ]
                             },
                             {
-                                "name": "probe9",
+                                "name": "probe3",
+                                "id": 4,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 63,
+                                "portIndex": 3,
+                                "nets": [
+                                    {
+                                        "name": "errorBits",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "errorBits[63]"
+                                            },
+                                            {
+                                                "name": "errorBits[62]"
+                                            },
+                                            {
+                                                "name": "errorBits[61]"
+                                            },
+                                            {
+                                                "name": "errorBits[60]"
+                                            },
+                                            {
+                                                "name": "errorBits[59]"
+                                            },
+                                            {
+                                                "name": "errorBits[58]"
+                                            },
+                                            {
+                                                "name": "errorBits[57]"
+                                            },
+                                            {
+                                                "name": "errorBits[56]"
+                                            },
+                                            {
+                                                "name": "errorBits[55]"
+                                            },
+                                            {
+                                                "name": "errorBits[54]"
+                                            },
+                                            {
+                                                "name": "errorBits[53]"
+                                            },
+                                            {
+                                                "name": "errorBits[52]"
+                                            },
+                                            {
+                                                "name": "errorBits[51]"
+                                            },
+                                            {
+                                                "name": "errorBits[50]"
+                                            },
+                                            {
+                                                "name": "errorBits[49]"
+                                            },
+                                            {
+                                                "name": "errorBits[48]"
+                                            },
+                                            {
+                                                "name": "errorBits[47]"
+                                            },
+                                            {
+                                                "name": "errorBits[46]"
+                                            },
+                                            {
+                                                "name": "errorBits[45]"
+                                            },
+                                            {
+                                                "name": "errorBits[44]"
+                                            },
+                                            {
+                                                "name": "errorBits[43]"
+                                            },
+                                            {
+                                                "name": "errorBits[42]"
+                                            },
+                                            {
+                                                "name": "errorBits[41]"
+                                            },
+                                            {
+                                                "name": "errorBits[40]"
+                                            },
+                                            {
+                                                "name": "errorBits[39]"
+                                            },
+                                            {
+                                                "name": "errorBits[38]"
+                                            },
+                                            {
+                                                "name": "errorBits[37]"
+                                            },
+                                            {
+                                                "name": "errorBits[36]"
+                                            },
+                                            {
+                                                "name": "errorBits[35]"
+                                            },
+                                            {
+                                                "name": "errorBits[34]"
+                                            },
+                                            {
+                                                "name": "errorBits[33]"
+                                            },
+                                            {
+                                                "name": "errorBits[32]"
+                                            },
+                                            {
+                                                "name": "errorBits[31]"
+                                            },
+                                            {
+                                                "name": "errorBits[30]"
+                                            },
+                                            {
+                                                "name": "errorBits[29]"
+                                            },
+                                            {
+                                                "name": "errorBits[28]"
+                                            },
+                                            {
+                                                "name": "errorBits[27]"
+                                            },
+                                            {
+                                                "name": "errorBits[26]"
+                                            },
+                                            {
+                                                "name": "errorBits[25]"
+                                            },
+                                            {
+                                                "name": "errorBits[24]"
+                                            },
+                                            {
+                                                "name": "errorBits[23]"
+                                            },
+                                            {
+                                                "name": "errorBits[22]"
+                                            },
+                                            {
+                                                "name": "errorBits[21]"
+                                            },
+                                            {
+                                                "name": "errorBits[20]"
+                                            },
+                                            {
+                                                "name": "errorBits[19]"
+                                            },
+                                            {
+                                                "name": "errorBits[18]"
+                                            },
+                                            {
+                                                "name": "errorBits[17]"
+                                            },
+                                            {
+                                                "name": "errorBits[16]"
+                                            },
+                                            {
+                                                "name": "errorBits[15]"
+                                            },
+                                            {
+                                                "name": "errorBits[14]"
+                                            },
+                                            {
+                                                "name": "errorBits[13]"
+                                            },
+                                            {
+                                                "name": "errorBits[12]"
+                                            },
+                                            {
+                                                "name": "errorBits[11]"
+                                            },
+                                            {
+                                                "name": "errorBits[10]"
+                                            },
+                                            {
+                                                "name": "errorBits[9]"
+                                            },
+                                            {
+                                                "name": "errorBits[8]"
+                                            },
+                                            {
+                                                "name": "errorBits[7]"
+                                            },
+                                            {
+                                                "name": "errorBits[6]"
+                                            },
+                                            {
+                                                "name": "errorBits[5]"
+                                            },
+                                            {
+                                                "name": "errorBits[4]"
+                                            },
+                                            {
+                                                "name": "errorBits[3]"
+                                            },
+                                            {
+                                                "name": "errorBits[2]"
+                                            },
+                                            {
+                                                "name": "errorBits[1]"
+                                            },
+                                            {
+                                                "name": "errorBits[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe4",
+                                "id": 5,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 9,
+                                "portIndex": 4,
+                                "nets": [
+                                    {
+                                        "name": "alignAddr",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "alignAddr[9]"
+                                            },
+                                            {
+                                                "name": "alignAddr[8]"
+                                            },
+                                            {
+                                                "name": "alignAddr[7]"
+                                            },
+                                            {
+                                                "name": "alignAddr[6]"
+                                            },
+                                            {
+                                                "name": "alignAddr[5]"
+                                            },
+                                            {
+                                                "name": "alignAddr[4]"
+                                            },
+                                            {
+                                                "name": "alignAddr[3]"
+                                            },
+                                            {
+                                                "name": "alignAddr[2]"
+                                            },
+                                            {
+                                                "name": "alignAddr[1]"
+                                            },
+                                            {
+                                                "name": "alignAddr[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe5",
+                                "id": 6,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 23,
+                                "portIndex": 5,
+                                "nets": [
+                                    {
+                                        "name": "tot_err_count",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "tot_err_count[23]"
+                                            },
+                                            {
+                                                "name": "tot_err_count[22]"
+                                            },
+                                            {
+                                                "name": "tot_err_count[21]"
+                                            },
+                                            {
+                                                "name": "tot_err_count[20]"
+                                            },
+                                            {
+                                                "name": "tot_err_count[19]"
+                                            },
+                                            {
+                                                "name": "tot_err_count[18]"
+                                            },
+                                            {
+                                                "name": "tot_err_count[17]"
+                                            },
+                                            {
+                                                "name": "tot_err_count[16]"
+                                            },
+                                            {
+                                                "name": "tot_err_count[15]"
+                                            },
+                                            {
+                                                "name": "tot_err_count[14]"
+                                            },
+                                            {
+                                                "name": "tot_err_count[13]"
+                                            },
+                                            {
+                                                "name": "tot_err_count[12]"
+                                            },
+                                            {
+                                                "name": "tot_err_count[11]"
+                                            },
+                                            {
+                                                "name": "tot_err_count[10]"
+                                            },
+                                            {
+                                                "name": "tot_err_count[9]"
+                                            },
+                                            {
+                                                "name": "tot_err_count[8]"
+                                            },
+                                            {
+                                                "name": "tot_err_count[7]"
+                                            },
+                                            {
+                                                "name": "tot_err_count[6]"
+                                            },
+                                            {
+                                                "name": "tot_err_count[5]"
+                                            },
+                                            {
+                                                "name": "tot_err_count[4]"
+                                            },
+                                            {
+                                                "name": "tot_err_count[3]"
+                                            },
+                                            {
+                                                "name": "tot_err_count[2]"
+                                            },
+                                            {
+                                                "name": "tot_err_count[1]"
+                                            },
+                                            {
+                                                "name": "tot_err_count[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe6",
+                                "id": 7,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 8,
+                                "portIndex": 6,
+                                "nets": [
+                                    {
+                                        "name": "searchedFrames",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "searchedFrames[8]"
+                                            },
+                                            {
+                                                "name": "searchedFrames[7]"
+                                            },
+                                            {
+                                                "name": "searchedFrames[6]"
+                                            },
+                                            {
+                                                "name": "searchedFrames[5]"
+                                            },
+                                            {
+                                                "name": "searchedFrames[4]"
+                                            },
+                                            {
+                                                "name": "searchedFrames[3]"
+                                            },
+                                            {
+                                                "name": "searchedFrames[2]"
+                                            },
+                                            {
+                                                "name": "searchedFrames[1]"
+                                            },
+                                            {
+                                                "name": "searchedFrames[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe7",
+                                "id": 8,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 3,
+                                "portIndex": 7,
+                                "nets": [
+                                    {
+                                        "name": "foundFrames",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "foundFrames[3]"
+                                            },
+                                            {
+                                                "name": "foundFrames[2]"
+                                            },
+                                            {
+                                                "name": "foundFrames[1]"
+                                            },
+                                            {
+                                                "name": "foundFrames[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe8",
                                 "id": 9,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 6,
+                                "portIndex": 8,
+                                "nets": [
+                                    {
+                                        "name": "errorCounter",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "errorCounter[6]"
+                                            },
+                                            {
+                                                "name": "errorCounter[5]"
+                                            },
+                                            {
+                                                "name": "errorCounter[4]"
+                                            },
+                                            {
+                                                "name": "errorCounter[3]"
+                                            },
+                                            {
+                                                "name": "errorCounter[2]"
+                                            },
+                                            {
+                                                "name": "errorCounter[1]"
+                                            },
+                                            {
+                                                "name": "errorCounter[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe9",
+                                "id": 10,
                                 "type": "DATA_TRIGGER",
                                 "direction": "IN",
                                 "isVector": false,
@@ -1122,7 +1214,7 @@
                             },
                             {
                                 "name": "probe10",
-                                "id": 10,
+                                "id": 11,
                                 "type": "DATA_TRIGGER",
                                 "direction": "IN",
                                 "isVector": false,
@@ -1138,7 +1230,7 @@
                             },
                             {
                                 "name": "probe11",
-                                "id": 11,
+                                "id": 12,
                                 "type": "DATA_TRIGGER",
                                 "direction": "IN",
                                 "isVector": false,
@@ -1154,7 +1246,7 @@
                             },
                             {
                                 "name": "probe12",
-                                "id": 12,
+                                "id": 13,
                                 "type": "DATA_TRIGGER",
                                 "direction": "IN",
                                 "isVector": false,
@@ -1176,14 +1268,14 @@
                         "spec": "labtools_ila_v6",
                         "core_location": {
                             "user_chain": 1,
-                            "slave_index": 1,
+                            "slave_index": 2,
                             "bscan_switch_index": 0
                         },
                         "uuid": "3b505a030738513c98471d25f5b1f848",
                         "pins": [
                             {
                                 "name": "probe0",
-                                "id": 13,
+                                "id": 14,
                                 "type": "DATA_TRIGGER",
                                 "direction": "IN",
                                 "isVector": true,
@@ -1729,7 +1821,7 @@
                             },
                             {
                                 "name": "probe1",
-                                "id": 14,
+                                "id": 15,
                                 "type": "DATA_TRIGGER",
                                 "direction": "IN",
                                 "isVector": true,
@@ -3289,269 +3381,20 @@
                         "spec": "labtools_ila_v6",
                         "core_location": {
                             "user_chain": 1,
-                            "slave_index": 2,
+                            "slave_index": 3,
                             "bscan_switch_index": 0
                         },
                         "uuid": "b13c981ac2d554bfb4fbe0eecea5cfd7",
                         "pins": [
                             {
                                 "name": "probe0",
-                                "id": 15,
+                                "id": 16,
                                 "type": "DATA_TRIGGER",
                                 "direction": "IN",
                                 "isVector": true,
                                 "leftIndex": 0,
                                 "rightIndex": 63,
                                 "portIndex": 0,
-                                "nets": [
-                                    {
-                                        "name": "prbs_from_check_to_check_source",
-                                        "isBus": true,
-                                        "subnets": [
-                                            {
-                                                "name": "prbs_from_check_to_check_source[63]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check_to_check_source[62]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check_to_check_source[61]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check_to_check_source[60]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check_to_check_source[59]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check_to_check_source[58]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check_to_check_source[57]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check_to_check_source[56]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check_to_check_source[55]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check_to_check_source[54]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check_to_check_source[53]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check_to_check_source[52]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check_to_check_source[51]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check_to_check_source[50]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check_to_check_source[49]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check_to_check_source[48]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check_to_check_source[47]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check_to_check_source[46]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check_to_check_source[45]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check_to_check_source[44]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check_to_check_source[43]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check_to_check_source[42]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check_to_check_source[41]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check_to_check_source[40]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check_to_check_source[39]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check_to_check_source[38]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check_to_check_source[37]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check_to_check_source[36]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check_to_check_source[35]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check_to_check_source[34]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check_to_check_source[33]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check_to_check_source[32]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check_to_check_source[31]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check_to_check_source[30]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check_to_check_source[29]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check_to_check_source[28]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check_to_check_source[27]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check_to_check_source[26]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check_to_check_source[25]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check_to_check_source[24]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check_to_check_source[23]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check_to_check_source[22]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check_to_check_source[21]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check_to_check_source[20]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check_to_check_source[19]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check_to_check_source[18]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check_to_check_source[17]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check_to_check_source[16]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check_to_check_source[15]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check_to_check_source[14]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check_to_check_source[13]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check_to_check_source[12]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check_to_check_source[11]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check_to_check_source[10]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check_to_check_source[9]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check_to_check_source[8]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check_to_check_source[7]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check_to_check_source[6]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check_to_check_source[5]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check_to_check_source[4]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check_to_check_source[3]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check_to_check_source[2]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check_to_check_source[1]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check_to_check_source[0]"
-                                            }
-                                        ]
-                                    }
-                                ]
-                            },
-                            {
-                                "name": "probe1",
-                                "id": 16,
-                                "type": "DATA_TRIGGER",
-                                "direction": "IN",
-                                "isVector": true,
-                                "leftIndex": 0,
-                                "rightIndex": 6,
-                                "portIndex": 1,
-                                "nets": [
-                                    {
-                                        "name": "errorCount_to_check_source",
-                                        "isBus": true,
-                                        "subnets": [
-                                            {
-                                                "name": "errorCount_to_check_source[6]"
-                                            },
-                                            {
-                                                "name": "errorCount_to_check_source[5]"
-                                            },
-                                            {
-                                                "name": "errorCount_to_check_source[4]"
-                                            },
-                                            {
-                                                "name": "errorCount_to_check_source[3]"
-                                            },
-                                            {
-                                                "name": "errorCount_to_check_source[2]"
-                                            },
-                                            {
-                                                "name": "errorCount_to_check_source[1]"
-                                            },
-                                            {
-                                                "name": "errorCount_to_check_source[0]"
-                                            }
-                                        ]
-                                    }
-                                ]
-                            },
-                            {
-                                "name": "probe2",
-                                "id": 17,
-                                "type": "DATA_TRIGGER",
-                                "direction": "IN",
-                                "isVector": true,
-                                "leftIndex": 0,
-                                "rightIndex": 63,
-                                "portIndex": 2,
                                 "nets": [
                                     {
                                         "name": "map_dout",
@@ -3754,8 +3597,428 @@
                                 ]
                             },
                             {
-                                "name": "probe3",
+                                "name": "probe1",
+                                "id": 17,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 63,
+                                "portIndex": 1,
+                                "nets": [
+                                    {
+                                        "name": "prbs_from_check_to_check_source",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "prbs_from_check_to_check_source[63]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check_to_check_source[62]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check_to_check_source[61]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check_to_check_source[60]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check_to_check_source[59]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check_to_check_source[58]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check_to_check_source[57]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check_to_check_source[56]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check_to_check_source[55]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check_to_check_source[54]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check_to_check_source[53]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check_to_check_source[52]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check_to_check_source[51]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check_to_check_source[50]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check_to_check_source[49]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check_to_check_source[48]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check_to_check_source[47]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check_to_check_source[46]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check_to_check_source[45]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check_to_check_source[44]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check_to_check_source[43]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check_to_check_source[42]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check_to_check_source[41]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check_to_check_source[40]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check_to_check_source[39]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check_to_check_source[38]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check_to_check_source[37]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check_to_check_source[36]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check_to_check_source[35]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check_to_check_source[34]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check_to_check_source[33]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check_to_check_source[32]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check_to_check_source[31]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check_to_check_source[30]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check_to_check_source[29]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check_to_check_source[28]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check_to_check_source[27]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check_to_check_source[26]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check_to_check_source[25]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check_to_check_source[24]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check_to_check_source[23]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check_to_check_source[22]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check_to_check_source[21]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check_to_check_source[20]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check_to_check_source[19]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check_to_check_source[18]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check_to_check_source[17]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check_to_check_source[16]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check_to_check_source[15]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check_to_check_source[14]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check_to_check_source[13]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check_to_check_source[12]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check_to_check_source[11]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check_to_check_source[10]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check_to_check_source[9]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check_to_check_source[8]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check_to_check_source[7]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check_to_check_source[6]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check_to_check_source[5]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check_to_check_source[4]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check_to_check_source[3]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check_to_check_source[2]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check_to_check_source[1]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check_to_check_source[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe2",
                                 "id": 18,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 63,
+                                "portIndex": 2,
+                                "nets": [
+                                    {
+                                        "name": "gt0_txdata_i",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "gt0_txdata_i[63]"
+                                            },
+                                            {
+                                                "name": "gt0_txdata_i[62]"
+                                            },
+                                            {
+                                                "name": "gt0_txdata_i[61]"
+                                            },
+                                            {
+                                                "name": "gt0_txdata_i[60]"
+                                            },
+                                            {
+                                                "name": "gt0_txdata_i[59]"
+                                            },
+                                            {
+                                                "name": "gt0_txdata_i[58]"
+                                            },
+                                            {
+                                                "name": "gt0_txdata_i[57]"
+                                            },
+                                            {
+                                                "name": "gt0_txdata_i[56]"
+                                            },
+                                            {
+                                                "name": "gt0_txdata_i[55]"
+                                            },
+                                            {
+                                                "name": "gt0_txdata_i[54]"
+                                            },
+                                            {
+                                                "name": "gt0_txdata_i[53]"
+                                            },
+                                            {
+                                                "name": "gt0_txdata_i[52]"
+                                            },
+                                            {
+                                                "name": "gt0_txdata_i[51]"
+                                            },
+                                            {
+                                                "name": "gt0_txdata_i[50]"
+                                            },
+                                            {
+                                                "name": "gt0_txdata_i[49]"
+                                            },
+                                            {
+                                                "name": "gt0_txdata_i[48]"
+                                            },
+                                            {
+                                                "name": "gt0_txdata_i[47]"
+                                            },
+                                            {
+                                                "name": "gt0_txdata_i[46]"
+                                            },
+                                            {
+                                                "name": "gt0_txdata_i[45]"
+                                            },
+                                            {
+                                                "name": "gt0_txdata_i[44]"
+                                            },
+                                            {
+                                                "name": "gt0_txdata_i[43]"
+                                            },
+                                            {
+                                                "name": "gt0_txdata_i[42]"
+                                            },
+                                            {
+                                                "name": "gt0_txdata_i[41]"
+                                            },
+                                            {
+                                                "name": "gt0_txdata_i[40]"
+                                            },
+                                            {
+                                                "name": "gt0_txdata_i[39]"
+                                            },
+                                            {
+                                                "name": "gt0_txdata_i[38]"
+                                            },
+                                            {
+                                                "name": "gt0_txdata_i[37]"
+                                            },
+                                            {
+                                                "name": "gt0_txdata_i[36]"
+                                            },
+                                            {
+                                                "name": "gt0_txdata_i[35]"
+                                            },
+                                            {
+                                                "name": "gt0_txdata_i[34]"
+                                            },
+                                            {
+                                                "name": "gt0_txdata_i[33]"
+                                            },
+                                            {
+                                                "name": "gt0_txdata_i[32]"
+                                            },
+                                            {
+                                                "name": "gt0_txdata_i[31]"
+                                            },
+                                            {
+                                                "name": "gt0_txdata_i[30]"
+                                            },
+                                            {
+                                                "name": "gt0_txdata_i[29]"
+                                            },
+                                            {
+                                                "name": "gt0_txdata_i[28]"
+                                            },
+                                            {
+                                                "name": "gt0_txdata_i[27]"
+                                            },
+                                            {
+                                                "name": "gt0_txdata_i[26]"
+                                            },
+                                            {
+                                                "name": "gt0_txdata_i[25]"
+                                            },
+                                            {
+                                                "name": "gt0_txdata_i[24]"
+                                            },
+                                            {
+                                                "name": "gt0_txdata_i[23]"
+                                            },
+                                            {
+                                                "name": "gt0_txdata_i[22]"
+                                            },
+                                            {
+                                                "name": "gt0_txdata_i[21]"
+                                            },
+                                            {
+                                                "name": "gt0_txdata_i[20]"
+                                            },
+                                            {
+                                                "name": "gt0_txdata_i[19]"
+                                            },
+                                            {
+                                                "name": "gt0_txdata_i[18]"
+                                            },
+                                            {
+                                                "name": "gt0_txdata_i[17]"
+                                            },
+                                            {
+                                                "name": "gt0_txdata_i[16]"
+                                            },
+                                            {
+                                                "name": "gt0_txdata_i[15]"
+                                            },
+                                            {
+                                                "name": "gt0_txdata_i[14]"
+                                            },
+                                            {
+                                                "name": "gt0_txdata_i[13]"
+                                            },
+                                            {
+                                                "name": "gt0_txdata_i[12]"
+                                            },
+                                            {
+                                                "name": "gt0_txdata_i[11]"
+                                            },
+                                            {
+                                                "name": "gt0_txdata_i[10]"
+                                            },
+                                            {
+                                                "name": "gt0_txdata_i[9]"
+                                            },
+                                            {
+                                                "name": "gt0_txdata_i[8]"
+                                            },
+                                            {
+                                                "name": "gt0_txdata_i[7]"
+                                            },
+                                            {
+                                                "name": "gt0_txdata_i[6]"
+                                            },
+                                            {
+                                                "name": "gt0_txdata_i[5]"
+                                            },
+                                            {
+                                                "name": "gt0_txdata_i[4]"
+                                            },
+                                            {
+                                                "name": "gt0_txdata_i[3]"
+                                            },
+                                            {
+                                                "name": "gt0_txdata_i[2]"
+                                            },
+                                            {
+                                                "name": "gt0_txdata_i[1]"
+                                            },
+                                            {
+                                                "name": "gt0_txdata_i[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe3",
+                                "id": 19,
                                 "type": "DATA_TRIGGER",
                                 "direction": "IN",
                                 "isVector": true,
@@ -3965,209 +4228,38 @@
                             },
                             {
                                 "name": "probe4",
-                                "id": 19,
+                                "id": 20,
                                 "type": "DATA_TRIGGER",
                                 "direction": "IN",
                                 "isVector": true,
                                 "leftIndex": 0,
-                                "rightIndex": 63,
+                                "rightIndex": 6,
                                 "portIndex": 4,
                                 "nets": [
                                     {
-                                        "name": "gt0_txdata_i",
+                                        "name": "errorCount_to_check_source",
                                         "isBus": true,
                                         "subnets": [
                                             {
-                                                "name": "gt0_txdata_i[63]"
+                                                "name": "errorCount_to_check_source[6]"
                                             },
                                             {
-                                                "name": "gt0_txdata_i[62]"
+                                                "name": "errorCount_to_check_source[5]"
                                             },
                                             {
-                                                "name": "gt0_txdata_i[61]"
+                                                "name": "errorCount_to_check_source[4]"
                                             },
                                             {
-                                                "name": "gt0_txdata_i[60]"
+                                                "name": "errorCount_to_check_source[3]"
                                             },
                                             {
-                                                "name": "gt0_txdata_i[59]"
+                                                "name": "errorCount_to_check_source[2]"
                                             },
                                             {
-                                                "name": "gt0_txdata_i[58]"
+                                                "name": "errorCount_to_check_source[1]"
                                             },
                                             {
-                                                "name": "gt0_txdata_i[57]"
-                                            },
-                                            {
-                                                "name": "gt0_txdata_i[56]"
-                                            },
-                                            {
-                                                "name": "gt0_txdata_i[55]"
-                                            },
-                                            {
-                                                "name": "gt0_txdata_i[54]"
-                                            },
-                                            {
-                                                "name": "gt0_txdata_i[53]"
-                                            },
-                                            {
-                                                "name": "gt0_txdata_i[52]"
-                                            },
-                                            {
-                                                "name": "gt0_txdata_i[51]"
-                                            },
-                                            {
-                                                "name": "gt0_txdata_i[50]"
-                                            },
-                                            {
-                                                "name": "gt0_txdata_i[49]"
-                                            },
-                                            {
-                                                "name": "gt0_txdata_i[48]"
-                                            },
-                                            {
-                                                "name": "gt0_txdata_i[47]"
-                                            },
-                                            {
-                                                "name": "gt0_txdata_i[46]"
-                                            },
-                                            {
-                                                "name": "gt0_txdata_i[45]"
-                                            },
-                                            {
-                                                "name": "gt0_txdata_i[44]"
-                                            },
-                                            {
-                                                "name": "gt0_txdata_i[43]"
-                                            },
-                                            {
-                                                "name": "gt0_txdata_i[42]"
-                                            },
-                                            {
-                                                "name": "gt0_txdata_i[41]"
-                                            },
-                                            {
-                                                "name": "gt0_txdata_i[40]"
-                                            },
-                                            {
-                                                "name": "gt0_txdata_i[39]"
-                                            },
-                                            {
-                                                "name": "gt0_txdata_i[38]"
-                                            },
-                                            {
-                                                "name": "gt0_txdata_i[37]"
-                                            },
-                                            {
-                                                "name": "gt0_txdata_i[36]"
-                                            },
-                                            {
-                                                "name": "gt0_txdata_i[35]"
-                                            },
-                                            {
-                                                "name": "gt0_txdata_i[34]"
-                                            },
-                                            {
-                                                "name": "gt0_txdata_i[33]"
-                                            },
-                                            {
-                                                "name": "gt0_txdata_i[32]"
-                                            },
-                                            {
-                                                "name": "gt0_txdata_i[31]"
-                                            },
-                                            {
-                                                "name": "gt0_txdata_i[30]"
-                                            },
-                                            {
-                                                "name": "gt0_txdata_i[29]"
-                                            },
-                                            {
-                                                "name": "gt0_txdata_i[28]"
-                                            },
-                                            {
-                                                "name": "gt0_txdata_i[27]"
-                                            },
-                                            {
-                                                "name": "gt0_txdata_i[26]"
-                                            },
-                                            {
-                                                "name": "gt0_txdata_i[25]"
-                                            },
-                                            {
-                                                "name": "gt0_txdata_i[24]"
-                                            },
-                                            {
-                                                "name": "gt0_txdata_i[23]"
-                                            },
-                                            {
-                                                "name": "gt0_txdata_i[22]"
-                                            },
-                                            {
-                                                "name": "gt0_txdata_i[21]"
-                                            },
-                                            {
-                                                "name": "gt0_txdata_i[20]"
-                                            },
-                                            {
-                                                "name": "gt0_txdata_i[19]"
-                                            },
-                                            {
-                                                "name": "gt0_txdata_i[18]"
-                                            },
-                                            {
-                                                "name": "gt0_txdata_i[17]"
-                                            },
-                                            {
-                                                "name": "gt0_txdata_i[16]"
-                                            },
-                                            {
-                                                "name": "gt0_txdata_i[15]"
-                                            },
-                                            {
-                                                "name": "gt0_txdata_i[14]"
-                                            },
-                                            {
-                                                "name": "gt0_txdata_i[13]"
-                                            },
-                                            {
-                                                "name": "gt0_txdata_i[12]"
-                                            },
-                                            {
-                                                "name": "gt0_txdata_i[11]"
-                                            },
-                                            {
-                                                "name": "gt0_txdata_i[10]"
-                                            },
-                                            {
-                                                "name": "gt0_txdata_i[9]"
-                                            },
-                                            {
-                                                "name": "gt0_txdata_i[8]"
-                                            },
-                                            {
-                                                "name": "gt0_txdata_i[7]"
-                                            },
-                                            {
-                                                "name": "gt0_txdata_i[6]"
-                                            },
-                                            {
-                                                "name": "gt0_txdata_i[5]"
-                                            },
-                                            {
-                                                "name": "gt0_txdata_i[4]"
-                                            },
-                                            {
-                                                "name": "gt0_txdata_i[3]"
-                                            },
-                                            {
-                                                "name": "gt0_txdata_i[2]"
-                                            },
-                                            {
-                                                "name": "gt0_txdata_i[1]"
-                                            },
-                                            {
-                                                "name": "gt0_txdata_i[0]"
+                                                "name": "errorCount_to_check_source[0]"
                                             }
                                         ]
                                     }
@@ -4175,7 +4267,7 @@
                             },
                             {
                                 "name": "probe5",
-                                "id": 20,
+                                "id": 21,
                                 "type": "DATA_TRIGGER",
                                 "direction": "IN",
                                 "isVector": false,
@@ -4191,7 +4283,7 @@
                             },
                             {
                                 "name": "probe6",
-                                "id": 21,
+                                "id": 22,
                                 "type": "DATA_TRIGGER",
                                 "direction": "IN",
                                 "isVector": false,
