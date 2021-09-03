@@ -36,58 +36,74 @@
                                 "portIndex": 0,
                                 "nets": [
                                     {
-                                        "name": "mask",
+                                        "name": "mask_1",
                                         "isBus": true,
                                         "subnets": [
                                             {
-                                                "name": "mask[15]"
+                                                "name": "mask_1[15]"
                                             },
                                             {
-                                                "name": "mask[14]"
+                                                "name": "mask_1[14]"
                                             },
                                             {
-                                                "name": "mask[13]"
+                                                "name": "mask_1[13]"
                                             },
                                             {
-                                                "name": "mask[12]"
+                                                "name": "mask_1[12]"
                                             },
                                             {
-                                                "name": "mask[11]"
+                                                "name": "mask_1[11]"
                                             },
                                             {
-                                                "name": "mask[10]"
+                                                "name": "mask_1[10]"
                                             },
                                             {
-                                                "name": "mask[9]"
+                                                "name": "mask_1[9]"
                                             },
                                             {
-                                                "name": "mask[8]"
+                                                "name": "mask_1[8]"
                                             },
                                             {
-                                                "name": "mask[7]"
+                                                "name": "mask_1[7]"
                                             },
                                             {
-                                                "name": "mask[6]"
+                                                "name": "mask_1[6]"
                                             },
                                             {
-                                                "name": "mask[5]"
+                                                "name": "mask_1[5]"
                                             },
                                             {
-                                                "name": "mask[4]"
+                                                "name": "mask_1[4]"
                                             },
                                             {
-                                                "name": "mask[3]"
+                                                "name": "mask_1[3]"
                                             },
                                             {
-                                                "name": "mask[2]"
+                                                "name": "mask_1[2]"
                                             },
                                             {
-                                                "name": "mask[1]"
+                                                "name": "mask_1[1]"
                                             },
                                             {
-                                                "name": "mask[0]"
+                                                "name": "mask_1[0]"
                                             }
                                         ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe_out1",
+                                "id": 1,
+                                "type": "DATA",
+                                "direction": "OUT",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 1,
+                                "nets": [
+                                    {
+                                        "name": "bypass_1",
+                                        "isBus": false
                                     }
                                 ]
                             }
@@ -106,13 +122,91 @@
                         "pins": [
                             {
                                 "name": "probe0",
-                                "id": 1,
+                                "id": 2,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 3,
+                                "portIndex": 0,
+                                "nets": [
+                                    {
+                                        "name": "foundFrames",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "foundFrames[3]"
+                                            },
+                                            {
+                                                "name": "foundFrames[2]"
+                                            },
+                                            {
+                                                "name": "foundFrames[1]"
+                                            },
+                                            {
+                                                "name": "foundFrames[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe1",
+                                "id": 3,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 9,
+                                "portIndex": 1,
+                                "nets": [
+                                    {
+                                        "name": "alignAddr",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "alignAddr[9]"
+                                            },
+                                            {
+                                                "name": "alignAddr[8]"
+                                            },
+                                            {
+                                                "name": "alignAddr[7]"
+                                            },
+                                            {
+                                                "name": "alignAddr[6]"
+                                            },
+                                            {
+                                                "name": "alignAddr[5]"
+                                            },
+                                            {
+                                                "name": "alignAddr[4]"
+                                            },
+                                            {
+                                                "name": "alignAddr[3]"
+                                            },
+                                            {
+                                                "name": "alignAddr[2]"
+                                            },
+                                            {
+                                                "name": "alignAddr[1]"
+                                            },
+                                            {
+                                                "name": "alignAddr[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe2",
+                                "id": 4,
                                 "type": "DATA_TRIGGER",
                                 "direction": "IN",
                                 "isVector": true,
                                 "leftIndex": 0,
                                 "rightIndex": 63,
-                                "portIndex": 0,
+                                "portIndex": 2,
                                 "nets": [
                                     {
                                         "name": "dout",
@@ -315,434 +409,53 @@
                                 ]
                             },
                             {
-                                "name": "probe1",
-                                "id": 2,
-                                "type": "DATA_TRIGGER",
-                                "direction": "IN",
-                                "isVector": true,
-                                "leftIndex": 0,
-                                "rightIndex": 63,
-                                "portIndex": 1,
-                                "nets": [
-                                    {
-                                        "name": "gt0_rxdata_i",
-                                        "isBus": true,
-                                        "subnets": [
-                                            {
-                                                "name": "gt0_rxdata_i[63]"
-                                            },
-                                            {
-                                                "name": "gt0_rxdata_i[62]"
-                                            },
-                                            {
-                                                "name": "gt0_rxdata_i[61]"
-                                            },
-                                            {
-                                                "name": "gt0_rxdata_i[60]"
-                                            },
-                                            {
-                                                "name": "gt0_rxdata_i[59]"
-                                            },
-                                            {
-                                                "name": "gt0_rxdata_i[58]"
-                                            },
-                                            {
-                                                "name": "gt0_rxdata_i[57]"
-                                            },
-                                            {
-                                                "name": "gt0_rxdata_i[56]"
-                                            },
-                                            {
-                                                "name": "gt0_rxdata_i[55]"
-                                            },
-                                            {
-                                                "name": "gt0_rxdata_i[54]"
-                                            },
-                                            {
-                                                "name": "gt0_rxdata_i[53]"
-                                            },
-                                            {
-                                                "name": "gt0_rxdata_i[52]"
-                                            },
-                                            {
-                                                "name": "gt0_rxdata_i[51]"
-                                            },
-                                            {
-                                                "name": "gt0_rxdata_i[50]"
-                                            },
-                                            {
-                                                "name": "gt0_rxdata_i[49]"
-                                            },
-                                            {
-                                                "name": "gt0_rxdata_i[48]"
-                                            },
-                                            {
-                                                "name": "gt0_rxdata_i[47]"
-                                            },
-                                            {
-                                                "name": "gt0_rxdata_i[46]"
-                                            },
-                                            {
-                                                "name": "gt0_rxdata_i[45]"
-                                            },
-                                            {
-                                                "name": "gt0_rxdata_i[44]"
-                                            },
-                                            {
-                                                "name": "gt0_rxdata_i[43]"
-                                            },
-                                            {
-                                                "name": "gt0_rxdata_i[42]"
-                                            },
-                                            {
-                                                "name": "gt0_rxdata_i[41]"
-                                            },
-                                            {
-                                                "name": "gt0_rxdata_i[40]"
-                                            },
-                                            {
-                                                "name": "gt0_rxdata_i[39]"
-                                            },
-                                            {
-                                                "name": "gt0_rxdata_i[38]"
-                                            },
-                                            {
-                                                "name": "gt0_rxdata_i[37]"
-                                            },
-                                            {
-                                                "name": "gt0_rxdata_i[36]"
-                                            },
-                                            {
-                                                "name": "gt0_rxdata_i[35]"
-                                            },
-                                            {
-                                                "name": "gt0_rxdata_i[34]"
-                                            },
-                                            {
-                                                "name": "gt0_rxdata_i[33]"
-                                            },
-                                            {
-                                                "name": "gt0_rxdata_i[32]"
-                                            },
-                                            {
-                                                "name": "gt0_rxdata_i[31]"
-                                            },
-                                            {
-                                                "name": "gt0_rxdata_i[30]"
-                                            },
-                                            {
-                                                "name": "gt0_rxdata_i[29]"
-                                            },
-                                            {
-                                                "name": "gt0_rxdata_i[28]"
-                                            },
-                                            {
-                                                "name": "gt0_rxdata_i[27]"
-                                            },
-                                            {
-                                                "name": "gt0_rxdata_i[26]"
-                                            },
-                                            {
-                                                "name": "gt0_rxdata_i[25]"
-                                            },
-                                            {
-                                                "name": "gt0_rxdata_i[24]"
-                                            },
-                                            {
-                                                "name": "gt0_rxdata_i[23]"
-                                            },
-                                            {
-                                                "name": "gt0_rxdata_i[22]"
-                                            },
-                                            {
-                                                "name": "gt0_rxdata_i[21]"
-                                            },
-                                            {
-                                                "name": "gt0_rxdata_i[20]"
-                                            },
-                                            {
-                                                "name": "gt0_rxdata_i[19]"
-                                            },
-                                            {
-                                                "name": "gt0_rxdata_i[18]"
-                                            },
-                                            {
-                                                "name": "gt0_rxdata_i[17]"
-                                            },
-                                            {
-                                                "name": "gt0_rxdata_i[16]"
-                                            },
-                                            {
-                                                "name": "gt0_rxdata_i[15]"
-                                            },
-                                            {
-                                                "name": "gt0_rxdata_i[14]"
-                                            },
-                                            {
-                                                "name": "gt0_rxdata_i[13]"
-                                            },
-                                            {
-                                                "name": "gt0_rxdata_i[12]"
-                                            },
-                                            {
-                                                "name": "gt0_rxdata_i[11]"
-                                            },
-                                            {
-                                                "name": "gt0_rxdata_i[10]"
-                                            },
-                                            {
-                                                "name": "gt0_rxdata_i[9]"
-                                            },
-                                            {
-                                                "name": "gt0_rxdata_i[8]"
-                                            },
-                                            {
-                                                "name": "gt0_rxdata_i[7]"
-                                            },
-                                            {
-                                                "name": "gt0_rxdata_i[6]"
-                                            },
-                                            {
-                                                "name": "gt0_rxdata_i[5]"
-                                            },
-                                            {
-                                                "name": "gt0_rxdata_i[4]"
-                                            },
-                                            {
-                                                "name": "gt0_rxdata_i[3]"
-                                            },
-                                            {
-                                                "name": "gt0_rxdata_i[2]"
-                                            },
-                                            {
-                                                "name": "gt0_rxdata_i[1]"
-                                            },
-                                            {
-                                                "name": "gt0_rxdata_i[0]"
-                                            }
-                                        ]
-                                    }
-                                ]
-                            },
-                            {
-                                "name": "probe2",
-                                "id": 3,
-                                "type": "DATA_TRIGGER",
-                                "direction": "IN",
-                                "isVector": true,
-                                "leftIndex": 0,
-                                "rightIndex": 63,
-                                "portIndex": 2,
-                                "nets": [
-                                    {
-                                        "name": "prbs_from_check",
-                                        "isBus": true,
-                                        "subnets": [
-                                            {
-                                                "name": "prbs_from_check[63]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check[62]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check[61]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check[60]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check[59]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check[58]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check[57]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check[56]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check[55]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check[54]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check[53]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check[52]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check[51]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check[50]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check[49]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check[48]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check[47]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check[46]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check[45]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check[44]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check[43]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check[42]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check[41]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check[40]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check[39]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check[38]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check[37]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check[36]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check[35]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check[34]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check[33]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check[32]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check[31]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check[30]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check[29]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check[28]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check[27]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check[26]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check[25]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check[24]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check[23]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check[22]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check[21]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check[20]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check[19]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check[18]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check[17]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check[16]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check[15]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check[14]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check[13]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check[12]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check[11]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check[10]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check[9]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check[8]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check[7]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check[6]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check[5]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check[4]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check[3]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check[2]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check[1]"
-                                            },
-                                            {
-                                                "name": "prbs_from_check[0]"
-                                            }
-                                        ]
-                                    }
-                                ]
-                            },
-                            {
                                 "name": "probe3",
-                                "id": 4,
+                                "id": 5,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 6,
+                                "portIndex": 3,
+                                "nets": [
+                                    {
+                                        "name": "errorCounter",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "errorCounter[6]"
+                                            },
+                                            {
+                                                "name": "errorCounter[5]"
+                                            },
+                                            {
+                                                "name": "errorCounter[4]"
+                                            },
+                                            {
+                                                "name": "errorCounter[3]"
+                                            },
+                                            {
+                                                "name": "errorCounter[2]"
+                                            },
+                                            {
+                                                "name": "errorCounter[1]"
+                                            },
+                                            {
+                                                "name": "errorCounter[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe4",
+                                "id": 6,
                                 "type": "DATA_TRIGGER",
                                 "direction": "IN",
                                 "isVector": true,
                                 "leftIndex": 0,
                                 "rightIndex": 63,
-                                "portIndex": 3,
+                                "portIndex": 4,
                                 "nets": [
                                     {
                                         "name": "errorBits",
@@ -945,62 +658,479 @@
                                 ]
                             },
                             {
-                                "name": "probe4",
-                                "id": 5,
+                                "name": "probe5",
+                                "id": 7,
                                 "type": "DATA_TRIGGER",
                                 "direction": "IN",
                                 "isVector": true,
                                 "leftIndex": 0,
-                                "rightIndex": 9,
-                                "portIndex": 4,
+                                "rightIndex": 63,
+                                "portIndex": 5,
                                 "nets": [
                                     {
-                                        "name": "alignAddr",
+                                        "name": "userBits",
                                         "isBus": true,
                                         "subnets": [
                                             {
-                                                "name": "alignAddr[9]"
+                                                "name": "userBits[63]"
                                             },
                                             {
-                                                "name": "alignAddr[8]"
+                                                "name": "userBits[62]"
                                             },
                                             {
-                                                "name": "alignAddr[7]"
+                                                "name": "userBits[61]"
                                             },
                                             {
-                                                "name": "alignAddr[6]"
+                                                "name": "userBits[60]"
                                             },
                                             {
-                                                "name": "alignAddr[5]"
+                                                "name": "userBits[59]"
                                             },
                                             {
-                                                "name": "alignAddr[4]"
+                                                "name": "userBits[58]"
                                             },
                                             {
-                                                "name": "alignAddr[3]"
+                                                "name": "userBits[57]"
                                             },
                                             {
-                                                "name": "alignAddr[2]"
+                                                "name": "userBits[56]"
                                             },
                                             {
-                                                "name": "alignAddr[1]"
+                                                "name": "userBits[55]"
                                             },
                                             {
-                                                "name": "alignAddr[0]"
+                                                "name": "userBits[54]"
+                                            },
+                                            {
+                                                "name": "userBits[53]"
+                                            },
+                                            {
+                                                "name": "userBits[52]"
+                                            },
+                                            {
+                                                "name": "userBits[51]"
+                                            },
+                                            {
+                                                "name": "userBits[50]"
+                                            },
+                                            {
+                                                "name": "userBits[49]"
+                                            },
+                                            {
+                                                "name": "userBits[48]"
+                                            },
+                                            {
+                                                "name": "userBits[47]"
+                                            },
+                                            {
+                                                "name": "userBits[46]"
+                                            },
+                                            {
+                                                "name": "userBits[45]"
+                                            },
+                                            {
+                                                "name": "userBits[44]"
+                                            },
+                                            {
+                                                "name": "userBits[43]"
+                                            },
+                                            {
+                                                "name": "userBits[42]"
+                                            },
+                                            {
+                                                "name": "userBits[41]"
+                                            },
+                                            {
+                                                "name": "userBits[40]"
+                                            },
+                                            {
+                                                "name": "userBits[39]"
+                                            },
+                                            {
+                                                "name": "userBits[38]"
+                                            },
+                                            {
+                                                "name": "userBits[37]"
+                                            },
+                                            {
+                                                "name": "userBits[36]"
+                                            },
+                                            {
+                                                "name": "userBits[35]"
+                                            },
+                                            {
+                                                "name": "userBits[34]"
+                                            },
+                                            {
+                                                "name": "userBits[33]"
+                                            },
+                                            {
+                                                "name": "userBits[32]"
+                                            },
+                                            {
+                                                "name": "userBits[31]"
+                                            },
+                                            {
+                                                "name": "userBits[30]"
+                                            },
+                                            {
+                                                "name": "userBits[29]"
+                                            },
+                                            {
+                                                "name": "userBits[28]"
+                                            },
+                                            {
+                                                "name": "userBits[27]"
+                                            },
+                                            {
+                                                "name": "userBits[26]"
+                                            },
+                                            {
+                                                "name": "userBits[25]"
+                                            },
+                                            {
+                                                "name": "userBits[24]"
+                                            },
+                                            {
+                                                "name": "userBits[23]"
+                                            },
+                                            {
+                                                "name": "userBits[22]"
+                                            },
+                                            {
+                                                "name": "userBits[21]"
+                                            },
+                                            {
+                                                "name": "userBits[20]"
+                                            },
+                                            {
+                                                "name": "userBits[19]"
+                                            },
+                                            {
+                                                "name": "userBits[18]"
+                                            },
+                                            {
+                                                "name": "userBits[17]"
+                                            },
+                                            {
+                                                "name": "userBits[16]"
+                                            },
+                                            {
+                                                "name": "userBits[15]"
+                                            },
+                                            {
+                                                "name": "userBits[14]"
+                                            },
+                                            {
+                                                "name": "userBits[13]"
+                                            },
+                                            {
+                                                "name": "userBits[12]"
+                                            },
+                                            {
+                                                "name": "userBits[11]"
+                                            },
+                                            {
+                                                "name": "userBits[10]"
+                                            },
+                                            {
+                                                "name": "userBits[9]"
+                                            },
+                                            {
+                                                "name": "userBits[8]"
+                                            },
+                                            {
+                                                "name": "userBits[7]"
+                                            },
+                                            {
+                                                "name": "userBits[6]"
+                                            },
+                                            {
+                                                "name": "userBits[5]"
+                                            },
+                                            {
+                                                "name": "userBits[4]"
+                                            },
+                                            {
+                                                "name": "userBits[3]"
+                                            },
+                                            {
+                                                "name": "userBits[2]"
+                                            },
+                                            {
+                                                "name": "userBits[1]"
+                                            },
+                                            {
+                                                "name": "userBits[0]"
                                             }
                                         ]
                                     }
                                 ]
                             },
                             {
-                                "name": "probe5",
-                                "id": 6,
+                                "name": "probe6",
+                                "id": 8,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 63,
+                                "portIndex": 6,
+                                "nets": [
+                                    {
+                                        "name": "prbs_from_check",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "prbs_from_check[63]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check[62]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check[61]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check[60]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check[59]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check[58]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check[57]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check[56]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check[55]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check[54]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check[53]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check[52]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check[51]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check[50]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check[49]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check[48]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check[47]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check[46]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check[45]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check[44]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check[43]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check[42]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check[41]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check[40]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check[39]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check[38]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check[37]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check[36]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check[35]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check[34]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check[33]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check[32]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check[31]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check[30]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check[29]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check[28]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check[27]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check[26]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check[25]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check[24]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check[23]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check[22]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check[21]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check[20]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check[19]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check[18]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check[17]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check[16]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check[15]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check[14]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check[13]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check[12]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check[11]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check[10]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check[9]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check[8]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check[7]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check[6]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check[5]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check[4]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check[3]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check[2]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check[1]"
+                                            },
+                                            {
+                                                "name": "prbs_from_check[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe7",
+                                "id": 9,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 8,
+                                "portIndex": 7,
+                                "nets": [
+                                    {
+                                        "name": "searchedFrames",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "searchedFrames[8]"
+                                            },
+                                            {
+                                                "name": "searchedFrames[7]"
+                                            },
+                                            {
+                                                "name": "searchedFrames[6]"
+                                            },
+                                            {
+                                                "name": "searchedFrames[5]"
+                                            },
+                                            {
+                                                "name": "searchedFrames[4]"
+                                            },
+                                            {
+                                                "name": "searchedFrames[3]"
+                                            },
+                                            {
+                                                "name": "searchedFrames[2]"
+                                            },
+                                            {
+                                                "name": "searchedFrames[1]"
+                                            },
+                                            {
+                                                "name": "searchedFrames[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe8",
+                                "id": 10,
                                 "type": "DATA_TRIGGER",
                                 "direction": "IN",
                                 "isVector": true,
                                 "leftIndex": 0,
                                 "rightIndex": 23,
-                                "portIndex": 5,
+                                "portIndex": 8,
                                 "nets": [
                                     {
                                         "name": "tot_err_count",
@@ -1083,128 +1213,791 @@
                                 ]
                             },
                             {
-                                "name": "probe6",
-                                "id": 7,
-                                "type": "DATA_TRIGGER",
-                                "direction": "IN",
-                                "isVector": true,
-                                "leftIndex": 0,
-                                "rightIndex": 8,
-                                "portIndex": 6,
-                                "nets": [
-                                    {
-                                        "name": "searchedFrames",
-                                        "isBus": true,
-                                        "subnets": [
-                                            {
-                                                "name": "searchedFrames[8]"
-                                            },
-                                            {
-                                                "name": "searchedFrames[7]"
-                                            },
-                                            {
-                                                "name": "searchedFrames[6]"
-                                            },
-                                            {
-                                                "name": "searchedFrames[5]"
-                                            },
-                                            {
-                                                "name": "searchedFrames[4]"
-                                            },
-                                            {
-                                                "name": "searchedFrames[3]"
-                                            },
-                                            {
-                                                "name": "searchedFrames[2]"
-                                            },
-                                            {
-                                                "name": "searchedFrames[1]"
-                                            },
-                                            {
-                                                "name": "searchedFrames[0]"
-                                            }
-                                        ]
-                                    }
-                                ]
-                            },
-                            {
-                                "name": "probe7",
-                                "id": 8,
-                                "type": "DATA_TRIGGER",
-                                "direction": "IN",
-                                "isVector": true,
-                                "leftIndex": 0,
-                                "rightIndex": 3,
-                                "portIndex": 7,
-                                "nets": [
-                                    {
-                                        "name": "foundFrames",
-                                        "isBus": true,
-                                        "subnets": [
-                                            {
-                                                "name": "foundFrames[3]"
-                                            },
-                                            {
-                                                "name": "foundFrames[2]"
-                                            },
-                                            {
-                                                "name": "foundFrames[1]"
-                                            },
-                                            {
-                                                "name": "foundFrames[0]"
-                                            }
-                                        ]
-                                    }
-                                ]
-                            },
-                            {
-                                "name": "probe8",
-                                "id": 9,
+                                "name": "probe9",
+                                "id": 11,
                                 "type": "DATA_TRIGGER",
                                 "direction": "IN",
                                 "isVector": true,
                                 "leftIndex": 0,
                                 "rightIndex": 6,
-                                "portIndex": 8,
+                                "portIndex": 9,
                                 "nets": [
                                     {
-                                        "name": "errorCounter",
+                                        "name": "usererrorCounter",
                                         "isBus": true,
                                         "subnets": [
                                             {
-                                                "name": "errorCounter[6]"
+                                                "name": "usererrorCounter[6]"
                                             },
                                             {
-                                                "name": "errorCounter[5]"
+                                                "name": "usererrorCounter[5]"
                                             },
                                             {
-                                                "name": "errorCounter[4]"
+                                                "name": "usererrorCounter[4]"
                                             },
                                             {
-                                                "name": "errorCounter[3]"
+                                                "name": "usererrorCounter[3]"
                                             },
                                             {
-                                                "name": "errorCounter[2]"
+                                                "name": "usererrorCounter[2]"
                                             },
                                             {
-                                                "name": "errorCounter[1]"
+                                                "name": "usererrorCounter[1]"
                                             },
                                             {
-                                                "name": "errorCounter[0]"
+                                                "name": "usererrorCounter[0]"
                                             }
                                         ]
                                     }
                                 ]
                             },
                             {
-                                "name": "probe9",
-                                "id": 10,
+                                "name": "probe10",
+                                "id": 12,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 7,
+                                "portIndex": 10,
+                                "nets": [
+                                    {
+                                        "name": "userData",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "userData[7]"
+                                            },
+                                            {
+                                                "name": "userData[6]"
+                                            },
+                                            {
+                                                "name": "userData[5]"
+                                            },
+                                            {
+                                                "name": "userData[4]"
+                                            },
+                                            {
+                                                "name": "userData[3]"
+                                            },
+                                            {
+                                                "name": "userData[2]"
+                                            },
+                                            {
+                                                "name": "userData[1]"
+                                            },
+                                            {
+                                                "name": "userData[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe11",
+                                "id": 13,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 63,
+                                "portIndex": 11,
+                                "nets": [
+                                    {
+                                        "name": "usererrorBits",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "usererrorBits[63]"
+                                            },
+                                            {
+                                                "name": "usererrorBits[62]"
+                                            },
+                                            {
+                                                "name": "usererrorBits[61]"
+                                            },
+                                            {
+                                                "name": "usererrorBits[60]"
+                                            },
+                                            {
+                                                "name": "usererrorBits[59]"
+                                            },
+                                            {
+                                                "name": "usererrorBits[58]"
+                                            },
+                                            {
+                                                "name": "usererrorBits[57]"
+                                            },
+                                            {
+                                                "name": "usererrorBits[56]"
+                                            },
+                                            {
+                                                "name": "usererrorBits[55]"
+                                            },
+                                            {
+                                                "name": "usererrorBits[54]"
+                                            },
+                                            {
+                                                "name": "usererrorBits[53]"
+                                            },
+                                            {
+                                                "name": "usererrorBits[52]"
+                                            },
+                                            {
+                                                "name": "usererrorBits[51]"
+                                            },
+                                            {
+                                                "name": "usererrorBits[50]"
+                                            },
+                                            {
+                                                "name": "usererrorBits[49]"
+                                            },
+                                            {
+                                                "name": "usererrorBits[48]"
+                                            },
+                                            {
+                                                "name": "usererrorBits[47]"
+                                            },
+                                            {
+                                                "name": "usererrorBits[46]"
+                                            },
+                                            {
+                                                "name": "usererrorBits[45]"
+                                            },
+                                            {
+                                                "name": "usererrorBits[44]"
+                                            },
+                                            {
+                                                "name": "usererrorBits[43]"
+                                            },
+                                            {
+                                                "name": "usererrorBits[42]"
+                                            },
+                                            {
+                                                "name": "usererrorBits[41]"
+                                            },
+                                            {
+                                                "name": "usererrorBits[40]"
+                                            },
+                                            {
+                                                "name": "usererrorBits[39]"
+                                            },
+                                            {
+                                                "name": "usererrorBits[38]"
+                                            },
+                                            {
+                                                "name": "usererrorBits[37]"
+                                            },
+                                            {
+                                                "name": "usererrorBits[36]"
+                                            },
+                                            {
+                                                "name": "usererrorBits[35]"
+                                            },
+                                            {
+                                                "name": "usererrorBits[34]"
+                                            },
+                                            {
+                                                "name": "usererrorBits[33]"
+                                            },
+                                            {
+                                                "name": "usererrorBits[32]"
+                                            },
+                                            {
+                                                "name": "usererrorBits[31]"
+                                            },
+                                            {
+                                                "name": "usererrorBits[30]"
+                                            },
+                                            {
+                                                "name": "usererrorBits[29]"
+                                            },
+                                            {
+                                                "name": "usererrorBits[28]"
+                                            },
+                                            {
+                                                "name": "usererrorBits[27]"
+                                            },
+                                            {
+                                                "name": "usererrorBits[26]"
+                                            },
+                                            {
+                                                "name": "usererrorBits[25]"
+                                            },
+                                            {
+                                                "name": "usererrorBits[24]"
+                                            },
+                                            {
+                                                "name": "usererrorBits[23]"
+                                            },
+                                            {
+                                                "name": "usererrorBits[22]"
+                                            },
+                                            {
+                                                "name": "usererrorBits[21]"
+                                            },
+                                            {
+                                                "name": "usererrorBits[20]"
+                                            },
+                                            {
+                                                "name": "usererrorBits[19]"
+                                            },
+                                            {
+                                                "name": "usererrorBits[18]"
+                                            },
+                                            {
+                                                "name": "usererrorBits[17]"
+                                            },
+                                            {
+                                                "name": "usererrorBits[16]"
+                                            },
+                                            {
+                                                "name": "usererrorBits[15]"
+                                            },
+                                            {
+                                                "name": "usererrorBits[14]"
+                                            },
+                                            {
+                                                "name": "usererrorBits[13]"
+                                            },
+                                            {
+                                                "name": "usererrorBits[12]"
+                                            },
+                                            {
+                                                "name": "usererrorBits[11]"
+                                            },
+                                            {
+                                                "name": "usererrorBits[10]"
+                                            },
+                                            {
+                                                "name": "usererrorBits[9]"
+                                            },
+                                            {
+                                                "name": "usererrorBits[8]"
+                                            },
+                                            {
+                                                "name": "usererrorBits[7]"
+                                            },
+                                            {
+                                                "name": "usererrorBits[6]"
+                                            },
+                                            {
+                                                "name": "usererrorBits[5]"
+                                            },
+                                            {
+                                                "name": "usererrorBits[4]"
+                                            },
+                                            {
+                                                "name": "usererrorBits[3]"
+                                            },
+                                            {
+                                                "name": "usererrorBits[2]"
+                                            },
+                                            {
+                                                "name": "usererrorBits[1]"
+                                            },
+                                            {
+                                                "name": "usererrorBits[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe12",
+                                "id": 14,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 15,
+                                "portIndex": 12,
+                                "nets": [
+                                    {
+                                        "name": "mask",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "mask[15]"
+                                            },
+                                            {
+                                                "name": "mask[14]"
+                                            },
+                                            {
+                                                "name": "mask[13]"
+                                            },
+                                            {
+                                                "name": "mask[12]"
+                                            },
+                                            {
+                                                "name": "mask[11]"
+                                            },
+                                            {
+                                                "name": "mask[10]"
+                                            },
+                                            {
+                                                "name": "mask[9]"
+                                            },
+                                            {
+                                                "name": "mask[8]"
+                                            },
+                                            {
+                                                "name": "mask[7]"
+                                            },
+                                            {
+                                                "name": "mask[6]"
+                                            },
+                                            {
+                                                "name": "mask[5]"
+                                            },
+                                            {
+                                                "name": "mask[4]"
+                                            },
+                                            {
+                                                "name": "mask[3]"
+                                            },
+                                            {
+                                                "name": "mask[2]"
+                                            },
+                                            {
+                                                "name": "mask[1]"
+                                            },
+                                            {
+                                                "name": "mask[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe13",
+                                "id": 15,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 63,
+                                "portIndex": 13,
+                                "nets": [
+                                    {
+                                        "name": "userdataBits",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "userdataBits[63]"
+                                            },
+                                            {
+                                                "name": "userdataBits[62]"
+                                            },
+                                            {
+                                                "name": "userdataBits[61]"
+                                            },
+                                            {
+                                                "name": "userdataBits[60]"
+                                            },
+                                            {
+                                                "name": "userdataBits[59]"
+                                            },
+                                            {
+                                                "name": "userdataBits[58]"
+                                            },
+                                            {
+                                                "name": "userdataBits[57]"
+                                            },
+                                            {
+                                                "name": "userdataBits[56]"
+                                            },
+                                            {
+                                                "name": "userdataBits[55]"
+                                            },
+                                            {
+                                                "name": "userdataBits[54]"
+                                            },
+                                            {
+                                                "name": "userdataBits[53]"
+                                            },
+                                            {
+                                                "name": "userdataBits[52]"
+                                            },
+                                            {
+                                                "name": "userdataBits[51]"
+                                            },
+                                            {
+                                                "name": "userdataBits[50]"
+                                            },
+                                            {
+                                                "name": "userdataBits[49]"
+                                            },
+                                            {
+                                                "name": "userdataBits[48]"
+                                            },
+                                            {
+                                                "name": "userdataBits[47]"
+                                            },
+                                            {
+                                                "name": "userdataBits[46]"
+                                            },
+                                            {
+                                                "name": "userdataBits[45]"
+                                            },
+                                            {
+                                                "name": "userdataBits[44]"
+                                            },
+                                            {
+                                                "name": "userdataBits[43]"
+                                            },
+                                            {
+                                                "name": "userdataBits[42]"
+                                            },
+                                            {
+                                                "name": "userdataBits[41]"
+                                            },
+                                            {
+                                                "name": "userdataBits[40]"
+                                            },
+                                            {
+                                                "name": "userdataBits[39]"
+                                            },
+                                            {
+                                                "name": "userdataBits[38]"
+                                            },
+                                            {
+                                                "name": "userdataBits[37]"
+                                            },
+                                            {
+                                                "name": "userdataBits[36]"
+                                            },
+                                            {
+                                                "name": "userdataBits[35]"
+                                            },
+                                            {
+                                                "name": "userdataBits[34]"
+                                            },
+                                            {
+                                                "name": "userdataBits[33]"
+                                            },
+                                            {
+                                                "name": "userdataBits[32]"
+                                            },
+                                            {
+                                                "name": "userdataBits[31]"
+                                            },
+                                            {
+                                                "name": "userdataBits[30]"
+                                            },
+                                            {
+                                                "name": "userdataBits[29]"
+                                            },
+                                            {
+                                                "name": "userdataBits[28]"
+                                            },
+                                            {
+                                                "name": "userdataBits[27]"
+                                            },
+                                            {
+                                                "name": "userdataBits[26]"
+                                            },
+                                            {
+                                                "name": "userdataBits[25]"
+                                            },
+                                            {
+                                                "name": "userdataBits[24]"
+                                            },
+                                            {
+                                                "name": "userdataBits[23]"
+                                            },
+                                            {
+                                                "name": "userdataBits[22]"
+                                            },
+                                            {
+                                                "name": "userdataBits[21]"
+                                            },
+                                            {
+                                                "name": "userdataBits[20]"
+                                            },
+                                            {
+                                                "name": "userdataBits[19]"
+                                            },
+                                            {
+                                                "name": "userdataBits[18]"
+                                            },
+                                            {
+                                                "name": "userdataBits[17]"
+                                            },
+                                            {
+                                                "name": "userdataBits[16]"
+                                            },
+                                            {
+                                                "name": "userdataBits[15]"
+                                            },
+                                            {
+                                                "name": "userdataBits[14]"
+                                            },
+                                            {
+                                                "name": "userdataBits[13]"
+                                            },
+                                            {
+                                                "name": "userdataBits[12]"
+                                            },
+                                            {
+                                                "name": "userdataBits[11]"
+                                            },
+                                            {
+                                                "name": "userdataBits[10]"
+                                            },
+                                            {
+                                                "name": "userdataBits[9]"
+                                            },
+                                            {
+                                                "name": "userdataBits[8]"
+                                            },
+                                            {
+                                                "name": "userdataBits[7]"
+                                            },
+                                            {
+                                                "name": "userdataBits[6]"
+                                            },
+                                            {
+                                                "name": "userdataBits[5]"
+                                            },
+                                            {
+                                                "name": "userdataBits[4]"
+                                            },
+                                            {
+                                                "name": "userdataBits[3]"
+                                            },
+                                            {
+                                                "name": "userdataBits[2]"
+                                            },
+                                            {
+                                                "name": "userdataBits[1]"
+                                            },
+                                            {
+                                                "name": "userdataBits[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe14",
+                                "id": 16,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 63,
+                                "portIndex": 14,
+                                "nets": [
+                                    {
+                                        "name": "gt0_rxdata_i",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "gt0_rxdata_i[63]"
+                                            },
+                                            {
+                                                "name": "gt0_rxdata_i[62]"
+                                            },
+                                            {
+                                                "name": "gt0_rxdata_i[61]"
+                                            },
+                                            {
+                                                "name": "gt0_rxdata_i[60]"
+                                            },
+                                            {
+                                                "name": "gt0_rxdata_i[59]"
+                                            },
+                                            {
+                                                "name": "gt0_rxdata_i[58]"
+                                            },
+                                            {
+                                                "name": "gt0_rxdata_i[57]"
+                                            },
+                                            {
+                                                "name": "gt0_rxdata_i[56]"
+                                            },
+                                            {
+                                                "name": "gt0_rxdata_i[55]"
+                                            },
+                                            {
+                                                "name": "gt0_rxdata_i[54]"
+                                            },
+                                            {
+                                                "name": "gt0_rxdata_i[53]"
+                                            },
+                                            {
+                                                "name": "gt0_rxdata_i[52]"
+                                            },
+                                            {
+                                                "name": "gt0_rxdata_i[51]"
+                                            },
+                                            {
+                                                "name": "gt0_rxdata_i[50]"
+                                            },
+                                            {
+                                                "name": "gt0_rxdata_i[49]"
+                                            },
+                                            {
+                                                "name": "gt0_rxdata_i[48]"
+                                            },
+                                            {
+                                                "name": "gt0_rxdata_i[47]"
+                                            },
+                                            {
+                                                "name": "gt0_rxdata_i[46]"
+                                            },
+                                            {
+                                                "name": "gt0_rxdata_i[45]"
+                                            },
+                                            {
+                                                "name": "gt0_rxdata_i[44]"
+                                            },
+                                            {
+                                                "name": "gt0_rxdata_i[43]"
+                                            },
+                                            {
+                                                "name": "gt0_rxdata_i[42]"
+                                            },
+                                            {
+                                                "name": "gt0_rxdata_i[41]"
+                                            },
+                                            {
+                                                "name": "gt0_rxdata_i[40]"
+                                            },
+                                            {
+                                                "name": "gt0_rxdata_i[39]"
+                                            },
+                                            {
+                                                "name": "gt0_rxdata_i[38]"
+                                            },
+                                            {
+                                                "name": "gt0_rxdata_i[37]"
+                                            },
+                                            {
+                                                "name": "gt0_rxdata_i[36]"
+                                            },
+                                            {
+                                                "name": "gt0_rxdata_i[35]"
+                                            },
+                                            {
+                                                "name": "gt0_rxdata_i[34]"
+                                            },
+                                            {
+                                                "name": "gt0_rxdata_i[33]"
+                                            },
+                                            {
+                                                "name": "gt0_rxdata_i[32]"
+                                            },
+                                            {
+                                                "name": "gt0_rxdata_i[31]"
+                                            },
+                                            {
+                                                "name": "gt0_rxdata_i[30]"
+                                            },
+                                            {
+                                                "name": "gt0_rxdata_i[29]"
+                                            },
+                                            {
+                                                "name": "gt0_rxdata_i[28]"
+                                            },
+                                            {
+                                                "name": "gt0_rxdata_i[27]"
+                                            },
+                                            {
+                                                "name": "gt0_rxdata_i[26]"
+                                            },
+                                            {
+                                                "name": "gt0_rxdata_i[25]"
+                                            },
+                                            {
+                                                "name": "gt0_rxdata_i[24]"
+                                            },
+                                            {
+                                                "name": "gt0_rxdata_i[23]"
+                                            },
+                                            {
+                                                "name": "gt0_rxdata_i[22]"
+                                            },
+                                            {
+                                                "name": "gt0_rxdata_i[21]"
+                                            },
+                                            {
+                                                "name": "gt0_rxdata_i[20]"
+                                            },
+                                            {
+                                                "name": "gt0_rxdata_i[19]"
+                                            },
+                                            {
+                                                "name": "gt0_rxdata_i[18]"
+                                            },
+                                            {
+                                                "name": "gt0_rxdata_i[17]"
+                                            },
+                                            {
+                                                "name": "gt0_rxdata_i[16]"
+                                            },
+                                            {
+                                                "name": "gt0_rxdata_i[15]"
+                                            },
+                                            {
+                                                "name": "gt0_rxdata_i[14]"
+                                            },
+                                            {
+                                                "name": "gt0_rxdata_i[13]"
+                                            },
+                                            {
+                                                "name": "gt0_rxdata_i[12]"
+                                            },
+                                            {
+                                                "name": "gt0_rxdata_i[11]"
+                                            },
+                                            {
+                                                "name": "gt0_rxdata_i[10]"
+                                            },
+                                            {
+                                                "name": "gt0_rxdata_i[9]"
+                                            },
+                                            {
+                                                "name": "gt0_rxdata_i[8]"
+                                            },
+                                            {
+                                                "name": "gt0_rxdata_i[7]"
+                                            },
+                                            {
+                                                "name": "gt0_rxdata_i[6]"
+                                            },
+                                            {
+                                                "name": "gt0_rxdata_i[5]"
+                                            },
+                                            {
+                                                "name": "gt0_rxdata_i[4]"
+                                            },
+                                            {
+                                                "name": "gt0_rxdata_i[3]"
+                                            },
+                                            {
+                                                "name": "gt0_rxdata_i[2]"
+                                            },
+                                            {
+                                                "name": "gt0_rxdata_i[1]"
+                                            },
+                                            {
+                                                "name": "gt0_rxdata_i[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe15",
+                                "id": 17,
                                 "type": "DATA_TRIGGER",
                                 "direction": "IN",
                                 "isVector": false,
                                 "leftIndex": 0,
                                 "rightIndex": 0,
-                                "portIndex": 9,
+                                "portIndex": 15,
                                 "nets": [
                                     {
                                         "name": "aligned",
@@ -1213,14 +2006,14 @@
                                 ]
                             },
                             {
-                                "name": "probe10",
-                                "id": 11,
+                                "name": "probe16",
+                                "id": 18,
                                 "type": "DATA_TRIGGER",
                                 "direction": "IN",
                                 "isVector": false,
                                 "leftIndex": 0,
                                 "rightIndex": 0,
-                                "portIndex": 10,
+                                "portIndex": 16,
                                 "nets": [
                                     {
                                         "name": "bypass",
@@ -1229,14 +2022,14 @@
                                 ]
                             },
                             {
-                                "name": "probe11",
-                                "id": 12,
+                                "name": "probe17",
+                                "id": 19,
                                 "type": "DATA_TRIGGER",
                                 "direction": "IN",
                                 "isVector": false,
                                 "leftIndex": 0,
                                 "rightIndex": 0,
-                                "portIndex": 11,
+                                "portIndex": 17,
                                 "nets": [
                                     {
                                         "name": "errorFlag",
@@ -1245,14 +2038,14 @@
                                 ]
                             },
                             {
-                                "name": "probe12",
-                                "id": 13,
+                                "name": "probe18",
+                                "id": 20,
                                 "type": "DATA_TRIGGER",
                                 "direction": "IN",
                                 "isVector": false,
                                 "leftIndex": 0,
                                 "rightIndex": 0,
-                                "portIndex": 12,
+                                "portIndex": 18,
                                 "nets": [
                                     {
                                         "name": "gt0_rxusrclk2_i",
@@ -1275,559 +2068,13 @@
                         "pins": [
                             {
                                 "name": "probe0",
-                                "id": 14,
-                                "type": "DATA_TRIGGER",
-                                "direction": "IN",
-                                "isVector": true,
-                                "leftIndex": 0,
-                                "rightIndex": 175,
-                                "portIndex": 0,
-                                "nets": [
-                                    {
-                                        "name": "status_reg",
-                                        "isBus": true,
-                                        "subnets": [
-                                            {
-                                                "name": "status_reg[175]"
-                                            },
-                                            {
-                                                "name": "status_reg[174]"
-                                            },
-                                            {
-                                                "name": "status_reg[173]"
-                                            },
-                                            {
-                                                "name": "status_reg[172]"
-                                            },
-                                            {
-                                                "name": "status_reg[171]"
-                                            },
-                                            {
-                                                "name": "status_reg[170]"
-                                            },
-                                            {
-                                                "name": "status_reg[169]"
-                                            },
-                                            {
-                                                "name": "status_reg[168]"
-                                            },
-                                            {
-                                                "name": "status_reg[167]"
-                                            },
-                                            {
-                                                "name": "status_reg[166]"
-                                            },
-                                            {
-                                                "name": "status_reg[165]"
-                                            },
-                                            {
-                                                "name": "status_reg[164]"
-                                            },
-                                            {
-                                                "name": "status_reg[163]"
-                                            },
-                                            {
-                                                "name": "status_reg[162]"
-                                            },
-                                            {
-                                                "name": "status_reg[161]"
-                                            },
-                                            {
-                                                "name": "status_reg[160]"
-                                            },
-                                            {
-                                                "name": "status_reg[159]"
-                                            },
-                                            {
-                                                "name": "status_reg[158]"
-                                            },
-                                            {
-                                                "name": "status_reg[157]"
-                                            },
-                                            {
-                                                "name": "status_reg[156]"
-                                            },
-                                            {
-                                                "name": "status_reg[155]"
-                                            },
-                                            {
-                                                "name": "status_reg[154]"
-                                            },
-                                            {
-                                                "name": "status_reg[153]"
-                                            },
-                                            {
-                                                "name": "status_reg[152]"
-                                            },
-                                            {
-                                                "name": "status_reg[151]"
-                                            },
-                                            {
-                                                "name": "status_reg[150]"
-                                            },
-                                            {
-                                                "name": "status_reg[149]"
-                                            },
-                                            {
-                                                "name": "status_reg[148]"
-                                            },
-                                            {
-                                                "name": "status_reg[147]"
-                                            },
-                                            {
-                                                "name": "status_reg[146]"
-                                            },
-                                            {
-                                                "name": "status_reg[145]"
-                                            },
-                                            {
-                                                "name": "status_reg[144]"
-                                            },
-                                            {
-                                                "name": "status_reg[143]"
-                                            },
-                                            {
-                                                "name": "status_reg[142]"
-                                            },
-                                            {
-                                                "name": "status_reg[141]"
-                                            },
-                                            {
-                                                "name": "status_reg[140]"
-                                            },
-                                            {
-                                                "name": "status_reg[139]"
-                                            },
-                                            {
-                                                "name": "status_reg[138]"
-                                            },
-                                            {
-                                                "name": "status_reg[137]"
-                                            },
-                                            {
-                                                "name": "status_reg[136]"
-                                            },
-                                            {
-                                                "name": "status_reg[135]"
-                                            },
-                                            {
-                                                "name": "status_reg[134]"
-                                            },
-                                            {
-                                                "name": "status_reg[133]"
-                                            },
-                                            {
-                                                "name": "status_reg[132]"
-                                            },
-                                            {
-                                                "name": "status_reg[131]"
-                                            },
-                                            {
-                                                "name": "status_reg[130]"
-                                            },
-                                            {
-                                                "name": "status_reg[129]"
-                                            },
-                                            {
-                                                "name": "status_reg[128]"
-                                            },
-                                            {
-                                                "name": "status_reg[127]"
-                                            },
-                                            {
-                                                "name": "status_reg[126]"
-                                            },
-                                            {
-                                                "name": "status_reg[125]"
-                                            },
-                                            {
-                                                "name": "status_reg[124]"
-                                            },
-                                            {
-                                                "name": "status_reg[123]"
-                                            },
-                                            {
-                                                "name": "status_reg[122]"
-                                            },
-                                            {
-                                                "name": "status_reg[121]"
-                                            },
-                                            {
-                                                "name": "status_reg[120]"
-                                            },
-                                            {
-                                                "name": "status_reg[119]"
-                                            },
-                                            {
-                                                "name": "status_reg[118]"
-                                            },
-                                            {
-                                                "name": "status_reg[117]"
-                                            },
-                                            {
-                                                "name": "status_reg[116]"
-                                            },
-                                            {
-                                                "name": "status_reg[115]"
-                                            },
-                                            {
-                                                "name": "status_reg[114]"
-                                            },
-                                            {
-                                                "name": "status_reg[113]"
-                                            },
-                                            {
-                                                "name": "status_reg[112]"
-                                            },
-                                            {
-                                                "name": "status_reg[111]"
-                                            },
-                                            {
-                                                "name": "status_reg[110]"
-                                            },
-                                            {
-                                                "name": "status_reg[109]"
-                                            },
-                                            {
-                                                "name": "status_reg[108]"
-                                            },
-                                            {
-                                                "name": "status_reg[107]"
-                                            },
-                                            {
-                                                "name": "status_reg[106]"
-                                            },
-                                            {
-                                                "name": "status_reg[105]"
-                                            },
-                                            {
-                                                "name": "status_reg[104]"
-                                            },
-                                            {
-                                                "name": "status_reg[103]"
-                                            },
-                                            {
-                                                "name": "status_reg[102]"
-                                            },
-                                            {
-                                                "name": "status_reg[101]"
-                                            },
-                                            {
-                                                "name": "status_reg[100]"
-                                            },
-                                            {
-                                                "name": "status_reg[99]"
-                                            },
-                                            {
-                                                "name": "status_reg[98]"
-                                            },
-                                            {
-                                                "name": "status_reg[97]"
-                                            },
-                                            {
-                                                "name": "status_reg[96]"
-                                            },
-                                            {
-                                                "name": "status_reg[95]"
-                                            },
-                                            {
-                                                "name": "status_reg[94]"
-                                            },
-                                            {
-                                                "name": "status_reg[93]"
-                                            },
-                                            {
-                                                "name": "status_reg[92]"
-                                            },
-                                            {
-                                                "name": "status_reg[91]"
-                                            },
-                                            {
-                                                "name": "status_reg[90]"
-                                            },
-                                            {
-                                                "name": "status_reg[89]"
-                                            },
-                                            {
-                                                "name": "status_reg[88]"
-                                            },
-                                            {
-                                                "name": "status_reg[87]"
-                                            },
-                                            {
-                                                "name": "status_reg[86]"
-                                            },
-                                            {
-                                                "name": "status_reg[85]"
-                                            },
-                                            {
-                                                "name": "status_reg[84]"
-                                            },
-                                            {
-                                                "name": "status_reg[83]"
-                                            },
-                                            {
-                                                "name": "status_reg[82]"
-                                            },
-                                            {
-                                                "name": "status_reg[81]"
-                                            },
-                                            {
-                                                "name": "status_reg[80]"
-                                            },
-                                            {
-                                                "name": "status_reg[79]"
-                                            },
-                                            {
-                                                "name": "status_reg[78]"
-                                            },
-                                            {
-                                                "name": "status_reg[77]"
-                                            },
-                                            {
-                                                "name": "status_reg[76]"
-                                            },
-                                            {
-                                                "name": "status_reg[75]"
-                                            },
-                                            {
-                                                "name": "status_reg[74]"
-                                            },
-                                            {
-                                                "name": "status_reg[73]"
-                                            },
-                                            {
-                                                "name": "status_reg[72]"
-                                            },
-                                            {
-                                                "name": "status_reg[71]"
-                                            },
-                                            {
-                                                "name": "status_reg[70]"
-                                            },
-                                            {
-                                                "name": "status_reg[69]"
-                                            },
-                                            {
-                                                "name": "status_reg[68]"
-                                            },
-                                            {
-                                                "name": "status_reg[67]"
-                                            },
-                                            {
-                                                "name": "status_reg[66]"
-                                            },
-                                            {
-                                                "name": "status_reg[65]"
-                                            },
-                                            {
-                                                "name": "status_reg[64]"
-                                            },
-                                            {
-                                                "name": "status_reg[63]"
-                                            },
-                                            {
-                                                "name": "status_reg[62]"
-                                            },
-                                            {
-                                                "name": "status_reg[61]"
-                                            },
-                                            {
-                                                "name": "status_reg[60]"
-                                            },
-                                            {
-                                                "name": "status_reg[59]"
-                                            },
-                                            {
-                                                "name": "status_reg[58]"
-                                            },
-                                            {
-                                                "name": "status_reg[57]"
-                                            },
-                                            {
-                                                "name": "status_reg[56]"
-                                            },
-                                            {
-                                                "name": "status_reg[55]"
-                                            },
-                                            {
-                                                "name": "status_reg[54]"
-                                            },
-                                            {
-                                                "name": "status_reg[53]"
-                                            },
-                                            {
-                                                "name": "status_reg[52]"
-                                            },
-                                            {
-                                                "name": "status_reg[51]"
-                                            },
-                                            {
-                                                "name": "status_reg[50]"
-                                            },
-                                            {
-                                                "name": "status_reg[49]"
-                                            },
-                                            {
-                                                "name": "status_reg[48]"
-                                            },
-                                            {
-                                                "name": "status_reg[47]"
-                                            },
-                                            {
-                                                "name": "status_reg[46]"
-                                            },
-                                            {
-                                                "name": "status_reg[45]"
-                                            },
-                                            {
-                                                "name": "status_reg[44]"
-                                            },
-                                            {
-                                                "name": "status_reg[43]"
-                                            },
-                                            {
-                                                "name": "status_reg[42]"
-                                            },
-                                            {
-                                                "name": "status_reg[41]"
-                                            },
-                                            {
-                                                "name": "status_reg[40]"
-                                            },
-                                            {
-                                                "name": "status_reg[39]"
-                                            },
-                                            {
-                                                "name": "status_reg[38]"
-                                            },
-                                            {
-                                                "name": "status_reg[37]"
-                                            },
-                                            {
-                                                "name": "status_reg[36]"
-                                            },
-                                            {
-                                                "name": "status_reg[35]"
-                                            },
-                                            {
-                                                "name": "status_reg[34]"
-                                            },
-                                            {
-                                                "name": "status_reg[33]"
-                                            },
-                                            {
-                                                "name": "status_reg[32]"
-                                            },
-                                            {
-                                                "name": "status_reg[31]"
-                                            },
-                                            {
-                                                "name": "status_reg[30]"
-                                            },
-                                            {
-                                                "name": "status_reg[29]"
-                                            },
-                                            {
-                                                "name": "status_reg[28]"
-                                            },
-                                            {
-                                                "name": "status_reg[27]"
-                                            },
-                                            {
-                                                "name": "status_reg[26]"
-                                            },
-                                            {
-                                                "name": "status_reg[25]"
-                                            },
-                                            {
-                                                "name": "status_reg[24]"
-                                            },
-                                            {
-                                                "name": "status_reg[23]"
-                                            },
-                                            {
-                                                "name": "status_reg[22]"
-                                            },
-                                            {
-                                                "name": "status_reg[21]"
-                                            },
-                                            {
-                                                "name": "status_reg[20]"
-                                            },
-                                            {
-                                                "name": "status_reg[19]"
-                                            },
-                                            {
-                                                "name": "status_reg[18]"
-                                            },
-                                            {
-                                                "name": "status_reg[17]"
-                                            },
-                                            {
-                                                "name": "status_reg[16]"
-                                            },
-                                            {
-                                                "name": "status_reg[15]"
-                                            },
-                                            {
-                                                "name": "status_reg[14]"
-                                            },
-                                            {
-                                                "name": "status_reg[13]"
-                                            },
-                                            {
-                                                "name": "status_reg[12]"
-                                            },
-                                            {
-                                                "name": "status_reg[11]"
-                                            },
-                                            {
-                                                "name": "status_reg[10]"
-                                            },
-                                            {
-                                                "name": "status_reg[9]"
-                                            },
-                                            {
-                                                "name": "status_reg[8]"
-                                            },
-                                            {
-                                                "name": "status_reg[7]"
-                                            },
-                                            {
-                                                "name": "status_reg[6]"
-                                            },
-                                            {
-                                                "name": "status_reg[5]"
-                                            },
-                                            {
-                                                "name": "status_reg[4]"
-                                            },
-                                            {
-                                                "name": "status_reg[3]"
-                                            },
-                                            {
-                                                "name": "status_reg[2]"
-                                            },
-                                            {
-                                                "name": "status_reg[1]"
-                                            },
-                                            {
-                                                "name": "status_reg[0]"
-                                            }
-                                        ]
-                                    }
-                                ]
-                            },
-                            {
-                                "name": "probe1",
-                                "id": 15,
+                                "id": 21,
                                 "type": "DATA_TRIGGER",
                                 "direction": "IN",
                                 "isVector": true,
                                 "leftIndex": 0,
                                 "rightIndex": 511,
-                                "portIndex": 1,
+                                "portIndex": 0,
                                 "nets": [
                                     {
                                         "name": "config_reg",
@@ -3372,6 +3619,552 @@
                                         ]
                                     }
                                 ]
+                            },
+                            {
+                                "name": "probe1",
+                                "id": 22,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 175,
+                                "portIndex": 1,
+                                "nets": [
+                                    {
+                                        "name": "status_reg",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "status_reg[175]"
+                                            },
+                                            {
+                                                "name": "status_reg[174]"
+                                            },
+                                            {
+                                                "name": "status_reg[173]"
+                                            },
+                                            {
+                                                "name": "status_reg[172]"
+                                            },
+                                            {
+                                                "name": "status_reg[171]"
+                                            },
+                                            {
+                                                "name": "status_reg[170]"
+                                            },
+                                            {
+                                                "name": "status_reg[169]"
+                                            },
+                                            {
+                                                "name": "status_reg[168]"
+                                            },
+                                            {
+                                                "name": "status_reg[167]"
+                                            },
+                                            {
+                                                "name": "status_reg[166]"
+                                            },
+                                            {
+                                                "name": "status_reg[165]"
+                                            },
+                                            {
+                                                "name": "status_reg[164]"
+                                            },
+                                            {
+                                                "name": "status_reg[163]"
+                                            },
+                                            {
+                                                "name": "status_reg[162]"
+                                            },
+                                            {
+                                                "name": "status_reg[161]"
+                                            },
+                                            {
+                                                "name": "status_reg[160]"
+                                            },
+                                            {
+                                                "name": "status_reg[159]"
+                                            },
+                                            {
+                                                "name": "status_reg[158]"
+                                            },
+                                            {
+                                                "name": "status_reg[157]"
+                                            },
+                                            {
+                                                "name": "status_reg[156]"
+                                            },
+                                            {
+                                                "name": "status_reg[155]"
+                                            },
+                                            {
+                                                "name": "status_reg[154]"
+                                            },
+                                            {
+                                                "name": "status_reg[153]"
+                                            },
+                                            {
+                                                "name": "status_reg[152]"
+                                            },
+                                            {
+                                                "name": "status_reg[151]"
+                                            },
+                                            {
+                                                "name": "status_reg[150]"
+                                            },
+                                            {
+                                                "name": "status_reg[149]"
+                                            },
+                                            {
+                                                "name": "status_reg[148]"
+                                            },
+                                            {
+                                                "name": "status_reg[147]"
+                                            },
+                                            {
+                                                "name": "status_reg[146]"
+                                            },
+                                            {
+                                                "name": "status_reg[145]"
+                                            },
+                                            {
+                                                "name": "status_reg[144]"
+                                            },
+                                            {
+                                                "name": "status_reg[143]"
+                                            },
+                                            {
+                                                "name": "status_reg[142]"
+                                            },
+                                            {
+                                                "name": "status_reg[141]"
+                                            },
+                                            {
+                                                "name": "status_reg[140]"
+                                            },
+                                            {
+                                                "name": "status_reg[139]"
+                                            },
+                                            {
+                                                "name": "status_reg[138]"
+                                            },
+                                            {
+                                                "name": "status_reg[137]"
+                                            },
+                                            {
+                                                "name": "status_reg[136]"
+                                            },
+                                            {
+                                                "name": "status_reg[135]"
+                                            },
+                                            {
+                                                "name": "status_reg[134]"
+                                            },
+                                            {
+                                                "name": "status_reg[133]"
+                                            },
+                                            {
+                                                "name": "status_reg[132]"
+                                            },
+                                            {
+                                                "name": "status_reg[131]"
+                                            },
+                                            {
+                                                "name": "status_reg[130]"
+                                            },
+                                            {
+                                                "name": "status_reg[129]"
+                                            },
+                                            {
+                                                "name": "status_reg[128]"
+                                            },
+                                            {
+                                                "name": "status_reg[127]"
+                                            },
+                                            {
+                                                "name": "status_reg[126]"
+                                            },
+                                            {
+                                                "name": "status_reg[125]"
+                                            },
+                                            {
+                                                "name": "status_reg[124]"
+                                            },
+                                            {
+                                                "name": "status_reg[123]"
+                                            },
+                                            {
+                                                "name": "status_reg[122]"
+                                            },
+                                            {
+                                                "name": "status_reg[121]"
+                                            },
+                                            {
+                                                "name": "status_reg[120]"
+                                            },
+                                            {
+                                                "name": "status_reg[119]"
+                                            },
+                                            {
+                                                "name": "status_reg[118]"
+                                            },
+                                            {
+                                                "name": "status_reg[117]"
+                                            },
+                                            {
+                                                "name": "status_reg[116]"
+                                            },
+                                            {
+                                                "name": "status_reg[115]"
+                                            },
+                                            {
+                                                "name": "status_reg[114]"
+                                            },
+                                            {
+                                                "name": "status_reg[113]"
+                                            },
+                                            {
+                                                "name": "status_reg[112]"
+                                            },
+                                            {
+                                                "name": "status_reg[111]"
+                                            },
+                                            {
+                                                "name": "status_reg[110]"
+                                            },
+                                            {
+                                                "name": "status_reg[109]"
+                                            },
+                                            {
+                                                "name": "status_reg[108]"
+                                            },
+                                            {
+                                                "name": "status_reg[107]"
+                                            },
+                                            {
+                                                "name": "status_reg[106]"
+                                            },
+                                            {
+                                                "name": "status_reg[105]"
+                                            },
+                                            {
+                                                "name": "status_reg[104]"
+                                            },
+                                            {
+                                                "name": "status_reg[103]"
+                                            },
+                                            {
+                                                "name": "status_reg[102]"
+                                            },
+                                            {
+                                                "name": "status_reg[101]"
+                                            },
+                                            {
+                                                "name": "status_reg[100]"
+                                            },
+                                            {
+                                                "name": "status_reg[99]"
+                                            },
+                                            {
+                                                "name": "status_reg[98]"
+                                            },
+                                            {
+                                                "name": "status_reg[97]"
+                                            },
+                                            {
+                                                "name": "status_reg[96]"
+                                            },
+                                            {
+                                                "name": "status_reg[95]"
+                                            },
+                                            {
+                                                "name": "status_reg[94]"
+                                            },
+                                            {
+                                                "name": "status_reg[93]"
+                                            },
+                                            {
+                                                "name": "status_reg[92]"
+                                            },
+                                            {
+                                                "name": "status_reg[91]"
+                                            },
+                                            {
+                                                "name": "status_reg[90]"
+                                            },
+                                            {
+                                                "name": "status_reg[89]"
+                                            },
+                                            {
+                                                "name": "status_reg[88]"
+                                            },
+                                            {
+                                                "name": "status_reg[87]"
+                                            },
+                                            {
+                                                "name": "status_reg[86]"
+                                            },
+                                            {
+                                                "name": "status_reg[85]"
+                                            },
+                                            {
+                                                "name": "status_reg[84]"
+                                            },
+                                            {
+                                                "name": "status_reg[83]"
+                                            },
+                                            {
+                                                "name": "status_reg[82]"
+                                            },
+                                            {
+                                                "name": "status_reg[81]"
+                                            },
+                                            {
+                                                "name": "status_reg[80]"
+                                            },
+                                            {
+                                                "name": "status_reg[79]"
+                                            },
+                                            {
+                                                "name": "status_reg[78]"
+                                            },
+                                            {
+                                                "name": "status_reg[77]"
+                                            },
+                                            {
+                                                "name": "status_reg[76]"
+                                            },
+                                            {
+                                                "name": "status_reg[75]"
+                                            },
+                                            {
+                                                "name": "status_reg[74]"
+                                            },
+                                            {
+                                                "name": "status_reg[73]"
+                                            },
+                                            {
+                                                "name": "status_reg[72]"
+                                            },
+                                            {
+                                                "name": "status_reg[71]"
+                                            },
+                                            {
+                                                "name": "status_reg[70]"
+                                            },
+                                            {
+                                                "name": "status_reg[69]"
+                                            },
+                                            {
+                                                "name": "status_reg[68]"
+                                            },
+                                            {
+                                                "name": "status_reg[67]"
+                                            },
+                                            {
+                                                "name": "status_reg[66]"
+                                            },
+                                            {
+                                                "name": "status_reg[65]"
+                                            },
+                                            {
+                                                "name": "status_reg[64]"
+                                            },
+                                            {
+                                                "name": "status_reg[63]"
+                                            },
+                                            {
+                                                "name": "status_reg[62]"
+                                            },
+                                            {
+                                                "name": "status_reg[61]"
+                                            },
+                                            {
+                                                "name": "status_reg[60]"
+                                            },
+                                            {
+                                                "name": "status_reg[59]"
+                                            },
+                                            {
+                                                "name": "status_reg[58]"
+                                            },
+                                            {
+                                                "name": "status_reg[57]"
+                                            },
+                                            {
+                                                "name": "status_reg[56]"
+                                            },
+                                            {
+                                                "name": "status_reg[55]"
+                                            },
+                                            {
+                                                "name": "status_reg[54]"
+                                            },
+                                            {
+                                                "name": "status_reg[53]"
+                                            },
+                                            {
+                                                "name": "status_reg[52]"
+                                            },
+                                            {
+                                                "name": "status_reg[51]"
+                                            },
+                                            {
+                                                "name": "status_reg[50]"
+                                            },
+                                            {
+                                                "name": "status_reg[49]"
+                                            },
+                                            {
+                                                "name": "status_reg[48]"
+                                            },
+                                            {
+                                                "name": "status_reg[47]"
+                                            },
+                                            {
+                                                "name": "status_reg[46]"
+                                            },
+                                            {
+                                                "name": "status_reg[45]"
+                                            },
+                                            {
+                                                "name": "status_reg[44]"
+                                            },
+                                            {
+                                                "name": "status_reg[43]"
+                                            },
+                                            {
+                                                "name": "status_reg[42]"
+                                            },
+                                            {
+                                                "name": "status_reg[41]"
+                                            },
+                                            {
+                                                "name": "status_reg[40]"
+                                            },
+                                            {
+                                                "name": "status_reg[39]"
+                                            },
+                                            {
+                                                "name": "status_reg[38]"
+                                            },
+                                            {
+                                                "name": "status_reg[37]"
+                                            },
+                                            {
+                                                "name": "status_reg[36]"
+                                            },
+                                            {
+                                                "name": "status_reg[35]"
+                                            },
+                                            {
+                                                "name": "status_reg[34]"
+                                            },
+                                            {
+                                                "name": "status_reg[33]"
+                                            },
+                                            {
+                                                "name": "status_reg[32]"
+                                            },
+                                            {
+                                                "name": "status_reg[31]"
+                                            },
+                                            {
+                                                "name": "status_reg[30]"
+                                            },
+                                            {
+                                                "name": "status_reg[29]"
+                                            },
+                                            {
+                                                "name": "status_reg[28]"
+                                            },
+                                            {
+                                                "name": "status_reg[27]"
+                                            },
+                                            {
+                                                "name": "status_reg[26]"
+                                            },
+                                            {
+                                                "name": "status_reg[25]"
+                                            },
+                                            {
+                                                "name": "status_reg[24]"
+                                            },
+                                            {
+                                                "name": "status_reg[23]"
+                                            },
+                                            {
+                                                "name": "status_reg[22]"
+                                            },
+                                            {
+                                                "name": "status_reg[21]"
+                                            },
+                                            {
+                                                "name": "status_reg[20]"
+                                            },
+                                            {
+                                                "name": "status_reg[19]"
+                                            },
+                                            {
+                                                "name": "status_reg[18]"
+                                            },
+                                            {
+                                                "name": "status_reg[17]"
+                                            },
+                                            {
+                                                "name": "status_reg[16]"
+                                            },
+                                            {
+                                                "name": "status_reg[15]"
+                                            },
+                                            {
+                                                "name": "status_reg[14]"
+                                            },
+                                            {
+                                                "name": "status_reg[13]"
+                                            },
+                                            {
+                                                "name": "status_reg[12]"
+                                            },
+                                            {
+                                                "name": "status_reg[11]"
+                                            },
+                                            {
+                                                "name": "status_reg[10]"
+                                            },
+                                            {
+                                                "name": "status_reg[9]"
+                                            },
+                                            {
+                                                "name": "status_reg[8]"
+                                            },
+                                            {
+                                                "name": "status_reg[7]"
+                                            },
+                                            {
+                                                "name": "status_reg[6]"
+                                            },
+                                            {
+                                                "name": "status_reg[5]"
+                                            },
+                                            {
+                                                "name": "status_reg[4]"
+                                            },
+                                            {
+                                                "name": "status_reg[3]"
+                                            },
+                                            {
+                                                "name": "status_reg[2]"
+                                            },
+                                            {
+                                                "name": "status_reg[1]"
+                                            },
+                                            {
+                                                "name": "status_reg[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
                             }
                         ]
                     },
@@ -3388,13 +4181,52 @@
                         "pins": [
                             {
                                 "name": "probe0",
-                                "id": 16,
+                                "id": 23,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 6,
+                                "portIndex": 0,
+                                "nets": [
+                                    {
+                                        "name": "errorCount_to_check_source",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "errorCount_to_check_source[6]"
+                                            },
+                                            {
+                                                "name": "errorCount_to_check_source[5]"
+                                            },
+                                            {
+                                                "name": "errorCount_to_check_source[4]"
+                                            },
+                                            {
+                                                "name": "errorCount_to_check_source[3]"
+                                            },
+                                            {
+                                                "name": "errorCount_to_check_source[2]"
+                                            },
+                                            {
+                                                "name": "errorCount_to_check_source[1]"
+                                            },
+                                            {
+                                                "name": "errorCount_to_check_source[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe1",
+                                "id": 24,
                                 "type": "DATA_TRIGGER",
                                 "direction": "IN",
                                 "isVector": true,
                                 "leftIndex": 0,
                                 "rightIndex": 63,
-                                "portIndex": 0,
+                                "portIndex": 1,
                                 "nets": [
                                     {
                                         "name": "map_dout",
@@ -3597,14 +4429,14 @@
                                 ]
                             },
                             {
-                                "name": "probe1",
-                                "id": 17,
+                                "name": "probe2",
+                                "id": 25,
                                 "type": "DATA_TRIGGER",
                                 "direction": "IN",
                                 "isVector": true,
                                 "leftIndex": 0,
                                 "rightIndex": 63,
-                                "portIndex": 1,
+                                "portIndex": 2,
                                 "nets": [
                                     {
                                         "name": "prbs_from_check_to_check_source",
@@ -3807,14 +4639,14 @@
                                 ]
                             },
                             {
-                                "name": "probe2",
-                                "id": 18,
+                                "name": "probe3",
+                                "id": 26,
                                 "type": "DATA_TRIGGER",
                                 "direction": "IN",
                                 "isVector": true,
                                 "leftIndex": 0,
                                 "rightIndex": 63,
-                                "portIndex": 2,
+                                "portIndex": 3,
                                 "nets": [
                                     {
                                         "name": "gt0_txdata_i",
@@ -4017,14 +4849,14 @@
                                 ]
                             },
                             {
-                                "name": "probe3",
-                                "id": 19,
+                                "name": "probe4",
+                                "id": 27,
                                 "type": "DATA_TRIGGER",
                                 "direction": "IN",
                                 "isVector": true,
                                 "leftIndex": 0,
                                 "rightIndex": 63,
-                                "portIndex": 3,
+                                "portIndex": 4,
                                 "nets": [
                                     {
                                         "name": "shifter_dout",
@@ -4227,47 +5059,8 @@
                                 ]
                             },
                             {
-                                "name": "probe4",
-                                "id": 20,
-                                "type": "DATA_TRIGGER",
-                                "direction": "IN",
-                                "isVector": true,
-                                "leftIndex": 0,
-                                "rightIndex": 6,
-                                "portIndex": 4,
-                                "nets": [
-                                    {
-                                        "name": "errorCount_to_check_source",
-                                        "isBus": true,
-                                        "subnets": [
-                                            {
-                                                "name": "errorCount_to_check_source[6]"
-                                            },
-                                            {
-                                                "name": "errorCount_to_check_source[5]"
-                                            },
-                                            {
-                                                "name": "errorCount_to_check_source[4]"
-                                            },
-                                            {
-                                                "name": "errorCount_to_check_source[3]"
-                                            },
-                                            {
-                                                "name": "errorCount_to_check_source[2]"
-                                            },
-                                            {
-                                                "name": "errorCount_to_check_source[1]"
-                                            },
-                                            {
-                                                "name": "errorCount_to_check_source[0]"
-                                            }
-                                        ]
-                                    }
-                                ]
-                            },
-                            {
                                 "name": "probe5",
-                                "id": 21,
+                                "id": 28,
                                 "type": "DATA_TRIGGER",
                                 "direction": "IN",
                                 "isVector": false,
@@ -4283,7 +5076,7 @@
                             },
                             {
                                 "name": "probe6",
-                                "id": 22,
+                                "id": 29,
                                 "type": "DATA_TRIGGER",
                                 "direction": "IN",
                                 "isVector": false,

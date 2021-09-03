@@ -18,60 +18,87 @@ INFO: [Common 17-1540] The version limit for your license is '2021.03' and has e
 INFO: [Device 21-403] Loading part xc7k325tffg900-2
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 4948
+INFO: [Synth 8-7075] Helper process launched with PID 19396
 WARNING: [Synth 8-2611] redeclaration of ansi port DRPCLK_IN is not allowed [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/gtwizard_0_ex/gtwizard_0_ex.srcs/sources_1/imports/example_design/gtwizard_0_exdes.v:190]
 CRITICAL WARNING: [Synth 8-976] DRPCLK_IN has already been declared [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/gtwizard_0_ex/gtwizard_0_ex.srcs/sources_1/imports/example_design/gtwizard_0_exdes.v:190]
 CRITICAL WARNING: [Synth 8-2654] second declaration of DRPCLK_IN ignored [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/gtwizard_0_ex/gtwizard_0_ex.srcs/sources_1/imports/example_design/gtwizard_0_exdes.v:190]
 INFO: [Synth 8-994] DRPCLK_IN is declared here [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/gtwizard_0_ex/gtwizard_0_ex.srcs/sources_1/imports/example_design/gtwizard_0_exdes.v:85]
-WARNING: [Synth 8-2611] redeclaration of ansi port seed is not allowed [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:53]
-WARNING: [Synth 8-2611] redeclaration of ansi port errorBits is not allowed [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:71]
-WARNING: [Synth 8-992] errorCount_to_check_source is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:77]
-WARNING: [Synth 8-992] prbs_from_check_to_check_source is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:80]
-WARNING: [Synth 8-992] bypass is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:91]
-WARNING: [Synth 8-992] map_dout is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:93]
-WARNING: [Synth 8-992] mask is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:172]
-WARNING: [Synth 8-992] seed is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:174]
-WARNING: [Synth 8-992] foundFrames is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:178]
-WARNING: [Synth 8-992] searchedFrames is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:181]
-WARNING: [Synth 8-992] alignAddr is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:184]
-WARNING: [Synth 8-992] aligned is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:187]
-WARNING: [Synth 8-992] errorCounter is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:190]
-WARNING: [Synth 8-992] tot_err_count is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:193]
-WARNING: [Synth 8-992] errorFlag is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:196]
-WARNING: [Synth 8-992] prbs_from_check is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:199]
-WARNING: [Synth 8-992] errorBits is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:202]
-WARNING: [Synth 8-992] dout is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:205]
-WARNING: [Synth 8-992] clk_60MHz is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:215]
-WARNING: [Synth 8-992] gig_eth_tx_fifo_wrclk is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:332]
-WARNING: [Synth 8-992] gig_eth_tx_fifo_q is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:333]
-WARNING: [Synth 8-992] gig_eth_tx_fifo_wren is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:334]
-WARNING: [Synth 8-992] gig_eth_rx_fifo_rden is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:338]
-WARNING: [Synth 8-6901] identifier 'gig_eth_rx_fifo_q' is used before its declaration [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:310]
-WARNING: [Synth 8-6901] identifier 'gig_eth_rx_fifo_empty' is used before its declaration [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:311]
-WARNING: [Synth 8-6901] identifier 'gig_eth_tx_fifo_full' is used before its declaration [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:318]
-WARNING: [Synth 8-6901] identifier 'tot_err_count_test' is used before its declaration [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:452]
-WARNING: [Synth 8-6901] identifier 'tot_err_count_test' is used before its declaration [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:452]
-WARNING: [Synth 8-2611] redeclaration of ansi port foundFrames is not allowed [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:59]
-WARNING: [Synth 8-2611] redeclaration of ansi port searchedFrames is not allowed [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:61]
-WARNING: [Synth 8-2611] redeclaration of ansi port alignAddr is not allowed [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:68]
-WARNING: [Synth 8-2611] redeclaration of ansi port bypass is not allowed [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:94]
-WARNING: [Synth 8-2611] redeclaration of ansi port seed is not allowed [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:95]
-WARNING: [Synth 8-2611] redeclaration of ansi port errorBits is not allowed [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:110]
-WARNING: [Synth 8-2611] redeclaration of ansi port errorFlag is not allowed [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:112]
-WARNING: [Synth 8-2611] redeclaration of ansi port tot_err_count is not allowed [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:185]
+WARNING: [Synth 8-2611] redeclaration of ansi port mask is not allowed [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:59]
+CRITICAL WARNING: [Synth 8-976] mask has already been declared [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:59]
+CRITICAL WARNING: [Synth 8-2654] second declaration of mask ignored [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:59]
+INFO: [Synth 8-994] mask is declared here [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:21]
+WARNING: [Synth 8-2611] redeclaration of ansi port seed is not allowed [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:60]
+WARNING: [Synth 8-2611] redeclaration of ansi port prbs is not allowed [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:76]
+WARNING: [Synth 8-2611] redeclaration of ansi port errorBits is not allowed [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:78]
+WARNING: [Synth 8-2611] redeclaration of ansi port userBits is not allowed [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:79]
+WARNING: [Synth 8-2611] redeclaration of ansi port usererrorBits is not allowed [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:81]
+WARNING: [Synth 8-2611] redeclaration of ansi port userData is not allowed [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:98]
+WARNING: [Synth 8-992] errorCount_to_check_source is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:102]
+WARNING: [Synth 8-992] prbs_from_check_to_check_source is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:105]
+WARNING: [Synth 8-992] bypass is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:116]
+WARNING: [Synth 8-992] map_dout is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:118]
+WARNING: [Synth 8-992] userData is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:204]
+WARNING: [Synth 8-992] mask is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:207]
+WARNING: [Synth 8-992] seed is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:209]
+WARNING: [Synth 8-992] foundFrames is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:213]
+WARNING: [Synth 8-992] searchedFrames is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:216]
+WARNING: [Synth 8-992] alignAddr is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:219]
+WARNING: [Synth 8-992] aligned is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:222]
+WARNING: [Synth 8-992] errorCounter is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:225]
+WARNING: [Synth 8-992] tot_err_count is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:228]
+WARNING: [Synth 8-992] errorFlag is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:231]
+WARNING: [Synth 8-992] prbs_from_check is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:234]
+WARNING: [Synth 8-992] errorBits is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:237]
+WARNING: [Synth 8-992] usererrorBits is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:240]
+WARNING: [Synth 8-992] userdataBits is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:243]
+WARNING: [Synth 8-992] usererrorCounter is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:246]
+WARNING: [Synth 8-992] userBits is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:249]
+WARNING: [Synth 8-992] dout is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:252]
+WARNING: [Synth 8-992] clk_60MHz is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:262]
+WARNING: [Synth 8-992] gig_eth_tx_fifo_wrclk is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:379]
+WARNING: [Synth 8-992] gig_eth_tx_fifo_q is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:380]
+WARNING: [Synth 8-992] gig_eth_tx_fifo_wren is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:381]
+WARNING: [Synth 8-992] gig_eth_rx_fifo_rden is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:385]
+WARNING: [Synth 8-6901] identifier 'gig_eth_rx_fifo_q' is used before its declaration [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:357]
+WARNING: [Synth 8-6901] identifier 'gig_eth_rx_fifo_empty' is used before its declaration [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:358]
+WARNING: [Synth 8-6901] identifier 'gig_eth_tx_fifo_full' is used before its declaration [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:365]
+WARNING: [Synth 8-6901] identifier 'tot_err_count_test' is used before its declaration [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:499]
+WARNING: [Synth 8-6901] identifier 'tot_err_count_test' is used before its declaration [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:499]
+WARNING: [Synth 8-2611] redeclaration of ansi port foundFrames is not allowed [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:70]
+WARNING: [Synth 8-2611] redeclaration of ansi port searchedFrames is not allowed [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:72]
+WARNING: [Synth 8-2611] redeclaration of ansi port alignAddr is not allowed [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:79]
+WARNING: [Synth 8-2611] redeclaration of ansi port bypass is not allowed [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:105]
+WARNING: [Synth 8-2611] redeclaration of ansi port seed is not allowed [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:106]
+WARNING: [Synth 8-2611] redeclaration of ansi port mask is not allowed [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:107]
+CRITICAL WARNING: [Synth 8-976] mask has already been declared [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:107]
+CRITICAL WARNING: [Synth 8-2654] second declaration of mask ignored [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:107]
+INFO: [Synth 8-994] mask is declared here [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:23]
+WARNING: [Synth 8-2611] redeclaration of ansi port errorFlag is not allowed [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:108]
+WARNING: [Synth 8-2611] redeclaration of ansi port userData is not allowed [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:130]
+WARNING: [Synth 8-2611] redeclaration of ansi port userBits is not allowed [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:131]
+WARNING: [Synth 8-2611] redeclaration of ansi port usererrorBits is not allowed [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:132]
+WARNING: [Synth 8-2611] redeclaration of ansi port errorBits is not allowed [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:135]
+WARNING: [Synth 8-2611] redeclaration of ansi port errorFlag is not allowed [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:137]
+CRITICAL WARNING: [Synth 8-976] errorFlag has already been declared [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:137]
+CRITICAL WARNING: [Synth 8-2654] second declaration of errorFlag ignored [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:137]
+INFO: [Synth 8-994] errorFlag is declared here [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:108]
+WARNING: [Synth 8-2611] redeclaration of ansi port tot_err_count is not allowed [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:213]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1010.758 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1010.176 ; gain = 0.000
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'PRBS7_top' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:17]
 INFO: [Synth 8-6157] synthesizing module 'PRBS_debug' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS_debug.v:17]
 INFO: [Synth 8-6155] done synthesizing module 'PRBS_debug' (1#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS_debug.v:17]
 INFO: [Synth 8-6157] synthesizing module 'PRBS7Check' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:17]
 INFO: [Synth 8-6155] done synthesizing module 'PRBS7Check' (2#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:17]
-WARNING: [Synth 8-7071] port 'mask' of module 'PRBS7Check' is unconnected for instance 'prbs_source_check_inst_0' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:70]
-WARNING: [Synth 8-7071] port 'reset' of module 'PRBS7Check' is unconnected for instance 'prbs_source_check_inst_0' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:70]
-WARNING: [Synth 8-7071] port 'seed' of module 'PRBS7Check' is unconnected for instance 'prbs_source_check_inst_0' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:70]
-WARNING: [Synth 8-7071] port 'errorBits' of module 'PRBS7Check' is unconnected for instance 'prbs_source_check_inst_0' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:70]
-WARNING: [Synth 8-7023] instance 'prbs_source_check_inst_0' of module 'PRBS7Check' has 8 connections declared, but only 4 given [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:70]
+WARNING: [Synth 8-7071] port 'reset' of module 'PRBS7Check' is unconnected for instance 'prbs_source_check_inst_0' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:92]
+WARNING: [Synth 8-7071] port 'errorBits' of module 'PRBS7Check' is unconnected for instance 'prbs_source_check_inst_0' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:92]
+WARNING: [Synth 8-7071] port 'userBits' of module 'PRBS7Check' is unconnected for instance 'prbs_source_check_inst_0' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:92]
+WARNING: [Synth 8-7071] port 'usererrorBits' of module 'PRBS7Check' is unconnected for instance 'prbs_source_check_inst_0' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:92]
+WARNING: [Synth 8-7071] port 'usererrorCounter' of module 'PRBS7Check' is unconnected for instance 'prbs_source_check_inst_0' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:92]
+WARNING: [Synth 8-7071] port 'errorFlag' of module 'PRBS7Check' is unconnected for instance 'prbs_source_check_inst_0' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:92]
+WARNING: [Synth 8-7071] port 'userData' of module 'PRBS7Check' is unconnected for instance 'prbs_source_check_inst_0' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:92]
+WARNING: [Synth 8-7023] instance 'prbs_source_check_inst_0' of module 'PRBS7Check' has 13 connections declared, but only 6 given [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:92]
 INFO: [Synth 8-6157] synthesizing module 'rev_map' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/rev_map.v:17]
 INFO: [Synth 8-6155] done synthesizing module 'rev_map' (3#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/rev_map.v:17]
 INFO: [Synth 8-6157] synthesizing module 'gtwizard_0_exdes' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/gtwizard_0_ex/gtwizard_0_ex.srcs/sources_1/imports/example_design/gtwizard_0_exdes.v:70]
@@ -499,12 +526,13 @@ INFO: [Synth 8-6155] done synthesizing module 'gtwizard_0_init' (19#1) [c:/Lily_
 INFO: [Synth 8-6155] done synthesizing module 'gtwizard_0' (20#1) [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/sources_1/ip/gtwizard_0/gtwizard_0.v:73]
 INFO: [Synth 8-6155] done synthesizing module 'gtwizard_0_support' (21#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/gtwizard_0_ex/gtwizard_0_ex.srcs/sources_1/imports/example_design/support/gtwizard_0_support.v:70]
 INFO: [Synth 8-6155] done synthesizing module 'gtwizard_0_exdes' (22#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/gtwizard_0_ex/gtwizard_0_ex.srcs/sources_1/imports/example_design/gtwizard_0_exdes.v:70]
-WARNING: [Synth 8-689] width (32) of port connection 'TRACK_DATA_OUT' does not match port width (1) of module 'gtwizard_0_exdes' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:122]
-WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:122]
+WARNING: [Synth 8-689] width (32) of port connection 'TRACK_DATA_OUT' does not match port width (1) of module 'gtwizard_0_exdes' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:147]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:147]
 INFO: [Synth 8-6157] synthesizing module 'dataExtract' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:17]
 INFO: [Synth 8-6157] synthesizing module 'map' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/map.v:17]
 INFO: [Synth 8-6155] done synthesizing module 'map' (23#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/map.v:17]
 INFO: [Synth 8-6155] done synthesizing module 'dataExtract' (24#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:17]
+WARNING: [Synth 8-689] width (10) of port connection 'alignAddr' does not match port width (6) of module 'dataExtract' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:176]
 INFO: [Synth 8-638] synthesizing module 'global_clock_reset' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/global_clock_reset.vhd:53]
 	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
 	Parameter DIFF_TERM bound to: 0 - type: bool 
@@ -515,9 +543,9 @@ INFO: [Synth 8-638] synthesizing module 'global_clock_reset' [C:/Lily_Zhang/GBS2
 	Parameter IOSTANDARD bound to: DEFAULT - type: string 
 INFO: [Synth 8-113] binding component instance 'IBUFDS_inst' to cell 'IBUFDS' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/global_clock_reset.vhd:88]
 INFO: [Synth 8-113] binding component instance 'BUFG_inst' to cell 'BUFG' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/global_clock_reset.vhd:99]
-INFO: [Synth 8-3491] module 'clockwiz' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-22236-21-10244/realtime/clockwiz_stub.v:5' bound to instance 'clockwiz_inst' of component 'clockwiz' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/global_clock_reset.vhd:106]
-INFO: [Synth 8-6157] synthesizing module 'clockwiz' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-22236-21-10244/realtime/clockwiz_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'clockwiz' (25#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-22236-21-10244/realtime/clockwiz_stub.v:5]
+INFO: [Synth 8-3491] module 'clockwiz' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-17668-21-10244/realtime/clockwiz_stub.v:5' bound to instance 'clockwiz_inst' of component 'clockwiz' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/global_clock_reset.vhd:106]
+INFO: [Synth 8-6157] synthesizing module 'clockwiz' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-17668-21-10244/realtime/clockwiz_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clockwiz' (25#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-17668-21-10244/realtime/clockwiz_stub.v:5]
 INFO: [Synth 8-3491] module 'GlobalResetter' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/global_resetter.vhd:21' bound to instance 'globalresetter_inst' of component 'GlobalResetter' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/global_clock_reset.vhd:123]
 INFO: [Synth 8-638] synthesizing module 'GlobalResetter' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/global_resetter.vhd:37]
 	Parameter CLK_RESET_DELAY_CNT bound to: 10000 - type: integer 
@@ -530,12 +558,12 @@ INFO: [Synth 8-6157] synthesizing module 'IBUFDS_GTE2__parameterized0' [C:/Xilin
 	Parameter CLKRCV_TRST bound to: TRUE - type: string 
 	Parameter CLKSWING_CFG bound to: 2'b11 
 INFO: [Synth 8-6155] done synthesizing module 'IBUFDS_GTE2__parameterized0' (27#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:33137]
-WARNING: [Synth 8-689] width (32) of port connection 'ODIV2' does not match port width (1) of module 'IBUFDS_GTE2__parameterized0' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:244]
-WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:244]
+WARNING: [Synth 8-689] width (32) of port connection 'ODIV2' does not match port width (1) of module 'IBUFDS_GTE2__parameterized0' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:291]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:291]
 INFO: [Synth 8-638] synthesizing module 'control_interface' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/control_interface.vhd:86]
-INFO: [Synth 8-3491] module 'fifo36x512' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-22236-21-10244/realtime/fifo36x512_stub.v:6' bound to instance 'data_fifo' of component 'fifo36x512' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/control_interface.vhd:169]
-INFO: [Synth 8-6157] synthesizing module 'fifo36x512' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-22236-21-10244/realtime/fifo36x512_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'fifo36x512' (28#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-22236-21-10244/realtime/fifo36x512_stub.v:6]
+INFO: [Synth 8-3491] module 'fifo36x512' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-17668-21-10244/realtime/fifo36x512_stub.v:6' bound to instance 'data_fifo' of component 'fifo36x512' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/control_interface.vhd:169]
+INFO: [Synth 8-6157] synthesizing module 'fifo36x512' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-17668-21-10244/realtime/fifo36x512_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo36x512' (28#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-17668-21-10244/realtime/fifo36x512_stub.v:6]
 INFO: [Synth 8-256] done synthesizing module 'control_interface' (29#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/control_interface.vhd:86]
 INFO: [Synth 8-638] synthesizing module 'gig_eth' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/gig_eth.vhd:190]
 INFO: [Synth 8-3491] module 'tri_mode_ethernet_mac_0_example_design_resets' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/gig_eth_mac_resets.vhd:57' bound to instance 'example_resets' of component 'tri_mode_ethernet_mac_0_example_design_resets' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/gig_eth.vhd:691]
@@ -1168,12 +1196,12 @@ INFO: [Synth 8-3491] module 'BRAM_DP' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/
 INFO: [Synth 8-3491] module 'BRAM_DP' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/bram_dp.vhd:34' bound to instance 'RAMB16_S9_S9_001' of component 'BRAM_DP' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/tcp_txbuf.vhd:297]
 INFO: [Synth 8-256] done synthesizing module 'TCP_TXBUF' (104#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/tcp_txbuf.vhd:131]
 INFO: [Synth 8-256] done synthesizing module 'COM5402' (105#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/com5402.vhd:160]
-INFO: [Synth 8-3491] module 'fifo8to32' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-22236-21-10244/realtime/fifo8to32_stub.v:6' bound to instance 'rx_fifo_inst' of component 'fifo8to32' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/gig_eth.vhd:1028]
-INFO: [Synth 8-6157] synthesizing module 'fifo8to32' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-22236-21-10244/realtime/fifo8to32_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'fifo8to32' (106#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-22236-21-10244/realtime/fifo8to32_stub.v:6]
-INFO: [Synth 8-3491] module 'fifo32to8' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-22236-21-10244/realtime/fifo32to8_stub.v:6' bound to instance 'tx_fifo_inst' of component 'fifo32to8' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/gig_eth.vhd:1046]
-INFO: [Synth 8-6157] synthesizing module 'fifo32to8' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-22236-21-10244/realtime/fifo32to8_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'fifo32to8' (107#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-22236-21-10244/realtime/fifo32to8_stub.v:6]
+INFO: [Synth 8-3491] module 'fifo8to32' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-17668-21-10244/realtime/fifo8to32_stub.v:6' bound to instance 'rx_fifo_inst' of component 'fifo8to32' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/gig_eth.vhd:1028]
+INFO: [Synth 8-6157] synthesizing module 'fifo8to32' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-17668-21-10244/realtime/fifo8to32_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo8to32' (106#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-17668-21-10244/realtime/fifo8to32_stub.v:6]
+INFO: [Synth 8-3491] module 'fifo32to8' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-17668-21-10244/realtime/fifo32to8_stub.v:6' bound to instance 'tx_fifo_inst' of component 'fifo32to8' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/gig_eth.vhd:1046]
+INFO: [Synth 8-6157] synthesizing module 'fifo32to8' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-17668-21-10244/realtime/fifo32to8_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo32to8' (107#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-17668-21-10244/realtime/fifo32to8_stub.v:6]
 INFO: [Synth 8-256] done synthesizing module 'gig_eth' (108#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/gig_eth.vhd:190]
 INFO: [Synth 8-638] synthesizing module 'i2c_wr_bytes' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/i2c/i2c_wr_bytes.vhd:51]
 	Parameter INPUT_CLK_FREQENCY bound to: 60000000 - type: integer 
@@ -1184,54 +1212,54 @@ INFO: [Synth 8-638] synthesizing module 'i2c_master' [C:/Lily_Zhang/GBS20V1/Elij
 	Parameter BUS_CLK_FREQUENCY bound to: 100000 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'i2c_master' (109#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/i2c/i2c_master.vhd:50]
 INFO: [Synth 8-256] done synthesizing module 'i2c_wr_bytes' (110#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/i2c/i2c_wr_bytes.vhd:51]
-WARNING: [Synth 8-689] width (32) of port connection 'BUSY' does not match port width (1) of module 'i2c_wr_bytes' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:427]
-WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:427]
-WARNING: [Synth 8-567] referenced signal 'tot_err_count_test' should be on the sensitivity list [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:450]
-WARNING: [Synth 8-567] referenced signal 'tot_err_count' should be on the sensitivity list [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:457]
-INFO: [Synth 8-6157] synthesizing module 'vio_0' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-22236-21-10244/realtime/vio_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'vio_0' (111#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-22236-21-10244/realtime/vio_0_stub.v:6]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'gtwizard_0_exdes_i'. This will prevent further optimization [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:115]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'dataAligner'. This will prevent further optimization [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:137]
+WARNING: [Synth 8-689] width (32) of port connection 'BUSY' does not match port width (1) of module 'i2c_wr_bytes' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:474]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:474]
+WARNING: [Synth 8-567] referenced signal 'tot_err_count_test' should be on the sensitivity list [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:497]
+WARNING: [Synth 8-567] referenced signal 'tot_err_count' should be on the sensitivity list [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:504]
+INFO: [Synth 8-6157] synthesizing module 'vio_0' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-17668-21-10244/realtime/vio_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'vio_0' (111#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-17668-21-10244/realtime/vio_0_stub.v:6]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'gtwizard_0_exdes_i'. This will prevent further optimization [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:140]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'dataAligner'. This will prevent further optimization [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:162]
 INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'PRBS_debug_inst0'. This will prevent further optimization [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:55]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'rev_map_inst'. This will prevent further optimization [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:82]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'prbs_source_check_inst_0'. This will prevent further optimization [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:70]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'vio_0_inst'. This will prevent further optimization [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:484]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'control_interface_inst'. This will prevent further optimization [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:283]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'i2c_wr_bytes_inst'. This will prevent further optimization [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:414]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'rev_map_inst'. This will prevent further optimization [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:107]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'prbs_source_check_inst_0'. This will prevent further optimization [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:92]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'vio_0_inst'. This will prevent further optimization [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:531]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'control_interface_inst'. This will prevent further optimization [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:330]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'i2c_wr_bytes_inst'. This will prevent further optimization [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:461]
 INFO: [Synth 8-6155] done synthesizing module 'PRBS7_top' (112#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:17]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1141.957 ; gain = 131.199
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1138.633 ; gain = 128.457
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1155.172 ; gain = 144.414
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1147.938 ; gain = 137.762
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1155.172 ; gain = 144.414
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1147.938 ; gain = 137.762
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.448 . Memory (MB): peak = 1155.172 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.387 . Memory (MB): peak = 1159.895 ; gain = 0.000
 WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_support_clocking_i/clkout1_buf' of type 'BUFGCE' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
 WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_support_clocking_i/clkout2_buf' of type 'BUFGCE' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
 INFO: [Netlist 29-17] Analyzing 279 Unisim elements for replacement
 WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_support_clocking_i/clkout1_buf' of type 'BUFGCTRL' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
 WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_support_clocking_i/clkout2_buf' of type 'BUFGCTRL' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
-INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-22236-21-10244/fifo8to32/fifo8to32/fifo8to32_in_context.xdc] for cell 'gig_eth_inst/rx_fifo_inst'
-Finished Parsing XDC File [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-22236-21-10244/fifo8to32/fifo8to32/fifo8to32_in_context.xdc] for cell 'gig_eth_inst/rx_fifo_inst'
-Parsing XDC File [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-22236-21-10244/fifo36x512/fifo36x512/fifo36x512_in_context.xdc] for cell 'control_interface_inst/data_fifo'
-Finished Parsing XDC File [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-22236-21-10244/fifo36x512/fifo36x512/fifo36x512_in_context.xdc] for cell 'control_interface_inst/data_fifo'
-Parsing XDC File [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-22236-21-10244/fifo32to8/fifo32to8/fifo32to8_in_context.xdc] for cell 'gig_eth_inst/tx_fifo_inst'
-Finished Parsing XDC File [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-22236-21-10244/fifo32to8/fifo32to8/fifo32to8_in_context.xdc] for cell 'gig_eth_inst/tx_fifo_inst'
-Parsing XDC File [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-22236-21-10244/clockwiz/clockwiz/clockwiz_in_context.xdc] for cell 'global_clock_reset_inst/clockwiz_inst'
-Finished Parsing XDC File [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-22236-21-10244/clockwiz/clockwiz/clockwiz_in_context.xdc] for cell 'global_clock_reset_inst/clockwiz_inst'
-Parsing XDC File [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-22236-21-10244/vio_0/vio_0/vio_0_in_context.xdc] for cell 'vio_0_inst'
-Finished Parsing XDC File [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-22236-21-10244/vio_0/vio_0/vio_0_in_context.xdc] for cell 'vio_0_inst'
+Parsing XDC File [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-17668-21-10244/fifo8to32/fifo8to32/fifo8to32_in_context.xdc] for cell 'gig_eth_inst/rx_fifo_inst'
+Finished Parsing XDC File [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-17668-21-10244/fifo8to32/fifo8to32/fifo8to32_in_context.xdc] for cell 'gig_eth_inst/rx_fifo_inst'
+Parsing XDC File [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-17668-21-10244/fifo36x512/fifo36x512/fifo36x512_in_context.xdc] for cell 'control_interface_inst/data_fifo'
+Finished Parsing XDC File [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-17668-21-10244/fifo36x512/fifo36x512/fifo36x512_in_context.xdc] for cell 'control_interface_inst/data_fifo'
+Parsing XDC File [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-17668-21-10244/fifo32to8/fifo32to8/fifo32to8_in_context.xdc] for cell 'gig_eth_inst/tx_fifo_inst'
+Finished Parsing XDC File [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-17668-21-10244/fifo32to8/fifo32to8/fifo32to8_in_context.xdc] for cell 'gig_eth_inst/tx_fifo_inst'
+Parsing XDC File [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-17668-21-10244/clockwiz/clockwiz/clockwiz_in_context.xdc] for cell 'global_clock_reset_inst/clockwiz_inst'
+Finished Parsing XDC File [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-17668-21-10244/clockwiz/clockwiz/clockwiz_in_context.xdc] for cell 'global_clock_reset_inst/clockwiz_inst'
+Parsing XDC File [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-17668-21-10244/vio_0/vio_0/vio_0_in_context.xdc] for cell 'vio_0_inst'
+Finished Parsing XDC File [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-17668-21-10244/vio_0/vio_0/vio_0_in_context.xdc] for cell 'vio_0_inst'
 Parsing XDC File [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/sources_1/ip/gtwizard_0/gtwizard_0.xdc] for cell 'gtwizard_0_exdes_i/gtwizard_0_support_i/gtwizard_0_init_i/inst'
 Finished Parsing XDC File [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/sources_1/ip/gtwizard_0/gtwizard_0.xdc] for cell 'gtwizard_0_exdes_i/gtwizard_0_support_i/gtwizard_0_init_i/inst'
 Parsing XDC File [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0_board.xdc] for cell 'gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/inst'
@@ -1283,7 +1311,7 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/PRBS7_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1288.066 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1291.453 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 118 instances were transformed.
   BUFGCE => BUFGCTRL: 2 instances
@@ -1292,16 +1320,16 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM64X1D => RAM64X1D (RAMD64E(x2)): 8 instances
   RAMB16_S9_S9 => RAMB18E1: 17 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.100 . Memory (MB): peak = 1288.066 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.088 . Memory (MB): peak = 1291.453 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1288.066 ; gain = 277.309
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1291.453 ; gain = 281.277
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7k325tffg900-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1288.066 ; gain = 277.309
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1291.453 ; gain = 281.277
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -1316,7 +1344,7 @@ Applied set_property KEEP_HIERARCHY = SOFT for gig_eth_inst/tx_fifo_inst. (const
 Applied set_property KEEP_HIERARCHY = SOFT for global_clock_reset_inst/clockwiz_inst. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for vio_0_inst. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1288.066 ; gain = 277.309
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1291.453 ; gain = 281.277
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'tx_state_reg' in module 'gtwizard_0_TX_STARTUP_FSM'
 INFO: [Synth 8-802] inferred FSM for state register 'rx_state_reg' in module 'gtwizard_0_RX_STARTUP_FSM'
@@ -1549,7 +1577,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'rd_state_reg' using encodi
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'i2c_master'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 1296.387 ; gain = 285.629
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1291.453 ; gain = 281.277
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -1569,347 +1597,29 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataBuf_reg[1079] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataBuf_reg[1015] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataBuf_reg[951] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataBuf_reg[887] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataBuf_reg[823] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataBuf_reg[759] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataBuf_reg[695] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataBuf_reg[631] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataBuf_reg[567] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataBuf_reg[503] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataBuf_reg[439] )
-INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-WARNING: [Synth 8-7129] Port reset in module PRBS7Check__1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port seed[6] in module PRBS7Check__1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port seed[5] in module PRBS7Check__1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port seed[4] in module PRBS7Check__1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port seed[3] in module PRBS7Check__1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port seed[2] in module PRBS7Check__1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port seed[1] in module PRBS7Check__1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port seed[0] in module PRBS7Check__1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port EFF_RX_WINDOW_SIZE_PARTIAL_STREAM[0] in module TCP_TXBUF is either unconnected or has no load
-WARNING: [Synth 8-7129] Port RX_TCP_ACK_NO_D[0][16] in module TCP_TXBUF is either unconnected or has no load
-WARNING: [Synth 8-7129] Port RX_TCP_ACK_NO_D[0][15] in module TCP_TXBUF is either unconnected or has no load
-WARNING: [Synth 8-7129] Port RX_TCP_ACK_NO_D[0][14] in module TCP_TXBUF is either unconnected or has no load
-WARNING: [Synth 8-7129] Port RX_APP_SOF[0] in module TCP_RXBUFNDEMUX2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port TP[10] in module TCP_RXBUFNDEMUX2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port TP[9] in module TCP_RXBUFNDEMUX2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port TP[8] in module TCP_RXBUFNDEMUX2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port TP[7] in module TCP_RXBUFNDEMUX2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port TP[6] in module TCP_RXBUFNDEMUX2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port TP[5] in module TCP_RXBUFNDEMUX2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port TP[4] in module TCP_RXBUFNDEMUX2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port TP[3] in module TCP_RXBUFNDEMUX2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port TP[2] in module TCP_RXBUFNDEMUX2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port TP[1] in module TCP_RXBUFNDEMUX2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port RX_STREAM_NO[0] in module TCP_RXBUFNDEMUX2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port TP[10] in module TCP_TX is either unconnected or has no load
-WARNING: [Synth 8-7129] Port TP[9] in module TCP_TX is either unconnected or has no load
-WARNING: [Synth 8-7129] Port TP[8] in module TCP_TX is either unconnected or has no load
-WARNING: [Synth 8-7129] Port TP[7] in module TCP_TX is either unconnected or has no load
-WARNING: [Synth 8-7129] Port TP[6] in module TCP_TX is either unconnected or has no load
-WARNING: [Synth 8-7129] Port TP[5] in module TCP_TX is either unconnected or has no load
-WARNING: [Synth 8-7129] Port TP[4] in module TCP_TX is either unconnected or has no load
-WARNING: [Synth 8-7129] Port TP[3] in module TCP_TX is either unconnected or has no load
-WARNING: [Synth 8-7129] Port TP[2] in module TCP_TX is either unconnected or has no load
-WARNING: [Synth 8-7129] Port TP[1] in module TCP_TX is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IPv6_ADDR[127] in module TCP_TX is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IPv6_ADDR[126] in module TCP_TX is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IPv6_ADDR[125] in module TCP_TX is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IPv6_ADDR[124] in module TCP_TX is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IPv6_ADDR[123] in module TCP_TX is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IPv6_ADDR[122] in module TCP_TX is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IPv6_ADDR[121] in module TCP_TX is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IPv6_ADDR[120] in module TCP_TX is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IPv6_ADDR[119] in module TCP_TX is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IPv6_ADDR[118] in module TCP_TX is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IPv6_ADDR[117] in module TCP_TX is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IPv6_ADDR[116] in module TCP_TX is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IPv6_ADDR[115] in module TCP_TX is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IPv6_ADDR[114] in module TCP_TX is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IPv6_ADDR[113] in module TCP_TX is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IPv6_ADDR[112] in module TCP_TX is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IPv6_ADDR[111] in module TCP_TX is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IPv6_ADDR[110] in module TCP_TX is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IPv6_ADDR[109] in module TCP_TX is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IPv6_ADDR[108] in module TCP_TX is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IPv6_ADDR[107] in module TCP_TX is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IPv6_ADDR[106] in module TCP_TX is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IPv6_ADDR[105] in module TCP_TX is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IPv6_ADDR[104] in module TCP_TX is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IPv6_ADDR[103] in module TCP_TX is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IPv6_ADDR[102] in module TCP_TX is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IPv6_ADDR[101] in module TCP_TX is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IPv6_ADDR[100] in module TCP_TX is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IPv6_ADDR[99] in module TCP_TX is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IPv6_ADDR[98] in module TCP_TX is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IPv6_ADDR[97] in module TCP_TX is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IPv6_ADDR[96] in module TCP_TX is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IPv6_ADDR[95] in module TCP_TX is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IPv6_ADDR[94] in module TCP_TX is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IPv6_ADDR[93] in module TCP_TX is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IPv6_ADDR[92] in module TCP_TX is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IPv6_ADDR[91] in module TCP_TX is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IPv6_ADDR[90] in module TCP_TX is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IPv6_ADDR[89] in module TCP_TX is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IPv6_ADDR[88] in module TCP_TX is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IPv6_ADDR[87] in module TCP_TX is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IPv6_ADDR[86] in module TCP_TX is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IPv6_ADDR[85] in module TCP_TX is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IPv6_ADDR[84] in module TCP_TX is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IPv6_ADDR[83] in module TCP_TX is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IPv6_ADDR[82] in module TCP_TX is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IPv6_ADDR[81] in module TCP_TX is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IPv6_ADDR[80] in module TCP_TX is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IPv6_ADDR[79] in module TCP_TX is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IPv6_ADDR[78] in module TCP_TX is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IPv6_ADDR[77] in module TCP_TX is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IPv6_ADDR[76] in module TCP_TX is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IPv6_ADDR[75] in module TCP_TX is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IPv6_ADDR[74] in module TCP_TX is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IPv6_ADDR[73] in module TCP_TX is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IPv6_ADDR[72] in module TCP_TX is either unconnected or has no load
-WARNING: [Synth 8-7129] Port IPv6_ADDR[71] in module TCP_TX is either unconnected or has no load
-INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Synth 8-3886] merging instance 'tcp_server_inst/TCP_SERVER_X.TCP_SERVER_001/TXRX_DELAY_x[0].TXRX_DELAY_reg[0][18]' (FDRE) to 'tcp_server_inst/TCP_SERVER_X.TCP_SERVER_001/TXRX_DELAY_x[0].TXRX_DELAY_reg[0][19]'
-INFO: [Synth 8-3886] merging instance 'tcp_server_inst/TCP_SERVER_X.TCP_SERVER_001/TXRX_DELAY_x[0].TXRX_DELAY_reg[0][19]' (FDRE) to 'tcp_server_inst/TCP_SERVER_X.TCP_SERVER_001/TXRX_DELAY_x[0].TXRX_DELAY_reg[0][17]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (tcp_server_inst/\TCP_SERVER_X.TCP_SERVER_001 /\TXRX_DELAY_x[0].TXRX_DELAY_reg[0][17] )
-INFO: [Synth 8-3886] merging instance 'tcp_server_inst/Inst_PACKET_PARSING/RX_SOURCE_IP_ADDR_local_reg[32]' (FDCE) to 'tcp_server_inst/Inst_PACKET_PARSING/RX_SOURCE_IP_ADDR_local_reg[127]'
-INFO: [Synth 8-3886] merging instance 'tcp_server_inst/Inst_PACKET_PARSING/RX_DEST_IP_ADDR_local_reg[32]' (FDCE) to 'tcp_server_inst/Inst_PACKET_PARSING/RX_SOURCE_IP_ADDR_local_reg[127]'
-INFO: [Synth 8-3886] merging instance 'tcp_server_inst/Inst_PACKET_PARSING/RX_DEST_IP_ADDR_local_reg[33]' (FDCE) to 'tcp_server_inst/Inst_PACKET_PARSING/RX_SOURCE_IP_ADDR_local_reg[127]'
-INFO: [Synth 8-3886] merging instance 'tcp_server_inst/Inst_PACKET_PARSING/RX_DEST_IP_ADDR_local_reg[34]' (FDCE) to 'tcp_server_inst/Inst_PACKET_PARSING/RX_SOURCE_IP_ADDR_local_reg[127]'
-INFO: [Synth 8-3886] merging instance 'tcp_server_inst/Inst_PACKET_PARSING/RX_DEST_IP_ADDR_local_reg[35]' (FDCE) to 'tcp_server_inst/Inst_PACKET_PARSING/RX_SOURCE_IP_ADDR_local_reg[127]'
-INFO: [Synth 8-3886] merging instance 'tcp_server_inst/Inst_PACKET_PARSING/RX_DEST_IP_ADDR_local_reg[36]' (FDCE) to 'tcp_server_inst/Inst_PACKET_PARSING/RX_SOURCE_IP_ADDR_local_reg[127]'
-INFO: [Synth 8-3886] merging instance 'tcp_server_inst/Inst_PACKET_PARSING/RX_DEST_IP_ADDR_local_reg[37]' (FDCE) to 'tcp_server_inst/Inst_PACKET_PARSING/RX_SOURCE_IP_ADDR_local_reg[127]'
-INFO: [Synth 8-3886] merging instance 'tcp_server_inst/Inst_PACKET_PARSING/RX_DEST_IP_ADDR_local_reg[38]' (FDCE) to 'tcp_server_inst/Inst_PACKET_PARSING/RX_SOURCE_IP_ADDR_local_reg[127]'
-INFO: [Synth 8-3886] merging instance 'tcp_server_inst/Inst_PACKET_PARSING/RX_DEST_IP_ADDR_local_reg[39]' (FDCE) to 'tcp_server_inst/Inst_PACKET_PARSING/RX_SOURCE_IP_ADDR_local_reg[127]'
-INFO: [Synth 8-3886] merging instance 'tcp_server_inst/Inst_PACKET_PARSING/RX_DEST_IP_ADDR_local_reg[40]' (FDCE) to 'tcp_server_inst/Inst_PACKET_PARSING/RX_SOURCE_IP_ADDR_local_reg[127]'
-INFO: [Synth 8-3886] merging instance 'tcp_server_inst/Inst_PACKET_PARSING/RX_DEST_IP_ADDR_local_reg[41]' (FDCE) to 'tcp_server_inst/Inst_PACKET_PARSING/RX_SOURCE_IP_ADDR_local_reg[127]'
-INFO: [Synth 8-3886] merging instance 'tcp_server_inst/Inst_PACKET_PARSING/RX_DEST_IP_ADDR_local_reg[42]' (FDCE) to 'tcp_server_inst/Inst_PACKET_PARSING/RX_SOURCE_IP_ADDR_local_reg[127]'
-INFO: [Synth 8-3886] merging instance 'tcp_server_inst/Inst_PACKET_PARSING/RX_DEST_IP_ADDR_local_reg[43]' (FDCE) to 'tcp_server_inst/Inst_PACKET_PARSING/RX_SOURCE_IP_ADDR_local_reg[127]'
-INFO: [Synth 8-3886] merging instance 'tcp_server_inst/Inst_PACKET_PARSING/RX_DEST_IP_ADDR_local_reg[44]' (FDCE) to 'tcp_server_inst/Inst_PACKET_PARSING/RX_SOURCE_IP_ADDR_local_reg[127]'
-INFO: [Synth 8-3886] merging instance 'tcp_server_inst/Inst_PACKET_PARSING/RX_DEST_IP_ADDR_local_reg[45]' (FDCE) to 'tcp_server_inst/Inst_PACKET_PARSING/RX_SOURCE_IP_ADDR_local_reg[127]'
-INFO: [Synth 8-3886] merging instance 'tcp_server_inst/Inst_PACKET_PARSING/RX_DEST_IP_ADDR_local_reg[46]' (FDCE) to 'tcp_server_inst/Inst_PACKET_PARSING/RX_SOURCE_IP_ADDR_local_reg[127]'
-INFO: [Synth 8-3886] merging instance 'tcp_server_inst/Inst_PACKET_PARSING/RX_DEST_IP_ADDR_local_reg[47]' (FDCE) to 'tcp_server_inst/Inst_PACKET_PARSING/RX_SOURCE_IP_ADDR_local_reg[127]'
-INFO: [Synth 8-3886] merging instance 'tcp_server_inst/Inst_PACKET_PARSING/RX_DEST_IP_ADDR_local_reg[48]' (FDCE) to 'tcp_server_inst/Inst_PACKET_PARSING/RX_SOURCE_IP_ADDR_local_reg[127]'
-INFO: [Synth 8-3886] merging instance 'tcp_server_inst/Inst_PACKET_PARSING/RX_DEST_IP_ADDR_local_reg[49]' (FDCE) to 'tcp_server_inst/Inst_PACKET_PARSING/RX_SOURCE_IP_ADDR_local_reg[127]'
-INFO: [Synth 8-3886] merging instance 'tcp_server_inst/Inst_PACKET_PARSING/RX_DEST_IP_ADDR_local_reg[50]' (FDCE) to 'tcp_server_inst/Inst_PACKET_PARSING/RX_SOURCE_IP_ADDR_local_reg[127]'
-INFO: [Synth 8-3886] merging instance 'tcp_server_inst/Inst_PACKET_PARSING/RX_DEST_IP_ADDR_local_reg[51]' (FDCE) to 'tcp_server_inst/Inst_PACKET_PARSING/RX_SOURCE_IP_ADDR_local_reg[127]'
-INFO: [Synth 8-3886] merging instance 'tcp_server_inst/Inst_PACKET_PARSING/RX_DEST_IP_ADDR_local_reg[52]' (FDCE) to 'tcp_server_inst/Inst_PACKET_PARSING/RX_SOURCE_IP_ADDR_local_reg[127]'
-INFO: [Synth 8-3886] merging instance 'tcp_server_inst/Inst_PACKET_PARSING/RX_DEST_IP_ADDR_local_reg[53]' (FDCE) to 'tcp_server_inst/Inst_PACKET_PARSING/RX_SOURCE_IP_ADDR_local_reg[127]'
-INFO: [Synth 8-3886] merging instance 'tcp_server_inst/Inst_PACKET_PARSING/RX_DEST_IP_ADDR_local_reg[54]' (FDCE) to 'tcp_server_inst/Inst_PACKET_PARSING/RX_SOURCE_IP_ADDR_local_reg[127]'
-INFO: [Synth 8-3886] merging instance 'tcp_server_inst/Inst_PACKET_PARSING/RX_DEST_IP_ADDR_local_reg[55]' (FDCE) to 'tcp_server_inst/Inst_PACKET_PARSING/RX_SOURCE_IP_ADDR_local_reg[127]'
-INFO: [Synth 8-3886] merging instance 'tcp_server_inst/Inst_PACKET_PARSING/RX_DEST_IP_ADDR_local_reg[56]' (FDCE) to 'tcp_server_inst/Inst_PACKET_PARSING/RX_SOURCE_IP_ADDR_local_reg[127]'
-INFO: [Synth 8-3886] merging instance 'tcp_server_inst/Inst_PACKET_PARSING/RX_DEST_IP_ADDR_local_reg[57]' (FDCE) to 'tcp_server_inst/Inst_PACKET_PARSING/RX_SOURCE_IP_ADDR_local_reg[127]'
-INFO: [Synth 8-3886] merging instance 'tcp_server_inst/Inst_PACKET_PARSING/RX_DEST_IP_ADDR_local_reg[58]' (FDCE) to 'tcp_server_inst/Inst_PACKET_PARSING/RX_SOURCE_IP_ADDR_local_reg[127]'
-INFO: [Synth 8-3886] merging instance 'tcp_server_inst/Inst_PACKET_PARSING/RX_DEST_IP_ADDR_local_reg[59]' (FDCE) to 'tcp_server_inst/Inst_PACKET_PARSING/RX_SOURCE_IP_ADDR_local_reg[127]'
-INFO: [Synth 8-3886] merging instance 'tcp_server_inst/Inst_PACKET_PARSING/RX_DEST_IP_ADDR_local_reg[60]' (FDCE) to 'tcp_server_inst/Inst_PACKET_PARSING/RX_SOURCE_IP_ADDR_local_reg[127]'
-INFO: [Synth 8-3886] merging instance 'tcp_server_inst/Inst_PACKET_PARSING/RX_DEST_IP_ADDR_local_reg[61]' (FDCE) to 'tcp_server_inst/Inst_PACKET_PARSING/RX_SOURCE_IP_ADDR_local_reg[127]'
-INFO: [Synth 8-3886] merging instance 'tcp_server_inst/Inst_PACKET_PARSING/RX_DEST_IP_ADDR_local_reg[62]' (FDCE) to 'tcp_server_inst/Inst_PACKET_PARSING/RX_SOURCE_IP_ADDR_local_reg[127]'
-INFO: [Synth 8-3886] merging instance 'tcp_server_inst/Inst_PACKET_PARSING/RX_DEST_IP_ADDR_local_reg[63]' (FDCE) to 'tcp_server_inst/Inst_PACKET_PARSING/RX_SOURCE_IP_ADDR_local_reg[127]'
-INFO: [Synth 8-3886] merging instance 'tcp_server_inst/Inst_PACKET_PARSING/RX_DEST_IP_ADDR_local_reg[64]' (FDCE) to 'tcp_server_inst/Inst_PACKET_PARSING/RX_SOURCE_IP_ADDR_local_reg[127]'
-INFO: [Synth 8-3886] merging instance 'tcp_server_inst/Inst_PACKET_PARSING/RX_DEST_IP_ADDR_local_reg[65]' (FDCE) to 'tcp_server_inst/Inst_PACKET_PARSING/RX_SOURCE_IP_ADDR_local_reg[127]'
-INFO: [Synth 8-3886] merging instance 'tcp_server_inst/Inst_PACKET_PARSING/RX_DEST_IP_ADDR_local_reg[66]' (FDCE) to 'tcp_server_inst/Inst_PACKET_PARSING/RX_SOURCE_IP_ADDR_local_reg[127]'
-INFO: [Synth 8-3886] merging instance 'tcp_server_inst/Inst_PACKET_PARSING/RX_DEST_IP_ADDR_local_reg[67]' (FDCE) to 'tcp_server_inst/Inst_PACKET_PARSING/RX_SOURCE_IP_ADDR_local_reg[127]'
-INFO: [Synth 8-3886] merging instance 'tcp_server_inst/Inst_PACKET_PARSING/RX_DEST_IP_ADDR_local_reg[68]' (FDCE) to 'tcp_server_inst/Inst_PACKET_PARSING/RX_SOURCE_IP_ADDR_local_reg[127]'
-INFO: [Synth 8-3886] merging instance 'tcp_server_inst/Inst_PACKET_PARSING/RX_DEST_IP_ADDR_local_reg[69]' (FDCE) to 'tcp_server_inst/Inst_PACKET_PARSING/RX_SOURCE_IP_ADDR_local_reg[127]'
-INFO: [Synth 8-3886] merging instance 'tcp_server_inst/Inst_PACKET_PARSING/RX_DEST_IP_ADDR_local_reg[70]' (FDCE) to 'tcp_server_inst/Inst_PACKET_PARSING/RX_SOURCE_IP_ADDR_local_reg[127]'
-INFO: [Synth 8-3886] merging instance 'tcp_server_inst/Inst_PACKET_PARSING/RX_DEST_IP_ADDR_local_reg[71]' (FDCE) to 'tcp_server_inst/Inst_PACKET_PARSING/RX_SOURCE_IP_ADDR_local_reg[127]'
-INFO: [Synth 8-3886] merging instance 'tcp_server_inst/Inst_PACKET_PARSING/RX_DEST_IP_ADDR_local_reg[72]' (FDCE) to 'tcp_server_inst/Inst_PACKET_PARSING/RX_SOURCE_IP_ADDR_local_reg[127]'
-INFO: [Synth 8-3886] merging instance 'tcp_server_inst/Inst_PACKET_PARSING/RX_DEST_IP_ADDR_local_reg[73]' (FDCE) to 'tcp_server_inst/Inst_PACKET_PARSING/RX_SOURCE_IP_ADDR_local_reg[127]'
-INFO: [Synth 8-3886] merging instance 'tcp_server_inst/Inst_PACKET_PARSING/RX_DEST_IP_ADDR_local_reg[74]' (FDCE) to 'tcp_server_inst/Inst_PACKET_PARSING/RX_SOURCE_IP_ADDR_local_reg[127]'
-INFO: [Synth 8-3886] merging instance 'tcp_server_inst/Inst_PACKET_PARSING/RX_DEST_IP_ADDR_local_reg[75]' (FDCE) to 'tcp_server_inst/Inst_PACKET_PARSING/RX_SOURCE_IP_ADDR_local_reg[127]'
-INFO: [Synth 8-3886] merging instance 'tcp_server_inst/Inst_PACKET_PARSING/RX_DEST_IP_ADDR_local_reg[76]' (FDCE) to 'tcp_server_inst/Inst_PACKET_PARSING/RX_SOURCE_IP_ADDR_local_reg[127]'
-INFO: [Synth 8-3886] merging instance 'tcp_server_inst/Inst_PACKET_PARSING/RX_DEST_IP_ADDR_local_reg[77]' (FDCE) to 'tcp_server_inst/Inst_PACKET_PARSING/RX_SOURCE_IP_ADDR_local_reg[127]'
-INFO: [Synth 8-3886] merging instance 'tcp_server_inst/Inst_PACKET_PARSING/RX_DEST_IP_ADDR_local_reg[78]' (FDCE) to 'tcp_server_inst/Inst_PACKET_PARSING/RX_SOURCE_IP_ADDR_local_reg[127]'
-INFO: [Synth 8-3886] merging instance 'tcp_server_inst/Inst_PACKET_PARSING/RX_DEST_IP_ADDR_local_reg[79]' (FDCE) to 'tcp_server_inst/Inst_PACKET_PARSING/RX_SOURCE_IP_ADDR_local_reg[127]'
-INFO: [Synth 8-3886] merging instance 'tcp_server_inst/Inst_PACKET_PARSING/RX_DEST_IP_ADDR_local_reg[80]' (FDCE) to 'tcp_server_inst/Inst_PACKET_PARSING/RX_SOURCE_IP_ADDR_local_reg[127]'
-INFO: [Synth 8-3886] merging instance 'tcp_server_inst/Inst_PACKET_PARSING/RX_DEST_IP_ADDR_local_reg[81]' (FDCE) to 'tcp_server_inst/Inst_PACKET_PARSING/RX_SOURCE_IP_ADDR_local_reg[127]'
-INFO: [Synth 8-3886] merging instance 'tcp_server_inst/Inst_PACKET_PARSING/RX_DEST_IP_ADDR_local_reg[82]' (FDCE) to 'tcp_server_inst/Inst_PACKET_PARSING/RX_SOURCE_IP_ADDR_local_reg[127]'
-INFO: [Synth 8-3886] merging instance 'tcp_server_inst/Inst_PACKET_PARSING/RX_DEST_IP_ADDR_local_reg[83]' (FDCE) to 'tcp_server_inst/Inst_PACKET_PARSING/RX_SOURCE_IP_ADDR_local_reg[127]'
-INFO: [Synth 8-3886] merging instance 'tcp_server_inst/Inst_PACKET_PARSING/RX_DEST_IP_ADDR_local_reg[84]' (FDCE) to 'tcp_server_inst/Inst_PACKET_PARSING/RX_SOURCE_IP_ADDR_local_reg[127]'
-INFO: [Synth 8-3886] merging instance 'tcp_server_inst/Inst_PACKET_PARSING/RX_DEST_IP_ADDR_local_reg[85]' (FDCE) to 'tcp_server_inst/Inst_PACKET_PARSING/RX_SOURCE_IP_ADDR_local_reg[127]'
-INFO: [Synth 8-3886] merging instance 'tcp_server_inst/Inst_PACKET_PARSING/RX_DEST_IP_ADDR_local_reg[86]' (FDCE) to 'tcp_server_inst/Inst_PACKET_PARSING/RX_SOURCE_IP_ADDR_local_reg[127]'
-INFO: [Synth 8-3886] merging instance 'tcp_server_inst/Inst_PACKET_PARSING/RX_DEST_IP_ADDR_local_reg[87]' (FDCE) to 'tcp_server_inst/Inst_PACKET_PARSING/RX_SOURCE_IP_ADDR_local_reg[127]'
-INFO: [Synth 8-3886] merging instance 'tcp_server_inst/Inst_PACKET_PARSING/RX_DEST_IP_ADDR_local_reg[88]' (FDCE) to 'tcp_server_inst/Inst_PACKET_PARSING/RX_SOURCE_IP_ADDR_local_reg[127]'
-INFO: [Synth 8-3886] merging instance 'tcp_server_inst/Inst_PACKET_PARSING/RX_DEST_IP_ADDR_local_reg[89]' (FDCE) to 'tcp_server_inst/Inst_PACKET_PARSING/RX_SOURCE_IP_ADDR_local_reg[127]'
-INFO: [Synth 8-3886] merging instance 'tcp_server_inst/Inst_PACKET_PARSING/RX_DEST_IP_ADDR_local_reg[90]' (FDCE) to 'tcp_server_inst/Inst_PACKET_PARSING/RX_SOURCE_IP_ADDR_local_reg[127]'
-INFO: [Synth 8-3886] merging instance 'tcp_server_inst/Inst_PACKET_PARSING/RX_DEST_IP_ADDR_local_reg[91]' (FDCE) to 'tcp_server_inst/Inst_PACKET_PARSING/RX_SOURCE_IP_ADDR_local_reg[127]'
-INFO: [Synth 8-3886] merging instance 'tcp_server_inst/Inst_PACKET_PARSING/RX_DEST_IP_ADDR_local_reg[92]' (FDCE) to 'tcp_server_inst/Inst_PACKET_PARSING/RX_SOURCE_IP_ADDR_local_reg[127]'
-INFO: [Synth 8-3886] merging instance 'tcp_server_inst/Inst_PACKET_PARSING/RX_DEST_IP_ADDR_local_reg[93]' (FDCE) to 'tcp_server_inst/Inst_PACKET_PARSING/RX_SOURCE_IP_ADDR_local_reg[127]'
-INFO: [Synth 8-3886] merging instance 'tcp_server_inst/Inst_PACKET_PARSING/RX_DEST_IP_ADDR_local_reg[94]' (FDCE) to 'tcp_server_inst/Inst_PACKET_PARSING/RX_SOURCE_IP_ADDR_local_reg[127]'
-INFO: [Synth 8-3886] merging instance 'tcp_server_inst/Inst_PACKET_PARSING/RX_DEST_IP_ADDR_local_reg[95]' (FDCE) to 'tcp_server_inst/Inst_PACKET_PARSING/RX_SOURCE_IP_ADDR_local_reg[127]'
-INFO: [Synth 8-3886] merging instance 'tcp_server_inst/Inst_PACKET_PARSING/RX_DEST_IP_ADDR_local_reg[96]' (FDCE) to 'tcp_server_inst/Inst_PACKET_PARSING/RX_SOURCE_IP_ADDR_local_reg[127]'
-INFO: [Synth 8-3886] merging instance 'tcp_server_inst/Inst_PACKET_PARSING/RX_DEST_IP_ADDR_local_reg[97]' (FDCE) to 'tcp_server_inst/Inst_PACKET_PARSING/RX_SOURCE_IP_ADDR_local_reg[127]'
-INFO: [Synth 8-3886] merging instance 'tcp_server_inst/Inst_PACKET_PARSING/RX_DEST_IP_ADDR_local_reg[98]' (FDCE) to 'tcp_server_inst/Inst_PACKET_PARSING/RX_SOURCE_IP_ADDR_local_reg[127]'
-INFO: [Synth 8-3886] merging instance 'tcp_server_inst/Inst_PACKET_PARSING/RX_DEST_IP_ADDR_local_reg[99]' (FDCE) to 'tcp_server_inst/Inst_PACKET_PARSING/RX_SOURCE_IP_ADDR_local_reg[127]'
-INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (tcp_server_inst/Inst_PACKET_PARSING/\RX_SOURCE_IP_ADDR_local_reg[127] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_lite_controller/serial_command_shift_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (tcp_server_inst/Inst_PACKET_PARSING/\RX_TYPE_local_reg[2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (tcp_server_inst/\TCP_SERVER_X.TCP_SERVER_001 /\TX_ACK_WINDOW_LENGTH_reg[15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (tcp_server_inst/\TCP_SERVER_X.TCP_SERVER_001 /\TX_FLAGS_GENx[0].TX_FLAGS_reg[0][7] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\axi_lite_controller/speed_reg[1] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (tcp_server_inst/\TCP_SERVER_X.Inst_TCP_TX /\TX_SOURCE_PORT_NO_reg[10] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (tcp_server_inst/\TCP_SERVER_X.Inst_TCP_TX /\TX_TCP_HEADER_LENGTH_reg[2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (tcp_server_inst/\TCP_SERVER_X.Inst_TCP_TX /\TX_TCP_HEADER_LENGTH_reg[3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (tcp_server_inst/\TCP_SERVER_X.Inst_TCP_TX /\TX_SOURCE_PORT_NO_reg[15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (tcp_server_inst/\TX_MUX_STATE_reg[3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (tcp_server_inst/\TCP_SERVER_X.TCP_SERVER_001 /\INFO_X[0].TX_DEST_IP_ADDR_reg[0][127] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_lite_controller/serial_command_shift_reg[1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_lite_controller/load_data_reg )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_lite_controller/capture_data_reg )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_lite_controller/write_access_reg )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_lite_controller/read_access_reg )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (tcp_server_inst/\TCP_SERVER_X.Inst_TCP_TX /\TX_FLAGS_reg[7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_lite_controller/serial_command_shift_reg[2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_lite_controller/serial_command_shift_reg[2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_lite_controller/addr_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_lite_controller/serial_command_shift_reg[2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_lite_controller/addr_reg[1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_lite_controller/s_axi_awaddr_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_lite_controller/serial_command_shift_reg[2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_lite_controller/s_axi_araddr_reg[1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_lite_controller/s_axi_awaddr_reg[1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_lite_controller/serial_command_shift_reg[2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_lite_controller/serial_command_shift_reg[2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_lite_controller/serial_command_shift_reg[2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_lite_controller/addr_reg[5] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_lite_controller/serial_command_shift_reg[2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_lite_controller/addr_reg[6] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_lite_controller/s_axi_awaddr_reg[5] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_lite_controller/serial_command_shift_reg[2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_lite_controller/addr_reg[7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_lite_controller/s_axi_awaddr_reg[6] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_lite_controller/serial_command_shift_reg[2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_lite_controller/s_axi_araddr_reg[7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_lite_controller/s_axi_awaddr_reg[7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_lite_controller/serial_command_shift_reg[2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_lite_controller/serial_command_shift_reg[2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_lite_controller/serial_command_shift_reg[14] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_lite_controller/addr_reg[11] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_lite_controller/serial_command_shift_reg[14] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_lite_controller/s_axi_araddr_reg[11] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_lite_controller/s_axi_awaddr_reg[11] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_lite_controller/serial_command_shift_reg[14] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_lite_controller/serial_command_shift_reg[14] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_lite_controller/serial_command_shift_reg[14] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_lite_controller/serial_command_shift_reg[14] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_lite_controller/serial_command_shift_reg[14] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_lite_controller/serial_command_shift_reg[14] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_lite_controller/axi_wr_data_reg[18] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_lite_controller/serial_command_shift_reg[14] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_lite_controller/axi_wr_data_reg[19] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_lite_controller/serial_command_shift_reg[14] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_lite_controller/axi_wr_data_reg[20] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_lite_controller/serial_command_shift_reg[14] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_lite_controller/axi_wr_data_reg[21] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_lite_controller/serial_command_shift_reg[14] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_lite_controller/mdio_wr_data_reg[21] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_lite_controller/axi_wr_data_reg[22] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_lite_controller/serial_command_shift_reg[14] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_lite_controller/mdio_wr_data_reg[22] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_lite_controller/axi_wr_data_reg[23] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_lite_controller/s_axi_wdata_reg[21] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_lite_controller/serial_command_shift_reg[14] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_lite_controller/mdio_wr_data_reg[23] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_lite_controller/axi_wr_data_reg[24] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_lite_controller/s_axi_wdata_reg[22] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_lite_controller/serial_command_shift_reg[14] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_lite_controller/axi_wr_data_reg[25] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_lite_controller/s_axi_wdata_reg[23] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_lite_controller/serial_command_shift_reg[14] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_lite_controller/serial_command_shift_reg[14] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_lite_controller/axi_wr_data_reg[27] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_lite_controller/serial_command_shift_reg[14] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_lite_controller/mdio_wr_data_reg[27] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_lite_controller/serial_command_shift_reg[14] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_lite_controller/axi_wr_data_reg[29] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_lite_controller/s_axi_wdata_reg[27] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_lite_controller/serial_command_shift_reg[14] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_lite_controller/mdio_wr_data_reg[29] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_lite_controller/s_axi_wdata_reg[29] )
-WARNING: [Synth 8-7129] Port CMD_FIFO_Q[35] in module control_interface is either unconnected or has no load
-WARNING: [Synth 8-7129] Port CMD_FIFO_Q[34] in module control_interface is either unconnected or has no load
-WARNING: [Synth 8-7129] Port CMD_FIFO_Q[33] in module control_interface is either unconnected or has no load
-WARNING: [Synth 8-7129] Port CMD_FIFO_Q[32] in module control_interface is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gt0_rxuserrdy_in in module gtwizard_0_init is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gt0_gtrxreset_in in module gtwizard_0_init is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gt0_gttxreset_in in module gtwizard_0_init is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gt0_txuserrdy_in in module gtwizard_0_init is either unconnected or has no load
-WARNING: [Synth 8-7129] Port TRACK_DATA_OUT in module gtwizard_0_exdes is either unconnected or has no load
-INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (gtwizard_0_exdes_i/\gtwizard_0_support_i/gtwizard_0_init_i /inst/\gt0_rxresetfsm_i/recclk_mon_restart_count_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (gtwizard_0_exdes_i/\gtwizard_0_support_i/gtwizard_0_init_i /inst/\gt0_rxresetfsm_i/recclk_mon_restart_count_reg[1] )
-INFO: [Synth 8-3886] merging instance 'control_interface_inst/bMemNotReg_reg[30]' (FDCE) to 'control_interface_inst/bMemNotReg_reg[31]'
-INFO: [Synth 8-3886] merging instance 'control_interface_inst/bMemNotReg_reg[31]' (FDCE) to 'control_interface_inst/bMemNotReg_reg[29]'
-INFO: [Synth 8-3886] merging instance 'control_interface_inst/bMemNotReg_reg[29]' (FDCE) to 'control_interface_inst/bMemNotReg_reg[28]'
-INFO: [Synth 8-3886] merging instance 'control_interface_inst/bMemNotReg_reg[28]' (FDCE) to 'control_interface_inst/bMemNotReg_reg[27]'
-INFO: [Synth 8-3886] merging instance 'control_interface_inst/bMemNotReg_reg[27]' (FDCE) to 'control_interface_inst/bMemNotReg_reg[26]'
-INFO: [Synth 8-3886] merging instance 'control_interface_inst/bMemNotReg_reg[26]' (FDCE) to 'control_interface_inst/bMemNotReg_reg[25]'
-INFO: [Synth 8-3886] merging instance 'control_interface_inst/bMemNotReg_reg[25]' (FDCE) to 'control_interface_inst/bMemNotReg_reg[24]'
-INFO: [Synth 8-3886] merging instance 'control_interface_inst/bMemNotReg_reg[24]' (FDCE) to 'control_interface_inst/bMemNotReg_reg[23]'
-INFO: [Synth 8-3886] merging instance 'control_interface_inst/bMemNotReg_reg[23]' (FDCE) to 'control_interface_inst/bMemNotReg_reg[22]'
-INFO: [Synth 8-3886] merging instance 'control_interface_inst/bMemNotReg_reg[22]' (FDCE) to 'control_interface_inst/bMemNotReg_reg[21]'
-INFO: [Synth 8-3886] merging instance 'control_interface_inst/bMemNotReg_reg[21]' (FDCE) to 'control_interface_inst/bMemNotReg_reg[20]'
-INFO: [Synth 8-3886] merging instance 'control_interface_inst/bMemNotReg_reg[20]' (FDCE) to 'control_interface_inst/bMemNotReg_reg[19]'
-INFO: [Synth 8-3886] merging instance 'control_interface_inst/bMemNotReg_reg[19]' (FDCE) to 'control_interface_inst/bMemNotReg_reg[18]'
-INFO: [Synth 8-3886] merging instance 'control_interface_inst/bMemNotReg_reg[18]' (FDCE) to 'control_interface_inst/bMemNotReg_reg[17]'
-INFO: [Synth 8-3886] merging instance 'control_interface_inst/bMemNotReg_reg[17]' (FDCE) to 'control_interface_inst/bMemNotReg_reg[16]'
-INFO: [Synth 8-3886] merging instance 'control_interface_inst/bMemNotReg_reg[16]' (FDCE) to 'control_interface_inst/bMemNotReg_reg[15]'
-INFO: [Synth 8-3886] merging instance 'control_interface_inst/bMemNotReg_reg[15]' (FDCE) to 'control_interface_inst/bMemNotReg_reg[14]'
-INFO: [Synth 8-3886] merging instance 'control_interface_inst/bMemNotReg_reg[14]' (FDCE) to 'control_interface_inst/bMemNotReg_reg[13]'
-INFO: [Synth 8-3886] merging instance 'control_interface_inst/bMemNotReg_reg[13]' (FDCE) to 'control_interface_inst/bMemNotReg_reg[12]'
-INFO: [Synth 8-3886] merging instance 'control_interface_inst/bMemNotReg_reg[12]' (FDCE) to 'control_interface_inst/bMemNotReg_reg[11]'
-INFO: [Synth 8-3886] merging instance 'control_interface_inst/bMemNotReg_reg[11]' (FDCE) to 'control_interface_inst/bMemNotReg_reg[10]'
-INFO: [Synth 8-3886] merging instance 'control_interface_inst/bMemNotReg_reg[10]' (FDCE) to 'control_interface_inst/bMemNotReg_reg[9]'
-INFO: [Synth 8-3886] merging instance 'control_interface_inst/bMemNotReg_reg[9]' (FDCE) to 'control_interface_inst/bMemNotReg_reg[8]'
-INFO: [Synth 8-3886] merging instance 'control_interface_inst/bMemNotReg_reg[8]' (FDCE) to 'control_interface_inst/bMemNotReg_reg[7]'
-INFO: [Synth 8-3886] merging instance 'control_interface_inst/bMemNotReg_reg[7]' (FDCE) to 'control_interface_inst/bMemNotReg_reg[6]'
-INFO: [Synth 8-3886] merging instance 'control_interface_inst/bMemNotReg_reg[6]' (FDCE) to 'control_interface_inst/bMemNotReg_reg[5]'
-INFO: [Synth 8-3886] merging instance 'control_interface_inst/bMemNotReg_reg[5]' (FDCE) to 'control_interface_inst/bMemNotReg_reg[4]'
-INFO: [Synth 8-3886] merging instance 'control_interface_inst/bMemNotReg_reg[4]' (FDCE) to 'control_interface_inst/bMemNotReg_reg[3]'
-INFO: [Synth 8-3886] merging instance 'control_interface_inst/bMemNotReg_reg[3]' (FDCE) to 'control_interface_inst/bMemNotReg_reg[2]'
-INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (control_interface_inst/\bMemNotReg_reg[2] )
-INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Synth 8-3332] Sequential element (gt0_txresetfsm_i/sync_cplllock/data_sync_reg1) is unused and will be removed from module gtwizard_0_init.
-INFO: [Synth 8-3332] Sequential element (gt0_txresetfsm_i/sync_cplllock/data_sync_reg2) is unused and will be removed from module gtwizard_0_init.
-INFO: [Synth 8-3332] Sequential element (gt0_txresetfsm_i/sync_cplllock/data_sync_reg3) is unused and will be removed from module gtwizard_0_init.
-INFO: [Synth 8-3332] Sequential element (gt0_txresetfsm_i/sync_cplllock/data_sync_reg4) is unused and will be removed from module gtwizard_0_init.
-INFO: [Synth 8-3332] Sequential element (gt0_txresetfsm_i/sync_cplllock/data_sync_reg5) is unused and will be removed from module gtwizard_0_init.
-INFO: [Synth 8-3332] Sequential element (gt0_txresetfsm_i/sync_cplllock/data_sync_reg6) is unused and will be removed from module gtwizard_0_init.
-INFO: [Synth 8-3332] Sequential element (gt0_rxresetfsm_i/sync_cplllock/data_sync_reg1) is unused and will be removed from module gtwizard_0_init.
-INFO: [Synth 8-3332] Sequential element (gt0_rxresetfsm_i/sync_cplllock/data_sync_reg2) is unused and will be removed from module gtwizard_0_init.
-INFO: [Synth 8-3332] Sequential element (gt0_rxresetfsm_i/sync_cplllock/data_sync_reg3) is unused and will be removed from module gtwizard_0_init.
-INFO: [Synth 8-3332] Sequential element (gt0_rxresetfsm_i/sync_cplllock/data_sync_reg4) is unused and will be removed from module gtwizard_0_init.
-INFO: [Synth 8-3332] Sequential element (gt0_rxresetfsm_i/sync_cplllock/data_sync_reg5) is unused and will be removed from module gtwizard_0_init.
-INFO: [Synth 8-3332] Sequential element (gt0_rxresetfsm_i/sync_cplllock/data_sync_reg6) is unused and will be removed from module gtwizard_0_init.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:36 ; elapsed = 00:01:54 . Memory (MB): peak = 1305.078 ; gain = 294.320
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:07 ; elapsed = 00:01:10 . Memory (MB): peak = 1291.453 ; gain = 281.277
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-3321] set_false_path : Empty to list for constraint at line 71 of c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0.xdc. [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0.xdc:71]
-INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/inst/s_axi_aclk' to 'gig_eth_insti_4/gtx_clk'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/inst/s_axi_aclk' to 'gig_eth_insti_5/gtx_clk'
 INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:43 ; elapsed = 00:02:02 . Memory (MB): peak = 1310.402 ; gain = 299.645
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:13 ; elapsed = 00:01:16 . Memory (MB): peak = 1291.453 ; gain = 281.277
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:48 ; elapsed = 00:02:07 . Memory (MB): peak = 1330.098 ; gain = 319.340
+Finished Timing Optimization : Time (s): cpu = 00:01:14 ; elapsed = 00:01:17 . Memory (MB): peak = 1291.453 ; gain = 281.277
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:57 ; elapsed = 00:02:16 . Memory (MB): peak = 1359.926 ; gain = 349.168
+Finished Technology Mapping : Time (s): cpu = 00:01:20 ; elapsed = 00:01:23 . Memory (MB): peak = 1291.453 ; gain = 281.277
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -1926,31 +1636,70 @@ Start Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-3295] tying undriven pin prbs_source_check_inst_0:mask[15] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin prbs_source_check_inst_0:mask[14] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin prbs_source_check_inst_0:mask[13] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin prbs_source_check_inst_0:mask[12] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin prbs_source_check_inst_0:mask[11] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin prbs_source_check_inst_0:mask[10] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin prbs_source_check_inst_0:mask[9] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin prbs_source_check_inst_0:mask[8] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin prbs_source_check_inst_0:mask[7] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin prbs_source_check_inst_0:mask[6] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin prbs_source_check_inst_0:mask[5] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin prbs_source_check_inst_0:mask[4] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin prbs_source_check_inst_0:mask[3] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin prbs_source_check_inst_0:mask[2] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin prbs_source_check_inst_0:mask[1] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin prbs_source_check_inst_0:mask[0] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin soft_reset_vio_i_inferred:in0 to constant 0
-WARNING: [Synth 8-3295] tying undriven pin gt_txfsmresetdone_r_inferred:in0 to constant 0
-WARNING: [Synth 8-3295] tying undriven pin gt_txfsmresetdone_r2_inferred:in0 to constant 0
-WARNING: [Synth 8-3295] tying undriven pin gt0_rxfsmresetdone_r_inferred:in0 to constant 0
-WARNING: [Synth 8-3295] tying undriven pin gt0_rxfsmresetdone_r2_inferred:in0 to constant 0
-WARNING: [Synth 8-3295] tying undriven pin gt0_rxresetdone_vio_r_inferred:in0 to constant 0
-WARNING: [Synth 8-3295] tying undriven pin gt0_rxresetdone_vio_r2_inferred:in0 to constant 0
-WARNING: [Synth 8-3295] tying undriven pin gt0_rxresetdone_vio_r3_inferred:in0 to constant 0
-WARNING: [Synth 8-3295] tying undriven pin rxresetdone_vio_i_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin shifter_dout_inferred:in0[63] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin shifter_dout_inferred:in0[62] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin shifter_dout_inferred:in0[61] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin shifter_dout_inferred:in0[60] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin shifter_dout_inferred:in0[59] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin shifter_dout_inferred:in0[58] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin shifter_dout_inferred:in0[57] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin shifter_dout_inferred:in0[56] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin shifter_dout_inferred:in0[55] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin shifter_dout_inferred:in0[54] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin shifter_dout_inferred:in0[53] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin shifter_dout_inferred:in0[52] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin shifter_dout_inferred:in0[51] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin shifter_dout_inferred:in0[50] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin shifter_dout_inferred:in0[49] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin shifter_dout_inferred:in0[48] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin shifter_dout_inferred:in0[47] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin shifter_dout_inferred:in0[46] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin shifter_dout_inferred:in0[45] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin shifter_dout_inferred:in0[44] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin shifter_dout_inferred:in0[43] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin shifter_dout_inferred:in0[42] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin shifter_dout_inferred:in0[41] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin shifter_dout_inferred:in0[40] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin shifter_dout_inferred:in0[39] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin shifter_dout_inferred:in0[38] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin shifter_dout_inferred:in0[37] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin shifter_dout_inferred:in0[36] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin shifter_dout_inferred:in0[35] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin shifter_dout_inferred:in0[34] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin shifter_dout_inferred:in0[33] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin shifter_dout_inferred:in0[32] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin shifter_dout_inferred:in0[31] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin shifter_dout_inferred:in0[30] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin shifter_dout_inferred:in0[29] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin shifter_dout_inferred:in0[28] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin shifter_dout_inferred:in0[27] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin shifter_dout_inferred:in0[26] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin shifter_dout_inferred:in0[25] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin shifter_dout_inferred:in0[24] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin shifter_dout_inferred:in0[23] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin shifter_dout_inferred:in0[22] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin shifter_dout_inferred:in0[21] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin shifter_dout_inferred:in0[20] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin shifter_dout_inferred:in0[19] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin shifter_dout_inferred:in0[18] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin shifter_dout_inferred:in0[17] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin shifter_dout_inferred:in0[16] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin shifter_dout_inferred:in0[15] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin shifter_dout_inferred:in0[14] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin shifter_dout_inferred:in0[13] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin shifter_dout_inferred:in0[12] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin shifter_dout_inferred:in0[11] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin shifter_dout_inferred:in0[10] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin shifter_dout_inferred:in0[9] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin shifter_dout_inferred:in0[8] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin shifter_dout_inferred:in0[7] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin shifter_dout_inferred:in0[6] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin shifter_dout_inferred:in0[5] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin shifter_dout_inferred:in0[4] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin shifter_dout_inferred:in0[3] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin shifter_dout_inferred:in0[2] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin shifter_dout_inferred:in0[1] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin shifter_dout_inferred:in0[0] to constant 0
 WARNING: [Synth 8-3295] tying undriven pin status_reg_inferred:in0[175] to constant 0
 WARNING: [Synth 8-3295] tying undriven pin status_reg_inferred:in0[174] to constant 0
 WARNING: [Synth 8-3295] tying undriven pin status_reg_inferred:in0[173] to constant 0
@@ -1987,180 +1736,141 @@ WARNING: [Synth 8-3295] tying undriven pin status_reg_inferred:in0[143] to const
 WARNING: [Synth 8-3295] tying undriven pin status_reg_inferred:in0[142] to constant 0
 WARNING: [Synth 8-3295] tying undriven pin status_reg_inferred:in0[141] to constant 0
 WARNING: [Synth 8-3295] tying undriven pin status_reg_inferred:in0[140] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin status_reg_inferred:in0[139] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin status_reg_inferred:in0[138] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin status_reg_inferred:in0[137] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin status_reg_inferred:in0[136] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin status_reg_inferred:in0[135] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin status_reg_inferred:in0[134] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin status_reg_inferred:in0[133] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin status_reg_inferred:in0[132] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin status_reg_inferred:in0[131] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin status_reg_inferred:in0[130] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin status_reg_inferred:in0[129] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin status_reg_inferred:in0[128] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin status_reg_inferred:in0[127] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin status_reg_inferred:in0[126] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin status_reg_inferred:in0[125] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin status_reg_inferred:in0[124] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin status_reg_inferred:in0[123] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin status_reg_inferred:in0[122] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin status_reg_inferred:in0[121] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin status_reg_inferred:in0[120] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin status_reg_inferred:in0[119] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin status_reg_inferred:in0[118] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin status_reg_inferred:in0[117] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin status_reg_inferred:in0[116] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin status_reg_inferred:in0[115] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin status_reg_inferred:in0[114] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin status_reg_inferred:in0[113] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin status_reg_inferred:in0[112] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin status_reg_inferred:in0[111] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin status_reg_inferred:in0[110] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin status_reg_inferred:in0[109] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin status_reg_inferred:in0[108] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin status_reg_inferred:in0[107] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin status_reg_inferred:in0[106] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin status_reg_inferred:in0[105] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin status_reg_inferred:in0[104] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin status_reg_inferred:in0[103] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin status_reg_inferred:in0[102] to constant 0
-WARNING: [Synth 8-3295] tying undriven pin status_reg_inferred:in0[101] to constant 0
 INFO: [Common 17-14] Message 'Synth 8-3295' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:77]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:191]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:191]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:191]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:191]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:109]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:109]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:109]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:109]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:109]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:109]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:109]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:109]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:109]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:109]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:109]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:109]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:109]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:109]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:109]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:109]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:109]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:109]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:109]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:109]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:109]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:109]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:109]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:109]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:109]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:109]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:109]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:109]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:109]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:109]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:109]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:109]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:109]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:109]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:109]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:109]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:109]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:109]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:109]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:109]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:109]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:109]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:109]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:109]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:109]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:109]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:109]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:109]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:109]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:109]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:109]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:109]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:109]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:109]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:109]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:109]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:109]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:109]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:109]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:109]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:109]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:109]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:109]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:109]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:107]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:107]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:107]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:107]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:107]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:107]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:107]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:107]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:107]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:107]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:107]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:107]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:107]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:107]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:107]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:107]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:107]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:107]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:107]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:107]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:107]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:107]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:107]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:107]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:107]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:107]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:107]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:107]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:107]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:107]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:107]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:107]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:107]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:107]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:107]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:107]
 INFO: [Common 17-14] Message 'Synth 8-5396' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 WARNING: [Synth 8-5410] Found another clock driver \global_clock_reset_inst/BUFG_inst :O [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/global_clock_reset.vhd:99]
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:02:01 ; elapsed = 00:02:20 . Memory (MB): peak = 1359.926 ; gain = 349.168
+Finished IO Insertion : Time (s): cpu = 00:01:23 ; elapsed = 00:01:26 . Memory (MB): peak = 1291.453 ; gain = 281.277
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:02:01 ; elapsed = 00:02:20 . Memory (MB): peak = 1359.926 ; gain = 349.168
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:23 ; elapsed = 00:01:26 . Memory (MB): peak = 1291.453 ; gain = 281.277
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:03 ; elapsed = 00:02:22 . Memory (MB): peak = 1359.926 ; gain = 349.168
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:24 ; elapsed = 00:01:27 . Memory (MB): peak = 1291.453 ; gain = 281.277
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:02:03 ; elapsed = 00:02:22 . Memory (MB): peak = 1359.926 ; gain = 349.168
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:24 ; elapsed = 00:01:27 . Memory (MB): peak = 1291.453 ; gain = 281.277
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:02:04 ; elapsed = 00:02:23 . Memory (MB): peak = 1359.926 ; gain = 349.168
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:25 ; elapsed = 00:01:28 . Memory (MB): peak = 1291.453 ; gain = 281.277
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:02:04 ; elapsed = 00:02:23 . Memory (MB): peak = 1359.926 ; gain = 349.168
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:25 ; elapsed = 00:01:28 . Memory (MB): peak = 1291.453 ; gain = 281.277
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -2190,53 +1900,52 @@ Report Cell Usage:
 |7     |BUFGCE        |     2|
 |8     |BUFIO         |     1|
 |9     |BUFR          |     1|
-|10    |CARRY4        |   381|
+|10    |CARRY4        |   383|
 |11    |GTXE2_CHANNEL |     1|
 |12    |GTXE2_COMMON  |     1|
 |13    |IBUFDS_GTE2   |     2|
 |14    |IDDR          |     5|
 |15    |IDELAYCTRL    |     1|
 |16    |IDELAYE2      |     5|
-|17    |LUT1          |  1076|
-|18    |LUT2          |  1040|
-|19    |LUT3          |  1395|
-|20    |LUT4          |   759|
-|21    |LUT5          |   911|
-|22    |LUT6          |  6786|
+|17    |LUT1          |  1077|
+|18    |LUT2          |  1192|
+|19    |LUT3          |   891|
+|20    |LUT4          |   855|
+|21    |LUT5          |   765|
+|22    |LUT6          |  2395|
 |23    |MMCME2_ADV    |     3|
 |24    |MUXCY         |    70|
-|25    |MUXF7         |  1906|
-|26    |MUXF8         |   922|
-|27    |ODDR          |     6|
-|28    |RAM64X1D      |     8|
-|29    |RAMB16_S9_S9  |    17|
-|30    |RAMB36E1      |     2|
-|31    |SRL16E        |    20|
-|32    |SRLC32E       |     1|
-|33    |XORCY         |    70|
-|34    |FD            |    78|
-|35    |FDCE          |  1418|
-|36    |FDPE          |    85|
-|37    |FDRE          |  5779|
-|38    |FDSE          |   169|
-|39    |IBUF          |    15|
-|40    |IBUFDS        |     1|
-|41    |IOBUF         |     2|
-|42    |OBUF          |     9|
+|25    |MUXF7         |    23|
+|26    |ODDR          |     6|
+|27    |RAM64X1D      |     8|
+|28    |RAMB16_S9_S9  |    17|
+|29    |RAMB36E1      |     2|
+|30    |SRL16E        |    20|
+|31    |SRLC32E       |     1|
+|32    |XORCY         |    70|
+|33    |FD            |    78|
+|34    |FDCE          |  1418|
+|35    |FDPE          |    85|
+|36    |FDRE          |  4747|
+|37    |FDSE          |   173|
+|38    |IBUF          |    15|
+|39    |IBUFDS        |     1|
+|40    |IOBUF         |     2|
+|41    |OBUF          |     9|
 +------+--------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:02:04 ; elapsed = 00:02:23 . Memory (MB): peak = 1359.926 ; gain = 349.168
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:26 ; elapsed = 00:01:29 . Memory (MB): peak = 1291.453 ; gain = 281.277
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 2136 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:43 ; elapsed = 00:02:16 . Memory (MB): peak = 1359.926 ; gain = 216.273
-Synthesis Optimization Complete : Time (s): cpu = 00:02:04 ; elapsed = 00:02:24 . Memory (MB): peak = 1359.926 ; gain = 349.168
+Synthesis finished with 0 errors, 0 critical warnings and 1105 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:08 ; elapsed = 00:01:22 . Memory (MB): peak = 1291.453 ; gain = 137.762
+Synthesis Optimization Complete : Time (s): cpu = 00:01:26 ; elapsed = 00:01:29 . Memory (MB): peak = 1291.453 ; gain = 281.277
 INFO: [Project 1-571] Translating synthesized netlist
 WARNING: [Synth 37-28] Duplicate attribute 'INIT' found for instance 'update_pause_ad_int_reg' of module 'FDRE'.
 Resolution: Check your design sources near the definition of the module or any related 'include files, looking for duplicate definitions with different values.
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.303 . Memory (MB): peak = 1359.926 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.218 . Memory (MB): peak = 1291.453 ; gain = 0.000
 WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_support_clocking_i/clkout1_buf' of type 'BUFGCE' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
 WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_support_clocking_i/clkout2_buf' of type 'BUFGCE' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
-INFO: [Netlist 29-17] Analyzing 3479 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 676 Unisim elements for replacement
 WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_support_clocking_i/clkout1_buf' of type 'BUFGCTRL' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
 WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_support_clocking_i/clkout2_buf' of type 'BUFGCTRL' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -2244,7 +1953,7 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-140] Inserted 2 IBUFs to IO ports without IO buffers.
 INFO: [Opt 31-141] Inserted 2 OBUFs to IO ports without IO buffers.
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1381.363 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1291.453 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 127 instances were transformed.
   (MUXCY,XORCY) => CARRY4: 20 instances
@@ -2255,12 +1964,12 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAMB16_S9_S9 => RAMB18E1: 17 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-561 Infos, 374 Warnings, 4 Critical Warnings and 0 Errors encountered.
+346 Infos, 293 Warnings, 10 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:02:13 ; elapsed = 00:02:34 . Memory (MB): peak = 1381.363 ; gain = 370.605
+synth_design: Time (s): cpu = 00:01:33 ; elapsed = 00:01:37 . Memory (MB): peak = 1291.453 ; gain = 281.277
 INFO: [Common 17-600] The following parameters have non-default value.
 tcl.collectionResultDisplayLimit
 INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
 INFO: [Common 17-1381] The checkpoint 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/PRBS7_top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file PRBS7_top_utilization_synth.rpt -pb PRBS7_top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Aug 17 16:45:20 2021...
+INFO: [Common 17-206] Exiting Vivado at Fri Sep  3 16:51:40 2021...

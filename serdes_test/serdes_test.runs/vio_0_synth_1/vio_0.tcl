@@ -92,7 +92,7 @@ set_property ip_output_repo c:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_ip -quiet c:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/sources_1/ip/vio_0/vio_0.xci
+read_ip -quiet C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/sources_1/ip/vio_0/vio_0.xci
 set_property used_in_implementation false [get_files -all c:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/sources_1/ip/vio_0/vio_0.xdc]
 set_property used_in_implementation false [get_files -all c:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/sources_1/ip/vio_0/vio_0_ooc.xdc]
 
@@ -192,15 +192,15 @@ if { [catch {
 
 }; # end if cached_ip 
 
-add_files C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/vio_0_synth_1/vio_0_stub.v -of_objects [get_files c:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/sources_1/ip/vio_0/vio_0.xci]
+add_files C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/vio_0_synth_1/vio_0_stub.v -of_objects [get_files C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/sources_1/ip/vio_0/vio_0.xci]
 
-add_files C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/vio_0_synth_1/vio_0_stub.vhdl -of_objects [get_files c:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/sources_1/ip/vio_0/vio_0.xci]
+add_files C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/vio_0_synth_1/vio_0_stub.vhdl -of_objects [get_files C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/sources_1/ip/vio_0/vio_0.xci]
 
-add_files C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/vio_0_synth_1/vio_0_sim_netlist.v -of_objects [get_files c:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/sources_1/ip/vio_0/vio_0.xci]
+add_files C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/vio_0_synth_1/vio_0_sim_netlist.v -of_objects [get_files C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/sources_1/ip/vio_0/vio_0.xci]
 
-add_files C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/vio_0_synth_1/vio_0_sim_netlist.vhdl -of_objects [get_files c:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/sources_1/ip/vio_0/vio_0.xci]
+add_files C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/vio_0_synth_1/vio_0_sim_netlist.vhdl -of_objects [get_files C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/sources_1/ip/vio_0/vio_0.xci]
 
-add_files C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/vio_0_synth_1/vio_0.dcp -of_objects [get_files c:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/sources_1/ip/vio_0/vio_0.xci]
+add_files C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/vio_0_synth_1/vio_0.dcp -of_objects [get_files C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/sources_1/ip/vio_0/vio_0.xci]
 
 if {[file isdir C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.ip_user_files/ip/vio_0]} {
   catch { 
