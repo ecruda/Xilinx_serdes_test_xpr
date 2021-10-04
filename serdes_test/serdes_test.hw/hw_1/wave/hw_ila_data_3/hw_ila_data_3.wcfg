@@ -10,28 +10,14 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="43fs"></ZoomEndTime>
+      <ZoomEndTime time="1654fs"></ZoomEndTime>
       <Cursor1Time time="0fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="296"></NameColumnWidth>
-      <ValueColumnWidth column_width="124"></ValueColumnWidth>
+      <ValueColumnWidth column_width="114"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="2" />
-   <wvobject fp_name="config_reg" type="array">
-      <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">config_reg[511:0]</obj_property>
-      <obj_property name="ObjectShortName">config_reg[511:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
-      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-   </wvobject>
-   <wvobject fp_name="status_reg" type="array">
-      <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">status_reg[175:0]</obj_property>
-      <obj_property name="ObjectShortName">status_reg[175:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
-      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-   </wvobject>
+   <WVObjectSize size="0" />
+   <wave_markers>
+   </wave_markers>
 </wave_config>

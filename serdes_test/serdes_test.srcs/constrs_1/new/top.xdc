@@ -136,9 +136,9 @@ set_property PACKAGE_PIN G7 [get_ports SGMIICLK_Q0_N]
 
 #-------------------------------------------------------------< System reset Interface
 # Bank: 33 - GPIO_SW_7 (CPU_RESET)
-set_property VCCAUX_IO DONTCARE [get_ports SYS_RST]
-set_property IOSTANDARD LVCMOS15 [get_ports SYS_RST]
-set_property PACKAGE_PIN AB7 [get_ports SYS_RST]
+#set_property VCCAUX_IO DONTCARE [get_ports SYS_RST]
+#set_property IOSTANDARD LVCMOS15 [get_ports SYS_RST]
+#set_property PACKAGE_PIN AB7 [get_ports SYS_RST]
 #-------------------------------------------------------------> System reset Interface
 
 #-------------------------------------------------------------< DIPSw4Bit

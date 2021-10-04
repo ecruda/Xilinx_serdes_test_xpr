@@ -1,0 +1,27 @@
+$date
+        2021-Sep-28 15:19:16
+$end
+$version
+        Vivado v2020.2 (64-bit)
+$end
+$timescale
+        1ps
+$end
+$scope module dut $end
+$var reg 512 " config_reg [511:0] $end
+$var reg 176 L& status_reg [175:0] $end
+$var reg 1 @( _TRIGGER $end
+$var reg 1 A( _WINDOW $end
+$var reg 1 B( _GAP $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 "
+b101110000010010000111110000000000000000 L&
+0@(
+1A(
+0B(
+$end
+#512
+1@(

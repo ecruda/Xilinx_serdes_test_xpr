@@ -18,25 +18,25 @@ INFO: [Common 17-1540] The version limit for your license is '2021.03' and has e
 INFO: [Device 21-403] Loading part xc7k325tffg900-2
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 7236
+INFO: [Synth 8-7075] Helper process launched with PID 7228
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1009.793 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1005.941 ; gain = 0.000
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'vio_0' [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/sources_1/ip/vio_0/synth/vio_0.v:59]
-INFO: [Synth 8-6155] done synthesizing module 'vio_0' (6#1) [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/sources_1/ip/vio_0/synth/vio_0.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'vio_0' (7#1) [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/sources_1/ip/vio_0/synth/vio_0.v:59]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1009.793 ; gain = 0.000
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1005.941 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1009.793 ; gain = 0.000
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1005.941 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1009.793 ; gain = 0.000
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1005.941 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1009.793 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1005.941 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -47,44 +47,48 @@ Parsing XDC File [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/s
 Finished Parsing XDC File [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/sources_1/ip/vio_0/vio_0.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1070.051 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1080.062 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 1082.672 ; gain = 12.621
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 1090.801 ; gain = 10.738
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1082.672 ; gain = 72.879
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1090.801 ; gain = 84.859
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7k325tffg900-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1082.672 ; gain = 72.879
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1090.801 ; gain = 84.859
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1082.672 ; gain = 72.879
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1090.801 ; gain = 84.859
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1082.672 ; gain = 72.879
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1090.801 ; gain = 84.859
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    1 Bit       Adders := 1     
 +---Registers : 
 	              128 Bit    Registers := 1     
-	               16 Bit    Registers := 9     
+	               16 Bit    Registers := 11    
 	                7 Bit    Registers := 1     
 	                5 Bit    Registers := 1     
 	                3 Bit    Registers := 2     
-	                1 Bit    Registers := 16    
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 18    
 +---Muxes : 
-	   2 Input   16 Bit        Muxes := 3     
-	   2 Input    1 Bit        Muxes := 7     
+	   3 Input   16 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 8     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -101,25 +105,25 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1082.672 ; gain = 72.879
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1090.801 ; gain = 84.859
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1082.672 ; gain = 72.879
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1090.801 ; gain = 84.859
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1082.672 ; gain = 72.879
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1090.801 ; gain = 84.859
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1094.223 ; gain = 84.430
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1090.801 ; gain = 84.859
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -174,37 +178,37 @@ WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[2] to constant 0
 WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[1] to constant 0
 WARNING: [Synth 8-3295] tying undriven pin inst:sl_iport0[0] to constant 0
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1094.223 ; gain = 84.430
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1090.801 ; gain = 84.859
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1094.223 ; gain = 84.430
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1090.801 ; gain = 84.859
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1094.223 ; gain = 84.430
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1090.801 ; gain = 84.859
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1094.223 ; gain = 84.430
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1090.801 ; gain = 84.859
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1094.223 ; gain = 84.430
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1090.801 ; gain = 84.859
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1094.223 ; gain = 84.430
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1090.801 ; gain = 84.859
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -220,37 +224,36 @@ Report Cell Usage:
 +------+-----+------+
 |      |Cell |Count |
 +------+-----+------+
-|1     |LUT2 |    17|
-|2     |LUT3 |    27|
-|3     |LUT4 |     8|
-|4     |LUT5 |    13|
-|5     |LUT6 |    71|
-|6     |FDRE |   279|
+|1     |LUT1 |     1|
+|2     |LUT2 |     6|
+|3     |LUT3 |    27|
+|4     |LUT4 |    10|
+|5     |LUT5 |    11|
+|6     |LUT6 |    75|
+|7     |FDRE |   285|
 +------+-----+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1094.223 ; gain = 84.430
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1090.801 ; gain = 84.859
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 37 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:19 . Memory (MB): peak = 1094.223 ; gain = 11.551
-Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1094.223 ; gain = 84.430
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:19 . Memory (MB): peak = 1090.801 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1090.801 ; gain = 84.859
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1094.223 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1100.355 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1109.504 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1112.594 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
 15 Infos, 37 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1109.504 ; gain = 99.711
-INFO: [Common 17-600] The following parameters have non-default value.
-tcl.collectionResultDisplayLimit
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1112.594 ; gain = 106.652
 INFO: [Common 17-1381] The checkpoint 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/vio_0_synth_1/vio_0.dcp' has been generated.
 WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP vio_0, cache-ID = 6a6996c847f596b1
-INFO: [Coretcl 2-1174] Renamed 6 cell refs.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP vio_0, cache-ID = 9ab47c241b704c83
+INFO: [Coretcl 2-1174] Renamed 8 cell refs.
 INFO: [Common 17-1381] The checkpoint 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/vio_0_synth_1/vio_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file vio_0_utilization_synth.rpt -pb vio_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Aug 31 11:30:32 2021...
+INFO: [Common 17-206] Exiting Vivado at Fri Oct  1 14:50:59 2021...

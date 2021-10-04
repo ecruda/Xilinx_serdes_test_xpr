@@ -2,8 +2,8 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Fri Sep  3 16:49:55 2021
-# Process ID: 17668
+# Start of session at: Fri Oct  1 16:15:02 2021
+# Process ID: 6788
 # Current directory: C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1
 # Command line: vivado.exe -log PRBS7_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source PRBS7_top.tcl
 # Log file: C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/PRBS7_top.vds
@@ -18,7 +18,7 @@ INFO: [Common 17-1540] The version limit for your license is '2021.03' and has e
 INFO: [Device 21-403] Loading part xc7k325tffg900-2
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 19396
+INFO: [Synth 8-7075] Helper process launched with PID 8868
 WARNING: [Synth 8-2611] redeclaration of ansi port DRPCLK_IN is not allowed [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/gtwizard_0_ex/gtwizard_0_ex.srcs/sources_1/imports/example_design/gtwizard_0_exdes.v:190]
 CRITICAL WARNING: [Synth 8-976] DRPCLK_IN has already been declared [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/gtwizard_0_ex/gtwizard_0_ex.srcs/sources_1/imports/example_design/gtwizard_0_exdes.v:190]
 CRITICAL WARNING: [Synth 8-2654] second declaration of DRPCLK_IN ignored [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/gtwizard_0_ex/gtwizard_0_ex.srcs/sources_1/imports/example_design/gtwizard_0_exdes.v:190]
@@ -33,37 +33,38 @@ WARNING: [Synth 8-2611] redeclaration of ansi port errorBits is not allowed [C:/
 WARNING: [Synth 8-2611] redeclaration of ansi port userBits is not allowed [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:79]
 WARNING: [Synth 8-2611] redeclaration of ansi port usererrorBits is not allowed [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:81]
 WARNING: [Synth 8-2611] redeclaration of ansi port userData is not allowed [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:98]
-WARNING: [Synth 8-992] errorCount_to_check_source is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:102]
-WARNING: [Synth 8-992] prbs_from_check_to_check_source is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:105]
-WARNING: [Synth 8-992] bypass is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:116]
-WARNING: [Synth 8-992] map_dout is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:118]
-WARNING: [Synth 8-992] userData is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:204]
-WARNING: [Synth 8-992] mask is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:207]
-WARNING: [Synth 8-992] seed is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:209]
-WARNING: [Synth 8-992] foundFrames is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:213]
-WARNING: [Synth 8-992] searchedFrames is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:216]
-WARNING: [Synth 8-992] alignAddr is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:219]
-WARNING: [Synth 8-992] aligned is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:222]
-WARNING: [Synth 8-992] errorCounter is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:225]
-WARNING: [Synth 8-992] tot_err_count is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:228]
-WARNING: [Synth 8-992] errorFlag is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:231]
-WARNING: [Synth 8-992] prbs_from_check is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:234]
-WARNING: [Synth 8-992] errorBits is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:237]
-WARNING: [Synth 8-992] usererrorBits is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:240]
-WARNING: [Synth 8-992] userdataBits is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:243]
-WARNING: [Synth 8-992] usererrorCounter is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:246]
-WARNING: [Synth 8-992] userBits is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:249]
-WARNING: [Synth 8-992] dout is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:252]
-WARNING: [Synth 8-992] clk_60MHz is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:262]
-WARNING: [Synth 8-992] gig_eth_tx_fifo_wrclk is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:379]
-WARNING: [Synth 8-992] gig_eth_tx_fifo_q is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:380]
-WARNING: [Synth 8-992] gig_eth_tx_fifo_wren is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:381]
-WARNING: [Synth 8-992] gig_eth_rx_fifo_rden is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:385]
-WARNING: [Synth 8-6901] identifier 'gig_eth_rx_fifo_q' is used before its declaration [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:357]
-WARNING: [Synth 8-6901] identifier 'gig_eth_rx_fifo_empty' is used before its declaration [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:358]
-WARNING: [Synth 8-6901] identifier 'gig_eth_tx_fifo_full' is used before its declaration [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:365]
-WARNING: [Synth 8-6901] identifier 'tot_err_count_test' is used before its declaration [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:499]
-WARNING: [Synth 8-6901] identifier 'tot_err_count_test' is used before its declaration [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:499]
+WARNING: [Synth 8-992] errorCount_to_check_source is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:72]
+WARNING: [Synth 8-992] prbs_from_check_to_check_source is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:75]
+WARNING: [Synth 8-992] bypass is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:86]
+WARNING: [Synth 8-992] map_dout is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:88]
+WARNING: [Synth 8-992] userData is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:149]
+WARNING: [Synth 8-992] mask is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:152]
+WARNING: [Synth 8-992] seed is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:154]
+WARNING: [Synth 8-992] foundFrames is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:158]
+WARNING: [Synth 8-992] searchedFrames is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:161]
+WARNING: [Synth 8-992] alignAddr is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:164]
+WARNING: [Synth 8-992] aligned is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:167]
+WARNING: [Synth 8-992] errorCounter is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:170]
+WARNING: [Synth 8-992] tot_align_err_count is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:173]
+WARNING: [Synth 8-992] errorFlag is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:176]
+WARNING: [Synth 8-992] prbs_from_check is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:179]
+WARNING: [Synth 8-992] errorBits is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:182]
+WARNING: [Synth 8-992] usererrorBits is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:185]
+WARNING: [Synth 8-992] userdataBits is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:188]
+WARNING: [Synth 8-992] usererrorCounter is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:191]
+WARNING: [Synth 8-992] userBits is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:194]
+WARNING: [Synth 8-992] dout is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:197]
+WARNING: [Synth 8-992] clk_60MHz is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:207]
+WARNING: [Synth 8-992] gig_eth_tx_fifo_wrclk is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:324]
+WARNING: [Synth 8-992] gig_eth_tx_fifo_q is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:325]
+WARNING: [Synth 8-992] gig_eth_tx_fifo_wren is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:326]
+WARNING: [Synth 8-992] gig_eth_rx_fifo_rden is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:330]
+WARNING: [Synth 8-992] SYS_RST is already implicitly declared earlier [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:484]
+WARNING: [Synth 8-6901] identifier 'gig_eth_rx_fifo_q' is used before its declaration [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:302]
+WARNING: [Synth 8-6901] identifier 'gig_eth_rx_fifo_empty' is used before its declaration [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:303]
+WARNING: [Synth 8-6901] identifier 'gig_eth_tx_fifo_full' is used before its declaration [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:310]
+WARNING: [Synth 8-6901] identifier 'tot_align_err_count_test' is used before its declaration [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:444]
+WARNING: [Synth 8-6901] identifier 'tot_align_err_count_test' is used before its declaration [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:444]
 WARNING: [Synth 8-2611] redeclaration of ansi port foundFrames is not allowed [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:70]
 WARNING: [Synth 8-2611] redeclaration of ansi port searchedFrames is not allowed [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:72]
 WARNING: [Synth 8-2611] redeclaration of ansi port alignAddr is not allowed [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:79]
@@ -82,23 +83,23 @@ WARNING: [Synth 8-2611] redeclaration of ansi port errorFlag is not allowed [C:/
 CRITICAL WARNING: [Synth 8-976] errorFlag has already been declared [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:137]
 CRITICAL WARNING: [Synth 8-2654] second declaration of errorFlag ignored [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:137]
 INFO: [Synth 8-994] errorFlag is declared here [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:108]
-WARNING: [Synth 8-2611] redeclaration of ansi port tot_err_count is not allowed [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:213]
+WARNING: [Synth 8-2611] redeclaration of ansi port tot_align_err_count is not allowed [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:213]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1010.176 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1010.000 ; gain = 0.000
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'PRBS7_top' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:17]
 INFO: [Synth 8-6157] synthesizing module 'PRBS_debug' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS_debug.v:17]
 INFO: [Synth 8-6155] done synthesizing module 'PRBS_debug' (1#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS_debug.v:17]
 INFO: [Synth 8-6157] synthesizing module 'PRBS7Check' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:17]
 INFO: [Synth 8-6155] done synthesizing module 'PRBS7Check' (2#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:17]
-WARNING: [Synth 8-7071] port 'reset' of module 'PRBS7Check' is unconnected for instance 'prbs_source_check_inst_0' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:92]
-WARNING: [Synth 8-7071] port 'errorBits' of module 'PRBS7Check' is unconnected for instance 'prbs_source_check_inst_0' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:92]
-WARNING: [Synth 8-7071] port 'userBits' of module 'PRBS7Check' is unconnected for instance 'prbs_source_check_inst_0' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:92]
-WARNING: [Synth 8-7071] port 'usererrorBits' of module 'PRBS7Check' is unconnected for instance 'prbs_source_check_inst_0' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:92]
-WARNING: [Synth 8-7071] port 'usererrorCounter' of module 'PRBS7Check' is unconnected for instance 'prbs_source_check_inst_0' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:92]
-WARNING: [Synth 8-7071] port 'errorFlag' of module 'PRBS7Check' is unconnected for instance 'prbs_source_check_inst_0' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:92]
-WARNING: [Synth 8-7071] port 'userData' of module 'PRBS7Check' is unconnected for instance 'prbs_source_check_inst_0' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:92]
-WARNING: [Synth 8-7023] instance 'prbs_source_check_inst_0' of module 'PRBS7Check' has 13 connections declared, but only 6 given [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:92]
+WARNING: [Synth 8-7071] port 'reset' of module 'PRBS7Check' is unconnected for instance 'prbs_source_check_inst_0' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:62]
+WARNING: [Synth 8-7071] port 'errorBits' of module 'PRBS7Check' is unconnected for instance 'prbs_source_check_inst_0' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:62]
+WARNING: [Synth 8-7071] port 'userBits' of module 'PRBS7Check' is unconnected for instance 'prbs_source_check_inst_0' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:62]
+WARNING: [Synth 8-7071] port 'usererrorBits' of module 'PRBS7Check' is unconnected for instance 'prbs_source_check_inst_0' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:62]
+WARNING: [Synth 8-7071] port 'usererrorCounter' of module 'PRBS7Check' is unconnected for instance 'prbs_source_check_inst_0' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:62]
+WARNING: [Synth 8-7071] port 'errorFlag' of module 'PRBS7Check' is unconnected for instance 'prbs_source_check_inst_0' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:62]
+WARNING: [Synth 8-7071] port 'userData' of module 'PRBS7Check' is unconnected for instance 'prbs_source_check_inst_0' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:62]
+WARNING: [Synth 8-7023] instance 'prbs_source_check_inst_0' of module 'PRBS7Check' has 13 connections declared, but only 6 given [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:62]
 INFO: [Synth 8-6157] synthesizing module 'rev_map' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/rev_map.v:17]
 INFO: [Synth 8-6155] done synthesizing module 'rev_map' (3#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/rev_map.v:17]
 INFO: [Synth 8-6157] synthesizing module 'gtwizard_0_exdes' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/gtwizard_0_ex/gtwizard_0_ex.srcs/sources_1/imports/example_design/gtwizard_0_exdes.v:70]
@@ -526,13 +527,13 @@ INFO: [Synth 8-6155] done synthesizing module 'gtwizard_0_init' (19#1) [c:/Lily_
 INFO: [Synth 8-6155] done synthesizing module 'gtwizard_0' (20#1) [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/sources_1/ip/gtwizard_0/gtwizard_0.v:73]
 INFO: [Synth 8-6155] done synthesizing module 'gtwizard_0_support' (21#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/gtwizard_0_ex/gtwizard_0_ex.srcs/sources_1/imports/example_design/support/gtwizard_0_support.v:70]
 INFO: [Synth 8-6155] done synthesizing module 'gtwizard_0_exdes' (22#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/gtwizard_0_ex/gtwizard_0_ex.srcs/sources_1/imports/example_design/gtwizard_0_exdes.v:70]
-WARNING: [Synth 8-689] width (32) of port connection 'TRACK_DATA_OUT' does not match port width (1) of module 'gtwizard_0_exdes' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:147]
-WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:147]
+WARNING: [Synth 8-689] width (32) of port connection 'TRACK_DATA_OUT' does not match port width (1) of module 'gtwizard_0_exdes' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:101]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:101]
 INFO: [Synth 8-6157] synthesizing module 'dataExtract' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:17]
 INFO: [Synth 8-6157] synthesizing module 'map' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/map.v:17]
 INFO: [Synth 8-6155] done synthesizing module 'map' (23#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/map.v:17]
 INFO: [Synth 8-6155] done synthesizing module 'dataExtract' (24#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/DataExtract.v:17]
-WARNING: [Synth 8-689] width (10) of port connection 'alignAddr' does not match port width (6) of module 'dataExtract' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:176]
+WARNING: [Synth 8-689] width (10) of port connection 'alignAddr' does not match port width (6) of module 'dataExtract' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:130]
 INFO: [Synth 8-638] synthesizing module 'global_clock_reset' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/global_clock_reset.vhd:53]
 	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
 	Parameter DIFF_TERM bound to: 0 - type: bool 
@@ -543,9 +544,9 @@ INFO: [Synth 8-638] synthesizing module 'global_clock_reset' [C:/Lily_Zhang/GBS2
 	Parameter IOSTANDARD bound to: DEFAULT - type: string 
 INFO: [Synth 8-113] binding component instance 'IBUFDS_inst' to cell 'IBUFDS' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/global_clock_reset.vhd:88]
 INFO: [Synth 8-113] binding component instance 'BUFG_inst' to cell 'BUFG' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/global_clock_reset.vhd:99]
-INFO: [Synth 8-3491] module 'clockwiz' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-17668-21-10244/realtime/clockwiz_stub.v:5' bound to instance 'clockwiz_inst' of component 'clockwiz' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/global_clock_reset.vhd:106]
-INFO: [Synth 8-6157] synthesizing module 'clockwiz' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-17668-21-10244/realtime/clockwiz_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'clockwiz' (25#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-17668-21-10244/realtime/clockwiz_stub.v:5]
+INFO: [Synth 8-3491] module 'clockwiz' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-6788-21-10244/realtime/clockwiz_stub.v:5' bound to instance 'clockwiz_inst' of component 'clockwiz' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/global_clock_reset.vhd:106]
+INFO: [Synth 8-6157] synthesizing module 'clockwiz' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-6788-21-10244/realtime/clockwiz_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clockwiz' (25#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-6788-21-10244/realtime/clockwiz_stub.v:5]
 INFO: [Synth 8-3491] module 'GlobalResetter' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/global_resetter.vhd:21' bound to instance 'globalresetter_inst' of component 'GlobalResetter' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/global_clock_reset.vhd:123]
 INFO: [Synth 8-638] synthesizing module 'GlobalResetter' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/global_resetter.vhd:37]
 	Parameter CLK_RESET_DELAY_CNT bound to: 10000 - type: integer 
@@ -558,12 +559,12 @@ INFO: [Synth 8-6157] synthesizing module 'IBUFDS_GTE2__parameterized0' [C:/Xilin
 	Parameter CLKRCV_TRST bound to: TRUE - type: string 
 	Parameter CLKSWING_CFG bound to: 2'b11 
 INFO: [Synth 8-6155] done synthesizing module 'IBUFDS_GTE2__parameterized0' (27#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:33137]
-WARNING: [Synth 8-689] width (32) of port connection 'ODIV2' does not match port width (1) of module 'IBUFDS_GTE2__parameterized0' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:291]
-WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:291]
+WARNING: [Synth 8-689] width (32) of port connection 'ODIV2' does not match port width (1) of module 'IBUFDS_GTE2__parameterized0' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:236]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:236]
 INFO: [Synth 8-638] synthesizing module 'control_interface' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/control_interface.vhd:86]
-INFO: [Synth 8-3491] module 'fifo36x512' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-17668-21-10244/realtime/fifo36x512_stub.v:6' bound to instance 'data_fifo' of component 'fifo36x512' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/control_interface.vhd:169]
-INFO: [Synth 8-6157] synthesizing module 'fifo36x512' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-17668-21-10244/realtime/fifo36x512_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'fifo36x512' (28#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-17668-21-10244/realtime/fifo36x512_stub.v:6]
+INFO: [Synth 8-3491] module 'fifo36x512' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-6788-21-10244/realtime/fifo36x512_stub.v:6' bound to instance 'data_fifo' of component 'fifo36x512' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/control_interface.vhd:169]
+INFO: [Synth 8-6157] synthesizing module 'fifo36x512' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-6788-21-10244/realtime/fifo36x512_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo36x512' (28#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-6788-21-10244/realtime/fifo36x512_stub.v:6]
 INFO: [Synth 8-256] done synthesizing module 'control_interface' (29#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/control_interface.vhd:86]
 INFO: [Synth 8-638] synthesizing module 'gig_eth' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/gig_eth.vhd:190]
 INFO: [Synth 8-3491] module 'tri_mode_ethernet_mac_0_example_design_resets' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/gig_eth_mac_resets.vhd:57' bound to instance 'example_resets' of component 'tri_mode_ethernet_mac_0_example_design_resets' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/gig_eth.vhd:691]
@@ -1196,12 +1197,12 @@ INFO: [Synth 8-3491] module 'BRAM_DP' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/
 INFO: [Synth 8-3491] module 'BRAM_DP' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/bram_dp.vhd:34' bound to instance 'RAMB16_S9_S9_001' of component 'BRAM_DP' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/tcp_txbuf.vhd:297]
 INFO: [Synth 8-256] done synthesizing module 'TCP_TXBUF' (104#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/tcp_txbuf.vhd:131]
 INFO: [Synth 8-256] done synthesizing module 'COM5402' (105#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/gig_eth/tcp_server/com5402.vhd:160]
-INFO: [Synth 8-3491] module 'fifo8to32' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-17668-21-10244/realtime/fifo8to32_stub.v:6' bound to instance 'rx_fifo_inst' of component 'fifo8to32' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/gig_eth.vhd:1028]
-INFO: [Synth 8-6157] synthesizing module 'fifo8to32' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-17668-21-10244/realtime/fifo8to32_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'fifo8to32' (106#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-17668-21-10244/realtime/fifo8to32_stub.v:6]
-INFO: [Synth 8-3491] module 'fifo32to8' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-17668-21-10244/realtime/fifo32to8_stub.v:6' bound to instance 'tx_fifo_inst' of component 'fifo32to8' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/gig_eth.vhd:1046]
-INFO: [Synth 8-6157] synthesizing module 'fifo32to8' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-17668-21-10244/realtime/fifo32to8_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'fifo32to8' (107#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-17668-21-10244/realtime/fifo32to8_stub.v:6]
+INFO: [Synth 8-3491] module 'fifo8to32' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-6788-21-10244/realtime/fifo8to32_stub.v:6' bound to instance 'rx_fifo_inst' of component 'fifo8to32' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/gig_eth.vhd:1028]
+INFO: [Synth 8-6157] synthesizing module 'fifo8to32' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-6788-21-10244/realtime/fifo8to32_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo8to32' (106#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-6788-21-10244/realtime/fifo8to32_stub.v:6]
+INFO: [Synth 8-3491] module 'fifo32to8' declared at 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-6788-21-10244/realtime/fifo32to8_stub.v:6' bound to instance 'tx_fifo_inst' of component 'fifo32to8' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/gig_eth.vhd:1046]
+INFO: [Synth 8-6157] synthesizing module 'fifo32to8' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-6788-21-10244/realtime/fifo32to8_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo32to8' (107#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-6788-21-10244/realtime/fifo32to8_stub.v:6]
 INFO: [Synth 8-256] done synthesizing module 'gig_eth' (108#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/KC705/gig_eth.vhd:190]
 INFO: [Synth 8-638] synthesizing module 'i2c_wr_bytes' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/i2c/i2c_wr_bytes.vhd:51]
 	Parameter INPUT_CLK_FREQENCY bound to: 60000000 - type: integer 
@@ -1212,34 +1213,35 @@ INFO: [Synth 8-638] synthesizing module 'i2c_master' [C:/Lily_Zhang/GBS20V1/Elij
 	Parameter BUS_CLK_FREQUENCY bound to: 100000 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'i2c_master' (109#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/i2c/i2c_master.vhd:50]
 INFO: [Synth 8-256] done synthesizing module 'i2c_wr_bytes' (110#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/i2c/i2c_wr_bytes.vhd:51]
-WARNING: [Synth 8-689] width (32) of port connection 'BUSY' does not match port width (1) of module 'i2c_wr_bytes' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:474]
-WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:474]
-WARNING: [Synth 8-567] referenced signal 'tot_err_count_test' should be on the sensitivity list [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:497]
-WARNING: [Synth 8-567] referenced signal 'tot_err_count' should be on the sensitivity list [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:504]
-INFO: [Synth 8-6157] synthesizing module 'vio_0' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-17668-21-10244/realtime/vio_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'vio_0' (111#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-17668-21-10244/realtime/vio_0_stub.v:6]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'gtwizard_0_exdes_i'. This will prevent further optimization [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:140]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'dataAligner'. This will prevent further optimization [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:162]
+WARNING: [Synth 8-689] width (32) of port connection 'BUSY' does not match port width (1) of module 'i2c_wr_bytes' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:419]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:419]
+WARNING: [Synth 8-567] referenced signal 'tot_align_err_count_test' should be on the sensitivity list [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:442]
+WARNING: [Synth 8-567] referenced signal 'tot_align_err_count' should be on the sensitivity list [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:449]
+INFO: [Synth 8-6157] synthesizing module 'vio_0' [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-6788-21-10244/realtime/vio_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'vio_0' (111#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-6788-21-10244/realtime/vio_0_stub.v:6]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'gtwizard_0_exdes_i'. This will prevent further optimization [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:94]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'dataAligner'. This will prevent further optimization [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:116]
 INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'PRBS_debug_inst0'. This will prevent further optimization [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:55]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'rev_map_inst'. This will prevent further optimization [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:107]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'prbs_source_check_inst_0'. This will prevent further optimization [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:92]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'vio_0_inst'. This will prevent further optimization [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:531]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'control_interface_inst'. This will prevent further optimization [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:330]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'i2c_wr_bytes_inst'. This will prevent further optimization [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:461]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'rev_map_inst'. This will prevent further optimization [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:77]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'prbs_source_check_inst_0'. This will prevent further optimization [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:62]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'vio_0_inst'. This will prevent further optimization [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:476]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'control_interface_inst'. This will prevent further optimization [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:275]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'i2c_wr_bytes_inst'. This will prevent further optimization [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:406]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'global_clock_reset_inst'. This will prevent further optimization [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:208]
 INFO: [Synth 8-6155] done synthesizing module 'PRBS7_top' (112#1) [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7_top.v:17]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1138.633 ; gain = 128.457
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1138.617 ; gain = 128.617
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1147.938 ; gain = 137.762
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1138.617 ; gain = 128.617
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1147.938 ; gain = 137.762
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1138.617 ; gain = 128.617
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.387 . Memory (MB): peak = 1159.895 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.351 . Memory (MB): peak = 1138.617 ; gain = 0.000
 WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_support_clocking_i/clkout1_buf' of type 'BUFGCE' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
 WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_support_clocking_i/clkout2_buf' of type 'BUFGCE' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
 INFO: [Netlist 29-17] Analyzing 279 Unisim elements for replacement
@@ -1250,16 +1252,16 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-17668-21-10244/fifo8to32/fifo8to32/fifo8to32_in_context.xdc] for cell 'gig_eth_inst/rx_fifo_inst'
-Finished Parsing XDC File [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-17668-21-10244/fifo8to32/fifo8to32/fifo8to32_in_context.xdc] for cell 'gig_eth_inst/rx_fifo_inst'
-Parsing XDC File [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-17668-21-10244/fifo36x512/fifo36x512/fifo36x512_in_context.xdc] for cell 'control_interface_inst/data_fifo'
-Finished Parsing XDC File [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-17668-21-10244/fifo36x512/fifo36x512/fifo36x512_in_context.xdc] for cell 'control_interface_inst/data_fifo'
-Parsing XDC File [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-17668-21-10244/fifo32to8/fifo32to8/fifo32to8_in_context.xdc] for cell 'gig_eth_inst/tx_fifo_inst'
-Finished Parsing XDC File [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-17668-21-10244/fifo32to8/fifo32to8/fifo32to8_in_context.xdc] for cell 'gig_eth_inst/tx_fifo_inst'
-Parsing XDC File [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-17668-21-10244/clockwiz/clockwiz/clockwiz_in_context.xdc] for cell 'global_clock_reset_inst/clockwiz_inst'
-Finished Parsing XDC File [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-17668-21-10244/clockwiz/clockwiz/clockwiz_in_context.xdc] for cell 'global_clock_reset_inst/clockwiz_inst'
-Parsing XDC File [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-17668-21-10244/vio_0/vio_0/vio_0_in_context.xdc] for cell 'vio_0_inst'
-Finished Parsing XDC File [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-17668-21-10244/vio_0/vio_0/vio_0_in_context.xdc] for cell 'vio_0_inst'
+Parsing XDC File [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-6788-21-10244/fifo8to32/fifo8to32/fifo8to32_in_context.xdc] for cell 'gig_eth_inst/rx_fifo_inst'
+Finished Parsing XDC File [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-6788-21-10244/fifo8to32/fifo8to32/fifo8to32_in_context.xdc] for cell 'gig_eth_inst/rx_fifo_inst'
+Parsing XDC File [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-6788-21-10244/fifo36x512/fifo36x512/fifo36x512_in_context.xdc] for cell 'control_interface_inst/data_fifo'
+Finished Parsing XDC File [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-6788-21-10244/fifo36x512/fifo36x512/fifo36x512_in_context.xdc] for cell 'control_interface_inst/data_fifo'
+Parsing XDC File [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-6788-21-10244/fifo32to8/fifo32to8/fifo32to8_in_context.xdc] for cell 'gig_eth_inst/tx_fifo_inst'
+Finished Parsing XDC File [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-6788-21-10244/fifo32to8/fifo32to8/fifo32to8_in_context.xdc] for cell 'gig_eth_inst/tx_fifo_inst'
+Parsing XDC File [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-6788-21-10244/clockwiz/clockwiz/clockwiz_in_context.xdc] for cell 'global_clock_reset_inst/clockwiz_inst'
+Finished Parsing XDC File [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-6788-21-10244/clockwiz/clockwiz/clockwiz_in_context.xdc] for cell 'global_clock_reset_inst/clockwiz_inst'
+Parsing XDC File [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-6788-21-10244/vio_0/vio_0/vio_0_in_context.xdc] for cell 'vio_0_inst'
+Finished Parsing XDC File [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/.Xil/Vivado-6788-21-10244/vio_0/vio_0/vio_0_in_context.xdc] for cell 'vio_0_inst'
 Parsing XDC File [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/sources_1/ip/gtwizard_0/gtwizard_0.xdc] for cell 'gtwizard_0_exdes_i/gtwizard_0_support_i/gtwizard_0_init_i/inst'
 Finished Parsing XDC File [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.srcs/sources_1/ip/gtwizard_0/gtwizard_0.xdc] for cell 'gtwizard_0_exdes_i/gtwizard_0_support_i/gtwizard_0_init_i/inst'
 Parsing XDC File [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0_board.xdc] for cell 'gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/inst'
@@ -1311,7 +1313,7 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/PRBS7_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1291.453 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1274.441 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 118 instances were transformed.
   BUFGCE => BUFGCTRL: 2 instances
@@ -1320,16 +1322,16 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM64X1D => RAM64X1D (RAMD64E(x2)): 8 instances
   RAMB16_S9_S9 => RAMB18E1: 17 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.088 . Memory (MB): peak = 1291.453 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.085 . Memory (MB): peak = 1274.441 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1291.453 ; gain = 281.277
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1274.441 ; gain = 264.441
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7k325tffg900-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1291.453 ; gain = 281.277
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1274.441 ; gain = 264.441
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -1344,7 +1346,7 @@ Applied set_property KEEP_HIERARCHY = SOFT for gig_eth_inst/tx_fifo_inst. (const
 Applied set_property KEEP_HIERARCHY = SOFT for global_clock_reset_inst/clockwiz_inst. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for vio_0_inst. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1291.453 ; gain = 281.277
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1274.441 ; gain = 264.441
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'tx_state_reg' in module 'gtwizard_0_TX_STARTUP_FSM'
 INFO: [Synth 8-802] inferred FSM for state register 'rx_state_reg' in module 'gtwizard_0_RX_STARTUP_FSM'
@@ -1577,7 +1579,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'rd_state_reg' using encodi
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'i2c_master'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1291.453 ; gain = 281.277
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1274.441 ; gain = 264.441
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -1598,28 +1600,28 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:07 ; elapsed = 00:01:10 . Memory (MB): peak = 1291.453 ; gain = 281.277
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:02 ; elapsed = 00:01:02 . Memory (MB): peak = 1274.441 ; gain = 264.441
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-3321] set_false_path : Empty to list for constraint at line 71 of c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0.xdc. [c:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/ipcore_dir/tri_mode_ethernet_mac_0/synth/tri_mode_ethernet_mac_0.xdc:71]
-INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/inst/s_axi_aclk' to 'gig_eth_insti_5/gtx_clk'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_i/inst/s_axi_aclk' to 'gig_eth_insti_4/gtx_clk'
 INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:13 ; elapsed = 00:01:16 . Memory (MB): peak = 1291.453 ; gain = 281.277
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:07 ; elapsed = 00:01:08 . Memory (MB): peak = 1274.441 ; gain = 264.441
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:14 ; elapsed = 00:01:17 . Memory (MB): peak = 1291.453 ; gain = 281.277
+Finished Timing Optimization : Time (s): cpu = 00:01:08 ; elapsed = 00:01:09 . Memory (MB): peak = 1274.441 ; gain = 264.441
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:20 ; elapsed = 00:01:23 . Memory (MB): peak = 1291.453 ; gain = 281.277
+Finished Technology Mapping : Time (s): cpu = 00:01:13 ; elapsed = 00:01:14 . Memory (MB): peak = 1274.441 ; gain = 264.441
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -1838,39 +1840,39 @@ WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:107]
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/PRBS7Check.v:107]
 INFO: [Common 17-14] Message 'Synth 8-5396' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-WARNING: [Synth 8-5410] Found another clock driver \global_clock_reset_inst/BUFG_inst :O [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/global_clock_reset.vhd:99]
+WARNING: [Synth 8-5410] Found another clock driver BUFG_inst:O [C:/Lily_Zhang/GBS20V1/Elijah/git_repo/SERDES_KC705/src/global_clock_reset.vhd:99]
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:23 ; elapsed = 00:01:26 . Memory (MB): peak = 1291.453 ; gain = 281.277
+Finished IO Insertion : Time (s): cpu = 00:01:17 ; elapsed = 00:01:17 . Memory (MB): peak = 1274.441 ; gain = 264.441
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:23 ; elapsed = 00:01:26 . Memory (MB): peak = 1291.453 ; gain = 281.277
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:17 ; elapsed = 00:01:18 . Memory (MB): peak = 1274.441 ; gain = 264.441
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:24 ; elapsed = 00:01:27 . Memory (MB): peak = 1291.453 ; gain = 281.277
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:17 ; elapsed = 00:01:18 . Memory (MB): peak = 1274.441 ; gain = 264.441
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:24 ; elapsed = 00:01:27 . Memory (MB): peak = 1291.453 ; gain = 281.277
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:17 ; elapsed = 00:01:18 . Memory (MB): peak = 1274.441 ; gain = 264.441
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:25 ; elapsed = 00:01:28 . Memory (MB): peak = 1291.453 ; gain = 281.277
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:18 ; elapsed = 00:01:19 . Memory (MB): peak = 1274.441 ; gain = 264.441
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:25 ; elapsed = 00:01:28 . Memory (MB): peak = 1291.453 ; gain = 281.277
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:18 ; elapsed = 00:01:19 . Memory (MB): peak = 1274.441 ; gain = 264.441
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -1880,11 +1882,11 @@ Report BlackBoxes:
 +------+--------------+----------+
 |      |BlackBox name |Instances |
 +------+--------------+----------+
-|1     |fifo36x512    |         1|
-|2     |vio_0         |         1|
-|3     |fifo8to32     |         1|
-|4     |fifo32to8     |         1|
-|5     |clockwiz      |         1|
+|1     |clockwiz      |         1|
+|2     |fifo36x512    |         1|
+|3     |vio_0         |         1|
+|4     |fifo8to32     |         1|
+|5     |fifo32to8     |         1|
 +------+--------------+----------+
 
 Report Cell Usage: 
@@ -1907,11 +1909,11 @@ Report Cell Usage:
 |14    |IDDR          |     5|
 |15    |IDELAYCTRL    |     1|
 |16    |IDELAYE2      |     5|
-|17    |LUT1          |  1077|
+|17    |LUT1          |  1081|
 |18    |LUT2          |  1192|
-|19    |LUT3          |   891|
-|20    |LUT4          |   855|
-|21    |LUT5          |   765|
+|19    |LUT3          |   892|
+|20    |LUT4          |   856|
+|21    |LUT5          |   766|
 |22    |LUT6          |  2395|
 |23    |MMCME2_ADV    |     3|
 |24    |MUXCY         |    70|
@@ -1928,21 +1930,21 @@ Report Cell Usage:
 |35    |FDPE          |    85|
 |36    |FDRE          |  4747|
 |37    |FDSE          |   173|
-|38    |IBUF          |    15|
+|38    |IBUF          |    14|
 |39    |IBUFDS        |     1|
 |40    |IOBUF         |     2|
 |41    |OBUF          |     9|
 +------+--------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:26 ; elapsed = 00:01:29 . Memory (MB): peak = 1291.453 ; gain = 281.277
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:18 ; elapsed = 00:01:19 . Memory (MB): peak = 1274.441 ; gain = 264.441
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 1105 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:08 ; elapsed = 00:01:22 . Memory (MB): peak = 1291.453 ; gain = 137.762
-Synthesis Optimization Complete : Time (s): cpu = 00:01:26 ; elapsed = 00:01:29 . Memory (MB): peak = 1291.453 ; gain = 281.277
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:02 ; elapsed = 00:01:13 . Memory (MB): peak = 1274.441 ; gain = 128.617
+Synthesis Optimization Complete : Time (s): cpu = 00:01:19 ; elapsed = 00:01:19 . Memory (MB): peak = 1274.441 ; gain = 264.441
 INFO: [Project 1-571] Translating synthesized netlist
 WARNING: [Synth 37-28] Duplicate attribute 'INIT' found for instance 'update_pause_ad_int_reg' of module 'FDRE'.
 Resolution: Check your design sources near the definition of the module or any related 'include files, looking for duplicate definitions with different values.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.218 . Memory (MB): peak = 1291.453 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.201 . Memory (MB): peak = 1274.441 ; gain = 0.000
 WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_support_clocking_i/clkout1_buf' of type 'BUFGCE' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
 WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'gig_eth_inst/trimac_fifo_block/trimac_sup_block/tri_mode_ethernet_mac_support_clocking_i/clkout2_buf' of type 'BUFGCE' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
 INFO: [Netlist 29-17] Analyzing 676 Unisim elements for replacement
@@ -1953,7 +1955,7 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-140] Inserted 2 IBUFs to IO ports without IO buffers.
 INFO: [Opt 31-141] Inserted 2 OBUFs to IO ports without IO buffers.
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1291.453 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1278.051 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 127 instances were transformed.
   (MUXCY,XORCY) => CARRY4: 20 instances
@@ -1964,12 +1966,12 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAMB16_S9_S9 => RAMB18E1: 17 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-346 Infos, 293 Warnings, 10 Critical Warnings and 0 Errors encountered.
+347 Infos, 294 Warnings, 10 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:33 ; elapsed = 00:01:37 . Memory (MB): peak = 1291.453 ; gain = 281.277
+synth_design: Time (s): cpu = 00:01:25 ; elapsed = 00:01:27 . Memory (MB): peak = 1278.051 ; gain = 268.051
 INFO: [Common 17-600] The following parameters have non-default value.
 tcl.collectionResultDisplayLimit
 INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
 INFO: [Common 17-1381] The checkpoint 'C:/Lily_Zhang/GBS20V1/Elijah/git_repo/Xilinx_serdes_test_xpr/serdes_test/serdes_test.runs/synth_1/PRBS7_top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file PRBS7_top_utilization_synth.rpt -pb PRBS7_top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Sep  3 16:51:40 2021...
+INFO: [Common 17-206] Exiting Vivado at Fri Oct  1 16:16:37 2021...

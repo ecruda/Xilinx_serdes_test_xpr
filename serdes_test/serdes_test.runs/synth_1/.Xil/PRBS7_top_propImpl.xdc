@@ -79,8 +79,6 @@ set_property src_info {type:XDC file:2 line:133 export:INPUT save:INPUT read:REA
 set_property PACKAGE_PIN G8 [get_ports SGMIICLK_Q0_P]
 set_property src_info {type:XDC file:2 line:134 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN G7 [get_ports SGMIICLK_Q0_N]
-set_property src_info {type:XDC file:2 line:141 export:INPUT save:INPUT read:READ} [current_design]
-set_property PACKAGE_PIN AB7 [get_ports SYS_RST]
 set_property src_info {type:XDC file:2 line:147 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN Y29 [get_ports {DIPSw4Bit[0]}]
 set_property src_info {type:XDC file:2 line:151 export:INPUT save:INPUT read:READ} [current_design]
